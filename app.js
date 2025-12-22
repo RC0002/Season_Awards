@@ -1,40 +1,44 @@
-// Season Awards Nomination Tracker - Professional Edition
-// Features: Page-based navigation, Oscar auto-fetch, Collapsible menu
+// Season Awards Nomination Tracker
+// Features: Local JSON file storage with LocalStorage backup
 
 // ============ CONFIGURATION ============
 const CONFIG = {
+    // TMDB for search
     TMDB_API_KEY: '4399b8147e098e80be332f172d1fe490',
     TMDB_BASE_URL: 'https://api.themoviedb.org/3',
     TMDB_IMAGE_BASE: 'https://image.tmdb.org/t/p/',
 
+    // Data file path
+    DATA_FILE: 'data/awards_data.json',
+
     START_YEAR: 2018,
 
     AWARDS: [
-        'Academy Awards', 'Golden Globe', 'BAFTA', 'SAG', 'LAFCA', 'AFI', 'NBR',
-        'DGA', 'PGA', 'WGA', 'Art Directors', "Critic's Choice", 'Gotham',
-        'HCA', 'Spirit', 'BIFA', 'Annie', 'NYFCC', 'Cannes', 'Venezia'
+        'Academy', 'GG', 'BAFTA', 'SAG', 'LAFCA', 'AFI', 'NBR',
+        'DGA', 'PGA', 'WGA', 'ADG', 'Critics', 'Gotham',
+        'HCA', 'Spirit', 'BIFA', 'Annie', 'NYFCC', 'Cannes', 'Venice'
     ],
 
     CATEGORIES: [
-        { id: 'best-film', title: 'Best Film', placeholder: 'Film title', searchType: 'movie' },
-        { id: 'best-actress', title: 'Best Actress', placeholder: 'Actress name', searchType: 'person', isPerson: true },
-        { id: 'best-actor', title: 'Best Actor', placeholder: 'Actor name', searchType: 'person', isPerson: true },
-        { id: 'best-director', title: 'Best Director', placeholder: 'Director name', searchType: 'person', isPerson: true }
+        { id: 'best-film', title: 'Best Film', placeholder: 'Film', searchType: 'movie', isPerson: false },
+        { id: 'best-actress', title: 'Best Actress', placeholder: 'Actress', searchType: 'person', isPerson: true },
+        { id: 'best-actor', title: 'Best Actor', placeholder: 'Actor', searchType: 'person', isPerson: true },
+        { id: 'best-director', title: 'Best Director', placeholder: 'Director', searchType: 'person', isPerson: true }
     ]
 };
 
 // ============ STATE ============
 let currentYear = null;
 let currentCategory = 'best-film';
-let data = {};
-let menuOpen = true;
+let allData = {}; // All years data from JSON
+let data = {};    // Current year data
+let editMode = true;
 
 // ============ INITIALIZATION ============
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     calculateCurrentYear();
     buildPage();
     loadData();
-    renderCurrentCategory();
 });
 
 function calculateCurrentYear() {
@@ -47,79 +51,71 @@ function calculateCurrentYear() {
 // ============ PAGE BUILDING ============
 function buildPage() {
     const container = document.querySelector('.container');
-    container.className = 'app-container';
+    container.className = '';
 
     container.innerHTML = `
-        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <div class="nav-container">
+                <div class="nav-logo">Season Awards</div>
+                <div class="nav-links" id="nav-links"></div>
+                <div class="nav-actions">
+                    <select class="nav-year-select" id="year-select"></select>
+                    <div class="edit-toggle">
+                        <span>Edit</span>
+                        <div class="toggle-switch active" id="edit-toggle"></div>
+                    </div>
+                    <div class="sync-status" id="sync-status">
+                        <span class="sync-dot"></span>
+                        <span>Saved</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
         
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <div class="sidebar-logo">Season Awards</div>
-                <button class="btn-close-menu" id="close-menu">✕</button>
-            </div>
-            
-            <div class="sidebar-section">
-                <div class="sidebar-section-title">Award Season</div>
-                <select class="year-select" id="year-select"></select>
-            </div>
-            
-            <div class="sidebar-section">
-                <div class="sidebar-section-title">Categories</div>
-                <ul class="nav-list" id="nav-list"></ul>
-            </div>
-            
-            <div class="sidebar-section">
-                <div class="sidebar-section-title">Auto-Fetch</div>
-                <button class="btn-fetch" id="btn-fetch">Fetch Oscar Nominations</button>
-            </div>
-            
-            <div class="storage-info">
-                Data saved in browser<br>
-                <code>LocalStorage</code>
-            </div>
-        </aside>
-        
-        <main class="main-content" id="main-content">
+        <!-- Main Content -->
+        <main class="main-content">
             <div class="page-header">
                 <h1 class="page-title"><span id="year-display"></span> Nominations</h1>
             </div>
             <div id="category-container"></div>
-            <footer><p>Season Awards Tracker</p></footer>
+            <footer><p>Season Awards Nomination Tracker</p></footer>
         </main>
         
         <div class="loading-overlay" id="loading">
-            <div class="loading-text">Fetching Oscar nominations...</div>
+            <div class="loading-text">Loading...</div>
         </div>
     `;
 
-    setupEventListeners();
-    populateYearSelector();
-    populateNavigation();
+    setupNavigation();
+    setupYearSelector();
+    setupEditToggle();
     createCategoryPages();
     updateYearDisplay();
 }
 
-function setupEventListeners() {
-    // Menu toggle
-    document.getElementById('menu-toggle').addEventListener('click', toggleMenu);
-    document.getElementById('close-menu').addEventListener('click', toggleMenu);
+function setupNavigation() {
+    const navLinks = document.getElementById('nav-links');
 
-    // Fetch Oscar nominations
-    document.getElementById('btn-fetch').addEventListener('click', fetchOscarNominations);
+    CONFIG.CATEGORIES.forEach((cat, i) => {
+        const link = document.createElement('a');
+        link.href = '#';
+        link.className = `nav-link ${i === 0 ? 'active' : ''}`;
+        link.textContent = cat.title;
+
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+            currentCategory = cat.id;
+            showCategory(cat.id);
+        });
+
+        navLinks.appendChild(link);
+    });
 }
 
-function toggleMenu() {
-    menuOpen = !menuOpen;
-    const sidebar = document.getElementById('sidebar');
-    const mainContent = document.getElementById('main-content');
-    const toggle = document.getElementById('menu-toggle');
-
-    sidebar.classList.toggle('collapsed', !menuOpen);
-    mainContent.classList.toggle('expanded', !menuOpen);
-    toggle.classList.toggle('visible', !menuOpen);
-}
-
-function populateYearSelector() {
+function setupYearSelector() {
     const select = document.getElementById('year-select');
     const now = new Date();
     const endYear = now.getMonth() < 8 ? now.getFullYear() : now.getFullYear() + 1;
@@ -134,29 +130,26 @@ function populateYearSelector() {
 
     select.addEventListener('change', function () {
         currentYear = this.value;
-        loadData();
-        renderCurrentCategory();
-        updateYearDisplay();
+        switchYear();
     });
 }
 
-function populateNavigation() {
-    const navList = document.getElementById('nav-list');
+function setupEditToggle() {
+    const toggle = document.getElementById('edit-toggle');
 
-    CONFIG.CATEGORIES.forEach((cat, i) => {
-        const li = document.createElement('li');
-        li.className = 'nav-item';
-        li.innerHTML = `<a href="#" class="nav-link ${i === 0 ? 'active' : ''}" data-category="${cat.id}">${cat.title}</a>`;
+    toggle.addEventListener('click', () => {
+        editMode = !editMode;
+        toggle.classList.toggle('active', editMode);
+        updateEditState();
+    });
+}
 
-        li.querySelector('.nav-link').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-            this.classList.add('active');
-            currentCategory = cat.id;
-            showCategory(cat.id);
-        });
-
-        navList.appendChild(li);
+function updateEditState() {
+    document.querySelectorAll('.input-field, .btn').forEach(el => {
+        el.disabled = !editMode;
+    });
+    document.querySelectorAll('td.clickable').forEach(cell => {
+        cell.classList.toggle('locked', !editMode);
     });
 }
 
@@ -170,17 +163,15 @@ function createCategoryPages() {
 
         page.innerHTML = `
             <h2 class="category-title">${cat.title}</h2>
-            
             <div class="section-controls">
                 <div class="autocomplete-wrapper">
                     <input type="text" class="input-field" id="${cat.id}-input" 
                            placeholder="Search ${cat.placeholder}..." 
-                           data-search-type="${cat.searchType}" data-category="${cat.id}">
+                           data-search-type="${cat.searchType}">
                     <div class="autocomplete-list" id="${cat.id}-autocomplete"></div>
                 </div>
                 <button class="btn" id="${cat.id}-add">+ Add</button>
             </div>
-            
             <div class="table-wrap">
                 <div class="table-scroll">
                     <table>
@@ -208,7 +199,6 @@ function createCategoryPages() {
 function showCategory(categoryId) {
     document.querySelectorAll('.category-page').forEach(p => p.classList.remove('active'));
     document.getElementById(`page-${categoryId}`).classList.add('active');
-    renderCurrentCategory();
 }
 
 function updateYearDisplay() {
@@ -216,19 +206,106 @@ function updateYearDisplay() {
 }
 
 // ============ DATA MANAGEMENT ============
-function getStorageKey() { return `seasonAwards_${currentYear}`; }
+// Load data: First try JSON file, then LocalStorage as backup
+async function loadData() {
+    showLoading(true);
 
-function loadData() {
-    const stored = localStorage.getItem(getStorageKey());
-    data = stored ? JSON.parse(stored) : {};
-    CONFIG.CATEGORIES.forEach(cat => { if (!data[cat.id]) data[cat.id] = []; });
+    try {
+        // Try to load from JSON file first
+        const response = await fetch(CONFIG.DATA_FILE);
+        if (response.ok) {
+            allData = await response.json();
+            console.log('Loaded data from JSON file');
+        } else {
+            throw new Error('JSON file not found');
+        }
+    } catch (err) {
+        console.log('JSON file not available, using LocalStorage');
+        // Fall back to LocalStorage
+        const stored = localStorage.getItem('seasonAwards_allData');
+        if (stored) {
+            allData = JSON.parse(stored);
+        } else {
+            allData = {};
+        }
+    }
+
+    // Initialize current year if not exists
+    if (!allData[currentYear]) {
+        allData[currentYear] = {};
+        CONFIG.CATEGORIES.forEach(cat => {
+            allData[currentYear][cat.id] = [];
+        });
+    }
+
+    data = allData[currentYear];
+    renderAllTables();
+    showLoading(false);
 }
 
-function saveData() { localStorage.setItem(getStorageKey(), JSON.stringify(data)); }
+function switchYear() {
+    // Initialize year if not exists
+    if (!allData[currentYear]) {
+        allData[currentYear] = {};
+        CONFIG.CATEGORIES.forEach(cat => {
+            allData[currentYear][cat.id] = [];
+        });
+    }
 
-// ============ RENDERING ============
-function renderCurrentCategory() {
-    renderTable(currentCategory);
+    data = allData[currentYear];
+    renderAllTables();
+    updateYearDisplay();
+}
+
+// Save to LocalStorage (primary storage for browser session)
+function saveData() {
+    // Update allData with current year data
+    allData[currentYear] = data;
+
+    // Save to LocalStorage
+    localStorage.setItem('seasonAwards_allData', JSON.stringify(allData));
+
+    // Update sync status
+    updateSyncStatus('saving');
+
+    clearTimeout(window.saveTimeout);
+    window.saveTimeout = setTimeout(() => {
+        updateSyncStatus('saved');
+    }, 300);
+}
+
+function downloadJSON() {
+    const blob = new Blob([JSON.stringify(allData, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'awards_data.json';
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
+function updateSyncStatus(status) {
+    const el = document.getElementById('sync-status');
+    el.className = 'sync-status';
+
+    if (status === 'saving') {
+        el.classList.add('saving');
+        el.querySelector('span:last-child').textContent = 'Saving...';
+    } else {
+        el.querySelector('span:last-child').textContent = 'Saved';
+    }
+}
+
+function showLoading(show) {
+    document.getElementById('loading').classList.toggle('active', show);
+}
+
+// ============ TABLE RENDERING ============
+function renderAllTables() {
+    CONFIG.CATEGORIES.forEach(cat => renderTable(cat.id));
 }
 
 function renderTable(categoryId) {
@@ -240,14 +317,14 @@ function renderTable(categoryId) {
     const entries = data[categoryId] || [];
 
     entries.forEach((entry, index) => {
-        const row = createTableRow(entry, categoryId, index, cat.isPerson);
-        tbody.appendChild(row);
+        tbody.appendChild(createTableRow(entry, categoryId, index, cat.isPerson));
     });
 }
 
 function createTableRow(entry, categoryId, index, isPerson) {
     const row = document.createElement('tr');
 
+    // Name cell
     const nameCell = document.createElement('td');
     nameCell.className = isPerson ? 'name-cell person-cell' : 'name-cell';
 
@@ -268,19 +345,28 @@ function createTableRow(entry, categoryId, index, isPerson) {
 
     nameCell.querySelector('.btn-delete').addEventListener('click', e => {
         e.stopPropagation();
-        deleteEntry(categoryId, index);
+        if (editMode) deleteEntry(categoryId, index);
     });
 
     row.appendChild(nameCell);
 
+    // Award cells
     CONFIG.AWARDS.forEach((award, awardIndex) => {
         const cell = document.createElement('td');
-        cell.className = 'clickable';
+        cell.className = 'clickable' + (editMode ? '' : ' locked');
+
         const value = entry.awards?.[awardIndex] || '';
-        cell.textContent = value;
-        if (value === 'Y') cell.classList.add('winner');
-        else if (value === 'X') cell.classList.add('nominee');
-        cell.addEventListener('click', () => toggleCell(categoryId, index, awardIndex, cell));
+
+        if (value === 'X') {
+            cell.classList.add('nominee');
+        } else if (value === 'Y') {
+            cell.classList.add('winner');
+        }
+
+        cell.addEventListener('click', () => {
+            if (editMode) toggleCell(categoryId, index, awardIndex, cell);
+        });
+
         row.appendChild(cell);
     });
 
@@ -297,18 +383,30 @@ function toggleCell(categoryId, entryIndex, awardIndex, cell) {
     entry.awards[awardIndex] = next;
     saveData();
 
-    cell.textContent = next;
+    // Update cell
     cell.classList.remove('winner', 'nominee');
-    if (next === 'Y') cell.classList.add('winner');
-    else if (next === 'X') cell.classList.add('nominee');
+    if (next === 'X') {
+        cell.classList.add('nominee');
+    } else if (next === 'Y') {
+        cell.classList.add('winner');
+    }
 }
 
 // ============ ENTRY MANAGEMENT ============
 function addEntry(categoryId, input, extra = {}) {
+    if (!editMode) return;
+
     const name = input.value.trim();
     if (!name) return input.focus();
 
-    data[categoryId].push({ name, awards: new Array(CONFIG.AWARDS.length).fill(''), ...extra });
+    if (!data[categoryId]) data[categoryId] = [];
+
+    data[categoryId].push({
+        name,
+        awards: new Array(CONFIG.AWARDS.length).fill(''),
+        ...extra
+    });
+
     saveData();
     renderTable(categoryId);
     input.value = '';
@@ -316,6 +414,8 @@ function addEntry(categoryId, input, extra = {}) {
 }
 
 function deleteEntry(categoryId, index) {
+    if (!editMode) return;
+
     data[categoryId].splice(index, 1);
     saveData();
     renderTable(categoryId);
@@ -329,14 +429,22 @@ function setupAutocomplete(input, categoryId) {
     const searchType = input.dataset.searchType;
 
     input.addEventListener('input', function () {
-        const query = this.value.trim();
         clearTimeout(autocompleteTimeout);
-        if (query.length < 2) { list.classList.remove('active'); list.innerHTML = ''; return; }
+        const query = this.value.trim();
+
+        if (query.length < 2) {
+            list.classList.remove('active');
+            list.innerHTML = '';
+            return;
+        }
+
         autocompleteTimeout = setTimeout(() => searchTMDB(query, searchType, list, input, categoryId), 300);
     });
 
-    input.addEventListener('blur', () => setTimeout(() => list.classList.remove('active'), 250));
-    input.addEventListener('focus', function () { if (list.children.length && this.value.length >= 2) list.classList.add('active'); });
+    input.addEventListener('blur', () => setTimeout(() => list.classList.remove('active'), 200));
+    input.addEventListener('focus', function () {
+        if (list.children.length && this.value.length >= 2) list.classList.add('active');
+    });
 }
 
 async function searchTMDB(query, searchType, list, input, categoryId) {
@@ -351,7 +459,7 @@ async function searchTMDB(query, searchType, list, input, categoryId) {
         list.innerHTML = '';
 
         if (json.results?.length) {
-            json.results.slice(0, 6).forEach(item => {
+            json.results.slice(0, 5).forEach(item => {
                 const div = document.createElement('div');
                 div.className = 'autocomplete-item';
 
@@ -360,7 +468,10 @@ async function searchTMDB(query, searchType, list, input, categoryId) {
                     const year = item.release_date?.substring(0, 4) || '';
                     div.innerHTML = `
                         ${poster ? `<img class="autocomplete-poster" src="${poster}">` : '<div class="autocomplete-poster"></div>'}
-                        <div class="autocomplete-info"><div class="autocomplete-title">${item.title}</div><div class="autocomplete-subtitle">${year}</div></div>
+                        <div class="autocomplete-info">
+                            <div class="autocomplete-title">${item.title}</div>
+                            <div class="autocomplete-subtitle">${year}</div>
+                        </div>
                     `;
                     div.addEventListener('mousedown', e => {
                         e.preventDefault();
@@ -372,7 +483,10 @@ async function searchTMDB(query, searchType, list, input, categoryId) {
                     const photo = item.profile_path ? `${CONFIG.TMDB_IMAGE_BASE}w92${item.profile_path}` : '';
                     div.innerHTML = `
                         ${photo ? `<img class="autocomplete-person-photo" src="${photo}">` : '<div class="autocomplete-person-photo"></div>'}
-                        <div class="autocomplete-info"><div class="autocomplete-title">${item.name}</div><div class="autocomplete-subtitle">${item.known_for_department || ''}</div></div>
+                        <div class="autocomplete-info">
+                            <div class="autocomplete-title">${item.name}</div>
+                            <div class="autocomplete-subtitle">${item.known_for_department || ''}</div>
+                        </div>
                     `;
                     div.addEventListener('mousedown', e => {
                         e.preventDefault();
@@ -381,6 +495,7 @@ async function searchTMDB(query, searchType, list, input, categoryId) {
                         addEntry(categoryId, input, { profilePath: item.profile_path, tmdbId: item.id });
                     });
                 }
+
                 list.appendChild(div);
             });
             list.classList.add('active');
@@ -389,93 +504,5 @@ async function searchTMDB(query, searchType, list, input, categoryId) {
         }
     } catch (err) {
         console.error('TMDB error:', err);
-    }
-}
-
-// ============ OSCAR AUTO-FETCH ============
-async function fetchOscarNominations() {
-    const loading = document.getElementById('loading');
-    const btn = document.getElementById('btn-fetch');
-
-    btn.disabled = true;
-    loading.classList.add('active');
-
-    try {
-        // Get the Oscar ceremony year from the season
-        const [startYear, endYear] = currentYear.split('_').map(Number);
-        const oscarYear = endYear; // Oscar ceremony is in the second year
-
-        // Fetch Oscar-winning/nominated movies
-        // TMDB doesn't have a direct Oscar API, so we search for known Oscar films
-        // We'll search for highly rated films from that year
-
-        const url = `${CONFIG.TMDB_BASE_URL}/discover/movie?api_key=${CONFIG.TMDB_API_KEY}&primary_release_year=${startYear}&sort_by=vote_average.desc&vote_count.gte=1000&page=1`;
-
-        const res = await fetch(url);
-        const json = await res.json();
-
-        if (json.results) {
-            // Add top films to Best Film category
-            const filmsToAdd = json.results.slice(0, 10);
-
-            for (const film of filmsToAdd) {
-                // Check if already exists
-                const exists = data['best-film'].some(e => e.tmdbId === film.id);
-                if (!exists) {
-                    data['best-film'].push({
-                        name: film.title,
-                        posterPath: film.poster_path,
-                        tmdbId: film.id,
-                        awards: new Array(CONFIG.AWARDS.length).fill('')
-                    });
-                }
-
-                // Fetch crew for director
-                try {
-                    const creditsRes = await fetch(`${CONFIG.TMDB_BASE_URL}/movie/${film.id}/credits?api_key=${CONFIG.TMDB_API_KEY}`);
-                    const credits = await creditsRes.json();
-
-                    // Get director
-                    const director = credits.crew?.find(c => c.job === 'Director');
-                    if (director) {
-                        const dirExists = data['best-director'].some(e => e.tmdbId === director.id);
-                        if (!dirExists) {
-                            data['best-director'].push({
-                                name: `${director.name} — ${film.title}`,
-                                profilePath: director.profile_path,
-                                tmdbId: director.id,
-                                awards: new Array(CONFIG.AWARDS.length).fill('')
-                            });
-                        }
-                    }
-
-                    // Get lead actors (first 2)
-                    const actors = credits.cast?.slice(0, 2) || [];
-                    for (const actor of actors) {
-                        const catId = actor.gender === 1 ? 'best-actress' : 'best-actor';
-                        const actorExists = data[catId].some(e => e.tmdbId === actor.id);
-                        if (!actorExists) {
-                            data[catId].push({
-                                name: `${actor.name} — ${film.title}`,
-                                profilePath: actor.profile_path,
-                                tmdbId: actor.id,
-                                awards: new Array(CONFIG.AWARDS.length).fill('')
-                            });
-                        }
-                    }
-                } catch (e) {
-                    console.error('Credits fetch error:', e);
-                }
-            }
-
-            saveData();
-            renderCurrentCategory();
-        }
-    } catch (err) {
-        console.error('Fetch error:', err);
-        alert('Error fetching nominations. Please try again.');
-    } finally {
-        loading.classList.remove('active');
-        btn.disabled = false;
     }
 }
