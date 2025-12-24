@@ -180,11 +180,11 @@ function scatterPosters() {
         img.style.opacity = '0';
     });
 
-    // Title: zoom in toward user
+    // Title: slide left with the swipe
     const title = document.querySelector('.home-title');
     if (title) {
         title.style.transition = 'transform 0.6s cubic-bezier(0.2, 1, 0.3, 1), opacity 0.4s';
-        title.style.transform = 'translate(-50%, -50%) scale(3)';
+        title.style.transform = 'translate(-150vw, -50%)';
         title.style.opacity = '0';
     }
 }

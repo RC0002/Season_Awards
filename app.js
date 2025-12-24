@@ -421,7 +421,7 @@ function touchEnd(e) {
 
             // Reset posters after transition
             setTimeout(() => resetPosters(), 500);
-        }, 600);
+        }, 300);
         return;
     } else if (isHomePage) {
         // Stay on home page

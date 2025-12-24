@@ -453,7 +453,7 @@ body {
 .category-card-inner {
     background: var(--card-bg);
     border-radius: 12px;
-    padding: 16px;
+    padding: 0;
     height: calc(100vh - 240px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -545,16 +545,18 @@ body {
 
 /* ============ TABLE ============ */
 .table-wrap {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--line);
-    border-radius: 12px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
     overflow: hidden;
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .table-scroll {
     overflow-x: auto;
-    max-height: calc(100vh - 280px);
+    height: 100%;
     overflow-y: auto;
 }
 
@@ -895,10 +897,13 @@ td.clickable.locked:hover {
 }
 
 /* Nomination - white camera icon */
+/* Nomination - white X */
 .nominee::before {
-    content: '🎥';
-    font-size: 14px;
-    filter: grayscale(100%) brightness(2);
+    content: '✕';
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    filter: none;
 }
 
 /* ============ WINNER STYLES ============ */
