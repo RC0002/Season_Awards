@@ -1,0 +1,839 @@
+{
+  "best-film": [
+    {
+      "name": "Boyhood",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "bafta": "Y",
+        "sag": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/2BvtvDUyxiMJ4dmKfiQf4qdOHQN.jpg",
+      "tmdbId": 85350
+    },
+    {
+      "name": "The Imitation Game",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg",
+      "tmdbId": 205596
+    },
+    {
+      "name": "Birdman",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "sag": "Y",
+        "critics": "X",
+        "nbr": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/9n0u3Ee7OUjgeyF5kIwahxkf4xm.jpg",
+      "tmdbId": 435092
+    },
+    {
+      "name": "American Sniper",
+      "awards": {
+        "oscar": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/i1U46OwMc6vlm7OoSUKfqUH615e.jpg",
+      "tmdbId": 190859
+    },
+    {
+      "name": "Nightcrawler",
+      "awards": {
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/j9HrX8f7GbZQm1BrBiR40uFQZSb.jpg",
+      "tmdbId": 242582
+    },
+    {
+      "name": "Unbroken",
+      "awards": {
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/vAlHUjHwLWMV5mg4epGR9WSIfiy.jpg",
+      "tmdbId": 227306
+    },
+    {
+      "name": "Birdman or (The Unexpected Virtue of Ignorance)",
+      "awards": {
+        "oscar": "Y",
+        "afi": "Y"
+      },
+      "posterPath": "/rHUg2AuIuLSIYMYFgavVwqt1jtc.jpg",
+      "tmdbId": 194662
+    },
+    {
+      "name": "The Grand Budapest Hotel",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "posterPath": "/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
+      "tmdbId": 120467
+    },
+    {
+      "name": "Selma",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X",
+        "afi": "Y"
+      },
+      "posterPath": "/wq4lhMc4BuOyQqe1ZGzhxLyy3Uk.jpg",
+      "tmdbId": 273895
+    },
+    {
+      "name": "Whiplash",
+      "awards": {
+        "oscar": "X",
+        "critics": "X",
+        "afi": "Y"
+      },
+      "posterPath": "/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+      "tmdbId": 244786
+    },
+    {
+      "name": "Foxcatcher",
+      "awards": {
+        "gg": "X",
+        "afi": "Y"
+      },
+      "genre": "Drama",
+      "posterPath": "/w6Sl079QtUcQ9dVQ2RP6aN9NBXx.jpg",
+      "tmdbId": 87492
+    },
+    {
+      "name": "Into the Woods",
+      "awards": {
+        "gg": "X",
+        "afi": "Y"
+      },
+      "genre": "Comedy"
+    },
+    {
+      "name": "Gone Girl",
+      "awards": {
+        "critics": "X",
+        "nbr": "Y"
+      },
+      "posterPath": "/ts996lKsxvjkO2yiYG0ht4qAicO.jpg",
+      "tmdbId": 210577
+    },
+    {
+      "name": "Interstellar",
+      "awards": {
+        "afi": "Y"
+      },
+      "posterPath": "/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      "tmdbId": 157336
+    },
+    {
+      "name": "A Most Violent Year",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/i2jWXgaie4a2Nwn55GDuNVn6RK3.jpg",
+      "tmdbId": 241239
+    },
+    {
+      "name": "Fury",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/pfte7wdMobMF4CVHuOxyu6oqeeA.jpg",
+      "tmdbId": 228150
+    },
+    {
+      "name": "Inherent Vice",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/pfVua7TzzttOh3RTOuBqT7xN0oY.jpg",
+      "tmdbId": 171274
+    },
+    {
+      "name": "The Lego Movie",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/lbctonEnewCYZ4FYoTZhs8cidAl.jpg",
+      "tmdbId": 137106
+    },
+    {
+      "name": "Ti guardo",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/lxExFOPqTbm08e50T23eapbavV6.jpg",
+      "tmdbId": 345269
+    },
+    {
+      "name": "The Theory of Everything",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "posterPath": "/kJuL37NTE51zVP3eG5aGMyKAIlh.jpg",
+      "tmdbId": 266856
+    },
+    {
+      "name": "Pride",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/Kc3vbqO0X4VRnjACGNoWLNQvHo.jpg",
+      "tmdbId": 234200
+    },
+    {
+      "name": "St. Vincent",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/1bb7MTHCIPhpKZFysDpxNaNrdMk.jpg",
+      "tmdbId": 239563
+    }
+  ],
+  "best-director": [
+    {
+      "name": "Richard Linklater",
+      "film": "Boyhood",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y"
+      },
+      "profilePath": "/xSctxeZQzQbZoaxIvcDeHlDjbiN.jpg",
+      "tmdbId": 564
+    },
+    {
+      "name": "Alejandro G. Iñárritu",
+      "film": "Birdman or (The Unexpected Virtue of Ignorance)",
+      "awards": {
+        "oscar": "Y"
+      },
+      "profilePath": "/Av0jewh8wltCl1CB8MfEIrvgfMZ.jpg",
+      "tmdbId": 223
+    },
+    {
+      "name": "Clint Eastwood",
+      "awards": {
+        "nbr": "Y"
+      },
+      "film": "American Sniper",
+      "profilePath": "/8TwdCfeOZH7ucRlfLZ6wObxa7cO.jpg",
+      "tmdbId": 190
+    },
+    {
+      "name": "Pablo Trapero",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Il clan",
+      "profilePath": "/h8qZtRXhyheacl37J3MYx7aN05G.jpg",
+      "tmdbId": 56210
+    },
+    {
+      "name": "Wes Anderson",
+      "film": "The Grand Budapest Hotel",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/s03CeUeC5yAXyB1acqP0zGNo2SC.jpg",
+      "tmdbId": 5655
+    },
+    {
+      "name": "Ava DuVernay",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "film": "Selma",
+      "profilePath": "/84rc8I3Wf5zkCWGMNeTtmRekHW0.jpg",
+      "tmdbId": 929825
+    },
+    {
+      "name": "David Fincher",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "film": "Gone Girl",
+      "profilePath": "/tpEczFclQZeKAiCeKZZ0adRvtfz.jpg",
+      "tmdbId": 7467
+    },
+    {
+      "name": "Alejandro G. Iñárritu",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "film": "Birdman",
+      "profilePath": "/Av0jewh8wltCl1CB8MfEIrvgfMZ.jpg",
+      "tmdbId": 223
+    },
+    {
+      "name": "Bennett Miller",
+      "film": "Foxcatcher",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/r1XGBl8TYNuCm7APjWN8npP4DEw.jpg",
+      "tmdbId": 5345
+    },
+    {
+      "name": "Morten Tyldum",
+      "film": "The Imitation Game",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/yTAUscziHY7mVGQ2BdBCflGYLde.jpg",
+      "tmdbId": 77965
+    },
+    {
+      "name": "Angelina Jolie",
+      "film": "Unbroken",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/nXA9vMvskmIDB5NqHCkTQPmemep.jpg",
+      "tmdbId": 11701
+    }
+  ],
+  "best-actor": [
+    {
+      "name": "Eddie Redmayne",
+      "film": "The Theory of Everything",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "sag": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/fSvG7qzoBBnJUmgtIuMgrK3EQPN.jpg",
+      "tmdbId": 37632
+    },
+    {
+      "name": "J. K. Simmons",
+      "film": "Whiplash",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "sag": "Y"
+      },
+      "profilePath": "/ScmKoJ9eiSUOthAt1PDNLi8Fkw.jpg",
+      "tmdbId": 18999
+    },
+    {
+      "name": "Michael Keaton",
+      "awards": {
+        "gg": "Y",
+        "bafta": "X",
+        "sag": "X"
+      },
+      "film": "Birdman",
+      "role": "Leading",
+      "profilePath": "/w6fwAQ7IwEFqtzByA1Wyz2Dwp7R.jpg",
+      "tmdbId": 2232
+    },
+    {
+      "name": "Oscar Isaac",
+      "awards": {
+        "nbr": "Y"
+      },
+      "film": "A Most Violent Year",
+      "profilePath": "/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg",
+      "tmdbId": 25072
+    },
+    {
+      "name": "Fabrice Luchini",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "La corte",
+      "profilePath": "/krR5EUfM13UJwsB07ffzPU7FXYR.jpg",
+      "tmdbId": 28255
+    },
+    {
+      "name": "Benedict Cumberbatch",
+      "film": "The Imitation Game",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg",
+      "tmdbId": 71580
+    },
+    {
+      "name": "Ethan Hawke",
+      "film": "Boyhood",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
+      "tmdbId": 569
+    },
+    {
+      "name": "Mark Ruffalo",
+      "film": "Foxcatcher",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
+      "tmdbId": 103
+    },
+    {
+      "name": "Steve Carell",
+      "film": "Foxcatcher",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X"
+      },
+      "profilePath": "/ULqKHMosznI7U2JyRZYMvSxUvq.jpg",
+      "tmdbId": 4495
+    },
+    {
+      "name": "Robert Duvall",
+      "film": "The Judge",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/ybMmK25h4IVtfE7qrnlVp47RQlh.jpg",
+      "tmdbId": 3087
+    },
+    {
+      "name": "Jake Gyllenhaal",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "film": "Nightcrawler",
+      "role": "Leading",
+      "profilePath": "/btORQRDyGCF0KNweGGYpmQXZK3P.jpg",
+      "tmdbId": 131
+    },
+    {
+      "name": "Edward Norton",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "film": "Birdman",
+      "role": "Supporting",
+      "profilePath": "/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg",
+      "tmdbId": 819
+    },
+    {
+      "name": "Ralph Fiennes",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "film": "The Grand Budapest Hotel",
+      "role": "Leading",
+      "profilePath": "/yOkUvQ7mPwLSqK6lTpg1PpVfOW9.jpg",
+      "tmdbId": 5469
+    },
+    {
+      "name": "David Oyelowo",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "film": "Selma",
+      "role": "Leading",
+      "profilePath": "/7UZHRwOKe2cYxj8SeNUklyPYkns.jpg",
+      "tmdbId": 35013
+    },
+    {
+      "name": "Bradley Cooper",
+      "film": "American Sniper",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg",
+      "tmdbId": 51329
+    },
+    {
+      "name": "Michael Keaton",
+      "film": "Birdman or (The Unexpected Virtue of Ignorance)",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/w6fwAQ7IwEFqtzByA1Wyz2Dwp7R.jpg",
+      "tmdbId": 2232
+    },
+    {
+      "name": "Edward Norton",
+      "film": "Birdman or (The Unexpected Virtue of Ignorance)",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg",
+      "tmdbId": 819
+    },
+    {
+      "name": "Bill Murray",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "St. Vincent",
+      "role": "Leading",
+      "profilePath": "/nnCsJc9x3ZiG3AFyiyc3FPehppy.jpg",
+      "tmdbId": 1532
+    },
+    {
+      "name": "Joaquin Phoenix",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Inherent Vice",
+      "role": "Leading",
+      "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
+      "tmdbId": 73421
+    },
+    {
+      "name": "Christoph Waltz",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Big Eyes",
+      "role": "Leading",
+      "profilePath": "/jMvLGCVXLaBqjRLf5olyvEucZob.jpg",
+      "tmdbId": 27319
+    },
+    {
+      "name": "Josh Brolin",
+      "film": "Inherent Vice",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg",
+      "tmdbId": 16851
+    }
+  ],
+  "best-actress": [
+    {
+      "name": "Julianne Moore",
+      "film": "Still Alice",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "sag": "Y",
+        "nbr": "Y"
+      },
+      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
+      "tmdbId": 1231
+    },
+    {
+      "name": "Patricia Arquette",
+      "film": "Boyhood",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "sag": "Y"
+      },
+      "profilePath": "/jeThSouMatiuRiLkjDvSBLHpmq0.jpg",
+      "tmdbId": 4687
+    },
+    {
+      "name": "Amy Adams",
+      "awards": {
+        "gg": "Y",
+        "bafta": "X"
+      },
+      "film": "Big Eyes",
+      "role": "Leading",
+      "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
+      "tmdbId": 9273
+    },
+    {
+      "name": "Valeria Golino",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Per amor vostro",
+      "profilePath": "/bLw0lNPEhICtbTLtnTswamefN7C.jpg",
+      "tmdbId": 3124
+    },
+    {
+      "name": "Felicity Jones",
+      "film": "The Theory of Everything",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/gsrb1CuyAQtTVZILtNA5tRnhHbs.jpg",
+      "tmdbId": 72855
+    },
+    {
+      "name": "Rosamund Pike",
+      "film": "Gone Girl",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/8ObNklHDi2hjdz0ayzJFB9jtqzm.jpg",
+      "tmdbId": 10882
+    },
+    {
+      "name": "Reese Witherspoon",
+      "film": "Wild",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/o1z4UwW2137IViFIRk8AV8hWze1.jpg",
+      "tmdbId": 368
+    },
+    {
+      "name": "Keira Knightley",
+      "film": "The Imitation Game",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/bRC1B2VwV0wK3ElciFAK6QZf2wD.jpg",
+      "tmdbId": 116
+    },
+    {
+      "name": "Meryl Streep",
+      "film": "Into the Woods",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
+      "tmdbId": 5064
+    },
+    {
+      "name": "Emma Stone",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "film": "Birdman",
+      "role": "Supporting",
+      "profilePath": "/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg",
+      "tmdbId": 54693
+    },
+    {
+      "name": "Jennifer Aniston",
+      "awards": {
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "film": "Cake",
+      "role": "Leading",
+      "profilePath": "/vq7KKJE4gsb8WQEUkvMB2zUcsOO.jpg",
+      "tmdbId": 4491
+    },
+    {
+      "name": "Marion Cotillard",
+      "film": "Two Days, One Night",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/biitzOF0GffIqFYLyOPkoiaOngQ.jpg",
+      "tmdbId": 8293
+    },
+    {
+      "name": "Jessica Chastain",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "film": "A Most Violent Year",
+      "role": "Supporting",
+      "profilePath": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
+      "tmdbId": 83002
+    },
+    {
+      "name": "Laura Dern",
+      "film": "Wild",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/gB9PnGEvxKg33OSlcqptQwTBwPE.jpg",
+      "tmdbId": 4784
+    },
+    {
+      "name": "Emma Stone",
+      "film": "Birdman or (The Unexpected Virtue of Ignorance)",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg",
+      "tmdbId": 54693
+    },
+    {
+      "name": "Emily Blunt",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Into the Woods",
+      "role": "Leading",
+      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
+      "tmdbId": 5081
+    },
+    {
+      "name": "Helen Mirren",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Hundred-Foot Journey",
+      "role": "Leading",
+      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
+      "tmdbId": 15735
+    },
+    {
+      "name": "Julianne Moore",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Maps to the Stars",
+      "role": "Leading",
+      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
+      "tmdbId": 1231
+    },
+    {
+      "name": "Quvenzhané Wallis",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Annie",
+      "role": "Leading",
+      "profilePath": "/lHW9hnGlPMgexsbraR7xyBh5qEI.jpg",
+      "tmdbId": 1055235
+    },
+    {
+      "name": "Imelda Staunton",
+      "film": "Pride",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/96LYLMnUOWZ4DFXEeQPItNsxzEP.jpg",
+      "tmdbId": 11356
+    },
+    {
+      "name": "Rene Russo",
+      "film": "Nightcrawler",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/iqnQqYacK3xtxxyu7JTgBP4HFEg.jpg",
+      "tmdbId": 14343
+    },
+    {
+      "name": "Naomi Watts",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "St. Vincent",
+      "role": "Supporting",
+      "profilePath": "/5s6UE6VjYx5TBDvyFk4vfOdS9GR.jpg",
+      "tmdbId": 3489
+    },
+    {
+      "name": "Tilda Swinton",
+      "film": "Snowpiercer",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
+      "tmdbId": 3063
+    }
+  ]
+}

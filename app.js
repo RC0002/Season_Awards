@@ -34,21 +34,40 @@ const CONFIG = {
     TMDB_BASE_URL: 'https://api.themoviedb.org/3',
     TMDB_IMAGE_BASE: 'https://image.tmdb.org/t/p/',
 
-    START_YEAR: 2018,
+    START_YEAR: 2012,
 
+    // Map award keys to CSS classes for styling
     AWARD_CLASSES: {
-        'Academy': 'academy',
-        'GG': 'gg',
-        'SAG': 'sag',
-        'Critics': 'critics',
-        'BAFTA': 'bafta',
-        'Venice': 'venice'
+        'oscar': 'academy',
+        'gg': 'gg',
+        'sag': 'sag',
+        'critics': 'critics',
+        'bafta': 'bafta',
+        'venice': 'venice'
     },
 
+    // Awards with key (for data) and label (for display)
     AWARDS: [
-        'Academy', 'GG', 'BAFTA', 'SAG', 'LAFCA', 'AFI', 'NBR',
-        'DGA', 'PGA', 'WGA', 'ADG', 'Critics', 'Gotham',
-        'HCA', 'Spirit', 'BIFA', 'Annie', 'NYFCC', 'Cannes', 'Venice'
+        { key: 'oscar', label: 'Academy' },
+        { key: 'gg', label: 'GG' },
+        { key: 'bafta', label: 'BAFTA' },
+        { key: 'sag', label: 'SAG' },
+        { key: 'critics', label: 'Critics' },
+        { key: 'lafca', label: 'LAFCA' },
+        { key: 'afi', label: 'AFI' },
+        { key: 'nbr', label: 'NBR' },
+        { key: 'dga', label: 'DGA' },
+        { key: 'pga', label: 'PGA' },
+        { key: 'wga', label: 'WGA' },
+        { key: 'adg', label: 'ADG' },
+        { key: 'gotham', label: 'Gotham' },
+        { key: 'hca', label: 'HCA' },
+        { key: 'spirit', label: 'Spirit' },
+        { key: 'bifa', label: 'BIFA' },
+        { key: 'annie', label: 'Annie' },
+        { key: 'nyfcc', label: 'NYFCC' },
+        { key: 'cannes', label: 'Cannes' },
+        { key: 'venice', label: 'Venice' }
     ],
 
     CATEGORIES: [
@@ -68,6 +87,7 @@ let isDragging = false;
 let startX = 0;
 let prevTranslate = 0;
 let isSynced = true;
+let isHomePage = true; // Home is default page
 
 // Trackpad throttling
 let lastWheelTime = 0;
@@ -99,10 +119,6 @@ function buildPage() {
                 <div class="nav-links" id="nav-links"></div>
                 <div class="nav-actions">
                     <select class="nav-year-select" id="year-select"></select>
-                    <div class="edit-toggle">
-                        <span>Edit</span>
-                        <div class="toggle-switch" id="edit-toggle"></div>
-                    </div>
                     <div class="sync-status synced" id="sync-status">
                         <span class="sync-dot"></span>
                         <span class="sync-text">Synced</span>
@@ -112,19 +128,22 @@ function buildPage() {
         </nav>
         
         <main class="main-content">
-            <div class="page-header">
-                <h1 class="page-title">Season Awards Nominations and Winners <span id="year-display"></span></h1>
-                <div class="header-controls">
-                    <div class="autocomplete-wrapper" id="header-autocomplete-wrapper">
-                        <input type="text" class="header-input" id="header-input" placeholder="Add entry..." disabled>
-                        <div class="autocomplete-list" id="header-autocomplete"></div>
-                    </div>
-                    <button class="header-btn" id="header-add-btn" disabled>+ Add</button>
+            <div class="category-title-section" id="category-title-section">
+                <div class="title-row">
+                    <h2 class="category-title" id="current-category-title">Best Film</h2>
+                    <h1 class="page-title">Season Awards Nominations and Winners <span id="year-display"></span></h1>
                 </div>
+                <div class="category-divider"></div>
             </div>
-            <div class="header-divider"></div>
             
             <div class="swipe-container" id="swipe-container">
+                <div class="home-overlay" id="home-overlay">
+                    <div class="home-content">
+                        <h1 class="home-title">Season Awards</h1>
+                        <div class="poster-marquee poster-marquee-awards" id="poster-marquee-awards"></div>
+                        <div class="poster-marquee poster-marquee-trending" id="poster-marquee-trending"></div>
+                    </div>
+                </div>
                 <div class="swipe-track" id="swipe-track"></div>
             </div>
             
@@ -138,10 +157,26 @@ function buildPage() {
 
     setupNavigation();
     setupYearSelector();
-    setupEditToggle();
     createCategoryCards();
     createSwipeIndicators();
     setupSwipeGestures();
+
+    // Show home page on load
+    showHomeOnLoad();
+}
+
+function showHomeOnLoad() {
+    const overlay = document.getElementById('home-overlay');
+    const titleSection = document.getElementById('category-title-section');
+    if (overlay) {
+        overlay.style.opacity = 1;
+        overlay.classList.add('active');
+    }
+    if (titleSection) {
+        titleSection.style.opacity = 0;
+    }
+    updateHomeIndicator();
+    updateNavigation(); // Deselect nav links on home
 }
 
 function setupNavigation() {
@@ -211,14 +246,13 @@ function createCategoryCards() {
 
         card.innerHTML = `
             <div class="category-card-inner">
-                <h2 class="category-title">${cat.title}</h2>
                 <div class="table-wrap">
                     <div class="table-scroll">
                         <table>
                             <thead>
                                 <tr>
                                     <th>${cat.placeholder}</th>
-                                    ${CONFIG.AWARDS.map(a => `<th>${a}</th>`).join('')}
+                                    ${CONFIG.AWARDS.map(a => `<th>${a.label}</th>`).join('')}
                                 </tr>
                             </thead>
                             <tbody id="${cat.id}-tbody"></tbody>
@@ -231,86 +265,56 @@ function createCategoryCards() {
         track.appendChild(card);
     });
 
-    setupHeaderInput();
 }
 
 // Header input for adding entries to current category
-function setupHeaderInput() {
-    const input = document.getElementById('header-input');
-    const btn = document.getElementById('header-add-btn');
-    const list = document.getElementById('header-autocomplete');
+// Header input functions removed
 
-    btn.addEventListener('click', () => {
-        const cat = CONFIG.CATEGORIES[currentCategoryIndex];
-        addEntry(cat.id, input);
-    });
 
-    // Autocomplete for header input
-    input.addEventListener('input', function () {
-        clearTimeout(autocompleteTimeout);
-        const query = this.value.trim();
-        const cat = CONFIG.CATEGORIES[currentCategoryIndex];
-
-        if (query.length < 2) {
-            list.classList.remove('active');
-            list.innerHTML = '';
-            lastSearchResults[cat.id] = [];
-            return;
-        }
-
-        autocompleteTimeout = setTimeout(() => {
-            searchTMDBHeader(query, cat.searchType, list, input, cat.id);
-        }, 300);
-    });
-
-    // Enter key selects first result
-    input.addEventListener('keypress', function (e) {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            const cat = CONFIG.CATEGORIES[currentCategoryIndex];
-            const results = lastSearchResults[cat.id];
-            if (results && results.length > 0) {
-                const firstItem = results[0];
-                if (cat.searchType === 'movie') {
-                    input.value = firstItem.title;
-                    addEntry(cat.id, input, { posterPath: firstItem.poster_path, tmdbId: firstItem.id });
-                } else {
-                    input.value = firstItem.name;
-                    addEntry(cat.id, input, { profilePath: firstItem.profile_path, tmdbId: firstItem.id });
-                }
-                list.classList.remove('active');
-            }
-        }
-    });
-
-    input.addEventListener('blur', () => setTimeout(() => list.classList.remove('active'), 200));
-    input.addEventListener('focus', function () {
-        if (list.children.length && this.value.length >= 2) list.classList.add('active');
-    });
-}
-
-// Update header input placeholder based on current category
-function updateHeaderInput() {
-    const input = document.getElementById('header-input');
-    const btn = document.getElementById('header-add-btn');
-    const cat = CONFIG.CATEGORIES[currentCategoryIndex];
-
-    input.placeholder = `Add ${cat.placeholder}...`;
-    input.disabled = !editMode;
-    btn.disabled = !editMode;
-    input.dataset.searchType = cat.searchType;
-}
 
 // Create swipe indicator dots
 function createSwipeIndicators() {
     const indicators = document.getElementById('swipe-indicators');
     if (!indicators) return;
 
+    // Add home icon first
+    const homeIcon = document.createElement('div');
+    homeIcon.className = 'swipe-dot home-icon';
+    homeIcon.innerHTML = '';
+    homeIcon.addEventListener('click', () => {
+        if (!isHomePage) {
+            isHomePage = true;
+            document.getElementById('home-overlay').style.opacity = 1;
+            document.getElementById('home-overlay').classList.add('active');
+            updateHomeIndicator();
+            updateCategoryTitle();
+        }
+    });
+    indicators.appendChild(homeIcon);
+
     CONFIG.CATEGORIES.forEach((cat, i) => {
         const dot = document.createElement('div');
         dot.className = `swipe-dot ${i === 0 ? 'active' : ''}`;
-        dot.addEventListener('click', () => goToCategory(i));
+        dot.addEventListener('click', () => {
+            if (isHomePage) {
+                isHomePage = false;
+                document.getElementById('home-overlay').style.opacity = 0;
+                document.getElementById('home-overlay').classList.remove('active');
+                updateCategoryTitle();
+            }
+            goToCategory(i);
+        });
         indicators.appendChild(dot);
+    });
+}
+
+function updateHomeIndicator() {
+    const homeIcon = document.querySelector('.swipe-dot.home-icon');
+    if (homeIcon) {
+        homeIcon.classList.toggle('active', isHomePage);
+    }
+    document.querySelectorAll('.swipe-dot:not(.home-icon)').forEach((dot, i) => {
+        dot.classList.toggle('active', !isHomePage && i === currentCategoryIndex);
     });
 }
 
@@ -354,6 +358,16 @@ function touchMove(e) {
     if (!isDragging) return;
     const currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
     const diff = currentX - startX;
+
+    // Show home overlay when swiping right from first card
+    if (currentCategoryIndex === 0 && diff > 0 && !isHomePage) {
+        const overlay = document.getElementById('home-overlay');
+        const opacity = Math.min(diff / 400, 1);
+        overlay.style.opacity = opacity;
+    } else if (!isHomePage) {
+        document.getElementById('home-overlay').style.opacity = 0;
+    }
+
     setTrackPosition(prevTranslate + diff);
 }
 
@@ -370,6 +384,53 @@ function touchEnd(e) {
     }
 
     const diff = endX - startX;
+    const overlay = document.getElementById('home-overlay');
+
+    // Handle home page transition
+    if (currentCategoryIndex === 0 && diff > 250 && !isHomePage) {
+        // Swipe right from first card - go to home
+        isHomePage = true;
+        overlay.style.opacity = 1;
+        overlay.classList.add('active');
+        updateHomeIndicator();
+        updateCategoryTitle();
+        updateNavigation(); // Deselect nav links
+        return;
+    } else if (isHomePage && diff < -80) {
+        // Swipe left from home - scatter posters and go to first card
+        isHomePage = false;
+
+        // Scatter the posters for visual effect
+        scatterPosters();
+
+        // After scatter animation, transition to cards
+        setTimeout(() => {
+            overlay.style.opacity = 0;
+            overlay.classList.remove('active');
+            updateHomeIndicator();
+            updateCategoryTitle();
+
+            // Position track to the right first, then animate to center
+            const track = document.getElementById('swipe-track');
+            track.classList.add('dragging');
+            setTrackPosition(window.innerWidth);
+            requestAnimationFrame(() => {
+                track.classList.remove('dragging');
+                goToCategory(0);
+            });
+
+            // Reset posters after transition
+            setTimeout(() => resetPosters(), 500);
+        }, 600);
+        return;
+    } else if (isHomePage) {
+        // Stay on home page
+        overlay.style.opacity = 1;
+        return;
+    }
+
+    // Reset overlay if swipe wasn't enough
+    overlay.style.opacity = 0;
 
     if (diff < -80 && currentCategoryIndex < CONFIG.CATEGORIES.length - 1) {
         goToCategory(currentCategoryIndex + 1);
@@ -411,16 +472,27 @@ function goToCategory(index) {
     currentCategoryIndex = index;
     setPositionByIndex();
     updateNavigation();
-    updateHeaderInput();
+    updateCategoryTitle();
 }
 
 function updateNavigation() {
     document.querySelectorAll('.nav-link').forEach((link, i) => {
-        link.classList.toggle('active', i === currentCategoryIndex);
+        // Don't select any link when on home page
+        link.classList.toggle('active', !isHomePage && i === currentCategoryIndex);
     });
-    document.querySelectorAll('.swipe-dot').forEach((dot, i) => {
-        dot.classList.toggle('active', i === currentCategoryIndex);
-    });
+    // Use updateHomeIndicator for swipe dots (handles home icon separately)
+    updateHomeIndicator();
+}
+
+function updateCategoryTitle() {
+    const titleEl = document.getElementById('current-category-title');
+    const titleSection = document.querySelector('.category-title-section');
+    if (titleEl && !isHomePage) {
+        titleEl.textContent = CONFIG.CATEGORIES[currentCategoryIndex].title;
+        titleSection.style.opacity = 1;
+    } else if (titleSection && isHomePage) {
+        titleSection.style.opacity = 0;
+    }
 }
 
 function updateYearDisplay() {
@@ -482,8 +554,61 @@ async function loadData() {
 
     renderAllTables();
     showLoading(false);
-    setTimeout(() => setPositionByIndex(), 100);
+    // Initialize home page (from home.js)
+    initHomePage();
 }
+
+// Load pre-scraped awards data from JSON file for current year
+async function loadScrapedData(year = null) {
+    const targetYear = year || currentYear;
+    const filename = `data/data_${targetYear - 1}_${targetYear}.json`;
+
+    try {
+        showLoading(true);
+        const response = await fetch(filename);
+
+        if (!response.ok) {
+            console.warn(`⚠️ No scraped data for ${targetYear}`);
+            showLoading(false);
+            return false;
+        }
+
+        const scrapedData = await response.json();
+
+        // Merge scraped data into current data
+        for (const catId in scrapedData) {
+            if (!data[catId]) data[catId] = [];
+
+            // Add entries that don't already exist
+            const existingNames = new Set(data[catId].map(e => e.name));
+            for (const entry of scrapedData[catId]) {
+                if (!existingNames.has(entry.name)) {
+                    data[catId].push(entry);
+                } else {
+                    // Update existing entry with scraped awards
+                    const existing = data[catId].find(e => e.name === entry.name);
+                    if (existing && entry.awards) {
+                        if (!existing.awards) existing.awards = {};
+                        Object.assign(existing.awards, entry.awards);
+                    }
+                }
+            }
+        }
+
+        await saveData();
+        renderAllTables();
+        showLoading(false);
+        console.log(`📥 Loaded scraped data for ${targetYear - 1}/${targetYear}`);
+        return true;
+    } catch (err) {
+        console.error('❌ Failed to load scraped data:', err);
+        showLoading(false);
+        return false;
+    }
+}
+
+// Make loadScrapedData available globally for console use
+window.loadScrapedData = loadScrapedData;
 
 // Save to LocalStorage immediately, then sync to Firebase
 async function saveData() {
@@ -625,37 +750,43 @@ function createTableRow(entry, categoryId, index, isPerson) {
         imageHTML = `<img class="poster-bg" src="${CONFIG.TMDB_IMAGE_BASE}w185${entry.posterPath}" alt="">`;
     }
 
+    // Build film subtitle for persons (actors, directors)
+    let filmSubtitle = '';
+    if (isPerson && entry.film) {
+        filmSubtitle = `<span class="entry-film">${entry.film}</span>`;
+    }
+
     nameCell.innerHTML = `
         <div class="name-cell-content">
-            <span class="entry-name">${entry.name}</span>
+            <div class="name-text-wrapper">
+                <span class="entry-name">${entry.name}</span>
+                ${filmSubtitle}
+            </div>
             ${imageHTML}
-            <button class="btn-delete" title="Delete">✕</button>
         </div>
     `;
 
-    nameCell.querySelector('.btn-delete').addEventListener('click', e => {
-        e.stopPropagation();
-        if (editMode) deleteEntry(categoryId, index);
-    });
+    // Removed delete button listener logic since editing is removed
 
     row.appendChild(nameCell);
 
-    CONFIG.AWARDS.forEach((award, awardIndex) => {
+    CONFIG.AWARDS.forEach((award) => {
         const cell = document.createElement('td');
         cell.className = 'clickable' + (editMode ? '' : ' locked');
 
-        const value = entry.awards?.[awardIndex] || '';
+        // Use award.key for sparse object access
+        const value = entry.awards?.[award.key] || '';
 
         if (value === 'X') {
             cell.classList.add('nominee');
         } else if (value === 'Y') {
             cell.classList.add('winner');
-            const awardClass = CONFIG.AWARD_CLASSES[award] || 'default-star';
+            const awardClass = CONFIG.AWARD_CLASSES[award.key] || 'default-star';
             cell.classList.add(awardClass);
         }
 
         cell.addEventListener('click', () => {
-            if (editMode) toggleCell(categoryId, index, awardIndex, cell, award);
+            if (editMode) toggleCell(categoryId, index, award.key, cell, award);
         });
 
         row.appendChild(cell);
@@ -664,14 +795,18 @@ function createTableRow(entry, categoryId, index, isPerson) {
     return row;
 }
 
-function toggleCell(categoryId, entryIndex, awardIndex, cell, award) {
+function toggleCell(categoryId, entryIndex, awardKey, cell, award) {
     const entry = data[categoryId][entryIndex];
-    if (!entry.awards) entry.awards = [];
+    if (!entry.awards) entry.awards = {};
 
-    const current = entry.awards[awardIndex] || '';
+    const current = entry.awards[awardKey] || '';
     const next = current === '' ? 'X' : current === 'X' ? 'Y' : '';
 
-    entry.awards[awardIndex] = next;
+    if (next === '') {
+        delete entry.awards[awardKey];  // Remove empty keys to keep sparse
+    } else {
+        entry.awards[awardKey] = next;
+    }
     saveData();
 
     cell.classList.remove('winner', 'nominee', 'academy', 'gg', 'sag', 'critics', 'bafta', 'venice', 'default-star');
@@ -680,138 +815,12 @@ function toggleCell(categoryId, entryIndex, awardIndex, cell, award) {
         cell.classList.add('nominee');
     } else if (next === 'Y') {
         cell.classList.add('winner');
-        const awardClass = CONFIG.AWARD_CLASSES[award] || 'default-star';
+        const awardClass = CONFIG.AWARD_CLASSES[awardKey] || 'default-star';
         cell.classList.add(awardClass);
     }
 }
 
-// ============ ENTRY MANAGEMENT ============
-function addEntry(categoryId, input, extra = {}) {
-    if (!editMode) return;
-    const name = input.value.trim();
-    if (!name) return input.focus();
-
-    if (!data[categoryId]) data[categoryId] = [];
-
-    // Check for duplicate (case-insensitive)
-    const exists = data[categoryId].some(entry =>
-        entry.name.toLowerCase() === name.toLowerCase()
-    );
-
-    if (exists) {
-        console.log('Entry already exists:', name);
-        input.value = '';
-        input.focus();
-        return;
-    }
-
-    data[categoryId].push({ name, awards: new Array(CONFIG.AWARDS.length).fill(''), ...extra });
-
-    saveData();
-    renderTable(categoryId);
-    input.value = '';
-    input.focus();
-}
-
-function deleteEntry(categoryId, index) {
-    if (!editMode) return;
-    data[categoryId].splice(index, 1);
-    saveData();
-    renderTable(categoryId);
-}
-
-// ============ TMDB AUTOCOMPLETE ============
-let autocompleteTimeout = null;
-let lastSearchResults = {}; // Store last results per category
-
-function setupAutocomplete(input, categoryId) {
-    const list = document.getElementById(`${categoryId}-autocomplete`);
-    const searchType = input.dataset.searchType;
-
-    input.addEventListener('input', function () {
-        clearTimeout(autocompleteTimeout);
-        const query = this.value.trim();
-        if (query.length < 2) { list.classList.remove('active'); list.innerHTML = ''; lastSearchResults[categoryId] = []; return; }
-        autocompleteTimeout = setTimeout(() => searchTMDB(query, searchType, list, input, categoryId), 300);
-    });
-
-    // Enter key selects first result
-    input.addEventListener('keypress', function (e) {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            const results = lastSearchResults[categoryId];
-            if (results && results.length > 0) {
-                const firstItem = results[0];
-                if (searchType === 'movie') {
-                    input.value = firstItem.title;
-                    addEntry(categoryId, input, { posterPath: firstItem.poster_path, tmdbId: firstItem.id });
-                } else {
-                    input.value = firstItem.name;
-                    addEntry(categoryId, input, { profilePath: firstItem.profile_path, tmdbId: firstItem.id });
-                }
-                list.classList.remove('active');
-            }
-        }
-    });
-
-    input.addEventListener('blur', () => setTimeout(() => list.classList.remove('active'), 200));
-    input.addEventListener('focus', function () { if (list.children.length && this.value.length >= 2) list.classList.add('active'); });
-}
-
-async function searchTMDB(query, searchType, list, input, categoryId) {
-    if (!CONFIG.TMDB_API_KEY) return;
-    const endpoint = searchType === 'movie' ? '/search/movie' : '/search/person';
-    const url = `${CONFIG.TMDB_BASE_URL}${endpoint}?api_key=${CONFIG.TMDB_API_KEY}&query=${encodeURIComponent(query)}`;
-
-    try {
-        const res = await fetch(url);
-        const json = await res.json();
-        list.innerHTML = '';
-
-        // Store results for Enter key
-        lastSearchResults[categoryId] = json.results || [];
-
-        if (json.results?.length) {
-            json.results.slice(0, 5).forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'autocomplete-item';
-
-                if (searchType === 'movie') {
-                    const hasPoster = !!item.poster_path;
-                    const posterHTML = hasPoster
-                        ? `<img class="autocomplete-poster" src="${CONFIG.TMDB_IMAGE_BASE}w92${item.poster_path}">`
-                        : `<div class="autocomplete-poster placeholder">🎬</div>`;
-                    div.innerHTML = `${posterHTML}<div class="autocomplete-info"><div class="autocomplete-title">${item.title}</div><div class="autocomplete-subtitle">${item.release_date?.substring(0, 4) || ''}</div></div>`;
-                    div.addEventListener('mousedown', e => {
-                        e.preventDefault();
-                        input.value = item.title;
-                        list.classList.remove('active');
-                        addEntry(categoryId, input, { posterPath: item.poster_path, tmdbId: item.id });
-                    });
-                } else {
-                    const hasPhoto = !!item.profile_path;
-                    const photoHTML = hasPhoto
-                        ? `<img class="autocomplete-person-photo" src="${CONFIG.TMDB_IMAGE_BASE}w92${item.profile_path}">`
-                        : `<div class="autocomplete-person-photo placeholder">👤</div>`;
-                    div.innerHTML = `${photoHTML}<div class="autocomplete-info"><div class="autocomplete-title">${item.name}</div><div class="autocomplete-subtitle">${item.known_for_department || ''}</div></div>`;
-                    div.addEventListener('mousedown', e => {
-                        e.preventDefault();
-                        input.value = item.name;
-                        list.classList.remove('active');
-                        addEntry(categoryId, input, { profilePath: item.profile_path, tmdbId: item.id });
-                    });
-                }
-                list.appendChild(div);
-            });
-            list.classList.add('active');
-        } else {
-            list.classList.remove('active');
-            lastSearchResults[categoryId] = [];
-        }
-    } catch (err) { console.error('TMDB error:', err); }
-}
+// Edit and Autocomplete functions removed
 
 window.addEventListener('resize', () => { setPositionByIndex(); });
 
-// Alias for header autocomplete
-const searchTMDBHeader = searchTMDB;

@@ -1,0 +1,797 @@
+{
+  "best-film": [
+    {
+      "name": "Moonlight",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/qLnfEmPrDjJfPyyddLJPkXmshkp.jpg",
+      "tmdbId": 376867
+    },
+    {
+      "name": "La La Land",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "bafta": "Y",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+      "tmdbId": 313369
+    },
+    {
+      "name": "Manchester by the Sea",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/o9VXYOuaJxCEKOxbA86xqtwmqYn.jpg",
+      "tmdbId": 334541
+    },
+    {
+      "name": "Arrival",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/pEzNVQfdzYDzVK0XqxERIw2x2se.jpg",
+      "tmdbId": 329865
+    },
+    {
+      "name": "Hacksaw Ridge",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/wuz8TjCIWR2EVVMuEfBnQ1vuGS3.jpg",
+      "tmdbId": 324786
+    },
+    {
+      "name": "Hell or High Water",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/ljRRxqy2aXIkIBXLmOVifcOR021.jpg",
+      "tmdbId": 338766
+    },
+    {
+      "name": "Hidden Figures",
+      "awards": {
+        "oscar": "X",
+        "sag": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg",
+      "tmdbId": 381284
+    },
+    {
+      "name": "Sully",
+      "awards": {
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/4vs83YcJ8TsabADDtaeCJ6ZTjYY.jpg",
+      "tmdbId": 363676
+    },
+    {
+      "name": "Silence",
+      "awards": {
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/x5T0cQDYws0xRBVG4Q3wpcrcmax.jpg",
+      "tmdbId": 68730
+    },
+    {
+      "name": "Fences",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X",
+        "afi": "Y"
+      },
+      "posterPath": "/8NvnB8aeWQvBEz2ruN4g313j991.jpg",
+      "tmdbId": 393457
+    },
+    {
+      "name": "Zootopia",
+      "awards": {
+        "afi": "Y"
+      },
+      "posterPath": "/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg",
+      "tmdbId": 269149
+    },
+    {
+      "name": "O.J.: Made in America",
+      "awards": {
+        "afi": "Y"
+      },
+      "note": "AFI Special Award",
+      "posterPath": "/2FW1ViDhIShRpjQx8isstiB6jel.jpg",
+      "tmdbId": 377462
+    },
+    {
+      "name": "Hail, Caesar!",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/ozY79UvbYvJUWFg2UCM1CDQ7rBl.jpg",
+      "tmdbId": 270487
+    },
+    {
+      "name": "Patriots Day",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/mIDxsJTrOC7NhgOo3GziiHyKfsQ.jpg",
+      "tmdbId": 388399
+    },
+    {
+      "name": "La forma dell'acqua - The Shape of Water",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
+      "tmdbId": 399055
+    },
+    {
+      "name": "Lion",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "posterPath": "/iBGRbLvg6kVc7wbS8wDdVHq6otm.jpg",
+      "tmdbId": 334543
+    },
+    {
+      "name": "20th Century Women",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/mso2rEr9i0MilRIOao5HaWFipS9.jpg",
+      "tmdbId": 342737
+    },
+    {
+      "name": "Deadpool",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/3E53WEZJqP6aM84D8CckXx4pIHw.jpg",
+      "tmdbId": 293660
+    },
+    {
+      "name": "Florence Foster Jenkins",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/xrpobiPfaNmXRLXCm0fYjfbQmPv.jpg",
+      "tmdbId": 430081
+    },
+    {
+      "name": "Sing Street",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/sUWpVlrvzU2SJbnVZqIeKulPKwk.jpg",
+      "tmdbId": 369557
+    },
+    {
+      "name": "I, Daniel Blake",
+      "awards": {
+        "bafta": "X"
+      },
+      "posterPath": "/nu3WVABXz2W85N6JXTZOT1aWS3b.jpg",
+      "tmdbId": 374473
+    },
+    {
+      "name": "Captain Fantastic",
+      "awards": {
+        "sag": "X"
+      },
+      "posterPath": "/2sFME73GaD8UsUxPUKe60cPdLif.jpg",
+      "tmdbId": 334533
+    },
+    {
+      "name": "Loving",
+      "awards": {
+        "critics": "X"
+      },
+      "posterPath": "/teNPeDIRGWxtvMaJsNa7lw5IgiL.jpg",
+      "tmdbId": 339419
+    }
+  ],
+  "best-director": [
+    {
+      "name": "Damien Chazelle",
+      "film": "La La Land",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y"
+      },
+      "profilePath": "/14kRZ3XxNMyBv717YQSXr3wCucy.jpg",
+      "tmdbId": 136495
+    },
+    {
+      "name": "Barry Jenkins",
+      "film": "Moonlight",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X",
+        "nbr": "Y"
+      }
+    },
+    {
+      "name": "Xavier Legrand",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "L'affido"
+    },
+    {
+      "name": "Mel Gibson",
+      "film": "Hacksaw Ridge",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/jnqHMaOslt8cef2atSmOpGRvNla.jpg",
+      "tmdbId": 2461
+    },
+    {
+      "name": "Kenneth Lonergan",
+      "film": "Manchester by the Sea",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      }
+    },
+    {
+      "name": "Denis Villeneuve",
+      "film": "Arrival",
+      "awards": {
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/zdDx9Xs93UIrJFWYApYR28J8M6b.jpg",
+      "tmdbId": 137427
+    },
+    {
+      "name": "Tom Ford",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Nocturnal Animals"
+    },
+    {
+      "name": "David Mackenzie",
+      "film": "Hell or High Water",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/ik6YTYOWdgmou40xRyPlCP4tyGC.jpg",
+      "tmdbId": 3055
+    },
+    {
+      "name": "Denzel Washington",
+      "film": "Fences",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/jj2Gcobpopokal0YstuCQW0ldJ4.jpg",
+      "tmdbId": 5292
+    }
+  ],
+  "best-actor": [
+    {
+      "name": "Casey Affleck",
+      "film": "Manchester by the Sea",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "sag": "X",
+        "nbr": "Y"
+      },
+      "profilePath": "/304ilSygaCRWykoBWAL67TOw8g9.jpg",
+      "tmdbId": 1893
+    },
+    {
+      "name": "Mahershala Ali",
+      "film": "Moonlight",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "Y"
+      },
+      "profilePath": "/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg",
+      "tmdbId": 932967
+    },
+    {
+      "name": "Ryan Gosling",
+      "film": "La La Land",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/asoKC7CLCqpZKZDL6iovNurQUdf.jpg",
+      "tmdbId": 30614
+    },
+    {
+      "name": "Dev Patel",
+      "film": "Lion",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "Y",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/gnlTW9ntMD6Mf6egiHlBw6knlsU.jpg",
+      "tmdbId": 76788
+    },
+    {
+      "name": "Denzel Washington",
+      "film": "Fences",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/jj2Gcobpopokal0YstuCQW0ldJ4.jpg",
+      "tmdbId": 5292
+    },
+    {
+      "name": "Aaron Taylor-Johnson",
+      "awards": {
+        "gg": "Y",
+        "bafta": "X"
+      },
+      "film": "Nocturnal Animals",
+      "role": "Leading",
+      "profilePath": "/pFtHhih2XEaFaD3qOFyQW6q83br.jpg",
+      "tmdbId": 27428
+    },
+    {
+      "name": "Kamil al-Basha",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "L'insulto"
+    },
+    {
+      "name": "Andrew Garfield",
+      "film": "Hacksaw Ridge",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/5ydZ6TluPtxlz5G8nlWMB7SGmow.jpg",
+      "tmdbId": 37625
+    },
+    {
+      "name": "Jeff Bridges",
+      "film": "Hell or High Water",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg",
+      "tmdbId": 1229
+    },
+    {
+      "name": "Viggo Mortensen",
+      "film": "Captain Fantastic",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X"
+      },
+      "profilePath": "/vH5gVSpHAMhDaFWfh0Q7BG61O1y.jpg",
+      "tmdbId": 110
+    },
+    {
+      "name": "Lucas Hedges",
+      "film": "Manchester by the Sea",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/8WP1uXUwm6Z1vzrMaIiKj89M6kX.jpg",
+      "tmdbId": 1105079
+    },
+    {
+      "name": "Hugh Grant",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X"
+      },
+      "film": "Florence Foster Jenkins",
+      "role": "Leading",
+      "profilePath": "/dvV843fOuzsEPXHtFvdzsHpy1rC.jpg",
+      "tmdbId": 3291
+    },
+    {
+      "name": "Michael Shannon",
+      "film": "Nocturnal Animals",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/6mMczfjM8CiS1WuBOgo5Xom1TcR.jpg",
+      "tmdbId": 335
+    },
+    {
+      "name": "Joel Edgerton",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "film": "Loving",
+      "role": "Leading",
+      "profilePath": "/2YzeeiYUbI94Ywc7MVMo1NcN6jf.jpg",
+      "tmdbId": 33192
+    },
+    {
+      "name": "Colin Farrell",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Lobster",
+      "role": "Leading",
+      "profilePath": "/3iHqlaeSAQwJ0KraRKD1A4vBaCS.jpg",
+      "tmdbId": 72466
+    },
+    {
+      "name": "Jonah Hill",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "War Dogs",
+      "role": "Leading",
+      "profilePath": "/5aE4GgJADHzN1QsS6zkzElZSEYq.jpg",
+      "tmdbId": 21007
+    },
+    {
+      "name": "Ryan Reynolds",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Deadpool",
+      "role": "Leading",
+      "profilePath": "/trzgptffGvAlAT6MEu01fz47cLW.jpg",
+      "tmdbId": 10859
+    },
+    {
+      "name": "Simon Helberg",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Florence Foster Jenkins",
+      "role": "Leading",
+      "profilePath": "/zGrQSfQEw0vO6otWdSXiBHfwv7S.jpg",
+      "tmdbId": 53863
+    },
+    {
+      "name": "Jake Gyllenhaal",
+      "film": "Nocturnal Animals",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/btORQRDyGCF0KNweGGYpmQXZK3P.jpg",
+      "tmdbId": 131
+    },
+    {
+      "name": "Tom Hanks",
+      "film": "Sully",
+      "role": "Leading",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg",
+      "tmdbId": 31
+    },
+    {
+      "name": "Ben Foster",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/p5FlM9OOStD9I0Nm3GGlhaiAC5r.jpg",
+      "tmdbId": 11107
+    }
+  ],
+  "best-actress": [
+    {
+      "name": "Emma Stone",
+      "film": "La La Land",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "sag": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg",
+      "tmdbId": 54693
+    },
+    {
+      "name": "Viola Davis",
+      "film": "Fences",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "sag": "Y"
+      },
+      "profilePath": "/xDssw6vpYNRjsybvMPRE30e0dPN.jpg",
+      "tmdbId": 19492
+    },
+    {
+      "name": "Amy Adams",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "nbr": "Y"
+      },
+      "film": "Arrival",
+      "role": "Leading",
+      "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
+      "tmdbId": 9273
+    },
+    {
+      "name": "Isabelle Huppert",
+      "film": "Elle",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/3YQwWkpNKQeV5NUmdCH76Ne1gDP.jpg",
+      "tmdbId": 17882
+    },
+    {
+      "name": "Charlotte Rampling",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Hannah",
+      "profilePath": "/7fhg5FCcl0VfYERP5D0unpybqgx.jpg",
+      "tmdbId": 44079
+    },
+    {
+      "name": "Naomie Harris",
+      "film": "Moonlight",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/41TVAcYqKKF7PGf3x7QfaLvkLSW.jpg",
+      "tmdbId": 2038
+    },
+    {
+      "name": "Nicole Kidman",
+      "film": "Lion",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
+      "tmdbId": 2227
+    },
+    {
+      "name": "Michelle Williams",
+      "film": "Manchester by the Sea",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg",
+      "tmdbId": 1812
+    },
+    {
+      "name": "Natalie Portman",
+      "film": "Jackie",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X"
+      },
+      "profilePath": "/edPU5HxncLWa1YkgRPNkSd68ONG.jpg",
+      "tmdbId": 524
+    },
+    {
+      "name": "Meryl Streep",
+      "film": "Florence Foster Jenkins",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X"
+      },
+      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
+      "tmdbId": 5064
+    },
+    {
+      "name": "Ruth Negga",
+      "film": "Loving",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/eUnSUgbD050mKSCqOJvXplAiF9S.jpg",
+      "tmdbId": 17018
+    },
+    {
+      "name": "Octavia Spencer",
+      "film": "Hidden Figures",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X"
+      },
+      "profilePath": "/35SOy4yQZ9xRSJ0q1L5RLhXfhqN.jpg",
+      "tmdbId": 6944
+    },
+    {
+      "name": "Annette Bening",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "film": "20th Century Women",
+      "role": "Leading",
+      "profilePath": "/sBiiRwAVXd0FCRZ87m0I89qGBvy.jpg",
+      "tmdbId": 516
+    },
+    {
+      "name": "Emily Blunt",
+      "film": "The Girl on the Train",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "sag": "X"
+      },
+      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
+      "tmdbId": 5081
+    },
+    {
+      "name": "Jessica Chastain",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Miss Sloane",
+      "role": "Leading",
+      "profilePath": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
+      "tmdbId": 83002
+    },
+    {
+      "name": "Lily Collins",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Rules Don't Apply",
+      "role": "Leading",
+      "profilePath": "/xomVgnPik1jvXpQptlH8JcRf9CW.jpg",
+      "tmdbId": 112561
+    },
+    {
+      "name": "Hailee Steinfeld",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Edge of Seventeen",
+      "role": "Leading",
+      "profilePath": "/3Zfp2akzycKEgUotP4DEJgOPqVj.jpg",
+      "tmdbId": 130640
+    },
+    {
+      "name": "Hayley Squires",
+      "film": "I, Daniel Blake",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/nBchYkC2f1boBqJlYny5OVsxgFQ.jpg",
+      "tmdbId": 1182598
+    },
+    {
+      "name": "Greta Gerwig",
+      "film": "20th Century Women",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/6MwQ2GstYr0wnhp1eTOAbVMNBGN.jpg",
+      "tmdbId": 45400
+    },
+    {
+      "name": "Janelle Monáe",
+      "film": "Hidden Figures",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/xavjGiGltQEDWqNdbe0zd1lO0UR.jpg",
+      "tmdbId": 1005852
+    }
+  ]
+}

@@ -1,0 +1,814 @@
+{
+  "best-film": [
+    {
+      "name": "Argo",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "sag": "Y",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/m5gPWFZFIp4UJFABgWyLkbXv8GX.jpg",
+      "tmdbId": 68734
+    },
+    {
+      "name": "Les Misérables",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/3TOgmlIY8X3WjIjvU7Z0jqeNkyU.jpg",
+      "tmdbId": 4415
+    },
+    {
+      "name": "Lincoln",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/5KeUqW6DpVtf8G9VMuI2l0XIPCo.jpg",
+      "tmdbId": 72976
+    },
+    {
+      "name": "Silver Linings Playbook",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/y7iOVneBvITlBdhy6tVqXVOa1Js.jpg",
+      "tmdbId": 82693
+    },
+    {
+      "name": "Zero Dark Thirty",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/wNSdSSxowM3WIqmPJNg3RagYbwP.jpg",
+      "tmdbId": 97630
+    },
+    {
+      "name": "Django Unchained",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
+      "tmdbId": 68718
+    },
+    {
+      "name": "Beasts of the Southern Wild",
+      "awards": {
+        "oscar": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/nQJmWekGYlXhezGUb21xFfEfwhH.jpg",
+      "tmdbId": 84175
+    },
+    {
+      "name": "Life of Pi",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "afi": "Y"
+      },
+      "posterPath": "/iLgRu4hhSr6V1uManX6ukDriiSc.jpg",
+      "tmdbId": 87827
+    },
+    {
+      "name": "Moonrise Kingdom",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "afi": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/jH1qYtX1Ec4nZsoUJ0Y4DAZCaI.jpg",
+      "tmdbId": 1049516
+    },
+    {
+      "name": "The Dark Knight Rises",
+      "awards": {
+        "afi": "Y"
+      },
+      "posterPath": "/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
+      "tmdbId": 49026
+    },
+    {
+      "name": "Looper",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/sNjL6SqErDBE8OUZlrDLkexfsCj.jpg",
+      "tmdbId": 59967
+    },
+    {
+      "name": "The Perks of Being a Wallflower",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/aKCvdFFF5n80P2VdS7d8YBwbCjh.jpg",
+      "tmdbId": 84892
+    },
+    {
+      "name": "Promised Land",
+      "awards": {
+        "nbr": "Y"
+      }
+    },
+    {
+      "name": "Sacro GRA",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/7vsmiudJxiYYQWlnv6OmMT3tH9E.jpg",
+      "tmdbId": 216790
+    },
+    {
+      "name": "The Best Exotic Marigold Hotel",
+      "awards": {
+        "gg": "X",
+        "sag": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/gNWiOKTWDvPTpr7QfPWk18gLftz.jpg",
+      "tmdbId": 74534
+    },
+    {
+      "name": "Amour",
+      "awards": {
+        "oscar": "X"
+      },
+      "posterPath": "/19hyCudualHxCD0GrEngqsi0wBF.jpg",
+      "tmdbId": 86837
+    },
+    {
+      "name": "Salmon Fishing in the Yemen",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/tSmZAKh1H80AGERgMOvXAWTwbVQ.jpg",
+      "tmdbId": 81025
+    },
+    {
+      "name": "The Master",
+      "awards": {
+        "critics": "X"
+      },
+      "posterPath": "/rUSjbyvYWN9H4az8xt0tDtU7I6v.jpg",
+      "tmdbId": 68722
+    }
+  ],
+  "best-director": [
+    {
+      "name": "Ang Lee",
+      "film": "Life of Pi",
+      "awards": {
+        "oscar": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg",
+      "tmdbId": 1614
+    },
+    {
+      "name": "Kathryn Bigelow",
+      "film": "Zero Dark Thirty",
+      "awards": {
+        "critics": "X",
+        "nbr": "Y"
+      },
+      "profilePath": "/llfsTIvItT7IEmX5qK1qUX0dbqc.jpg",
+      "tmdbId": 14392
+    },
+    {
+      "name": "Alexandros Avranas",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Miss Violence",
+      "profilePath": "/hxbjQBLAL9G7PAZBqlwASOCDWn2.jpg",
+      "tmdbId": 1194907
+    },
+    {
+      "name": "Steven Spielberg",
+      "film": "Lincoln",
+      "awards": {
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
+      "tmdbId": 488
+    },
+    {
+      "name": "David O. Russell",
+      "film": "Silver Linings Playbook",
+      "awards": {
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/59rXnJS4g5dUr1Hz8QNLo5epD2a.jpg",
+      "tmdbId": 17883
+    },
+    {
+      "name": "Michael Haneke",
+      "film": "Amour",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/9wDbsPQ5lu9A04FJ1pVi9y1dRjn.jpg",
+      "tmdbId": 6011
+    },
+    {
+      "name": "Benh Zeitlin",
+      "film": "Beasts of the Southern Wild",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/6t5HypxpiaCu90vYrHjkPUI5TFT.jpg",
+      "tmdbId": 223516
+    },
+    {
+      "name": "Tom Hooper",
+      "film": "Les Misérables",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/w9Z3dlJDtWBXo4rIxGI0XY896j2.jpg",
+      "tmdbId": 70500
+    }
+  ],
+  "best-actor": [
+    {
+      "name": "Daniel Day-Lewis",
+      "film": "Lincoln",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "sag": "Y"
+      },
+      "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
+      "tmdbId": 11856
+    },
+    {
+      "name": "Christoph Waltz",
+      "film": "Django Unchained",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y"
+      },
+      "profilePath": "/jMvLGCVXLaBqjRLf5olyvEucZob.jpg",
+      "tmdbId": 27319
+    },
+    {
+      "name": "Bradley Cooper",
+      "film": "Silver Linings Playbook",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "nbr": "Y"
+      },
+      "profilePath": "/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg",
+      "tmdbId": 51329
+    },
+    {
+      "name": "Hugh Jackman",
+      "film": "Les Misérables",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/oX6CpXmnXCHLyqsa4NEed1DZAKx.jpg",
+      "tmdbId": 6968
+    },
+    {
+      "name": "Tommy Lee Jones",
+      "awards": {
+        "sag": "Y"
+      },
+      "film": "Thaddeus Stevens",
+      "role": "Supporting",
+      "profilePath": "/mCiZNRAzbnPojJEZwVZWLw9kzxR.jpg",
+      "tmdbId": 2176
+    },
+    {
+      "name": "Themīs Panou",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Miss Violence",
+      "profilePath": "/rb0ROJR5OxxW5uWpbrulyk32v9H.jpg",
+      "tmdbId": 1206241
+    },
+    {
+      "name": "Alan Arkin",
+      "film": "Argo",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/lTMMpkqL0G3WeFNfbtdP5COZEiX.jpg",
+      "tmdbId": 1903
+    },
+    {
+      "name": "Joaquin Phoenix",
+      "film": "The Master",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
+      "tmdbId": 73421
+    },
+    {
+      "name": "Denzel Washington",
+      "film": "Flight",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/jj2Gcobpopokal0YstuCQW0ldJ4.jpg",
+      "tmdbId": 5292
+    },
+    {
+      "name": "Philip Seymour Hoffman",
+      "film": "The Master",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X"
+      },
+      "profilePath": "/qgSTZu5F7LyJTInpXVQOyRlZgbw.jpg",
+      "tmdbId": 1233
+    },
+    {
+      "name": "Tommy Lee Jones",
+      "film": "Lincoln",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/mCiZNRAzbnPojJEZwVZWLw9kzxR.jpg",
+      "tmdbId": 2176
+    },
+    {
+      "name": "John Hawkes",
+      "awards": {
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "film": "The Sessions",
+      "role": "Leading",
+      "profilePath": "/c0mDB6TApVcJ3LLM1gicjyUeD5A.jpg",
+      "tmdbId": 16861
+    },
+    {
+      "name": "Javier Bardem",
+      "film": "Skyfall",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
+      "tmdbId": 3810
+    },
+    {
+      "name": "Robert De Niro",
+      "film": "Silver Linings Playbook",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg",
+      "tmdbId": 380
+    },
+    {
+      "name": "Richard Gere",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Arbitrage",
+      "role": "Leading",
+      "profilePath": "/lWjnKsszeYaY7McFPyyQxK2gONV.jpg",
+      "tmdbId": 1205
+    },
+    {
+      "name": "Jack Black",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Bernie",
+      "role": "Leading",
+      "profilePath": "/rtCx0fiYxJVhzXXdwZE2XRTfIKE.jpg",
+      "tmdbId": 70851
+    },
+    {
+      "name": "Ewan McGregor",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Salmon Fishing in the Yemen",
+      "role": "Leading",
+      "profilePath": "/q2UDxfwWnmXTB7khOUF3J9puBVP.jpg",
+      "tmdbId": 3061
+    },
+    {
+      "name": "Bill Murray",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Hyde Park on Hudson",
+      "role": "Leading",
+      "profilePath": "/nnCsJc9x3ZiG3AFyiyc3FPehppy.jpg",
+      "tmdbId": 1532
+    },
+    {
+      "name": "Leonardo DiCaprio",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Django Unchained",
+      "role": "Leading",
+      "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
+      "tmdbId": 6193
+    },
+    {
+      "name": "Ben Affleck",
+      "film": "Argo",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/aTcqu8cI4wMohU17xTdqmXKTGrw.jpg",
+      "tmdbId": 880
+    },
+    {
+      "name": "Robert De Niro",
+      "awards": {
+        "sag": "X"
+      },
+      "role": "Supporting",
+      "profilePath": "/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg",
+      "tmdbId": 380
+    },
+    {
+      "name": "Matthew McConaughey",
+      "film": "Magic Mike",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/lCySuYjhXix3FzQdS4oceDDrXKI.jpg",
+      "tmdbId": 10297
+    }
+  ],
+  "best-actress": [
+    {
+      "name": "Anne Hathaway",
+      "film": "Les Misérables",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y"
+      },
+      "profilePath": "/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg",
+      "tmdbId": 1813
+    },
+    {
+      "name": "Jessica Chastain",
+      "film": "Zero Dark Thirty",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "bafta": "X",
+        "sag": "X",
+        "nbr": "Y"
+      },
+      "profilePath": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
+      "tmdbId": 83002
+    },
+    {
+      "name": "Jennifer Lawrence",
+      "film": "Silver Linings Playbook",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
+      "tmdbId": 72129
+    },
+    {
+      "name": "Emmanuelle Riva",
+      "film": "Amour",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "bafta": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/pDPGIHy001boz5yBBWTjNUf4aOO.jpg",
+      "tmdbId": 267962
+    },
+    {
+      "name": "Jennifer Lawrence",
+      "awards": {
+        "sag": "Y"
+      },
+      "role": "Leading",
+      "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
+      "tmdbId": 72129
+    },
+    {
+      "name": "Anne Hathaway",
+      "awards": {
+        "sag": "Y"
+      },
+      "film": "Fantine",
+      "role": "Supporting",
+      "profilePath": "/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg",
+      "tmdbId": 1813
+    },
+    {
+      "name": "Elena Cotta",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Via Castellana Bandiera",
+      "profilePath": "/grusGGdgToZntzoQkl1fYpG2MKl.jpg",
+      "tmdbId": 93109
+    },
+    {
+      "name": "Naomi Watts",
+      "film": "The Impossible",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/5s6UE6VjYx5TBDvyFk4vfOdS9GR.jpg",
+      "tmdbId": 3489
+    },
+    {
+      "name": "Amy Adams",
+      "film": "The Master",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
+      "tmdbId": 9273
+    },
+    {
+      "name": "Sally Field",
+      "film": "Lincoln",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/5fBK36MdmdwQQMuP0W70rXADXih.jpg",
+      "tmdbId": 35
+    },
+    {
+      "name": "Helen Hunt",
+      "film": "The Sessions",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/aJVortGgkGkvK0DMiY0I7Fv77Qb.jpg",
+      "tmdbId": 9994
+    },
+    {
+      "name": "Marion Cotillard",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "film": "Rust and Bone",
+      "role": "Leading",
+      "profilePath": "/biitzOF0GffIqFYLyOPkoiaOngQ.jpg",
+      "tmdbId": 8293
+    },
+    {
+      "name": "Helen Mirren",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X"
+      },
+      "film": "Hitchcock",
+      "role": "Leading",
+      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
+      "tmdbId": 15735
+    },
+    {
+      "name": "Quvenzhané Wallis",
+      "film": "Beasts of the Southern Wild",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/lHW9hnGlPMgexsbraR7xyBh5qEI.jpg",
+      "tmdbId": 1055235
+    },
+    {
+      "name": "Nicole Kidman",
+      "awards": {
+        "gg": "X",
+        "sag": "X"
+      },
+      "film": "The Paperboy",
+      "role": "Leading",
+      "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
+      "tmdbId": 2227
+    },
+    {
+      "name": "Judi Dench",
+      "film": "Skyfall",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
+      "tmdbId": 5309
+    },
+    {
+      "name": "Jacki Weaver",
+      "film": "Silver Linings Playbook",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/zalCqZnNQMKseFmwQwOlLrl3w2P.jpg",
+      "tmdbId": 67837
+    },
+    {
+      "name": "Rachel Weisz",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Deep Blue Sea",
+      "role": "Leading",
+      "profilePath": "/msTqKPA33ryVtcVNgOdeaJGYq16.jpg",
+      "tmdbId": 3293
+    },
+    {
+      "name": "Emily Blunt",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Salmon Fishing in the Yemen",
+      "role": "Leading",
+      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
+      "tmdbId": 5081
+    },
+    {
+      "name": "Judi Dench",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Best Exotic Marigold Hotel",
+      "role": "Leading",
+      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
+      "tmdbId": 5309
+    },
+    {
+      "name": "Maggie Smith",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Quartet",
+      "role": "Leading",
+      "profilePath": "/i7vcF4KzJTgH6kO0TqURuEEfoU3.jpg",
+      "tmdbId": 10978
+    },
+    {
+      "name": "Meryl Streep",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Hope Springs",
+      "role": "Leading",
+      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
+      "tmdbId": 5064
+    },
+    {
+      "name": "Sally Field",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "Mary Todd Lincoln",
+      "role": "Supporting",
+      "profilePath": "/5fBK36MdmdwQQMuP0W70rXADXih.jpg",
+      "tmdbId": 35
+    },
+    {
+      "name": "Helen Hunt",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "Cheryl Cohen-Greene",
+      "role": "Supporting",
+      "profilePath": "/aJVortGgkGkvK0DMiY0I7Fv77Qb.jpg",
+      "tmdbId": 9994
+    },
+    {
+      "name": "Maggie Smith",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "The Best Exotic Marigold Hotel",
+      "role": "Supporting",
+      "profilePath": "/i7vcF4KzJTgH6kO0TqURuEEfoU3.jpg",
+      "tmdbId": 10978
+    },
+    {
+      "name": "Ann Dowd",
+      "film": "Compliance",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/zo44U71uiMNVW1HSiOa5F9MpqIq.jpg",
+      "tmdbId": 43366
+    }
+  ]
+}

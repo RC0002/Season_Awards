@@ -1,0 +1,1000 @@
+{
+  "best-film": [
+    {
+      "name": "Nomadland",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "critics": "Y",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/dKT8rGDR55cM1vGn7QZLA9Tg9YC.jpg",
+      "tmdbId": 581734
+    },
+    {
+      "name": "The Trial of the Chicago 7",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "Y",
+        "critics": "X",
+        "afi": "Y"
+      },
+      "posterPath": "/ahf5cVdooMAlDRiJOZQNuLqa1Is.jpg",
+      "tmdbId": 556984
+    },
+    {
+      "name": "Minari",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/6mPNdmjdbVKPITv3LLCmQoKs9Zw.jpg",
+      "tmdbId": 615643
+    },
+    {
+      "name": "Sound of Metal",
+      "awards": {
+        "oscar": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/3178oOJKKPDeQ2legWQvMPpllv.jpg",
+      "tmdbId": 502033
+    },
+    {
+      "name": "Da 5 Bloods",
+      "awards": {
+        "sag": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/yx4cp1ljJMDSFeEex0Zjv45b55E.jpg",
+      "tmdbId": 581859
+    },
+    {
+      "name": "Judas and the Black Messiah",
+      "awards": {
+        "oscar": "X",
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/iIgr75GoqFxe1X5Wz9siOODGe9u.jpg",
+      "tmdbId": 583406
+    },
+    {
+      "name": "Soul",
+      "awards": {
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/pEz5aROvfy5FBW1OTlrDO3VryWO.jpg",
+      "tmdbId": 508442
+    },
+    {
+      "name": "Promising Young Woman",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "nbr": "Y"
+      },
+      "posterPath": "/73QoFJFmUrJfDG2EynFjNc5gJxk.jpg",
+      "tmdbId": 582014
+    },
+    {
+      "name": "Mank",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X",
+        "afi": "Y"
+      },
+      "posterPath": "/4yzTcAtvzyZLLto4z04xobUK9el.jpg",
+      "tmdbId": 614560
+    },
+    {
+      "name": "Ma Rainey's Black Bottom",
+      "awards": {
+        "sag": "X",
+        "critics": "X",
+        "afi": "Y"
+      },
+      "posterPath": "/pvtyxijaBrCSbByXLcUIDDSvc40.jpg",
+      "tmdbId": 615667
+    },
+    {
+      "name": "One Night in Miami...",
+      "awards": {
+        "sag": "X",
+        "critics": "X",
+        "afi": "Y"
+      },
+      "posterPath": "/1DLUb9PTDqXMSgsD7RmiJs7ZJIx.jpg",
+      "tmdbId": 661914
+    },
+    {
+      "name": "Hamilton",
+      "awards": {
+        "gg": "X",
+        "afi": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/h1B7tW0t399VDjAcWJh8m87469b.jpg",
+      "tmdbId": 556574
+    },
+    {
+      "name": "News of the World",
+      "awards": {
+        "critics": "X",
+        "nbr": "Y"
+      },
+      "posterPath": "/fYQCgVRsQTEfUrP7cW5iAFVYOlh.jpg",
+      "tmdbId": 581032
+    },
+    {
+      "name": "Borat Subsequent Moviefilm",
+      "awards": {
+        "gg": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/3L1Ml5RWjFVfVq3rQENvgFymT0U.jpg",
+      "tmdbId": 740985
+    },
+    {
+      "name": "First Cow",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/yS41crZ1i0fFxCQbuL7I1Y1VBwm.jpg",
+      "tmdbId": 558582
+    },
+    {
+      "name": "The Forty-Year-Old Version",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/ilMExVn5xyfIWAnqngqAB0OFsE5.jpg",
+      "tmdbId": 620897
+    },
+    {
+      "name": "The Midnight Sky",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/l8lXesOLXKS0VYjzWNZN6gDxv2F.jpg",
+      "tmdbId": 614911
+    },
+    {
+      "name": "La scelta di Anne - L'Événement",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/f2lTAmLYpWpd8JxtJrMXFFGV9gZ.jpg",
+      "tmdbId": 793998
+    },
+    {
+      "name": "The Father",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X"
+      },
+      "posterPath": "/pr3bEQ517uMb5loLvjFQi8uLAsp.jpg",
+      "tmdbId": 600354
+    },
+    {
+      "name": "Music",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/xzDXq7ofNkvIovB6Vb8KZpjqkK0.jpg",
+      "tmdbId": 586101
+    },
+    {
+      "name": "Palm Springs",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/gnAfqiV7yO3Jq9IntTmwkcaICqc.jpg",
+      "tmdbId": 587792
+    },
+    {
+      "name": "The Prom",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/uIJx4CvbpCPt8rtznFl7DftkYAy.jpg",
+      "tmdbId": 206512
+    },
+    {
+      "name": "The Mauritanian",
+      "awards": {
+        "bafta": "X"
+      },
+      "posterPath": "/lIADEa6oH74uUapjsPbNRzxus8M.jpg",
+      "tmdbId": 644583
+    }
+  ],
+  "best-director": [
+    {
+      "name": "Chloé Zhao",
+      "film": "Nomadland",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "critics": "Y"
+      },
+      "profilePath": "/n0GzBiyx2KzwozZ9irQ8hJlf5By.jpg",
+      "tmdbId": 1395183
+    },
+    {
+      "name": "Spike Lee",
+      "film": "Da 5 Bloods",
+      "awards": {
+        "critics": "X",
+        "nbr": "Y"
+      },
+      "profilePath": "/2KOHXgk2uoRXl6u7V9xpAIo3uay.jpg",
+      "tmdbId": 5281
+    },
+    {
+      "name": "Jane Campion",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Il potere del cane",
+      "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
+      "tmdbId": 10757
+    },
+    {
+      "name": "David Fincher",
+      "film": "Mank",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/tpEczFclQZeKAiCeKZZ0adRvtfz.jpg",
+      "tmdbId": 7467
+    },
+    {
+      "name": "Lee Isaac Chung",
+      "film": "Minari",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/fwiIh7jECjefCco3ZCdug6i3t9U.jpg",
+      "tmdbId": 931952
+    },
+    {
+      "name": "Emerald Fennell",
+      "film": "Promising Young Woman",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/ytyHUsPb7Saulczm8nCJHypIWQF.jpg",
+      "tmdbId": 1252934
+    },
+    {
+      "name": "Thomas Vinterberg",
+      "film": "Another Round",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X"
+      },
+      "profilePath": "/1lChKBPVLqbn7Kl8lHghybBVzgw.jpg",
+      "tmdbId": 4453
+    },
+    {
+      "name": "Regina King",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "film": "One Night in Miami...",
+      "profilePath": "/fEIz0ljk9CBrp3AitM5nwjfoGVu.jpg",
+      "tmdbId": 9788
+    },
+    {
+      "name": "Aaron Sorkin",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "film": "The Trial of the Chicago 7",
+      "profilePath": "/hGkusztbd1rb23QFAjvpJxKSTAU.jpg",
+      "tmdbId": 13520
+    },
+    {
+      "name": "Jasmila Žbanić",
+      "film": "Quo Vadis, Aida?",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/i3xghDxbjUCUKEUqQFunCuipdjg.jpg",
+      "tmdbId": 4634
+    },
+    {
+      "name": "Sarah Gavron",
+      "film": "Rocks",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/kfasVpHWkFyPUxzzSzvYhU95nP4.jpg",
+      "tmdbId": 93288
+    },
+    {
+      "name": "Shannon Murphy",
+      "film": "Babyteeth",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/vx2ESOt6od8iM4WA2DiVWfl9tzy.jpg",
+      "tmdbId": 2035232
+    }
+  ],
+  "best-actor": [
+    {
+      "name": "Daniel Kaluuya",
+      "film": "Judas and the Black Messiah",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "sag": "Y",
+        "critics": "Y"
+      },
+      "profilePath": "/jj2kZqJobjom36wlhlYhc38nTwN.jpg",
+      "tmdbId": 206919
+    },
+    {
+      "name": "Chadwick Boseman",
+      "film": "Ma Rainey's Black Bottom",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "bafta": "X",
+        "sag": "Y",
+        "critics": "Y"
+      },
+      "profilePath": "/1lz1wLOuPFSRIratMz0SxD3tkJ.jpg",
+      "tmdbId": 172069
+    },
+    {
+      "name": "Anthony Hopkins",
+      "film": "The Father",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "X",
+        "bafta": "Y",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/cbFWUHhk6pZKTEm48OKVM5awNNn.jpg",
+      "tmdbId": 4173
+    },
+    {
+      "name": "Riz Ahmed",
+      "film": "Sound of Metal",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "nbr": "Y"
+      },
+      "profilePath": "/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg",
+      "tmdbId": 53240
+    },
+    {
+      "name": "Sacha Baron Cohen",
+      "awards": {
+        "gg": "Y"
+      },
+      "film": "Borat Subsequent Moviefilm",
+      "role": "Leading",
+      "profilePath": "/irirhgOX0siCyqvMrt2hoJpXfOG.jpg",
+      "tmdbId": 6730
+    },
+    {
+      "name": "John Arcilla",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "On the Job 2: The Missing 8",
+      "profilePath": "/2K4vH6uYsA3gWABQsdlqotyMZBk.jpg",
+      "tmdbId": 625924
+    },
+    {
+      "name": "Leslie Odom Jr.",
+      "film": "One Night in Miami...",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/pDA11JMNAGQGJo7nRpZHp7pdp9N.jpg",
+      "tmdbId": 1254614
+    },
+    {
+      "name": "Gary Oldman",
+      "film": "Mank",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/2v9FVVBUrrkW2m3QOcYkuhq9A6o.jpg",
+      "tmdbId": 64
+    },
+    {
+      "name": "Sacha Baron Cohen",
+      "film": "The Trial of the Chicago 7",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/irirhgOX0siCyqvMrt2hoJpXfOG.jpg",
+      "tmdbId": 6730
+    },
+    {
+      "name": "Steven Yeun",
+      "film": "Minari",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/fOMFO2Xx4duzpNgS9Q5ytO44yGb.jpg",
+      "tmdbId": 215055
+    },
+    {
+      "name": "Paul Raci",
+      "film": "Sound of Metal",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/1Vcfo559FK4JmleDbkaaGzGPJks.jpg",
+      "tmdbId": 1216195
+    },
+    {
+      "name": "Tahar Rahim",
+      "awards": {
+        "gg": "X",
+        "bafta": "X"
+      },
+      "film": "The Mauritanian",
+      "role": "Leading",
+      "profilePath": "/r1SJ9nkG9q4JbPHbtcvcVxmRcHw.jpg",
+      "tmdbId": 81051
+    },
+    {
+      "name": "Jared Leto",
+      "awards": {
+        "gg": "X",
+        "sag": "X"
+      },
+      "film": "The Little Things",
+      "role": "Supporting",
+      "profilePath": "/aNUvy7cpa78NRjCvHi5vYuNJRtj.jpg",
+      "tmdbId": 7499
+    },
+    {
+      "name": "Bill Murray",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "film": "On the Rocks",
+      "role": "Supporting",
+      "profilePath": "/nnCsJc9x3ZiG3AFyiyc3FPehppy.jpg",
+      "tmdbId": 1532
+    },
+    {
+      "name": "Chadwick Boseman",
+      "film": "Da 5 Bloods",
+      "role": "Supporting",
+      "awards": {
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/1lz1wLOuPFSRIratMz0SxD3tkJ.jpg",
+      "tmdbId": 172069
+    },
+    {
+      "name": "LaKeith Stanfield",
+      "film": "Judas and the Black Messiah",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/x3k0HCpMNqEtVf2VKQrSCol1ia2.jpg",
+      "tmdbId": 1200864
+    },
+    {
+      "name": "James Corden",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Prom",
+      "role": "Leading",
+      "profilePath": "/xGB0gfZ48M27gQjjL7inJIh1Pqj.jpg",
+      "tmdbId": 55466
+    },
+    {
+      "name": "Lin-Manuel Miranda",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Hamilton",
+      "role": "Leading",
+      "profilePath": "/r0wFwPa041pZ1QM66yJWuQXCkqx.jpg",
+      "tmdbId": 1179651
+    },
+    {
+      "name": "Dev Patel",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Personal History of David Copperfield",
+      "role": "Leading",
+      "profilePath": "/gnlTW9ntMD6Mf6egiHlBw6knlsU.jpg",
+      "tmdbId": 76788
+    },
+    {
+      "name": "Andy Samberg",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Palm Springs",
+      "role": "Leading",
+      "profilePath": "/jMXU5oG3i93SH1yhkpbBGskFiJl.jpg",
+      "tmdbId": 62861
+    },
+    {
+      "name": "Adarsh Gourav",
+      "film": "The White Tiger",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/kuJ2ukWmuHnCSTOOvUMqiES5G2C.jpg",
+      "tmdbId": 1605786
+    },
+    {
+      "name": "Mads Mikkelsen",
+      "film": "Another Round",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/2Lyv939p2iDIjRgv4jMFyD3yA6G.jpg",
+      "tmdbId": 1019
+    },
+    {
+      "name": "Alan Kim",
+      "film": "Minari",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/mksORVS7tVouJZUWKlLrBSXgKQC.jpg",
+      "tmdbId": 2476742
+    },
+    {
+      "name": "Barry Keoghan",
+      "film": "Calm with Horses",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/15xPjrzSbtXlbQUhmLpQUil4tCN.jpg",
+      "tmdbId": 1290466
+    },
+    {
+      "name": "Clarke Peters",
+      "film": "Da 5 Bloods",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/ouDHDpocxXgXrosF3vShAEkOjHL.jpg",
+      "tmdbId": 61011
+    },
+    {
+      "name": "Ben Affleck",
+      "film": "The Way Back",
+      "role": "Leading",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/aTcqu8cI4wMohU17xTdqmXKTGrw.jpg",
+      "tmdbId": 880
+    },
+    {
+      "name": "Tom Hanks",
+      "film": "News of the World",
+      "role": "Leading",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg",
+      "tmdbId": 31
+    },
+    {
+      "name": "Delroy Lindo",
+      "film": "Da 5 Bloods",
+      "role": "Leading",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/kLwUBBmEIdchrLqwsYzgLB2B6q5.jpg",
+      "tmdbId": 18792
+    }
+  ],
+  "best-actress": [
+    {
+      "name": "Frances McDormand",
+      "film": "Nomadland",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "X",
+        "bafta": "Y",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
+      "tmdbId": 3910
+    },
+    {
+      "name": "Carey Mulligan",
+      "film": "Promising Young Woman",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "Y",
+        "nbr": "Y"
+      },
+      "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg",
+      "tmdbId": 36662
+    },
+    {
+      "name": "Youn Yuh-jung",
+      "film": "Minari",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "Y",
+        "sag": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/rSoSAX85gvPNSWmWXcCaJ2eBPrp.jpg",
+      "tmdbId": 1080935
+    },
+    {
+      "name": "Maria Bakalova",
+      "film": "Borat Subsequent Moviefilm",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "Y"
+      }
+    },
+    {
+      "name": "Viola Davis",
+      "film": "Ma Rainey's Black Bottom",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/xDssw6vpYNRjsybvMPRE30e0dPN.jpg",
+      "tmdbId": 19492
+    },
+    {
+      "name": "Andra Day",
+      "film": "The United States vs. Billie Holiday",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/54zMzFLxL5AKnDR9AlsZLl9VhaG.jpg",
+      "tmdbId": 1658802
+    },
+    {
+      "name": "Yuh-jung Youn",
+      "film": "Minari",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y"
+      },
+      "profilePath": "/rSoSAX85gvPNSWmWXcCaJ2eBPrp.jpg",
+      "tmdbId": 1080935
+    },
+    {
+      "name": "Rosamund Pike",
+      "awards": {
+        "gg": "Y"
+      },
+      "film": "I Care a Lot",
+      "role": "Leading",
+      "profilePath": "/8ObNklHDi2hjdz0ayzJFB9jtqzm.jpg",
+      "tmdbId": 10882
+    },
+    {
+      "name": "Jodie Foster",
+      "awards": {
+        "gg": "Y"
+      },
+      "film": "The Mauritanian",
+      "role": "Supporting",
+      "profilePath": "/8DAd9knKivHR4CCStxlNEQXzjIh.jpg",
+      "tmdbId": 1038
+    },
+    {
+      "name": "Penélope Cruz",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Madres paralelas",
+      "profilePath": "/2Lbc8QXgHik1D1saPqQ5qEWwUEh.jpg",
+      "tmdbId": 955
+    },
+    {
+      "name": "Vanessa Kirby",
+      "film": "Pieces of a Woman",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/5fbvIkZ02RdcXfZHUUk4cQ9kILK.jpg",
+      "tmdbId": 556356
+    },
+    {
+      "name": "Glenn Close",
+      "film": "Hillbilly Elegy",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/4VHZ1GfLwN7MUgApy0LCBzdDF9L.jpg",
+      "tmdbId": 515
+    },
+    {
+      "name": "Olivia Colman",
+      "film": "The Father",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/lawJUdbLb1YW0niaYjiVGR9IBG8.jpg",
+      "tmdbId": 39187
+    },
+    {
+      "name": "Amanda Seyfried",
+      "film": "Mank",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/gtBUIpZ3dvLpOMIVORxE6sHSyZj.jpg",
+      "tmdbId": 71070
+    },
+    {
+      "name": "Helena Zengel",
+      "awards": {
+        "gg": "X",
+        "sag": "X"
+      },
+      "film": "News of the World",
+      "role": "Supporting",
+      "profilePath": "/6ousX9QcimaM2tuaeBcqYEfBjKG.jpg",
+      "tmdbId": 1756490
+    },
+    {
+      "name": "Kate Hudson",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Music",
+      "role": "Leading",
+      "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
+      "tmdbId": 11661
+    },
+    {
+      "name": "Michelle Pfeiffer",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "French Exit",
+      "role": "Leading",
+      "profilePath": "/oGUmQBU87QXAsnaGleYaAjAXSlj.jpg",
+      "tmdbId": 1160
+    },
+    {
+      "name": "Anya Taylor-Joy",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Emma",
+      "role": "Leading",
+      "profilePath": "/jxAbDJWvz4p1hoFpJYG5vY2dQmq.jpg",
+      "tmdbId": 1397778
+    },
+    {
+      "name": "Alfre Woodard",
+      "film": "Clemency",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/erXesg092Pi7SHKEK2UHeimPPKf.jpg",
+      "tmdbId": 1981
+    },
+    {
+      "name": "Bukky Bakray",
+      "film": "Rocks",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/3nskUQcamrrhQN03W8kYG0fsjdh.jpg",
+      "tmdbId": 2381123
+    },
+    {
+      "name": "Radha Blank",
+      "film": "The Forty-Year-Old Version",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/3UCmRVlY1uE68IuSjXNkEgl8lKT.jpg",
+      "tmdbId": 2379700
+    },
+    {
+      "name": "Wunmi Mosaku",
+      "film": "His House",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/yWM19CjCv66MqNkwHBp6Dpvtn9x.jpg",
+      "tmdbId": 134774
+    },
+    {
+      "name": "Ashley Madekwe",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/cmmtRqxW6r1EO7kMUxt92MxyWx7.jpg",
+      "tmdbId": 75061
+    },
+    {
+      "name": "Dominique Fishback",
+      "film": "Judas and the Black Messiah",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/zduC0PM7xKzFX4F7DH8CCt5gt6O.jpg",
+      "tmdbId": 1676520
+    },
+    {
+      "name": "Kosar Ali",
+      "film": "Rocks",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/sQLjb2IqbCmnMxl4dCiMjZ4Kqql.jpg",
+      "tmdbId": 2381125
+    },
+    {
+      "name": "Niamh Algar",
+      "film": "Calm with Horses",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/80JhYyGlcgT6Ex7i5nL4rMr6gju.jpg",
+      "tmdbId": 1362813
+    },
+    {
+      "name": "Amy Adams",
+      "film": "Hillbilly Elegy",
+      "role": "Leading",
+      "awards": {
+        "sag": "X"
+      },
+      "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
+      "tmdbId": 9273
+    },
+    {
+      "name": "Sidney Flanigan",
+      "film": "Never Rarely Sometimes Always",
+      "role": "Leading",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/rIikG5VcRAWYKM0JXXc5aNI2km1.jpg",
+      "tmdbId": 2475406
+    },
+    {
+      "name": "Zendaya",
+      "film": "Malcolm & Marie",
+      "role": "Leading",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg",
+      "tmdbId": 505710
+    },
+    {
+      "name": "Ellen Burstyn",
+      "film": "Pieces of a Woman",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/uEHZoAtCnGCXvQDHe3s3DWW2G1c.jpg",
+      "tmdbId": 9560
+    }
+  ]
+}
