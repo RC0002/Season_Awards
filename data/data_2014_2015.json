@@ -224,7 +224,8 @@
       "film": "Boyhood",
       "awards": {
         "oscar": "X",
-        "gg": "Y"
+        "gg": "Y",
+        "dga": "X"
       },
       "profilePath": "/xSctxeZQzQbZoaxIvcDeHlDjbiN.jpg",
       "tmdbId": 564
@@ -233,7 +234,8 @@
       "name": "Alejandro G. Iñárritu",
       "film": "Birdman or (The Unexpected Virtue of Ignorance)",
       "awards": {
-        "oscar": "Y"
+        "oscar": "Y",
+        "dga": "Y"
       },
       "profilePath": "/Av0jewh8wltCl1CB8MfEIrvgfMZ.jpg",
       "tmdbId": 223
@@ -241,7 +243,8 @@
     {
       "name": "Clint Eastwood",
       "awards": {
-        "nbr": "Y"
+        "nbr": "Y",
+        "dga": "X"
       },
       "film": "American Sniper",
       "profilePath": "/8TwdCfeOZH7ucRlfLZ6wObxa7cO.jpg",
@@ -262,7 +265,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/s03CeUeC5yAXyB1acqP0zGNo2SC.jpg",
       "tmdbId": 5655
@@ -310,7 +314,8 @@
       "name": "Morten Tyldum",
       "film": "The Imitation Game",
       "awards": {
-        "oscar": "X"
+        "oscar": "X",
+        "dga": "X"
       },
       "profilePath": "/yTAUscziHY7mVGQ2BdBCflGYLde.jpg",
       "tmdbId": 77965

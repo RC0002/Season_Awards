@@ -236,7 +236,8 @@
         "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
-        "critics": "Y"
+        "critics": "Y",
+        "dga": "Y"
       },
       "profilePath": "/n0GzBiyx2KzwozZ9irQ8hJlf5By.jpg",
       "tmdbId": 1395183
@@ -266,7 +267,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/tpEczFclQZeKAiCeKZZ0adRvtfz.jpg",
       "tmdbId": 7467
@@ -277,7 +279,8 @@
       "awards": {
         "oscar": "X",
         "bafta": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/fwiIh7jECjefCco3ZCdug6i3t9U.jpg",
       "tmdbId": 931952
@@ -288,7 +291,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/ytyHUsPb7Saulczm8nCJHypIWQF.jpg",
       "tmdbId": 1252934
@@ -317,7 +321,8 @@
       "name": "Aaron Sorkin",
       "awards": {
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "film": "The Trial of the Chicago 7",
       "profilePath": "/hGkusztbd1rb23QFAjvpJxKSTAU.jpg",

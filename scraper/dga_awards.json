@@ -1,0 +1,509 @@
+{
+  "2012": {
+    "best-director": [
+      {
+        "name": "Ben Affleck",
+        "film": "Argo",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Steven Spielberg",
+        "film": "Lincoln",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Ang Lee",
+        "film": "Life Of Pi",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Kathryn Bigelow",
+        "film": "Zero Dark Thirty",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Tom Hooper",
+        "film": "Les Miserables",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2013": {
+    "best-director": [
+      {
+        "name": "Alfonso Cuarón",
+        "film": "Gravity",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Martin Scorsese",
+        "film": "The Wolf Of Wall Street",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "David O. Russell",
+        "film": "American Hustle",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Paul Greengrass",
+        "film": "Captain Phillips",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Steve McQueen",
+        "film": "12 Years A Slave",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2014": {
+    "best-director": [
+      {
+        "name": "Alejandro G. Iñárritu",
+        "film": "Birdman Or (The Unexpected Virtue Of Ignorance)",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Morten Tyldum",
+        "film": "The Imitation Game",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Wes Anderson",
+        "film": "The Grand Budapest Hotel",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Clint Eastwood",
+        "film": "American Sniper",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Richard Linklater",
+        "film": "Boyhood",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2015": {
+    "best-director": [
+      {
+        "name": "Alejandro González Iñárritu",
+        "film": "The Revenant",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Adam McKay",
+        "film": "The Big Short",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "George Miller",
+        "film": "Mad Max: Fury Road",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Ridley Scott",
+        "film": "The Martian",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Tom McCarthy",
+        "film": "Spotlight",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2016": {
+    "best-director": [
+      {
+        "name": "Damien Chazelle",
+        "film": "La La Land",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Denis Villeneuve",
+        "film": "Arrival",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Kenneth Lonergan",
+        "film": "Manchester By The Sea",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Garth Davis",
+        "film": "Lion",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Barry Jenkins",
+        "film": "Moonlight",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2017": {
+    "best-director": [
+      {
+        "name": "Guillermo Del Toro",
+        "film": "The Shape Of Water",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Martin McDonagh",
+        "film": "Three Billboards Outside Ebbing, Missouri",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Jordan Peele",
+        "film": "Get Out",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Christopher Nolan",
+        "film": "Dunkirk",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Greta Gerwig",
+        "film": "Lady Bird",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2018": {
+    "best-director": [
+      {
+        "name": "Alfonso Cuarón",
+        "film": "Roma",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Peter Farrelly",
+        "film": "Green Book",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Bradley Cooper",
+        "film": "A Star Is Born",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Spike Lee",
+        "film": "BlacKkKlansman",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Adam McKay",
+        "film": "Vice",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2019": {
+    "best-director": [
+      {
+        "name": "Sam Mendes",
+        "film": "1917",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Quentin Tarantino",
+        "film": "Once Upon A Time In... Hollywood",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Taika Waititi",
+        "film": "Jojo Rabbit",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Martin Scorsese",
+        "film": "The Irishman",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Bong Joon Ho",
+        "film": "Parasite",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2020": {
+    "best-director": [
+      {
+        "name": "Chloé Zhao",
+        "film": "Nomadland",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Emerald Fennell",
+        "film": "Promising Young Woman",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "David Fincher",
+        "film": "Mank",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Aaron Sorkin",
+        "film": "The Trial Of The Chicago 7",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Lee Isaac Chung",
+        "film": "Minari",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2021": {
+    "best-director": [
+      {
+        "name": "Jane Campion",
+        "film": "The Power Of The Dog",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Steven Spielberg",
+        "film": "West Side Story",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Paul Thomas Anderson",
+        "film": "Licorice Pizza",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Denis Villeneuve",
+        "film": "Dune",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Kenneth Branagh",
+        "film": "Belfast",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2022": {
+    "best-director": [
+      {
+        "name": "Daniel Kwan & Daniel Scheinert",
+        "film": "Everything Everywhere All At Once",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Todd Field",
+        "film": "Tár",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Steven Spielberg",
+        "film": "The Fabelmans",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Joseph Kosinski",
+        "film": "Top Gun: Maverick",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Martin McDonagh",
+        "film": "The Banshees Of Inisherin",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2023": {
+    "best-director": [
+      {
+        "name": "Christopher Nolan",
+        "film": "Oppenheimer",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Martin Scorsese",
+        "film": "Killers Of The Flower Moon",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Alexander Payne",
+        "film": "The Holdovers",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Greta Gerwig",
+        "film": "Barbie",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Yorgos Lanthimos",
+        "film": "Poor Things",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2024": {
+    "best-director": [
+      {
+        "name": "Sean Baker",
+        "film": "Anora",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Brady Corbet",
+        "film": "The Brutalist",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Jacques Audiard",
+        "film": "Emilia Pérez",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Edward Berger",
+        "film": "Conclave",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "James Mangold",
+        "film": "A Complete Unknown",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  }
+}

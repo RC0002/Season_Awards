@@ -234,7 +234,8 @@
       "film": "La La Land",
       "awards": {
         "oscar": "Y",
-        "gg": "Y"
+        "gg": "Y",
+        "dga": "Y"
       },
       "profilePath": "/14kRZ3XxNMyBv717YQSXr3wCucy.jpg",
       "tmdbId": 136495
@@ -246,7 +247,8 @@
         "oscar": "X",
         "gg": "X",
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "dga": "X"
       }
     },
     {
@@ -273,7 +275,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       }
     },
     {
@@ -281,7 +284,8 @@
       "film": "Arrival",
       "awards": {
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/zdDx9Xs93UIrJFWYApYR28J8M6b.jpg",
       "tmdbId": 137427
@@ -310,6 +314,13 @@
       },
       "profilePath": "/jj2Gcobpopokal0YstuCQW0ldJ4.jpg",
       "tmdbId": 5292
+    },
+    {
+      "name": "Garth Davis",
+      "film": "Lion",
+      "awards": {
+        "dga": "X"
+      }
     }
   ],
   "best-actor": [

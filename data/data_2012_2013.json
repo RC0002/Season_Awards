@@ -193,7 +193,8 @@
       "film": "Life of Pi",
       "awards": {
         "oscar": "Y",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg",
       "tmdbId": 1614
@@ -203,7 +204,8 @@
       "film": "Zero Dark Thirty",
       "awards": {
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "dga": "X"
       },
       "profilePath": "/llfsTIvItT7IEmX5qK1qUX0dbqc.jpg",
       "tmdbId": 14392
@@ -222,7 +224,8 @@
       "film": "Lincoln",
       "awards": {
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
       "tmdbId": 488
@@ -259,10 +262,18 @@
       "name": "Tom Hooper",
       "film": "Les Misérables",
       "awards": {
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/w9Z3dlJDtWBXo4rIxGI0XY896j2.jpg",
       "tmdbId": 70500
+    },
+    {
+      "name": "Ben Affleck",
+      "film": "Argo",
+      "awards": {
+        "dga": "Y"
+      }
     }
   ],
   "best-actor": [

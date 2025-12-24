@@ -218,7 +218,8 @@
         "oscar": "X",
         "gg": "Y",
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "dga": "X"
       },
       "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
       "tmdbId": 488
@@ -244,7 +245,8 @@
         "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/cjk2f3sYOqDnTUn4m07j4sNcncf.jpg",
       "tmdbId": 54472
@@ -255,7 +257,8 @@
       "awards": {
         "oscar": "X",
         "bafta": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/KR12bc20pVnlTr0wir8XuxW3Pt.jpg",
       "tmdbId": 5010
@@ -334,6 +337,20 @@
       },
       "profilePath": "/g7jXGAVT8T5vq81fO5JWDleDc75.jpg",
       "tmdbId": 147021
+    },
+    {
+      "name": "Daniel Kwan & Daniel Scheinert",
+      "film": "Everything Everywhere All At Once",
+      "awards": {
+        "dga": "Y"
+      }
+    },
+    {
+      "name": "Joseph Kosinski",
+      "film": "Top Gun: Maverick",
+      "awards": {
+        "dga": "X"
+      }
     }
   ],
   "best-actor": [

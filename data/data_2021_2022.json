@@ -217,7 +217,8 @@
         "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
-        "critics": "Y"
+        "critics": "Y",
+        "dga": "Y"
       },
       "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
       "tmdbId": 10757
@@ -229,7 +230,8 @@
         "oscar": "X",
         "bafta": "X",
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "dga": "X"
       },
       "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
       "tmdbId": 4762
@@ -249,7 +251,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg",
       "tmdbId": 11181
@@ -260,7 +263,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
       "tmdbId": 488
@@ -279,7 +283,8 @@
       "name": "Denis Villeneuve",
       "awards": {
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "film": "Dune",
       "profilePath": "/zdDx9Xs93UIrJFWYApYR28J8M6b.jpg",

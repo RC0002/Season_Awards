@@ -228,7 +228,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "dga": "X"
       },
       "film": "The Martian",
       "profilePath": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg",
@@ -249,7 +250,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       }
     },
     {
@@ -257,7 +259,8 @@
       "film": "Mad Max: Fury Road",
       "awards": {
         "oscar": "X",
-        "gg": "X"
+        "gg": "X",
+        "dga": "X"
       },
       "profilePath": "/35NQ8HjFXQlGYDz9UkhT08lKl5C.jpg",
       "tmdbId": 20629
@@ -276,7 +279,8 @@
       "name": "Adam McKay",
       "film": "The Big Short",
       "awards": {
-        "oscar": "X"
+        "oscar": "X",
+        "dga": "X"
       }
     },
     {
@@ -296,6 +300,13 @@
       },
       "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
       "tmdbId": 488
+    },
+    {
+      "name": "Alejandro González Iñárritu",
+      "film": "The Revenant",
+      "awards": {
+        "dga": "Y"
+      }
     }
   ],
   "best-actor": [

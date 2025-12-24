@@ -203,7 +203,8 @@
         "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
-        "critics": "Y"
+        "critics": "Y",
+        "dga": "Y"
       },
       "profilePath": "/xuAIuYSmsUzKlUMBFGVZaWsY3DZ.jpg",
       "tmdbId": 525
@@ -215,7 +216,8 @@
         "oscar": "X",
         "gg": "X",
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "dga": "X"
       },
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
       "tmdbId": 1032
@@ -235,7 +237,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/dvtv8eV1O8Fl385ctOu3sqO2PbD.jpg",
       "tmdbId": 122423
@@ -276,7 +279,8 @@
       "film": "Barbie",
       "awards": {
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/6MwQ2GstYr0wnhp1eTOAbVMNBGN.jpg",
       "tmdbId": 45400
@@ -286,7 +290,8 @@
       "film": "The Holdovers",
       "awards": {
         "bafta": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       }
     },
     {

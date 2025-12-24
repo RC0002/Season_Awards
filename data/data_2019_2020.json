@@ -216,7 +216,8 @@
       "awards": {
         "oscar": "X",
         "gg": "Y",
-        "critics": "Y"
+        "critics": "Y",
+        "dga": "Y"
       },
       "profilePath": "/5z89X9rB76JDblqMQ52fviwXxAN.jpg",
       "tmdbId": 39
@@ -238,7 +239,8 @@
         "oscar": "X",
         "gg": "X",
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "dga": "X"
       },
       "profilePath": "/1gjcpAa99FAOWGnrUvHEXXsRs7o.jpg",
       "tmdbId": 138
@@ -258,7 +260,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
       "tmdbId": 1032
@@ -274,7 +277,8 @@
     {
       "name": "Bong Joon Ho",
       "awards": {
-        "gg": "X"
+        "gg": "X",
+        "dga": "X"
       },
       "film": "Parasite",
       "profilePath": "/stwnTvZAoD8gEJEDHpDQyLCyDy5.jpg",
@@ -303,6 +307,13 @@
       "film": "Uncut Gems",
       "awards": {
         "critics": "X"
+      }
+    },
+    {
+      "name": "Taika Waititi",
+      "film": "Jojo Rabbit",
+      "awards": {
+        "dga": "X"
       }
     }
   ],

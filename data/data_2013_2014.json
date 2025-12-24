@@ -202,7 +202,8 @@
       "film": "Gravity",
       "awards": {
         "oscar": "Y",
-        "gg": "Y"
+        "gg": "Y",
+        "dga": "Y"
       },
       "profilePath": "/eoCHiXaQzGgx9RiwXnt3k239FLc.jpg",
       "tmdbId": 11218
@@ -230,7 +231,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/59rXnJS4g5dUr1Hz8QNLo5epD2a.jpg",
       "tmdbId": 17883
@@ -241,7 +243,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/mhHk4NRPXEJLL0SySheXZAArp5w.jpg",
       "tmdbId": 13565
@@ -259,7 +262,8 @@
       "film": "The Wolf of Wall Street",
       "awards": {
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
       "tmdbId": 1032
@@ -268,7 +272,8 @@
       "name": "Paul Greengrass",
       "awards": {
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "film": "Captain Phillips",
       "profilePath": "/kJxQWrERq8p7gxRP2fIcS8suwme.jpg",

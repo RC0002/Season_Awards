@@ -198,7 +198,8 @@
       "awards": {
         "oscar": "Y",
         "gg": "Y",
-        "critics": "Y"
+        "critics": "Y",
+        "dga": "Y"
       },
       "profilePath": "/eoCHiXaQzGgx9RiwXnt3k239FLc.jpg",
       "tmdbId": 11218
@@ -208,7 +209,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "dga": "X"
       },
       "film": "A Star Is Born",
       "profilePath": "/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg",
@@ -229,7 +231,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/2KOHXgk2uoRXl6u7V9xpAIo3uay.jpg",
       "tmdbId": 5281
@@ -240,7 +243,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       }
     },
     {
@@ -257,7 +261,8 @@
       "name": "Peter Farrelly",
       "awards": {
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "film": "Green Book",
       "profilePath": "/3PDYOFfk5NLmNcEz6SFZmdmqVZr.jpg",

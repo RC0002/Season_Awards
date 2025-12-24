@@ -1,43 +1,43 @@
 {
   "best-film": [
     {
-      "name": "Anora",
-      "awards": {
-        "oscar": "Y",
-        "gg": "X",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "Y",
-        "afi": "Y",
-        "nbr": "Y"
-      },
-      "posterPath": "/cgXk2tNYhJZLXdBDO5DidAVzQ82.jpg",
-      "tmdbId": 1064213
-    },
-    {
       "name": "Conclave",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "Y",
+        "oscar": "X",
         "sag": "Y",
         "critics": "X",
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "afi": "Y"
       },
       "posterPath": "/m5x8D0bZ3eKqIVWZ5y7TnZ2oTVg.jpg",
       "tmdbId": 974576
     },
     {
-      "name": "A Complete Unknown",
+      "name": "Anora",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "Y",
+        "sag": "X",
+        "critics": "Y",
+        "nbr": "Y",
+        "afi": "Y"
+      },
+      "posterPath": "/cgXk2tNYhJZLXdBDO5DidAVzQ82.jpg",
+      "tmdbId": 1064213
+    },
+    {
+      "name": "A Complete Unknown",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "afi": "Y"
       },
       "posterPath": "/llWl3GtNoXosbvYboelmoT459NM.jpg",
       "tmdbId": 661539
@@ -45,9 +45,9 @@
     {
       "name": "Emilia Pérez",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "afi": "Y"
@@ -58,12 +58,12 @@
     {
       "name": "Wicked",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "afi": "Y"
       },
       "posterPath": "/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg",
       "tmdbId": 402431
@@ -71,9 +71,9 @@
     {
       "name": "The Brutalist",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
         "bafta": "X",
+        "oscar": "X",
         "critics": "X",
         "afi": "Y"
       },
@@ -84,8 +84,8 @@
       "name": "A Real Pain",
       "awards": {
         "gg": "X",
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "afi": "Y"
       },
       "posterPath": "/67xRIXm5TxXRT4nV2V4AEJ9yq2d.jpg",
       "tmdbId": 1013850
@@ -94,8 +94,8 @@
       "name": "Sing Sing",
       "awards": {
         "critics": "X",
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "afi": "Y"
       },
       "posterPath": "/26lQ3OJqv5NRDpd38eU54zAfLxr.jpg",
       "tmdbId": 63701
@@ -103,8 +103,8 @@
     {
       "name": "Dune: Part Two",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X",
         "afi": "Y"
       },
@@ -114,22 +114,13 @@
     {
       "name": "Nickel Boys",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X",
         "afi": "Y"
       },
       "posterPath": "/lu2vmmtStmTNMmSZl2LgrrQpLZo.jpg",
       "tmdbId": 1028196
-    },
-    {
-      "name": "Baby Reindeer",
-      "awards": {
-        "afi": "Y"
-      },
-      "note": "AFI Special Award",
-      "posterPath": "/fsUnySgQ6IBuK6Qxbp4HLnG7xD7.jpg",
-      "tmdbId": 780411
     },
     {
       "name": "Babygirl",
@@ -172,6 +163,15 @@
       "tmdbId": 1059128
     },
     {
+      "name": "Baby Reindeer",
+      "awards": {
+        "afi": "Y"
+      },
+      "note": "AFI Special Award",
+      "posterPath": "/fsUnySgQ6IBuK6Qxbp4HLnG7xD7.jpg",
+      "tmdbId": 780411
+    },
+    {
       "name": "Father Mother Sister Brother",
       "awards": {
         "venice": "Y"
@@ -182,20 +182,12 @@
     {
       "name": "The Substance",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X"
       },
       "posterPath": "/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
       "tmdbId": 933260
-    },
-    {
-      "name": "I'm Still Here",
-      "awards": {
-        "oscar": "X"
-      },
-      "posterPath": "/gZnsMbhCvhzAQlKaVpeFRHYjGyb.jpg",
-      "tmdbId": 1000837
     },
     {
       "name": "September 5",
@@ -212,6 +204,14 @@
       },
       "posterPath": "/H6vke7zGiuLsz4v4RPeReb9rsv.jpg",
       "tmdbId": 937287
+    },
+    {
+      "name": "I'm Still Here",
+      "awards": {
+        "oscar": "X"
+      },
+      "posterPath": "/gZnsMbhCvhzAQlKaVpeFRHYjGyb.jpg",
+      "tmdbId": 1000837
     }
   ],
   "best-director": [
@@ -219,13 +219,27 @@
       "name": "Brady Corbet",
       "film": "The Brutalist",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
         "bafta": "Y",
-        "critics": "X"
+        "oscar": "X",
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/o5RVawgYeKSzMt8o0VLg38ulHZX.jpg",
       "tmdbId": 55493
+    },
+    {
+      "name": "Sean Baker",
+      "film": "Anora",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "Y",
+        "critics": "X",
+        "dga": "Y"
+      },
+      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
+      "tmdbId": 118415
     },
     {
       "name": "Jon M. Chu",
@@ -236,18 +250,6 @@
       },
       "profilePath": "/85kOxm7w4nGRwyhquj9wtUM8KUW.jpg",
       "tmdbId": 54507
-    },
-    {
-      "name": "Sean Baker",
-      "film": "Anora",
-      "awards": {
-        "oscar": "Y",
-        "gg": "X",
-        "bafta": "X",
-        "critics": "X"
-      },
-      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
-      "tmdbId": 118415
     },
     {
       "name": "Benny Safdie",
@@ -262,25 +264,14 @@
       "name": "Jacques Audiard",
       "film": "Emilia Pérez",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "critics": "X"
+        "oscar": "X",
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/cODcsQRkKSEiZlEQvdKwnDm136l.jpg",
       "tmdbId": 17496
-    },
-    {
-      "name": "Coralie Fargeat",
-      "film": "The Substance",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "critics": "X"
-      },
-      "profilePath": "/weElmtGXU0eqSDyJxh32ZBgIpqw.jpg",
-      "tmdbId": 1607016
     },
     {
       "name": "Edward Berger",
@@ -288,8 +279,21 @@
       "awards": {
         "gg": "X",
         "bafta": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       }
+    },
+    {
+      "name": "Coralie Fargeat",
+      "film": "The Substance",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/weElmtGXU0eqSDyJxh32ZBgIpqw.jpg",
+      "tmdbId": 1607016
     },
     {
       "name": "Denis Villeneuve",
@@ -305,7 +309,8 @@
       "name": "James Mangold",
       "film": "A Complete Unknown",
       "awards": {
-        "oscar": "X"
+        "oscar": "X",
+        "dga": "X"
       },
       "profilePath": "/pk0GDjn99crNwR4qgCCEokDYd71.jpg",
       "tmdbId": 366
@@ -335,9 +340,9 @@
       "film": "A Real Pain",
       "role": "Supporting",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
       },
@@ -349,9 +354,9 @@
       "film": "The Brutalist",
       "role": "Leading",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "X",
         "critics": "Y"
       },
@@ -363,9 +368,9 @@
       "film": "A Complete Unknown",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "Y",
         "critics": "X"
       },
@@ -409,9 +414,9 @@
       "film": "Sing Sing",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -423,9 +428,9 @@
       "film": "Conclave",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -437,9 +442,9 @@
       "film": "Anora",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -451,9 +456,9 @@
       "film": "A Complete Unknown",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -465,9 +470,9 @@
       "film": "The Brutalist",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "critics": "X"
       },
       "profilePath": "/3ijvoBqPaIIQsb5QTTGB485nqn.jpg",
@@ -478,9 +483,9 @@
       "film": "The Apprentice",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X"
       },
       "profilePath": "/jcMhXWICSi4QjQttJVhFSiKVvpF.jpg",
@@ -491,9 +496,9 @@
       "film": "The Apprentice",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "bafta": "X"
+        "bafta": "X",
+        "oscar": "X"
       },
       "profilePath": "/nKZgixTbHFXpkzzIpMFdLX98GYh.jpg",
       "tmdbId": 60898
@@ -589,9 +594,9 @@
       "film": "Emilia Pérez",
       "role": "Supporting",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
       },
@@ -603,9 +608,9 @@
       "film": "The Substance",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
         "bafta": "X",
+        "oscar": "X",
         "sag": "Y",
         "critics": "Y"
       },
@@ -617,9 +622,9 @@
       "film": "Anora",
       "role": "Leading",
       "awards": {
-        "oscar": "Y",
         "gg": "X",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "X",
         "critics": "X"
       },
@@ -631,8 +636,8 @@
       "film": "I'm Still Here",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
-        "gg": "Y"
+        "gg": "Y",
+        "oscar": "X"
       },
       "profilePath": "/dkxdADNwbM7ZLQK5YBNeKBqVJNM.jpg",
       "tmdbId": 87335
@@ -662,9 +667,9 @@
       "film": "Wicked",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -676,9 +681,9 @@
       "film": "Emilia Pérez",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -690,9 +695,9 @@
       "film": "Wicked",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -704,9 +709,9 @@
       "film": "Conclave",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "critics": "X"
       },
       "profilePath": "/z0zojT6nwDxi35HMcXlVpBfuBAU.jpg",
@@ -717,23 +722,12 @@
       "film": "The Brutalist",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "bafta": "X"
+        "bafta": "X",
+        "oscar": "X"
       },
       "profilePath": "/gsrb1CuyAQtTVZILtNA5tRnhHbs.jpg",
       "tmdbId": 72855
-    },
-    {
-      "name": "Monica Barbaro",
-      "film": "A Complete Unknown",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "sag": "X"
-      },
-      "profilePath": "/hiOYXzSkkuKyCEcjLxBoAc4bLZS.jpg",
-      "tmdbId": 1525043
     },
     {
       "name": "Pamela Anderson",
@@ -789,6 +783,17 @@
       },
       "profilePath": "/eWKubKAAssRzmFwCZKh1mdYqGCH.jpg",
       "tmdbId": 8944
+    },
+    {
+      "name": "Monica Barbaro",
+      "film": "A Complete Unknown",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X"
+      },
+      "profilePath": "/hiOYXzSkkuKyCEcjLxBoAc4bLZS.jpg",
+      "tmdbId": 1525043
     },
     {
       "name": "Danielle Deadwyler",
