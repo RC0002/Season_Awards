@@ -2,18 +2,9 @@
 // Firebase Realtime Database + LocalStorage Buffer
 
 // ============ FIREBASE CONFIG ============
-// 🔥 REPLACEED THIS with your Firebase project config!
-// Get it from: Firebase Console → Project Settings → Web App
-const firebaseConfig = {
-    apiKey: "AIzaSyBZjeKeLz49GVL4DXlu07H2v_jL-FyQjxg",
-    authDomain: "seasonawards-8deae.firebaseapp.com",
-    databaseURL: "https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "seasonawards-8deae",
-    storageBucket: "seasonawards-8deae.firebasestorage.app",
-    messagingSenderId: "834709572288",
-    appId: "1:834709572288:web:c85814b579483203397b25",
-    measurementId: "G-CHL284WZMJ"
-};
+// Firebase config is loaded from firebase-config.js (excluded from git)
+// Create firebase-config.js with your Firebase project config:
+// const firebaseConfig = { apiKey: "...", authDomain: "...", ... };
 
 // Initialize Firebase
 let db = null;

@@ -4,6 +4,9 @@ __pycache__/
 *$py.class
 *.so
 
+# Firebase config (contains API key)
+firebase-config.js
+
 # Virtual environments
 venv/
 env/
