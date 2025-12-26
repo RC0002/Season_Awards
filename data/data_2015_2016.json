@@ -9,7 +9,8 @@
         "sag": "Y",
         "afi": "Y",
         "nbr": "Y",
-        "pga": "X"
+        "pga": "X",
+        "critics": "X"
       },
       "posterPath": "/8DPGG400FgaFWaqcv11n8mRd2NG.jpg",
       "tmdbId": 314365
@@ -309,7 +310,8 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "dga": "X"
+        "dga": "X",
+        "critics": "X"
       },
       "film": "Mad Max: Fury Road",
       "profilePath": "/35NQ8HjFXQlGYDz9UkhT08lKl5C.jpg",
@@ -344,7 +346,8 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
       "tmdbId": 6193
@@ -393,10 +396,11 @@
       "name": "Sylvester Stallone",
       "awards": {
         "gg": "Y",
-        "oscar": "X"
+        "oscar": "X",
+        "critics": "X"
       },
       "film": "Creed",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/gn3pDWthJqR0VDYGViGD3048og7.jpg",
       "tmdbId": 16483
     },
@@ -482,7 +486,7 @@
         "critics": "X"
       },
       "film": "99 Homes",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/6mMczfjM8CiS1WuBOgo5Xom1TcR.jpg",
       "tmdbId": 335
     },
@@ -493,7 +497,7 @@
         "critics": "X"
       },
       "film": "Love & Mercy",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/zEJJsm0z07EPNl2Pi1h67xuCmcA.jpg",
       "tmdbId": 17142
     },
@@ -590,7 +594,8 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X"
       },
       "profilePath": "/xSGvMwNNJcEQvVcjiIUTyxyMfkZ.jpg",
       "tmdbId": 60073
@@ -612,12 +617,13 @@
     {
       "name": "Alicia Vikander",
       "film": "The Danish Girl",
-      "role": "Leading",
+      "role": "Supporting",
       "awards": {
         "bafta": "X",
         "gg": "X",
         "oscar": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "profilePath": "/9pmHTbXeRxUF51jJKthmHI49u9z.jpg",
       "tmdbId": 227454
@@ -736,10 +742,11 @@
       "name": "Helen Mirren",
       "awards": {
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "film": "Trumbo",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
       "tmdbId": 15735
     },

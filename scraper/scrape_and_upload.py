@@ -41,14 +41,15 @@ from firebase_upload import upload_year_data, load_json_file, FIREBASE_DB_URL
 HISTORICAL_AVERAGES = {
     # Oscar: 10 films, 5 directors, 5 leading + 5 supporting actors/actresses
     'oscar': {'best-film': 10, 'best-director': 5, 'best-actor': 10, 'best-actress': 10},
-    # GG: Drama + Comedy films, Drama + Comedy + Supporting actors = ~18 each
+    # GG: 2024+ = 12 films, 6 directors, 18 actors (5+5+5+3?); pre-2024 = 10/5/15
     'gg': {'best-film': 12, 'best-director': 6, 'best-actor': 18, 'best-actress': 18},
-    # BAFTA: 6 films, 6 directors, 6 leading + 6 supporting = 12 actors
-    'bafta': {'best-film': 6, 'best-director': 6, 'best-actor': 12, 'best-actress': 12},
+    # BAFTA: 5 films, 6 directors, 6 leading + 6 supporting = 12 actors
+    'bafta': {'best-film': 5, 'best-director': 6, 'best-actor': 12, 'best-actress': 12},
     # SAG: 5 films (cast), no directors, 5 leading + 5 supporting = 10
     'sag': {'best-film': 5, 'best-director': 0, 'best-actor': 10, 'best-actress': 10},
-    # Critics: 10 films, 8 directors, 6 leading + 6 supporting = 12
-    'critics': {'best-film': 10, 'best-director': 8, 'best-actor': 12, 'best-actress': 12},
+    # Critics: 10 films, 6 directors, 6 leading + 6 supporting = 12
+    # Note: Critics Choice varies year by year, especially for actors (10-14)
+    'critics': {'best-film': 10, 'best-director': 6, 'best-actor': 12, 'best-actress': 12},
     # AFI: 10 (or 11) films only
     'afi': {'best-film': 11, 'best-director': 0, 'best-actor': 0, 'best-actress': 0},
     # NBR: 10 films, 1 winner each for director/actor/actress
@@ -61,8 +62,83 @@ HISTORICAL_AVERAGES = {
     'pga': {'best-film': 10, 'best-director': 0, 'best-actor': 0, 'best-actress': 0},
 }
 
-# Tolerance for comparison (e.g., 0.5 means ±50% of expected)
-TOLERANCE = 0.5
+# Year-specific overrides for historical rule changes
+# Format: {award: {category: {(start_year, end_year): expected_count}}}
+# Based on actual nomination counts and regulation changes
+HISTORICAL_EXPECTED_OVERRIDES = {
+    'oscar': {
+        # Oscar Best Picture: 5 before 2010, 10 in 2010-2011, 5-10 variable 2012-2021, 10 from 2022
+        # Using 5 for pre-2010, using actual counts for variable years
+        'best-film': {
+            (2013, 2013): 9,  # 85th: 9 nominees
+            (2014, 2014): 9,  # 86th: 9 nominees
+            (2015, 2015): 8,  # 87th: 8 nominees
+            (2016, 2016): 8,  # 88th: 8 nominees
+            (2017, 2017): 9,  # 89th: 9 nominees
+            (2018, 2018): 9,  # 90th: 9 nominees
+            (2019, 2019): 8,  # 91st: 8 nominees
+            (2020, 2020): 9,  # 92nd: 9 nominees
+            (2021, 2021): 8,  # 93rd: 8 nominees
+        },
+    },
+    'gg': {
+        # Golden Globes changed in 2024: 12 films, 6 directors, 18 actors
+        # Before 2024: 10 films, 5 directors, 15 actors (5 Drama + 5 Comedy + 5 Supporting)
+        'best-film': {(2013, 2023): 10},
+        'best-director': {(2013, 2023): 5},
+        'best-actor': {(2013, 2023): 15},
+        'best-actress': {(2013, 2023): 15},
+    },
+    'bafta': {
+        # BAFTA: Expanded to 6 nominees per category from 2021 (74th BAFTA)
+        # Pre-2021: 5 directors, 5+5=10 actors per gender
+        # From 2021: 6 directors, 6+6=12 actors per gender (base values)
+        'best-director': {(2013, 2020): 5},  # Was 5 until 2020
+        'best-actor': {(2013, 2020): 10},    # Was 5+5=10 until 2020
+        'best-actress': {(2013, 2020): 10},  # Was 5+5=10 until 2020
+    },
+    'sag': {
+        # SAG: Cast in motion picture 5
+        # Actors: 5 leading + 5 supporting = 10 total (no override needed, base is correct)
+    },
+    'critics': {
+        # Critics Choice: Varies by year - based on actual Wikipedia data (after scraper fix)
+        # Film: 10 base (2016 had 11 with Star Wars added late, 2023 had 11)
+        # Director: varies 6-10 by year
+        # Actors: varies 12-14 by year (ties and variations)
+        'best-film': {(2016, 2016): 11, (2023, 2023): 11},
+        'best-director': {(2013, 2014): 6, (2015, 2015): 7, (2017, 2018): 7, (2019, 2021): 7, (2023, 2023): 10, (2025, 2025): 8},
+        'best-actor': {(2014, 2014): 12, (2018, 2018): 14, (2019, 2020): 13, (2021, 2021): 14, (2022, 2022): 13, (2023, 2023): 14},
+        'best-actress': {(2014, 2014): 13, (2018, 2018): 13, (2019, 2021): 13, (2023, 2023): 13},
+    },
+    'afi': {
+        # AFI: Usually 10 or 11 films
+        'best-film': {(2013, 2020): 10},
+    },
+    'pga': {
+        # PGA: 10 nominees typically
+        'best-film': {(2013, 2019): 10},
+    },
+    'dga': {
+        # DGA: 5 directors
+        'best-director': {},  # Always 5, no overrides needed
+    },
+}
+
+
+def get_expected_count(award, category, year):
+    """Get expected nomination count for a given award/category/year, considering historical changes."""
+    base = HISTORICAL_AVERAGES.get(award, {}).get(category, 0)
+    
+    overrides = HISTORICAL_EXPECTED_OVERRIDES.get(award, {}).get(category, {})
+    for (start, end), count in overrides.items():
+        if start <= year <= end:
+            return count
+    
+    return base
+
+# Tolerance for comparison (0 = exact match required)
+TOLERANCE = 0
 
 # Lock for thread-safe printing
 print_lock = Lock()
@@ -516,6 +592,182 @@ def run_full_pipeline(years=None, parallel=True, force_upload=False):
     print("\n" + "="*60)
     print("   ✅ PIPELINE COMPLETE")
     print("="*60)
+    
+    # Step 3: Generate analysis JSON for control panel (only for scraped years)
+    generate_analysis_json(years_to_update=years)
+
+
+def generate_analysis_json(years_to_update=None):
+    """
+    Generate analysis.json with detailed scraping statistics for the control panel.
+    
+    Args:
+        years_to_update: Optional list of year parameters (e.g., [2025, 2026]) to update.
+                        If None, regenerates all years.
+                        If provided, only updates stats for those specific years.
+    
+    Structure:
+    {
+        "generated": "2025-12-26T12:00:00",
+        "expected": { award: { category: expected_count }},
+        "years": {
+            "2024_2025": {
+                "oscar": {
+                    "best-film": { "nominations": 10, "winners": 1, "status": "ok" },
+                    ...
+                },
+                ...
+            },
+            ...
+        }
+    }
+    """
+    import glob
+    from datetime import datetime
+    
+    data_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
+    output_path = os.path.join(data_dir, 'analysis.json')
+    
+    # If updating specific years, load existing analysis first
+    if years_to_update is not None:
+        try:
+            with open(output_path, 'r', encoding='utf-8') as f:
+                analysis = json.load(f)
+            analysis["generated"] = datetime.now().isoformat()
+            # Convert year params to year_key format for comparison
+            years_to_update_keys = [f"{y-1}_{y}" for y in years_to_update]
+        except FileNotFoundError:
+            # No existing analysis, regenerate all
+            years_to_update = None
+    
+    if years_to_update is None:
+        # Regenerate all
+        analysis = {
+            "generated": datetime.now().isoformat(),
+            "expected": HISTORICAL_AVERAGES,
+            "years": {}
+        }
+        years_to_update_keys = None  # Process all files
+    
+    # Find all data files
+    data_files = glob.glob(os.path.join(data_dir, 'data_*.json'))
+    
+    for filepath in sorted(data_files):
+        filename = os.path.basename(filepath)
+        # Extract year from filename (e.g., data_2024_2025.json -> 2024_2025)
+        year_key = filename.replace('data_', '').replace('.json', '')
+        
+        # Skip years not being updated (if partial update)
+        if years_to_update_keys is not None and year_key not in years_to_update_keys:
+            continue
+        
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                year_data = json.load(f)
+        except Exception as e:
+            print(f"  Warning: Could not read {filename}: {e}")
+            continue
+        
+        analysis["years"][year_key] = {}
+        
+        # Initialize all awards
+        for award_key in HISTORICAL_AVERAGES.keys():
+            analysis["years"][year_key][award_key] = {}
+            for category in ['best-film', 'best-director', 'best-actor', 'best-actress']:
+                analysis["years"][year_key][award_key][category] = {
+                    "nominations": 0,
+                    "winners": 0,
+                    "status": "pending"  # Will be updated if data exists
+                }
+        
+        # Count nominations and winners per award/category
+        for category, entries in year_data.items():
+            if category not in ['best-film', 'best-director', 'best-actor', 'best-actress']:
+                continue
+                
+            for entry in entries:
+                awards = entry.get('awards', {})
+                for award_key, status in awards.items():
+                    if award_key not in HISTORICAL_AVERAGES:
+                        continue
+                    
+                    analysis["years"][year_key][award_key][category]["nominations"] += 1
+                    if status == 'Y':
+                        analysis["years"][year_key][award_key][category]["winners"] += 1
+        
+        # Determine status for each award/category
+        # Extract the end year from year_key (e.g., "2024_2025" -> 2025)
+        year = int(year_key.split('_')[1])
+        for award_key in HISTORICAL_AVERAGES.keys():
+            for category in ['best-film', 'best-director', 'best-actor', 'best-actress']:
+                count = analysis["years"][year_key][award_key][category]["nominations"]
+                # Use year-specific expected count
+                expected = get_expected_count(award_key, category, year)
+                analysis["years"][year_key][award_key][category]["expected"] = expected
+                
+                if expected == 0:
+                    # No data expected for this category
+                    analysis["years"][year_key][award_key][category]["status"] = "ok"
+                elif count == 0:
+                    # Expected data but none found
+                    analysis["years"][year_key][award_key][category]["status"] = "pending"
+                elif award_key in ['afi', 'nbr', 'pga'] and category == 'best-film':
+                    # AFI, NBR, PGA: Top 10 or more is OK (minimum 10)
+                    analysis["years"][year_key][award_key][category]["expected"] = "10+"
+                    if count >= 10:
+                        analysis["years"][year_key][award_key][category]["status"] = "ok"
+                    else:
+                        analysis["years"][year_key][award_key][category]["status"] = "error"
+                elif count == expected:
+                    # Exact match
+                    analysis["years"][year_key][award_key][category]["status"] = "ok"
+                else:
+                    # Mismatch
+                    analysis["years"][year_key][award_key][category]["status"] = "error"
+    
+    # Save analysis.json locally
+    output_path = os.path.join(data_dir, 'analysis.json')
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(analysis, f, indent=2, ensure_ascii=False)
+    
+    # Upload to Firebase
+    firebase_url = "https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app"
+    try:
+        response = requests.put(f"{firebase_url}/analysis.json", json=analysis)
+        if response.status_code == 200:
+            print(f"\n  📊 Generated analysis.json and uploaded to Firebase")
+        else:
+            print(f"\n  📊 Generated analysis.json (Firebase upload failed: {response.status_code})")
+    except Exception as e:
+        print(f"\n  📊 Generated analysis.json (Firebase upload error: {e})")
+
+
+
+# =============================================================================
+# SEASON AUTO-DETECTION
+# =============================================================================
+
+def get_current_season():
+    """
+    Auto-detect the current awards season based on date.
+    Awards season runs from October to September of the following year.
+    
+    Oct 2025 - Sep 2026 = Season 2025_2026 (year param = 2026)
+    Oct 2024 - Sep 2025 = Season 2024_2025 (year param = 2025)
+    
+    Returns: (year_param, season_string) e.g. (2026, "2025_2026")
+    """
+    now = datetime.now()
+    
+    # October starts new season
+    if now.month >= 10:  # Oct-Dec
+        season_start = now.year
+        season_end = now.year + 1
+    else:  # Jan-Sep
+        season_start = now.year - 1
+        season_end = now.year
+    
+    return season_end, f"{season_start}_{season_end}"
 
 
 # =============================================================================
@@ -525,19 +777,28 @@ def run_full_pipeline(years=None, parallel=True, force_upload=False):
 if __name__ == "__main__":
     import argparse
     
+    # Get current season info
+    current_year, current_season = get_current_season()
+    
     parser = argparse.ArgumentParser(
         description='Scrape and upload awards data',
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
+        epilog=f"""
 Examples:
-  py scraper/scrape_and_upload.py --years 2026           # Current season
-  py scraper/scrape_and_upload.py --years 2026 --no-parallel  # Debug mode
-  py scraper/scrape_and_upload.py --upload-only --years 2026  # Just upload
-  py scraper/scrape_and_upload.py --years 2024,2025,2026      # Multiple years
+  py scraper/scrape_and_upload.py                          # Current season ({current_season})
+  py scraper/scrape_and_upload.py --years 2024             # Historical (2023_2024)
+  py scraper/scrape_and_upload.py --years 2024,2025        # Multiple historical years
+  py scraper/scrape_and_upload.py --no-parallel            # Debug mode (sequential)
+  py scraper/scrape_and_upload.py --upload-only            # Just upload existing files
+
+Season Logic:
+  - Oct {current_year-1} to Sep {current_year} = Season {current_season}
+  - Without --years: scrapes current season automatically
+  - With --years: scrapes specific historical season(s)
         """
     )
-    parser.add_argument('--years', type=str, default='2026',
-                        help='Year(s) to process: "2026" or "2024-2026" or "2024,2025,2026"')
+    parser.add_argument('--years', type=str, default=None,
+                        help=f'Year(s) for historical scraping. Without this, scrapes current season ({current_season})')
     parser.add_argument('--no-parallel', action='store_true',
                         help='Disable parallel scraping (useful for debugging)')
     parser.add_argument('--force', action='store_true',
@@ -546,14 +807,21 @@ Examples:
                         help='Skip scraping, only upload existing files')
     args = parser.parse_args()
     
-    # Parse years
-    if '-' in args.years:
-        start, end = map(int, args.years.split('-'))
-        years = list(range(end, start-1, -1))
-    elif ',' in args.years:
-        years = [int(y) for y in args.years.split(',')]
+    # Determine years to process
+    if args.years is None:
+        # Auto-detect current season
+        years = [current_year]
+        print(f"\n  🎬 Auto-detected current season: {current_season}\n")
     else:
-        years = [int(args.years)]
+        # Parse specified years (historical)
+        if '-' in args.years:
+            start, end = map(int, args.years.split('-'))
+            years = list(range(end, start-1, -1))
+        elif ',' in args.years:
+            years = [int(y) for y in args.years.split(',')]
+        else:
+            years = [int(args.years)]
+        print(f"\n  📚 Historical scraping for: {', '.join(f'{y-1}_{y}' for y in years)}\n")
     
     if args.upload_only:
         upload_with_change_detection(years)

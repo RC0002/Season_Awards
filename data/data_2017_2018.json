@@ -35,7 +35,8 @@
         "oscar": "Y",
         "gg": "X",
         "afi": "Y",
-        "pga": "Y"
+        "pga": "Y",
+        "critics": "X"
       },
       "posterPath": "/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
       "tmdbId": 399055
@@ -238,7 +239,8 @@
       "awards": {
         "bafta": "Y",
         "oscar": "Y",
-        "gg": "Y"
+        "gg": "Y",
+        "critics": "X"
       },
       "profilePath": "/gldeyCtKcaqnK1v4Vu9vqayhzUQ.jpg",
       "tmdbId": 10828
@@ -366,7 +368,8 @@
         "bafta": "Y",
         "oscar": "Y",
         "gg": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "profilePath": "/2v9FVVBUrrkW2m3QOcYkuhq9A6o.jpg",
       "tmdbId": 64
@@ -379,7 +382,8 @@
         "bafta": "Y",
         "oscar": "Y",
         "gg": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "profilePath": "/ruaUgtATy70VygkqtfHPwpJ0Gcj.jpg",
       "tmdbId": 6807
@@ -539,7 +543,7 @@
         "critics": "X"
       },
       "film": "Call Me by Your Name",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/4Z5nLW2biRjqstDMKqSaeQYAesK.jpg",
       "tmdbId": 53807
     },
@@ -611,6 +615,15 @@
       },
       "profilePath": "/aYB3SQm3h6ZyAdlbGyiNfakjx56.jpg",
       "tmdbId": 72873
+    },
+    {
+      "name": "Michael Stuhlbarg",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/aYB3SQm3h6ZyAdlbGyiNfakjx56.jpg",
+      "tmdbId": 72873
     }
   ],
   "best-actress": [
@@ -622,7 +635,8 @@
         "bafta": "Y",
         "oscar": "Y",
         "gg": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
       "tmdbId": 3910
@@ -635,7 +649,8 @@
         "bafta": "Y",
         "oscar": "Y",
         "gg": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "profilePath": "/hpBKWV1jjoXQbr1s0iUZTSvw582.jpg",
       "tmdbId": 19
@@ -752,7 +767,7 @@
         "critics": "X"
       },
       "film": "Downsizing",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/tRQnoEzqSq5TU0nYTzNXnLsKmET.jpg",
       "tmdbId": 1360317
     },

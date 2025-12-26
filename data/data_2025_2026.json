@@ -12,42 +12,6 @@
       "tmdbId": 1062722
     },
     {
-      "name": "Hamnet",
-      "awards": {
-        "gg": "X",
-        "critics": "X",
-        "afi": "Y"
-      },
-      "posterPath": "/71KNp6RiOQTbs8Fn1DagrFQrZmx.jpg",
-      "tmdbId": 858024
-    },
-    {
-      "name": "It Was Just an Accident",
-      "awards": {
-        "gg": "X",
-        "afi": "Y"
-      },
-      "posterPath": "/eNYGj2DG3n8OrVPTfYunpPW9uas.jpg",
-      "tmdbId": 1456349
-    },
-    {
-      "name": "The Secret Agent",
-      "awards": {
-        "gg": "X"
-      },
-      "posterPath": "/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
-      "tmdbId": 1220564
-    },
-    {
-      "name": "Sentimental Value",
-      "awards": {
-        "gg": "X",
-        "critics": "X"
-      },
-      "posterPath": "/9Lk6KZm9Fg7N3gyOX8SMF7WByQk.jpg",
-      "tmdbId": 1124566
-    },
-    {
       "name": "Sinners",
       "awards": {
         "gg": "X",
@@ -59,24 +23,6 @@
       "tmdbId": 1233413
     },
     {
-      "name": "Blue Moon",
-      "awards": {
-        "gg": "X"
-      },
-      "posterPath": "/dVU7SNc6dgStTVdtbPLQncWxsyZ.jpg",
-      "tmdbId": 1299655
-    },
-    {
-      "name": "Bugonia",
-      "awards": {
-        "gg": "X",
-        "critics": "X",
-        "afi": "Y"
-      },
-      "posterPath": "/oxgsAQDAAxA92mFGYCZllgWkH9J.jpg",
-      "tmdbId": 701387
-    },
-    {
       "name": "Marty Supreme",
       "awards": {
         "gg": "X",
@@ -84,24 +30,8 @@
         "afi": "Y",
         "nbr": "Y"
       },
-      "posterPath": "/1DMkADrM4BF6fi1gEjXZ89rROKR.jpg",
+      "posterPath": "/6eA1sUOhxAOQvCSClLsBLzmZzdK.jpg",
       "tmdbId": 1317288
-    },
-    {
-      "name": "No Other Choice",
-      "awards": {
-        "gg": "X"
-      },
-      "posterPath": "/vc2S0dvgpsM0XfSiXZDMVkRCSSU.jpg",
-      "tmdbId": 639988
-    },
-    {
-      "name": "Nouvelle Vague",
-      "awards": {
-        "gg": "X"
-      },
-      "posterPath": "/mGSaAfCLtQRWIFbQv6cQ6fIfD4Y.jpg",
-      "tmdbId": 1254808
     },
     {
       "name": "One Battle After Another",
@@ -111,7 +41,7 @@
         "afi": "Y",
         "nbr": "Y"
       },
-      "posterPath": "/r4uXvqCeco0KmO0CjlhXuTEFuSE.jpg",
+      "posterPath": "/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
       "tmdbId": 1054867
     },
     {
@@ -150,8 +80,37 @@
         "afi": "Y",
         "nbr": "Y"
       },
-      "posterPath": "/gDVgC9jd917NdAcqBdRRDUYi4Tq.jpg",
+      "posterPath": "/g96wHxU7EnoIFwemb2RgohIXrgW.jpg",
       "tmdbId": 83533
+    },
+    {
+      "name": "Hamnet",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "afi": "Y"
+      },
+      "posterPath": "/71KNp6RiOQTbs8Fn1DagrFQrZmx.jpg",
+      "tmdbId": 858024
+    },
+    {
+      "name": "Bugonia",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "afi": "Y"
+      },
+      "posterPath": "/oxgsAQDAAxA92mFGYCZllgWkH9J.jpg",
+      "tmdbId": 701387
+    },
+    {
+      "name": "It Was Just an Accident",
+      "awards": {
+        "gg": "X",
+        "afi": "Y"
+      },
+      "posterPath": "/eNYGj2DG3n8OrVPTfYunpPW9uas.jpg",
+      "tmdbId": 1456349
     },
     {
       "name": "F1",
@@ -176,6 +135,47 @@
       },
       "posterPath": "/qCOGGi8JBVEZMc3DVby8rUivyXz.jpg",
       "tmdbId": 812583
+    },
+    {
+      "name": "Sentimental Value",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "posterPath": "/dNy7iCibnVTJuvosArcDEdbruBT.jpg",
+      "tmdbId": 1124566
+    },
+    {
+      "name": "The Secret Agent",
+      "awards": {
+        "gg": "X"
+      },
+      "posterPath": "/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
+      "tmdbId": 1220564
+    },
+    {
+      "name": "Blue Moon",
+      "awards": {
+        "gg": "X"
+      },
+      "posterPath": "/dVU7SNc6dgStTVdtbPLQncWxsyZ.jpg",
+      "tmdbId": 1299655
+    },
+    {
+      "name": "No Other Choice",
+      "awards": {
+        "gg": "X"
+      },
+      "posterPath": "/vc2S0dvgpsM0XfSiXZDMVkRCSSU.jpg",
+      "tmdbId": 639988
+    },
+    {
+      "name": "Nouvelle Vague",
+      "awards": {
+        "gg": "X"
+      },
+      "posterPath": "/mGSaAfCLtQRWIFbQv6cQ6fIfD4Y.jpg",
+      "tmdbId": 1254808
     }
   ],
   "best-director": [
@@ -211,15 +211,6 @@
       "tmdbId": 10828
     },
     {
-      "name": "Jafar Panahi",
-      "film": "It Was Just an Accident",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/gDkt1MOuOeUZ8gbRUcNYB6bjDV4.jpg",
-      "tmdbId": 120229
-    },
-    {
       "name": "Joachim Trier",
       "film": "Sentimental Value",
       "awards": {
@@ -240,16 +231,37 @@
       "tmdbId": 1395183
     },
     {
+      "name": "Jafar Panahi",
+      "film": "It Was Just an Accident",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/gDkt1MOuOeUZ8gbRUcNYB6bjDV4.jpg",
+      "tmdbId": 120229
+    },
+    {
       "name": "Josh Safdie",
       "film": "Marty Supreme",
       "awards": {
         "critics": "X"
       },
-      "profilePath": "/fBGuGdFxQA2ODVSn2bTStqeveVv.jpg",
+      "profilePath": "/iNyilK3Ag6qeOguc0zysxZXEIpJ.jpg",
       "tmdbId": 129561
     }
   ],
   "best-actor": [
+    {
+      "name": "Leonardo DiCaprio",
+      "film": "One Battle After Another",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "nbr": "Y"
+      },
+      "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
+      "tmdbId": 6193
+    },
     {
       "name": "Joel Edgerton",
       "film": "Train Dreams",
@@ -260,26 +272,6 @@
       },
       "profilePath": "/2YzeeiYUbI94Ywc7MVMo1NcN6jf.jpg",
       "tmdbId": 33192
-    },
-    {
-      "name": "Oscar Isaac",
-      "film": "Frankenstein",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg",
-      "tmdbId": 25072
-    },
-    {
-      "name": "Dwayne Johnson",
-      "film": "The Smashing Machine",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/5QApZVV8FUFlVxQpIK3Ew6cqotq.jpg",
-      "tmdbId": 18918
     },
     {
       "name": "Michael B. Jordan",
@@ -304,16 +296,6 @@
       "tmdbId": 52583
     },
     {
-      "name": "Jeremy Allen White",
-      "film": "Springsteen: Deliver Me from Nowhere",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/zKk4vmDeUexdevtt6wm8WdMQ1TG.jpg",
-      "tmdbId": 206905
-    },
-    {
       "name": "Timothée Chalamet",
       "film": "Marty Supreme",
       "role": "Leading",
@@ -325,28 +307,6 @@
       "tmdbId": 1190668
     },
     {
-      "name": "George Clooney",
-      "film": "Jay Kelly",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
-      "tmdbId": 1461
-    },
-    {
-      "name": "Leonardo DiCaprio",
-      "film": "One Battle After Another",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "critics": "X",
-        "nbr": "Y"
-      },
-      "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
-      "tmdbId": 6193
-    },
-    {
       "name": "Ethan Hawke",
       "film": "Blue Moon",
       "role": "Leading",
@@ -356,26 +316,6 @@
       },
       "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
       "tmdbId": 569
-    },
-    {
-      "name": "Lee Byung-hun",
-      "film": "No Other Choice",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/j7SUd9Qi8iOxgrQGb3nQyEYcXur.jpg",
-      "tmdbId": 25002
-    },
-    {
-      "name": "Jesse Plemons",
-      "film": "Bugonia",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/og4I51GsuwohdPgoELOHVMMqMre.jpg",
-      "tmdbId": 88124
     },
     {
       "name": "Benicio del Toro",
@@ -441,71 +381,69 @@
       },
       "profilePath": "/x78BtYHElirO7Iw8bL4m8CnzRDc.jpg",
       "tmdbId": 1640
+    },
+    {
+      "name": "Oscar Isaac",
+      "film": "Frankenstein",
+      "role": "Leading",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg",
+      "tmdbId": 25072
+    },
+    {
+      "name": "Dwayne Johnson",
+      "film": "The Smashing Machine",
+      "role": "Leading",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/dKVK6FoCij8Rig8P5xbu8bK4EWC.jpg",
+      "tmdbId": 18918
+    },
+    {
+      "name": "Jeremy Allen White",
+      "film": "Springsteen: Deliver Me from Nowhere",
+      "role": "Leading",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/zKk4vmDeUexdevtt6wm8WdMQ1TG.jpg",
+      "tmdbId": 206905
+    },
+    {
+      "name": "George Clooney",
+      "film": "Jay Kelly",
+      "role": "Leading",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/dt0a7DT0SQeHb7NpURD6ifyEzsN.jpg",
+      "tmdbId": 1461
+    },
+    {
+      "name": "Lee Byung-hun",
+      "film": "No Other Choice",
+      "role": "Leading",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/j7SUd9Qi8iOxgrQGb3nQyEYcXur.jpg",
+      "tmdbId": 25002
+    },
+    {
+      "name": "Jesse Plemons",
+      "film": "Bugonia",
+      "role": "Leading",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/og4I51GsuwohdPgoELOHVMMqMre.jpg",
+      "tmdbId": 88124
     }
   ],
   "best-actress": [
-    {
-      "name": "Jessie Buckley",
-      "film": "Hamnet",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
-      "tmdbId": 1498158
-    },
-    {
-      "name": "Jennifer Lawrence",
-      "film": "Die My Love",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
-      "tmdbId": 72129
-    },
-    {
-      "name": "Renate Reinsve",
-      "film": "Sentimental Value",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/eepHWTjtKRdGcrtchFb3axdp2eL.jpg",
-      "tmdbId": 1576786
-    },
-    {
-      "name": "Julia Roberts",
-      "film": "After the Hunt",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/AhQMyQ10kz5g8Y3Fp54GPhgDxQS.jpg",
-      "tmdbId": 1204
-    },
-    {
-      "name": "Tessa Thompson",
-      "film": "Hedda",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
-      "tmdbId": 62561
-    },
-    {
-      "name": "Eva Victor",
-      "film": "Sorry, Baby",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/nlEirkGOQPVUVgNzIqEJysnt70q.jpg",
-      "tmdbId": 2425998
-    },
     {
       "name": "Rose Byrne",
       "film": "If I Had Legs I'd Kick You",
@@ -519,24 +457,26 @@
       "tmdbId": 9827
     },
     {
-      "name": "Cynthia Erivo",
-      "film": "Wicked: For Good",
+      "name": "Jessie Buckley",
+      "film": "Hamnet",
       "role": "Leading",
       "awards": {
-        "gg": "X"
+        "gg": "X",
+        "critics": "X"
       },
-      "profilePath": "/gIAXqZwZCBqkh2ppfAV4xcnMxki.jpg",
-      "tmdbId": 1765068
+      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
+      "tmdbId": 1498158
     },
     {
-      "name": "Kate Hudson",
-      "film": "Song Sung Blue",
+      "name": "Renate Reinsve",
+      "film": "Sentimental Value",
       "role": "Leading",
       "awards": {
-        "gg": "X"
+        "gg": "X",
+        "critics": "X"
       },
-      "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
-      "tmdbId": 11661
+      "profilePath": "/eepHWTjtKRdGcrtchFb3axdp2eL.jpg",
+      "tmdbId": 1576786
     },
     {
       "name": "Chase Infiniti",
@@ -570,16 +510,6 @@
       },
       "profilePath": "/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg",
       "tmdbId": 54693
-    },
-    {
-      "name": "Emily Blunt",
-      "film": "The Smashing Machine",
-      "role": "Supporting",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
-      "tmdbId": 5081
     },
     {
       "name": "Elle Fanning",
@@ -634,6 +564,76 @@
       },
       "profilePath": "/wVHbluUvjKl0NucSeuAhAJAr2oc.jpg",
       "tmdbId": 964679
+    },
+    {
+      "name": "Jennifer Lawrence",
+      "film": "Die My Love",
+      "role": "Leading",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
+      "tmdbId": 72129
+    },
+    {
+      "name": "Julia Roberts",
+      "film": "After the Hunt",
+      "role": "Leading",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/h13yvG0tRNMTAwciQXxYmQWdYW8.jpg",
+      "tmdbId": 1204
+    },
+    {
+      "name": "Tessa Thompson",
+      "film": "Hedda",
+      "role": "Leading",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
+      "tmdbId": 62561
+    },
+    {
+      "name": "Eva Victor",
+      "film": "Sorry, Baby",
+      "role": "Leading",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/nlEirkGOQPVUVgNzIqEJysnt70q.jpg",
+      "tmdbId": 2425998
+    },
+    {
+      "name": "Cynthia Erivo",
+      "film": "Wicked: For Good",
+      "role": "Leading",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/gIAXqZwZCBqkh2ppfAV4xcnMxki.jpg",
+      "tmdbId": 1765068
+    },
+    {
+      "name": "Kate Hudson",
+      "film": "Song Sung Blue",
+      "role": "Leading",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
+      "tmdbId": 11661
+    },
+    {
+      "name": "Emily Blunt",
+      "film": "The Smashing Machine",
+      "role": "Supporting",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
+      "tmdbId": 5081
     },
     {
       "name": "Wunmi Mosaku",

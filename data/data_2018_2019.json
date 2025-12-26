@@ -21,7 +21,7 @@
         "bafta": "Y",
         "oscar": "X",
         "afi": "Y",
-        "critics": "Y",
+        "critics": "X",
         "nbr": "Y",
         "pga": "X"
       },
@@ -215,7 +215,7 @@
         "gg": "Y",
         "bafta": "Y",
         "oscar": "Y",
-        "critics": "Y",
+        "critics": "X",
         "dga": "Y"
       },
       "film": "Roma",
@@ -317,7 +317,7 @@
         "bafta": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "Green Book",
       "role": "Supporting",
@@ -345,7 +345,7 @@
         "bafta": "X",
         "oscar": "X",
         "sag": "X",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "Vice",
       "role": "Leading",
@@ -567,7 +567,7 @@
         "bafta": "X",
         "oscar": "X",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "The Wife",
       "role": "Leading",
@@ -593,7 +593,7 @@
       "awards": {
         "gg": "Y",
         "oscar": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "If Beale Street Could Talk",
       "role": "Supporting",
@@ -607,7 +607,7 @@
         "bafta": "X",
         "oscar": "X",
         "sag": "X",
-        "critics": "Y",
+        "critics": "X",
         "nbr": "Y"
       },
       "film": "A Star Is Born",
@@ -824,6 +824,16 @@
       },
       "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
       "tmdbId": 2227
+    },
+    {
+      "name": "Emily Blunt",
+      "awards": {
+        "sag": "Y"
+      },
+      "film": "A Quiet Place",
+      "role": "Supporting",
+      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
+      "tmdbId": 5081
     }
   ]
 }

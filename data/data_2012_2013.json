@@ -9,7 +9,8 @@
         "sag": "Y",
         "afi": "Y",
         "nbr": "Y",
-        "pga": "Y"
+        "pga": "Y",
+        "critics": "X"
       },
       "posterPath": "/m5gPWFZFIp4UJFABgWyLkbXv8GX.jpg",
       "tmdbId": 68734
@@ -210,7 +211,8 @@
       "awards": {
         "gg": "Y",
         "bafta": "Y",
-        "dga": "Y"
+        "dga": "Y",
+        "critics": "X"
       },
       "film": "Argo",
       "profilePath": "/aTcqu8cI4wMohU17xTdqmXKTGrw.jpg",
@@ -338,7 +340,8 @@
         "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
       "tmdbId": 11856
@@ -451,7 +454,8 @@
         "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/qgSTZu5F7LyJTInpXVQOyRlZgbw.jpg",
       "tmdbId": 1233
@@ -592,7 +596,8 @@
       "awards": {
         "oscar": "Y",
         "gg": "Y",
-        "bafta": "Y"
+        "bafta": "Y",
+        "critics": "X"
       },
       "profilePath": "/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg",
       "tmdbId": 1813
@@ -606,7 +611,8 @@
         "gg": "Y",
         "bafta": "X",
         "sag": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X"
       },
       "profilePath": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
       "tmdbId": 83002

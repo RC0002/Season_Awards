@@ -7,7 +7,7 @@
         "gg": "X",
         "oscar": "Y",
         "sag": "X",
-        "critics": "Y",
+        "critics": "X",
         "nbr": "Y",
         "afi": "Y",
         "pga": "Y"
@@ -255,7 +255,7 @@
       "name": "Jon M. Chu",
       "film": "Wicked",
       "awards": {
-        "critics": "Y",
+        "critics": "X",
         "nbr": "Y"
       },
       "profilePath": "/85kOxm7w4nGRwyhquj9wtUM8KUW.jpg",
@@ -354,7 +354,7 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg",
       "tmdbId": 18793
@@ -368,7 +368,7 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "X",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/qBc7ahQrpVpcllaZ5hkivsOEb3C.jpg",
       "tmdbId": 3490
@@ -608,7 +608,7 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/vQBwmsSOAd0JDaEcZ5p43J9xzsY.jpg",
       "tmdbId": 8691
@@ -622,7 +622,7 @@
         "gg": "Y",
         "oscar": "X",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/wApParZYBDi4yxekjfxjKEifJYh.jpg",
       "tmdbId": 3416

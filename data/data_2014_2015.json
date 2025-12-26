@@ -9,7 +9,8 @@
         "afi": "Y",
         "sag": "X",
         "nbr": "Y",
-        "pga": "X"
+        "pga": "X",
+        "critics": "X"
       },
       "posterPath": "/2BvtvDUyxiMJ4dmKfiQf4qdOHQN.jpg",
       "tmdbId": 85350
@@ -236,7 +237,8 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "X",
-        "dga": "X"
+        "dga": "X",
+        "critics": "X"
       },
       "profilePath": "/xSctxeZQzQbZoaxIvcDeHlDjbiN.jpg",
       "tmdbId": 564
@@ -255,7 +257,8 @@
       "name": "Alejandro G. Iñárritu",
       "film": "Birdman or (The Unexpected Virtue of Ignorance)",
       "awards": {
-        "oscar": "Y"
+        "oscar": "Y",
+        "critics": "X"
       },
       "profilePath": "/Av0jewh8wltCl1CB8MfEIrvgfMZ.jpg",
       "tmdbId": 223
@@ -400,7 +403,8 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "profilePath": "/ScmKoJ9eiSUOthAt1PDNLi8Fkw.jpg",
       "tmdbId": 18999
@@ -412,7 +416,8 @@
       "awards": {
         "bafta": "X",
         "gg": "Y",
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/w6fwAQ7IwEFqtzByA1Wyz2Dwp7R.jpg",
       "tmdbId": 2232
@@ -633,7 +638,8 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X"
       },
       "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
       "tmdbId": 1231
@@ -646,7 +652,8 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "profilePath": "/jeThSouMatiuRiLkjDvSBLHpmq0.jpg",
       "tmdbId": 4687

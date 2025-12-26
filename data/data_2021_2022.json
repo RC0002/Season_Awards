@@ -7,7 +7,7 @@
         "gg": "Y",
         "oscar": "X",
         "afi": "Y",
-        "critics": "Y",
+        "critics": "X",
         "pga": "X"
       },
       "posterPath": "/kEy48iCzGnp0ao1cZbNeWR6yIhC.jpg",
@@ -237,7 +237,7 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
       "tmdbId": 10757
@@ -375,7 +375,7 @@
         "oscar": "Y",
         "sag": "Y",
         "nbr": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/8TlKqbXYgHmmaEoPBJ7djJ8Rxxa.jpg",
       "tmdbId": 2888
@@ -389,7 +389,7 @@
         "gg": "X",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/24K3og12jGBGL9dqH5OYFdjF9wu.jpg",
       "tmdbId": 1571661
@@ -419,15 +419,6 @@
       "role": "Leading",
       "profilePath": "/5ydZ6TluPtxlz5G8nlWMB7SGmow.jpg",
       "tmdbId": 37625
-    },
-    {
-      "name": "Cate Blanchett",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "Tár",
-      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
-      "tmdbId": 112
     },
     {
       "name": "Colin Farrell",
@@ -505,7 +496,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "oscar": "X"
+        "oscar": "X",
+        "critics": "X"
       },
       "profilePath": "/d8wLIX9VYgwXRGSp1gmUdUxmApv.jpg",
       "tmdbId": 8785
@@ -687,7 +679,7 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/8HTSA2iVTsDN83OncAvFTcqxsAr.jpg",
       "tmdbId": 1437491
@@ -698,7 +690,7 @@
         "gg": "X",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "The Eyes of Tammy Faye",
       "role": "Leading",

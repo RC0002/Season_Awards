@@ -22,7 +22,7 @@
         "bafta": "X",
         "oscar": "X",
         "sag": "X",
-        "critics": "Y",
+        "critics": "X",
         "afi": "Y",
         "nbr": "Y",
         "pga": "X"
@@ -232,7 +232,7 @@
         "gg": "Y",
         "bafta": "Y",
         "oscar": "X",
-        "critics": "Y",
+        "critics": "X",
         "dga": "Y"
       },
       "film": "1917",
@@ -245,7 +245,7 @@
       "awards": {
         "bafta": "X",
         "oscar": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/stwnTvZAoD8gEJEDHpDQyLCyDy5.jpg",
       "tmdbId": 21684
@@ -356,7 +356,7 @@
         "bafta": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "Joker",
       "role": "Leading",
@@ -370,7 +370,7 @@
         "bafta": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "Once Upon a Time in Hollywood",
       "role": "Supporting",
@@ -606,7 +606,7 @@
         "bafta": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y",
+        "critics": "X",
         "nbr": "Y"
       },
       "film": "Judy",
@@ -621,7 +621,7 @@
         "bafta": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "Marriage Story",
       "role": "Supporting",
@@ -747,7 +747,8 @@
       "awards": {
         "bafta": "X",
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
       "tmdbId": 1245
@@ -853,6 +854,16 @@
       },
       "profilePath": "/wmzMng0em26kja1iouCswHflMSj.jpg",
       "tmdbId": 2309757
+    },
+    {
+      "name": "Margot Robbie",
+      "film": "Once Upon a Time in Hollywood",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg",
+      "tmdbId": 234352
     }
   ]
 }

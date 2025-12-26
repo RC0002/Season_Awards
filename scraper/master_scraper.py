@@ -119,8 +119,67 @@ def fetch_page(url):
 def parse_nominees_from_cell(cell, category_type, award_name):
     """Parse nominees from a cell."""
     nominees = []
-    lis = cell.find_all('li', recursive=True)
     seen_names = set()
+    
+    skip_words = ['Academy Award', 'Golden Globe', 'BAFTA', 'Screen Actors Guild', 
+                  'Critics', 'Outstanding', 'Best ']
+    
+    # First, check for winners in bold text BEFORE the list (common in Critics Choice)
+    # Look for <b> tags that contain <a> links and are NOT inside <li>
+    for bold in cell.find_all('b', recursive=True):
+        # Skip if this bold is inside a list item (will be processed later)
+        if bold.find_parent('li'):
+            continue
+        
+        first_link = bold.find('a')
+        if not first_link:
+            continue
+        
+        link_title = first_link.get('title', '') or ''
+        if any(w in link_title for w in skip_words):
+            continue
+        
+        name = first_link.get_text().strip()
+        if len(name) < 2 or name in seen_names:
+            continue
+        
+        seen_names.add(name)
+        
+        # Get film name for person categories
+        film = None
+        if category_type in ['director', 'actor']:
+            # Look for links after the name within the same bold or nearby
+            all_links = bold.find_all('a')
+            for link in all_links[1:]:
+                link_text = link.get_text().strip()
+                link_title = link.get('title', '') or ''
+                if any(w in link_title for w in skip_words):
+                    continue
+                if len(link_text) > 1:
+                    film = link_text
+                    break
+            # If no film found in bold, check the parent element
+            if not film:
+                parent = bold.parent
+                if parent:
+                    for link in parent.find_all('a'):
+                        if link == first_link or link in bold.find_all('a'):
+                            continue
+                        link_text = link.get_text().strip()
+                        link_title = link.get('title', '') or ''
+                        if any(w in link_title for w in skip_words):
+                            continue
+                        if len(link_text) > 1:
+                            film = link_text
+                            break
+        
+        entry = {'name': name, 'is_winner': True}  # Bold outside list = winner
+        if film:
+            entry['film'] = film
+        nominees.append(entry)
+    
+    # Then process list items as before
+    lis = cell.find_all('li', recursive=True)
     
     for li in lis:
         first_link = li.find('a')
@@ -128,9 +187,6 @@ def parse_nominees_from_cell(cell, category_type, award_name):
             continue
             
         link_title = first_link.get('title', '') or ''
-        # Skip award links
-        skip_words = ['Academy Award', 'Golden Globe', 'BAFTA', 'Screen Actors Guild', 
-                      'Critics', 'Outstanding', 'Best ']
         if any(w in link_title for w in skip_words):
             continue
             
@@ -380,7 +436,7 @@ def scrape_sag_old_format(tables_or_soup, award_key):
         'best-actress': []
     }
     
-    seen_names = {'best-film': set(), 'best-actor': set(), 'best-actress': set()}
+    seen_entries = {'best-film': set(), 'best-actor': set(), 'best-actress': set()}  # Track (name, film) tuples
     
     for table in tables:
         rows = table.find_all('tr')
@@ -441,8 +497,8 @@ def scrape_sag_old_format(tables_or_soup, award_key):
                                 i_tag = b.find('i')
                                 if i_tag:
                                     film_name = i_tag.get_text().strip()
-                                    if len(film_name) >= 2 and film_name not in seen_names.get(key, set()):
-                                        seen_names[key].add(film_name)
+                                    if len(film_name) >= 2 and film_name not in seen_entries.get(key, set()):
+                                        seen_entries[key].add(film_name)
                                         entry = {
                                             'name': film_name,
                                             'awards': {award_key: 'Y'}
@@ -453,9 +509,14 @@ def scrape_sag_old_format(tables_or_soup, award_key):
                                 first_link = b.find('a')
                                 if first_link:
                                     name = first_link.get_text().strip()
-                                    if len(name) >= 2 and name not in seen_names.get(key, set()):
-                                        if key in seen_names:
-                                            seen_names[key].add(name)
+                                    # Get film name first for deduplication
+                                    all_links = b.find_all('a')
+                                    film_name = all_links[1].get_text().strip() if len(all_links) >= 2 else ''
+                                    entry_key = (name, film_name)
+                                    
+                                    if len(name) >= 2 and entry_key not in seen_entries.get(key, set()):
+                                        if key in seen_entries:
+                                            seen_entries[key].add(entry_key)
                                         
                                         entry = {
                                             'name': name,
@@ -463,9 +524,8 @@ def scrape_sag_old_format(tables_or_soup, award_key):
                                         }
                                         
                                         if key in ['best-actor', 'best-actress']:
-                                            all_links = b.find_all('a')
-                                            if len(all_links) >= 2:
-                                                entry['film'] = all_links[1].get_text().strip()
+                                            if film_name:
+                                                entry['film'] = film_name
                                             if role:
                                                 entry['role'] = role
                                         
@@ -479,8 +539,8 @@ def scrape_sag_old_format(tables_or_soup, award_key):
                             i_tag = li.find('i')
                             if i_tag:
                                 film_name = i_tag.get_text().strip()
-                                if len(film_name) >= 2 and film_name not in seen_names.get(key, set()):
-                                    seen_names[key].add(film_name)
+                                if len(film_name) >= 2 and film_name not in seen_entries.get(key, set()):
+                                    seen_entries[key].add(film_name)
                                     is_bold = li.find('b') is not None
                                     entry = {
                                         'name': film_name,
@@ -494,11 +554,16 @@ def scrape_sag_old_format(tables_or_soup, award_key):
                                 continue
                             
                             name = first_link.get_text().strip()
-                            if len(name) < 2 or name in seen_names.get(key, set()):
+                            # Get film name first for deduplication
+                            all_links = li.find_all('a')
+                            film_name = all_links[1].get_text().strip() if len(all_links) >= 2 else ''
+                            entry_key = (name, film_name)
+                            
+                            if len(name) < 2 or entry_key in seen_entries.get(key, set()):
                                 continue
                             
-                            if key in seen_names:
-                                seen_names[key].add(name)
+                            if key in seen_entries:
+                                seen_entries[key].add(entry_key)
                             
                             # Check if winner (bold)
                             is_bold = li.find('b') is not None or first_link.find_parent('b') is not None
@@ -508,11 +573,10 @@ def scrape_sag_old_format(tables_or_soup, award_key):
                                 'awards': {award_key: 'Y' if is_bold else 'X'}
                             }
                             
-                            # For actors, get film name (second link)
+                            # For actors, add film name and role
                             if key in ['best-actor', 'best-actress']:
-                                all_links = li.find_all('a')
-                                if len(all_links) >= 2:
-                                    entry['film'] = all_links[1].get_text().strip()
+                                if film_name:
+                                    entry['film'] = film_name
                                 if role:
                                     entry['role'] = role
                             

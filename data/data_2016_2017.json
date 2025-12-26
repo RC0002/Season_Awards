@@ -8,7 +8,8 @@
         "oscar": "X",
         "afi": "Y",
         "nbr": "Y",
-        "pga": "Y"
+        "pga": "Y",
+        "critics": "X"
       },
       "posterPath": "/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
       "tmdbId": 313369
@@ -249,7 +250,8 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "dga": "Y"
+        "dga": "Y",
+        "critics": "X"
       },
       "profilePath": "/14kRZ3XxNMyBv717YQSXr3wCucy.jpg",
       "tmdbId": 136495
@@ -367,7 +369,8 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X"
       },
       "profilePath": "/304ilSygaCRWykoBWAL67TOw8g9.jpg",
       "tmdbId": 1893
@@ -380,7 +383,8 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "profilePath": "/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg",
       "tmdbId": 932967
@@ -624,7 +628,8 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "profilePath": "/xDssw6vpYNRjsybvMPRE30e0dPN.jpg",
       "tmdbId": 19492
@@ -727,7 +732,8 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/edPU5HxncLWa1YkgRPNkSd68ONG.jpg",
       "tmdbId": 524

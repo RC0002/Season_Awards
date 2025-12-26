@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel - Season Awards</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Control Panel - White/Gold Theme Override */
+        :root {
+            --cp-bg: #fafafa;
+            --cp-card: #ffffff;
+            --cp-gold: #d4a84b;
+            --cp-gold-dark: #b8922f;
+            --cp-text: #1a1a1a;
+            --cp-muted: #666;
+            --cp-line: #e0e0e0;
+        }
+
+        body.control-panel {
+            background: var(--cp-bg);
+            color: var(--cp-text);
+            padding: 24px;
+            padding-top: 24px;
+            overflow-y: auto;
+            height: auto;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .cp-header {
+            text-align: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--cp-gold);
+        }
+
+        .cp-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--cp-gold-dark);
+            margin: 0 0 4px 0;
+            letter-spacing: 0.1em;
+        }
+
+        .cp-subtitle {
+            font-size: 13px;
+            color: var(--cp-muted);
+            margin: 0;
+        }
+
+        .cp-generated {
+            font-size: 11px;
+            color: var(--cp-muted);
+            margin-top: 6px;
+        }
+
+        /* Legend - inline */
+        .cp-legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .cp-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11px;
+            color: var(--cp-muted);
+        }
+
+        .cp-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .cp-dot.ok {
+            background: #22c55e;
+        }
+
+        .cp-dot.error {
+            background: #ef4444;
+        }
+
+        .cp-dot.pending {
+            background: #f97316;
+        }
+
+        /* Summary Stats - compact */
+        .cp-summary {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .cp-stat {
+            background: var(--cp-card);
+            border-radius: 8px;
+            padding: 12px 20px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+        }
+
+        .cp-stat-value {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--cp-gold-dark);
+        }
+
+        .cp-stat-label {
+            font-size: 10px;
+            color: var(--cp-muted);
+            margin-top: 2px;
+            text-transform: uppercase;
+        }
+
+        .cp-stat.ok .cp-stat-value {
+            color: #22c55e;
+        }
+
+        .cp-stat.error .cp-stat-value {
+            color: #ef4444;
+        }
+
+        .cp-stat.pending .cp-stat-value {
+            color: #f97316;
+        }
+
+        /* ============ CURRENT YEAR RECAP ============ */
+        .cp-recap-wrapper {
+            background: var(--cp-card);
+            border-radius: 12px;
+            padding: 20px 24px;
+            max-width: 520px;
+            margin: 0 auto 32px auto;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .cp-recap-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--cp-gold-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .cp-recap-header {
+            display: grid;
+            grid-template-columns: 100px repeat(4, 1fr);
+            gap: 8px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--cp-gold);
+            margin-bottom: 8px;
+        }
+
+        .cp-recap-header span {
+            font-size: 9px;
+            font-weight: 600;
+            color: var(--cp-gold-dark);
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .cp-recap-header span:first-child {
+            text-align: left;
+        }
+
+        .cp-recap-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .cp-recap-row {
+            display: grid;
+            grid-template-columns: 100px repeat(4, 1fr);
+            gap: 8px;
+            align-items: center;
+        }
+
+        .cp-recap-award {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--cp-text);
+        }
+
+        .cp-recap-cell {
+            text-align: center;
+            font-size: 12px;
+            color: var(--cp-muted);
+        }
+
+        .cp-recap-cell b {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .cp-recap-cell small {
+            font-size: 10px;
+            color: #999;
+        }
+
+        .cp-recap-cell.ok b {
+            color: #22c55e;
+        }
+
+        .cp-recap-cell.error b {
+            color: #ef4444;
+        }
+
+        .cp-recap-cell.pending b {
+            color: #f97316;
+        }
+
+        .cp-recap-cell.muted {
+            color: #ccc;
+        }
+
+        .cp-recap-cell small.winner {
+            color: #22c55e;
+        }
+
+
+
+        /* ============ HISTORICAL SECTION ============ */
+        .cp-section-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--cp-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin: 32px 0 16px 0;
+            text-align: center;
+        }
+
+        .cp-history-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .cp-history-card {
+            background: var(--cp-card);
+            border-radius: 12px;
+            padding: 16px 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .cp-history-card .cp-history-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--cp-gold-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 12px;
+            text-align: center;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .cp-history-card .cp-recap-header {
+            grid-template-columns: 60px repeat(4, 1fr);
+            gap: 6px;
+            margin-bottom: 6px;
+        }
+
+        .cp-history-card .cp-recap-row {
+            grid-template-columns: 60px repeat(4, 1fr);
+            gap: 6px;
+        }
+
+        .cp-history-card .cp-recap-award {
+            font-size: 11px;
+            color: var(--cp-muted);
+        }
+
+        .cp-history-card .cp-recap-cell {
+            font-size: 11px;
+        }
+
+        .cp-history-card .cp-recap-cell b {
+            font-size: 12px;
+        }
+
+        .cp-history-card .cp-recap-cell small {
+            font-size: 9px;
+            color: #999;
+        }
+
+        .cp-history-card .cp-recap-cell small.winner {
+            color: #22c55e;
+            margin-left: 2px;
+        }
+
+        /* Back Link */
+        .cp-back {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--cp-gold);
+            color: white;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(212, 168, 75, 0.3);
+            transition: all 0.2s;
+        }
+
+        .cp-back:hover {
+            background: var(--cp-gold-dark);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="control-panel">
+    <div class="cp-header">
+        <h1 class="cp-title">Control Panel</h1>
+        <p class="cp-subtitle">Scraping Data Integrity Monitor</p>
+        <p class="cp-generated" id="generated-time">Loading...</p>
+    </div>
+
+    <div class="cp-summary" id="summary-stats">
+        <!-- Filled by JS -->
+    </div>
+
+    <div class="cp-legend">
+        <div class="cp-legend-item">
+            <span class="cp-dot ok"></span>
+            <span>Complete</span>
+        </div>
+        <div class="cp-legend-item">
+            <span class="cp-dot error"></span>
+            <span>Error</span>
+        </div>
+        <div class="cp-legend-item">
+            <span class="cp-dot pending"></span>
+            <span>Pending</span>
+        </div>
+    </div>
+
+    <!-- Current Year Section -->
+    <div id="current-year-container">
+        <!-- Filled by JS -->
+    </div>
+
+    <!-- Historical Section -->
+    <h3 class="cp-section-title">Historical Data</h3>
+    <div class="cp-history-grid" id="awards-container">
+        <!-- Filled by JS -->
+    </div>
+
+    <a href="index.html" class="cp-back">← Back</a>
+
+    <script src="control.js"></script>
+</body>
+
+</html>

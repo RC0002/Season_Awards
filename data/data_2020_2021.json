@@ -8,7 +8,7 @@
         "oscar": "Y",
         "afi": "Y",
         "nbr": "Y",
-        "critics": "Y",
+        "critics": "X",
         "pga": "Y"
       },
       "genre": "Drama",
@@ -258,7 +258,7 @@
         "bafta": "Y",
         "oscar": "Y",
         "dga": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "Nomadland",
       "profilePath": "/n0GzBiyx2KzwozZ9irQ8hJlf5By.jpg",
@@ -394,7 +394,7 @@
         "bafta": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "Judas and the Black Messiah",
       "role": "Supporting",
@@ -408,7 +408,7 @@
         "bafta": "X",
         "oscar": "X",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "Ma Rainey's Black Bottom",
       "role": "Leading",
@@ -724,7 +724,7 @@
         "oscar": "X",
         "nbr": "Y",
         "sag": "X",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "Promising Young Woman",
       "role": "Leading",
@@ -750,10 +750,10 @@
         "bafta": "X",
         "oscar": "X",
         "sag": "X",
-        "critics": "Y"
+        "critics": "X"
       },
       "film": "Borat Subsequent Moviefilm",
-      "role": "Leading"
+      "role": "Supporting"
     },
     {
       "name": "Viola Davis",

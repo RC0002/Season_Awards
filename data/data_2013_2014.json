@@ -9,7 +9,8 @@
         "afi": "Y",
         "sag": "X",
         "nbr": "Y",
-        "pga": "Y"
+        "pga": "Y",
+        "critics": "X"
       },
       "genre": "Drama",
       "posterPath": "/xdANQijuNrJaw1HA61rDccME4Tm.jpg",
@@ -228,7 +229,8 @@
         "gg": "Y",
         "bafta": "Y",
         "oscar": "Y",
-        "dga": "Y"
+        "dga": "Y",
+        "critics": "X"
       },
       "film": "Gravity",
       "profilePath": "/eoCHiXaQzGgx9RiwXnt3k239FLc.jpg",
@@ -332,7 +334,8 @@
       "awards": {
         "gg": "Y",
         "oscar": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "film": "Dallas Buyers Club",
       "role": "Leading",
@@ -343,10 +346,11 @@
       "name": "Jared Leto",
       "awards": {
         "gg": "Y",
-        "oscar": "Y"
+        "oscar": "Y",
+        "critics": "X"
       },
       "film": "Dallas Buyers Club",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/aNUvy7cpa78NRjCvHi5vYuNJRtj.jpg",
       "tmdbId": 7499
     },
@@ -388,7 +392,7 @@
         "critics": "X"
       },
       "film": "Captain Phillips",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/utfeg8GnGyW3aVNcRfhII9RCXB6.jpg",
       "tmdbId": 1261694
     },
@@ -457,7 +461,7 @@
         "critics": "X"
       },
       "film": "Rush",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/3YlmTfiy5qZXkrdKGjaM1uMjGKP.jpg",
       "tmdbId": 3872
     },
@@ -470,7 +474,7 @@
         "critics": "X"
       },
       "film": "American Hustle",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg",
       "tmdbId": 51329
     },
@@ -483,7 +487,7 @@
         "critics": "X"
       },
       "film": "12 Years a Slave",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg",
       "tmdbId": 17288
     },
@@ -597,7 +601,8 @@
         "gg": "Y",
         "bafta": "Y",
         "oscar": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "film": "Blue Jasmine",
       "role": "Leading",
@@ -614,7 +619,7 @@
         "critics": "X"
       },
       "film": "American Hustle",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
       "tmdbId": 72129
     },
@@ -649,10 +654,11 @@
       "awards": {
         "gg": "X",
         "bafta": "X",
-        "oscar": "Y"
+        "oscar": "Y",
+        "critics": "X"
       },
       "film": "12 Years a Slave",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/y40Wu1T742kynOqtwXASc5Qgm49.jpg",
       "tmdbId": 1267329
     },
@@ -725,7 +731,7 @@
         "critics": "X"
       },
       "film": "August: Osage County",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/h13yvG0tRNMTAwciQXxYmQWdYW8.jpg",
       "tmdbId": 1204
     },
@@ -737,7 +743,7 @@
         "oscar": "X"
       },
       "film": "Blue Jasmine",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/1dtDq82dM2YQ17lBL4ZKPJo5LKw.jpg",
       "tmdbId": 39658
     },
@@ -749,7 +755,7 @@
         "critics": "X"
       },
       "film": "Nebraska",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/a7vkoLhc8JGkdvDbHvpgKKHUPHH.jpg",
       "tmdbId": 35515
     },
@@ -824,7 +830,8 @@
     {
       "name": "Oprah Winfrey",
       "awards": {
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "role": "Supporting",
       "profilePath": "/nNpYieaDLxKZWw2FY9wsDkjwURu.jpg",

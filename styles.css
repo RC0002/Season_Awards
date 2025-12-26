@@ -1379,3 +1379,72 @@ footer {
         padding-top: 0;
     }
 }
+
+/* ============ CORNER PEEL - Control Panel Link ============ */
+.corner-peel {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    z-index: 999;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.corner-peel::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 40px 40px;
+    border-color: transparent transparent var(--gold) transparent;
+    transition: all 0.3s ease;
+}
+
+.corner-peel::after {
+    content: '⚙';
+    position: absolute;
+    bottom: 6px;
+    right: 8px;
+    font-size: 14px;
+    color: #000;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.corner-peel:hover::before {
+    border-width: 0 0 80px 80px;
+    filter: brightness(1.1);
+}
+
+.corner-peel:hover::after {
+    font-size: 20px;
+    bottom: 18px;
+    right: 22px;
+    opacity: 1;
+}
+
+/* Page curl shadow effect on hover */
+.corner-peel-shadow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.corner-peel:hover .corner-peel-shadow {
+    opacity: 1;
+    background:
+        linear-gradient(135deg,
+            transparent 50%,
+            rgba(0, 0, 0, 0.15) 50%,
+            rgba(0, 0, 0, 0.05) 100%);
+}

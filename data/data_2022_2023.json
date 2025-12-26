@@ -8,7 +8,7 @@
         "oscar": "Y",
         "afi": "Y",
         "sag": "Y",
-        "critics": "Y",
+        "critics": "X",
         "nbr": "Y",
         "pga": "Y"
       },
@@ -249,7 +249,7 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "Y",
-        "critics": "Y"
+        "critics": "X"
       }
     },
     {
@@ -401,7 +401,7 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/iestHyn7PLuVowj5Jaa1SGPboQ4.jpg",
       "tmdbId": 690
@@ -415,7 +415,7 @@
         "gg": "X",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/tFj5PaWWQbb8rHBBhu1EHklznph.jpg",
       "tmdbId": 18269
@@ -456,7 +456,8 @@
       "awards": {
         "bafta": "Y",
         "gg": "X",
-        "oscar": "X"
+        "oscar": "X",
+        "critics": "X"
       },
       "profilePath": "/15xPjrzSbtXlbQUhmLpQUil4tCN.jpg",
       "tmdbId": 1290466
@@ -659,7 +660,8 @@
       "film": "The Fabelmans",
       "role": "Supporting",
       "awards": {
-        "oscar": "X"
+        "oscar": "X",
+        "critics": "X"
       },
       "profilePath": "/7rJ0TZfMoPLTcO203tHhE6tcPKP.jpg",
       "tmdbId": 6167
@@ -719,7 +721,7 @@
         "gg": "Y",
         "oscar": "X",
         "sag": "X",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
       "tmdbId": 112
@@ -733,7 +735,7 @@
         "gg": "Y",
         "oscar": "X",
         "sag": "X",
-        "critics": "Y"
+        "critics": "X"
       },
       "profilePath": "/tKnuviliyeKNGlo26IU5gIrJAtd.jpg",
       "tmdbId": 9780
@@ -935,7 +937,8 @@
       "name": "Stephanie Hsu",
       "role": "Supporting",
       "awards": {
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/8gb3lfIHKQAGOQyeC4ynQPsCiHr.jpg",
       "tmdbId": 1381186
