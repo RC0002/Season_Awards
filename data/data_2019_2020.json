@@ -1,40 +1,45 @@
 {
   "best-film": [
     {
-      "name": "Once Upon a Time in Hollywood",
-      "awards": {
-        "oscar": "X",
-        "gg": "Y",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "Y",
-        "afi": "Y",
-        "nbr": "Y"
-      },
-      "posterPath": "/8j58iEBw9pOXFD2L0nt0ZXeHviB.jpg",
-      "tmdbId": 466272
-    },
-    {
       "name": "1917",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "X",
         "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "Y"
       },
+      "genre": "Drama",
       "posterPath": "/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
       "tmdbId": 530915
     },
     {
+      "name": "Once Upon a Time in Hollywood",
+      "awards": {
+        "gg": "Y",
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "Y",
+        "afi": "Y",
+        "nbr": "Y",
+        "pga": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/8j58iEBw9pOXFD2L0nt0ZXeHviB.jpg",
+      "tmdbId": 466272
+    },
+    {
       "name": "Parasite",
       "awards": {
-        "oscar": "Y",
         "bafta": "X",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "X",
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "X"
       },
       "posterPath": "/4DGPORlVIDIQvsuSDnM4uXKMjWS.jpg",
       "tmdbId": 48311
@@ -42,39 +47,45 @@
     {
       "name": "The Irishman",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
+      "genre": "Drama",
       "posterPath": "/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg",
       "tmdbId": 398978
     },
     {
       "name": "Jojo Rabbit",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
+      "genre": "Comedy",
       "posterPath": "/7GsM4mtM0worCtIVeiQt28HieeN.jpg",
       "tmdbId": 515001
     },
     {
       "name": "Marriage Story",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
+      "genre": "Drama",
       "posterPath": "/2JRyCKaRKyJAVpsIHeLvPw5nHmw.jpg",
       "tmdbId": 492188
     },
@@ -83,7 +94,8 @@
       "awards": {
         "gg": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
       "genre": "Comedy",
       "posterPath": "/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
@@ -101,12 +113,14 @@
     {
       "name": "Joker",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "critics": "X",
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "X"
       },
+      "genre": "Drama",
       "posterPath": "/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
       "tmdbId": 475557
     },
@@ -115,7 +129,8 @@
       "awards": {
         "oscar": "X",
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/dR1Ju50iudrOh3YgfwkAU1g2HZe.jpg",
       "tmdbId": 359724
@@ -125,7 +140,8 @@
       "awards": {
         "oscar": "X",
         "critics": "X",
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "X"
       },
       "posterPath": "/yn5ihODtZ7ofn8pDYfxCmxh8AXI.jpg",
       "tmdbId": 331482
@@ -212,13 +228,14 @@
   "best-director": [
     {
       "name": "Sam Mendes",
-      "film": "1917",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
+        "bafta": "Y",
+        "oscar": "X",
         "critics": "Y",
         "dga": "Y"
       },
+      "film": "1917",
       "profilePath": "/5z89X9rB76JDblqMQ52fviwXxAN.jpg",
       "tmdbId": 39
     },
@@ -226,6 +243,7 @@
       "name": "Bong Joon-ho",
       "film": "Parasite",
       "awards": {
+        "bafta": "X",
         "oscar": "Y",
         "critics": "Y"
       },
@@ -234,14 +252,14 @@
     },
     {
       "name": "Quentin Tarantino",
-      "film": "Once Upon a Time in Hollywood",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
         "critics": "X",
-        "nbr": "Y",
-        "dga": "X"
+        "nbr": "Y"
       },
+      "film": "Once Upon a Time in Hollywood",
       "profilePath": "/1gjcpAa99FAOWGnrUvHEXXsRs7o.jpg",
       "tmdbId": 138
     },
@@ -256,23 +274,25 @@
     },
     {
       "name": "Martin Scorsese",
-      "film": "The Irishman",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
         "critics": "X",
         "dga": "X"
       },
+      "film": "The Irishman",
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
       "tmdbId": 1032
     },
     {
       "name": "Todd Phillips",
-      "film": "Joker",
       "awards": {
-        "oscar": "X",
-        "gg": "X"
-      }
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X"
+      },
+      "film": "Joker"
     },
     {
       "name": "Bong Joon Ho",
@@ -310,39 +330,50 @@
       }
     },
     {
+      "name": "Quentin Tarantino",
+      "film": "Once Upon A Time In... Hollywood",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/1gjcpAa99FAOWGnrUvHEXXsRs7o.jpg",
+      "tmdbId": 138
+    },
+    {
       "name": "Taika Waititi",
       "film": "Jojo Rabbit",
       "awards": {
         "dga": "X"
-      }
+      },
+      "profilePath": "/ww6L2ksfJNMbuiIdDuvVKndUHsv.jpg",
+      "tmdbId": 55934
     }
   ],
   "best-actor": [
     {
       "name": "Joaquin Phoenix",
-      "film": "Joker",
-      "role": "Leading",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
       },
+      "film": "Joker",
+      "role": "Leading",
       "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
       "tmdbId": 73421
     },
     {
       "name": "Brad Pitt",
-      "film": "Once Upon a Time in Hollywood",
-      "role": "Supporting",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
       },
+      "film": "Once Upon a Time in Hollywood",
+      "role": "Supporting",
       "profilePath": "/ajNaPmXVVMJFg9GWmu6MJzTaXdV.jpg",
       "tmdbId": 287
     },
@@ -379,107 +410,107 @@
       "tmdbId": 17839
     },
     {
-      "name": "Leonardo DiCaprio",
-      "film": "Once Upon a Time in Hollywood",
-      "role": "Leading",
+      "name": "Adam Driver",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
-      "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
-      "tmdbId": 6193
-    },
-    {
-      "name": "Adam Driver",
       "film": "Marriage Story",
       "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "X"
-      },
       "profilePath": "/me7eifBie8S7gFwhZfkF3jROL99.jpg",
       "tmdbId": 1023139
     },
     {
-      "name": "Tom Hanks",
-      "film": "A Beautiful Day in the Neighborhood",
-      "role": "Supporting",
+      "name": "Leonardo DiCaprio",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "Once Upon a Time in Hollywood",
+      "role": "Leading",
+      "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
+      "tmdbId": 6193
+    },
+    {
+      "name": "Tom Hanks",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "film": "A Beautiful Day in the Neighborhood",
+      "role": "Supporting",
       "profilePath": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg",
       "tmdbId": 31
     },
     {
       "name": "Al Pacino",
-      "film": "The Irishman",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "The Irishman",
+      "role": "Supporting",
       "profilePath": "/2dGBb1fOcNdZjtQToVPFxXjm4ke.jpg",
       "tmdbId": 1158
     },
     {
       "name": "Anthony Hopkins",
-      "film": "The Two Popes",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "critics": "X"
       },
+      "film": "The Two Popes",
+      "role": "Supporting",
       "profilePath": "/cbFWUHhk6pZKTEm48OKVM5awNNn.jpg",
       "tmdbId": 4173
     },
     {
       "name": "Antonio Banderas",
-      "film": "Pain and Glory",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X"
       },
+      "film": "Pain and Glory",
+      "role": "Leading",
       "profilePath": "/fce7zl6elUzsv7wudHFc7RgFtjD.jpg",
       "tmdbId": 3131
     },
     {
       "name": "Jonathan Pryce",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X"
+      },
       "film": "The Two Popes",
       "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X"
-      },
       "profilePath": "/zwSv5uXzPTtmitFe39UdqnVwmdL.jpg",
       "tmdbId": 378
     },
     {
       "name": "Joe Pesci",
-      "film": "Russell Bufalino",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X"
       },
+      "film": "Russell Bufalino",
+      "role": "Supporting",
       "profilePath": "/zbAdhqbMfRXSz26TjxJvB5f2eL5.jpg",
       "tmdbId": 4517
     },
@@ -570,30 +601,30 @@
   "best-actress": [
     {
       "name": "Renée Zellweger",
-      "film": "Judy",
-      "role": "Leading",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
         "nbr": "Y"
       },
+      "film": "Judy",
+      "role": "Leading",
       "profilePath": "/u4wQXVYhN9OOimHn5hbWKefdjjG.jpg",
       "tmdbId": 9137
     },
     {
       "name": "Laura Dern",
-      "film": "Marriage Story",
-      "role": "Supporting",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
       },
+      "film": "Marriage Story",
+      "role": "Supporting",
       "profilePath": "/gB9PnGEvxKg33OSlcqptQwTBwPE.jpg",
       "tmdbId": 4784
     },
@@ -619,95 +650,71 @@
     },
     {
       "name": "Scarlett Johansson",
-      "film": "Marriage Story",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "Marriage Story",
+      "role": "Leading",
       "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
       "tmdbId": 1245
     },
     {
       "name": "Charlize Theron",
-      "film": "Bombshell",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "Bombshell",
+      "role": "Leading",
       "profilePath": "/ie1KbeYFG5E0GVr1QP7tDNuXvga.jpg",
       "tmdbId": 6885
     },
     {
       "name": "Margot Robbie",
-      "film": "Bombshell",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "Bombshell",
+      "role": "Supporting",
       "profilePath": "/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg",
       "tmdbId": 234352
     },
     {
       "name": "Cynthia Erivo",
-      "film": "Harriet",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "Harriet",
+      "role": "Leading",
       "profilePath": "/gIAXqZwZCBqkh2ppfAV4xcnMxki.jpg",
       "tmdbId": 1765068
     },
     {
       "name": "Saoirse Ronan",
-      "film": "Little Women",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "critics": "X"
       },
+      "film": "Little Women",
+      "role": "Leading",
       "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
       "tmdbId": 36592
-    },
-    {
-      "name": "Scarlett Johansson",
-      "film": "Jojo Rabbit",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X",
-        "critics": "X"
-      },
-      "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
-      "tmdbId": 1245
-    },
-    {
-      "name": "Florence Pugh",
-      "film": "Little Women",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X",
-        "critics": "X"
-      },
-      "profilePath": "/6EpDNiVqB2Mao3mHm4kYw09ufHk.jpg",
-      "tmdbId": 1373737
     },
     {
       "name": "Jennifer Lopez",
@@ -722,13 +729,37 @@
       "tmdbId": 16866
     },
     {
-      "name": "Kathy Bates",
-      "film": "Richard Jewell",
+      "name": "Florence Pugh",
+      "film": "Little Women",
       "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
-        "gg": "X"
+        "critics": "X"
       },
+      "profilePath": "/6EpDNiVqB2Mao3mHm4kYw09ufHk.jpg",
+      "tmdbId": 1373737
+    },
+    {
+      "name": "Scarlett Johansson",
+      "film": "Jojo Rabbit",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
+      "tmdbId": 1245
+    },
+    {
+      "name": "Kathy Bates",
+      "awards": {
+        "gg": "X",
+        "oscar": "X"
+      },
+      "film": "Richard Jewell",
+      "role": "Supporting",
       "profilePath": "/nP7zRmXJyMyj2OohclSSo6JAEbD.jpg",
       "tmdbId": 8534
     },

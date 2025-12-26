@@ -3,75 +3,87 @@
     {
       "name": "12 Years a Slave",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
-        "sag": "X",
+        "oscar": "Y",
         "afi": "Y",
-        "nbr": "Y"
+        "sag": "X",
+        "nbr": "Y",
+        "pga": "Y"
       },
+      "genre": "Drama",
       "posterPath": "/xdANQijuNrJaw1HA61rDccME4Tm.jpg",
       "tmdbId": 76203
     },
     {
-      "name": "American Hustle",
-      "awards": {
-        "oscar": "X",
-        "gg": "Y",
-        "bafta": "X",
-        "sag": "Y",
-        "critics": "X",
-        "afi": "Y"
-      },
-      "posterPath": "/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg",
-      "tmdbId": 168672
-    },
-    {
       "name": "Gravity",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "Y"
       },
+      "genre": "Drama",
       "posterPath": "/kZ2nZw8D681aphje8NJi8EfbL1U.jpg",
       "tmdbId": 49047
     },
     {
+      "name": "American Hustle",
+      "awards": {
+        "gg": "Y",
+        "bafta": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "sag": "Y",
+        "critics": "X",
+        "pga": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg",
+      "tmdbId": 168672
+    },
+    {
       "name": "Her",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X"
       },
+      "genre": "Comedy",
       "posterPath": "/eCOtqtfvn7mxGl6nfmq4b1exJRc.jpg",
       "tmdbId": 152601
     },
     {
       "name": "Nebraska",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X"
       },
+      "genre": "Comedy",
       "posterPath": "/o1t2Mw18EEBnl8v4Nby3PFjxnM1.jpg",
       "tmdbId": 129670
     },
     {
       "name": "The Wolf of Wall Street",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X"
       },
+      "genre": "Comedy",
       "posterPath": "/kW9LmvYHAaS9iA0tHmZVq8hQYoq.jpg",
       "tmdbId": 106646
     },
@@ -79,8 +91,8 @@
       "name": "Inside Llewyn Davis",
       "awards": {
         "gg": "X",
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y"
       },
       "genre": "Comedy",
@@ -90,9 +102,10 @@
     {
       "name": "Saving Mr. Banks",
       "awards": {
-        "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/4RkcUe5PKnYvrCwMjk8giUAoID7.jpg",
       "tmdbId": 140823
@@ -109,12 +122,14 @@
     {
       "name": "Captain Phillips",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
+        "afi": "Y",
         "critics": "X",
-        "afi": "Y"
+        "pga": "X"
       },
+      "genre": "Drama",
       "posterPath": "/8Td0kkocW6sD3uRpzwfMfkqMWhx.jpg",
       "tmdbId": 109424
     },
@@ -155,7 +170,8 @@
       "awards": {
         "oscar": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "pga": "X"
       },
       "posterPath": "/7Fdh7gUq3plvQqxRbNYhWvDABXA.jpg",
       "tmdbId": 152532
@@ -163,10 +179,11 @@
     {
       "name": "Philomena",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "bafta": "X"
+        "bafta": "X",
+        "oscar": "X"
       },
+      "genre": "Drama",
       "posterPath": "/eBUv2GmGdXmCk1AaSOmyiu70hN8.jpg",
       "tmdbId": 205220
     },
@@ -194,17 +211,26 @@
       },
       "posterPath": "/pAi8Bl3ZKX6pANPVhNwbhbQANop.jpg",
       "tmdbId": 132363
+    },
+    {
+      "name": "Blue Jasmine",
+      "awards": {
+        "pga": "X"
+      },
+      "posterPath": "/nsj0RLRI10351uYMoAKPur6Derd.jpg",
+      "tmdbId": 160588
     }
   ],
   "best-director": [
     {
       "name": "Alfonso Cuarón",
-      "film": "Gravity",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
+        "bafta": "Y",
+        "oscar": "Y",
         "dga": "Y"
       },
+      "film": "Gravity",
       "profilePath": "/eoCHiXaQzGgx9RiwXnt3k239FLc.jpg",
       "tmdbId": 11218
     },
@@ -227,134 +253,154 @@
     },
     {
       "name": "David O. Russell",
-      "film": "American Hustle",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
         "critics": "X",
         "dga": "X"
       },
+      "film": "American Hustle",
       "profilePath": "/59rXnJS4g5dUr1Hz8QNLo5epD2a.jpg",
       "tmdbId": 17883
-    },
-    {
-      "name": "Steve McQueen",
-      "film": "12 Years a Slave",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "critics": "X",
-        "dga": "X"
-      },
-      "profilePath": "/mhHk4NRPXEJLL0SySheXZAArp5w.jpg",
-      "tmdbId": 13565
-    },
-    {
-      "name": "Alexander Payne",
-      "film": "Nebraska",
-      "awards": {
-        "oscar": "X",
-        "gg": "X"
-      }
-    },
-    {
-      "name": "Martin Scorsese",
-      "film": "The Wolf of Wall Street",
-      "awards": {
-        "oscar": "X",
-        "critics": "X",
-        "dga": "X"
-      },
-      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
-      "tmdbId": 1032
     },
     {
       "name": "Paul Greengrass",
       "awards": {
         "gg": "X",
+        "bafta": "X",
         "critics": "X",
         "dga": "X"
       },
       "film": "Captain Phillips",
       "profilePath": "/kJxQWrERq8p7gxRP2fIcS8suwme.jpg",
       "tmdbId": 25598
+    },
+    {
+      "name": "Steve McQueen",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "X"
+      },
+      "film": "12 Years a Slave",
+      "profilePath": "/mhHk4NRPXEJLL0SySheXZAArp5w.jpg",
+      "tmdbId": 13565
+    },
+    {
+      "name": "Martin Scorsese",
+      "film": "The Wolf of Wall Street",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
+      "tmdbId": 1032
+    },
+    {
+      "name": "Alexander Payne",
+      "awards": {
+        "gg": "X",
+        "oscar": "X"
+      },
+      "film": "Nebraska"
+    },
+    {
+      "name": "Martin Scorsese",
+      "film": "The Wolf Of Wall Street",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
+      "tmdbId": 1032
+    },
+    {
+      "name": "Steve McQueen",
+      "film": "12 Years A Slave",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/mhHk4NRPXEJLL0SySheXZAArp5w.jpg",
+      "tmdbId": 13565
     }
   ],
   "best-actor": [
     {
       "name": "Matthew McConaughey",
-      "film": "Dallas Buyers Club",
-      "role": "Leading",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y"
       },
+      "film": "Dallas Buyers Club",
+      "role": "Leading",
       "profilePath": "/lCySuYjhXix3FzQdS4oceDDrXKI.jpg",
       "tmdbId": 10297
     },
     {
       "name": "Jared Leto",
-      "film": "Dallas Buyers Club",
-      "role": "Supporting",
       "awards": {
-        "oscar": "Y",
-        "gg": "Y"
+        "gg": "Y",
+        "oscar": "Y"
       },
+      "film": "Dallas Buyers Club",
+      "role": "Leading",
       "profilePath": "/aNUvy7cpa78NRjCvHi5vYuNJRtj.jpg",
       "tmdbId": 7499
     },
     {
       "name": "Bruce Dern",
-      "film": "Nebraska",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "nbr": "Y"
       },
+      "film": "Nebraska",
+      "role": "Leading",
       "profilePath": "/5RKGcElQiFZh4Mu9gInyUhr9Uu7.jpg",
       "tmdbId": 6905
     },
     {
       "name": "Chiwetel Ejiofor",
-      "film": "12 Years a Slave",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "Y",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "12 Years a Slave",
+      "role": "Leading",
       "profilePath": "/kq5DDnqqofoRI0t6ddtRlsJnNPT.jpg",
       "tmdbId": 5294
     },
     {
       "name": "Barkhad Abdi",
-      "film": "Captain Phillips",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "Y",
+        "oscar": "X",
         "critics": "X"
       },
+      "film": "Captain Phillips",
+      "role": "Leading",
       "profilePath": "/utfeg8GnGyW3aVNcRfhII9RCXB6.jpg",
       "tmdbId": 1261694
     },
     {
       "name": "Leonardo DiCaprio",
+      "awards": {
+        "gg": "Y",
+        "bafta": "X",
+        "oscar": "X"
+      },
       "film": "The Wolf of Wall Street",
       "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "Y",
-        "bafta": "X"
-      },
       "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
       "tmdbId": 6193
     },
@@ -377,45 +423,6 @@
       "tmdbId": 1023139
     },
     {
-      "name": "Christian Bale",
-      "film": "American Hustle",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "critics": "X"
-      },
-      "profilePath": "/gbcLQi7lQVaIF3WXNjW9Fqi84xZ.jpg",
-      "tmdbId": 3894
-    },
-    {
-      "name": "Bradley Cooper",
-      "film": "American Hustle",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "critics": "X"
-      },
-      "profilePath": "/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg",
-      "tmdbId": 51329
-    },
-    {
-      "name": "Michael Fassbender",
-      "film": "12 Years a Slave",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "critics": "X"
-      },
-      "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg",
-      "tmdbId": 17288
-    },
-    {
       "name": "Tom Hanks",
       "awards": {
         "gg": "X",
@@ -429,6 +436,19 @@
       "tmdbId": 31
     },
     {
+      "name": "Christian Bale",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "X"
+      },
+      "film": "American Hustle",
+      "role": "Leading",
+      "profilePath": "/gbcLQi7lQVaIF3WXNjW9Fqi84xZ.jpg",
+      "tmdbId": 3894
+    },
+    {
       "name": "Daniel Brühl",
       "awards": {
         "gg": "X",
@@ -440,6 +460,32 @@
       "role": "Leading",
       "profilePath": "/3YlmTfiy5qZXkrdKGjaM1uMjGKP.jpg",
       "tmdbId": 3872
+    },
+    {
+      "name": "Bradley Cooper",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "X"
+      },
+      "film": "American Hustle",
+      "role": "Leading",
+      "profilePath": "/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg",
+      "tmdbId": 51329
+    },
+    {
+      "name": "Michael Fassbender",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "X"
+      },
+      "film": "12 Years a Slave",
+      "role": "Leading",
+      "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg",
+      "tmdbId": 17288
     },
     {
       "name": "Robert Redford",
@@ -462,16 +508,6 @@
       "role": "Supporting",
       "profilePath": "/vhtsFJZcfHdeDkFBoWMDzOS6xrP.jpg",
       "tmdbId": 4691
-    },
-    {
-      "name": "Jonah Hill",
-      "film": "The Wolf of Wall Street",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/5aE4GgJADHzN1QsS6zkzElZSEYq.jpg",
-      "tmdbId": 21007
     },
     {
       "name": "Idris Elba",
@@ -514,6 +550,16 @@
       "tmdbId": 1892
     },
     {
+      "name": "Jonah Hill",
+      "film": "The Wolf of Wall Street",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/5aE4GgJADHzN1QsS6zkzElZSEYq.jpg",
+      "tmdbId": 21007
+    },
+    {
       "name": "Forest Whitaker",
       "awards": {
         "sag": "X"
@@ -547,28 +593,28 @@
   "best-actress": [
     {
       "name": "Cate Blanchett",
-      "film": "Blue Jasmine",
-      "role": "Leading",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y"
       },
+      "film": "Blue Jasmine",
+      "role": "Leading",
       "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
       "tmdbId": 112
     },
     {
       "name": "Jennifer Lawrence",
-      "film": "American Hustle",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "American Hustle",
+      "role": "Leading",
       "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
       "tmdbId": 72129
     },
@@ -588,25 +634,25 @@
     },
     {
       "name": "Amy Adams",
+      "awards": {
+        "gg": "Y",
+        "bafta": "X",
+        "oscar": "X"
+      },
       "film": "American Hustle",
       "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "Y",
-        "bafta": "X"
-      },
       "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
       "tmdbId": 9273
     },
     {
       "name": "Lupita Nyong'o",
-      "film": "12 Years a Slave",
-      "role": "Supporting",
       "awards": {
-        "oscar": "Y",
         "gg": "X",
-        "bafta": "X"
+        "bafta": "X",
+        "oscar": "Y"
       },
+      "film": "12 Years a Slave",
+      "role": "Leading",
       "profilePath": "/y40Wu1T742kynOqtwXASc5Qgm49.jpg",
       "tmdbId": 1267329
     },
@@ -631,79 +677,79 @@
     },
     {
       "name": "Sandra Bullock",
-      "film": "Gravity",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "Gravity",
+      "role": "Leading",
       "profilePath": "/hPHGKPAWZ8gArYXMk225rrYPoyJ.jpg",
       "tmdbId": 18277
     },
     {
       "name": "Judi Dench",
-      "film": "Philomena",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "Philomena",
+      "role": "Leading",
       "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
       "tmdbId": 5309
     },
     {
       "name": "Meryl Streep",
-      "film": "August: Osage County",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "August: Osage County",
+      "role": "Leading",
       "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
       "tmdbId": 5064
     },
     {
       "name": "Julia Roberts",
-      "film": "August: Osage County",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "critics": "X"
       },
-      "profilePath": "/AhQMyQ10kz5g8Y3Fp54GPhgDxQS.jpg",
+      "film": "August: Osage County",
+      "role": "Leading",
+      "profilePath": "/h13yvG0tRNMTAwciQXxYmQWdYW8.jpg",
       "tmdbId": 1204
     },
     {
       "name": "Sally Hawkins",
-      "film": "Blue Jasmine",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "bafta": "X"
+        "bafta": "X",
+        "oscar": "X"
       },
+      "film": "Blue Jasmine",
+      "role": "Leading",
       "profilePath": "/1dtDq82dM2YQ17lBL4ZKPJo5LKw.jpg",
       "tmdbId": 39658
     },
     {
       "name": "June Squibb",
-      "film": "Nebraska",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X"
       },
+      "film": "Nebraska",
+      "role": "Leading",
       "profilePath": "/a7vkoLhc8JGkdvDbHvpgKKHUPHH.jpg",
       "tmdbId": 35515
     },
@@ -763,7 +809,7 @@
         "sag": "X"
       },
       "role": "Supporting",
-      "profilePath": "/AhQMyQ10kz5g8Y3Fp54GPhgDxQS.jpg",
+      "profilePath": "/h13yvG0tRNMTAwciQXxYmQWdYW8.jpg",
       "tmdbId": 1204
     },
     {

@@ -57,6 +57,8 @@ HISTORICAL_AVERAGES = {
     'venice': {'best-film': 1, 'best-director': 1, 'best-actor': 1, 'best-actress': 1},
     # DGA: 5 director nominees
     'dga': {'best-film': 0, 'best-director': 5, 'best-actor': 0, 'best-actress': 0},
+    # PGA: 10 theatrical film nominees
+    'pga': {'best-film': 10, 'best-director': 0, 'best-actor': 0, 'best-actress': 0},
 }
 
 # Tolerance for comparison (e.g., 0.5 means ±50% of expected)
@@ -222,7 +224,7 @@ class ScrapeReport:
         
         # Status per award
         print(f"\n  📡 AWARD STATUS:")
-        for award_key in ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga']:
+        for award_key in ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga']:
             log = self.logs.get(award_key)
             if log:
                 total_entries = sum(log.counts.values())
@@ -286,7 +288,7 @@ def scrape_award_with_logging(award_key, year, report):
         
         # ==== CALL APPROPRIATE SCRAPER ====
         from master_scraper import (scrape_award, scrape_afi, scrape_nbr, 
-                                    scrape_venice, scrape_dga)
+                                    scrape_venice, scrape_dga, scrape_pga)
         
         result = None
         
@@ -302,6 +304,9 @@ def scrape_award_with_logging(award_key, year, report):
         elif award_key == 'dga':
             result = scrape_dga(ceremony)
             log.log(f"Loaded DGA data from pre-scraped file")
+        elif award_key == 'pga':
+            result = scrape_pga(ceremony)
+            log.log(f"Scraped PGA Theatrical Film nominees")
         else:
             result = scrape_award(award_key, year)
             log.log(f"Scraped Wikipedia awards table")
@@ -348,7 +353,7 @@ def scrape_year_enhanced(year, awards=None, parallel=True):
     Enhanced scrape_year with detailed logging and report generation.
     """
     if awards is None:
-        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga']
+        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga']
     
     report = ScrapeReport(year)
     all_results = {}

@@ -8,7 +8,8 @@
         "bafta": "Y",
         "sag": "Y",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "Y"
       },
       "posterPath": "/m5gPWFZFIp4UJFABgWyLkbXv8GX.jpg",
       "tmdbId": 68734
@@ -22,7 +23,8 @@
         "sag": "X",
         "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/3TOgmlIY8X3WjIjvU7Z0jqeNkyU.jpg",
       "tmdbId": 4415
@@ -36,7 +38,8 @@
         "sag": "X",
         "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/5KeUqW6DpVtf8G9VMuI2l0XIPCo.jpg",
       "tmdbId": 72976
@@ -49,7 +52,8 @@
         "sag": "X",
         "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/y7iOVneBvITlBdhy6tVqXVOa1Js.jpg",
       "tmdbId": 82693
@@ -62,7 +66,8 @@
         "bafta": "X",
         "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/wNSdSSxowM3WIqmPJNg3RagYbwP.jpg",
       "tmdbId": 97630
@@ -74,7 +79,8 @@
         "gg": "X",
         "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
       "tmdbId": 68718
@@ -85,7 +91,8 @@
         "oscar": "X",
         "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/nQJmWekGYlXhezGUb21xFfEfwhH.jpg",
       "tmdbId": 84175
@@ -97,7 +104,8 @@
         "gg": "X",
         "bafta": "X",
         "critics": "X",
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "X"
       },
       "posterPath": "/iLgRu4hhSr6V1uManX6ukDriiSc.jpg",
       "tmdbId": 87827
@@ -107,7 +115,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "X"
       },
       "genre": "Comedy",
       "posterPath": "/jH1qYtX1Ec4nZsoUJ0Y4DAZCaI.jpg",
@@ -185,30 +194,52 @@
       },
       "posterPath": "/rUSjbyvYWN9H4az8xt0tDtU7I6v.jpg",
       "tmdbId": 68722
+    },
+    {
+      "name": "Skyfall",
+      "awards": {
+        "pga": "X"
+      },
+      "posterPath": "/d0IVecFQvsGdSbnMAHqiYsNYaJT.jpg",
+      "tmdbId": 37724
     }
   ],
   "best-director": [
+    {
+      "name": "Ben Affleck",
+      "awards": {
+        "gg": "Y",
+        "bafta": "Y",
+        "dga": "Y"
+      },
+      "film": "Argo",
+      "profilePath": "/aTcqu8cI4wMohU17xTdqmXKTGrw.jpg",
+      "tmdbId": 880
+    },
+    {
+      "name": "Kathryn Bigelow",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "nbr": "Y",
+        "dga": "X"
+      },
+      "film": "Zero Dark Thirty",
+      "profilePath": "/llfsTIvItT7IEmX5qK1qUX0dbqc.jpg",
+      "tmdbId": 14392
+    },
     {
       "name": "Ang Lee",
       "film": "Life of Pi",
       "awards": {
         "oscar": "Y",
-        "critics": "X",
-        "dga": "X"
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X"
       },
       "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg",
       "tmdbId": 1614
-    },
-    {
-      "name": "Kathryn Bigelow",
-      "film": "Zero Dark Thirty",
-      "awards": {
-        "critics": "X",
-        "nbr": "Y",
-        "dga": "X"
-      },
-      "profilePath": "/llfsTIvItT7IEmX5qK1qUX0dbqc.jpg",
-      "tmdbId": 14392
     },
     {
       "name": "Alexandros Avranas",
@@ -224,11 +255,22 @@
       "film": "Lincoln",
       "awards": {
         "oscar": "X",
+        "gg": "X",
         "critics": "X",
         "dga": "X"
       },
       "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
       "tmdbId": 488
+    },
+    {
+      "name": "Michael Haneke",
+      "film": "Amour",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X"
+      },
+      "profilePath": "/9wDbsPQ5lu9A04FJ1pVi9y1dRjn.jpg",
+      "tmdbId": 6011
     },
     {
       "name": "David O. Russell",
@@ -241,13 +283,14 @@
       "tmdbId": 17883
     },
     {
-      "name": "Michael Haneke",
-      "film": "Amour",
+      "name": "Quentin Tarantino",
       "awards": {
-        "oscar": "X"
+        "gg": "X",
+        "bafta": "X"
       },
-      "profilePath": "/9wDbsPQ5lu9A04FJ1pVi9y1dRjn.jpg",
-      "tmdbId": 6011
+      "film": "Django Unchained",
+      "profilePath": "/1gjcpAa99FAOWGnrUvHEXXsRs7o.jpg",
+      "tmdbId": 138
     },
     {
       "name": "Benh Zeitlin",
@@ -262,18 +305,28 @@
       "name": "Tom Hooper",
       "film": "Les Misérables",
       "awards": {
-        "critics": "X",
-        "dga": "X"
+        "critics": "X"
       },
       "profilePath": "/w9Z3dlJDtWBXo4rIxGI0XY896j2.jpg",
       "tmdbId": 70500
     },
     {
-      "name": "Ben Affleck",
-      "film": "Argo",
+      "name": "Ang Lee",
+      "film": "Life Of Pi",
       "awards": {
-        "dga": "Y"
-      }
+        "dga": "X"
+      },
+      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg",
+      "tmdbId": 1614
+    },
+    {
+      "name": "Tom Hooper",
+      "film": "Les Miserables",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/w9Z3dlJDtWBXo4rIxGI0XY896j2.jpg",
+      "tmdbId": 70500
     }
   ],
   "best-actor": [

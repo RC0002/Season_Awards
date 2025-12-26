@@ -79,6 +79,13 @@ CEREMONY_MAP = {
         2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
         2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
         2015: 2014, 2014: 2013, 2013: 2012
+    },
+    # PGA: Producers Guild of America - ceremony number
+    # 36th in 2025 for 2024/2025 season
+    'pga': {
+        2026: 37, 2025: 36, 2024: 35, 2023: 34, 2022: 33, 2021: 32,
+        2020: 31, 2019: 30, 2018: 29, 2017: 28, 2016: 27,
+        2015: 26, 2014: 25, 2013: 24
     }
 }
 
@@ -90,7 +97,8 @@ URL_TEMPLATES = {
     'sag': 'https://en.wikipedia.org/wiki/{ord}_Screen_Actors_Guild_Awards',
     'critics': 'https://en.wikipedia.org/wiki/{ord}_Critics%27_Choice_Awards',
     'nbr': 'https://en.wikipedia.org/wiki/National_Board_of_Review_Awards_{year}',
-    'venice': 'https://it.wikipedia.org/wiki/{ord}%C2%AA_Mostra_internazionale_d%27arte_cinematografica_di_Venezia'
+    'venice': 'https://it.wikipedia.org/wiki/{ord}%C2%AA_Mostra_internazionale_d%27arte_cinematografica_di_Venezia',
+    'pga': 'https://en.wikipedia.org/wiki/{ord}_Producers_Guild_of_America_Awards'
 }
 
 # Ordinal number suffix
@@ -228,6 +236,7 @@ def scrape_gg_old_format(tables_or_soup, award_key):
                 continue
             
             # Two THs = subcategory row (or combined category header like Animated|Foreign)
+            # Also handles direct "Best Director | Best Screenplay" header rows (70th GG format)
             if len(ths) >= 2 and not tds:
                 subcategories = [th.get_text().strip().lower() for th in ths]
                 # Check if ANY of the combined headers is Animated/Foreign - if so, skip
@@ -235,6 +244,11 @@ def scrape_gg_old_format(tables_or_soup, award_key):
                 if 'animated' in combined_header or 'foreign' in combined_header or 'non-english' in combined_header:
                     current_main_cat = None
                     subcategories = []
+                # Check if this is a direct "Best Director | Best Screenplay" row (70th GG format)
+                elif any('best director' in s for s in subcategories):
+                    # Set special category for director-only row
+                    current_main_cat = 'director-row'
+                    # Keep subcategories as-is for idx matching
                 # For acting categories, validate that subcategories are actually actor/actress
                 elif current_main_cat in ['actor-drama', 'actor-comedy']:
                     has_actor_actress = any('actor' in s or 'actress' in s for s in subcategories)
@@ -283,6 +297,10 @@ def scrape_gg_old_format(tables_or_soup, award_key):
                             key = 'best-actress'
                     elif current_main_cat == 'other':
                         if 'director' in subcat:
+                            key = 'best-director'
+                    elif current_main_cat == 'director-row':
+                        # Direct "Best Director | Best Screenplay" header row (70th GG format)
+                        if 'best director' in subcat:
                             key = 'best-director'
                     
                     if not key:
@@ -946,6 +964,120 @@ def scrape_dga(year):
     return results
 
 
+def scrape_pga(ceremony_num):
+    """
+    Scrape PGA (Producers Guild of America) Awards.
+    Only extracts 'Outstanding Producer of Theatrical Motion Pictures' category.
+    Ignores Documentary and Animated categories.
+    """
+    url = URL_TEMPLATES['pga'].format(ord=ordinal(ceremony_num))
+    print(f"  PGA ({ordinal(ceremony_num)}): {url}")
+    
+    soup = fetch_page(url)
+    if not soup:
+        return {}
+    
+    results = {
+        'best-film': [],
+        'best-director': [],
+        'best-actor': [],
+        'best-actress': []
+    }
+    
+    seen_films = set()
+    
+    # Find the "Darryl F. Zanuck Award" section
+    # This is the main theatrical film producer award
+    zanuck_link = soup.find('a', string=lambda t: t and 'Darryl F. Zanuck Award' in t)
+    
+    if not zanuck_link:
+        # Fallback: search for text containing "Outstanding Producer of Theatrical"
+        for th in soup.find_all(['th', 'td']):
+            if 'Outstanding Producer of Theatrical Motion Pictures' in th.get_text():
+                zanuck_link = th
+                break
+    
+    if not zanuck_link:
+        print(f"    PGA: Could not find Zanuck Award section")
+        return results
+    
+    # Navigate to find the UL with nominees
+    # Structure: The link is inside a header, the UL follows
+    current = zanuck_link
+    ul = None
+    
+    # Go up to find parent container, then find next UL
+    for _ in range(10):
+        if current is None:
+            break
+        
+        # Check siblings for UL
+        sibling = current.next_sibling
+        while sibling:
+            if hasattr(sibling, 'name') and sibling.name == 'ul':
+                ul = sibling
+                break
+            sibling = sibling.next_sibling
+        
+        if ul:
+            break
+        
+        # Check if current element contains UL
+        if hasattr(current, 'find'):
+            ul = current.find('ul')
+            if ul:
+                break
+        
+        current = current.parent
+    
+    if not ul:
+        print(f"    PGA: Could not find nominee list")
+        return results
+    
+    # Parse the list
+    # Structure: Winner is in bold <b>, inside <li> with nested <ul> for nominees
+    # First check top-level li items
+    for li in ul.find_all('li', recursive=False):
+        # Get film name from <i> tag
+        italic = li.find('i')
+        if not italic:
+            continue
+        
+        film_name = italic.get_text().strip()
+        
+        # Check if this is a category we should skip (Documentary, Animated)
+        li_text = li.get_text().lower()
+        if 'documentary' in li_text or 'animated' in li_text:
+            continue
+        
+        if film_name and film_name not in seen_films:
+            # Check if winner (bold)
+            is_winner = li.find('b') is not None
+            
+            seen_films.add(film_name)
+            results['best-film'].append({
+                'name': film_name,
+                'awards': {'pga': 'Y' if is_winner else 'X'}
+            })
+        
+        # Check for nested <ul> with more nominees
+        nested_ul = li.find('ul')
+        if nested_ul:
+            for nested_li in nested_ul.find_all('li', recursive=False):
+                nested_italic = nested_li.find('i')
+                if nested_italic:
+                    nested_film = nested_italic.get_text().strip()
+                    if nested_film and nested_film not in seen_films:
+                        seen_films.add(nested_film)
+                        results['best-film'].append({
+                            'name': nested_film,
+                            'awards': {'pga': 'X'}  # Nested ones are nominees
+                        })
+    
+    print(f"    PGA {ordinal(ceremony_num)}: Found {len(results['best-film'])} films")
+    return results
+
+
 def scrape_award(award_key, year):
     """Scrape a single award for a given year"""
     if year not in CEREMONY_MAP[award_key]:
@@ -1068,7 +1200,8 @@ def scrape_award(award_key, year):
             if header_text == 'best film':
                 key = 'best-film'
                 cat_type = 'film'
-            elif header_text == 'best director':
+            elif header_text == 'best director' or header_text == 'best direction':
+                # Note: Old BAFTA pages (pre-2020) use "Best Direction" instead of "Best Director"
                 key = 'best-director'
                 cat_type = 'director'
             elif 'actor' in header_text and 'leading' in header_text:
@@ -1244,7 +1377,7 @@ def enrich_with_tmdb(data):
 def scrape_year(year, awards=None):
     """Scrape all awards for a given year"""
     if awards is None:
-        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga']
+        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga']
     
     print(f"\n{'='*60}")
     print(f"  SCRAPING SEASON {year-1}/{year}")
@@ -1253,7 +1386,7 @@ def scrape_year(year, awards=None):
     all_results = {}
     
     for award_key in awards:
-        # AFI, NBR, and Venice use special scrapers
+        # AFI, NBR, Venice, DGA, PGA use special scrapers
         if award_key == 'afi':
             afi_year = CEREMONY_MAP['afi'].get(year)
             if afi_year:
@@ -1278,6 +1411,12 @@ def scrape_year(year, awards=None):
                 result = scrape_dga(dga_year)
                 if result:
                     all_results['dga'] = result
+        elif award_key == 'pga':
+            pga_num = CEREMONY_MAP['pga'].get(year)
+            if pga_num:
+                result = scrape_pga(pga_num)
+                if result:
+                    all_results['pga'] = result
         else:
             result = scrape_award(award_key, year)
             if result:

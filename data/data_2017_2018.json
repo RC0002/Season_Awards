@@ -3,12 +3,13 @@
     {
       "name": "Three Billboards Outside Ebbing, Missouri",
       "awards": {
+        "bafta": "Y",
         "oscar": "X",
         "gg": "Y",
-        "bafta": "Y",
+        "afi": "Y",
         "sag": "Y",
         "critics": "X",
-        "afi": "Y"
+        "pga": "X"
       },
       "posterPath": "/bRYLt8fV82tdVoDppSFTZIcJiLN.jpg",
       "tmdbId": 359940
@@ -18,23 +19,37 @@
       "awards": {
         "oscar": "X",
         "gg": "Y",
+        "afi": "Y",
         "sag": "X",
         "critics": "X",
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg",
       "tmdbId": 391713
     },
     {
+      "name": "The Shape of Water",
+      "awards": {
+        "bafta": "X",
+        "oscar": "Y",
+        "gg": "X",
+        "afi": "Y",
+        "pga": "Y"
+      },
+      "posterPath": "/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
+      "tmdbId": 399055
+    },
+    {
       "name": "Call Me by Your Name",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
         "gg": "X",
-        "bafta": "X",
-        "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/mZ4gBdfkhP9tvLH1DO4m4HYtiyi.jpg",
       "tmdbId": 398818
@@ -42,12 +57,13 @@
     {
       "name": "Dunkirk",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
         "gg": "X",
-        "bafta": "X",
-        "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/b4Oe15CGLL61Ped0RAS9JpqdmCt.jpg",
       "tmdbId": 374720
@@ -57,10 +73,11 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
+        "afi": "Y",
         "sag": "X",
         "critics": "X",
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg",
       "tmdbId": 419430
@@ -70,29 +87,19 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "critics": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X"
       },
       "posterPath": "/h4XG3g6uMMPIBPjAoQhC2QIMdkl.jpg",
       "tmdbId": 446354
     },
     {
-      "name": "The Shape of Water",
-      "awards": {
-        "oscar": "Y",
-        "gg": "X",
-        "bafta": "X",
-        "afi": "Y"
-      },
-      "posterPath": "/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
-      "tmdbId": 399055
-    },
-    {
       "name": "The Florida Project",
       "awards": {
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y"
       },
       "posterPath": "/bnSTP1PY2fDyat0eUa4QouuGV7F.jpg",
@@ -101,9 +108,10 @@
     {
       "name": "The Big Sick",
       "awards": {
+        "afi": "Y",
         "sag": "X",
         "critics": "X",
-        "afi": "Y"
+        "pga": "X"
       },
       "posterPath": "/9fJTT8pBxxQsFILJHTtHhdYFr77.jpg",
       "tmdbId": 416477
@@ -130,7 +138,8 @@
     {
       "name": "Wonder Woman",
       "awards": {
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "X"
       },
       "posterPath": "/v4ncgZjG2Zu8ZW5al1vIZTsSjqX.jpg",
       "tmdbId": 297762
@@ -140,7 +149,9 @@
       "awards": {
         "afi": "Y"
       },
-      "note": "AFI Special Award"
+      "note": "AFI Special Award",
+      "posterPath": "/cNQck5cKk4VVsxKd0DrvjJte0uD.jpg",
+      "tmdbId": 876077
     },
     {
       "name": "Baby Driver",
@@ -177,12 +188,22 @@
     {
       "name": "Darkest Hour",
       "awards": {
-        "oscar": "X",
         "bafta": "X",
+        "oscar": "X",
         "critics": "X"
       },
       "posterPath": "/xa6G3aKlysQeVg9wOb0dRcIGlWu.jpg",
       "tmdbId": 399404
+    },
+    {
+      "name": "I, Tonya",
+      "awards": {
+        "gg": "X",
+        "pga": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/6gNXwSHxaksR1PjVZRqNapmkgj3.jpg",
+      "tmdbId": 389015
     },
     {
       "name": "The Greatest Showman",
@@ -194,21 +215,20 @@
       "tmdbId": 316029
     },
     {
-      "name": "I, Tonya",
-      "awards": {
-        "gg": "X"
-      },
-      "genre": "Comedy",
-      "posterPath": "/6gNXwSHxaksR1PjVZRqNapmkgj3.jpg",
-      "tmdbId": 389015
-    },
-    {
       "name": "Mudbound",
       "awards": {
         "sag": "X"
       },
       "posterPath": "/tf21kSKepMOlnorszWaiFwksKU4.jpg",
       "tmdbId": 414425
+    },
+    {
+      "name": "Molly's Game",
+      "awards": {
+        "pga": "X"
+      },
+      "posterPath": "/zrGQwKNmAz5awZI2V1k5M4eTTTN.jpg",
+      "tmdbId": 396371
     }
   ],
   "best-director": [
@@ -216,9 +236,9 @@
       "name": "Guillermo del Toro",
       "film": "The Shape of Water",
       "awards": {
+        "bafta": "Y",
         "oscar": "Y",
-        "gg": "Y",
-        "dga": "Y"
+        "gg": "Y"
       },
       "profilePath": "/gldeyCtKcaqnK1v4Vu9vqayhzUQ.jpg",
       "tmdbId": 10828
@@ -236,6 +256,15 @@
       "tmdbId": 45400
     },
     {
+      "name": "Guillermo Del Toro",
+      "film": "The Shape Of Water",
+      "awards": {
+        "dga": "Y"
+      },
+      "profilePath": "/gldeyCtKcaqnK1v4Vu9vqayhzUQ.jpg",
+      "tmdbId": 10828
+    },
+    {
       "name": "Jacques Audiard",
       "awards": {
         "venice": "Y"
@@ -248,6 +277,7 @@
       "name": "Christopher Nolan",
       "film": "Dunkirk",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
         "gg": "X",
         "critics": "X",
@@ -255,6 +285,18 @@
       },
       "profilePath": "/xuAIuYSmsUzKlUMBFGVZaWsY3DZ.jpg",
       "tmdbId": 525
+    },
+    {
+      "name": "Martin McDonagh",
+      "film": "Three Billboards Outside Ebbing, Missouri",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X",
+        "dga": "X"
+      },
+      "profilePath": "/cjk2f3sYOqDnTUn4m07j4sNcncf.jpg",
+      "tmdbId": 54472
     },
     {
       "name": "Jordan Peele",
@@ -268,15 +310,14 @@
       "tmdbId": 291263
     },
     {
-      "name": "Martin McDonagh",
+      "name": "Luca Guadagnino",
+      "film": "Call Me by Your Name",
       "awards": {
-        "gg": "X",
-        "critics": "X",
-        "dga": "X"
+        "bafta": "X",
+        "critics": "X"
       },
-      "film": "Three Billboards Outside Ebbing, Missouri",
-      "profilePath": "/cjk2f3sYOqDnTUn4m07j4sNcncf.jpg",
-      "tmdbId": 54472
+      "profilePath": "/lO2GD4s6fRloZLEhsZgBlhJQasE.jpg",
+      "tmdbId": 78160
     },
     {
       "name": "Steven Spielberg",
@@ -287,6 +328,15 @@
       "film": "The Post",
       "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
       "tmdbId": 488
+    },
+    {
+      "name": "Denis Villeneuve",
+      "film": "Blade Runner 2049",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/zdDx9Xs93UIrJFWYApYR28J8M6b.jpg",
+      "tmdbId": 137427
     },
     {
       "name": "Paul Thomas Anderson",
@@ -305,15 +355,6 @@
       "film": "All the Money in the World",
       "profilePath": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg",
       "tmdbId": 578
-    },
-    {
-      "name": "Luca Guadagnino",
-      "film": "Call Me by Your Name",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/lO2GD4s6fRloZLEhsZgBlhJQasE.jpg",
-      "tmdbId": 78160
     }
   ],
   "best-actor": [
@@ -322,9 +363,9 @@
       "film": "Darkest Hour",
       "role": "Leading",
       "awards": {
+        "bafta": "Y",
         "oscar": "Y",
         "gg": "Y",
-        "bafta": "Y",
         "sag": "Y"
       },
       "profilePath": "/2v9FVVBUrrkW2m3QOcYkuhq9A6o.jpg",
@@ -335,12 +376,12 @@
       "film": "Three Billboards Outside Ebbing, Missouri",
       "role": "Supporting",
       "awards": {
+        "bafta": "Y",
         "oscar": "Y",
         "gg": "Y",
-        "bafta": "Y",
         "sag": "Y"
       },
-      "profilePath": "/vYpWxV0bnUgKo7SdasfGP9HttUq.jpg",
+      "profilePath": "/ruaUgtATy70VygkqtfHPwpJ0Gcj.jpg",
       "tmdbId": 6807
     },
     {
@@ -377,27 +418,13 @@
       "tmdbId": 5293
     },
     {
-      "name": "Timothée Chalamet",
-      "film": "Call Me by Your Name",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
-      "tmdbId": 1190668
-    },
-    {
       "name": "Daniel Kaluuya",
       "film": "Get Out",
       "role": "Leading",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
         "gg": "X",
-        "bafta": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -405,13 +432,27 @@
       "tmdbId": 206919
     },
     {
+      "name": "Timothée Chalamet",
+      "film": "Call Me by Your Name",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
+      "tmdbId": 1190668
+    },
+    {
       "name": "Willem Dafoe",
       "film": "The Florida Project",
       "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
         "gg": "X",
-        "bafta": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -423,9 +464,9 @@
       "film": "Phantom Thread",
       "role": "Leading",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
         "gg": "X",
-        "bafta": "X",
         "critics": "X"
       },
       "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
@@ -445,6 +486,30 @@
       "tmdbId": 28633
     },
     {
+      "name": "Christopher Plummer",
+      "film": "All the Money in the World",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "gg": "X"
+      },
+      "profilePath": "/iZh3s9Vy9vYD4DYnAda6C1kdeco.jpg",
+      "tmdbId": 290
+    },
+    {
+      "name": "Woody Harrelson",
+      "film": "Three Billboards Outside Ebbing, Missouri",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "X"
+      },
+      "profilePath": "/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg",
+      "tmdbId": 57755
+    },
+    {
       "name": "Denzel Washington",
       "film": "Roman J. Israel, Esq.",
       "role": "Leading",
@@ -455,30 +520,6 @@
       },
       "profilePath": "/jj2Gcobpopokal0YstuCQW0ldJ4.jpg",
       "tmdbId": 5292
-    },
-    {
-      "name": "Woody Harrelson",
-      "film": "Three Billboards Outside Ebbing, Missouri",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X",
-        "sag": "X"
-      },
-      "profilePath": "/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg",
-      "tmdbId": 57755
-    },
-    {
-      "name": "Christopher Plummer",
-      "film": "All the Money in the World",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X"
-      },
-      "profilePath": "/iZh3s9Vy9vYD4DYnAda6C1kdeco.jpg",
-      "tmdbId": 290
     },
     {
       "name": "Steve Carell",
@@ -503,26 +544,6 @@
       "tmdbId": 53807
     },
     {
-      "name": "Ansel Elgort",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "Baby Driver",
-      "role": "Leading",
-      "profilePath": "/pbU6qz8eudly20UE6u9T7jUXTgT.jpg",
-      "tmdbId": 1159982
-    },
-    {
-      "name": "Hugh Jackman",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "The Greatest Showman",
-      "role": "Leading",
-      "profilePath": "/oX6CpXmnXCHLyqsa4NEed1DZAKx.jpg",
-      "tmdbId": 6968
-    },
-    {
       "name": "Jamie Bell",
       "film": "Film Stars Don't Die in Liverpool",
       "role": "Leading",
@@ -541,6 +562,26 @@
       },
       "profilePath": "/dvV843fOuzsEPXHtFvdzsHpy1rC.jpg",
       "tmdbId": 3291
+    },
+    {
+      "name": "Ansel Elgort",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Baby Driver",
+      "role": "Leading",
+      "profilePath": "/pbU6qz8eudly20UE6u9T7jUXTgT.jpg",
+      "tmdbId": 1159982
+    },
+    {
+      "name": "Hugh Jackman",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Greatest Showman",
+      "role": "Leading",
+      "profilePath": "/oX6CpXmnXCHLyqsa4NEed1DZAKx.jpg",
+      "tmdbId": 6968
     },
     {
       "name": "Jake Gyllenhaal",
@@ -578,9 +619,9 @@
       "film": "Three Billboards Outside Ebbing, Missouri",
       "role": "Leading",
       "awards": {
+        "bafta": "Y",
         "oscar": "Y",
         "gg": "Y",
-        "bafta": "Y",
         "sag": "Y"
       },
       "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
@@ -591,9 +632,9 @@
       "film": "I, Tonya",
       "role": "Supporting",
       "awards": {
+        "bafta": "Y",
         "oscar": "Y",
         "gg": "Y",
-        "bafta": "Y",
         "sag": "Y"
       },
       "profilePath": "/hpBKWV1jjoXQbr1s0iUZTSvw582.jpg",
@@ -604,9 +645,9 @@
       "film": "Lady Bird",
       "role": "Leading",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
         "gg": "Y",
-        "bafta": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -636,27 +677,13 @@
       "tmdbId": 39187
     },
     {
-      "name": "Sally Hawkins",
-      "film": "The Shape of Water",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/1dtDq82dM2YQ17lBL4ZKPJo5LKw.jpg",
-      "tmdbId": 39658
-    },
-    {
       "name": "Margot Robbie",
       "film": "I, Tonya",
       "role": "Leading",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
         "gg": "X",
-        "bafta": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -664,18 +691,45 @@
       "tmdbId": 234352
     },
     {
+      "name": "Sally Hawkins",
+      "film": "The Shape of Water",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/1dtDq82dM2YQ17lBL4ZKPJo5LKw.jpg",
+      "tmdbId": 39658
+    },
+    {
       "name": "Laurie Metcalf",
       "film": "Lady Bird",
       "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
         "gg": "X",
-        "bafta": "X",
         "sag": "X",
         "critics": "X"
       },
       "profilePath": "/ypAppMZ1Q99cBjtX4BAnZmWjVXe.jpg",
       "tmdbId": 12133
+    },
+    {
+      "name": "Octavia Spencer",
+      "film": "The Shape of Water",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/35SOy4yQZ9xRSJ0q1L5RLhXfhqN.jpg",
+      "tmdbId": 6944
     },
     {
       "name": "Mary J. Blige",
@@ -689,19 +743,6 @@
       },
       "profilePath": "/riQBsxzhbp8E7T9noJEZrEoLZWO.jpg",
       "tmdbId": 84933
-    },
-    {
-      "name": "Octavia Spencer",
-      "film": "The Shape of Water",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "critics": "X"
-      },
-      "profilePath": "/35SOy4yQZ9xRSJ0q1L5RLhXfhqN.jpg",
-      "tmdbId": 6944
     },
     {
       "name": "Hong Chau",
@@ -720,8 +761,8 @@
       "film": "Phantom Thread",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
-        "bafta": "X"
+        "bafta": "X",
+        "oscar": "X"
       },
       "profilePath": "/tioPlSoypjdME3oMu3g7XmgIIKS.jpg",
       "tmdbId": 72305
@@ -760,6 +801,26 @@
       "tmdbId": 18686
     },
     {
+      "name": "Annette Bening",
+      "film": "Film Stars Don't Die in Liverpool",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/sBiiRwAVXd0FCRZ87m0I89qGBvy.jpg",
+      "tmdbId": 516
+    },
+    {
+      "name": "Kristin Scott Thomas",
+      "film": "Darkest Hour",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/axksw0vAjBPSW02ZqpcC0V8rPD7.jpg",
+      "tmdbId": 5470
+    },
+    {
       "name": "Michelle Williams",
       "awards": {
         "gg": "X"
@@ -788,26 +849,6 @@
       "role": "Leading",
       "profilePath": "/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg",
       "tmdbId": 54693
-    },
-    {
-      "name": "Annette Bening",
-      "film": "Film Stars Don't Die in Liverpool",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/sBiiRwAVXd0FCRZ87m0I89qGBvy.jpg",
-      "tmdbId": 516
-    },
-    {
-      "name": "Kristin Scott Thomas",
-      "film": "Darkest Hour",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/axksw0vAjBPSW02ZqpcC0V8rPD7.jpg",
-      "tmdbId": 5470
     },
     {
       "name": "Tiffany Haddish",

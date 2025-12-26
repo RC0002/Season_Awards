@@ -1,43 +1,46 @@
 {
   "best-film": [
     {
-      "name": "Conclave",
-      "awards": {
-        "gg": "X",
-        "bafta": "Y",
-        "oscar": "X",
-        "sag": "Y",
-        "critics": "X",
-        "nbr": "Y",
-        "afi": "Y"
-      },
-      "posterPath": "/m5x8D0bZ3eKqIVWZ5y7TnZ2oTVg.jpg",
-      "tmdbId": 974576
-    },
-    {
       "name": "Anora",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "Y",
         "sag": "X",
         "critics": "Y",
         "nbr": "Y",
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "Y"
       },
       "posterPath": "/cgXk2tNYhJZLXdBDO5DidAVzQ82.jpg",
       "tmdbId": 1064213
     },
     {
+      "name": "Conclave",
+      "awards": {
+        "bafta": "Y",
+        "gg": "X",
+        "oscar": "X",
+        "sag": "Y",
+        "critics": "X",
+        "nbr": "Y",
+        "afi": "Y",
+        "pga": "X"
+      },
+      "posterPath": "/m5x8D0bZ3eKqIVWZ5y7TnZ2oTVg.jpg",
+      "tmdbId": 974576
+    },
+    {
       "name": "A Complete Unknown",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "sag": "X",
         "critics": "X",
         "nbr": "Y",
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "X"
       },
       "posterPath": "/llWl3GtNoXosbvYboelmoT459NM.jpg",
       "tmdbId": 661539
@@ -45,12 +48,13 @@
     {
       "name": "Emilia Pérez",
       "awards": {
-        "gg": "Y",
         "bafta": "X",
+        "gg": "Y",
         "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "X"
       },
       "posterPath": "/fko8fTfL6BcAqOUh6BZYUjt4SQP.jpg",
       "tmdbId": 974950
@@ -63,7 +67,8 @@
         "sag": "X",
         "critics": "X",
         "nbr": "Y",
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "X"
       },
       "posterPath": "/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg",
       "tmdbId": 402431
@@ -71,11 +76,12 @@
     {
       "name": "The Brutalist",
       "awards": {
-        "gg": "Y",
         "bafta": "X",
+        "gg": "Y",
         "oscar": "X",
         "critics": "X",
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "X"
       },
       "posterPath": "/vP7Yd6couiAaw9jgMd5cjMRj3hQ.jpg",
       "tmdbId": 549509
@@ -85,7 +91,8 @@
       "awards": {
         "gg": "X",
         "nbr": "Y",
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "X"
       },
       "posterPath": "/67xRIXm5TxXRT4nV2V4AEJ9yq2d.jpg",
       "tmdbId": 1013850
@@ -106,7 +113,8 @@
         "gg": "X",
         "oscar": "X",
         "critics": "X",
-        "afi": "Y"
+        "afi": "Y",
+        "pga": "X"
       },
       "posterPath": "/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg",
       "tmdbId": 693134
@@ -184,7 +192,8 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "pga": "X"
       },
       "posterPath": "/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
       "tmdbId": 933260
@@ -192,7 +201,8 @@
     {
       "name": "September 5",
       "awards": {
-        "gg": "X"
+        "gg": "X",
+        "pga": "X"
       },
       "posterPath": "/3kcQOLwYKGPwyjiynFsvP8vHvRn.jpg",
       "tmdbId": 1211472
@@ -219,8 +229,8 @@
       "name": "Brady Corbet",
       "film": "The Brutalist",
       "awards": {
-        "gg": "Y",
         "bafta": "Y",
+        "gg": "Y",
         "oscar": "X",
         "critics": "X",
         "dga": "X"
@@ -232,8 +242,8 @@
       "name": "Sean Baker",
       "film": "Anora",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "Y",
         "critics": "X",
         "dga": "Y"
@@ -264,8 +274,8 @@
       "name": "Jacques Audiard",
       "film": "Emilia Pérez",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "critics": "X",
         "dga": "X"
@@ -277,8 +287,8 @@
       "name": "Edward Berger",
       "film": "Conclave",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "critics": "X",
         "dga": "X"
       }
@@ -287,8 +297,8 @@
       "name": "Coralie Fargeat",
       "film": "The Substance",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "critics": "X"
       },
@@ -340,8 +350,8 @@
       "film": "A Real Pain",
       "role": "Supporting",
       "awards": {
-        "gg": "Y",
         "bafta": "Y",
+        "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
@@ -354,8 +364,8 @@
       "film": "The Brutalist",
       "role": "Leading",
       "awards": {
-        "gg": "Y",
         "bafta": "Y",
+        "gg": "Y",
         "oscar": "Y",
         "sag": "X",
         "critics": "Y"
@@ -368,8 +378,8 @@
       "film": "A Complete Unknown",
       "role": "Leading",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "sag": "Y",
         "critics": "X"
@@ -414,8 +424,8 @@
       "film": "Sing Sing",
       "role": "Leading",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "sag": "X",
         "critics": "X"
@@ -428,13 +438,13 @@
       "film": "Conclave",
       "role": "Leading",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
-      "profilePath": "/yOkUvQ7mPwLSqK6lTpg1PpVfOW9.jpg",
+      "profilePath": "/u29BOqiV5GCQ8k8WUJM50i9xlBf.jpg",
       "tmdbId": 5469
     },
     {
@@ -442,8 +452,8 @@
       "film": "Anora",
       "role": "Supporting",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "sag": "X",
         "critics": "X"
@@ -456,8 +466,8 @@
       "film": "A Complete Unknown",
       "role": "Supporting",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "sag": "X",
         "critics": "X"
@@ -470,8 +480,8 @@
       "film": "The Brutalist",
       "role": "Supporting",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "critics": "X"
       },
@@ -483,8 +493,8 @@
       "film": "The Apprentice",
       "role": "Supporting",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "sag": "X"
       },
@@ -492,39 +502,28 @@
       "tmdbId": 239271
     },
     {
-      "name": "Sebastian Stan",
-      "film": "The Apprentice",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X"
-      },
-      "profilePath": "/nKZgixTbHFXpkzzIpMFdLX98GYh.jpg",
-      "tmdbId": 60898
-    },
-    {
       "name": "Hugh Grant",
       "film": "Heretic",
       "role": "Leading",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "critics": "X"
       },
       "profilePath": "/dvV843fOuzsEPXHtFvdzsHpy1rC.jpg",
       "tmdbId": 3291
     },
     {
-      "name": "Denzel Washington",
-      "film": "Gladiator II",
-      "role": "Supporting",
+      "name": "Sebastian Stan",
+      "film": "The Apprentice",
+      "role": "Leading",
       "awards": {
+        "bafta": "X",
         "gg": "X",
-        "critics": "X"
+        "oscar": "X"
       },
-      "profilePath": "/jj2Gcobpopokal0YstuCQW0ldJ4.jpg",
-      "tmdbId": 5292
+      "profilePath": "/nKZgixTbHFXpkzzIpMFdLX98GYh.jpg",
+      "tmdbId": 60898
     },
     {
       "name": "Clarence Maclin",
@@ -536,6 +535,17 @@
       },
       "profilePath": "/1nRVnEo3fICl9yhRyemn8PgrJ4q.jpg",
       "tmdbId": 4178063
+    },
+    {
+      "name": "Denzel Washington",
+      "film": "Gladiator II",
+      "role": "Supporting",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/jj2Gcobpopokal0YstuCQW0ldJ4.jpg",
+      "tmdbId": 5292
     },
     {
       "name": "Jesse Eisenberg",
@@ -594,13 +604,13 @@
       "film": "Emilia Pérez",
       "role": "Supporting",
       "awards": {
-        "gg": "Y",
         "bafta": "Y",
+        "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
       },
-      "profilePath": "/fCJuIn1PMUQtYdRRSnnoZeMJVWs.jpg",
+      "profilePath": "/vQBwmsSOAd0JDaEcZ5p43J9xzsY.jpg",
       "tmdbId": 8691
     },
     {
@@ -608,8 +618,8 @@
       "film": "The Substance",
       "role": "Leading",
       "awards": {
-        "gg": "Y",
         "bafta": "X",
+        "gg": "Y",
         "oscar": "X",
         "sag": "Y",
         "critics": "Y"
@@ -622,8 +632,8 @@
       "film": "Anora",
       "role": "Leading",
       "awards": {
-        "gg": "X",
         "bafta": "Y",
+        "gg": "X",
         "oscar": "Y",
         "sag": "X",
         "critics": "X"
@@ -667,8 +677,8 @@
       "film": "Wicked",
       "role": "Leading",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "sag": "X",
         "critics": "X"
@@ -681,8 +691,8 @@
       "film": "Emilia Pérez",
       "role": "Leading",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "sag": "X",
         "critics": "X"
@@ -695,8 +705,8 @@
       "film": "Wicked",
       "role": "Supporting",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "sag": "X",
         "critics": "X"
@@ -709,8 +719,8 @@
       "film": "Conclave",
       "role": "Supporting",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X",
         "critics": "X"
       },
@@ -722,12 +732,34 @@
       "film": "The Brutalist",
       "role": "Supporting",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "oscar": "X"
       },
       "profilePath": "/gsrb1CuyAQtTVZILtNA5tRnhHbs.jpg",
       "tmdbId": 72855
+    },
+    {
+      "name": "Marianne Jean-Baptiste",
+      "film": "Hard Truths",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/bJ6p32cswcp0xvqiZC7S5tiwa2K.jpg",
+      "tmdbId": 17352
+    },
+    {
+      "name": "Jamie Lee Curtis",
+      "film": "The Last Showgirl",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "sag": "X"
+      },
+      "profilePath": "/eWKubKAAssRzmFwCZKh1mdYqGCH.jpg",
+      "tmdbId": 8944
     },
     {
       "name": "Pamela Anderson",
@@ -763,28 +795,6 @@
       "tmdbId": 1392137
     },
     {
-      "name": "Marianne Jean-Baptiste",
-      "film": "Hard Truths",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "critics": "X"
-      },
-      "profilePath": "/bJ6p32cswcp0xvqiZC7S5tiwa2K.jpg",
-      "tmdbId": 17352
-    },
-    {
-      "name": "Jamie Lee Curtis",
-      "film": "The Last Showgirl",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "sag": "X"
-      },
-      "profilePath": "/eWKubKAAssRzmFwCZKh1mdYqGCH.jpg",
-      "tmdbId": 8944
-    },
-    {
       "name": "Monica Barbaro",
       "film": "A Complete Unknown",
       "role": "Supporting",
@@ -805,6 +815,26 @@
       },
       "profilePath": "/ifQcCBM5B4dIJdz4B0laO4yQuzU.jpg",
       "tmdbId": 1853909
+    },
+    {
+      "name": "Saoirse Ronan",
+      "film": "The Outrun",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
+      "tmdbId": 36592
+    },
+    {
+      "name": "Selena Gomez",
+      "film": "Emilia Pérez",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/o6YXy5km1R41hRu7xzWB7fl8h8I.jpg",
+      "tmdbId": 77948
     },
     {
       "name": "Tilda Swinton",
@@ -851,26 +881,6 @@
       "role": "Supporting",
       "awards": {
         "gg": "X"
-      },
-      "profilePath": "/o6YXy5km1R41hRu7xzWB7fl8h8I.jpg",
-      "tmdbId": 77948
-    },
-    {
-      "name": "Saoirse Ronan",
-      "film": "The Outrun",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
-      "tmdbId": 36592
-    },
-    {
-      "name": "Selena Gomez",
-      "film": "Emilia Pérez",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
       },
       "profilePath": "/o6YXy5km1R41hRu7xzWB7fl8h8I.jpg",
       "tmdbId": 77948

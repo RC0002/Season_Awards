@@ -3,13 +3,14 @@
     {
       "name": "Oppenheimer",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
-        "sag": "Y",
-        "critics": "Y",
+        "oscar": "Y",
         "afi": "Y",
-        "nbr": "Y"
+        "sag": "Y",
+        "nbr": "Y",
+        "critics": "Y",
+        "pga": "Y"
       },
       "posterPath": "/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
       "tmdbId": 872585
@@ -17,12 +18,13 @@
     {
       "name": "Poor Things",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
         "bafta": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X",
+        "pga": "X"
       },
       "posterPath": "/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg",
       "tmdbId": 792307
@@ -30,13 +32,14 @@
     {
       "name": "Killers of the Flower Moon",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "sag": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "sag": "X",
+        "nbr": "Y",
+        "critics": "X",
+        "pga": "X"
       },
       "posterPath": "/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg",
       "tmdbId": 466420
@@ -44,12 +47,13 @@
     {
       "name": "Barbie",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "sag": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "sag": "X",
+        "nbr": "Y",
+        "critics": "X",
+        "pga": "X"
       },
       "posterPath": "/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
       "tmdbId": 346698
@@ -57,12 +61,13 @@
     {
       "name": "The Holdovers",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X",
+        "pga": "X"
       },
       "posterPath": "/VHSzNBTwxV8vh7wylo7O9CLdac.jpg",
       "tmdbId": 840430
@@ -70,21 +75,23 @@
     {
       "name": "Maestro",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X",
+        "pga": "X"
       }
     },
     {
       "name": "Past Lives",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X",
+        "pga": "X"
       },
       "posterPath": "/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
       "tmdbId": 666277
@@ -92,11 +99,12 @@
     {
       "name": "American Fiction",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
+        "afi": "Y",
         "sag": "X",
         "critics": "X",
-        "afi": "Y"
+        "pga": "X"
       },
       "posterPath": "/57MFWGHarg9jid7yfDTka4RmcMU.jpg",
       "tmdbId": 1056360
@@ -117,6 +125,14 @@
       },
       "posterPath": "/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
       "tmdbId": 569094
+    },
+    {
+      "name": "La stanza accanto",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/oESLBZVSmHQJHxCNKOtpH49MmKn.jpg",
+      "tmdbId": 160882
     },
     {
       "name": "The Boy and the Heron",
@@ -143,19 +159,12 @@
       "tmdbId": 850165
     },
     {
-      "name": "La stanza accanto",
-      "awards": {
-        "venice": "Y"
-      },
-      "posterPath": "/oESLBZVSmHQJHxCNKOtpH49MmKn.jpg",
-      "tmdbId": 160882
-    },
-    {
       "name": "Anatomy of a Fall",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "bafta": "X"
+        "bafta": "X",
+        "oscar": "X",
+        "pga": "X"
       },
       "posterPath": "/kQs6keheMwCxJxrzV83VUwFtHkB.jpg",
       "tmdbId": 915935
@@ -163,8 +172,9 @@
     {
       "name": "The Zone of Interest",
       "awards": {
+        "gg": "X",
         "oscar": "X",
-        "gg": "X"
+        "pga": "X"
       },
       "posterPath": "/hUu9zyZmDd8VZegKi1iK1Vk0RYS.jpg",
       "tmdbId": 467244
@@ -200,11 +210,11 @@
       "name": "Christopher Nolan",
       "film": "Oppenheimer",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
-        "critics": "Y",
-        "dga": "Y"
+        "oscar": "Y",
+        "dga": "Y",
+        "critics": "Y"
       },
       "profilePath": "/xuAIuYSmsUzKlUMBFGVZaWsY3DZ.jpg",
       "tmdbId": 525
@@ -213,11 +223,10 @@
       "name": "Martin Scorsese",
       "film": "Killers of the Flower Moon",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X",
+        "oscar": "X",
         "nbr": "Y",
-        "dga": "X"
+        "critics": "X"
       },
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
       "tmdbId": 1032
@@ -235,10 +244,10 @@
       "name": "Yorgos Lanthimos",
       "film": "Poor Things",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X",
-        "dga": "X"
+        "oscar": "X",
+        "dga": "X",
+        "critics": "X"
       },
       "profilePath": "/dvtv8eV1O8Fl385ctOu3sqO2PbD.jpg",
       "tmdbId": 122423
@@ -255,32 +264,12 @@
       "tmdbId": 51329
     },
     {
-      "name": "Justine Triet",
-      "film": "Anatomy of a Fall",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X"
-      },
-      "profilePath": "/mOn5lo038i8vw6qqJTwKw35KCL7.jpg",
-      "tmdbId": 1175620
-    },
-    {
-      "name": "Jonathan Glazer",
-      "film": "The Zone of Interest",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X"
-      },
-      "profilePath": "/lGaM7P0vjhhWs5EmIecsN6PYfxG.jpg",
-      "tmdbId": 66728
-    },
-    {
       "name": "Greta Gerwig",
       "film": "Barbie",
       "awards": {
         "gg": "X",
-        "critics": "X",
-        "dga": "X"
+        "dga": "X",
+        "critics": "X"
       },
       "profilePath": "/6MwQ2GstYr0wnhp1eTOAbVMNBGN.jpg",
       "tmdbId": 45400
@@ -290,9 +279,29 @@
       "film": "The Holdovers",
       "awards": {
         "bafta": "X",
-        "critics": "X",
-        "dga": "X"
+        "dga": "X",
+        "critics": "X"
       }
+    },
+    {
+      "name": "Jonathan Glazer",
+      "film": "The Zone of Interest",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X"
+      },
+      "profilePath": "/lGaM7P0vjhhWs5EmIecsN6PYfxG.jpg",
+      "tmdbId": 66728
+    },
+    {
+      "name": "Justine Triet",
+      "film": "Anatomy of a Fall",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X"
+      },
+      "profilePath": "/mOn5lo038i8vw6qqJTwKw35KCL7.jpg",
+      "tmdbId": 1175620
     },
     {
       "name": "Celine Song",
@@ -309,6 +318,15 @@
       "awards": {
         "bafta": "X"
       }
+    },
+    {
+      "name": "Martin Scorsese",
+      "film": "Killers Of The Flower Moon",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
+      "tmdbId": 1032
     }
   ],
   "best-actor": [
@@ -317,9 +335,9 @@
       "film": "Oppenheimer",
       "role": "Supporting",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
       },
@@ -331,9 +349,9 @@
       "film": "Oppenheimer",
       "role": "Leading",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "X"
       },
@@ -345,14 +363,14 @@
       "film": "The Holdovers",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
-        "critics": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "Y"
       },
-      "profilePath": "/kn7LAbFYP5RPC2r61tDx2CRUeuw.jpg",
+      "profilePath": "/wbrVVJRr5TwhDZuvijBgOorzcAb.jpg",
       "tmdbId": 13242
     },
     {
@@ -369,9 +387,9 @@
       "film": "Maestro",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -383,9 +401,9 @@
       "film": "Rustin",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -397,9 +415,9 @@
       "film": "Killers of the Flower Moon",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -411,9 +429,9 @@
       "film": "Barbie",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -425,13 +443,25 @@
       "film": "American Fiction",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
       "profilePath": "/yGcuHGW4glqRpOPxgiCvjcren7F.jpg",
       "tmdbId": 2954
+    },
+    {
+      "name": "Mark Ruffalo",
+      "film": "Poor Things",
+      "role": "Supporting",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
+      "tmdbId": 103
     },
     {
       "name": "Sterling K. Brown",
@@ -444,18 +474,6 @@
       },
       "profilePath": "/vjFATaJfAyBie56J4Qv2DQ9Dyem.jpg",
       "tmdbId": 1225953
-    },
-    {
-      "name": "Mark Ruffalo",
-      "film": "Poor Things",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
-      "tmdbId": 103
     },
     {
       "name": "Leonardo DiCaprio",
@@ -598,9 +616,9 @@
       "film": "The Holdovers",
       "role": "Supporting",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
       },
@@ -612,9 +630,9 @@
       "film": "Poor Things",
       "role": "Leading",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "X",
         "critics": "Y"
       },
@@ -626,11 +644,11 @@
       "film": "Killers of the Flower Moon",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
+        "oscar": "X",
         "sag": "Y",
-        "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X"
       },
       "profilePath": "/zYAN84WqZv2sbVE2JDkcWoXGoF7.jpg",
       "tmdbId": 1183917
@@ -649,9 +667,9 @@
       "film": "Maestro",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -663,9 +681,9 @@
       "film": "Oppenheimer",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -677,9 +695,9 @@
       "film": "The Color Purple",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -691,26 +709,13 @@
       "film": "Anatomy of a Fall",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "critics": "X"
       },
       "profilePath": "/t7wGqC2dRwTEnt9Fk5pxQ0uXTqs.jpg",
       "tmdbId": 7152
-    },
-    {
-      "name": "Jodie Foster",
-      "film": "Nyad",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/8DAd9knKivHR4CCStxlNEQXzjIh.jpg",
-      "tmdbId": 1038
     },
     {
       "name": "Margot Robbie",
@@ -726,27 +731,29 @@
       "tmdbId": 234352
     },
     {
+      "name": "Jodie Foster",
+      "film": "Nyad",
+      "role": "Supporting",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/8DAd9knKivHR4CCStxlNEQXzjIh.jpg",
+      "tmdbId": 1038
+    },
+    {
       "name": "Annette Bening",
       "film": "Nyad",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X"
       },
       "profilePath": "/sBiiRwAVXd0FCRZ87m0I89qGBvy.jpg",
       "tmdbId": 516
-    },
-    {
-      "name": "America Ferrera",
-      "film": "Barbie",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "critics": "X"
-      },
-      "profilePath": "/7F84Lh2lKpvkM3EiOvqqvlOmw93.jpg",
-      "tmdbId": 59174
     },
     {
       "name": "Greta Lee",
@@ -791,6 +798,17 @@
       },
       "profilePath": "/8ObNklHDi2hjdz0ayzJFB9jtqzm.jpg",
       "tmdbId": 10882
+    },
+    {
+      "name": "America Ferrera",
+      "film": "Barbie",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/7F84Lh2lKpvkM3EiOvqqvlOmw93.jpg",
+      "tmdbId": 59174
     },
     {
       "name": "Cailee Spaeny",
