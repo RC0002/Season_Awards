@@ -26,8 +26,9 @@ jobs:
 
       - name: Create Firebase Config
         # Injects the secret content into firebase-config.js during deployment
-        run: |
-          echo "${{ secrets.FIREBASE_CONFIG }}" > firebase-config.js
+        env:
+          FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
+        run: echo "$FIREBASE_CONFIG" > firebase-config.js
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
