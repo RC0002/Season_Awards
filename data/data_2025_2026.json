@@ -30,7 +30,7 @@
         "afi": "Y",
         "nbr": "Y"
       },
-      "posterPath": "/6eA1sUOhxAOQvCSClLsBLzmZzdK.jpg",
+      "posterPath": "/firAhZA0uQvRL2slp7v3AnOj0ZX.jpg",
       "tmdbId": 1317288
     },
     {
@@ -137,6 +137,32 @@
       "tmdbId": 812583
     },
     {
+      "name": "Father Mother Sister Brother",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/zewZA6sL52YSH8xIH4wbG5GadjV.jpg",
+      "tmdbId": 1159206
+    },
+    {
+      "name": "One Battle After Another",
+      "awards": {
+        "lafca": "Y"
+      },
+      "film": "The Secret Agent",
+      "posterPath": "/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
+      "tmdbId": 1054867
+    },
+    {
+      "name": "The Secret Agent",
+      "awards": {
+        "gg": "X",
+        "lafca": "X"
+      },
+      "posterPath": "/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
+      "tmdbId": 1220564
+    },
+    {
       "name": "Sentimental Value",
       "awards": {
         "gg": "X",
@@ -144,14 +170,6 @@
       },
       "posterPath": "/dNy7iCibnVTJuvosArcDEdbruBT.jpg",
       "tmdbId": 1124566
-    },
-    {
-      "name": "The Secret Agent",
-      "awards": {
-        "gg": "X"
-      },
-      "posterPath": "/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
-      "tmdbId": 1220564
     },
     {
       "name": "Blue Moon",
@@ -185,17 +203,28 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "lafca": "Y"
       },
       "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
       "tmdbId": 4762
+    },
+    {
+      "name": "Benny Safdie",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "The Smashing Machine",
+      "profilePath": "/9tp4PLNyYPNfCJOWBXPPalWIpnq.jpg",
+      "tmdbId": 227564
     },
     {
       "name": "Ryan Coogler",
       "film": "Sinners",
       "awards": {
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "lafca": "X"
       },
       "profilePath": "/dux4DCDaL6c639DTXGiV7nm1wcN.jpg",
       "tmdbId": 1056121
@@ -263,6 +292,63 @@
       "tmdbId": 6193
     },
     {
+      "name": "Ethan Hawke",
+      "film": "Blue Moon",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "lafca": "Y"
+      },
+      "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
+      "tmdbId": 569
+    },
+    {
+      "name": "Stellan Skarsgård",
+      "film": "Sentimental Value",
+      "role": "Supporting",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "lafca": "Y"
+      },
+      "profilePath": "/x78BtYHElirO7Iw8bL4m8CnzRDc.jpg",
+      "tmdbId": 1640
+    },
+    {
+      "name": "Toni Servillo",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "La grazia",
+      "profilePath": "/h9Js3JQOFD5h4uNtJB2VwSgMcYq.jpg",
+      "tmdbId": 72782
+    },
+    {
+      "name": "Wagner Moura",
+      "film": "The Secret Agent",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "lafca": "X"
+      },
+      "profilePath": "/yJjV1ZCQbCSSgRy05FncCKjyaY4.jpg",
+      "tmdbId": 52583
+    },
+    {
+      "name": "Timothée Chalamet",
+      "film": "Marty Supreme",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "lafca": "X"
+      },
+      "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
+      "tmdbId": 1190668
+    },
+    {
       "name": "Joel Edgerton",
       "film": "Train Dreams",
       "role": "Leading",
@@ -283,39 +369,6 @@
       },
       "profilePath": "/515xNvaMC6xOEOlo0sFqW69ZqUH.jpg",
       "tmdbId": 135651
-    },
-    {
-      "name": "Wagner Moura",
-      "film": "The Secret Agent",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/yJjV1ZCQbCSSgRy05FncCKjyaY4.jpg",
-      "tmdbId": 52583
-    },
-    {
-      "name": "Timothée Chalamet",
-      "film": "Marty Supreme",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
-      "tmdbId": 1190668
-    },
-    {
-      "name": "Ethan Hawke",
-      "film": "Blue Moon",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
-      "tmdbId": 569
     },
     {
       "name": "Benicio del Toro",
@@ -370,17 +423,6 @@
       },
       "profilePath": "/gLkLCsQdwDDPabRhKPB25nGtKwS.jpg",
       "tmdbId": 19292
-    },
-    {
-      "name": "Stellan Skarsgård",
-      "film": "Sentimental Value",
-      "role": "Supporting",
-      "awards": {
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/x78BtYHElirO7Iw8bL4m8CnzRDc.jpg",
-      "tmdbId": 1640
     },
     {
       "name": "Oscar Isaac",
@@ -441,6 +483,16 @@
       },
       "profilePath": "/og4I51GsuwohdPgoELOHVMMqMre.jpg",
       "tmdbId": 88124
+    },
+    {
+      "name": "Andrew Scott",
+      "awards": {
+        "lafca": "X"
+      },
+      "role": "Supporting",
+      "film": "Blue Moon",
+      "profilePath": "/4F8XpjyQCvtuu21WFm5d8RF5Rl.jpg",
+      "tmdbId": 125660
     }
   ],
   "best-actress": [
@@ -451,10 +503,32 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "lafca": "Y"
       },
       "profilePath": "/6YauDiiTBwRGC1xnwspPmNvPWUu.jpg",
       "tmdbId": 9827
+    },
+    {
+      "name": "Teyana Taylor",
+      "film": "One Battle After Another",
+      "role": "Supporting",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "lafca": "Y"
+      },
+      "profilePath": "/wVHbluUvjKl0NucSeuAhAJAr2oc.jpg",
+      "tmdbId": 964679
+    },
+    {
+      "name": "Xin Zhilei",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Rì guà zhōngtiān",
+      "profilePath": "/aFhdcO9nzA1vbABsqDmGkaTLsjg.jpg",
+      "tmdbId": 1569934
     },
     {
       "name": "Jessie Buckley",
@@ -555,17 +629,6 @@
       "tmdbId": 23882
     },
     {
-      "name": "Teyana Taylor",
-      "film": "One Battle After Another",
-      "role": "Supporting",
-      "awards": {
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/wVHbluUvjKl0NucSeuAhAJAr2oc.jpg",
-      "tmdbId": 964679
-    },
-    {
       "name": "Jennifer Lawrence",
       "film": "Die My Love",
       "role": "Leading",
@@ -644,6 +707,16 @@
       },
       "profilePath": "/yWM19CjCv66MqNkwHBp6Dpvtn9x.jpg",
       "tmdbId": 134774
+    },
+    {
+      "name": "Inga Ibsdotter Lilleaas",
+      "awards": {
+        "lafca": "X"
+      },
+      "role": "Supporting",
+      "film": "Sentimental Value",
+      "profilePath": "/c6JojXrAi9ZAiCA07epc3eLmF1r.jpg",
+      "tmdbId": 1421850
     }
   ]
 }

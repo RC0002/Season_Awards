@@ -60,6 +60,9 @@ HISTORICAL_AVERAGES = {
     'dga': {'best-film': 0, 'best-director': 5, 'best-actor': 0, 'best-actress': 0},
     # PGA: 10 theatrical film nominees
     'pga': {'best-film': 10, 'best-director': 0, 'best-actor': 0, 'best-actress': 0},
+    # LAFCA: 1 winner + runner-ups per category (typically 2-3 total per category)
+    # Performance categories are gender-neutral, split by detected gender
+    'lafca': {'best-film': 2, 'best-director': 2, 'best-actor': 4, 'best-actress': 4},
 }
 
 # Year-specific overrides for historical rule changes
@@ -93,6 +96,7 @@ HISTORICAL_EXPECTED_OVERRIDES = {
         # BAFTA: Expanded to 6 nominees per category from 2021 (74th BAFTA)
         # Pre-2021: 5 directors, 5+5=10 actors per gender
         # From 2021: 6 directors, 6+6=12 actors per gender (base values)
+        # Note: 2020 best-actress shows 9 because Margot Robbie has 2 nominations (deduped)
         'best-director': {(2013, 2020): 5},  # Was 5 until 2020
         'best-actor': {(2013, 2020): 10},    # Was 5+5=10 until 2020
         'best-actress': {(2013, 2020): 10},  # Was 5+5=10 until 2020
@@ -102,14 +106,14 @@ HISTORICAL_EXPECTED_OVERRIDES = {
         # Actors: 5 leading + 5 supporting = 10 total (no override needed, base is correct)
     },
     'critics': {
-        # Critics Choice: Varies by year - based on actual Wikipedia data (after scraper fix)
-        # Film: 10 base (2016 had 11 with Star Wars added late, 2023 had 11)
+        # Critics Choice: Varies by year - based on actual Wikipedia data
+        # Film: 10 base (2016 had 11, 2023 had 11)
         # Director: varies 6-10 by year
         # Actors: varies 12-14 by year (ties and variations)
         'best-film': {(2016, 2016): 11, (2023, 2023): 11},
-        'best-director': {(2013, 2014): 6, (2015, 2015): 7, (2017, 2018): 7, (2019, 2021): 7, (2023, 2023): 10, (2025, 2025): 8},
-        'best-actor': {(2014, 2014): 12, (2018, 2018): 14, (2019, 2020): 13, (2021, 2021): 14, (2022, 2022): 13, (2023, 2023): 14},
-        'best-actress': {(2014, 2014): 13, (2018, 2018): 13, (2019, 2021): 13, (2023, 2023): 13},
+        'best-director': {(2013, 2014): 6, (2015, 2015): 6, (2017, 2018): 7, (2019, 2021): 7, (2023, 2023): 10, (2025, 2025): 8},
+        'best-actor': {(2014, 2014): 12, (2018, 2018): 13, (2019, 2020): 13, (2021, 2021): 14, (2022, 2023): 12},
+        'best-actress': {(2014, 2014): 12, (2018, 2018): 13, (2019, 2021): 13, (2022, 2023): 12},
     },
     'afi': {
         # AFI: Usually 10 or 11 films
@@ -122,6 +126,14 @@ HISTORICAL_EXPECTED_OVERRIDES = {
     'dga': {
         # DGA: 5 directors
         'best-director': {},  # Always 5, no overrides needed
+    },
+    'lafca': {
+        # LAFCA switched to gender-neutral performance categories in 2022
+        # Result is asymmetric splits based on which performers won/runner-upped
+        # 2022: 3 actors (Nighy, Quan, Henry), 5 actresses (Blanchett, Deadwyler, Yeoh, de Leon, Buckley)
+        # 2023: 3 actors (Scott, Wright, Gosling), 5 actresses (Hüller, Stone, McAdams, Randolph, Gladstone)
+        'best-actor': {(2023, 2024): 3},
+        'best-actress': {(2023, 2024): 5},
     },
 }
 
@@ -300,7 +312,7 @@ class ScrapeReport:
         
         # Status per award
         print(f"\n  📡 AWARD STATUS:")
-        for award_key in ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga']:
+        for award_key in ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca']:
             log = self.logs.get(award_key)
             if log:
                 total_entries = sum(log.counts.values())
@@ -364,7 +376,7 @@ def scrape_award_with_logging(award_key, year, report):
         
         # ==== CALL APPROPRIATE SCRAPER ====
         from master_scraper import (scrape_award, scrape_afi, scrape_nbr, 
-                                    scrape_venice, scrape_dga, scrape_pga)
+                                    scrape_venice, scrape_dga, scrape_pga, scrape_lafca)
         
         result = None
         
@@ -383,6 +395,9 @@ def scrape_award_with_logging(award_key, year, report):
         elif award_key == 'pga':
             result = scrape_pga(ceremony)
             log.log(f"Scraped PGA Theatrical Film nominees")
+        elif award_key == 'lafca':
+            result = scrape_lafca(ceremony)
+            log.log(f"Scraped LAFCA Awards (with gender detection)")
         else:
             result = scrape_award(award_key, year)
             log.log(f"Scraped Wikipedia awards table")
@@ -429,7 +444,7 @@ def scrape_year_enhanced(year, awards=None, parallel=True):
     Enhanced scrape_year with detailed logging and report generation.
     """
     if awards is None:
-        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga']
+        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca']
     
     report = ScrapeReport(year)
     all_results = {}
@@ -718,6 +733,16 @@ def generate_analysis_json(years_to_update=None):
                         analysis["years"][year_key][award_key][category]["status"] = "ok"
                     else:
                         analysis["years"][year_key][award_key][category]["status"] = "error"
+                elif award_key == 'lafca' and category in ['best-actor', 'best-actress']:
+                    # LAFCA: Gender-neutral categories since 2022 - check combined actor+actress = 8
+                    actor_count = analysis["years"][year_key][award_key]["best-actor"]["nominations"]
+                    actress_count = analysis["years"][year_key][award_key]["best-actress"]["nominations"]
+                    combined = actor_count + actress_count
+                    analysis["years"][year_key][award_key][category]["expected"] = "actor+actress=8"
+                    if combined == 8:
+                        analysis["years"][year_key][award_key][category]["status"] = "ok"
+                    else:
+                        analysis["years"][year_key][award_key][category]["status"] = "error"
                 elif count == expected:
                     # Exact match
                     analysis["years"][year_key][award_key][category]["status"] = "ok"
@@ -825,6 +850,8 @@ Season Logic:
     
     if args.upload_only:
         upload_with_change_detection(years)
+        # Also regenerate analysis.json for these years to update stats
+        generate_analysis_json(years_to_update=years)
     else:
         run_full_pipeline(
             years=years,

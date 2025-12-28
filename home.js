@@ -1,5 +1,5 @@
 // ============ HOME PAGE MODULE ============
-// Handles home page functionality: marquee animations, scatter effect
+// Handles home page functionality: marquee animations, scatter effect, GSAP title animation
 
 // Marquee state
 let awardsPosition = 0;
@@ -11,6 +11,113 @@ async function initHomePage() {
     await populateAwardsMarquee();
     await populateTrendingMarquee();
     startMarqueeAnimations();
+    animateTitleGSAP(); // GSAP title animation
+}
+
+// ============ GSAP TITLE ANIMATION (ScrambleTextPlugin) ============
+function animateTitleGSAP() {
+    const title = document.querySelector('.home-title');
+    if (!title || typeof gsap === 'undefined') return;
+
+    // Check if ScrambleTextPlugin is available
+    if (typeof ScrambleTextPlugin === 'undefined') {
+        console.warn('ScrambleTextPlugin not loaded, using fallback');
+        title.style.opacity = 1;
+        return;
+    }
+
+    // Register the plugin
+    gsap.registerPlugin(ScrambleTextPlugin);
+
+    // Store original text and clear
+    const originalText = title.textContent.trim();
+    title.innerHTML = '';
+    title.style.opacity = 1;
+
+    // Create the animated text span
+    const textSpan = document.createElement('span');
+    textSpan.id = 'scramble-title';
+    textSpan.style.display = 'inline';
+    title.appendChild(textSpan);
+
+    // Create cursor element  
+    const cursor = document.createElement('span');
+    cursor.id = 'scramble-cursor';
+    cursor.textContent = '|';
+    cursor.style.cssText = 'opacity: 1; color: #d4af37; font-weight: 300; margin-left: 2px;';
+    title.appendChild(cursor);
+
+    // Cursor blinking animation
+    const cursorTl = gsap.timeline({ repeat: -1 });
+    cursorTl
+        .to(cursor, { opacity: 0, duration: 0.5, delay: 0.3 })
+        .to(cursor, { opacity: 1, duration: 0.5, delay: 0.3 });
+
+    // Main scramble timeline
+    const tl = gsap.timeline({ delay: 0.2 });
+
+    // Split text into two parts: "Season" and "Awards"
+    const parts = originalText.split(' ');
+
+    if (parts.length >= 2) {
+        // Scramble "Season" with uppercase chars
+        tl.to(textSpan, {
+            scrambleText: {
+                text: parts[0] + ' ',
+                chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+                speed: 0.8,
+                revealDelay: 0.1
+            },
+            duration: 0.8,
+            ease: 'none'
+        });
+
+        // Scramble "Awards" with different chars
+        tl.to(textSpan, {
+            scrambleText: {
+                text: originalText,
+                chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+                speed: 0.6,
+                revealDelay: 0.1
+            },
+            duration: 1.0,
+            ease: 'none'
+        });
+    } else {
+        // Single word fallback
+        tl.to(textSpan, {
+            scrambleText: {
+                text: originalText,
+                chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ★✦',
+                speed: 0.4
+            },
+            duration: 2,
+            ease: 'none'
+        });
+    }
+
+    // After scramble complete, add a subtle glow pulse
+    tl.to(title, {
+        textShadow: '0 0 80px rgba(212, 175, 55, 0.9), 0 0 150px rgba(255, 215, 0, 0.5)',
+        duration: 0.8,
+        ease: 'power2.out'
+    });
+
+    // Hide cursor after animation
+    tl.to(cursor, {
+        opacity: 0,
+        duration: 0.3
+    });
+
+    // Continuous subtle glow breathing
+    gsap.to(title, {
+        textShadow: '0 0 60px rgba(212, 175, 55, 0.6), 0 0 120px rgba(255, 215, 0, 0.3)',
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut',
+        delay: 4
+    });
 }
 
 // Awards marquee - nominated films from all years
@@ -202,6 +309,6 @@ function resetPosters() {
     if (title) {
         title.style.transition = '';
         title.style.transform = 'translate(-50%, -50%)';
-        title.style.opacity = '';
+        title.style.opacity = '1';
     }
 }

@@ -7,9 +7,10 @@
         "gg": "Y",
         "oscar": "X",
         "afi": "Y",
+        "critics": "Y",
         "nbr": "Y",
         "pga": "Y",
-        "critics": "X"
+        "lafca": "X"
       },
       "posterPath": "/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
       "tmdbId": 313369
@@ -161,12 +162,21 @@
       "tmdbId": 388399
     },
     {
-      "name": "La forma dell'acqua - The Shape of Water",
+      "name": "The Woman Who Left - La donna che se ne è andata",
       "awards": {
         "venice": "Y"
       },
-      "posterPath": "/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
-      "tmdbId": 399055
+      "posterPath": "/vKBkoUW62DLZjo7ctJRflRTXe67.jpg",
+      "tmdbId": 408542
+    },
+    {
+      "name": "Moonlight",
+      "awards": {
+        "lafca": "Y"
+      },
+      "film": "La La Land",
+      "posterPath": "/qLnfEmPrDjJfPyyddLJPkXmshkp.jpg",
+      "tmdbId": 376867
     },
     {
       "name": "Lion",
@@ -250,8 +260,9 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
+        "critics": "Y",
         "dga": "Y",
-        "critics": "X"
+        "lafca": "X"
       },
       "profilePath": "/14kRZ3XxNMyBv717YQSXr3wCucy.jpg",
       "tmdbId": 136495
@@ -263,16 +274,19 @@
         "oscar": "X",
         "critics": "X",
         "dga": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "lafca": "Y"
       },
       "film": "Moonlight"
     },
     {
-      "name": "Xavier Legrand",
+      "name": "Amat Escalante",
       "awards": {
         "venice": "Y"
       },
-      "film": "L'affido"
+      "film": "La región salvaje",
+      "profilePath": "/dfVRwzLuZY67sHQCNd19ML12g0F.jpg",
+      "tmdbId": 56375
     },
     {
       "name": "Denis Villeneuve",
@@ -369,8 +383,9 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "X",
+        "critics": "Y",
         "nbr": "Y",
-        "critics": "X"
+        "lafca": "X"
       },
       "profilePath": "/304ilSygaCRWykoBWAL67TOw8g9.jpg",
       "tmdbId": 1893
@@ -384,7 +399,8 @@
         "gg": "X",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "X"
+        "critics": "Y",
+        "lafca": "Y"
       },
       "profilePath": "/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg",
       "tmdbId": 932967
@@ -442,11 +458,20 @@
       "tmdbId": 27428
     },
     {
-      "name": "Kamil al-Basha",
+      "name": "Oscar Martínez",
       "awards": {
         "venice": "Y"
       },
-      "film": "L'insulto"
+      "film": "Il cittadino illustre"
+    },
+    {
+      "name": "Adam Driver",
+      "awards": {
+        "lafca": "Y"
+      },
+      "film": "Paterson",
+      "profilePath": "/me7eifBie8S7gFwhZfkF3jROL99.jpg",
+      "tmdbId": 1023139
     },
     {
       "name": "Andrew Garfield",
@@ -603,6 +628,15 @@
       },
       "profilePath": "/p5FlM9OOStD9I0Nm3GGlhaiAC5r.jpg",
       "tmdbId": 11107
+    },
+    {
+      "name": "Issey Ogata",
+      "awards": {
+        "lafca": "X"
+      },
+      "film": "Silence",
+      "profilePath": "/dQ5X5nSobSgRFKK7lo8j41jtw5c.jpg",
+      "tmdbId": 143037
     }
   ],
   "best-actress": [
@@ -615,7 +649,8 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "X"
+        "critics": "X",
+        "venice": "Y"
       },
       "profilePath": "/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg",
       "tmdbId": 54693
@@ -629,10 +664,23 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "X"
+        "critics": "Y"
       },
       "profilePath": "/xDssw6vpYNRjsybvMPRE30e0dPN.jpg",
       "tmdbId": 19492
+    },
+    {
+      "name": "Isabelle Huppert",
+      "awards": {
+        "gg": "Y",
+        "oscar": "X",
+        "critics": "X",
+        "lafca": "Y"
+      },
+      "film": "Elle",
+      "role": "Leading",
+      "profilePath": "/3YQwWkpNKQeV5NUmdCH76Ne1gDP.jpg",
+      "tmdbId": 17882
     },
     {
       "name": "Amy Adams",
@@ -649,25 +697,27 @@
       "tmdbId": 9273
     },
     {
-      "name": "Isabelle Huppert",
-      "awards": {
-        "gg": "Y",
-        "oscar": "X",
-        "critics": "X"
-      },
-      "film": "Elle",
+      "name": "Natalie Portman",
+      "film": "Jackie",
       "role": "Leading",
-      "profilePath": "/3YQwWkpNKQeV5NUmdCH76Ne1gDP.jpg",
-      "tmdbId": 17882
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "Y"
+      },
+      "profilePath": "/edPU5HxncLWa1YkgRPNkSd68ONG.jpg",
+      "tmdbId": 524
     },
     {
-      "name": "Charlotte Rampling",
+      "name": "Lily Gladstone",
       "awards": {
-        "venice": "Y"
+        "lafca": "Y"
       },
-      "film": "Hannah",
-      "profilePath": "/7fhg5FCcl0VfYERP5D0unpybqgx.jpg",
-      "tmdbId": 44079
+      "film": "Certain Women",
+      "profilePath": "/zYAN84WqZv2sbVE2JDkcWoXGoF7.jpg",
+      "tmdbId": 1183917
     },
     {
       "name": "Michelle Williams",
@@ -678,7 +728,8 @@
         "gg": "X",
         "oscar": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "lafca": "X"
       },
       "profilePath": "/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg",
       "tmdbId": 1812
@@ -723,20 +774,6 @@
       },
       "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
       "tmdbId": 5064
-    },
-    {
-      "name": "Natalie Portman",
-      "film": "Jackie",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/edPU5HxncLWa1YkgRPNkSd68ONG.jpg",
-      "tmdbId": 524
     },
     {
       "name": "Ruth Negga",
@@ -843,6 +880,15 @@
       },
       "profilePath": "/xavjGiGltQEDWqNdbe0zd1lO0UR.jpg",
       "tmdbId": 1005852
+    },
+    {
+      "name": "Rebecca Hall",
+      "awards": {
+        "lafca": "X"
+      },
+      "film": "Christine",
+      "profilePath": "/mpWtqob1BRKz4bpX8h8a9hdmIPv.jpg",
+      "tmdbId": 15556
     }
   ]
 }

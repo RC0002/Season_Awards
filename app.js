@@ -110,6 +110,9 @@ function buildPage() {
                 <div class="nav-links" id="nav-links"></div>
                 <div class="nav-actions">
                     <select class="nav-year-select" id="year-select"></select>
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                        <span class="theme-toggle-text">Light</span>
+                    </button>
                     <div class="sync-status synced" id="sync-status">
                         <span class="sync-dot"></span>
                         <span class="sync-text">Synced</span>
@@ -148,6 +151,7 @@ function buildPage() {
 
     setupNavigation();
     setupYearSelector();
+    setupThemeToggle(); // Add theme toggle setup
     createCategoryCards();
     createSwipeIndicators();
     setupSwipeGestures();
@@ -205,6 +209,73 @@ function setupYearSelector() {
         currentYear = this.value;
         currentCategoryIndex = 0;
         loadData();
+    });
+}
+
+// Check if GSAP is loaded
+const hasGSAP = typeof gsap !== 'undefined';
+
+function setupThemeToggle() {
+    const toggleBtn = document.getElementById('theme-toggle');
+    const textSpan = toggleBtn.querySelector('.theme-toggle-text');
+
+    // Check local storage
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    if (savedTheme === 'light') {
+        document.body.classList.add('light-mode');
+        textSpan.textContent = 'Dark';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        const isLight = document.body.classList.toggle('light-mode');
+        const newTheme = isLight ? 'light' : 'dark';
+
+        // Update storage
+        localStorage.setItem('theme', newTheme);
+
+        // Update UI
+        textSpan.textContent = isLight ? 'Dark' : 'Light';
+
+        // GSAP transition if available
+        if (hasGSAP) {
+            const duration = 0.5;
+
+            if (isLight) {
+                // To Light Mode (White & Gold)
+                gsap.to('body', {
+                    backgroundColor: '#ffffff',
+                    color: '#000000',
+                    duration: duration
+                });
+                gsap.to('.top-nav', {
+                    backgroundColor: '#ffffff',
+                    duration: duration
+                });
+                gsap.to('.category-card-inner', {
+                    backgroundColor: '#f8f9fa',
+                    borderColor: '#d4af37',
+                    boxShadow: '0 8px 32px rgba(212, 175, 55, 0.1)',
+                    duration: duration
+                });
+            } else {
+                // To Dark Mode (Original Black)
+                gsap.to('body', {
+                    backgroundColor: '#000000',
+                    color: '#f5f5f5',
+                    duration: duration
+                });
+                gsap.to('.top-nav', {
+                    backgroundColor: '#000000',
+                    duration: duration
+                });
+                gsap.to('.category-card-inner', {
+                    backgroundColor: '#000000',
+                    borderColor: 'rgba(255, 255, 255, 0.15)',
+                    boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)',
+                    duration: duration
+                });
+            }
+        }
     });
 }
 

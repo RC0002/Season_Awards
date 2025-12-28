@@ -6,10 +6,10 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "Y",
-        "sag": "X",
-        "critics": "X",
-        "nbr": "Y",
         "afi": "Y",
+        "critics": "Y",
+        "nbr": "Y",
+        "sag": "X",
         "pga": "Y"
       },
       "posterPath": "/cgXk2tNYhJZLXdBDO5DidAVzQ82.jpg",
@@ -21,10 +21,10 @@
         "bafta": "Y",
         "gg": "X",
         "oscar": "X",
-        "sag": "Y",
+        "afi": "Y",
         "critics": "X",
         "nbr": "Y",
-        "afi": "Y",
+        "sag": "Y",
         "pga": "X"
       },
       "posterPath": "/m5x8D0bZ3eKqIVWZ5y7TnZ2oTVg.jpg",
@@ -36,14 +36,28 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
+        "afi": "Y",
         "critics": "X",
         "nbr": "Y",
-        "afi": "Y",
+        "sag": "X",
         "pga": "X"
       },
       "posterPath": "/llWl3GtNoXosbvYboelmoT459NM.jpg",
       "tmdbId": 661539
+    },
+    {
+      "name": "The Brutalist",
+      "awards": {
+        "bafta": "X",
+        "gg": "Y",
+        "oscar": "X",
+        "afi": "Y",
+        "critics": "X",
+        "pga": "X",
+        "lafca": "X"
+      },
+      "posterPath": "/vP7Yd6couiAaw9jgMd5cjMRj3hQ.jpg",
+      "tmdbId": 549509
     },
     {
       "name": "Emilia Pérez",
@@ -51,9 +65,9 @@
         "bafta": "X",
         "gg": "Y",
         "oscar": "X",
-        "sag": "X",
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
+        "sag": "X",
         "pga": "X"
       },
       "posterPath": "/fko8fTfL6BcAqOUh6BZYUjt4SQP.jpg",
@@ -64,34 +78,21 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
+        "afi": "Y",
         "critics": "X",
         "nbr": "Y",
-        "afi": "Y",
+        "sag": "X",
         "pga": "X"
       },
       "posterPath": "/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg",
       "tmdbId": 402431
     },
     {
-      "name": "The Brutalist",
-      "awards": {
-        "bafta": "X",
-        "gg": "Y",
-        "oscar": "X",
-        "critics": "X",
-        "afi": "Y",
-        "pga": "X"
-      },
-      "posterPath": "/vP7Yd6couiAaw9jgMd5cjMRj3hQ.jpg",
-      "tmdbId": 549509
-    },
-    {
       "name": "A Real Pain",
       "awards": {
         "gg": "X",
-        "nbr": "Y",
         "afi": "Y",
+        "nbr": "Y",
         "pga": "X"
       },
       "posterPath": "/67xRIXm5TxXRT4nV2V4AEJ9yq2d.jpg",
@@ -100,9 +101,9 @@
     {
       "name": "Sing Sing",
       "awards": {
+        "afi": "Y",
         "critics": "X",
-        "nbr": "Y",
-        "afi": "Y"
+        "nbr": "Y"
       },
       "posterPath": "/26lQ3OJqv5NRDpd38eU54zAfLxr.jpg",
       "tmdbId": 63701
@@ -112,8 +113,8 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "pga": "X"
       },
       "posterPath": "/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg",
@@ -124,11 +125,20 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "critics": "X",
-        "afi": "Y"
+        "afi": "Y",
+        "critics": "X"
       },
       "posterPath": "/lu2vmmtStmTNMmSZl2LgrrQpLZo.jpg",
       "tmdbId": 1028196
+    },
+    {
+      "name": "Baby Reindeer",
+      "awards": {
+        "afi": "Y"
+      },
+      "note": "AFI Special Award",
+      "posterPath": "/fsUnySgQ6IBuK6Qxbp4HLnG7xD7.jpg",
+      "tmdbId": 780411
     },
     {
       "name": "Babygirl",
@@ -171,21 +181,21 @@
       "tmdbId": 1059128
     },
     {
-      "name": "Baby Reindeer",
-      "awards": {
-        "afi": "Y"
-      },
-      "note": "AFI Special Award",
-      "posterPath": "/fsUnySgQ6IBuK6Qxbp4HLnG7xD7.jpg",
-      "tmdbId": 780411
-    },
-    {
-      "name": "Father Mother Sister Brother",
+      "name": "La stanza accanto",
       "awards": {
         "venice": "Y"
       },
-      "posterPath": "/zewZA6sL52YSH8xIH4wbG5GadjV.jpg",
-      "tmdbId": 1159206
+      "posterPath": "/oESLBZVSmHQJHxCNKOtpH49MmKn.jpg",
+      "tmdbId": 160882
+    },
+    {
+      "name": "Anora",
+      "awards": {
+        "lafca": "Y"
+      },
+      "film": "The Brutalist",
+      "posterPath": "/cgXk2tNYhJZLXdBDO5DidAVzQ82.jpg",
+      "tmdbId": 1064213
     },
     {
       "name": "The Substance",
@@ -233,7 +243,8 @@
         "gg": "Y",
         "oscar": "X",
         "critics": "X",
-        "dga": "X"
+        "dga": "X",
+        "venice": "Y"
       },
       "profilePath": "/o5RVawgYeKSzMt8o0VLg38ulHZX.jpg",
       "tmdbId": 55493
@@ -246,7 +257,8 @@
         "gg": "X",
         "oscar": "Y",
         "critics": "X",
-        "dga": "Y"
+        "dga": "Y",
+        "lafca": "X"
       },
       "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
       "tmdbId": 118415
@@ -255,20 +267,20 @@
       "name": "Jon M. Chu",
       "film": "Wicked",
       "awards": {
-        "critics": "X",
+        "critics": "Y",
         "nbr": "Y"
       },
       "profilePath": "/85kOxm7w4nGRwyhquj9wtUM8KUW.jpg",
       "tmdbId": 54507
     },
     {
-      "name": "Benny Safdie",
+      "name": "Mohammad Rasoulof",
       "awards": {
-        "venice": "Y"
+        "lafca": "Y"
       },
-      "film": "The Smashing Machine",
-      "profilePath": "/9tp4PLNyYPNfCJOWBXPPalWIpnq.jpg",
-      "tmdbId": 227564
+      "film": "The Seed of the Sacred Fig",
+      "profilePath": "/6cjSAHG0cjy3wVgW4Wr7Qz1imF3.jpg",
+      "tmdbId": 935123
     },
     {
       "name": "Jacques Audiard",
@@ -353,8 +365,9 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
+        "critics": "Y",
         "sag": "Y",
-        "critics": "X"
+        "lafca": "Y"
       },
       "profilePath": "/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg",
       "tmdbId": 18793
@@ -367,11 +380,26 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "sag": "X",
-        "critics": "X"
+        "critics": "Y",
+        "sag": "X"
       },
       "profilePath": "/qBc7ahQrpVpcllaZ5hkivsOEb3C.jpg",
       "tmdbId": 3490
+    },
+    {
+      "name": "Yura Borisov",
+      "film": "Anora",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "critics": "X",
+        "sag": "X",
+        "lafca": "Y"
+      },
+      "profilePath": "/zLcD2UmXJG6m3qOQhNZs13SQRIp.jpg",
+      "tmdbId": 1266686
     },
     {
       "name": "Timothée Chalamet",
@@ -381,8 +409,8 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "sag": "Y",
-        "critics": "X"
+        "critics": "X",
+        "sag": "Y"
       },
       "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
       "tmdbId": 1190668
@@ -393,9 +421,9 @@
       "role": "Leading",
       "awards": {
         "gg": "X",
-        "sag": "X",
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "sag": "X"
       },
       "profilePath": "/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg",
       "tmdbId": 8784
@@ -411,13 +439,13 @@
       "tmdbId": 60898
     },
     {
-      "name": "Toni Servillo",
+      "name": "Vincent Lindon",
       "awards": {
         "venice": "Y"
       },
-      "film": "La grazia",
-      "profilePath": "/h9Js3JQOFD5h4uNtJB2VwSgMcYq.jpg",
-      "tmdbId": 72782
+      "film": "Noi e loro",
+      "profilePath": "/tjRKMKfsIH7MrqtN7cMPIZubSXa.jpg",
+      "tmdbId": 5443
     },
     {
       "name": "Colman Domingo",
@@ -427,8 +455,8 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/r2usluS5vx7O7npAYfaAFfNGxc8.jpg",
       "tmdbId": 91671
@@ -441,25 +469,11 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/u29BOqiV5GCQ8k8WUJM50i9xlBf.jpg",
       "tmdbId": 5469
-    },
-    {
-      "name": "Yura Borisov",
-      "film": "Anora",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/zLcD2UmXJG6m3qOQhNZs13SQRIp.jpg",
-      "tmdbId": 1266686
     },
     {
       "name": "Edward Norton",
@@ -469,8 +483,8 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg",
       "tmdbId": 819
@@ -485,7 +499,7 @@
         "oscar": "X",
         "critics": "X"
       },
-      "profilePath": "/3ijvoBqPaIIQsb5QTTGB485nqn.jpg",
+      "profilePath": "/vTqk6Nh3WgqPubkS23eOlMAwmwa.jpg",
       "tmdbId": 529
     },
     {
@@ -531,7 +545,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "critics": "X"
+        "critics": "X",
+        "lafca": "X"
       },
       "profilePath": "/1nRVnEo3fICl9yhRyemn8PgrJ4q.jpg",
       "tmdbId": 4178063
@@ -596,6 +611,16 @@
       },
       "profilePath": "/kMtZtavkXIXYA0CnhaWqbNo6uFV.jpg",
       "tmdbId": 80860
+    },
+    {
+      "name": "Adam Pearson",
+      "awards": {
+        "lafca": "X"
+      },
+      "role": "Supporting",
+      "film": "A Different Man",
+      "profilePath": "/xRDaT60nU48yBDD20A2hSmSALZX.jpg",
+      "tmdbId": 1675188
     }
   ],
   "best-actress": [
@@ -607,25 +632,11 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "sag": "Y",
-        "critics": "X"
+        "critics": "Y",
+        "sag": "Y"
       },
-      "profilePath": "/vQBwmsSOAd0JDaEcZ5p43J9xzsY.jpg",
+      "profilePath": "/iOVbUH20il632nj2v01NCtYYeSg.jpg",
       "tmdbId": 8691
-    },
-    {
-      "name": "Demi Moore",
-      "film": "The Substance",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "Y",
-        "oscar": "X",
-        "sag": "Y",
-        "critics": "X"
-      },
-      "profilePath": "/wApParZYBDi4yxekjfxjKEifJYh.jpg",
-      "tmdbId": 3416
     },
     {
       "name": "Mikey Madison",
@@ -635,22 +646,27 @@
         "bafta": "Y",
         "gg": "X",
         "oscar": "Y",
+        "critics": "X",
         "sag": "X",
-        "critics": "X"
+        "lafca": "Y"
       },
       "profilePath": "/b0HZr4Xa4pIR7MzTPXfIWvUZELx.jpg",
       "tmdbId": 1640439
     },
     {
-      "name": "Fernanda Torres",
-      "film": "I'm Still Here",
+      "name": "Demi Moore",
+      "film": "The Substance",
       "role": "Leading",
       "awards": {
+        "bafta": "X",
         "gg": "Y",
-        "oscar": "X"
+        "oscar": "X",
+        "critics": "Y",
+        "sag": "Y",
+        "lafca": "X"
       },
-      "profilePath": "/dkxdADNwbM7ZLQK5YBNeKBqVJNM.jpg",
-      "tmdbId": 87335
+      "profilePath": "/wApParZYBDi4yxekjfxjKEifJYh.jpg",
+      "tmdbId": 3416
     },
     {
       "name": "Nicole Kidman",
@@ -658,19 +674,35 @@
       "role": "Leading",
       "awards": {
         "gg": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "venice": "Y"
       },
       "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
       "tmdbId": 2227
     },
     {
-      "name": "Xin Zhilei",
+      "name": "Marianne Jean-Baptiste",
+      "film": "Hard Truths",
+      "role": "Leading",
       "awards": {
-        "venice": "Y"
+        "bafta": "X",
+        "critics": "X",
+        "lafca": "Y"
       },
-      "film": "Rì guà zhōngtiān",
-      "profilePath": "/aFhdcO9nzA1vbABsqDmGkaTLsjg.jpg",
-      "tmdbId": 1569934
+      "profilePath": "/bJ6p32cswcp0xvqiZC7S5tiwa2K.jpg",
+      "tmdbId": 17352
+    },
+    {
+      "name": "Fernanda Torres",
+      "film": "I'm Still Here",
+      "role": "Leading",
+      "awards": {
+        "gg": "Y",
+        "oscar": "X",
+        "lafca": "X"
+      },
+      "profilePath": "/dkxdADNwbM7ZLQK5YBNeKBqVJNM.jpg",
+      "tmdbId": 87335
     },
     {
       "name": "Cynthia Erivo",
@@ -680,8 +712,8 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/gIAXqZwZCBqkh2ppfAV4xcnMxki.jpg",
       "tmdbId": 1765068
@@ -694,8 +726,8 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/vmg6gqpaXnoRFP7NWdSTrsr1CED.jpg",
       "tmdbId": 1505938
@@ -708,8 +740,8 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/ojr2zF46BmPe7EALds7WQf6Ro4O.jpg",
       "tmdbId": 226001
@@ -738,17 +770,6 @@
       },
       "profilePath": "/gsrb1CuyAQtTVZILtNA5tRnhHbs.jpg",
       "tmdbId": 72855
-    },
-    {
-      "name": "Marianne Jean-Baptiste",
-      "film": "Hard Truths",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "critics": "X"
-      },
-      "profilePath": "/bJ6p32cswcp0xvqiZC7S5tiwa2K.jpg",
-      "tmdbId": 17352
     },
     {
       "name": "Jamie Lee Curtis",
@@ -810,8 +831,8 @@
       "film": "The Piano Lesson",
       "role": "Supporting",
       "awards": {
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/ifQcCBM5B4dIJdz4B0laO4yQuzU.jpg",
       "tmdbId": 1853909

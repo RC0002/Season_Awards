@@ -1,5 +1,5 @@
 {
-  "generated": "2025-12-26T20:46:48.421492",
+  "generated": "2025-12-28T13:02:42.717948",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -171,25 +171,25 @@
       "critics": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
           "nominations": 6,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 6
         },
         "best-actor": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         },
         "best-actress": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         }
@@ -260,9 +260,9 @@
           "expected": 1
         },
         "best-actor": {
-          "nominations": 1,
-          "winners": 1,
-          "status": "ok",
+          "nominations": 2,
+          "winners": 2,
+          "status": "error",
           "expected": 1
         },
         "best-actress": {
@@ -322,6 +322,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
         }
       }
     },
@@ -433,27 +459,27 @@
       "critics": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
           "nominations": 6,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 6
         },
         "best-actor": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         },
         "best-actress": {
-          "nominations": 13,
-          "winners": 0,
+          "nominations": 12,
+          "winners": 2,
           "status": "ok",
-          "expected": 13
+          "expected": 12
         }
       },
       "afi": {
@@ -584,6 +610,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
         }
       }
     },
@@ -695,25 +747,25 @@
       "critics": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
-          "nominations": 7,
-          "winners": 0,
+          "nominations": 6,
+          "winners": 1,
           "status": "ok",
-          "expected": 7
+          "expected": 6
         },
         "best-actor": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         },
         "best-actress": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         }
@@ -846,6 +898,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
         }
       }
     },
@@ -957,25 +1035,25 @@
       "critics": {
         "best-film": {
           "nominations": 11,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 11
         },
         "best-director": {
           "nominations": 6,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 6
         },
         "best-actor": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         },
         "best-actress": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         }
@@ -1108,6 +1186,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
         }
       }
     },
@@ -1219,25 +1323,25 @@
       "critics": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
           "nominations": 7,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 7
         },
         "best-actor": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         },
         "best-actress": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         }
@@ -1370,6 +1474,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
         }
       }
     },
@@ -1481,25 +1611,25 @@
       "critics": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
           "nominations": 7,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 7
         },
         "best-actor": {
-          "nominations": 14,
-          "winners": 0,
+          "nominations": 13,
+          "winners": 2,
           "status": "ok",
-          "expected": 14
+          "expected": 13
         },
         "best-actress": {
           "nominations": 13,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 13
         }
@@ -1632,6 +1762,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
         }
       }
     },
@@ -1743,25 +1899,25 @@
       "critics": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
           "nominations": 7,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 7
         },
         "best-actor": {
           "nominations": 13,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 13
         },
         "best-actress": {
           "nominations": 13,
-          "winners": 0,
+          "winners": 3,
           "status": "ok",
           "expected": 13
         }
@@ -1895,6 +2051,32 @@
           "status": "ok",
           "expected": 0
         }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        }
       }
     },
     "2019_2020": {
@@ -2005,25 +2187,25 @@
       "critics": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
           "nominations": 7,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 7
         },
         "best-actor": {
           "nominations": 13,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 13
         },
         "best-actress": {
           "nominations": 13,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 13
         }
@@ -2157,6 +2339,32 @@
           "status": "ok",
           "expected": 0
         }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        }
       }
     },
     "2020_2021": {
@@ -2267,25 +2475,25 @@
       "critics": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
           "nominations": 7,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 7
         },
         "best-actor": {
           "nominations": 14,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 14
         },
         "best-actress": {
           "nominations": 13,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 13
         }
@@ -2419,6 +2627,32 @@
           "status": "ok",
           "expected": 0
         }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        }
       }
     },
     "2021_2022": {
@@ -2529,25 +2763,25 @@
       "critics": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
           "nominations": 6,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 6
         },
         "best-actor": {
-          "nominations": 13,
-          "winners": 0,
+          "nominations": 12,
+          "winners": 2,
           "status": "ok",
-          "expected": 13
+          "expected": 12
         },
         "best-actress": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         }
@@ -2681,6 +2915,32 @@
           "status": "ok",
           "expected": 0
         }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 4,
+          "winners": 3,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        }
       }
     },
     "2022_2023": {
@@ -2791,27 +3051,27 @@
       "critics": {
         "best-film": {
           "nominations": 11,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 11
         },
         "best-director": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-actor": {
-          "nominations": 14,
-          "winners": 0,
+          "nominations": 12,
+          "winners": 2,
           "status": "ok",
-          "expected": 14
+          "expected": 12
         },
         "best-actress": {
-          "nominations": 13,
-          "winners": 0,
+          "nominations": 12,
+          "winners": 2,
           "status": "ok",
-          "expected": 13
+          "expected": 12
         }
       },
       "afi": {
@@ -2942,6 +3202,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 3,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 5,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
         }
       }
     },
@@ -3053,25 +3339,25 @@
       "critics": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
           "nominations": 6,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 6
         },
         "best-actor": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         },
         "best-actress": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         }
@@ -3204,6 +3490,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 3,
+          "winners": 0,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 5,
+          "winners": 4,
+          "status": "ok",
+          "expected": "actor+actress=8"
         }
       }
     },
@@ -3315,25 +3627,25 @@
       "critics": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
           "nominations": 8,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 8
         },
         "best-actor": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         },
         "best-actress": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         }
@@ -3466,6 +3778,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 4,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
         }
       }
     },
@@ -3654,27 +3992,27 @@
       },
       "venice": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
           "expected": 1
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
           "expected": 1
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
           "expected": 1
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
           "expected": 1
         }
       },
@@ -3728,6 +4066,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 1,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 5,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
+        },
+        "best-actress": {
+          "nominations": 3,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=8"
         }
       }
     }
