@@ -461,7 +461,7 @@ body.light-mode .home-title {
     letter-spacing: 0.15em;
     margin: 0;
     text-align: center;
-    opacity: 0;
+    opacity: 1;
     text-shadow: 0 0 60px rgba(212, 175, 55, 0.6), 0 0 120px rgba(212, 175, 55, 0.3);
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
     white-space: nowrap;

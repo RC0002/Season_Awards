@@ -11,11 +11,14 @@ async function initHomePage() {
     await populateAwardsMarquee();
     await populateTrendingMarquee();
     startMarqueeAnimations();
-    animateTitleGSAP(); // GSAP title animation
+    startMarqueeAnimations();
+    // animateTitleGSAP(); // Removed as per request
 }
 
 // ============ GSAP TITLE ANIMATION (ScrambleTextPlugin) ============
+/*
 // ============ GSAP TITLE ANIMATION (Custom Scramble) ============
+// Function removed to avoid potential licensing issues/complicated implementation
 function animateTitleGSAP() {
     const title = document.querySelector('.home-title');
     if (!title || typeof gsap === 'undefined') return;
@@ -164,7 +167,10 @@ function animateTitleGSAP() {
         ease: 'sine.inOut',
         delay: 4
     });
+    const title = document.querySelector('.home-title');
+    if (title) title.style.opacity = 1;
 }
+*/
 
 // Awards marquee - nominated films from all years
 async function populateAwardsMarquee() {
