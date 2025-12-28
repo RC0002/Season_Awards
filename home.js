@@ -15,19 +15,45 @@ async function initHomePage() {
 }
 
 // ============ GSAP TITLE ANIMATION (ScrambleTextPlugin) ============
+// ============ GSAP TITLE ANIMATION (Custom Scramble) ============
 function animateTitleGSAP() {
     const title = document.querySelector('.home-title');
     if (!title || typeof gsap === 'undefined') return;
 
-    // Check if ScrambleTextPlugin is available
-    if (typeof ScrambleTextPlugin === 'undefined') {
-        console.warn('ScrambleTextPlugin not loaded, using fallback');
-        title.style.opacity = 1;
-        return;
-    }
+    // Custom Scramble Helper Function
+    // Mimics the basic behavior of ScrambleTextPlugin for free
+    const scrambleTo = (element, targetText, duration, config = {}) => {
+        const chars = config.chars || 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const revealDelay = config.revealDelay || 0;
+        const tweenObj = { progress: 0 };
+        const length = targetText.length;
 
-    // Register the plugin
-    gsap.registerPlugin(ScrambleTextPlugin);
+        return gsap.to(tweenObj, {
+            progress: 1,
+            duration: duration,
+            ease: config.ease || 'none',
+            onUpdate: () => {
+                const p = tweenObj.progress;
+                let result = "";
+                // Calculate how many characters should be revealed based on progress
+                // Adjusting for revealDelay (start revealing later)
+                const revealProgress = Math.max(0, (p - revealDelay) / (1 - revealDelay));
+                const numRevealed = Math.floor(revealProgress * length);
+
+                for (let i = 0; i < length; i++) {
+                    if (i < numRevealed) {
+                        result += targetText[i];
+                    } else if (targetText[i] === ' ') {
+                        result += ' ';
+                    } else {
+                        // Random char
+                        result += chars[Math.floor(Math.random() * chars.length)];
+                    }
+                }
+                element.textContent = result;
+            }
+        });
+    };
 
     // Store original text and clear
     const originalText = title.textContent.trim();
@@ -38,6 +64,7 @@ function animateTitleGSAP() {
     const textSpan = document.createElement('span');
     textSpan.id = 'scramble-title';
     textSpan.style.display = 'inline';
+    textSpan.textContent = ''; // Start empty
     title.appendChild(textSpan);
 
     // Create cursor element  
@@ -56,44 +83,63 @@ function animateTitleGSAP() {
     // Main scramble timeline
     const tl = gsap.timeline({ delay: 0.2 });
 
-    // Split text into two parts: "Season" and "Awards"
+    // Split text into two parts: "Season" and "Awards" if space exists
     const parts = originalText.split(' ');
 
-    if (parts.length >= 2) {
-        // Scramble "Season" with uppercase chars
-        tl.to(textSpan, {
-            scrambleText: {
-                text: parts[0] + ' ',
-                chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
-                speed: 0.8,
-                revealDelay: 0.1
-            },
-            duration: 0.8,
-            ease: 'none'
-        });
+    // We want to simulate the "typing/scrambling" effect from scratch
+    // So we'll animate the *content* of textSpan
 
-        // Scramble "Awards" with different chars
-        tl.to(textSpan, {
-            scrambleText: {
-                text: originalText,
-                chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
-                speed: 0.6,
-                revealDelay: 0.1
-            },
+    if (parts.length >= 2) {
+        // Part 1: "Season"
+        // We simulate manually by tweening a placeholder text length up to target
+
+        // 1. Scramble "Season "
+        const part1 = parts[0] + ' ';
+        tl.add(scrambleTo(textSpan, part1, 0.8, {
+            chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+            revealDelay: 0.1
+        }));
+
+        // 2. Scramble "Season Awards" (append the rest)
+        // We need to keep the first part fixed and scramble the second part
+        // But our helper replaces simpler. Let's just create a new tween that handles the full string
+        // starting from the state where part1 is done.
+
+        // Actually, easier way: Just target the text content to change from "Season " to "Season Awards"
+        // But we need the "Awards" part to be scrambling while "Season " stays static.
+
+        const fullText = originalText;
+
+        tl.add(gsap.to({}, {
             duration: 1.0,
-            ease: 'none'
-        });
+            ease: 'none',
+            onUpdate: function () {
+                const p = this.progress();
+                const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                // "Season " is fixed. We only scramble "Awards"
+                const prefix = parts[0] + ' ';
+                const suffixTarget = parts.slice(1).join(' '); // "Awards"
+
+                let scrambledSuffix = "";
+                const revealP = Math.max(0, (p - 0.1) / 0.9); // revealDelay logic
+                const numRevealed = Math.floor(revealP * suffixTarget.length);
+
+                for (let i = 0; i < suffixTarget.length; i++) {
+                    if (i < numRevealed) {
+                        scrambledSuffix += suffixTarget[i];
+                    } else {
+                        scrambledSuffix += chars[Math.floor(Math.random() * chars.length)];
+                    }
+                }
+                textSpan.textContent = prefix + scrambledSuffix;
+            }
+        }));
+
     } else {
-        // Single word fallback
-        tl.to(textSpan, {
-            scrambleText: {
-                text: originalText,
-                chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ★✦',
-                speed: 0.4
-            },
-            duration: 2,
-            ease: 'none'
-        });
+        // Fallback for single word
+        tl.add(scrambleTo(textSpan, originalText, 1.5, {
+            chars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        }));
     }
 
     // After scramble complete, add a subtle glow pulse
