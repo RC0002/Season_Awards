@@ -683,8 +683,13 @@ function updateSyncStatus(status) {
             textEl.textContent = 'Synced';
             break;
         case 'pending':
-            el.classList.add('pending');
-            textEl.textContent = 'Offline';
+            if (!firebaseReady) {
+                el.classList.add('synced'); // Green for local mode
+                textEl.textContent = 'Local';
+            } else {
+                el.classList.add('pending'); // Yellow for actual pending sync
+                textEl.textContent = 'Offline';
+            }
             break;
         case 'error':
             el.classList.add('error');
