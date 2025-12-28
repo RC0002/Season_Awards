@@ -237,45 +237,11 @@ function setupThemeToggle() {
         textSpan.textContent = isLight ? 'Dark' : 'Light';
 
         // GSAP transition if available
+        /* GSAP removed
         if (hasGSAP) {
-            const duration = 0.5;
-
-            if (isLight) {
-                // To Light Mode (White & Gold)
-                gsap.to('body', {
-                    backgroundColor: '#ffffff',
-                    color: '#000000',
-                    duration: duration
-                });
-                gsap.to('.top-nav', {
-                    backgroundColor: '#ffffff',
-                    duration: duration
-                });
-                gsap.to('.category-card-inner', {
-                    backgroundColor: '#f8f9fa',
-                    borderColor: '#d4af37',
-                    boxShadow: '0 8px 32px rgba(212, 175, 55, 0.1)',
-                    duration: duration
-                });
-            } else {
-                // To Dark Mode (Original Black)
-                gsap.to('body', {
-                    backgroundColor: '#000000',
-                    color: '#f5f5f5',
-                    duration: duration
-                });
-                gsap.to('.top-nav', {
-                    backgroundColor: '#000000',
-                    duration: duration
-                });
-                gsap.to('.category-card-inner', {
-                    backgroundColor: '#000000',
-                    borderColor: 'rgba(255, 255, 255, 0.15)',
-                    boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)',
-                    duration: duration
-                });
-            }
+            // ... removed ...
         }
+        */
     });
 }
 

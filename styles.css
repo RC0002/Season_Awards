@@ -23,6 +23,7 @@ body {
     height: 100vh;
     padding-top: var(--header-height);
     overflow: hidden;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 /* ============ DARK SCROLLBAR ============ */
@@ -62,6 +63,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
 }
 
 .nav-container {
@@ -583,6 +585,9 @@ body.light-mode .home-title {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    min-width: 300px;
+    /* Prevent squishing on small screens */
+    transition: background-color 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
 }
 
 /* Fixed category title section */
