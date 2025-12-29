@@ -94,6 +94,13 @@ CEREMONY_MAP = {
         2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
         2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
         2015: 2014, 2014: 2013, 2013: 2012
+    },
+    # WGA: Writers Guild of America - ceremony number
+    # 77th in 2025 for 2024/2025 season
+    'wga': {
+        2026: 78, 2025: 77, 2024: 76, 2023: 75, 2022: 74, 2021: 73,
+        2020: 72, 2019: 71, 2018: 70, 2017: 69, 2016: 68,
+        2015: 67, 2014: 66, 2013: 65
     }
 }
 
@@ -107,7 +114,8 @@ URL_TEMPLATES = {
     'nbr': 'https://en.wikipedia.org/wiki/National_Board_of_Review_Awards_{year}',
     'venice': 'https://it.wikipedia.org/wiki/{ord}%C2%AA_Mostra_internazionale_d%27arte_cinematografica_di_Venezia',
     'pga': 'https://en.wikipedia.org/wiki/{ord}_Producers_Guild_of_America_Awards',
-    'lafca': 'https://en.wikipedia.org/wiki/{year}_Los_Angeles_Film_Critics_Association_Awards'
+    'lafca': 'https://en.wikipedia.org/wiki/{year}_Los_Angeles_Film_Critics_Association_Awards',
+    'wga': 'https://en.wikipedia.org/wiki/{ord}_Writers_Guild_of_America_Awards'
 }
 
 # Ordinal number suffix
@@ -1463,6 +1471,86 @@ def scrape_pga(ceremony_num):
     return results
 
 
+def scrape_wga(ceremony_num):
+    """
+    Scrape WGA (Writers Guild of America) Awards.
+    Extracts 'Best Original Screenplay' and 'Best Adapted Screenplay' categories.
+    Only extracts film names (not writers). Adds 'screenplay_type' field for original/adapted distinction.
+    
+    Page structure:
+    - Header is in <div> with <b><a> containing the award name
+    - Parent is <td> in a wikitable
+    - Winner is first <li> in <ul> after header div, wrapped in <b>
+    - Other nominees are in nested <ul> inside winner's <li>
+    - Film name is in <i> tag
+    """
+    url = URL_TEMPLATES['wga'].format(ord=ordinal(ceremony_num))
+    print(f"  WGA ({ordinal(ceremony_num)}): {url}")
+    
+    soup = fetch_page(url)
+    if not soup:
+        return {}
+    
+    results = {
+        'best-film': [],
+        'best-director': [],
+        'best-actor': [],
+        'best-actress': []
+    }
+    
+    seen_films = set()
+    
+    # Find Original and Adapted Screenplay sections
+    # Look for <a> tags containing the award name, then navigate to parent div
+    for screenplay_type, header_text in [('original', 'Best Original Screenplay'), 
+                                          ('adapted', 'Best Adapted Screenplay')]:
+        # Find the anchor link with the award name
+        header_link = None
+        for a in soup.find_all('a'):
+            if header_text in a.get_text():
+                header_link = a
+                break
+        
+        if not header_link:
+            print(f"    WGA: Could not find {header_text} section")
+            continue
+        
+        # Navigate up to find the containing TD
+        td = header_link.find_parent('td')
+        if not td:
+            print(f"    WGA: Could not find TD for {header_text}")
+            continue
+        
+        # Find the UL within this TD
+        ul = td.find('ul')
+        if not ul:
+            print(f"    WGA: Could not find UL for {header_text}")
+            continue
+        
+        # Process all li items in this TD
+        for li in td.find_all('li'):
+            # Get film name from <i> tag (italicized film title)
+            italic = li.find('i')
+            if not italic:
+                continue
+            
+            film_name = italic.get_text().strip()
+            
+            if film_name and film_name not in seen_films:
+                # Check if winner (bold) - winner has <b> tag containing the <i>
+                parent_b = italic.find_parent('b')
+                is_winner = parent_b is not None
+                
+                seen_films.add(film_name)
+                results['best-film'].append({
+                    'name': film_name,
+                    'awards': {'wga': 'Y' if is_winner else 'X'},
+                    'screenplay_type': screenplay_type  # 'original' or 'adapted'
+                })
+    
+    print(f"    WGA {ordinal(ceremony_num)}: Found {len(results['best-film'])} films")
+    return results
+
 def scrape_award(award_key, year):
     """Scrape a single award for a given year"""
     if year not in CEREMONY_MAP[award_key]:
@@ -1762,7 +1850,7 @@ def enrich_with_tmdb(data):
 def scrape_year(year, awards=None):
     """Scrape all awards for a given year"""
     if awards is None:
-        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga']
+        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'wga']
     
     print(f"\n{'='*60}")
     print(f"  SCRAPING SEASON {year-1}/{year}")
@@ -1808,6 +1896,12 @@ def scrape_year(year, awards=None):
                 result = scrape_lafca(lafca_year)
                 if result:
                     all_results['lafca'] = result
+        elif award_key == 'wga':
+            wga_num = CEREMONY_MAP['wga'].get(year)
+            if wga_num:
+                result = scrape_wga(wga_num)
+                if result:
+                    all_results['wga'] = result
         else:
             result = scrape_award(award_key, year)
             if result:
