@@ -1,12 +1,24 @@
 {
   "best-film": [
     {
+      "name": "One Battle After Another",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "nbr": "Y",
+        "afi": "Y",
+        "gotham": "Y"
+      },
+      "posterPath": "/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
+      "tmdbId": 1054867
+    },
+    {
       "name": "Frankenstein",
       "awards": {
         "gg": "X",
         "critics": "X",
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "afi": "Y"
       },
       "posterPath": "/g4JtvGlQO7DByTI6frUobqvSL3R.jpg",
       "tmdbId": 1062722
@@ -16,8 +28,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "afi": "Y"
       },
       "posterPath": "/qTvFWCGeGXgBRaINLY1zqgTPSpn.jpg",
       "tmdbId": 1233413
@@ -27,58 +39,48 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "afi": "Y"
       },
-      "posterPath": "/firAhZA0uQvRL2slp7v3AnOj0ZX.jpg",
+      "posterPath": "/n0fnflUWcwzbQ5x32G8zx0INs3G.jpg",
       "tmdbId": 1317288
-    },
-    {
-      "name": "One Battle After Another",
-      "awards": {
-        "gg": "X",
-        "critics": "X",
-        "afi": "Y",
-        "nbr": "Y"
-      },
-      "posterPath": "/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
-      "tmdbId": 1054867
-    },
-    {
-      "name": "Jay Kelly",
-      "awards": {
-        "critics": "X",
-        "afi": "Y",
-        "nbr": "Y"
-      },
-      "posterPath": "/bKLm1xS9DsODWB4i1SxTEvLXab9.jpg",
-      "tmdbId": 1069905
     },
     {
       "name": "Train Dreams",
       "awards": {
         "critics": "X",
+        "nbr": "Y",
         "afi": "Y",
-        "nbr": "Y"
+        "gotham": "X"
       },
       "posterPath": "/l3zS4YnpOi4usyEXGJMtxSqDDyb.jpg",
       "tmdbId": 1241983
     },
     {
+      "name": "Jay Kelly",
+      "awards": {
+        "critics": "X",
+        "nbr": "Y",
+        "afi": "Y"
+      },
+      "posterPath": "/lEXYpY9X17pGC7xYYy17Guv0L3J.jpg",
+      "tmdbId": 1069905
+    },
+    {
       "name": "Wicked: For Good",
       "awards": {
         "critics": "X",
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "afi": "Y"
       },
-      "posterPath": "/si9tolnefLSUKaqQEGz1bWArOaL.jpg",
+      "posterPath": "/u7x3I5V9aP4tMZACmM8ClY8lK6K.jpg",
       "tmdbId": 967941
     },
     {
       "name": "Avatar: Fire and Ash",
       "awards": {
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "afi": "Y"
       },
       "posterPath": "/g96wHxU7EnoIFwemb2RgohIXrgW.jpg",
       "tmdbId": 83533
@@ -88,7 +90,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "afi": "Y"
+        "afi": "Y",
+        "gotham": "X"
       },
       "posterPath": "/71KNp6RiOQTbs8Fn1DagrFQrZmx.jpg",
       "tmdbId": 858024
@@ -98,7 +101,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "afi": "Y"
+        "afi": "Y",
+        "gotham": "X"
       },
       "posterPath": "/oxgsAQDAAxA92mFGYCZllgWkH9J.jpg",
       "tmdbId": 701387
@@ -194,6 +198,54 @@
       },
       "posterPath": "/mGSaAfCLtQRWIFbQv6cQ6fIfD4Y.jpg",
       "tmdbId": 1254808
+    },
+    {
+      "name": "East of Wall",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/1OsdhvbLNLUJEi9vqQCyhAXsaRX.jpg",
+      "tmdbId": 1398911
+    },
+    {
+      "name": "Familiar Touch",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/zUKpIGBCiUTyFTEPJxc7nJtLU3P.jpg",
+      "tmdbId": 1265717
+    },
+    {
+      "name": "If I Had Legs I'd Kick You",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/gkIFK1HzqfgQg4v4ifeNKogHtPG.jpg",
+      "tmdbId": 1160360
+    },
+    {
+      "name": "Lurker",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/remyTlj6bJqoSStgjn3EwyOcki7.jpg",
+      "tmdbId": 1264573
+    },
+    {
+      "name": "Sorry, Baby",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/n8wZEQen5hDNRGzm4fY4sxWe5xe.jpg",
+      "tmdbId": 1205515
+    },
+    {
+      "name": "The Testament of Ann Lee",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/1wleWp6BCniE9RSeaUjUezwZdF8.jpg",
+      "tmdbId": 1401281
     }
   ],
   "best-director": [
@@ -204,7 +256,8 @@
         "gg": "X",
         "critics": "X",
         "nbr": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "gotham": "X"
       },
       "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
       "tmdbId": 4762
@@ -217,6 +270,15 @@
       "film": "The Smashing Machine",
       "profilePath": "/9tp4PLNyYPNfCJOWBXPPalWIpnq.jpg",
       "tmdbId": 227564
+    },
+    {
+      "name": "Jafar Panahi",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "It Was Just an Accident\nMary Bronstein",
+      "profilePath": "/gDkt1MOuOeUZ8gbRUcNYB6bjDV4.jpg",
+      "tmdbId": 120229
     },
     {
       "name": "Ryan Coogler",
@@ -276,6 +338,33 @@
       },
       "profilePath": "/iNyilK3Ag6qeOguc0zysxZXEIpJ.jpg",
       "tmdbId": 129561
+    },
+    {
+      "name": "Mary Bronstein",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "If I Had Legs I'd Kick You",
+      "profilePath": "/xizQfYcV2PzwuBUtCg1om2vZz8h.jpg",
+      "tmdbId": 935669
+    },
+    {
+      "name": "Kelly Reichardt",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "The Mastermind",
+      "profilePath": "/j97hMhlRhcaHWgn9MQ78E0ft57U.jpg",
+      "tmdbId": 56383
+    },
+    {
+      "name": "Oliver Laxe",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Sirāt",
+      "profilePath": "/eavEDTQWyUPxcEZjINS4nnjrIFj.jpg",
+      "tmdbId": 1048523
     }
   ],
   "best-actor": [
@@ -323,6 +412,15 @@
       "film": "La grazia",
       "profilePath": "/h9Js3JQOFD5h4uNtJB2VwSgMcYq.jpg",
       "tmdbId": 72782
+    },
+    {
+      "name": "Sopé Dìrísù",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "My Father's Shadow as Folarin\nJessie Buckley",
+      "profilePath": "/k9Ayv1XflEbEI599rqgf6Y4gcFY.jpg",
+      "tmdbId": 1479869
     },
     {
       "name": "Wagner Moura",
@@ -493,6 +591,105 @@
       "film": "Blue Moon",
       "profilePath": "/4F8XpjyQCvtuu21WFm5d8RF5Rl.jpg",
       "tmdbId": 125660
+    },
+    {
+      "name": "Lee Byung-hun",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "No Other Choice as Yoo Man-su",
+      "profilePath": "/j7SUd9Qi8iOxgrQGb3nQyEYcXur.jpg",
+      "tmdbId": 25002
+    },
+    {
+      "name": "Ethan Hawke",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Blue Moon as Lorenz Hart",
+      "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
+      "tmdbId": 569
+    },
+    {
+      "name": "Wagner Moura",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "The Secret Agent as Armando / Marcelo Alves / Fernando",
+      "profilePath": "/yJjV1ZCQbCSSgRy05FncCKjyaY4.jpg",
+      "tmdbId": 52583
+    },
+    {
+      "name": "Josh O'Connor",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "The Mastermind as James Blaine \"J.B.\" Mooney",
+      "profilePath": "/vV9m1GnFVDFPC0kZgbUVe2ZKk3d.jpg",
+      "tmdbId": 1206334
+    },
+    {
+      "name": "Benicio del Toro",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "One Battle After Another as Sergio St. Carlos",
+      "profilePath": "/cVh4UgCMu6aAkZ2BqymTLV86FzZ.jpg",
+      "tmdbId": 1121
+    },
+    {
+      "name": "Jacob Elordi",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Frankenstein as The Creature",
+      "profilePath": "/lC9pK3ADyPpH4dRo2BKZBaTZPfu.jpg",
+      "tmdbId": 2034418
+    },
+    {
+      "name": "Indya Moore",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Father Mother Sister Brother as Skye",
+      "profilePath": "/uIRHpgbj9DfjMksigXmi497xRqU.jpg",
+      "tmdbId": 1789788
+    },
+    {
+      "name": "Adam Sandler",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Jay Kelly as Ron Sukenick",
+      "profilePath": "/gLkLCsQdwDDPabRhKPB25nGtKwS.jpg",
+      "tmdbId": 19292
+    },
+    {
+      "name": "Andrew Scott",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Blue Moon as Richard Rodgers",
+      "profilePath": "/4F8XpjyQCvtuu21WFm5d8RF5Rl.jpg",
+      "tmdbId": 125660
+    },
+    {
+      "name": "Alexander Skarsgård",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Pillion as Ray",
+      "profilePath": "/hIuDik6KDmHLrqZWxBVdXzUw1kq.jpg",
+      "tmdbId": 28846
+    },
+    {
+      "name": "Stellan Skarsgård",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Sentimental Value as Gustav Borg",
+      "profilePath": "/x78BtYHElirO7Iw8bL4m8CnzRDc.jpg",
+      "tmdbId": 1640
     }
   ],
   "best-actress": [
@@ -529,6 +726,15 @@
       "film": "Rì guà zhōngtiān",
       "profilePath": "/aFhdcO9nzA1vbABsqDmGkaTLsjg.jpg",
       "tmdbId": 1569934
+    },
+    {
+      "name": "Wunmi Mosaku",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Sinners as Annie\nBenicio del Toro",
+      "profilePath": "/yWM19CjCv66MqNkwHBp6Dpvtn9x.jpg",
+      "tmdbId": 134774
     },
     {
       "name": "Jessie Buckley",
@@ -717,6 +923,69 @@
       "film": "Sentimental Value",
       "profilePath": "/c6JojXrAi9ZAiCA07epc3eLmF1r.jpg",
       "tmdbId": 1421850
+    },
+    {
+      "name": "Jessie Buckley",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Hamnet as Agnes Shakespeare",
+      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
+      "tmdbId": 1498158
+    },
+    {
+      "name": "Rose Byrne",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "If I Had Legs I'd Kick You as Linda",
+      "profilePath": "/6YauDiiTBwRGC1xnwspPmNvPWUu.jpg",
+      "tmdbId": 9827
+    },
+    {
+      "name": "Jennifer Lawrence",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Die My Love as Grace",
+      "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
+      "tmdbId": 72129
+    },
+    {
+      "name": "Amanda Seyfried",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "The Testament of Ann Lee as Ann Lee",
+      "profilePath": "/gtBUIpZ3dvLpOMIVORxE6sHSyZj.jpg",
+      "tmdbId": 71070
+    },
+    {
+      "name": "Tessa Thompson",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Hedda as Hedda Gabler",
+      "profilePath": "/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
+      "tmdbId": 62561
+    },
+    {
+      "name": "Inga Ibsdotter Lilleaas",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Sentimental Value as Agnes Borg Pettersen",
+      "profilePath": "/c6JojXrAi9ZAiCA07epc3eLmF1r.jpg",
+      "tmdbId": 1421850
+    },
+    {
+      "name": "Teyana Taylor",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "One Battle After Another as Perfidia Beverly Hills",
+      "profilePath": "/wVHbluUvjKl0NucSeuAhAJAr2oc.jpg",
+      "tmdbId": 964679
     }
   ]
 }

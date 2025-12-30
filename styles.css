@@ -1024,6 +1024,17 @@ td.clickable.locked:hover {
     background: inherit !important;
 }
 
+/* N/A Cell - Award doesn't cover this category */
+td.na-cell {
+    position: relative;
+    cursor: default;
+    background: linear-gradient(135deg,
+            transparent 45%,
+            var(--line) 45%,
+            var(--line) 55%,
+            transparent 55%) !important;
+}
+
 /* Nomination - white camera icon */
 /* Nomination - white X */
 .nominee::before {

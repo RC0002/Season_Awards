@@ -6,7 +6,7 @@
 const FIREBASE_URL = 'https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app';
 const CURRENT_YEAR = '2025_2026';
 
-const AWARDS_ORDER = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca'];
+const AWARDS_ORDER = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham'];
 const AWARDS_NAMES = {
     'oscar': 'Oscar',
     'gg': 'Golden Globes',
@@ -18,7 +18,10 @@ const AWARDS_NAMES = {
     'venice': 'Venice',
     'dga': 'DGA',
     'pga': 'PGA',
-    'lafca': 'LAFCA'
+    'lafca': 'LAFCA',
+    'wga': 'WGA',
+    'adg': 'ADG',
+    'gotham': 'Gotham'
 };
 
 const CATEGORIES = ['best-film', 'best-director', 'best-actor', 'best-actress'];
@@ -116,17 +119,18 @@ function renderCurrentYear(data) {
         const awardData = yearData[awardKey];
         if (!awardData) continue;
 
-        const isLafca = awardKey === 'lafca';
+        const isCombined = awardKey === 'lafca' || awardKey === 'gotham';
         let cells = [];
 
-        if (isLafca) {
-            // LAFCA: Film, Director, then combined Actor+Actress
+        if (isCombined) {
+            // Combined: Film, Director, then combined Actor+Actress
+            // For Gotham/LAFCA in summary
             for (const category of ['best-film', 'best-director']) {
-                const catData = awardData[category] || { nominations: 0, winners: 0, status: 'pending' };
-                const expectedCount = expected[awardKey]?.[category] || 0;
+                const catData = awardData[category] || { nominations: 0, winners: 0, status: 'pending', expected: undefined };
+                const expectedCount = (catData.expected !== undefined) ? catData.expected : (expected[awardKey]?.[category] || 0);
 
                 if (expectedCount === 0 && catData.nominations === 0) {
-                    cells.push(`<span class="cp-recap-cell muted">—</span>`);
+                    cells.push(`<span class="cp-recap-cell muted"><i class="bi bi-slash-lg text-muted op-50"></i></span>`);
                 } else {
                     cells.push(`<span class="cp-recap-cell ${catData.status}"><b>${catData.nominations}</b><small>/${expectedCount}</small></span>`);
                 }
@@ -136,17 +140,25 @@ function renderCurrentYear(data) {
             const actorData = awardData['best-actor'] || { nominations: 0, status: 'pending' };
             const actressData = awardData['best-actress'] || { nominations: 0, status: 'pending' };
             const combined = actorData.nominations + actressData.nominations;
-            const combinedStatus = (combined === 8) ? 'ok' : (combined === 0 ? 'pending' : 'error');
 
-            cells.push(`<span class="cp-recap-cell ${combinedStatus}" style="grid-column: span 2; text-align: center;"><b>${actorData.nominations}+${actressData.nominations}</b><small>/8</small></span>`);
+            const targetTotal = (awardKey === 'gotham') ? 20 : 8;
+            const combinedStatus = (combined === targetTotal) ? 'ok' : (combined === 0 ? 'pending' : 'error');
+
+            const comboText = (awardKey === 'gotham' && combined > 0) ? `<b>${actorData.nominations}+${actressData.nominations}</b>` : `<b>${combined}</b>`;
+            cells.push(`<span class="cp-recap-cell ${combinedStatus}" style="grid-column: span 2; text-align: center;">${comboText}<small>/${targetTotal}</small></span>`);
         } else {
             // Standard awards
             for (const category of CATEGORIES) {
-                const catData = awardData[category] || { nominations: 0, winners: 0, status: 'pending' };
-                const expectedCount = expected[awardKey]?.[category] || 0;
+                const catData = awardData[category] || { nominations: 0, winners: 0, status: 'pending', expected: undefined };
+                let expectedCount = (catData.expected !== undefined) ? catData.expected : (expected[awardKey]?.[category] || 0);
+
+                // Force ADG Film expected count if missing
+                if (awardKey === 'adg' && category === 'best-film' && expectedCount === 0) {
+                    expectedCount = 15;
+                }
 
                 if (expectedCount === 0 && catData.nominations === 0) {
-                    cells.push(`<span class="cp-recap-cell muted">—</span>`);
+                    cells.push(`<span class="cp-recap-cell muted"><i class="bi bi-slash-lg text-muted op-50"></i></span>`);
                 } else {
                     cells.push(`<span class="cp-recap-cell ${catData.status}"><b>${catData.nominations}</b><small>/${expectedCount}</small></span>`);
                 }
@@ -165,8 +177,8 @@ function renderAwardCard(awardKey, data) {
     const years = Object.keys(data.years).filter(y => y !== CURRENT_YEAR).sort().reverse();
     const awardName = AWARDS_NAMES[awardKey] || awardKey.toUpperCase();
 
-    // LAFCA uses combined Actor+Actress column (gender-neutral categories since 2022)
-    const isLafca = awardKey === 'lafca';
+    // LAFCA and GOTHAM use combined Actor+Actress column (gender-neutral categories)
+    const isCombined = awardKey === 'lafca' || awardKey === 'gotham';
 
     let html = `
         <div class="cp-history-card">
@@ -175,7 +187,7 @@ function renderAwardCard(awardKey, data) {
                 <span>Year</span>
                 <span>Film</span>
                 <span>Dir</span>
-                ${isLafca
+                ${isCombined
             ? '<span style="grid-column: span 2; text-align: center;">Actor + Actress</span>'
             : '<span>Actor</span><span>Actress</span>'}
             </div>
@@ -192,14 +204,14 @@ function renderAwardCard(awardKey, data) {
 
         let cells = [];
 
-        if (isLafca) {
-            // LAFCA: Film, Director, then combined Actor+Actress
+        if (isCombined) {
+            // Combined: Film, Director, then combined Actor+Actress
             for (const category of ['best-film', 'best-director']) {
-                const catData = yearData[category] || { nominations: 0, winners: 0, status: 'pending', expected: 0 };
-                const expectedCount = catData.expected || data.expected[awardKey]?.[category] || 0;
+                const catData = yearData[category] || { nominations: 0, winners: 0, status: 'pending', expected: undefined };
+                const expectedCount = (catData.expected !== undefined) ? catData.expected : (data.expected[awardKey]?.[category] || 0);
 
                 if (expectedCount === 0 && catData.nominations === 0) {
-                    cells.push(`<span class="cp-recap-cell muted">-</span>`);
+                    cells.push(`<span class="cp-recap-cell muted"></span>`);
                 } else {
                     cells.push(`<span class="cp-recap-cell ${catData.status}"><b>${catData.nominations}</b>/${expectedCount}</span>`);
                 }
@@ -209,17 +221,19 @@ function renderAwardCard(awardKey, data) {
             const actorData = yearData['best-actor'] || { nominations: 0, status: 'pending' };
             const actressData = yearData['best-actress'] || { nominations: 0, status: 'pending' };
             const combined = actorData.nominations + actressData.nominations;
-            const combinedStatus = (combined === 8) ? 'ok' : (combined === 0 ? 'pending' : 'error');
 
-            cells.push(`<span class="cp-recap-cell ${combinedStatus}" style="grid-column: span 2; text-align: center;"><b>${actorData.nominations}+${actressData.nominations}</b>/8</span>`);
+            const targetTotal = (awardKey === 'gotham') ? 20 : 8;
+            const combinedStatus = (combined === targetTotal) ? 'ok' : (combined === 0 ? 'pending' : 'error');
+
+            cells.push(`<span class="cp-recap-cell ${combinedStatus}" style="grid-column: span 2; text-align: center;"><b>${actorData.nominations}+${actressData.nominations}</b>/${targetTotal}</span>`);
         } else {
             // Standard awards: separate columns
             for (const category of CATEGORIES) {
-                const catData = yearData[category] || { nominations: 0, winners: 0, status: 'pending', expected: 0 };
-                const expectedCount = catData.expected || data.expected[awardKey]?.[category] || 0;
+                const catData = yearData[category] || { nominations: 0, winners: 0, status: 'pending', expected: undefined };
+                const expectedCount = (catData.expected !== undefined) ? catData.expected : (data.expected[awardKey]?.[category] || 0);
 
                 if (expectedCount === 0 && catData.nominations === 0) {
-                    cells.push(`<span class="cp-recap-cell muted">-</span>`);
+                    cells.push(`<span class="cp-recap-cell muted"></span>`);
                 } else {
                     cells.push(`<span class="cp-recap-cell ${catData.status}"><b>${catData.nominations}</b>/${expectedCount}</span>`);
                 }

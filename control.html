@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control Panel - Season Awards</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <link rel="apple-touch-icon" href="favicon.jpg">
     <style>
         /* Control Panel - White/Gold Theme Override */
         :root {
@@ -88,6 +90,18 @@
 
         .cp-dot.pending {
             background: #f97316;
+        }
+
+        .cp-dot-na {
+            width: 16px;
+            height: 10px;
+            border-radius: 2px;
+            background: linear-gradient(135deg,
+                    transparent 40%,
+                    #ccc 40%,
+                    #ccc 60%,
+                    transparent 60%);
+            border: 1px solid #ddd;
         }
 
         /* Summary Stats - compact */
@@ -220,7 +234,16 @@
         }
 
         .cp-recap-cell.muted {
-            color: #ccc;
+            color: #ddd;
+            position: relative;
+            display: block;
+            min-height: 14px;
+            border-radius: 2px;
+            background: linear-gradient(135deg,
+                    transparent 45%,
+                    #e0e0e0 45%,
+                    #e0e0e0 55%,
+                    transparent 55%);
         }
 
         .cp-recap-cell small.winner {
@@ -347,6 +370,10 @@
         <div class="cp-legend-item">
             <span class="cp-dot pending"></span>
             <span>Pending</span>
+        </div>
+        <div class="cp-legend-item">
+            <span class="cp-dot-na"></span>
+            <span>N/A</span>
         </div>
     </div>
 

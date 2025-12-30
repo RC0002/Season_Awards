@@ -63,6 +63,12 @@ HISTORICAL_AVERAGES = {
     # LAFCA: 1 winner + runner-ups per category (typically 2-3 total per category)
     # Performance categories are gender-neutral, split by detected gender
     'lafca': {'best-film': 2, 'best-director': 2, 'best-actor': 4, 'best-actress': 4},
+    # WGA: 5 original + 5 adapted screenplay films = 10 total (best-film only)
+    'wga': {'best-film': 10, 'best-director': 0, 'best-actor': 0, 'best-actress': 0},
+    # ADG: Art Directors Guild - 15 films from 3 categories (Contemporary, Period, Fantasy - no Animated)
+    'adg': {'best-film': 15, 'best-director': 0, 'best-actor': 0, 'best-actress': 0},
+    # Gotham: 10 films, 5 directors, 20 performers split by gender (10 actor + 10 actress)
+    'gotham': {'best-film': 5, 'best-director': 5, 'best-actor': 10, 'best-actress': 10},
 }
 
 # Year-specific overrides for historical rule changes
@@ -134,6 +140,26 @@ HISTORICAL_EXPECTED_OVERRIDES = {
         # 2023: 3 actors (Scott, Wright, Gosling), 5 actresses (Hüller, Stone, McAdams, Randolph, Gladstone)
         'best-actor': {(2023, 2024): 3},
         'best-actress': {(2023, 2024): 5},
+    },
+    'venice': {
+        # Venice ex aequo winners (ties)
+        # 2013 (69th): Best Actor - Joaquin Phoenix & Philip Seymour Hoffman (The Master)
+        'best-actor': {(2013, 2013): 2},
+        # 2017 (73rd): Best Director - Amat Escalante & Andrei Konchalovsky
+        'best-director': {(2017, 2017): 2},
+    },
+    'adg': {
+        # ADG Wikipedia page structure varies by year:
+        # 2019/2020: Legacy list has 6+6+5=17 films (extra nominees in Period/Fantasy)
+        # 2016/2017: Legacy list has 6+5+5=16 films (extra nominee in Period)
+        'best-film': {(2017, 2017): 16, (2020, 2020): 17},
+    },
+    'gotham': {
+        # Gotham expanded Best Feature from 5 to 10 nominees starting in 2025 (2025/2026 season)
+        'best-film': {(2026, 2099): 10},  # 10 nominees from 2026 onwards
+        # Best Director was introduced at Gotham 2024 ceremony (season 2024/2025 = year 2025)
+        # So for years 2013-2024, expected is 0 (no Best Director category existed)
+        'best-director': {(2013, 2024): 0},  # No Best Director category before season 2024/2025
     },
 }
 
@@ -312,7 +338,7 @@ class ScrapeReport:
         
         # Status per award
         print(f"\n  📡 AWARD STATUS:")
-        for award_key in ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca']:
+        for award_key in ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham']:
             log = self.logs.get(award_key)
             if log:
                 total_entries = sum(log.counts.values())
@@ -376,7 +402,7 @@ def scrape_award_with_logging(award_key, year, report):
         
         # ==== CALL APPROPRIATE SCRAPER ====
         from master_scraper import (scrape_award, scrape_afi, scrape_nbr, 
-                                    scrape_venice, scrape_dga, scrape_pga, scrape_lafca)
+                                    scrape_venice, scrape_dga, scrape_pga, scrape_lafca, scrape_wga, scrape_adg, scrape_gotham)
         
         result = None
         
@@ -398,6 +424,15 @@ def scrape_award_with_logging(award_key, year, report):
         elif award_key == 'lafca':
             result = scrape_lafca(ceremony)
             log.log(f"Scraped LAFCA Awards (with gender detection)")
+        elif award_key == 'wga':
+            result = scrape_wga(ceremony)
+            log.log(f"Scraped WGA Original and Adapted Screenplay nominees")
+        elif award_key == 'adg':
+            result = scrape_adg(year)
+            log.log(f"Scraped ADG Production Design nominees")
+        elif award_key == 'gotham':
+            result = scrape_gotham(year)
+            log.log(f"Scraped Gotham Independent Film Awards")
         else:
             result = scrape_award(award_key, year)
             log.log(f"Scraped Wikipedia awards table")
@@ -444,7 +479,7 @@ def scrape_year_enhanced(year, awards=None, parallel=True):
     Enhanced scrape_year with detailed logging and report generation.
     """
     if awards is None:
-        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca']
+        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham']
     
     report = ScrapeReport(year)
     all_results = {}
@@ -649,6 +684,8 @@ def generate_analysis_json(years_to_update=None):
             with open(output_path, 'r', encoding='utf-8') as f:
                 analysis = json.load(f)
             analysis["generated"] = datetime.now().isoformat()
+            # Always update expected values with current averages (in case new awards added)
+            analysis["expected"] = HISTORICAL_AVERAGES
             # Convert year params to year_key format for comparison
             years_to_update_keys = [f"{y-1}_{y}" for y in years_to_update]
         except FileNotFoundError:
@@ -740,6 +777,16 @@ def generate_analysis_json(years_to_update=None):
                     combined = actor_count + actress_count
                     analysis["years"][year_key][award_key][category]["expected"] = "actor+actress=8"
                     if combined == 8:
+                        analysis["years"][year_key][award_key][category]["status"] = "ok"
+                    else:
+                        analysis["years"][year_key][award_key][category]["status"] = "error"
+                elif award_key == 'gotham' and category in ['best-actor', 'best-actress']:
+                    # Gotham: Gender-neutral Lead/Supporting Performance - check combined actor+actress = 20
+                    actor_count = analysis["years"][year_key][award_key]["best-actor"]["nominations"]
+                    actress_count = analysis["years"][year_key][award_key]["best-actress"]["nominations"]
+                    combined = actor_count + actress_count
+                    analysis["years"][year_key][award_key][category]["expected"] = "actor+actress=20"
+                    if combined == 20:
                         analysis["years"][year_key][award_key][category]["status"] = "ok"
                     else:
                         analysis["years"][year_key][award_key][category]["status"] = "error"

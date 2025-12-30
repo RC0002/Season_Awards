@@ -7,10 +7,12 @@
         "gg": "Y",
         "oscar": "X",
         "afi": "Y",
-        "critics": "Y",
         "nbr": "Y",
+        "critics": "Y",
         "pga": "Y",
-        "lafca": "X"
+        "lafca": "X",
+        "wga": "X",
+        "adg": "Y"
       },
       "posterPath": "/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
       "tmdbId": 313369
@@ -23,12 +25,41 @@
         "oscar": "Y",
         "afi": "Y",
         "sag": "X",
-        "critics": "X",
         "nbr": "Y",
-        "pga": "X"
+        "critics": "X",
+        "pga": "X",
+        "wga": "Y"
       },
       "posterPath": "/qLnfEmPrDjJfPyyddLJPkXmshkp.jpg",
       "tmdbId": 376867
+    },
+    {
+      "name": "Arrival",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "nbr": "Y",
+        "critics": "X",
+        "pga": "X",
+        "wga": "Y",
+        "adg": "X"
+      },
+      "posterPath": "/pEzNVQfdzYDzVK0XqxERIw2x2se.jpg",
+      "tmdbId": 329865
+    },
+    {
+      "name": "Hidden Figures",
+      "awards": {
+        "oscar": "X",
+        "sag": "Y",
+        "nbr": "Y",
+        "pga": "X",
+        "wga": "X",
+        "adg": "Y"
+      },
+      "posterPath": "/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg",
+      "tmdbId": 381284
     },
     {
       "name": "Manchester by the Sea",
@@ -38,39 +69,15 @@
         "oscar": "X",
         "afi": "Y",
         "sag": "X",
-        "critics": "X",
         "nbr": "Y",
-        "pga": "X"
+        "critics": "X",
+        "pga": "X",
+        "wga": "X",
+        "adg": "X",
+        "gotham": "X"
       },
       "posterPath": "/o9VXYOuaJxCEKOxbA86xqtwmqYn.jpg",
       "tmdbId": 334541
-    },
-    {
-      "name": "Arrival",
-      "awards": {
-        "bafta": "X",
-        "oscar": "X",
-        "afi": "Y",
-        "critics": "X",
-        "nbr": "Y",
-        "pga": "X"
-      },
-      "posterPath": "/pEzNVQfdzYDzVK0XqxERIw2x2se.jpg",
-      "tmdbId": 329865
-    },
-    {
-      "name": "Hacksaw Ridge",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "afi": "Y",
-        "critics": "X",
-        "nbr": "Y",
-        "pga": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/wuz8TjCIWR2EVVMuEfBnQ1vuGS3.jpg",
-      "tmdbId": 324786
     },
     {
       "name": "Hell or High Water",
@@ -78,31 +85,37 @@
         "gg": "X",
         "oscar": "X",
         "afi": "Y",
-        "critics": "X",
         "nbr": "Y",
-        "pga": "X"
+        "critics": "X",
+        "pga": "X",
+        "wga": "X",
+        "adg": "X"
       },
       "genre": "Drama",
       "posterPath": "/ljRRxqy2aXIkIBXLmOVifcOR021.jpg",
       "tmdbId": 338766
     },
     {
-      "name": "Hidden Figures",
+      "name": "Hacksaw Ridge",
       "awards": {
+        "gg": "X",
         "oscar": "X",
-        "sag": "Y",
+        "afi": "Y",
         "nbr": "Y",
-        "pga": "X"
+        "critics": "X",
+        "pga": "X",
+        "adg": "X"
       },
-      "posterPath": "/9lfz2W2uGjyow3am00rsPJ8iOyq.jpg",
-      "tmdbId": 381284
+      "genre": "Drama",
+      "posterPath": "/wuz8TjCIWR2EVVMuEfBnQ1vuGS3.jpg",
+      "tmdbId": 324786
     },
     {
       "name": "Sully",
       "awards": {
         "afi": "Y",
-        "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X"
       },
       "posterPath": "/4vs83YcJ8TsabADDtaeCJ6ZTjYY.jpg",
       "tmdbId": 363676
@@ -123,10 +136,21 @@
         "afi": "Y",
         "sag": "X",
         "critics": "X",
-        "pga": "X"
+        "pga": "X",
+        "wga": "X",
+        "adg": "X"
       },
       "posterPath": "/8NvnB8aeWQvBEz2ruN4g313j991.jpg",
       "tmdbId": 393457
+    },
+    {
+      "name": "Hail, Caesar!",
+      "awards": {
+        "nbr": "Y",
+        "adg": "X"
+      },
+      "posterPath": "/ozY79UvbYvJUWFg2UCM1CDQ7rBl.jpg",
+      "tmdbId": 270487
     },
     {
       "name": "Zootopia",
@@ -146,28 +170,12 @@
       "tmdbId": 377462
     },
     {
-      "name": "Hail, Caesar!",
-      "awards": {
-        "nbr": "Y"
-      },
-      "posterPath": "/ozY79UvbYvJUWFg2UCM1CDQ7rBl.jpg",
-      "tmdbId": 270487
-    },
-    {
       "name": "Patriots Day",
       "awards": {
         "nbr": "Y"
       },
       "posterPath": "/mIDxsJTrOC7NhgOo3GziiHyKfsQ.jpg",
       "tmdbId": 388399
-    },
-    {
-      "name": "The Woman Who Left - La donna che se ne è andata",
-      "awards": {
-        "venice": "Y"
-      },
-      "posterPath": "/vKBkoUW62DLZjo7ctJRflRTXe67.jpg",
-      "tmdbId": 408542
     },
     {
       "name": "Moonlight",
@@ -179,12 +187,33 @@
       "tmdbId": 376867
     },
     {
+      "name": "Passengers",
+      "awards": {
+        "adg": "Y"
+      }
+    },
+    {
+      "name": "Moonlight\nCertain Women\nEverybody Wants Some!!\nManchester by the Sea\nPaterson",
+      "awards": {
+        "gotham": "Y"
+      }
+    },
+    {
+      "name": "The Woman Who Left - La donna che se ne è andata",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/vKBkoUW62DLZjo7ctJRflRTXe67.jpg",
+      "tmdbId": 408542
+    },
+    {
       "name": "Lion",
       "awards": {
         "gg": "X",
         "oscar": "X",
         "critics": "X",
-        "pga": "X"
+        "pga": "X",
+        "adg": "X"
       },
       "genre": "Drama",
       "posterPath": "/iBGRbLvg6kVc7wbS8wDdVHq6otm.jpg",
@@ -194,11 +223,31 @@
       "name": "Deadpool",
       "awards": {
         "gg": "X",
-        "pga": "X"
+        "pga": "X",
+        "wga": "X"
       },
       "genre": "Comedy",
       "posterPath": "/3E53WEZJqP6aM84D8CckXx4pIHw.jpg",
       "tmdbId": 293660
+    },
+    {
+      "name": "Loving",
+      "awards": {
+        "critics": "X",
+        "wga": "X"
+      },
+      "posterPath": "/1UMJtvGBp4egZxWgQGpywI5bEYZ.jpg",
+      "tmdbId": 822372
+    },
+    {
+      "name": "Nocturnal Animals",
+      "awards": {
+        "wga": "X",
+        "adg": "X"
+      },
+      "screenplay_type": "adapted",
+      "posterPath": "/mdLDgQBD0va09npSQX5Zgo2evXM.jpg",
+      "tmdbId": 340666
     },
     {
       "name": "I, Daniel Blake",
@@ -244,12 +293,68 @@
       "tmdbId": 334533
     },
     {
-      "name": "Loving",
+      "name": "Café Society",
       "awards": {
-        "critics": "X"
+        "adg": "X"
       },
-      "posterPath": "/teNPeDIRGWxtvMaJsNa7lw5IgiL.jpg",
-      "tmdbId": 339419
+      "posterPath": "/q9fohCRpQ7m8OTyi82fxa3B86te.jpg",
+      "tmdbId": 339397
+    },
+    {
+      "name": "Jackie",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/tG4DDc5f3LkrUqRNr5no8OKUCGC.jpg",
+      "tmdbId": 934395
+    },
+    {
+      "name": "Doctor Strange",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/xf8PbyQcR5ucXErmZNzdKR0s8ya.jpg",
+      "tmdbId": 284052
+    },
+    {
+      "name": "Fantastic Beasts and Where to Find Them",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/fLsaFKExQt05yqjoAvKsmOMYvJR.jpg",
+      "tmdbId": 259316
+    },
+    {
+      "name": "Rogue One: A Star Wars Story",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/i0yw1mFbB7sNGHCs7EXZPzFkdA1.jpg",
+      "tmdbId": 330459
+    },
+    {
+      "name": "Certain Women",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/1A5cWPvPnw7vY1Dfg3DSyLG0k96.jpg",
+      "tmdbId": 340487
+    },
+    {
+      "name": "Everybody Wants Some!!",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/vAIFZ8bw0spSvcIYgfuX99B3H2w.jpg",
+      "tmdbId": 295699
+    },
+    {
+      "name": "Paterson",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/AuJ1ZlfqwuAr9H5Qr1U9KILylse.jpg",
+      "tmdbId": 370755
     }
   ],
   "best-director": [
@@ -260,8 +365,8 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "critics": "Y",
         "dga": "Y",
+        "critics": "Y",
         "lafca": "X"
       },
       "profilePath": "/14kRZ3XxNMyBv717YQSXr3wCucy.jpg",
@@ -272,9 +377,9 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "critics": "X",
-        "dga": "X",
         "nbr": "Y",
+        "dga": "X",
+        "critics": "X",
         "lafca": "Y"
       },
       "film": "Moonlight"
@@ -289,13 +394,22 @@
       "tmdbId": 56375
     },
     {
+      "name": "Andrei Konchalovsky",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Paradise",
+      "profilePath": "/wPQmCJ6tirAkfPMg7vNAQUeK0yw.jpg",
+      "tmdbId": 58728
+    },
+    {
       "name": "Denis Villeneuve",
       "film": "Arrival",
       "awards": {
         "bafta": "X",
         "oscar": "X",
-        "critics": "X",
-        "dga": "X"
+        "dga": "X",
+        "critics": "X"
       },
       "profilePath": "/zdDx9Xs93UIrJFWYApYR28J8M6b.jpg",
       "tmdbId": 137427
@@ -339,6 +453,22 @@
       "tmdbId": 15488
     },
     {
+      "name": "Kenneth Lonergan",
+      "film": "Manchester By The Sea",
+      "awards": {
+        "dga": "X"
+      }
+    },
+    {
+      "name": "Garth Davis",
+      "film": "Lion",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/lqxIIqqe7T64Oj6I9mofH2irDfd.jpg",
+      "tmdbId": 1173102
+    },
+    {
       "name": "David Mackenzie",
       "film": "Hell or High Water",
       "awards": {
@@ -355,22 +485,6 @@
       },
       "profilePath": "/jj2Gcobpopokal0YstuCQW0ldJ4.jpg",
       "tmdbId": 5292
-    },
-    {
-      "name": "Kenneth Lonergan",
-      "film": "Manchester By The Sea",
-      "awards": {
-        "dga": "X"
-      }
-    },
-    {
-      "name": "Garth Davis",
-      "film": "Lion",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/lqxIIqqe7T64Oj6I9mofH2irDfd.jpg",
-      "tmdbId": 1173102
     }
   ],
   "best-actor": [
@@ -383,8 +497,8 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "X",
-        "critics": "Y",
         "nbr": "Y",
+        "critics": "Y",
         "lafca": "X"
       },
       "profilePath": "/304ilSygaCRWykoBWAL67TOw8g9.jpg",
@@ -458,13 +572,6 @@
       "tmdbId": 27428
     },
     {
-      "name": "Oscar Martínez",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "Il cittadino illustre"
-    },
-    {
       "name": "Adam Driver",
       "awards": {
         "lafca": "Y"
@@ -472,6 +579,31 @@
       "film": "Paterson",
       "profilePath": "/me7eifBie8S7gFwhZfkF3jROL99.jpg",
       "tmdbId": 1023139
+    },
+    {
+      "name": "Anya Taylor-Joy",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Witch as Thomasin\nLily Gladstone",
+      "profilePath": "/qYNofOjlRke2MlJVihmJmEdQI4v.jpg",
+      "tmdbId": 1397778
+    },
+    {
+      "name": "Casey Affleck",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Manchester by the Sea as Lee Chandler\nJeff Bridges",
+      "profilePath": "/304ilSygaCRWykoBWAL67TOw8g9.jpg",
+      "tmdbId": 1893
+    },
+    {
+      "name": "Oscar Martínez",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Il cittadino illustre"
     },
     {
       "name": "Andrew Garfield",
@@ -637,6 +769,78 @@
       "film": "Silence",
       "profilePath": "/dQ5X5nSobSgRFKK7lo8j41jtw5c.jpg",
       "tmdbId": 143037
+    },
+    {
+      "name": "Lily Gladstone",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Certain Women as Jamie",
+      "profilePath": "/zYAN84WqZv2sbVE2JDkcWoXGoF7.jpg",
+      "tmdbId": 1183917
+    },
+    {
+      "name": "Lucas Hedges",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Manchester by the Sea as Patrick Chandler",
+      "profilePath": "/8WP1uXUwm6Z1vzrMaIiKj89M6kX.jpg",
+      "tmdbId": 1105079
+    },
+    {
+      "name": "Royalty Hightower",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "The Fits as Toni",
+      "profilePath": "/ykYMaEL9qtm8y0X1TQt8rEKjrwS.jpg",
+      "tmdbId": 1507050
+    },
+    {
+      "name": "Sasha Lane",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "American Honey as Star",
+      "profilePath": "/s77bn2SJAagmRWEVFR5zwyUKH1N.jpg",
+      "tmdbId": 1535218
+    },
+    {
+      "name": "Jeff Bridges",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Hell or High Water as Marcus Hamilton",
+      "profilePath": "/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg",
+      "tmdbId": 1229
+    },
+    {
+      "name": "Adam Driver",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Paterson as Paterson",
+      "profilePath": "/me7eifBie8S7gFwhZfkF3jROL99.jpg",
+      "tmdbId": 1023139
+    },
+    {
+      "name": "Joel Edgerton",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Loving as Richard Loving",
+      "profilePath": "/2YzeeiYUbI94Ywc7MVMo1NcN6jf.jpg",
+      "tmdbId": 33192
+    },
+    {
+      "name": "Craig Robinson",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Morris from America as Curtis Gentry",
+      "profilePath": "/mTyTrOWUSOBJMOlDpnd4OYx7FlJ.jpg",
+      "tmdbId": 64342
     }
   ],
   "best-actress": [
@@ -690,8 +894,8 @@
         "bafta": "X",
         "gg": "X",
         "sag": "X",
-        "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X"
       },
       "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
       "tmdbId": 9273
@@ -718,6 +922,15 @@
       "film": "Certain Women",
       "profilePath": "/zYAN84WqZv2sbVE2JDkcWoXGoF7.jpg",
       "tmdbId": 1183917
+    },
+    {
+      "name": "Isabelle Huppert",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Elle as Michèle Leblanc\nKate Beckinsale",
+      "profilePath": "/3YQwWkpNKQeV5NUmdCH76Ne1gDP.jpg",
+      "tmdbId": 17882
     },
     {
       "name": "Michelle Williams",
@@ -889,6 +1102,42 @@
       "film": "Christine",
       "profilePath": "/mpWtqob1BRKz4bpX8h8a9hdmIPv.jpg",
       "tmdbId": 15556
+    },
+    {
+      "name": "Kate Beckinsale",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Love & Friendship as Lady Susan Vernon",
+      "profilePath": "/nUZuC2chd5PVw2tLxePZ6uaLbhx.jpg",
+      "tmdbId": 3967
+    },
+    {
+      "name": "Annette Bening",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "20th Century Women as Dorothea Field",
+      "profilePath": "/sBiiRwAVXd0FCRZ87m0I89qGBvy.jpg",
+      "tmdbId": 516
+    },
+    {
+      "name": "Ruth Negga",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Loving as Mildred Loving",
+      "profilePath": "/eUnSUgbD050mKSCqOJvXplAiF9S.jpg",
+      "tmdbId": 17018
+    },
+    {
+      "name": "Natalie Portman",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Jackie as Jacqueline Kennedy Onassis",
+      "profilePath": "/edPU5HxncLWa1YkgRPNkSd68ONG.jpg",
+      "tmdbId": 524
     }
   ]
 }

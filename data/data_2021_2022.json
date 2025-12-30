@@ -1,6 +1,21 @@
 {
   "best-film": [
     {
+      "name": "CODA",
+      "awards": {
+        "gg": "X",
+        "oscar": "Y",
+        "afi": "Y",
+        "sag": "Y",
+        "critics": "X",
+        "pga": "Y",
+        "wga": "Y"
+      },
+      "genre": "Drama",
+      "posterPath": "/BzVjmm8l23rPsijLiNLUzuQtyd.jpg",
+      "tmdbId": 776503
+    },
+    {
       "name": "The Power of the Dog",
       "awards": {
         "gg": "Y",
@@ -16,18 +31,39 @@
       "tmdbId": 600583
     },
     {
-      "name": "CODA",
+      "name": "Don't Look Up",
       "awards": {
         "gg": "X",
-        "oscar": "Y",
+        "bafta": "X",
+        "oscar": "X",
         "afi": "Y",
-        "sag": "Y",
+        "sag": "X",
         "critics": "X",
-        "pga": "Y"
+        "nbr": "Y",
+        "pga": "X",
+        "wga": "Y",
+        "adg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
+      "tmdbId": 646380
+    },
+    {
+      "name": "Dune",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X",
+        "wga": "X",
+        "adg": "Y"
       },
       "genre": "Drama",
-      "posterPath": "/BzVjmm8l23rPsijLiNLUzuQtyd.jpg",
-      "tmdbId": 776503
+      "posterPath": "/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+      "tmdbId": 438631
     },
     {
       "name": "West Side Story",
@@ -37,11 +73,43 @@
         "afi": "Y",
         "critics": "X",
         "nbr": "Y",
-        "pga": "X"
+        "pga": "X",
+        "wga": "X",
+        "adg": "X"
       },
       "genre": "Comedy",
       "posterPath": "/yfz3IUoYYSY32tkb97HlUBGFsnh.jpg",
       "tmdbId": 511809
+    },
+    {
+      "name": "Nightmare Alley",
+      "awards": {
+        "oscar": "X",
+        "afi": "Y",
+        "critics": "X",
+        "nbr": "Y",
+        "wga": "X",
+        "adg": "Y"
+      },
+      "posterPath": "/vfn1feL0V9HNSXuLLpaxAW8O6LO.jpg",
+      "tmdbId": 597208
+    },
+    {
+      "name": "Licorice Pizza",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X",
+        "wga": "X",
+        "adg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/ivXtvzfliGvoJ1DhSHIGyYBToWe.jpg",
+      "tmdbId": 718032
     },
     {
       "name": "Belfast",
@@ -60,37 +128,6 @@
       "tmdbId": 777270
     },
     {
-      "name": "Don't Look Up",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "afi": "Y",
-        "sag": "X",
-        "critics": "X",
-        "nbr": "Y",
-        "pga": "X"
-      },
-      "genre": "Comedy",
-      "posterPath": "/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
-      "tmdbId": 646380
-    },
-    {
-      "name": "Dune",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "afi": "Y",
-        "critics": "X",
-        "nbr": "Y",
-        "pga": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
-      "tmdbId": 438631
-    },
-    {
       "name": "King Richard",
       "awards": {
         "gg": "X",
@@ -99,43 +136,19 @@
         "sag": "X",
         "critics": "X",
         "nbr": "Y",
-        "pga": "X"
+        "pga": "X",
+        "wga": "X"
       },
       "genre": "Drama",
       "posterPath": "/2dfujXrxePtYJPiPHj1HkAFQvpu.jpg",
       "tmdbId": 614917
     },
     {
-      "name": "Licorice Pizza",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "afi": "Y",
-        "critics": "X",
-        "nbr": "Y",
-        "pga": "X"
-      },
-      "genre": "Comedy",
-      "posterPath": "/ivXtvzfliGvoJ1DhSHIGyYBToWe.jpg",
-      "tmdbId": 718032
-    },
-    {
-      "name": "Nightmare Alley",
-      "awards": {
-        "oscar": "X",
-        "afi": "Y",
-        "critics": "X",
-        "nbr": "Y"
-      },
-      "posterPath": "/vfn1feL0V9HNSXuLLpaxAW8O6LO.jpg",
-      "tmdbId": 597208
-    },
-    {
       "name": "The Tragedy of Macbeth",
       "awards": {
         "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "adg": "X"
       },
       "posterPath": "/tDNJEhcLbX3jIk3BMCur9pCdaVD.jpg",
       "tmdbId": 591538
@@ -184,14 +197,6 @@
       "tmdbId": 763329
     },
     {
-      "name": "La scelta di Anne - L'Événement",
-      "awards": {
-        "venice": "Y"
-      },
-      "posterPath": "/f2lTAmLYpWpd8JxtJrMXFFGV9gZ.jpg",
-      "tmdbId": 793998
-    },
-    {
       "name": "Drive My Car",
       "awards": {
         "lafca": "Y"
@@ -201,14 +206,65 @@
       "tmdbId": 758866
     },
     {
+      "name": "No Time to Die",
+      "awards": {
+        "adg": "Y"
+      },
+      "posterPath": "/iUgygt3fscRoKWCV1d0C7FbM9TP.jpg",
+      "tmdbId": 370172
+    },
+    {
+      "name": "The Lost Daughter\nThe Green Knight\nPassing\nPig\nTest Pattern",
+      "awards": {
+        "gotham": "Y"
+      }
+    },
+    {
+      "name": "La scelta di Anne - L'Événement",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/f2lTAmLYpWpd8JxtJrMXFFGV9gZ.jpg",
+      "tmdbId": 793998
+    },
+    {
       "name": "tick, tick... BOOM!",
       "awards": {
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "wga": "X"
       },
       "genre": "Comedy",
       "posterPath": "/DPmfcuR8fh8ROYXgdjrAjSGA0o.jpg",
       "tmdbId": 537116
+    },
+    {
+      "name": "Being the Ricardos",
+      "awards": {
+        "pga": "X",
+        "wga": "X"
+      },
+      "posterPath": "/oztBLWdRk5gApYmNdADXvXkLT5m.jpg",
+      "tmdbId": 517088
+    },
+    {
+      "name": "The French Dispatch",
+      "awards": {
+        "wga": "X",
+        "adg": "X"
+      },
+      "screenplay_type": "original",
+      "posterPath": "/6JXR3KJH5roiBCjWFt09xfgxHZc.jpg",
+      "tmdbId": 542178
+    },
+    {
+      "name": "The Green Knight",
+      "awards": {
+        "adg": "X",
+        "gotham": "X"
+      },
+      "posterPath": "/if4hw3Ou5Sav9Em7WWHj66mnywp.jpg",
+      "tmdbId": 559907
     },
     {
       "name": "Cyrano",
@@ -236,12 +292,76 @@
       "tmdbId": 644495
     },
     {
-      "name": "Being the Ricardos",
+      "name": "Candyman",
       "awards": {
-        "pga": "X"
+        "adg": "X"
       },
-      "posterPath": "/oztBLWdRk5gApYmNdADXvXkLT5m.jpg",
-      "tmdbId": 517088
+      "posterPath": "/qeV15PpR8jFJA9TF9JPXIoqEgp1.jpg",
+      "tmdbId": 565028
+    },
+    {
+      "name": "In the Heights",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/RO4KoJyoQMQzh9z76d4v4FJMmJ.jpg",
+      "tmdbId": 467909
+    },
+    {
+      "name": "The Lost Daughter",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/t1oLNRFixpFOVsyz1HCqCUW3wiW.jpg",
+      "tmdbId": 554230
+    },
+    {
+      "name": "Cruella",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/hjS9mH8KvRiGHgjk6VUZH7OT0Ng.jpg",
+      "tmdbId": 337404
+    },
+    {
+      "name": "Ghostbusters: Afterlife",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/sg4xJaufDiQl7caFEskBtQXfD4x.jpg",
+      "tmdbId": 425909
+    },
+    {
+      "name": "Shang-Chi and the Legend of the Ten Rings",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/d08HqqeBQSwN8i8MEvpsZ8Cb438.jpg",
+      "tmdbId": 566525
+    },
+    {
+      "name": "Passing",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/t4tYUT1oSWOP6XKZBoclPAG96KP.jpg",
+      "tmdbId": 541524
+    },
+    {
+      "name": "Pig",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/1InMm4Mbjx8wCKvIy5gglo5i3HN.jpg",
+      "tmdbId": 635731
+    },
+    {
+      "name": "Test Pattern",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/26TUusJoyE5G1KVpu2IijUi9hbi.jpg",
+      "tmdbId": 637254
     }
   ],
   "best-director": [
@@ -439,15 +559,6 @@
       "tmdbId": 37625
     },
     {
-      "name": "John Arcilla",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "On the Job 2: The Missing 8",
-      "profilePath": "/2K4vH6uYsA3gWABQsdlqotyMZBk.jpg",
-      "tmdbId": 625924
-    },
-    {
       "name": "Simon Rex",
       "awards": {
         "lafca": "Y"
@@ -464,6 +575,33 @@
       "film": "Titane",
       "profilePath": "/tjRKMKfsIH7MrqtN7cMPIZubSXa.jpg",
       "tmdbId": 5443
+    },
+    {
+      "name": "Frankie Faison",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Killing of Kenneth Chamberlain as Kenneth Chamberlain Sr. (TIE)\nMichael Greyeyes",
+      "profilePath": "/bNHMANGaSqcki768UVAdYiYdawZ.jpg",
+      "tmdbId": 13936
+    },
+    {
+      "name": "Troy Kotsur",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "CODA as Frank Rossi\nReed Birney",
+      "profilePath": "/24K3og12jGBGL9dqH5OYFdjF9wu.jpg",
+      "tmdbId": 1571661
+    },
+    {
+      "name": "John Arcilla",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "On the Job 2: The Missing 8",
+      "profilePath": "/2K4vH6uYsA3gWABQsdlqotyMZBk.jpg",
+      "tmdbId": 625924
     },
     {
       "name": "Benedict Cumberbatch",
@@ -703,6 +841,67 @@
       },
       "profilePath": "/y1RtezurZYveYkVNRht7CwEgSYY.jpg",
       "tmdbId": 2963
+    },
+    {
+      "name": "Michael Greyeyes",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Wild Indian as Makwa",
+      "profilePath": "/jy45vhkNT0s7gtf1dRIfFL77YWg.jpg",
+      "tmdbId": 154647
+    },
+    {
+      "name": "Oscar Isaac",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "The Card Counter as William \"Tell\" Tillich",
+      "profilePath": "/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg",
+      "tmdbId": 25072
+    },
+    {
+      "name": "Joaquin Phoenix",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "C'mon C'mon as Johnny",
+      "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
+      "tmdbId": 73421
+    },
+    {
+      "name": "Simon Rex",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Red Rocket as Mikey Saber",
+      "profilePath": "/hpFwRpxrJt7k4ccWEwc37xRZ8pT.jpg",
+      "tmdbId": 35548
+    },
+    {
+      "name": "Tessa Thompson as Irene \"Reenie\" Redfield",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Passing"
+    },
+    {
+      "name": "Reed Birney",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Mass as Richard",
+      "profilePath": "/dfLgNLUt6Xs2MJJTi6B1iWdXjU6.jpg",
+      "tmdbId": 163774
+    },
+    {
+      "name": "Colman Domingo",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Zola as Abegunde \"X\" Olawale",
+      "profilePath": "/r2usluS5vx7O7npAYfaAFfNGxc8.jpg",
+      "tmdbId": 91671
     }
   ],
   "best-actress": [
@@ -778,6 +977,15 @@
       },
       "profilePath": "/5qimZvgfU306k1SgX6ChjoX0EHB.jpg",
       "tmdbId": 33450
+    },
+    {
+      "name": "Olivia Colman",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Lost Daughter as Leda Caruso (TIE)",
+      "profilePath": "/lawJUdbLb1YW0niaYjiVGR9IBG8.jpg",
+      "tmdbId": 39187
     },
     {
       "name": "Penélope Cruz",
@@ -1020,6 +1228,69 @@
       },
       "profilePath": "/zB0M77jr7tmsmWHEr2bWO2Xq66L.jpg",
       "tmdbId": 13299
+    },
+    {
+      "name": "Brittany S. Hall",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Test Pattern as Renesha",
+      "profilePath": "/sIic0JYph8yUZndRZj5hwvvdCQY.jpg",
+      "tmdbId": 2088477
+    },
+    {
+      "name": "Taylour Paige",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Zola as Aziah \"Zola\" King",
+      "profilePath": "/KTX1trmIfVa7MFkZmES1MVjl79.jpg",
+      "tmdbId": 1335818
+    },
+    {
+      "name": "Lili Taylor",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Paper Spiders as Dawn",
+      "profilePath": "/vWcMUi3QyvCr3QuFbjtwyPx7WtU.jpg",
+      "tmdbId": 3127
+    },
+    {
+      "name": "Jessie Buckley",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "The Lost Daughter as Young Leda Caruso",
+      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
+      "tmdbId": 1498158
+    },
+    {
+      "name": "Gaby Hoffmann",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "C'mon C'mon as Viv",
+      "profilePath": "/bMdxuHqCJkf4dAFKleYRs2GXDN9.jpg",
+      "tmdbId": 12930
+    },
+    {
+      "name": "Marlee Matlin",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "CODA as Jackie Rossi",
+      "profilePath": "/1iV3yA07kdj7RFj2yyzwO2T6M8o.jpg",
+      "tmdbId": 19797
+    },
+    {
+      "name": "Ruth Negga",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Passing as Clare Bellew",
+      "profilePath": "/eUnSUgbD050mKSCqOJvXplAiF9S.jpg",
+      "tmdbId": 17018
     }
   ]
 }

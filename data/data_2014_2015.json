@@ -3,18 +3,66 @@
     {
       "name": "Boyhood",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "X",
-        "bafta": "Y",
         "afi": "Y",
         "sag": "X",
         "critics": "Y",
         "nbr": "Y",
-        "pga": "X"
+        "pga": "X",
+        "wga": "X",
+        "gotham": "X"
       },
-      "genre": "Drama",
       "posterPath": "/2BvtvDUyxiMJ4dmKfiQf4qdOHQN.jpg",
       "tmdbId": 85350
+    },
+    {
+      "name": "The Grand Budapest Hotel",
+      "awards": {
+        "bafta": "X",
+        "gg": "Y",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X",
+        "lafca": "X",
+        "pga": "X",
+        "wga": "Y",
+        "adg": "Y",
+        "gotham": "X"
+      },
+      "posterPath": "/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
+      "tmdbId": 120467
+    },
+    {
+      "name": "The Imitation Game",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "sag": "X",
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X",
+        "wga": "Y",
+        "adg": "X"
+      },
+      "posterPath": "/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg",
+      "tmdbId": 205596
+    },
+    {
+      "name": "Birdman",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "sag": "Y",
+        "critics": "X",
+        "nbr": "Y",
+        "adg": "Y"
+      },
+      "posterPath": "/9n0u3Ee7OUjgeyF5kIwahxkf4xm.jpg",
+      "tmdbId": 435092
     },
     {
       "name": "Birdman or (The Unexpected Virtue of Ignorance)",
@@ -27,41 +75,14 @@
       "tmdbId": 194662
     },
     {
-      "name": "The Imitation Game",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "bafta": "X",
-        "afi": "Y",
-        "sag": "X",
-        "critics": "X",
-        "nbr": "Y",
-        "pga": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg",
-      "tmdbId": 205596
-    },
-    {
-      "name": "Birdman",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "sag": "Y",
-        "critics": "X",
-        "nbr": "Y"
-      },
-      "genre": "Comedy",
-      "posterPath": "/9n0u3Ee7OUjgeyF5kIwahxkf4xm.jpg",
-      "tmdbId": 435092
-    },
-    {
       "name": "American Sniper",
       "awards": {
         "oscar": "X",
         "afi": "Y",
         "nbr": "Y",
-        "pga": "X"
+        "pga": "X",
+        "wga": "X",
+        "adg": "X"
       },
       "posterPath": "/i1U46OwMc6vlm7OoSUKfqUH615e.jpg",
       "tmdbId": 190859
@@ -72,7 +93,9 @@
         "afi": "Y",
         "critics": "X",
         "nbr": "Y",
-        "pga": "X"
+        "pga": "X",
+        "wga": "X",
+        "adg": "X"
       },
       "posterPath": "/j9HrX8f7GbZQm1BrBiR40uFQZSb.jpg",
       "tmdbId": 242582
@@ -82,25 +105,48 @@
       "awards": {
         "afi": "Y",
         "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "adg": "X"
       },
       "posterPath": "/vAlHUjHwLWMV5mg4epGR9WSIfiy.jpg",
       "tmdbId": 227306
     },
     {
-      "name": "The Grand Budapest Hotel",
+      "name": "Foxcatcher",
       "awards": {
-        "gg": "Y",
+        "gg": "X",
+        "afi": "Y",
+        "pga": "X",
+        "wga": "X",
+        "adg": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/w6Sl079QtUcQ9dVQ2RP6aN9NBXx.jpg",
+      "tmdbId": 87492
+    },
+    {
+      "name": "Whiplash",
+      "awards": {
         "oscar": "X",
-        "bafta": "X",
-        "sag": "X",
+        "afi": "Y",
         "critics": "X",
         "pga": "X",
-        "lafca": "X"
+        "wga": "X"
       },
-      "genre": "Comedy",
-      "posterPath": "/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
-      "tmdbId": 120467
+      "posterPath": "/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+      "tmdbId": 244786
+    },
+    {
+      "name": "Gone Girl",
+      "awards": {
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X",
+        "wga": "X",
+        "adg": "X"
+      },
+      "posterPath": "/ts996lKsxvjkO2yiYG0ht4qAicO.jpg",
+      "tmdbId": 210577
     },
     {
       "name": "Selma",
@@ -115,52 +161,41 @@
       "tmdbId": 273895
     },
     {
-      "name": "Whiplash",
-      "awards": {
-        "oscar": "X",
-        "afi": "Y",
-        "critics": "X",
-        "pga": "X"
-      },
-      "posterPath": "/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
-      "tmdbId": 244786
-    },
-    {
-      "name": "Foxcatcher",
-      "awards": {
-        "gg": "X",
-        "afi": "Y",
-        "pga": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/w6Sl079QtUcQ9dVQ2RP6aN9NBXx.jpg",
-      "tmdbId": 87492
-    },
-    {
-      "name": "Gone Girl",
-      "awards": {
-        "critics": "X",
-        "nbr": "Y",
-        "pga": "X"
-      },
-      "posterPath": "/ts996lKsxvjkO2yiYG0ht4qAicO.jpg",
-      "tmdbId": 210577
-    },
-    {
       "name": "Into the Woods",
       "awards": {
         "gg": "X",
-        "afi": "Y"
+        "afi": "Y",
+        "adg": "X"
       },
       "genre": "Comedy"
     },
     {
       "name": "Interstellar",
       "awards": {
-        "afi": "Y"
+        "afi": "Y",
+        "adg": "X"
       },
       "posterPath": "/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
       "tmdbId": 157336
+    },
+    {
+      "name": "Inherent Vice",
+      "awards": {
+        "nbr": "Y",
+        "adg": "X"
+      },
+      "posterPath": "/pfVua7TzzttOh3RTOuBqT7xN0oY.jpg",
+      "tmdbId": 171274
+    },
+    {
+      "name": "Guardians of the Galaxy",
+      "awards": {
+        "wga": "X",
+        "adg": "Y"
+      },
+      "screenplay_type": "adapted",
+      "posterPath": "/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
+      "tmdbId": 118340
     },
     {
       "name": "A Most Violent Year",
@@ -179,28 +214,12 @@
       "tmdbId": 228150
     },
     {
-      "name": "Inherent Vice",
-      "awards": {
-        "nbr": "Y"
-      },
-      "posterPath": "/pfVua7TzzttOh3RTOuBqT7xN0oY.jpg",
-      "tmdbId": 171274
-    },
-    {
       "name": "The Lego Movie",
       "awards": {
         "nbr": "Y"
       },
       "posterPath": "/lbctonEnewCYZ4FYoTZhs8cidAl.jpg",
       "tmdbId": 137106
-    },
-    {
-      "name": "Un piccione seduto su un ramo riflette sull'esistenza",
-      "awards": {
-        "venice": "Y"
-      },
-      "posterPath": "/h2uRIr0fNpZbTGH5youi7MDRL2T.jpg",
-      "tmdbId": 110390
     },
     {
       "name": "Boyhood",
@@ -212,16 +231,30 @@
       "tmdbId": 85350
     },
     {
+      "name": "Birdman\nBoyhood\nThe Grand Budapest Hotel\nLove Is Strange\nUnder the Skin",
+      "awards": {
+        "gotham": "Y"
+      }
+    },
+    {
+      "name": "Un piccione seduto su un ramo riflette sull'esistenza",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/h2uRIr0fNpZbTGH5youi7MDRL2T.jpg",
+      "tmdbId": 110390
+    },
+    {
       "name": "The Theory of Everything",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
         "sag": "X",
         "critics": "X",
-        "pga": "X"
+        "pga": "X",
+        "adg": "X"
       },
-      "genre": "Drama",
       "posterPath": "/kJuL37NTE51zVP3eG5aGMyKAIlh.jpg",
       "tmdbId": 266856
     },
@@ -242,20 +275,61 @@
       "genre": "Comedy",
       "posterPath": "/1bb7MTHCIPhpKZFysDpxNaNrdMk.jpg",
       "tmdbId": 239563
+    },
+    {
+      "name": "Wild",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "adapted",
+      "posterPath": "/ohhWI4Xwf4m4HjbQiIkyAhLekUy.jpg",
+      "tmdbId": 228970
+    },
+    {
+      "name": "Captain America: The Winter Soldier",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg",
+      "tmdbId": 100402
+    },
+    {
+      "name": "Dawn of the Planet of the Apes",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/kScdQEwS9jPEdnO23XjGAtaoRcT.jpg",
+      "tmdbId": 119450
+    },
+    {
+      "name": "Love Is Strange",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/5nkM5aUSTMvXudUB3M0FgZ6voqD.jpg",
+      "tmdbId": 244268
+    },
+    {
+      "name": "Under the Skin",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/55wmcXJIDYITr7JDijJTdvwSaAv.jpg",
+      "tmdbId": 97370
     }
   ],
   "best-director": [
     {
       "name": "Richard Linklater",
+      "film": "Boyhood",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "X",
-        "bafta": "Y",
         "critics": "Y",
         "dga": "X",
         "lafca": "Y"
       },
-      "film": "Boyhood",
       "profilePath": "/xSctxeZQzQbZoaxIvcDeHlDjbiN.jpg",
       "tmdbId": 564
     },
@@ -296,15 +370,15 @@
     },
     {
       "name": "Wes Anderson",
+      "film": "The Grand Budapest Hotel",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
         "critics": "X",
         "dga": "X",
         "lafca": "X"
       },
-      "film": "The Grand Budapest Hotel",
       "profilePath": "/s03CeUeC5yAXyB1acqP0zGNo2SC.jpg",
       "tmdbId": 5655
     },
@@ -349,15 +423,6 @@
       "tmdbId": 77965
     },
     {
-      "name": "Bennett Miller",
-      "film": "Foxcatcher",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/r1XGBl8TYNuCm7APjWN8npP4DEw.jpg",
-      "tmdbId": 5345
-    },
-    {
       "name": "Alejandro González Iñárritu",
       "film": "Birdman",
       "awards": {
@@ -385,6 +450,15 @@
       "tmdbId": 76998
     },
     {
+      "name": "Bennett Miller",
+      "film": "Foxcatcher",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/r1XGBl8TYNuCm7APjWN8npP4DEw.jpg",
+      "tmdbId": 5345
+    },
+    {
       "name": "Angelina Jolie",
       "film": "Unbroken",
       "awards": {
@@ -397,44 +471,44 @@
   "best-actor": [
     {
       "name": "J. K. Simmons",
+      "film": "Whiplash",
+      "role": "Supporting",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "bafta": "Y",
         "sag": "Y",
         "critics": "Y",
         "lafca": "Y"
       },
-      "film": "Whiplash",
-      "role": "Supporting",
       "profilePath": "/ScmKoJ9eiSUOthAt1PDNLi8Fkw.jpg",
       "tmdbId": 18999
     },
     {
       "name": "Eddie Redmayne",
+      "film": "The Theory of Everything",
+      "role": "Leading",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "bafta": "Y",
         "sag": "Y",
         "critics": "X"
       },
-      "film": "The Theory of Everything",
-      "role": "Leading",
       "profilePath": "/fSvG7qzoBBnJUmgtIuMgrK3EQPN.jpg",
       "tmdbId": 37632
     },
     {
       "name": "Michael Keaton",
+      "film": "Birdman",
+      "role": "Leading",
       "awards": {
-        "gg": "Y",
         "bafta": "X",
+        "gg": "Y",
         "sag": "X",
         "critics": "Y",
         "lafca": "X"
       },
-      "film": "Birdman",
-      "role": "Leading",
       "profilePath": "/w6fwAQ7IwEFqtzByA1Wyz2Dwp7R.jpg",
       "tmdbId": 2232
     },
@@ -448,15 +522,6 @@
       "tmdbId": 25072
     },
     {
-      "name": "Adam Driver",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "Hungry Hearts",
-      "profilePath": "/me7eifBie8S7gFwhZfkF3jROL99.jpg",
-      "tmdbId": 1023139
-    },
-    {
       "name": "Tom Hardy",
       "awards": {
         "lafca": "Y"
@@ -466,86 +531,113 @@
       "tmdbId": 2524
     },
     {
-      "name": "Benedict Cumberbatch",
+      "name": "Tessa Thompson",
       "awards": {
+        "gotham": "Y"
+      },
+      "film": "Dear White People as Samantha \"Sam\" White\nRiz Ahmed",
+      "profilePath": "/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
+      "tmdbId": 62561
+    },
+    {
+      "name": "Michael Keaton",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Birdman as Riggan Thomson\nBill Hader",
+      "profilePath": "/w6fwAQ7IwEFqtzByA1Wyz2Dwp7R.jpg",
+      "tmdbId": 2232
+    },
+    {
+      "name": "Adam Driver",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Hungry Hearts",
+      "profilePath": "/me7eifBie8S7gFwhZfkF3jROL99.jpg",
+      "tmdbId": 1023139
+    },
+    {
+      "name": "Benedict Cumberbatch",
+      "film": "The Imitation Game",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
         "sag": "X",
         "critics": "X"
       },
-      "film": "The Imitation Game",
-      "role": "Leading",
       "profilePath": "/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg",
       "tmdbId": 71580
     },
     {
-      "name": "Ethan Hawke",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "film": "Boyhood",
-      "role": "Supporting",
-      "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
-      "tmdbId": 569
-    },
-    {
       "name": "Edward Norton",
+      "film": "Birdman",
+      "role": "Supporting",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "X"
       },
-      "film": "Birdman",
-      "role": "Supporting",
       "profilePath": "/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg",
       "tmdbId": 819
     },
     {
-      "name": "Mark Ruffalo",
+      "name": "Ethan Hawke",
+      "film": "Boyhood",
+      "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
         "sag": "X",
         "critics": "X"
       },
+      "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
+      "tmdbId": 569
+    },
+    {
+      "name": "Mark Ruffalo",
       "film": "Foxcatcher",
       "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
       "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
       "tmdbId": 103
     },
     {
-      "name": "Steve Carell",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "bafta": "X",
-        "sag": "X"
-      },
-      "film": "Foxcatcher",
-      "role": "Leading",
-      "profilePath": "/ULqKHMosznI7U2JyRZYMvSxUvq.jpg",
-      "tmdbId": 4495
-    },
-    {
       "name": "Jake Gyllenhaal",
+      "film": "Nightcrawler",
+      "role": "Leading",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X"
       },
-      "film": "Nightcrawler",
-      "role": "Leading",
       "profilePath": "/btORQRDyGCF0KNweGGYpmQXZK3P.jpg",
       "tmdbId": 131
+    },
+    {
+      "name": "Steve Carell",
+      "film": "Foxcatcher",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X"
+      },
+      "profilePath": "/ULqKHMosznI7U2JyRZYMvSxUvq.jpg",
+      "tmdbId": 4495
     },
     {
       "name": "Robert Duvall",
@@ -562,13 +654,13 @@
     },
     {
       "name": "Ralph Fiennes",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "critics": "X"
-      },
       "film": "The Grand Budapest Hotel",
       "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X"
+      },
       "profilePath": "/u29BOqiV5GCQ8k8WUJM50i9xlBf.jpg",
       "tmdbId": 5469
     },
@@ -652,59 +744,129 @@
       },
       "profilePath": "/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg",
       "tmdbId": 16851
+    },
+    {
+      "name": "Riz Ahmed",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Nightcrawler as Rick",
+      "profilePath": "/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg",
+      "tmdbId": 53240
+    },
+    {
+      "name": "Macon Blair",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Blue Ruin as Dwight Evans",
+      "profilePath": "/sNhgAh7TBBYNGR2ExnINXIQ4U5x.jpg",
+      "tmdbId": 209513
+    },
+    {
+      "name": "Ellar Coltrane",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Boyhood as Mason Evans Jr."
+    },
+    {
+      "name": "Joey King",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Wish I Was Here as Grace",
+      "profilePath": "/94c69mPYSK9jFsAEu0OKB7Qs684.jpg",
+      "tmdbId": 125025
+    },
+    {
+      "name": "Jenny Slate",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Obvious Child as Donna Stern",
+      "profilePath": "/aqH8MCnT3O5Od3OfZR8LClSP7UB.jpg",
+      "tmdbId": 213001
+    },
+    {
+      "name": "Bill Hader",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "The Skeleton Twins as Milo Dean",
+      "profilePath": "/qyT50vQ9PQIEctE1IxDTEsBKstU.jpg",
+      "tmdbId": 19278
+    },
+    {
+      "name": "Ethan Hawke",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Boyhood as Mason Evans Sr.",
+      "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
+      "tmdbId": 569
+    },
+    {
+      "name": "Oscar Isaac",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "A Most Violent Year as Abel Morales",
+      "profilePath": "/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg",
+      "tmdbId": 25072
+    },
+    {
+      "name": "Miles Teller",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Whiplash as Andrew Neiman",
+      "profilePath": "/aciu7YM8fD0BzrrA6cJ5wDKZIA6.jpg",
+      "tmdbId": 996701
     }
   ],
   "best-actress": [
     {
       "name": "Julianne Moore",
+      "film": "Still Alice",
+      "role": "Leading",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "bafta": "Y",
         "sag": "Y",
         "critics": "Y",
         "nbr": "Y",
         "lafca": "X"
       },
-      "film": "Still Alice",
-      "role": "Leading",
       "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
       "tmdbId": 1231
     },
     {
       "name": "Patricia Arquette",
+      "film": "Boyhood",
+      "role": "Supporting",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "bafta": "Y",
         "sag": "Y",
         "critics": "Y",
         "lafca": "Y"
       },
-      "film": "Boyhood",
-      "role": "Supporting",
       "profilePath": "/jeThSouMatiuRiLkjDvSBLHpmq0.jpg",
       "tmdbId": 4687
     },
     {
       "name": "Amy Adams",
-      "awards": {
-        "gg": "Y",
-        "bafta": "X"
-      },
       "film": "Big Eyes",
       "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "Y"
+      },
       "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
       "tmdbId": 9273
-    },
-    {
-      "name": "Alba Rohrwacher",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "Hungry Hearts",
-      "profilePath": "/swffcvnDnj5966fdLSnXOMY186.jpg",
-      "tmdbId": 128748
     },
     {
       "name": "Agata Kulesza",
@@ -716,71 +878,89 @@
       "tmdbId": 566101
     },
     {
-      "name": "Felicity Jones",
+      "name": "Julianne Moore",
       "awards": {
+        "gotham": "Y"
+      },
+      "film": "Still Alice as Dr. Alice Howland\nPatricia Arquette",
+      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
+      "tmdbId": 1231
+    },
+    {
+      "name": "Alba Rohrwacher",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Hungry Hearts",
+      "profilePath": "/swffcvnDnj5966fdLSnXOMY186.jpg",
+      "tmdbId": 128748
+    },
+    {
+      "name": "Felicity Jones",
+      "film": "The Theory of Everything",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
         "sag": "X",
         "critics": "X"
       },
-      "film": "The Theory of Everything",
-      "role": "Leading",
-      "profilePath": "/gsrb1CuyAQtTVZILtNA5tRnhHbs.jpg",
+      "profilePath": "/fyhWRmxpTEYl5d8DnkIo6i8RdWJ.jpg",
       "tmdbId": 72855
     },
     {
-      "name": "Rosamund Pike",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "film": "Gone Girl",
-      "role": "Leading",
-      "profilePath": "/8ObNklHDi2hjdz0ayzJFB9jtqzm.jpg",
-      "tmdbId": 10882
-    },
-    {
       "name": "Reese Witherspoon",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "X"
-      },
       "film": "Wild",
       "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
       "profilePath": "/o1z4UwW2137IViFIRk8AV8hWze1.jpg",
       "tmdbId": 368
     },
     {
-      "name": "Keira Knightley",
+      "name": "Rosamund Pike",
+      "film": "Gone Girl",
+      "role": "Leading",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
         "sag": "X",
         "critics": "X"
       },
+      "profilePath": "/8ObNklHDi2hjdz0ayzJFB9jtqzm.jpg",
+      "tmdbId": 10882
+    },
+    {
+      "name": "Keira Knightley",
       "film": "The Imitation Game",
       "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
       "profilePath": "/bRC1B2VwV0wK3ElciFAK6QZf2wD.jpg",
       "tmdbId": 116
     },
     {
       "name": "Emma Stone",
+      "film": "Birdman",
+      "role": "Supporting",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X"
       },
-      "film": "Birdman",
-      "role": "Supporting",
       "profilePath": "/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg",
       "tmdbId": 54693
     },
@@ -810,6 +990,17 @@
       "tmdbId": 4491
     },
     {
+      "name": "Rene Russo",
+      "film": "Nightcrawler",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "lafca": "X"
+      },
+      "profilePath": "/iqnQqYacK3xtxxyu7JTgBP4HFEg.jpg",
+      "tmdbId": 14343
+    },
+    {
       "name": "Jessica Chastain",
       "awards": {
         "gg": "X",
@@ -832,15 +1023,14 @@
       "tmdbId": 8293
     },
     {
-      "name": "Rene Russo",
-      "film": "Nightcrawler",
+      "name": "Imelda Staunton",
+      "film": "Pride",
       "role": "Supporting",
       "awards": {
-        "bafta": "X",
-        "lafca": "X"
+        "bafta": "X"
       },
-      "profilePath": "/iqnQqYacK3xtxxyu7JTgBP4HFEg.jpg",
-      "tmdbId": 14343
+      "profilePath": "/96LYLMnUOWZ4DFXEeQPItNsxzEP.jpg",
+      "tmdbId": 11356
     },
     {
       "name": "Emily Blunt",
@@ -903,16 +1093,6 @@
       "tmdbId": 54693
     },
     {
-      "name": "Imelda Staunton",
-      "film": "Pride",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/96LYLMnUOWZ4DFXEeQPItNsxzEP.jpg",
-      "tmdbId": 11356
-    },
-    {
       "name": "Naomi Watts",
       "awards": {
         "sag": "X"
@@ -931,6 +1111,42 @@
       },
       "profilePath": "/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
       "tmdbId": 3063
+    },
+    {
+      "name": "Patricia Arquette",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Boyhood as Olivia Evans",
+      "profilePath": "/jeThSouMatiuRiLkjDvSBLHpmq0.jpg",
+      "tmdbId": 4687
+    },
+    {
+      "name": "Scarlett Johansson",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Under the Skin as The Female",
+      "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
+      "tmdbId": 1245
+    },
+    {
+      "name": "Gugu Mbatha-Raw",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Beyond the Lights as Noni Jean",
+      "profilePath": "/sHAnv0kw5JHzWBOP7gAezwqgl8J.jpg",
+      "tmdbId": 1216606
+    },
+    {
+      "name": "Mia Wasikowska",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Tracks as Robyn Davidson",
+      "profilePath": "/xOYlAZsLwFZ0gNHLnt1Hzuo2yqN.jpg",
+      "tmdbId": 76070
     }
   ]
 }

@@ -66,7 +66,32 @@ const CONFIG = {
         { id: 'best-actress', title: 'Best Actress', placeholder: 'Actress', searchType: 'person', isPerson: true },
         { id: 'best-actor', title: 'Best Actor', placeholder: 'Actor', searchType: 'person', isPerson: true },
         { id: 'best-director', title: 'Best Director', placeholder: 'Director', searchType: 'person', isPerson: true }
-    ]
+    ],
+
+    // Which categories each award covers (for N/A strikethrough)
+    // 'all' = covers all categories, otherwise list specific category IDs
+    AWARD_CATEGORIES: {
+        'oscar': 'all',
+        'gg': 'all',
+        'bafta': 'all',
+        'sag': ['best-film', 'best-actor', 'best-actress'], // No director
+        'critics': 'all',
+        'lafca': 'all',
+        'afi': ['best-film'], // Film only
+        'nbr': 'all',
+        'dga': ['best-director'], // Director only
+        'pga': ['best-film'], // Film only
+        'wga': ['best-film'], // Film only (screenplay)
+        'adg': ['best-film'],
+        'gotham': 'all',
+        'hca': 'all',
+        'spirit': 'all',
+        'bifa': 'all',
+        'annie': ['best-film'],
+        'nyfcc': 'all',
+        'cannes': 'all',
+        'venice': 'all'
+    }
 };
 
 // ============ STATE ============
@@ -805,22 +830,32 @@ function createTableRow(entry, categoryId, index, isPerson) {
 
     CONFIG.AWARDS.forEach((award) => {
         const cell = document.createElement('td');
-        cell.className = 'clickable' + (editMode ? '' : ' locked');
 
-        // Use award.key for sparse object access
-        const value = entry.awards?.[award.key] || '';
+        // Check if this award covers this category
+        const coverage = CONFIG.AWARD_CATEGORIES[award.key];
+        const coversCategory = coverage === 'all' || (Array.isArray(coverage) && coverage.includes(categoryId));
 
-        if (value === 'X') {
-            cell.classList.add('nominee');
-        } else if (value === 'Y') {
-            cell.classList.add('winner');
-            const awardClass = CONFIG.AWARD_CLASSES[award.key] || 'default-star';
-            cell.classList.add(awardClass);
+        if (!coversCategory) {
+            // Award doesn't cover this category - show N/A strikethrough
+            cell.className = 'na-cell';
+        } else {
+            cell.className = 'clickable' + (editMode ? '' : ' locked');
+
+            // Use award.key for sparse object access
+            const value = entry.awards?.[award.key] || '';
+
+            if (value === 'X') {
+                cell.classList.add('nominee');
+            } else if (value === 'Y') {
+                cell.classList.add('winner');
+                const awardClass = CONFIG.AWARD_CLASSES[award.key] || 'default-star';
+                cell.classList.add(awardClass);
+            }
+
+            cell.addEventListener('click', () => {
+                if (editMode) toggleCell(categoryId, index, award.key, cell, award);
+            });
         }
-
-        cell.addEventListener('click', () => {
-            if (editMode) toggleCell(categoryId, index, award.key, cell, award);
-        });
 
         row.appendChild(cell);
     });
