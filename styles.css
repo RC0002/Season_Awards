@@ -2057,6 +2057,13 @@ footer {
 }
 
 /* ============ AWARDS SECTION IN OVERLAY (DESKTOP) ============ */
+/* 1. Spacing between awards and filmography */
+.fd-section:has(.fd-credits-list) {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
 .fd-awards-section {
     margin-top: 24px;
     padding-top: 24px;
@@ -2257,6 +2264,7 @@ body.light-mode .fd-award-item.nominee .fd-award-status {
     background: rgba(0, 0, 0, 0.1);
     color: #666;
 }
+
 /* ============ FILMOGRAPHY POSTER CARDS ============ */
 .fd-credits-list {
     display: grid;
@@ -2282,7 +2290,7 @@ body.light-mode .fd-award-item.nominee .fd-award-status {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
     padding: 30px 8px 8px;
     display: flex;
     flex-direction: column;
