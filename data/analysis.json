@@ -1,5 +1,5 @@
 {
-  "generated": "2025-12-30T20:28:37.927995",
+  "generated": "2025-12-31T10:19:56.516926",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -429,7 +429,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
@@ -440,10 +440,10 @@
           "expected": 0
         },
         "best-actor": {
-          "nominations": 5,
-          "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
         },
         "best-actress": {
           "nominations": 0,
@@ -795,7 +795,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
@@ -806,16 +806,16 @@
           "expected": 0
         },
         "best-actor": {
-          "nominations": 10,
-          "winners": 2,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "nominations": 5,
+          "winners": 5,
+          "status": "ok",
+          "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "winners": 5,
+          "status": "ok",
+          "expected": "actor+actress=10"
         }
       }
     },
@@ -1161,7 +1161,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
@@ -1172,16 +1172,16 @@
           "expected": 0
         },
         "best-actor": {
-          "nominations": 11,
-          "winners": 2,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "nominations": 5,
+          "winners": 5,
+          "status": "ok",
+          "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "winners": 5,
+          "status": "ok",
+          "expected": "actor+actress=10"
         }
       }
     },
@@ -1527,7 +1527,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
@@ -1538,16 +1538,16 @@
           "expected": 0
         },
         "best-actor": {
-          "nominations": 10,
-          "winners": 2,
+          "nominations": 5,
+          "winners": 5,
           "status": "error",
-          "expected": "actor+actress=20"
+          "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 6,
-          "winners": 1,
+          "winners": 6,
           "status": "error",
-          "expected": "actor+actress=20"
+          "expected": "actor+actress=10"
         }
       }
     },
@@ -1893,7 +1893,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
@@ -1904,16 +1904,16 @@
           "expected": 0
         },
         "best-actor": {
-          "nominations": 10,
-          "winners": 2,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "nominations": 5,
+          "winners": 5,
+          "status": "ok",
+          "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "winners": 5,
+          "status": "ok",
+          "expected": "actor+actress=10"
         }
       }
     },
@@ -2259,7 +2259,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
@@ -2270,16 +2270,16 @@
           "expected": 0
         },
         "best-actor": {
-          "nominations": 11,
-          "winners": 2,
+          "nominations": 6,
+          "winners": 6,
           "status": "error",
-          "expected": "actor+actress=20"
+          "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "error",
-          "expected": "actor+actress=20"
+          "expected": "actor+actress=10"
         }
       }
     },
@@ -2625,7 +2625,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
@@ -2636,16 +2636,16 @@
           "expected": 0
         },
         "best-actor": {
-          "nominations": 10,
-          "winners": 2,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "nominations": 5,
+          "winners": 5,
+          "status": "ok",
+          "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "winners": 5,
+          "status": "ok",
+          "expected": "actor+actress=10"
         }
       }
     },
@@ -2991,7 +2991,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
@@ -3002,16 +3002,16 @@
           "expected": 0
         },
         "best-actor": {
-          "nominations": 11,
-          "winners": 2,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "nominations": 5,
+          "winners": 5,
+          "status": "ok",
+          "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "winners": 5,
+          "status": "ok",
+          "expected": "actor+actress=10"
         }
       }
     },
@@ -3357,7 +3357,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
@@ -3368,16 +3368,16 @@
           "expected": 0
         },
         "best-actor": {
-          "nominations": 10,
-          "winners": 2,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "nominations": 5,
+          "winners": 5,
+          "status": "ok",
+          "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "winners": 5,
+          "status": "ok",
+          "expected": "actor+actress=10"
         }
       }
     },
@@ -3723,7 +3723,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
@@ -3735,13 +3735,13 @@
         },
         "best-actor": {
           "nominations": 9,
-          "winners": 2,
+          "winners": 9,
           "status": "error",
           "expected": "actor+actress=20"
         },
         "best-actress": {
           "nominations": 8,
-          "winners": 1,
+          "winners": 8,
           "status": "error",
           "expected": "actor+actress=20"
         }
@@ -4455,7 +4455,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
@@ -4467,13 +4467,13 @@
         },
         "best-actor": {
           "nominations": 8,
-          "winners": 2,
+          "winners": 8,
           "status": "ok",
           "expected": "actor+actress=20"
         },
         "best-actress": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 12,
           "status": "ok",
           "expected": "actor+actress=20"
         }
@@ -4821,25 +4821,25 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
         "best-director": {
           "nominations": 5,
-          "winners": 1,
+          "winners": 5,
           "status": "ok",
           "expected": 5
         },
         "best-actor": {
           "nominations": 11,
-          "winners": 2,
+          "winners": 11,
           "status": "ok",
           "expected": "actor+actress=20"
         },
         "best-actress": {
           "nominations": 9,
-          "winners": 0,
+          "winners": 9,
           "status": "ok",
           "expected": "actor+actress=20"
         }

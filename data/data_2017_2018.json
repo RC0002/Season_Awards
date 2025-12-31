@@ -1,11 +1,28 @@
 {
   "best-film": [
     {
+      "name": "Call Me by Your Name",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "critics": "X",
+        "nbr": "Y",
+        "lafca": "Y",
+        "pga": "X",
+        "wga": "Y",
+        "gotham": "Y"
+      },
+      "posterPath": "/mZ4gBdfkhP9tvLH1DO4m4HYtiyi.jpg",
+      "tmdbId": 398818
+    },
+    {
       "name": "The Shape of Water",
       "awards": {
         "bafta": "X",
-        "oscar": "Y",
         "gg": "X",
+        "oscar": "Y",
         "afi": "Y",
         "critics": "Y",
         "pga": "Y",
@@ -16,11 +33,29 @@
       "tmdbId": 399055
     },
     {
+      "name": "Get Out",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "sag": "X",
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X",
+        "wga": "Y",
+        "adg": "X",
+        "gotham": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg",
+      "tmdbId": 419430
+    },
+    {
       "name": "Three Billboards Outside Ebbing, Missouri",
       "awards": {
         "bafta": "Y",
-        "oscar": "X",
         "gg": "Y",
+        "oscar": "X",
         "afi": "Y",
         "sag": "Y",
         "critics": "X",
@@ -31,27 +66,10 @@
       "tmdbId": 359940
     },
     {
-      "name": "Get Out",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "afi": "Y",
-        "sag": "X",
-        "critics": "X",
-        "nbr": "Y",
-        "pga": "X",
-        "wga": "Y",
-        "adg": "X",
-        "gotham": "X"
-      },
-      "posterPath": "/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg",
-      "tmdbId": 419430
-    },
-    {
       "name": "Lady Bird",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
+        "oscar": "X",
         "afi": "Y",
         "sag": "X",
         "critics": "X",
@@ -60,30 +78,28 @@
         "wga": "X",
         "adg": "X"
       },
+      "genre": "Comedy",
       "posterPath": "/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg",
       "tmdbId": 391713
     },
     {
-      "name": "Call Me by Your Name",
+      "name": "The Florida Project",
       "awards": {
-        "bafta": "X",
-        "oscar": "X",
-        "gg": "X",
         "afi": "Y",
         "critics": "X",
         "nbr": "Y",
-        "pga": "X",
-        "wga": "Y"
+        "lafca": "X",
+        "gotham": "Y"
       },
-      "posterPath": "/mZ4gBdfkhP9tvLH1DO4m4HYtiyi.jpg",
-      "tmdbId": 398818
+      "posterPath": "/bnSTP1PY2fDyat0eUa4QouuGV7F.jpg",
+      "tmdbId": 394117
     },
     {
       "name": "Dunkirk",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "afi": "Y",
         "critics": "X",
         "nbr": "Y",
@@ -96,28 +112,17 @@
     {
       "name": "The Post",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "afi": "Y",
         "critics": "X",
         "nbr": "Y",
         "pga": "X",
         "adg": "X"
       },
+      "genre": "Drama",
       "posterPath": "/h4XG3g6uMMPIBPjAoQhC2QIMdkl.jpg",
       "tmdbId": 446354
-    },
-    {
-      "name": "The Florida Project",
-      "awards": {
-        "afi": "Y",
-        "critics": "X",
-        "nbr": "Y",
-        "lafca": "X",
-        "gotham": "X"
-      },
-      "posterPath": "/bnSTP1PY2fDyat0eUa4QouuGV7F.jpg",
-      "tmdbId": 394117
     },
     {
       "name": "Logan",
@@ -140,6 +145,18 @@
       },
       "posterPath": "/9fJTT8pBxxQsFILJHTtHhdYFr77.jpg",
       "tmdbId": 416477
+    },
+    {
+      "name": "I, Tonya",
+      "awards": {
+        "gg": "X",
+        "pga": "X",
+        "wga": "X",
+        "gotham": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/6gNXwSHxaksR1PjVZRqNapmkgj3.jpg",
+      "tmdbId": 389015
     },
     {
       "name": "The Disaster Artist",
@@ -185,9 +202,7 @@
       "awards": {
         "afi": "Y"
       },
-      "note": "AFI Special Award",
-      "posterPath": "/cNQck5cKk4VVsxKd0DrvjJte0uD.jpg",
-      "tmdbId": 876077
+      "note": "AFI Special Award"
     },
     {
       "name": "Baby Driver",
@@ -198,15 +213,6 @@
       "tmdbId": 339403
     },
     {
-      "name": "Call Me by Your Name",
-      "awards": {
-        "lafca": "Y"
-      },
-      "film": "The Florida Project",
-      "posterPath": "/mZ4gBdfkhP9tvLH1DO4m4HYtiyi.jpg",
-      "tmdbId": 398818
-    },
-    {
       "name": "Blade Runner 2049",
       "awards": {
         "adg": "Y"
@@ -215,10 +221,12 @@
       "tmdbId": 335984
     },
     {
-      "name": "Call Me by Your Name\nThe Florida Project\nGet Out\nGood Time\nI, Tonya",
+      "name": "Good Time",
       "awards": {
         "gotham": "Y"
-      }
+      },
+      "posterPath": "/yE1c9hj5Hf8a9KplAdRdhADqUro.jpg",
+      "tmdbId": 429200
     },
     {
       "name": "La forma dell'acqua - The Shape of Water",
@@ -238,18 +246,6 @@
       },
       "posterPath": "/xa6G3aKlysQeVg9wOb0dRcIGlWu.jpg",
       "tmdbId": 399404
-    },
-    {
-      "name": "I, Tonya",
-      "awards": {
-        "gg": "X",
-        "pga": "X",
-        "wga": "X",
-        "gotham": "X"
-      },
-      "genre": "Comedy",
-      "posterPath": "/6gNXwSHxaksR1PjVZRqNapmkgj3.jpg",
-      "tmdbId": 389015
     },
     {
       "name": "Mudbound",
@@ -309,14 +305,6 @@
       },
       "posterPath": "/mMA1qhBFgZX8O36qPPTC016kQl1.jpg",
       "tmdbId": 281338
-    },
-    {
-      "name": "Good Time",
-      "awards": {
-        "gotham": "X"
-      },
-      "posterPath": "/yE1c9hj5Hf8a9KplAdRdhADqUro.jpg",
-      "tmdbId": 429200
     }
   ],
   "best-director": [
@@ -325,8 +313,8 @@
       "film": "The Shape of Water",
       "awards": {
         "bafta": "Y",
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "critics": "Y",
         "lafca": "Y"
       },
@@ -377,8 +365,8 @@
       "film": "Dunkirk",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X",
         "dga": "X"
       },
@@ -428,15 +416,6 @@
       "tmdbId": 137427
     },
     {
-      "name": "Paul Thomas Anderson",
-      "film": "Phantom Thread",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
-      "tmdbId": 4762
-    },
-    {
       "name": "Ridley Scott",
       "awards": {
         "gg": "X"
@@ -444,6 +423,15 @@
       "film": "All the Money in the World",
       "profilePath": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg",
       "tmdbId": 578
+    },
+    {
+      "name": "Paul Thomas Anderson",
+      "film": "Phantom Thread",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
+      "tmdbId": 4762
     }
   ],
   "best-actor": [
@@ -453,8 +441,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "Y",
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
         "lafca": "X"
@@ -468,8 +456,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "Y",
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
       },
@@ -482,8 +470,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y"
@@ -497,8 +485,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y"
@@ -528,26 +516,60 @@
       },
       "film": "The Post",
       "role": "Leading",
-      "profilePath": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg",
+      "profilePath": "/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
       "tmdbId": 31
-    },
-    {
-      "name": "Timothée Chalamet",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Call Me by Your Name as Elio Perlman\nMary J. Blige",
-      "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
-      "tmdbId": 1190668
     },
     {
       "name": "James Franco",
       "awards": {
         "gotham": "Y"
       },
-      "film": "The Disaster Artist as Tommy Wiseau\nWillem Dafoe",
+      "film": "The Disaster Artist as Tommy Wiseau",
       "profilePath": "/bjmAntHGiibLZixH8nTNVBzaFQn.jpg",
       "tmdbId": 17051
+    },
+    {
+      "name": "Willem Dafoe",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Florida Project as Bobby Hicks",
+      "profilePath": "/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg",
+      "tmdbId": 5293
+    },
+    {
+      "name": "Daniel Kaluuya",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Get Out as Chris Washington",
+      "profilePath": "/jj2kZqJobjom36wlhlYhc38nTwN.jpg",
+      "tmdbId": 206919
+    },
+    {
+      "name": "Robert Pattinson",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Good Time as Constantine \"Connie\" Nikas",
+      "profilePath": "/8A4PS5iG7GWEAVFftyqMZKl3qcr.jpg",
+      "tmdbId": 11288
+    },
+    {
+      "name": "Adam Sandler",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Meyerowitz Stories as Danny Meyerowitz",
+      "profilePath": "/gLkLCsQdwDDPabRhKPB25nGtKwS.jpg",
+      "tmdbId": 19292
+    },
+    {
+      "name": "Harry Dean Stanton as Lucky",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Lucky"
     },
     {
       "name": "Kamil al-Basha",
@@ -562,8 +584,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -576,8 +598,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X"
       },
       "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
@@ -585,14 +607,14 @@
     },
     {
       "name": "Richard Jenkins",
-      "film": "The Shape of Water",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "The Shape of Water",
+      "role": "Leading",
       "profilePath": "/muT3RZG9hiKaKojD751RcQ5tGEy.jpg",
       "tmdbId": 28633
     },
@@ -602,8 +624,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
-        "gg": "X"
+        "gg": "X",
+        "oscar": "X"
       },
       "profilePath": "/iZh3s9Vy9vYD4DYnAda6C1kdeco.jpg",
       "tmdbId": 290
@@ -622,13 +644,13 @@
     },
     {
       "name": "Denzel Washington",
-      "film": "Roman J. Israel, Esq.",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X"
       },
+      "film": "Roman J. Israel, Esq.",
+      "role": "Leading",
       "profilePath": "/jj2Gcobpopokal0YstuCQW0ldJ4.jpg",
       "tmdbId": 5292
     },
@@ -722,85 +744,6 @@
       },
       "profilePath": "/aYB3SQm3h6ZyAdlbGyiNfakjx56.jpg",
       "tmdbId": 72873
-    },
-    {
-      "name": "Mary J. Blige",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Mudbound as Florence Jackson",
-      "profilePath": "/riQBsxzhbp8E7T9noJEZrEoLZWO.jpg",
-      "tmdbId": 84933
-    },
-    {
-      "name": "Harris Dickinson",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Beach Rats as Frankie",
-      "profilePath": "/pqqnYWWHa3Va80EXofXrVlRqIDM.jpg",
-      "tmdbId": 1716493
-    },
-    {
-      "name": "Kelvin Harrison Jr.",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "It Comes at Night as Travis",
-      "profilePath": "/uRViX11fZQGmO9p91ZH7QVh2l5y.jpg",
-      "tmdbId": 1344361
-    },
-    {
-      "name": "Brooklynn Prince",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "The Florida Project as Moonee",
-      "profilePath": "/k9oSIk7V8Sbgs0Dw8tX71f9YeXi.jpg",
-      "tmdbId": 1704640
-    },
-    {
-      "name": "Willem Dafoe",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "The Florida Project as Bobby Hicks",
-      "profilePath": "/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg",
-      "tmdbId": 5293
-    },
-    {
-      "name": "Daniel Kaluuya",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Get Out as Chris Washington",
-      "profilePath": "/jj2kZqJobjom36wlhlYhc38nTwN.jpg",
-      "tmdbId": 206919
-    },
-    {
-      "name": "Robert Pattinson",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Good Time as Constantine \"Connie\" Nikas",
-      "profilePath": "/8A4PS5iG7GWEAVFftyqMZKl3qcr.jpg",
-      "tmdbId": 11288
-    },
-    {
-      "name": "Adam Sandler",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "The Meyerowitz Stories as Danny Meyerowitz",
-      "profilePath": "/gLkLCsQdwDDPabRhKPB25nGtKwS.jpg",
-      "tmdbId": 19292
-    },
-    {
-      "name": "Harry Dean Stanton as Lucky",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Lucky"
     }
   ],
   "best-actress": [
@@ -810,8 +753,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "Y",
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
         "lafca": "X"
@@ -825,8 +768,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "Y",
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
       },
@@ -839,8 +782,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y"
@@ -854,8 +797,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y"
@@ -869,8 +812,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "Y",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -879,14 +822,14 @@
     },
     {
       "name": "Meryl Streep",
-      "film": "The Post",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X",
         "nbr": "Y"
       },
+      "film": "The Post",
+      "role": "Leading",
       "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
       "tmdbId": 5064
     },
@@ -895,9 +838,43 @@
       "awards": {
         "gotham": "Y"
       },
-      "film": "Lady Bird as Christine \"Lady Bird\" McPherson\nMelanie Lynskey",
+      "film": "Lady Bird as Christine \"Lady Bird\" McPherson",
       "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
       "tmdbId": 36592
+    },
+    {
+      "name": "Melanie Lynskey",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "I Don't Feel at Home in This World Anymore as Ruth Kimke",
+      "profilePath": "/4raNiD71caQXKKqIBZS1FDsvtkd.jpg",
+      "tmdbId": 15091
+    },
+    {
+      "name": "Haley Lu Richardson",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Columbus as Casey",
+      "profilePath": "/iTNWzU5FlKT8s0CBZQyMIvebBPh.jpg",
+      "tmdbId": 1286328
+    },
+    {
+      "name": "Margot Robbie",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "I, Tonya as Tonya Harding",
+      "profilePath": "/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg",
+      "tmdbId": 234352
+    },
+    {
+      "name": "Lois Smith",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Marjorie Prime as Marjorie Lancaster"
     },
     {
       "name": "Charlotte Rampling",
@@ -914,8 +891,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -924,15 +901,15 @@
     },
     {
       "name": "Mary J. Blige",
-      "film": "Mudbound",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "X"
       },
+      "film": "Mudbound",
+      "role": "Leading",
       "profilePath": "/riQBsxzhbp8E7T9noJEZrEoLZWO.jpg",
       "tmdbId": 84933
     },
@@ -942,8 +919,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X"
       },
       "profilePath": "/35SOy4yQZ9xRSJ0q1L5RLhXfhqN.jpg",
@@ -1064,40 +1041,6 @@
       },
       "profilePath": "/pvAYqQD4LXavzDkBqCrC4IgVBur.jpg",
       "tmdbId": 1230868
-    },
-    {
-      "name": "Melanie Lynskey",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "I Don't Feel at Home in This World Anymore as Ruth Kimke",
-      "profilePath": "/4raNiD71caQXKKqIBZS1FDsvtkd.jpg",
-      "tmdbId": 15091
-    },
-    {
-      "name": "Haley Lu Richardson",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Columbus as Casey",
-      "profilePath": "/iTNWzU5FlKT8s0CBZQyMIvebBPh.jpg",
-      "tmdbId": 1286328
-    },
-    {
-      "name": "Margot Robbie",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "I, Tonya as Tonya Harding",
-      "profilePath": "/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg",
-      "tmdbId": 234352
-    },
-    {
-      "name": "Lois Smith",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Marjorie Prime as Marjorie Lancaster"
     }
   ]
 }

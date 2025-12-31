@@ -11,8 +11,9 @@
         "critics": "Y",
         "nbr": "Y",
         "pga": "X",
+        "lafca": "Y",
         "wga": "X",
-        "gotham": "X"
+        "gotham": "Y"
       },
       "posterPath": "/2BvtvDUyxiMJ4dmKfiQf4qdOHQN.jpg",
       "tmdbId": 85350
@@ -25,14 +26,28 @@
         "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "lafca": "X",
         "pga": "X",
+        "lafca": "X",
         "wga": "Y",
         "adg": "Y",
-        "gotham": "X"
+        "gotham": "Y"
       },
       "posterPath": "/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
       "tmdbId": 120467
+    },
+    {
+      "name": "Birdman",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "sag": "Y",
+        "critics": "X",
+        "nbr": "Y",
+        "adg": "Y",
+        "gotham": "Y"
+      },
+      "posterPath": "/9n0u3Ee7OUjgeyF5kIwahxkf4xm.jpg",
+      "tmdbId": 435092
     },
     {
       "name": "The Imitation Game",
@@ -50,19 +65,6 @@
       },
       "posterPath": "/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg",
       "tmdbId": 205596
-    },
-    {
-      "name": "Birdman",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "sag": "Y",
-        "critics": "X",
-        "nbr": "Y",
-        "adg": "Y"
-      },
-      "posterPath": "/9n0u3Ee7OUjgeyF5kIwahxkf4xm.jpg",
-      "tmdbId": 435092
     },
     {
       "name": "Birdman or (The Unexpected Virtue of Ignorance)",
@@ -222,27 +224,28 @@
       "tmdbId": 137106
     },
     {
-      "name": "Boyhood",
-      "awards": {
-        "lafca": "Y"
-      },
-      "film": "The Grand Budapest Hotel",
-      "posterPath": "/2BvtvDUyxiMJ4dmKfiQf4qdOHQN.jpg",
-      "tmdbId": 85350
-    },
-    {
-      "name": "Birdman\nBoyhood\nThe Grand Budapest Hotel\nLove Is Strange\nUnder the Skin",
-      "awards": {
-        "gotham": "Y"
-      }
-    },
-    {
       "name": "Un piccione seduto su un ramo riflette sull'esistenza",
       "awards": {
         "venice": "Y"
       },
       "posterPath": "/h2uRIr0fNpZbTGH5youi7MDRL2T.jpg",
       "tmdbId": 110390
+    },
+    {
+      "name": "Love Is Strange",
+      "awards": {
+        "gotham": "Y"
+      },
+      "posterPath": "/5nkM5aUSTMvXudUB3M0FgZ6voqD.jpg",
+      "tmdbId": 244268
+    },
+    {
+      "name": "Under the Skin",
+      "awards": {
+        "gotham": "Y"
+      },
+      "posterPath": "/55wmcXJIDYITr7JDijJTdvwSaAv.jpg",
+      "tmdbId": 97370
     },
     {
       "name": "The Theory of Everything",
@@ -300,22 +303,6 @@
       },
       "posterPath": "/kScdQEwS9jPEdnO23XjGAtaoRcT.jpg",
       "tmdbId": 119450
-    },
-    {
-      "name": "Love Is Strange",
-      "awards": {
-        "gotham": "X"
-      },
-      "posterPath": "/5nkM5aUSTMvXudUB3M0FgZ6voqD.jpg",
-      "tmdbId": 244268
-    },
-    {
-      "name": "Under the Skin",
-      "awards": {
-        "gotham": "X"
-      },
-      "posterPath": "/55wmcXJIDYITr7JDijJTdvwSaAv.jpg",
-      "tmdbId": 97370
     }
   ],
   "best-director": [
@@ -531,24 +518,6 @@
       "tmdbId": 2524
     },
     {
-      "name": "Tessa Thompson",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Dear White People as Samantha \"Sam\" White\nRiz Ahmed",
-      "profilePath": "/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
-      "tmdbId": 62561
-    },
-    {
-      "name": "Michael Keaton",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Birdman as Riggan Thomson\nBill Hader",
-      "profilePath": "/w6fwAQ7IwEFqtzByA1Wyz2Dwp7R.jpg",
-      "tmdbId": 2232
-    },
-    {
       "name": "Adam Driver",
       "awards": {
         "venice": "Y"
@@ -556,6 +525,51 @@
       "film": "Hungry Hearts",
       "profilePath": "/me7eifBie8S7gFwhZfkF3jROL99.jpg",
       "tmdbId": 1023139
+    },
+    {
+      "name": "Michael Keaton",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Birdman as Riggan Thomson",
+      "profilePath": "/w6fwAQ7IwEFqtzByA1Wyz2Dwp7R.jpg",
+      "tmdbId": 2232
+    },
+    {
+      "name": "Bill Hader",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Skeleton Twins as Milo Dean",
+      "profilePath": "/qyT50vQ9PQIEctE1IxDTEsBKstU.jpg",
+      "tmdbId": 19278
+    },
+    {
+      "name": "Ethan Hawke",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Boyhood as Mason Evans Sr.",
+      "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
+      "tmdbId": 569
+    },
+    {
+      "name": "Oscar Isaac",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "A Most Violent Year as Abel Morales",
+      "profilePath": "/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg",
+      "tmdbId": 25072
+    },
+    {
+      "name": "Miles Teller",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Whiplash as Andrew Neiman",
+      "profilePath": "/aciu7YM8fD0BzrrA6cJ5wDKZIA6.jpg",
+      "tmdbId": 996701
     },
     {
       "name": "Benedict Cumberbatch",
@@ -744,85 +758,6 @@
       },
       "profilePath": "/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg",
       "tmdbId": 16851
-    },
-    {
-      "name": "Riz Ahmed",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Nightcrawler as Rick",
-      "profilePath": "/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg",
-      "tmdbId": 53240
-    },
-    {
-      "name": "Macon Blair",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Blue Ruin as Dwight Evans",
-      "profilePath": "/sNhgAh7TBBYNGR2ExnINXIQ4U5x.jpg",
-      "tmdbId": 209513
-    },
-    {
-      "name": "Ellar Coltrane",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Boyhood as Mason Evans Jr."
-    },
-    {
-      "name": "Joey King",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Wish I Was Here as Grace",
-      "profilePath": "/94c69mPYSK9jFsAEu0OKB7Qs684.jpg",
-      "tmdbId": 125025
-    },
-    {
-      "name": "Jenny Slate",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Obvious Child as Donna Stern",
-      "profilePath": "/aqH8MCnT3O5Od3OfZR8LClSP7UB.jpg",
-      "tmdbId": 213001
-    },
-    {
-      "name": "Bill Hader",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "The Skeleton Twins as Milo Dean",
-      "profilePath": "/qyT50vQ9PQIEctE1IxDTEsBKstU.jpg",
-      "tmdbId": 19278
-    },
-    {
-      "name": "Ethan Hawke",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Boyhood as Mason Evans Sr.",
-      "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
-      "tmdbId": 569
-    },
-    {
-      "name": "Oscar Isaac",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "A Most Violent Year as Abel Morales",
-      "profilePath": "/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg",
-      "tmdbId": 25072
-    },
-    {
-      "name": "Miles Teller",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Whiplash as Andrew Neiman",
-      "profilePath": "/aciu7YM8fD0BzrrA6cJ5wDKZIA6.jpg",
-      "tmdbId": 996701
     }
   ],
   "best-actress": [
@@ -878,15 +813,6 @@
       "tmdbId": 566101
     },
     {
-      "name": "Julianne Moore",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Still Alice as Dr. Alice Howland\nPatricia Arquette",
-      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
-      "tmdbId": 1231
-    },
-    {
       "name": "Alba Rohrwacher",
       "awards": {
         "venice": "Y"
@@ -894,6 +820,51 @@
       "film": "Hungry Hearts",
       "profilePath": "/swffcvnDnj5966fdLSnXOMY186.jpg",
       "tmdbId": 128748
+    },
+    {
+      "name": "Julianne Moore",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Still Alice as Dr. Alice Howland",
+      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
+      "tmdbId": 1231
+    },
+    {
+      "name": "Patricia Arquette",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Boyhood as Olivia Evans",
+      "profilePath": "/jeThSouMatiuRiLkjDvSBLHpmq0.jpg",
+      "tmdbId": 4687
+    },
+    {
+      "name": "Scarlett Johansson",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Under the Skin as The Female",
+      "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
+      "tmdbId": 1245
+    },
+    {
+      "name": "Gugu Mbatha-Raw",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Beyond the Lights as Noni Jean",
+      "profilePath": "/sHAnv0kw5JHzWBOP7gAezwqgl8J.jpg",
+      "tmdbId": 1216606
+    },
+    {
+      "name": "Mia Wasikowska",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Tracks as Robyn Davidson",
+      "profilePath": "/xOYlAZsLwFZ0gNHLnt1Hzuo2yqN.jpg",
+      "tmdbId": 76070
     },
     {
       "name": "Felicity Jones",
@@ -1111,42 +1082,6 @@
       },
       "profilePath": "/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
       "tmdbId": 3063
-    },
-    {
-      "name": "Patricia Arquette",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Boyhood as Olivia Evans",
-      "profilePath": "/jeThSouMatiuRiLkjDvSBLHpmq0.jpg",
-      "tmdbId": 4687
-    },
-    {
-      "name": "Scarlett Johansson",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Under the Skin as The Female",
-      "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
-      "tmdbId": 1245
-    },
-    {
-      "name": "Gugu Mbatha-Raw",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Beyond the Lights as Noni Jean",
-      "profilePath": "/sHAnv0kw5JHzWBOP7gAezwqgl8J.jpg",
-      "tmdbId": 1216606
-    },
-    {
-      "name": "Mia Wasikowska",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Tracks as Robyn Davidson",
-      "profilePath": "/xOYlAZsLwFZ0gNHLnt1Hzuo2yqN.jpg",
-      "tmdbId": 76070
     }
   ]
 }

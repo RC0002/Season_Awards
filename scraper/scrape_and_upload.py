@@ -781,12 +781,27 @@ def generate_analysis_json(years_to_update=None):
                     else:
                         analysis["years"][year_key][award_key][category]["status"] = "error"
                 elif award_key == 'gotham' and category in ['best-actor', 'best-actress']:
-                    # Gotham: Gender-neutral Lead/Supporting Performance - check combined actor+actress = 20
+                    # Gotham: Gender-neutral Lead/Supporting Performance - check combined actor+actress
+                    # Pre-2021: 5 Actor + 5 Actress = 10 (Breakthrough excluded)
+                    # 2021+: 10 Lead + 10 Supporting = 20
                     actor_count = analysis["years"][year_key][award_key]["best-actor"]["nominations"]
                     actress_count = analysis["years"][year_key][award_key]["best-actress"]["nominations"]
                     combined = actor_count + actress_count
-                    analysis["years"][year_key][award_key][category]["expected"] = "actor+actress=20"
-                    if combined == 20:
+                    
+                    if year == 2021:
+                        target = 17 # 10 Lead + 7 Supporting
+                    elif year == 2017:
+                        target = 11 # 6 Actor + 5 Actress
+                    elif year <= 2012:
+                        target = 0  # Categories didn't exist
+                    elif year >= 2022:
+                        target = 20 # 10 Lead + 10 Supporting
+                    else:
+                        target = 10 # 5 Actor + 5 Actress
+                    
+                    analysis["years"][year_key][award_key][category]["expected"] = f"actor+actress={target}"
+                    
+                    if combined == target:
                         analysis["years"][year_key][award_key][category]["status"] = "ok"
                     else:
                         analysis["years"][year_key][award_key][category]["status"] = "error"

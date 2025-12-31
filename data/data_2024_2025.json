@@ -6,13 +6,14 @@
         "gg": "X",
         "bafta": "X",
         "oscar": "Y",
-        "critics": "Y",
         "sag": "X",
+        "critics": "Y",
         "afi": "Y",
         "nbr": "Y",
         "pga": "Y",
         "wga": "Y",
-        "gotham": "X"
+        "lafca": "Y",
+        "gotham": "Y"
       },
       "posterPath": "/cgXk2tNYhJZLXdBDO5DidAVzQ82.jpg",
       "tmdbId": 1064213
@@ -23,8 +24,8 @@
         "gg": "X",
         "bafta": "Y",
         "oscar": "X",
-        "critics": "X",
         "sag": "Y",
+        "critics": "X",
         "afi": "Y",
         "nbr": "Y",
         "pga": "X",
@@ -38,16 +39,29 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "afi": "Y",
         "nbr": "Y",
         "pga": "X",
         "wga": "X",
         "adg": "Y"
       },
-      "posterPath": "/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg",
+      "posterPath": "/2E1x1qcHqGZcYuYi4PzVZjzg8IV.jpg",
       "tmdbId": 402431
+    },
+    {
+      "name": "Nickel Boys",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "critics": "X",
+        "afi": "Y",
+        "wga": "Y",
+        "gotham": "Y"
+      },
+      "posterPath": "/lu2vmmtStmTNMmSZl2LgrrQpLZo.jpg",
+      "tmdbId": 1028196
     },
     {
       "name": "A Complete Unknown",
@@ -55,8 +69,8 @@
         "gg": "X",
         "bafta": "X",
         "oscar": "X",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "afi": "Y",
         "nbr": "Y",
         "pga": "X",
@@ -87,27 +101,14 @@
         "gg": "Y",
         "bafta": "X",
         "oscar": "X",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "afi": "Y",
         "pga": "X",
         "adg": "X"
       },
       "posterPath": "/fko8fTfL6BcAqOUh6BZYUjt4SQP.jpg",
       "tmdbId": 974950
-    },
-    {
-      "name": "Nickel Boys",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "critics": "X",
-        "afi": "Y",
-        "wga": "Y",
-        "gotham": "X"
-      },
-      "posterPath": "/lu2vmmtStmTNMmSZl2LgrrQpLZo.jpg",
-      "tmdbId": 1028196
     },
     {
       "name": "A Real Pain",
@@ -128,8 +129,17 @@
         "afi": "Y",
         "nbr": "Y"
       },
-      "posterPath": "/26lQ3OJqv5NRDpd38eU54zAfLxr.jpg",
-      "tmdbId": 63701
+      "posterPath": "/1yvLeQrwyu9NgpKFlPvTwtXQMD3.jpg",
+      "tmdbId": 1322752
+    },
+    {
+      "name": "Babygirl",
+      "awards": {
+        "nbr": "Y",
+        "gotham": "Y"
+      },
+      "posterPath": "/ilwO6elz3mLV9CToT7C8pjVeKX0.jpg",
+      "tmdbId": 1097549
     },
     {
       "name": "Dune: Part Two",
@@ -146,13 +156,14 @@
       "tmdbId": 693134
     },
     {
-      "name": "Babygirl",
+      "name": "Challengers",
       "awards": {
-        "nbr": "Y",
-        "gotham": "X"
+        "gg": "X",
+        "wga": "X",
+        "gotham": "Y"
       },
-      "posterPath": "/ilwO6elz3mLV9CToT7C8pjVeKX0.jpg",
-      "tmdbId": 1097549
+      "posterPath": "/H6vke7zGiuLsz4v4RPeReb9rsv.jpg",
+      "tmdbId": 937287
     },
     {
       "name": "Furiosa: A Mad Max Saga",
@@ -206,15 +217,6 @@
       "tmdbId": 426063
     },
     {
-      "name": "Anora",
-      "awards": {
-        "lafca": "Y"
-      },
-      "film": "The Brutalist",
-      "posterPath": "/cgXk2tNYhJZLXdBDO5DidAVzQ82.jpg",
-      "tmdbId": 1064213
-    },
-    {
       "name": "La stanza accanto",
       "awards": {
         "venice": "Y"
@@ -223,10 +225,12 @@
       "tmdbId": 160882
     },
     {
-      "name": "A Different Man\nAnora\nBabygirl\nChallengers\nNickel Boys",
+      "name": "A Different Man",
       "awards": {
         "gotham": "Y"
-      }
+      },
+      "posterPath": "/lZZKTEvo92u1J5pm7QoEA5yN3du.jpg",
+      "tmdbId": 989662
     },
     {
       "name": "The Substance",
@@ -239,16 +243,6 @@
       },
       "posterPath": "/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
       "tmdbId": 933260
-    },
-    {
-      "name": "Challengers",
-      "awards": {
-        "gg": "X",
-        "wga": "X",
-        "gotham": "X"
-      },
-      "posterPath": "/H6vke7zGiuLsz4v4RPeReb9rsv.jpg",
-      "tmdbId": 937287
     },
     {
       "name": "September 5",
@@ -330,6 +324,21 @@
   ],
   "best-director": [
     {
+      "name": "Sean Baker",
+      "film": "Anora",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "Y",
+        "critics": "X",
+        "dga": "Y",
+        "lafca": "X",
+        "gotham": "Y"
+      },
+      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
+      "tmdbId": 118415
+    },
+    {
       "name": "Brady Corbet",
       "film": "The Brutalist",
       "awards": {
@@ -344,21 +353,6 @@
       "tmdbId": 55493
     },
     {
-      "name": "Sean Baker",
-      "film": "Anora",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "Y",
-        "critics": "X",
-        "dga": "Y",
-        "lafca": "X",
-        "gotham": "X"
-      },
-      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
-      "tmdbId": 118415
-    },
-    {
       "name": "Jon M. Chu",
       "film": "Wicked",
       "awards": {
@@ -367,6 +361,26 @@
       },
       "profilePath": "/85kOxm7w4nGRwyhquj9wtUM8KUW.jpg",
       "tmdbId": 54507
+    },
+    {
+      "name": "Payal Kapadia",
+      "film": "All We Imagine as Light",
+      "awards": {
+        "gg": "X",
+        "gotham": "Y"
+      },
+      "profilePath": "/nBH3sKTMMghVcmf58AdKumB3RBW.jpg",
+      "tmdbId": 1467320
+    },
+    {
+      "name": "RaMell Ross",
+      "film": "Nickel Boys",
+      "awards": {
+        "critics": "X",
+        "gotham": "Y"
+      },
+      "profilePath": "/clwUM9KmTmSGuyL7amwApi3H4SP.jpg",
+      "tmdbId": 1934875
     },
     {
       "name": "Mohammad Rasoulof",
@@ -378,13 +392,22 @@
       "tmdbId": 935123
     },
     {
-      "name": "RaMell Ross",
+      "name": "Guan Hu",
       "awards": {
         "gotham": "Y"
       },
-      "film": "Nickel Boys\nPayal Kapadia",
-      "profilePath": "/clwUM9KmTmSGuyL7amwApi3H4SP.jpg",
-      "tmdbId": 1934875
+      "film": "Black Dog",
+      "profilePath": "/plI2TWjFcoP8Exjs2p5oNFqbrqM.jpg",
+      "tmdbId": 131301
+    },
+    {
+      "name": "Jane Schoenbrun",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "I Saw the TV Glow",
+      "profilePath": "/6jnbWbxcnRooyqc4LmYZt1AA2yu.jpg",
+      "tmdbId": 1827119
     },
     {
       "name": "Jacques Audiard",
@@ -422,16 +445,6 @@
       "tmdbId": 1607016
     },
     {
-      "name": "Payal Kapadia",
-      "film": "All We Imagine as Light",
-      "awards": {
-        "gg": "X",
-        "gotham": "X"
-      },
-      "profilePath": "/nBH3sKTMMghVcmf58AdKumB3RBW.jpg",
-      "tmdbId": 1467320
-    },
-    {
       "name": "Denis Villeneuve",
       "film": "Dune: Part Two",
       "awards": {
@@ -450,33 +463,6 @@
       },
       "profilePath": "/pk0GDjn99crNwR4qgCCEokDYd71.jpg",
       "tmdbId": 366
-    },
-    {
-      "name": "RaMell Ross",
-      "film": "Nickel Boys",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/clwUM9KmTmSGuyL7amwApi3H4SP.jpg",
-      "tmdbId": 1934875
-    },
-    {
-      "name": "Guan Hu",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Black Dog",
-      "profilePath": "/plI2TWjFcoP8Exjs2p5oNFqbrqM.jpg",
-      "tmdbId": 131301
-    },
-    {
-      "name": "Jane Schoenbrun",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "I Saw the TV Glow",
-      "profilePath": "/6jnbWbxcnRooyqc4LmYZt1AA2yu.jpg",
-      "tmdbId": 1827119
     }
   ],
   "best-actor": [
@@ -488,8 +474,8 @@
         "gg": "Y",
         "bafta": "Y",
         "oscar": "Y",
-        "critics": "Y",
         "sag": "Y",
+        "critics": "Y",
         "lafca": "Y"
       },
       "profilePath": "/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg",
@@ -503,8 +489,8 @@
         "gg": "Y",
         "bafta": "Y",
         "oscar": "Y",
-        "critics": "Y",
-        "sag": "X"
+        "sag": "X",
+        "critics": "Y"
       },
       "profilePath": "/qBc7ahQrpVpcllaZ5hkivsOEb3C.jpg",
       "tmdbId": 3490
@@ -517,8 +503,8 @@
         "gg": "X",
         "bafta": "X",
         "oscar": "X",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "lafca": "Y"
       },
       "profilePath": "/zLcD2UmXJG6m3qOQhNZs13SQRIp.jpg",
@@ -532,8 +518,8 @@
         "gg": "X",
         "bafta": "X",
         "oscar": "X",
-        "critics": "X",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "X"
       },
       "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
       "tmdbId": 1190668
@@ -544,8 +530,8 @@
       "role": "Leading",
       "awards": {
         "gg": "X",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "nbr": "Y"
       },
       "profilePath": "/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg",
@@ -575,18 +561,99 @@
       "awards": {
         "gotham": "Y"
       },
-      "film": "Sing Sing as John \"Divine G\" Whitfield\nPamela Anderson",
+      "film": "Sing Sing as John \"Divine G\" Whitfield",
       "profilePath": "/r2usluS5vx7O7npAYfaAFfNGxc8.jpg",
       "tmdbId": 91671
+    },
+    {
+      "name": "Adrien Brody",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Brutalist as László Tóth",
+      "profilePath": "/qBc7ahQrpVpcllaZ5hkivsOEb3C.jpg",
+      "tmdbId": 3490
+    },
+    {
+      "name": "Keith Kupferer",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Ghostlight as Dan Mueller",
+      "profilePath": "/8iYC1mkinpTGXF39FiKRYLlkwtQ.jpg",
+      "tmdbId": 1313093
+    },
+    {
+      "name": "Justice Smith",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "I Saw the TV Glow as Owen",
+      "profilePath": "/htJrcOzYkLVcnF4ExT4O1bDN5e5.jpg",
+      "tmdbId": 1029934
     },
     {
       "name": "Clarence Maclin",
       "awards": {
         "gotham": "Y"
       },
-      "film": "Sing Sing as himself\nYura Borisov",
+      "film": "Sing Sing as himself",
       "profilePath": "/1nRVnEo3fICl9yhRyemn8PgrJ4q.jpg",
       "tmdbId": 4178063
+    },
+    {
+      "name": "Yura Borisov",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Anora as Igor",
+      "profilePath": "/zLcD2UmXJG6m3qOQhNZs13SQRIp.jpg",
+      "tmdbId": 1266686
+    },
+    {
+      "name": "Kieran Culkin",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "A Real Pain as Benji Kaplan",
+      "profilePath": "/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg",
+      "tmdbId": 18793
+    },
+    {
+      "name": "Jack Haven",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "I Saw the TV Glow as Maddy",
+      "profilePath": "/gnf88fDvg0FI9lbWvcNsdA9NBDH.jpg",
+      "tmdbId": 1637781
+    },
+    {
+      "name": "Brian Tyree Henry",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Fire Inside as Jason Crutchfield",
+      "profilePath": "/1UgDnFt3OteCJQPiUelWzIR5bvT.jpg",
+      "tmdbId": 226366
+    },
+    {
+      "name": "Guy Pearce",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Brutalist as Harrison Lee Van Buren",
+      "profilePath": "/vTqk6Nh3WgqPubkS23eOlMAwmwa.jpg",
+      "tmdbId": 529
+    },
+    {
+      "name": "Adam Pearson",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "A Different Man as Oswald",
+      "profilePath": "/xRDaT60nU48yBDD20A2hSmSALZX.jpg",
+      "tmdbId": 1675188
     },
     {
       "name": "Colman Domingo",
@@ -596,8 +663,8 @@
         "gg": "X",
         "bafta": "X",
         "oscar": "X",
-        "critics": "X",
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/r2usluS5vx7O7npAYfaAFfNGxc8.jpg",
       "tmdbId": 91671
@@ -610,8 +677,8 @@
         "gg": "X",
         "bafta": "X",
         "oscar": "X",
-        "critics": "X",
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/u29BOqiV5GCQ8k8WUJM50i9xlBf.jpg",
       "tmdbId": 5469
@@ -624,8 +691,8 @@
         "gg": "X",
         "bafta": "X",
         "oscar": "X",
-        "critics": "X",
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg",
       "tmdbId": 819
@@ -762,87 +829,6 @@
       "film": "A Different Man",
       "profilePath": "/xRDaT60nU48yBDD20A2hSmSALZX.jpg",
       "tmdbId": 1675188
-    },
-    {
-      "name": "Adrien Brody",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "The Brutalist as László Tóth",
-      "profilePath": "/qBc7ahQrpVpcllaZ5hkivsOEb3C.jpg",
-      "tmdbId": 3490
-    },
-    {
-      "name": "Keith Kupferer",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Ghostlight as Dan Mueller",
-      "profilePath": "/8iYC1mkinpTGXF39FiKRYLlkwtQ.jpg",
-      "tmdbId": 1313093
-    },
-    {
-      "name": "Justice Smith",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "I Saw the TV Glow as Owen",
-      "profilePath": "/htJrcOzYkLVcnF4ExT4O1bDN5e5.jpg",
-      "tmdbId": 1029934
-    },
-    {
-      "name": "Yura Borisov",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Anora as Igor",
-      "profilePath": "/zLcD2UmXJG6m3qOQhNZs13SQRIp.jpg",
-      "tmdbId": 1266686
-    },
-    {
-      "name": "Kieran Culkin",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "A Real Pain as Benji Kaplan",
-      "profilePath": "/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg",
-      "tmdbId": 18793
-    },
-    {
-      "name": "Jack Haven",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "I Saw the TV Glow as Maddy",
-      "profilePath": "/gnf88fDvg0FI9lbWvcNsdA9NBDH.jpg",
-      "tmdbId": 1637781
-    },
-    {
-      "name": "Brian Tyree Henry",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "The Fire Inside as Jason Crutchfield",
-      "profilePath": "/1UgDnFt3OteCJQPiUelWzIR5bvT.jpg",
-      "tmdbId": 226366
-    },
-    {
-      "name": "Guy Pearce",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "The Brutalist as Harrison Lee Van Buren",
-      "profilePath": "/vTqk6Nh3WgqPubkS23eOlMAwmwa.jpg",
-      "tmdbId": 529
-    },
-    {
-      "name": "Adam Pearson",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "A Different Man as Oswald",
-      "profilePath": "/xRDaT60nU48yBDD20A2hSmSALZX.jpg",
-      "tmdbId": 1675188
     }
   ],
   "best-actress": [
@@ -854,8 +840,8 @@
         "gg": "Y",
         "bafta": "Y",
         "oscar": "Y",
-        "critics": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "critics": "Y"
       },
       "profilePath": "/iOVbUH20il632nj2v01NCtYYeSg.jpg",
       "tmdbId": 8691
@@ -868,8 +854,8 @@
         "gg": "Y",
         "bafta": "X",
         "oscar": "X",
-        "critics": "Y",
         "sag": "Y",
+        "critics": "Y",
         "lafca": "X"
       },
       "profilePath": "/wApParZYBDi4yxekjfxjKEifJYh.jpg",
@@ -883,8 +869,8 @@
         "gg": "X",
         "bafta": "Y",
         "oscar": "Y",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "lafca": "Y"
       },
       "profilePath": "/b0HZr4Xa4pIR7MzTPXfIWvUZELx.jpg",
@@ -927,6 +913,87 @@
       "tmdbId": 17352
     },
     {
+      "name": "Pamela Anderson",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Last Showgirl as Shelley",
+      "profilePath": "/sk15ch2IQ6k6vWu07Jr77yw4oj5.jpg",
+      "tmdbId": 6736
+    },
+    {
+      "name": "Marianne Jean-Baptiste",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Hard Truths as Pansy",
+      "profilePath": "/bJ6p32cswcp0xvqiZC7S5tiwa2K.jpg",
+      "tmdbId": 17352
+    },
+    {
+      "name": "Nicole Kidman",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Babygirl as Romy Mathis",
+      "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
+      "tmdbId": 2227
+    },
+    {
+      "name": "Mikey Madison",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Anora as Anora \"Ani\" Mikheeva",
+      "profilePath": "/b0HZr4Xa4pIR7MzTPXfIWvUZELx.jpg",
+      "tmdbId": 1640439
+    },
+    {
+      "name": "Demi Moore",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Substance as Elisabeth Sparkle",
+      "profilePath": "/wApParZYBDi4yxekjfxjKEifJYh.jpg",
+      "tmdbId": 3416
+    },
+    {
+      "name": "Saoirse Ronan",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Outrun as Rona",
+      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
+      "tmdbId": 36592
+    },
+    {
+      "name": "Danielle Deadwyler",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "The Piano Lesson as Berniece Charles",
+      "profilePath": "/ifQcCBM5B4dIJdz4B0laO4yQuzU.jpg",
+      "tmdbId": 1853909
+    },
+    {
+      "name": "Natasha Lyonne",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "His Three Daughters as Rachel Brodsky",
+      "profilePath": "/2QJoTBEIeYyjGSDot9qxv2ayPH3.jpg",
+      "tmdbId": 10871
+    },
+    {
+      "name": "Katy O'Brian",
+      "awards": {
+        "gotham": "Y"
+      },
+      "film": "Love Lies Bleeding as Jackie Cleaver",
+      "profilePath": "/lEz7WmJPrBGSsIkEiAA10t5nDDM.jpg",
+      "tmdbId": 2252989
+    },
+    {
       "name": "Cynthia Erivo",
       "film": "Wicked",
       "role": "Leading",
@@ -934,8 +1001,8 @@
         "gg": "X",
         "bafta": "X",
         "oscar": "X",
-        "critics": "X",
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/gIAXqZwZCBqkh2ppfAV4xcnMxki.jpg",
       "tmdbId": 1765068
@@ -948,8 +1015,8 @@
         "gg": "X",
         "bafta": "X",
         "oscar": "X",
-        "critics": "X",
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/vmg6gqpaXnoRFP7NWdSTrsr1CED.jpg",
       "tmdbId": 1505938
@@ -962,8 +1029,8 @@
         "gg": "X",
         "bafta": "X",
         "oscar": "X",
-        "critics": "X",
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/ojr2zF46BmPe7EALds7WQf6Ro4O.jpg",
       "tmdbId": 226001
@@ -1053,8 +1120,8 @@
       "film": "The Piano Lesson",
       "role": "Supporting",
       "awards": {
-        "critics": "X",
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/ifQcCBM5B4dIJdz4B0laO4yQuzU.jpg",
       "tmdbId": 1853909
@@ -1137,87 +1204,6 @@
       },
       "profilePath": "/e54DfgDyS67xdtomYODFule6Ofa.jpg",
       "tmdbId": 53923
-    },
-    {
-      "name": "Pamela Anderson",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "The Last Showgirl as Shelley",
-      "profilePath": "/sk15ch2IQ6k6vWu07Jr77yw4oj5.jpg",
-      "tmdbId": 6736
-    },
-    {
-      "name": "Marianne Jean-Baptiste",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Hard Truths as Pansy",
-      "profilePath": "/bJ6p32cswcp0xvqiZC7S5tiwa2K.jpg",
-      "tmdbId": 17352
-    },
-    {
-      "name": "Nicole Kidman",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Babygirl as Romy Mathis",
-      "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
-      "tmdbId": 2227
-    },
-    {
-      "name": "Mikey Madison",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Anora as Anora \"Ani\" Mikheeva",
-      "profilePath": "/b0HZr4Xa4pIR7MzTPXfIWvUZELx.jpg",
-      "tmdbId": 1640439
-    },
-    {
-      "name": "Demi Moore",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "The Substance as Elisabeth Sparkle",
-      "profilePath": "/wApParZYBDi4yxekjfxjKEifJYh.jpg",
-      "tmdbId": 3416
-    },
-    {
-      "name": "Saoirse Ronan",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "The Outrun as Rona",
-      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
-      "tmdbId": 36592
-    },
-    {
-      "name": "Danielle Deadwyler",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "The Piano Lesson as Berniece Charles",
-      "profilePath": "/ifQcCBM5B4dIJdz4B0laO4yQuzU.jpg",
-      "tmdbId": 1853909
-    },
-    {
-      "name": "Natasha Lyonne",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "His Three Daughters as Rachel Brodsky",
-      "profilePath": "/2QJoTBEIeYyjGSDot9qxv2ayPH3.jpg",
-      "tmdbId": 10871
-    },
-    {
-      "name": "Katy O'Brian",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Love Lies Bleeding as Jackie Cleaver",
-      "profilePath": "/lEz7WmJPrBGSsIkEiAA10t5nDDM.jpg",
-      "tmdbId": 2252989
     }
   ]
 }
