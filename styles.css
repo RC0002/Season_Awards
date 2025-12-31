@@ -1036,7 +1036,7 @@ td.na-cell {
 }
 
 /* Nomination - white X (only in table cells) */
-td .nominee::before {
+td.nominee::before {
     content: '✕';
     font-size: 16px;
     color: #ffffff;
@@ -1045,11 +1045,11 @@ td .nominee::before {
 }
 
 /* ============ WINNER STYLES (table cells only) ============ */
-td .winner {
+td.winner {
     position: relative;
 }
 
-td .winner::before {
+td.winner::before {
     content: '';
     position: absolute;
     top: 5px;
@@ -2130,4 +2130,173 @@ footer {
 .fd-award-item.nominee .fd-award-status {
     background: rgba(255, 255, 255, 0.15);
     color: #ccc;
+}
+
+/* ============ PERSON CREDITS LIST ============ */
+.fd-credits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fd-credit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+.fd-credit-title {
+    font-size: 14px;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.fd-credit-year {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.fd-photo-placeholder {
+    width: 100%;
+    aspect-ratio: 2/3;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============ LIGHT MODE OVERLAY STYLES ============ */
+body.light-mode .film-detail-card {
+    background: linear-gradient(145deg, #f5f5f5 0%, #e8e8e8 100%);
+    border-color: #ccc;
+}
+
+body.light-mode .fd-title {
+    color: #333;
+}
+
+body.light-mode .fd-original-title {
+    color: #666;
+}
+
+body.light-mode .fd-tagline {
+    color: #555;
+    border-left-color: #b38b2d;
+}
+
+body.light-mode .fd-meta-grid {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .fd-meta-label {
+    color: #888;
+}
+
+body.light-mode .fd-meta-value {
+    color: #333;
+}
+
+body.light-mode .fd-section h3 {
+    color: #b38b2d;
+}
+
+body.light-mode .fd-overview {
+    color: #444;
+}
+
+body.light-mode .fd-crew-value {
+    color: #333;
+}
+
+body.light-mode .fd-crew-label {
+    color: #b38b2d;
+}
+
+body.light-mode .fd-cast-item {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .fd-cast-name {
+    color: #333;
+}
+
+body.light-mode .fd-cast-role {
+    color: #666;
+}
+
+body.light-mode .fd-credit-item {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .fd-credit-title {
+    color: #333;
+}
+
+body.light-mode .fd-credit-year {
+    color: #666;
+}
+
+body.light-mode .fd-awards-section {
+    border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .fd-award-item.nominee {
+    background: rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+body.light-mode .fd-award-item.nominee .fd-award-name {
+    color: #555;
+}
+
+body.light-mode .fd-award-item.nominee .fd-award-status {
+    background: rgba(0, 0, 0, 0.1);
+    color: #666;
+}
+/* ============ FILMOGRAPHY POSTER CARDS ============ */
+.fd-credits-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.fd-credit-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 2/3;
+}
+
+.fd-credit-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fd-credit-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    padding: 30px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.fd-credit-card .fd-credit-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.fd-credit-card .fd-credit-year {
+    font-size: 10px;
+    color: var(--gold);
 }

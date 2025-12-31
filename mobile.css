@@ -304,10 +304,18 @@
 
     /* Home page mobile */
     .home-title {
-        font-size: 36px;
+        font-size: 32px;
+    }
+
+    .home-subtitle {
+        font-size: 14px;
     }
 
     .poster-marquee img {
-        height: 18vh;
+        height: 26vh;
+    }
+
+    .poster-marquee {
+        gap: 8px;
     }
 }

@@ -101,6 +101,8 @@ let data = {};
 let editMode = false;
 let isDragging = false;
 let startX = 0;
+let startY = 0;
+let isHorizontalSwipe = null; // null = undetermined, true/false once determined
 let prevTranslate = 0;
 let isSynced = true;
 let isHomePage = true; // Home is default page
@@ -404,25 +406,48 @@ function setupSwipeGestures() {
 
 function touchStart(e) {
     isDragging = true;
-    startX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+    isHorizontalSwipe = null; // Reset direction detection
+    const pos = e.type.includes('mouse') ? e : e.touches[0];
+    startX = pos.clientX;
+    startY = pos.clientY;
     document.getElementById('swipe-track').classList.add('dragging');
 }
 
 function touchMove(e) {
     if (!isDragging) return;
-    const currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
-    const diff = currentX - startX;
+
+    const pos = e.type.includes('mouse') ? e : e.touches[0];
+    const currentX = pos.clientX;
+    const currentY = pos.clientY;
+    const diffX = currentX - startX;
+    const diffY = currentY - startY;
+
+    // Determine direction on first significant movement (threshold: 10px)
+    if (isHorizontalSwipe === null && (Math.abs(diffX) > 10 || Math.abs(diffY) > 10)) {
+        // Require 2:1 horizontal ratio to be considered a horizontal swipe
+        isHorizontalSwipe = Math.abs(diffX) > Math.abs(diffY) * 2;
+    }
+
+    // If determined to be vertical scroll, don't move track
+    if (isHorizontalSwipe === false) {
+        return;
+    }
+
+    // If horizontal swipe, prevent vertical scroll
+    if (isHorizontalSwipe === true) {
+        e.preventDefault();
+    }
 
     // Show home overlay when swiping right from first card
-    if (currentCategoryIndex === 0 && diff > 0 && !isHomePage) {
+    if (currentCategoryIndex === 0 && diffX > 0 && !isHomePage) {
         const overlay = document.getElementById('home-overlay');
-        const opacity = Math.min(diff / 400, 1);
+        const opacity = Math.min(diffX / 400, 1);
         overlay.style.opacity = opacity;
     } else if (!isHomePage) {
         document.getElementById('home-overlay').style.opacity = 0;
     }
 
-    setTrackPosition(prevTranslate + diff);
+    setTrackPosition(prevTranslate + diffX);
 }
 
 function touchEnd(e) {
@@ -837,6 +862,15 @@ function createTableRow(entry, categoryId, index, isPerson) {
         });
     }
 
+    // Add click listener for person details (actors, actresses, directors)
+    if (isPerson) {
+        nameCell.style.cursor = 'pointer';
+        nameCell.addEventListener('click', (e) => {
+            if (e.target.closest('.winner, .nominee')) return;
+            showPersonDetails(entry);
+        });
+    }
+
     row.appendChild(nameCell);
 
     CONFIG.AWARDS.forEach((award) => {
@@ -1132,14 +1166,153 @@ function renderAwardsSection(entry) {
 
     if (!awardItems) return '';
 
+    const yearNum = parseInt(currentYear) || 0;
+    const yearDisplay = yearNum ? `${yearNum}/${yearNum + 1}` : '';
+
     return `
         <div class="fd-awards-section">
-            <h3>Premi e Nomination</h3>
+            <h3>Premi e Nomination ${yearDisplay}</h3>
             <div class="fd-awards-grid">
                 ${awardItems}
             </div>
         </div>
     `;
+}
+
+// ============ PERSON DETAIL OVERLAY ============
+async function showPersonDetails(entry) {
+    const overlay = document.getElementById('film-detail-overlay');
+    const content = document.getElementById('film-detail-content');
+
+    overlay.classList.add('active');
+
+    // Show loading state
+    content.innerHTML = `
+        <div class="fd-loading">
+            <div class="loading-text">Caricamento...</div>
+        </div>
+    `;
+
+    try {
+        let personId = entry.tmdbId;
+
+        // If no TMDB ID, search for the person
+        if (!personId) {
+            const searchUrl = `${CONFIG.TMDB_BASE_URL}/search/person?api_key=${CONFIG.TMDB_API_KEY}&query=${encodeURIComponent(entry.name)}`;
+            const searchRes = await fetch(searchUrl);
+            const searchData = await searchRes.json();
+
+            if (searchData.results && searchData.results.length > 0) {
+                personId = searchData.results[0].id;
+                entry.tmdbId = personId; // Cache for future use
+            } else {
+                throw new Error('Person not found on TMDB');
+            }
+        }
+
+        // Fetch person details with combined credits
+        const detailsUrl = `${CONFIG.TMDB_BASE_URL}/person/${personId}?api_key=${CONFIG.TMDB_API_KEY}&append_to_response=combined_credits`;
+        const res = await fetch(detailsUrl);
+        const data = await res.json();
+
+        renderPersonDetails(data, entry);
+
+    } catch (err) {
+        console.error('Error fetching person details:', err);
+        content.innerHTML = `
+            <div class="fd-loading">
+                <span style="color: #ff6b6b;">Failed to load details.</span>
+                <span style="font-size: 12px;">${err.message}</span>
+                <button onclick="closeOverlay()" class="header-btn" style="margin-top:20px;">Close</button>
+            </div>
+        `;
+    }
+}
+
+function renderPersonDetails(person, entry) {
+    const content = document.getElementById('film-detail-content');
+
+    const birthday = person.birthday ? new Date(person.birthday).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' }) : 'N/A';
+    const birthplace = person.place_of_birth || 'N/A';
+    const age = person.birthday ? Math.floor((new Date() - new Date(person.birthday)) / (365.25 * 24 * 60 * 60 * 1000)) : null;
+    const ageText = age ? `${age} anni` : '';
+
+    const photoUrl = person.profile_path
+        ? `${CONFIG.TMDB_IMAGE_BASE}w500${person.profile_path}`
+        : '';
+
+    // Talk shows and similar to exclude
+    const excludeTitles = ['saturday night live', 'the tonight show', 'the late show', 'the daily show',
+        'late night with', 'the talk', 'the view', 'ellen', 'jimmy kimmel',
+        'the graham norton', 'conan', 'good morning', 'today show', 'live with', 'kelly clarkson'];
+
+    // Get notable credits (sorted by popularity, filter out talk shows, max 6)
+    const notableCredits = person.combined_credits?.cast
+        ?.filter(c => {
+            const title = (c.title || c.name || '').toLowerCase();
+            // Only movies and TV series (not mini-series episodes or talk shows)
+            const isMovie = c.media_type === 'movie' || c.title;
+            const isTvSeries = c.media_type === 'tv' && c.episode_count !== 1;
+            // Exclude talk shows
+            const isTalkShow = excludeTitles.some(t => title.includes(t));
+            return (isMovie || isTvSeries) && !isTalkShow && c.poster_path;
+        })
+        .sort((a, b) => (b.popularity || 0) - (a.popularity || 0))
+        .slice(0, 6)
+        .map(c => {
+            const year = (c.release_date || c.first_air_date)?.substring(0, 4) || '';
+            const title = c.title || c.name;
+            const posterUrl = `${CONFIG.TMDB_IMAGE_BASE}w185${c.poster_path}`;
+            return `
+                <div class="fd-credit-card">
+                    <img src="${posterUrl}" class="fd-credit-poster" alt="${title}">
+                    <div class="fd-credit-overlay">
+                        <span class="fd-credit-title">${title}</span>
+                        <span class="fd-credit-year">${year}</span>
+                    </div>
+                </div>`;
+        })
+        .join('') || '';
+
+    const html = `
+        <div class="fd-layout">
+            <div class="fd-poster-side">
+                ${photoUrl ? `<img src="${photoUrl}" class="fd-poster-full" alt="${person.name}">` : '<div class="fd-photo-placeholder"></div>'}
+                
+                <div class="fd-crew-section">
+                    <div class="fd-crew-item">
+                        <span class="fd-crew-label">Nato/a</span>
+                        <span class="fd-crew-value">${birthday} ${ageText}</span>
+                    </div>
+                    <div class="fd-crew-item">
+                        <span class="fd-crew-label">Luogo</span>
+                        <span class="fd-crew-value">${birthplace}</span>
+                    </div>
+                    ${person.known_for_department ? `
+                    <div class="fd-crew-item">
+                        <span class="fd-crew-label">Ruolo</span>
+                        <span class="fd-crew-value">${person.known_for_department}</span>
+                    </div>` : ''}
+                </div>
+            </div>
+            
+            <div class="fd-info-side">
+                <h1 class="fd-title">${person.name}</h1>
+                
+                ${renderAwardsSection(entry)}
+
+                ${notableCredits ? `
+                <div class="fd-section">
+                    <h3>Filmografia Notevole</h3>
+                    <div class="fd-credits-list">
+                        ${notableCredits}
+                    </div>
+                </div>` : ''}
+            </div>
+        </div>
+    `;
+
+    content.innerHTML = html;
 }
 
 
