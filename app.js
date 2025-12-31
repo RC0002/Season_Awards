@@ -111,6 +111,106 @@ let isHomePage = true; // Home is default page
 let lastWheelTime = 0;
 const WHEEL_COOLDOWN = 600;
 
+// ============ CACHE MANAGER ============
+const CacheManager = {
+    TTL: 1000 * 60 * 60 * 24, // 24 hours
+    PREFIX: 'sa_cache_',
+
+    // Generate a simple key from the URL
+    getKey(url) {
+        // Create a simple hash-like string from the URL to use as a key
+        let hash = 0;
+        for (let i = 0; i < url.length; i++) {
+            const char = url.charCodeAt(i);
+            hash = ((hash << 5) - hash) + char;
+            hash = hash & hash; // Convert to 32bit integer
+        }
+        return this.PREFIX + hash;
+    },
+
+    async fetch(url) {
+        const key = this.getKey(url);
+        const cached = localStorage.getItem(key);
+
+        if (cached) {
+            try {
+                const record = JSON.parse(cached);
+                if (Date.now() - record.timestamp < this.TTL) {
+                    // console.log('Serving from cache:', url);
+                    return record.data;
+                } else {
+                    localStorage.removeItem(key); // Expired
+                }
+            } catch (e) {
+                localStorage.removeItem(key); // Corrupt
+            }
+        }
+
+        // Fetch fresh
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        const data = await res.json();
+
+        // Save to cache
+        try {
+            // Check for storage quotas
+            try {
+                localStorage.setItem(key, JSON.stringify({
+                    timestamp: Date.now(),
+                    data: data
+                }));
+            } catch (e) {
+                // If quota exceeded, clear old cache and try again
+                this.cleanup(true);
+                try {
+                    localStorage.setItem(key, JSON.stringify({
+                        timestamp: Date.now(),
+                        data: data
+                    }));
+                } catch (retryErr) {
+                    console.warn('Cache storage full, skipping cache for this item');
+                }
+            }
+        } catch (e) {
+            console.warn('Cache write error', e);
+        }
+
+        return data;
+    },
+
+    // Clear expired cache items (or all if force is true)
+    cleanup(force = false) {
+        const now = Date.now();
+        let removedCount = 0;
+
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key && key.startsWith(this.PREFIX)) {
+                if (force) {
+                    localStorage.removeItem(key);
+                    removedCount++;
+                    continue;
+                }
+
+                try {
+                    const record = JSON.parse(localStorage.getItem(key));
+                    if (now - record.timestamp > this.TTL) {
+                        localStorage.removeItem(key);
+                        removedCount++;
+                    }
+                } catch (e) {
+                    localStorage.removeItem(key);
+                    removedCount++;
+                }
+            }
+        }
+        if (removedCount > 0) console.log(`Cleaned up ${removedCount} cache items`);
+    }
+};
+
+// Clean cache on startup
+setTimeout(() => CacheManager.cleanup(), 5000); // Run cleanup 5s after load
+
 // ============ INITIALIZATION ============
 document.addEventListener('DOMContentLoaded', () => {
     calculateCurrentYear();
@@ -778,8 +878,7 @@ async function fetchMissingImages() {
                 const url = `${CONFIG.TMDB_BASE_URL}${endpoint}?api_key=${CONFIG.TMDB_API_KEY}&query=${encodeURIComponent(entry.name)}`;
 
                 try {
-                    const res = await fetch(url);
-                    const json = await res.json();
+                    const json = await CacheManager.fetch(url);
 
                     if (json.results?.length > 0) {
                         const match = json.results[0];
@@ -983,8 +1082,7 @@ async function showFilmDetails(entry) {
         // If no ID, try to search for it first
         if (!tmdbId) {
             const searchUrl = `${CONFIG.TMDB_BASE_URL}/search/movie?api_key=${CONFIG.TMDB_API_KEY}&query=${encodeURIComponent(entry.name)}`;
-            const searchRes = await fetch(searchUrl);
-            const searchJson = await searchRes.json();
+            const searchJson = await CacheManager.fetch(searchUrl);
             if (searchJson.results && searchJson.results.length > 0) {
                 tmdbId = searchJson.results[0].id;
                 // Save it for future use
@@ -998,11 +1096,10 @@ async function showFilmDetails(entry) {
         }
 
         // Fetch details with credits
-        const detailsUrl = `${CONFIG.TMDB_BASE_URL}/movie/${tmdbId}?api_key=${CONFIG.TMDB_API_KEY}&append_to_response=credits,release_dates`;
-        const res = await fetch(detailsUrl);
-        const data = await res.json();
+        const detailsUrl = `${CONFIG.TMDB_BASE_URL}/movie/${tmdbId}?api_key=${CONFIG.TMDB_API_KEY}&append_to_response=credits,keywords,release_dates`;
+        const movie = await CacheManager.fetch(detailsUrl);
 
-        renderFilmDetails(data, entry);
+        renderFilmDetails(movie, entry);
 
     } catch (err) {
         console.error('Error fetching film details:', err);
@@ -1199,8 +1296,8 @@ async function showPersonDetails(entry) {
         // If no TMDB ID, search for the person
         if (!personId) {
             const searchUrl = `${CONFIG.TMDB_BASE_URL}/search/person?api_key=${CONFIG.TMDB_API_KEY}&query=${encodeURIComponent(entry.name)}`;
-            const searchRes = await fetch(searchUrl);
-            const searchData = await searchRes.json();
+            const searchResPromise = CacheManager.fetch(searchUrl);
+            const searchData = await searchResPromise;
 
             if (searchData.results && searchData.results.length > 0) {
                 personId = searchData.results[0].id;
@@ -1212,8 +1309,7 @@ async function showPersonDetails(entry) {
 
         // Fetch person details with combined credits
         const detailsUrl = `${CONFIG.TMDB_BASE_URL}/person/${personId}?api_key=${CONFIG.TMDB_API_KEY}&append_to_response=combined_credits`;
-        const res = await fetch(detailsUrl);
-        const data = await res.json();
+        const data = await CacheManager.fetch(detailsUrl);
 
         renderPersonDetails(data, entry);
 
