@@ -1,0 +1,313 @@
+/* ============ MOBILE-SPECIFIC STYLES ============ */
+/* This file contains styles optimized for phone screens */
+/* Included via media query in index.html */
+
+@media (max-width: 768px) {
+
+    /* ============ NAVIGATION ============ */
+    .top-nav {
+        height: 56px;
+    }
+
+    .nav-container {
+        padding: 0 12px;
+        gap: 12px;
+    }
+
+    .nav-logo {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide nav links on mobile - use swipe */
+    }
+
+    .nav-year-select {
+        font-size: 12px;
+        padding: 4px 20px 4px 8px;
+    }
+
+    .theme-toggle {
+        display: none;
+        /* Hide on mobile */
+    }
+
+    .sync-status {
+        display: none;
+        /* Hide on mobile */
+    }
+
+    /* ============ MAIN CONTENT ============ */
+    body {
+        padding-top: 56px;
+    }
+
+    .main-content {
+        height: calc(100vh - 56px);
+        padding: 8px 0;
+    }
+
+    .category-title-section {
+        padding: 0 16px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+
+    .category-title {
+        font-size: 16px;
+    }
+
+    .page-title {
+        display: none;
+        /* Hide subtitle on mobile */
+    }
+
+    /* ============ CATEGORY CARDS ============ */
+    .category-card {
+        flex: 0 0 calc(100vw - 16px);
+        width: calc(100vw - 16px);
+        margin: 0 8px;
+    }
+
+    .category-card-inner {
+        height: calc(100vh - 180px);
+        border-radius: 8px;
+    }
+
+    /* ============ TABLE - MOBILE OPTIMIZED ============ */
+    /* Hide all award columns on mobile - show only name column */
+    th:not(:first-child),
+    td:not(:first-child) {
+        display: none !important;
+    }
+
+    th:first-child {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .name-cell {
+        width: 100% !important;
+        padding: 8px 16px !important;
+    }
+
+    .name-cell-content {
+        height: 64px;
+        cursor: pointer;
+    }
+
+    /* Make the whole row look clickable */
+    tr:hover td {
+        background: rgba(212, 168, 75, 0.15) !important;
+    }
+
+    .entry-name {
+        font-size: 16px;
+    }
+
+    .entry-film {
+        font-size: 13px;
+    }
+
+    .poster-bg {
+        width: 70px;
+        opacity: 0.9;
+    }
+
+    .person-photo-bg {
+        width: 44px;
+        height: 44px;
+    }
+
+    /* ============ FILM DETAIL OVERLAY - MOBILE ============ */
+    .film-detail-overlay {
+        z-index: 3000;
+    }
+
+    .film-detail-card {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        border-radius: 0;
+        border: none;
+    }
+
+    .film-detail-close {
+        top: 12px;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+        font-size: 28px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    /* Header backdrop */
+    .fd-header {
+        height: 180px;
+    }
+
+    /* Layout adjustments */
+    .fd-layout {
+        flex-direction: column;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .fd-poster-side {
+        flex-direction: row;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .fd-poster-full {
+        width: 100px;
+        flex-shrink: 0;
+    }
+
+    .fd-crew-section {
+        flex: 1;
+        margin-top: 0;
+        gap: 8px;
+    }
+
+    .fd-info-side {
+        padding: 0;
+    }
+
+    .fd-title {
+        font-size: 22px;
+    }
+
+    .fd-original-title {
+        font-size: 12px;
+    }
+
+    .fd-tagline {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .fd-meta-grid {
+        grid-template-columns: 1fr;
+        gap: 6px 0;
+        padding: 12px;
+    }
+
+    .fd-meta-row {
+        font-size: 13px;
+    }
+
+    .fd-section h3 {
+        font-size: 12px;
+    }
+
+    .fd-overview {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .fd-cast-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .fd-cast-item {
+        padding: 6px;
+    }
+
+    .fd-cast-photo {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* ============ AWARDS SECTION IN OVERLAY ============ */
+    .fd-awards-section {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .fd-awards-section h3 {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--gold);
+        margin-bottom: 12px;
+    }
+
+    .fd-awards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 8px;
+    }
+
+    .fd-award-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .fd-award-item.winner {
+        background: linear-gradient(135deg, rgba(212, 168, 75, 0.4) 0%, rgba(180, 140, 50, 0.3) 100%);
+        border: 2px solid var(--gold);
+        box-shadow: 0 0 10px rgba(212, 168, 75, 0.4);
+    }
+
+    .fd-award-item.nominee {
+        background: rgba(60, 60, 60, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .fd-award-name {
+        font-size: 10px;
+        font-weight: 600;
+        color: var(--gold);
+        margin-bottom: 4px;
+    }
+
+    .fd-award-item.winner .fd-award-name {
+        color: var(--gold);
+    }
+
+    .fd-award-item.winner .fd-award-status {
+        background: var(--gold);
+        color: #000;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 9px;
+        font-weight: 700;
+    }
+
+    .fd-award-item.nominee .fd-award-status {
+        background: rgba(255, 255, 255, 0.2);
+        color: #ccc;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 9px;
+        font-weight: 600;
+    }
+
+    /* Swipe indicators on mobile */
+    .swipe-indicators {
+        margin: 8px 0;
+    }
+
+    .swipe-dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    /* Home page mobile */
+    .home-title {
+        font-size: 36px;
+    }
+
+    .poster-marquee img {
+        height: 18vh;
+    }
+}

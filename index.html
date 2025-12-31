@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Season Awards Nomination Tracker</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="icon" type="image/jpeg" href="favicon.jpg">
     <link rel="apple-touch-icon" href="favicon.jpg">
     <!-- Firebase SDK -->
@@ -20,6 +21,20 @@
 <body>
     <div class="container">
         <p class="loading-text">Loading...</p>
+    </div>
+
+    <div class="film-detail-overlay" id="film-detail-overlay">
+        <div class="film-detail-backdrop" id="film-detail-backdrop"></div>
+        <div class="film-detail-card" id="film-detail-card">
+            <button class="film-detail-close" id="film-detail-close">&times;</button>
+            <div class="film-detail-content" id="film-detail-content">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <div class="loading-overlay" id="loading">
+        <div class="loading-text">Loading...</div>
     </div>
     <!-- Corner Peel - Control Panel Link -->
     <a href="control.html" class="corner-peel" title="Control Panel">

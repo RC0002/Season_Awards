@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     calculateCurrentYear();
     buildPage();
     loadData();
+    setupFilmOverlay();
 });
 
 function calculateCurrentYear() {
@@ -826,6 +827,16 @@ function createTableRow(entry, categoryId, index, isPerson) {
 
     // Removed delete button listener logic since editing is removed
 
+    // Add click listener for film details
+    if (categoryId === 'best-film') {
+        nameCell.style.cursor = 'pointer';
+        nameCell.addEventListener('click', (e) => {
+            // Prevent triggering if clicking on other interactive elements
+            if (e.target.closest('.winner, .nominee')) return;
+            showFilmDetails(entry);
+        });
+    }
+
     row.appendChild(nameCell);
 
     CONFIG.AWARDS.forEach((award) => {
@@ -891,4 +902,244 @@ function toggleCell(categoryId, entryIndex, awardKey, cell, award) {
 // Edit and Autocomplete functions removed
 
 window.addEventListener('resize', () => { setPositionByIndex(); });
+
+
+// ============ FILM DETAIL OVERLAY LOGIC ============
+function setupFilmOverlay() {
+    const overlay = document.getElementById('film-detail-overlay');
+    const closeBtn = document.getElementById('film-detail-close');
+    const backdrop = document.getElementById('film-detail-backdrop');
+
+    if (closeBtn) closeBtn.addEventListener('click', closeOverlay);
+    if (backdrop) backdrop.addEventListener('click', closeOverlay);
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            closeOverlay();
+        }
+    });
+}
+
+function closeOverlay() {
+    const overlay = document.getElementById('film-detail-overlay');
+    overlay.classList.remove('active');
+    setTimeout(() => {
+        document.getElementById('film-detail-content').innerHTML = '';
+    }, 300);
+}
+
+async function showFilmDetails(entry) {
+    const overlay = document.getElementById('film-detail-overlay');
+    const content = document.getElementById('film-detail-content');
+
+    overlay.classList.add('active');
+
+    // Show loading state
+    content.innerHTML = `
+        <div class="fd-loading">
+            <div class="fd-spinner"></div>
+            <span>Loading details for "${entry.name}"...</span>
+        </div>
+    `;
+
+    try {
+        let tmdbId = entry.tmdbId;
+
+        // If no ID, try to search for it first
+        if (!tmdbId) {
+            const searchUrl = `${CONFIG.TMDB_BASE_URL}/search/movie?api_key=${CONFIG.TMDB_API_KEY}&query=${encodeURIComponent(entry.name)}`;
+            const searchRes = await fetch(searchUrl);
+            const searchJson = await searchRes.json();
+            if (searchJson.results && searchJson.results.length > 0) {
+                tmdbId = searchJson.results[0].id;
+                // Save it for future use
+                entry.tmdbId = tmdbId;
+                saveData();
+            }
+        }
+
+        if (!tmdbId) {
+            throw new Error('Movie not found on TMDB');
+        }
+
+        // Fetch details with credits
+        const detailsUrl = `${CONFIG.TMDB_BASE_URL}/movie/${tmdbId}?api_key=${CONFIG.TMDB_API_KEY}&append_to_response=credits,release_dates`;
+        const res = await fetch(detailsUrl);
+        const data = await res.json();
+
+        renderFilmDetails(data, entry);
+
+    } catch (err) {
+        console.error('Error fetching film details:', err);
+        content.innerHTML = `
+            <div class="fd-loading">
+                <span style="color: #ff6b6b;">Failed to load details.</span>
+                <span style="font-size: 12px;">${err.message}</span>
+                <button onclick="closeOverlay()" class="header-btn" style="margin-top:20px;">Close</button>
+            </div>
+        `;
+    }
+}
+
+function renderFilmDetails(movie, entry) {
+    const content = document.getElementById('film-detail-content');
+
+    const year = movie.release_date ? movie.release_date.substring(0, 4) : 'N/A';
+    const releaseDate = movie.release_date ? new Date(movie.release_date).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' }) : 'N/A';
+    const runtime = movie.runtime ? `${Math.floor(movie.runtime / 60)}h ${movie.runtime % 60}m` : 'N/A';
+    const genres = movie.genres ? movie.genres.map(g => g.name).join(', ') : 'N/A';
+    const tagline = movie.tagline ? `<div class="fd-tagline">"${movie.tagline}"</div>` : '';
+
+    // Format currency
+    const formatMoney = (num) => {
+        if (!num || num === 0) return 'N/A';
+        return '$' + num.toLocaleString('en-US');
+    };
+
+    const budget = formatMoney(movie.budget);
+    const revenue = formatMoney(movie.revenue);
+
+    // Countries and languages
+    const countries = movie.production_countries?.map(c => c.name).join(', ') || 'N/A';
+    const languages = movie.spoken_languages?.map(l => l.english_name).join(', ') || 'N/A';
+    const originalLanguage = movie.original_language?.toUpperCase() || 'N/A';
+    const originalTitle = movie.original_title !== movie.title ? movie.original_title : null;
+
+    // Production companies
+    const productionCompanies = movie.production_companies?.slice(0, 3).map(c => c.name).join(', ') || 'N/A';
+
+    // Rating
+    const rating = movie.vote_average ? movie.vote_average.toFixed(1) : 'N/A';
+    const voteCount = movie.vote_count ? movie.vote_count.toLocaleString() : '0';
+
+    // Director(s)
+    const directors = movie.credits?.crew?.filter(p => p.job === 'Director').map(d => d.name) || [];
+    const directorText = directors.length > 0 ? directors.join(', ') : 'Unknown';
+
+    // Writers
+    const writers = movie.credits?.crew?.filter(p => p.job === 'Writer' || p.job === 'Screenplay').slice(0, 3).map(w => w.name) || [];
+    const writerText = writers.length > 0 ? writers.join(', ') : null;
+
+    // Cast (top 6)
+    const cast = movie.credits?.cast?.slice(0, 6).map(c => `
+        <div class="fd-cast-item">
+            ${c.profile_path ? `<img src="${CONFIG.TMDB_IMAGE_BASE}w92${c.profile_path}" class="fd-cast-photo" alt="">` : '<div class="fd-cast-photo-placeholder"></div>'}
+            <div class="fd-cast-info">
+                <span class="fd-cast-name">${c.name}</span>
+                <span class="fd-cast-role">${c.character}</span>
+            </div>
+        </div>
+    `).join('') || '';
+
+    // Backdrop
+    const backdropUrl = movie.backdrop_path
+        ? `${CONFIG.TMDB_IMAGE_BASE}original${movie.backdrop_path}`
+        : '';
+
+    const posterUrl = movie.poster_path
+        ? `${CONFIG.TMDB_IMAGE_BASE}w500${movie.poster_path}`
+        : '';
+
+    const html = `
+        <div class="fd-header">
+            ${backdropUrl ? `<img src="${backdropUrl}" class="fd-backdrop-img" alt="">` : ''}
+        </div>
+        
+        <div class="fd-layout">
+            <div class="fd-poster-side">
+                <img src="${posterUrl}" class="fd-poster-full" alt="${movie.title}">
+                
+                <div class="fd-crew-section">
+                    <div class="fd-crew-item">
+                        <span class="fd-crew-label">Regia</span>
+                        <span class="fd-crew-value">${directorText}</span>
+                    </div>
+                    ${writerText ? `
+                    <div class="fd-crew-item">
+                        <span class="fd-crew-label">Sceneggiatura</span>
+                        <span class="fd-crew-value">${writerText}</span>
+                    </div>` : ''}
+                    <div class="fd-crew-item">
+                        <span class="fd-crew-label">Produzione</span>
+                        <span class="fd-crew-value">${productionCompanies}</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fd-info-side">
+                <h1 class="fd-title">${movie.title}</h1>
+                ${originalTitle ? `<div class="fd-original-title">${originalTitle}</div>` : ''}
+                
+                ${tagline}
+                
+                <div class="fd-meta-grid">
+                    <div class="fd-meta-row"><span class="fd-meta-label">Anno</span><span class="fd-meta-value">${year}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Durata</span><span class="fd-meta-value">${runtime}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Genere</span><span class="fd-meta-value">${genres}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Uscita</span><span class="fd-meta-value">${releaseDate}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Lingua</span><span class="fd-meta-value">${originalLanguage}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Paese</span><span class="fd-meta-value">${countries}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Budget</span><span class="fd-meta-value">${budget}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Incasso</span><span class="fd-meta-value">${revenue}</span></div>
+                </div>
+                
+                <div class="fd-section">
+                    <h3>Trama</h3>
+                    <p class="fd-overview">${movie.overview || 'Nessuna trama disponibile.'}</p>
+                </div>
+                
+                ${cast ? `
+                <div class="fd-section">
+                    <h3>Cast Principale</h3>
+                    <div class="fd-cast-grid">
+                        ${cast}
+                    </div>
+                </div>` : ''}
+                
+                ${renderAwardsSection(entry)}
+            </div>
+        </div>
+    `;
+
+    content.innerHTML = html;
+}
+
+// Generate awards HTML section for overlay
+function renderAwardsSection(entry) {
+    if (!entry || !entry.awards || Object.keys(entry.awards).length === 0) {
+        return '';
+    }
+
+    const awardItems = CONFIG.AWARDS
+        .filter(award => entry.awards[award.key])
+        .map(award => {
+            const status = entry.awards[award.key];
+            const isWinner = status === 'Y';
+            const isNominee = status === 'X';
+
+            if (!isWinner && !isNominee) return '';
+
+            return `
+                <div class="fd-award-item ${isWinner ? 'winner' : 'nominee'}">
+                    <span class="fd-award-name">${award.label}</span>
+                    <span class="fd-award-status">${isWinner ? 'VINTO' : 'NOM'}</span>
+                </div>
+            `;
+        })
+        .filter(html => html)
+        .join('');
+
+    if (!awardItems) return '';
+
+    return `
+        <div class="fd-awards-section">
+            <h3>Premi e Nomination</h3>
+            <div class="fd-awards-grid">
+                ${awardItems}
+            </div>
+        </div>
+    `;
+}
+
 
