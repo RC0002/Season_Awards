@@ -6,7 +6,7 @@
 const FIREBASE_URL = 'https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app';
 const CURRENT_YEAR = '2025_2026';
 
-const AWARDS_ORDER = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit'];
+const AWARDS_ORDER = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa'];
 const AWARDS_NAMES = {
     'oscar': 'Oscar',
     'gg': 'Golden Globes',
@@ -23,7 +23,8 @@ const AWARDS_NAMES = {
     'adg': 'ADG',
     'gotham': 'Gotham',
     'astra': 'Astra',
-    'spirit': 'Spirit'
+    'spirit': 'Spirit',
+    'bifa': 'BIFA'
 };
 
 const CATEGORIES = ['best-film', 'best-director', 'best-actor', 'best-actress'];
@@ -146,7 +147,7 @@ function renderCurrentYear(data) {
         const awardData = yearData[awardKey];
         if (!awardData) continue;
 
-        const isCombined = awardKey === 'lafca' || awardKey === 'gotham';
+        const isCombined = awardKey === 'lafca' || awardKey === 'gotham' || awardKey === 'bifa' || awardKey === 'spirit';
         let cells = [];
 
         if (isCombined) {
@@ -171,10 +172,14 @@ function renderCurrentYear(data) {
             let targetTotal = 8; // Default for LAFCA
             if (awardKey === 'gotham') {
                 targetTotal = 20; // 2025/2026 season uses 10+10 format
+            } else if (awardKey === 'bifa') {
+                targetTotal = 12; // 12 total (Lead + Supporting)
+            } else if (awardKey === 'spirit') {
+                targetTotal = 20; // 10 Lead + 10 Supporting (gender-neutral since 2023)
             }
             const combinedStatus = (combined === targetTotal) ? 'ok' : (combined === 0 ? 'pending' : 'error');
 
-            const comboText = (awardKey === 'gotham' && combined > 0) ? `<b>${actorData.nominations}+${actressData.nominations}</b>` : `<b>${combined}</b>`;
+            const comboText = ((awardKey === 'gotham' || awardKey === 'bifa' || awardKey === 'spirit') && combined > 0) ? `<b>${actorData.nominations}+${actressData.nominations}</b>` : `<b>${combined}</b>`;
             cells.push(`<span class="cp-recap-cell ${combinedStatus}" style="grid-column: span 2; text-align: center;">${comboText}<small>/${targetTotal}</small></span>`);
         } else {
             // Standard awards
@@ -207,8 +212,9 @@ function renderAwardCard(awardKey, data) {
     const years = Object.keys(data.years).filter(y => y !== CURRENT_YEAR).sort().reverse();
     const awardName = AWARDS_NAMES[awardKey] || awardKey.toUpperCase();
 
-    // LAFCA and GOTHAM use combined Actor+Actress column (gender-neutral categories)
-    const isCombined = awardKey === 'lafca' || awardKey === 'gotham';
+    // LAFCA, GOTHAM, BIFA use combined Actor+Actress column always
+    // SPIRIT uses combined only from 2023+ (gender-neutral since 38th)
+    const alwaysCombined = awardKey === 'lafca' || awardKey === 'gotham' || awardKey === 'bifa';
 
     let html = `
         <div class="cp-history-card">
@@ -217,7 +223,7 @@ function renderAwardCard(awardKey, data) {
                 <span>Year</span>
                 <span>Film</span>
                 <span>Dir</span>
-                ${isCombined
+                ${alwaysCombined
             ? '<span style="grid-column: span 2; text-align: center;">Actor + Actress</span>'
             : '<span>Actor</span><span>Actress</span>'}
             </div>
@@ -233,6 +239,10 @@ function renderAwardCard(awardKey, data) {
         const yearLabel = `${years_parts[0].slice(-2)}/${years_parts[1].slice(-2)}`;
 
         let cells = [];
+
+        // Determine if this specific year should use combined display
+        const yearNum = parseInt(yearKey.split('_')[1]);
+        const isCombined = alwaysCombined || (awardKey === 'spirit' && yearNum >= 2023);
 
         if (isCombined) {
             // Combined: Film, Director, then combined Actor+Actress
@@ -254,8 +264,7 @@ function renderAwardCard(awardKey, data) {
 
             let targetTotal = 8; // Default for LAFCA
             if (awardKey === 'gotham') {
-                // Extract year from yearKey (e.g. "2017_2018" -> 2018)
-                const yearNum = parseInt(yearKey.split('_')[1]);
+                // Use yearNum already declared above
                 // Force expected to match ACTUAL scraped counts per Wikipedia verification
                 if (yearNum <= 2013) targetTotal = 0;       // No actor categories before 2013
                 else if (yearNum === 2016) targetTotal = 11; // 5+6 scraped
@@ -264,6 +273,18 @@ function renderAwardCard(awardKey, data) {
                 else if (yearNum === 2022) targetTotal = 17; // 9+8 scraped
                 else if (yearNum >= 2023) targetTotal = 20;  // 10+10 standard
                 else targetTotal = 10; // 2014-2020 (except 2016): 5+5
+            } else if (awardKey === 'bifa') {
+                if (yearNum >= 2025) targetTotal = 12;       // 2025+ (2024 ceremony+): 12 total
+                else if (yearNum === 2024) targetTotal = 16; // 2024 (2023 ceremony): 16 total (9M+7F)
+                else if (yearNum === 2023) targetTotal = 17; // 2023 (2022 ceremony): 17 total (6M+11F)
+                else targetTotal = 20;                       // Pre-2023 (2021 ceremony and older): 20 total (10M+10F)
+            } else if (awardKey === 'spirit') {
+                // Spirit Awards: gender-neutral since 38th (2023)
+                if (yearNum >= 2023) {
+                    targetTotal = 20; // 10 Lead + 10 Supporting
+                } else {
+                    targetTotal = 20; // Pre-2023: still 10 Actor + 10 Actress separate
+                }
             }
             const combinedStatus = (combined === targetTotal) ? 'ok' : (combined === 0 && targetTotal === 0 ? 'ok' : (combined === 0 ? 'pending' : 'error'));
 

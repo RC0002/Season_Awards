@@ -7,12 +7,12 @@
         "oscar": "X",
         "afi": "Y",
         "critics": "Y",
-        "pga": "X",
         "nbr": "Y",
+        "pga": "X",
         "lafca": "Y",
-        "venice": "Y",
         "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "venice": "Y"
       },
       "posterPath": "/rqK75R3tTz2iWU0AQ6tLz3KMOU1.jpg",
       "tmdbId": 11035
@@ -25,8 +25,8 @@
         "oscar": "Y",
         "afi": "Y",
         "critics": "X",
-        "pga": "Y",
         "nbr": "Y",
+        "pga": "Y",
         "wga": "X"
       },
       "genre": "Comedy",
@@ -41,14 +41,31 @@
         "afi": "Y",
         "sag": "Y",
         "critics": "X",
-        "pga": "X",
         "nbr": "Y",
+        "pga": "X",
         "wga": "X",
         "adg": "Y"
       },
       "genre": "Drama",
       "posterPath": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
       "tmdbId": 284054
+    },
+    {
+      "name": "The Favourite",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "critics": "X",
+        "pga": "X",
+        "adg": "Y",
+        "gotham": "X",
+        "bifa": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/cwBq0onfmeilU5xgqNNjJAMPfpw.jpg",
+      "tmdbId": 375262
     },
     {
       "name": "If Beale Street Could Talk",
@@ -85,30 +102,14 @@
         "afi": "Y",
         "sag": "X",
         "critics": "X",
-        "pga": "X",
         "nbr": "Y",
+        "pga": "X",
         "wga": "X",
         "adg": "X"
       },
       "genre": "Drama",
       "posterPath": "/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
       "tmdbId": 332562
-    },
-    {
-      "name": "The Favourite",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "afi": "Y",
-        "critics": "X",
-        "pga": "X",
-        "adg": "Y",
-        "gotham": "X"
-      },
-      "genre": "Comedy",
-      "posterPath": "/cwBq0onfmeilU5xgqNNjJAMPfpw.jpg",
-      "tmdbId": 375262
     },
     {
       "name": "Mary Poppins Returns",
@@ -127,8 +128,8 @@
       "name": "A Quiet Place",
       "awards": {
         "afi": "Y",
-        "pga": "X",
         "nbr": "Y",
+        "pga": "X",
         "wga": "X",
         "adg": "X"
       },
@@ -236,6 +237,15 @@
       "tmdbId": 369972
     },
     {
+      "name": "You Were Never Really Here",
+      "awards": {
+        "spirit": "X",
+        "bifa": "X"
+      },
+      "posterPath": "/nx4lUyQNEzJowcF55VAP0TQEaX0.jpg",
+      "tmdbId": 398181
+    },
+    {
       "name": "Burning",
       "awards": {
         "lafca": "X"
@@ -300,12 +310,28 @@
       "tmdbId": 965398
     },
     {
-      "name": "You Were Never Really Here",
+      "name": "American Animals",
       "awards": {
-        "spirit": "X"
+        "bifa": "X"
       },
-      "posterPath": "/nx4lUyQNEzJowcF55VAP0TQEaX0.jpg",
-      "tmdbId": 398181
+      "posterPath": "/aLbdKxgxuOPvs6CTlmzoOQ4Yg3j.jpg",
+      "tmdbId": 489931
+    },
+    {
+      "name": "Beast",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/kZdncyp1IKhEqwv5zdmUpK5Dc7S.jpg",
+      "tmdbId": 470918
+    },
+    {
+      "name": "Disobedience",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/skPT4ffWhlmmDOMNEdxOiP6Emfz.jpg",
+      "tmdbId": 419743
     }
   ],
   "best-director": [
@@ -337,6 +363,18 @@
       "tmdbId": 51329
     },
     {
+      "name": "Yorgos Lanthimos",
+      "film": "The Favourite",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "X",
+        "bifa": "Y"
+      },
+      "profilePath": "/dvtv8eV1O8Fl385ctOu3sqO2PbD.jpg",
+      "tmdbId": 122423
+    },
+    {
       "name": "Debra Granik",
       "awards": {
         "lafca": "Y",
@@ -347,15 +385,6 @@
       "tmdbId": 121873
     },
     {
-      "name": "Jacques Audiard",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "I fratelli Sisters",
-      "profilePath": "/cODcsQRkKSEiZlEQvdKwnDm136l.jpg",
-      "tmdbId": 17496
-    },
-    {
       "name": "Barry Jenkins",
       "awards": {
         "spirit": "Y"
@@ -363,6 +392,15 @@
       "film": "If Beale Street Could Talk",
       "profilePath": "/6nld5eQwiJmuLmyesk4EUeCaoo3.jpg",
       "tmdbId": 92784
+    },
+    {
+      "name": "Jacques Audiard",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "I fratelli Sisters",
+      "profilePath": "/cODcsQRkKSEiZlEQvdKwnDm136l.jpg",
+      "tmdbId": 17496
     },
     {
       "name": "Spike Lee",
@@ -399,17 +437,6 @@
       "tmdbId": 7396
     },
     {
-      "name": "Yorgos Lanthimos",
-      "film": "The Favourite",
-      "awards": {
-        "bafta": "X",
-        "oscar": "X",
-        "critics": "X"
-      },
-      "profilePath": "/dvtv8eV1O8Fl385ctOu3sqO2PbD.jpg",
-      "tmdbId": 122423
-    },
-    {
       "name": "Paweł Pawlikowski",
       "film": "Cold War",
       "awards": {
@@ -418,6 +445,16 @@
       },
       "profilePath": "/vzhGoaJpQrJV8arrz2px7J0yMCF.jpg",
       "tmdbId": 64194
+    },
+    {
+      "name": "Lynne Ramsay",
+      "awards": {
+        "spirit": "X",
+        "bifa": "X"
+      },
+      "film": "You Were Never Really Here",
+      "profilePath": "/hmSR9lVV65ojYHyyOtzmNPbVjSY.jpg",
+      "tmdbId": 83287
     },
     {
       "name": "Damien Chazelle",
@@ -438,15 +475,6 @@
       "tmdbId": 54240
     },
     {
-      "name": "Lynne Ramsay",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "You Were Never Really Here",
-      "profilePath": "/hmSR9lVV65ojYHyyOtzmNPbVjSY.jpg",
-      "tmdbId": 83287
-    },
-    {
       "name": "Paul Schrader",
       "awards": {
         "spirit": "X"
@@ -454,6 +482,29 @@
       "film": "First Reformed",
       "profilePath": "/ctRxgCUSRFudwFaPG2AanL71Y3V.jpg",
       "tmdbId": 1035
+    },
+    {
+      "name": "Andrew Haigh",
+      "film": "Lean on Pete",
+      "awards": {
+        "bifa": "X"
+      }
+    },
+    {
+      "name": "Bart Layton",
+      "film": "American Animals",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/zAc9d3PUZmgls9Xu0lRF9Etw1Mc.jpg",
+      "tmdbId": 859754
+    },
+    {
+      "name": "Michael Pearce",
+      "film": "Beast",
+      "awards": {
+        "bifa": "X"
+      }
     }
   ],
   "best-actor": [
@@ -551,6 +602,24 @@
       "film": "Burning",
       "profilePath": "/fOMFO2Xx4duzpNgS9Q5ytO44yGb.jpg",
       "tmdbId": 215055
+    },
+    {
+      "name": "Joe Cole",
+      "film": "A Prayer Before Dawn",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/tJ4g1Zit0IqAhKiImTwAQrHHKuA.jpg",
+      "tmdbId": 1081875
+    },
+    {
+      "name": "Alessandro Nivola",
+      "film": "Disobedience",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/53wfpjSwPTMwhfuOSdgGgojMI8m.jpg",
+      "tmdbId": 4941
     },
     {
       "name": "Willem Dafoe",
@@ -652,6 +721,17 @@
       "tmdbId": 1117313
     },
     {
+      "name": "Steve Coogan",
+      "film": "Stan & Ollie",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "bifa": "X"
+      },
+      "profilePath": "/tT7OXc2qA6hlREHXdwGLp0XihzA.jpg",
+      "tmdbId": 4581
+    },
+    {
       "name": "Ben Foster",
       "awards": {
         "lafca": "X",
@@ -660,6 +740,16 @@
       "film": "Leave No Trace",
       "profilePath": "/p5FlM9OOStD9I0Nm3GGlhaiAC5r.jpg",
       "tmdbId": 11107
+    },
+    {
+      "name": "Joaquin Phoenix",
+      "awards": {
+        "spirit": "X",
+        "bifa": "X"
+      },
+      "film": "You Were Never Really Here",
+      "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
+      "tmdbId": 73421
     },
     {
       "name": "Lucas Hedges",
@@ -700,16 +790,6 @@
       "role": "Leading",
       "profilePath": "/iDQ8w4qcxU3le5ZWoCKpHs1QNok.jpg",
       "tmdbId": 4764
-    },
-    {
-      "name": "Steve Coogan",
-      "film": "Stan & Ollie",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/tT7OXc2qA6hlREHXdwGLp0XihzA.jpg",
-      "tmdbId": 4581
     },
     {
       "name": "Ryan Gosling",
@@ -777,15 +857,6 @@
       "tmdbId": 2172524
     },
     {
-      "name": "Joaquin Phoenix",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "You Were Never Really Here",
-      "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
-      "tmdbId": 73421
-    },
-    {
       "name": "Raúl Castillo",
       "awards": {
         "spirit": "X"
@@ -811,9 +882,79 @@
       "film": "Monsters and Men",
       "profilePath": "/27C77ni5XmlgkJVbomXPC4tHWVd.jpg",
       "tmdbId": 1117313
+    },
+    {
+      "name": "Rupert Everett",
+      "film": "The Happy Prince",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/7t77pzlJnSLSXTzQLUey3YAzaxQ.jpg",
+      "tmdbId": 4757
+    },
+    {
+      "name": "Charlie Plummer",
+      "film": "Lean on Pete",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/u2ig0kkgxq36BMbFQ4DEWfu5G3A.jpg",
+      "tmdbId": 1440574
+    },
+    {
+      "name": "Steve Buscemi",
+      "film": "Lean on Pete",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/kFzw4U5pExnLKZWhR48VSzL8Fre.jpg",
+      "tmdbId": 884
+    },
+    {
+      "name": "Barry Keoghan",
+      "film": "American Animals",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/15xPjrzSbtXlbQUhmLpQUil4tCN.jpg",
+      "tmdbId": 1290466
+    },
+    {
+      "name": "Evan Peters",
+      "film": "American Animals",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/n4yb5deDWPsvSQ9KLm0WR2Q2elC.jpg",
+      "tmdbId": 55089
+    },
+    {
+      "name": "Dominic West",
+      "film": "Colette",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/6y2M3EWslBPwPlugEFg8XDHfSJ0.jpg",
+      "tmdbId": 17287
     }
   ],
   "best-actress": [
+    {
+      "name": "Olivia Colman",
+      "awards": {
+        "gg": "Y",
+        "bafta": "Y",
+        "oscar": "Y",
+        "sag": "X",
+        "critics": "X",
+        "lafca": "Y",
+        "bifa": "Y"
+      },
+      "film": "The Favourite",
+      "role": "Leading",
+      "profilePath": "/lawJUdbLb1YW0niaYjiVGR9IBG8.jpg",
+      "tmdbId": 39187
+    },
     {
       "name": "Regina King",
       "awards": {
@@ -845,21 +986,6 @@
       "tmdbId": 515
     },
     {
-      "name": "Olivia Colman",
-      "awards": {
-        "gg": "Y",
-        "bafta": "Y",
-        "oscar": "Y",
-        "sag": "X",
-        "critics": "X",
-        "lafca": "Y"
-      },
-      "film": "The Favourite",
-      "role": "Leading",
-      "profilePath": "/lawJUdbLb1YW0niaYjiVGR9IBG8.jpg",
-      "tmdbId": 39187
-    },
-    {
       "name": "Lady Gaga",
       "awards": {
         "gg": "X",
@@ -875,6 +1001,19 @@
       "tmdbId": 237405
     },
     {
+      "name": "Rachel Weisz",
+      "awards": {
+        "gg": "X",
+        "bafta": "Y",
+        "sag": "X",
+        "bifa": "Y"
+      },
+      "film": "The Favourite",
+      "role": "Supporting",
+      "profilePath": "/msTqKPA33ryVtcVNgOdeaJGYq16.jpg",
+      "tmdbId": 3293
+    },
+    {
       "name": "Toni Collette",
       "film": "Hereditary",
       "role": "Leading",
@@ -886,18 +1025,6 @@
       },
       "profilePath": "/lzXRh16qe4HHeBN6tMyw0DHvaMn.jpg",
       "tmdbId": 3051
-    },
-    {
-      "name": "Rachel Weisz",
-      "awards": {
-        "gg": "X",
-        "bafta": "Y",
-        "sag": "X"
-      },
-      "film": "The Favourite",
-      "role": "Supporting",
-      "profilePath": "/msTqKPA33ryVtcVNgOdeaJGYq16.jpg",
-      "tmdbId": 3293
     },
     {
       "name": "Emily Blunt",
@@ -917,6 +1044,21 @@
       "film": "La favorita",
       "profilePath": "/lawJUdbLb1YW0niaYjiVGR9IBG8.jpg",
       "tmdbId": 39187
+    },
+    {
+      "name": "Emma Stone",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X",
+        "bifa": "X"
+      },
+      "film": "The Favourite",
+      "role": "Supporting",
+      "profilePath": "/8NwSfyYWIIUE1cI9Xhz92b0w7WD.jpg",
+      "tmdbId": 54693
     },
     {
       "name": "Melissa McCarthy",
@@ -945,20 +1087,6 @@
       "role": "Supporting",
       "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
       "tmdbId": 9273
-    },
-    {
-      "name": "Emma Stone",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "film": "The Favourite",
-      "role": "Supporting",
-      "profilePath": "/8NwSfyYWIIUE1cI9Xhz92b0w7WD.jpg",
-      "tmdbId": 54693
     },
     {
       "name": "Emily Blunt",
@@ -1188,6 +1316,69 @@
       "film": "Nancy",
       "profilePath": "/7DlYGLX5oywXpyvCsDZpOsWYpbg.jpg",
       "tmdbId": 52475
+    },
+    {
+      "name": "Gemma Arterton",
+      "film": "The Escape",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/mg0CNOrCgI6MYCDcLNxTxQ9iwUI.jpg",
+      "tmdbId": 59620
+    },
+    {
+      "name": "Jessie Buckley",
+      "film": "Beast",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
+      "tmdbId": 1498158
+    },
+    {
+      "name": "Maxine Peake",
+      "film": "Funny Cow",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/uChlrL5WyeXhvGFaNvbzw1KqMgP.jpg",
+      "tmdbId": 76944
+    },
+    {
+      "name": "Rachel Weisz",
+      "film": "Disobedience",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/msTqKPA33ryVtcVNgOdeaJGYq16.jpg",
+      "tmdbId": 3293
+    },
+    {
+      "name": "Nina Arianda",
+      "film": "Stan & Ollie",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/5vGdet2Gg7XPRgs0OvCrSwAk8QX.jpg",
+      "tmdbId": 971329
+    },
+    {
+      "name": "Rachel McAdams",
+      "film": "Disobedience",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/2zyOjda95OfAAsJvuwTV0UaznPZ.jpg",
+      "tmdbId": 53714
+    },
+    {
+      "name": "Molly Wright",
+      "film": "Apostasy",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/k4ff4JwjsGl3b6vVpNv0NtWlJ9r.jpg",
+      "tmdbId": 1677040
     }
   ]
 }

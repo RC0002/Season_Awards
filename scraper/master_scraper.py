@@ -129,6 +129,11 @@ CEREMONY_MAP = {
         2026: 41, 2025: 40, 2024: 39, 2023: 38, 2022: 37, 2021: 36,
         2020: 35, 2019: 34, 2018: 33, 2017: 32, 2016: 31,
         2015: 30, 2014: 29, 2013: 28
+    },
+    'bifa': {
+        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
+        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
+        2015: 2014, 2014: 2013, 2013: 2012
     }
 }
 
@@ -275,6 +280,26 @@ def parse_nominees_from_cell(cell, category_type, award_name):
         nominees.append(entry)
     
     return nominees
+
+
+# ============ IMPORT MODULARIZED SCRAPERS ============
+# Individual award scrapers are now in separate modules for easier testing
+from scrapers.oscar import scrape_oscar
+from scrapers.gg import scrape_gg_old_format
+from scrapers.bafta import scrape_bafta
+from scrapers.sag import scrape_sag_old_format
+from scrapers.critics import scrape_critics
+from scrapers.afi import scrape_afi
+from scrapers.nbr import scrape_nbr
+from scrapers.venice import scrape_venice
+from scrapers.dga import scrape_dga
+from scrapers.pga import scrape_pga
+from scrapers.lafca import scrape_lafca
+from scrapers.wga import scrape_wga
+from scrapers.adg import scrape_adg  
+from scrapers.gotham import scrape_gotham
+from scrapers.astra import scrape_astra
+# Spirit already imported earlier at line ~3144
 
 
 def scrape_gg_old_format(tables_or_soup, award_key):
@@ -2556,6 +2581,10 @@ def scrape_year(year, awards=None):
             result = scrape_astra(year)
             if result:
                 all_results['astra'] = result
+        elif award_key == 'bifa':
+            result = scrape_bifa(year)
+            if result:
+                all_results['bifa'] = result
         else:
             result = scrape_award(award_key, year)
             if result:
@@ -3141,184 +3170,13 @@ def scrape_astra_logic(soup):
     return results
 
 
-# =============================================================================
 # SPIRIT AWARDS (Independent Spirit Awards)
 # =============================================================================
 
-def scrape_spirit(year):
-    """Scrape Independent Spirit Awards from Wikipedia."""
-    ceremony_num = CEREMONY_MAP['spirit'].get(year)
-    if not ceremony_num:
-        print(f"  SPIRIT: No ceremony number mapped for year {year}")
-        return {}
-    
-    url = URL_TEMPLATES['spirit'].format(ord=ordinal(ceremony_num))
-    print(f"  SPIRIT ({ordinal(ceremony_num)}): {url}")
-    
-    return scrape_spirit_logic(url)
+# Import Spirit scraper from separate module
+from scrapers.spirit import scrape_spirit, scrape_spirit_logic
 
 
-def scrape_spirit_logic(url):
-    """
-    Scrape Spirit Awards categories:
-    - Best Feature -> best-film
-    - Best Director -> best-director
-    - Best Lead Performance -> best-actor (gender neutral)
-    - Best Supporting Performance -> best-actor (gender neutral)
-    """
-    results = {
-        'best-film': [],
-        'best-director': [],
-        'best-actor': [],  # Lead and Supporting Performance combined
-        'best-actress': []  # Not used - Spirit is gender neutral
-    }
-    
-    try:
-        soup = fetch_page(url)
-        if not soup:
-            return results
-    except Exception as e:
-        print(f"    Error: {e}")
-        return results
-    
-    # Find wikitables
-    tables = soup.find_all('table', class_='wikitable')
-    
-    for table in tables:
-        rows = table.find_all('tr')
-        
-        # Process rows in pairs: th row followed by td row
-        for row_idx in range(len(rows) - 1):
-            row = rows[row_idx]
-            next_row = rows[row_idx + 1]
-            
-            # Check if this row has th (headers) and next row has td (data)
-            headers = row.find_all('th')
-            data_cells = next_row.find_all('td')
-            
-            if not headers or not data_cells:
-                continue
-            
-            # Match headers to data cells
-            for i, header in enumerate(headers):
-                header_text = header.get_text(separator=' ').strip().lower()
-                
-                # Determine category - only Film categories, not TV
-                cat_found = None
-                if 'best feature' in header_text:
-                    cat_found = 'best-film'
-                elif 'best director' in header_text and 'series' not in header_text:
-                    cat_found = 'best-director'
-                # Gender-neutral categories (2022+)
-                elif 'best lead performance' in header_text and 'series' not in header_text:
-                    cat_found = 'best-actor'
-                elif 'best supporting performance' in header_text and 'series' not in header_text:
-                    cat_found = 'best-actor'  # Both map to best-actor
-                # Gendered categories (pre-2022)
-                elif 'best male lead' in header_text:
-                    cat_found = 'best-actor'
-                elif 'best female lead' in header_text:
-                    cat_found = 'best-actress'
-                elif 'best supporting male' in header_text:
-                    cat_found = 'best-actor'
-                elif 'best supporting female' in header_text:
-                    cat_found = 'best-actress'
-                
-                if not cat_found or i >= len(data_cells):
-                    continue
-                
-                cell = data_cells[i]
-                
-                # Collect all nominees: winner (bold text before list) + nominees (li elements)
-                nominees = []
-                
-                # 1. Check for winner as bold text BEFORE the ul (like "The Lost Daughter" in 37th)
-                # The winner is often in <p><i><b>Name</b></i></p> structure before <ul>
-                for child in cell.children:
-                    if hasattr(child, 'name'):
-                        if child.name == 'ul':
-                            break  # Stop when we reach the list
-                        # Check if this element contains a bold tag (winner)
-                        if child.name in ['b', 'strong']:
-                            winner_text = child.get_text(separator=' ').strip()
-                            if winner_text:
-                                nominees.append((winner_text, True))
-                        elif child.name in ['p', 'div', 'span', 'i']:
-                            # Look for bold inside these container elements
-                            bold = child.find(['b', 'strong'])
-                            if bold:
-                                winner_text = child.get_text(separator=' ').strip()
-                                if winner_text:
-                                    nominees.append((winner_text, True))
-                
-                # 2. Get all LI elements (other nominees)
-                lis = cell.find_all('li')
-                for li in lis:
-                    first_elem = li.find(['b', 'strong'])
-                    is_winner = bool(first_elem)
-                    text = li.get_text(separator=' ').strip()
-                    if text:
-                        nominees.append((text, is_winner))
-                
-                # Process all nominees
-                for text, is_winner in nominees:
-                    award_val = 'Y' if is_winner else 'X'
-                    
-                    # Parse based on category
-                    if cat_found == 'best-film':
-                        # Format: Film – Producers
-                        parts = text.split('–')
-                        if len(parts) >= 1:
-                            film_name = parts[0].strip()
-                            film_name = film_name.replace('|', '').strip()
-                            if film_name:
-                                results['best-film'].append({
-                                    'name': film_name,
-                                    'awards': {'spirit': award_val}
-                                })
-                    
-                    elif cat_found == 'best-director':
-                        # Format: Director – Film
-                        parts = text.split('–')
-                        person_name = parts[0].strip()
-                        film_name = parts[1].strip() if len(parts) > 1 else ""
-                        if person_name:
-                            entry = {'name': person_name, 'awards': {'spirit': award_val}}
-                            if film_name:
-                                entry['film'] = film_name
-                            results['best-director'].append(entry)
-                    
-                    elif cat_found == 'best-actor':
-                        # Format: Actor – Film as Character
-                        parts = text.split('–')
-                        person_name = parts[0].strip()
-                        rest = parts[1].strip() if len(parts) > 1 else ""
-                        
-                        # Extract film name (before " as ")
-                        film_name = rest.split(' as ')[0].strip() if ' as ' in rest else rest
-                        
-                        if person_name:
-                            entry = {'name': person_name, 'awards': {'spirit': award_val}}
-                            if film_name:
-                                entry['film'] = film_name
-                            results['best-actor'].append(entry)
-                    
-                    elif cat_found == 'best-actress':
-                        # Format: Actress – Film as Character
-                        parts = text.split('–')
-                        person_name = parts[0].strip()
-                        rest = parts[1].strip() if len(parts) > 1 else ""
-                        
-                        # Extract film name (before " as ")
-                        film_name = rest.split(' as ')[0].strip() if ' as ' in rest else rest
-                        
-                        if person_name:
-                            entry = {'name': person_name, 'awards': {'spirit': award_val}}
-                            if film_name:
-                                entry['film'] = film_name
-                            results['best-actress'].append(entry)
-    
-    total = sum(len(v) for v in results.values())
-    print(f"    Spirit: Found {total} entries (Films: {len(results['best-film'])}, Dir: {len(results['best-director'])}, Actors: {len(results['best-actor'])}, Actresses: {len(results['best-actress'])})")
-    return results
 
+
+from scrapers.bifa import scrape_bifa

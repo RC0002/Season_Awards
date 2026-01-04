@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-04T11:28:15.846052",
+  "generated": "2026-01-04T16:46:13.893477",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -96,6 +96,12 @@
       "best-director": 5,
       "best-actor": 20,
       "best-actress": 0
+    },
+    "bifa": {
+      "best-film": 5,
+      "best-director": 5,
+      "best-actor": 6,
+      "best-actress": 6
     }
   },
   "years": {
@@ -455,13 +461,13 @@
           "nominations": 0,
           "winners": 0,
           "status": "pending",
-          "expected": 10
+          "expected": 5
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
           "status": "pending",
-          "expected": 10
+          "expected": 5
         }
       },
       "astra": {
@@ -514,6 +520,32 @@
           "winners": 2,
           "status": "ok",
           "expected": 10
+        }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
         }
       }
     },
@@ -933,6 +965,32 @@
           "status": "ok",
           "expected": 10
         }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        }
       }
     },
     "2014_2015": {
@@ -1351,6 +1409,32 @@
           "status": "ok",
           "expected": 10
         }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        }
       }
     },
     "2015_2016": {
@@ -1708,14 +1792,14 @@
         "best-actor": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=10"
+          "status": "ok",
+          "expected": "actor+actress=11"
         },
         "best-actress": {
           "nominations": 6,
           "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=10"
+          "status": "ok",
+          "expected": "actor+actress=11"
         }
       },
       "astra": {
@@ -1768,6 +1852,32 @@
           "winners": 2,
           "status": "ok",
           "expected": 10
+        }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
         }
       }
     },
@@ -2126,14 +2236,14 @@
         "best-actor": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=11"
+          "status": "ok",
+          "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=11"
+          "status": "ok",
+          "expected": "actor+actress=10"
         }
       },
       "astra": {
@@ -2186,6 +2296,32 @@
           "winners": 2,
           "status": "ok",
           "expected": 10
+        }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
         }
       }
     },
@@ -2544,14 +2680,14 @@
         "best-actor": {
           "nominations": 6,
           "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=10"
+          "status": "ok",
+          "expected": "actor+actress=11"
         },
         "best-actress": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=10"
+          "status": "ok",
+          "expected": "actor+actress=11"
         }
       },
       "astra": {
@@ -2604,6 +2740,32 @@
           "winners": 2,
           "status": "ok",
           "expected": 11
+        }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
         }
       }
     },
@@ -3023,6 +3185,32 @@
           "status": "ok",
           "expected": 11
         }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        }
       }
     },
     "2019_2020": {
@@ -3441,6 +3629,32 @@
           "status": "ok",
           "expected": 11
         }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        }
       }
     },
     "2020_2021": {
@@ -3798,14 +4012,14 @@
         "best-actor": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=17"
+          "status": "ok",
+          "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=17"
+          "status": "ok",
+          "expected": "actor+actress=10"
         }
       },
       "astra": {
@@ -3858,6 +4072,32 @@
           "winners": 2,
           "status": "ok",
           "expected": 11
+        }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
         }
       }
     },
@@ -4216,14 +4456,14 @@
         "best-actor": {
           "nominations": 9,
           "winners": 2,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "status": "ok",
+          "expected": "actor+actress=17"
         },
         "best-actress": {
           "nominations": 8,
           "winners": 1,
-          "status": "error",
-          "expected": "actor+actress=20"
+          "status": "ok",
+          "expected": "actor+actress=17"
         }
       },
       "astra": {
@@ -4276,6 +4516,32 @@
           "winners": 2,
           "status": "ok",
           "expected": 10
+        }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=20"
         }
       }
     },
@@ -4684,16 +4950,42 @@
           "expected": 5
         },
         "best-actor": {
-          "nominations": 20,
-          "winners": 2,
+          "nominations": 9,
+          "winners": 1,
           "status": "ok",
-          "expected": 20
+          "expected": "actor+actress=20"
         },
         "best-actress": {
-          "nominations": 0,
+          "nominations": 11,
+          "winners": 1,
+          "status": "ok",
+          "expected": "actor+actress=20"
+        }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 6,
           "winners": 0,
           "status": "ok",
-          "expected": 0
+          "expected": "actor+actress=17"
+        },
+        "best-actress": {
+          "nominations": 11,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=17"
         }
       }
     },
@@ -5102,16 +5394,42 @@
           "expected": 5
         },
         "best-actor": {
-          "nominations": 20,
-          "winners": 2,
+          "nominations": 10,
+          "winners": 1,
           "status": "ok",
-          "expected": 20
+          "expected": "actor+actress=20"
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 1,
           "status": "ok",
-          "expected": 0
+          "expected": "actor+actress=20"
+        }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 9,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=16"
+        },
+        "best-actress": {
+          "nominations": 7,
+          "winners": 1,
+          "status": "ok",
+          "expected": "actor+actress=16"
         }
       }
     },
@@ -5520,16 +5838,42 @@
           "expected": 5
         },
         "best-actor": {
-          "nominations": 20,
-          "winners": 2,
+          "nominations": 10,
+          "winners": 1,
           "status": "ok",
-          "expected": 20
+          "expected": "actor+actress=20"
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 1,
           "status": "ok",
-          "expected": 0
+          "expected": "actor+actress=20"
+        }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": "actor+actress=12"
+        },
+        "best-actress": {
+          "nominations": 7,
+          "winners": 1,
+          "status": "ok",
+          "expected": "actor+actress=12"
         }
       }
     },
@@ -5938,16 +6282,42 @@
           "expected": 5
         },
         "best-actor": {
-          "nominations": 20,
+          "nominations": 8,
           "winners": 0,
           "status": "ok",
-          "expected": 20
+          "expected": "actor+actress=20"
         },
         "best-actress": {
-          "nominations": 0,
+          "nominations": 12,
           "winners": 0,
           "status": "ok",
-          "expected": 0
+          "expected": "actor+actress=20"
+        }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": "actor+actress=12"
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 0,
+          "status": "ok",
+          "expected": "actor+actress=12"
         }
       }
     }

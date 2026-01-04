@@ -3,18 +3,18 @@
     {
       "name": "Anora",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "Y",
-        "bafta": "X",
-        "afi": "Y",
-        "critics": "Y",
-        "nbr": "Y",
         "sag": "X",
+        "critics": "Y",
+        "afi": "Y",
+        "nbr": "Y",
         "pga": "Y",
         "wga": "Y",
         "astra": "X",
-        "spirit": "Y",
         "lafca": "Y",
+        "spirit": "Y",
         "gotham": "X"
       },
       "posterPath": "/cgXk2tNYhJZLXdBDO5DidAVzQ82.jpg",
@@ -23,13 +23,13 @@
     {
       "name": "Conclave",
       "awards": {
+        "bafta": "Y",
         "gg": "X",
         "oscar": "X",
-        "bafta": "Y",
-        "afi": "Y",
-        "critics": "X",
-        "nbr": "Y",
         "sag": "Y",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y",
         "pga": "X",
         "adg": "Y",
         "astra": "X"
@@ -42,10 +42,10 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "afi": "Y",
-        "critics": "X",
-        "nbr": "Y",
         "sag": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y",
         "pga": "X",
         "wga": "X",
         "adg": "Y",
@@ -57,13 +57,13 @@
     {
       "name": "A Complete Unknown",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
-        "afi": "Y",
-        "critics": "X",
-        "nbr": "Y",
         "sag": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y",
         "pga": "X",
         "wga": "X",
         "adg": "X"
@@ -74,11 +74,11 @@
     {
       "name": "The Brutalist",
       "awards": {
+        "bafta": "X",
         "gg": "Y",
         "oscar": "X",
-        "bafta": "X",
-        "afi": "Y",
         "critics": "X",
+        "afi": "Y",
         "pga": "X",
         "adg": "X",
         "astra": "X",
@@ -90,12 +90,12 @@
     {
       "name": "Emilia Pérez",
       "awards": {
+        "bafta": "X",
         "gg": "Y",
         "oscar": "X",
-        "bafta": "X",
-        "afi": "Y",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
+        "afi": "Y",
         "pga": "X",
         "adg": "X",
         "astra": "X"
@@ -108,8 +108,8 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "afi": "Y",
         "critics": "X",
+        "afi": "Y",
         "wga": "Y",
         "spirit": "X",
         "gotham": "X"
@@ -133,8 +133,8 @@
     {
       "name": "Sing Sing",
       "awards": {
-        "afi": "Y",
         "critics": "X",
+        "afi": "Y",
         "nbr": "Y",
         "astra": "X",
         "spirit": "X"
@@ -147,8 +147,8 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "afi": "Y",
         "critics": "X",
+        "afi": "Y",
         "pga": "X",
         "wga": "X",
         "adg": "X",
@@ -224,6 +224,14 @@
       },
       "posterPath": "/5qGIxdEO841C0tdY8vOdLoRVrr0.jpg",
       "tmdbId": 426063
+    },
+    {
+      "name": "Kneecap",
+      "awards": {
+        "bifa": "Y"
+      },
+      "posterPath": "/gEbQi5QWUg3CQ9R5dwvPBvbOX17.jpg",
+      "tmdbId": 1180629
     },
     {
       "name": "A Different Man",
@@ -336,6 +344,38 @@
       "tmdbId": 917496
     },
     {
+      "name": "Love Lies Bleeding",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/xImj8RLe39YK0lyVu9kXv7ApN8p.jpg",
+      "tmdbId": 948549
+    },
+    {
+      "name": "On Becoming a Guinea Fowl",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/6lMOpD8XVLKaB5uCsJXt1Fo7XNh.jpg",
+      "tmdbId": 1082938
+    },
+    {
+      "name": "The Outrun",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/zfRR2CkbvYrLuOPQFm8vBaENyMy.jpg",
+      "tmdbId": 785542
+    },
+    {
+      "name": "Santosh",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/l42fcfptFniWfCYYL4c9GldJ8UT.jpg",
+      "tmdbId": 372339
+    },
+    {
       "name": "I Saw the TV Glow",
       "awards": {
         "spirit": "X"
@@ -349,9 +389,9 @@
       "name": "Brady Corbet",
       "film": "The Brutalist",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "X",
-        "bafta": "Y",
         "critics": "X",
         "dga": "X",
         "venice": "Y",
@@ -376,9 +416,9 @@
       "name": "Sean Baker",
       "film": "Anora",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "Y",
-        "bafta": "X",
         "critics": "X",
         "dga": "Y",
         "astra": "X",
@@ -399,15 +439,6 @@
       "tmdbId": 1934875
     },
     {
-      "name": "Sean Baker",
-      "awards": {
-        "spirit": "Y"
-      },
-      "film": "Anora \n Ali Abbasi",
-      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
-      "tmdbId": 118415
-    },
-    {
       "name": "Mohammad Rasoulof",
       "awards": {
         "lafca": "Y"
@@ -417,12 +448,30 @@
       "tmdbId": 935123
     },
     {
+      "name": "Rungano Nyoni",
+      "film": "On Becoming a Guinea Fowl \n Andrea Arnold",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/wliVrt4xI7iLMUxJxVEz97FPPeI.jpg",
+      "tmdbId": 557100
+    },
+    {
+      "name": "Sean Baker",
+      "awards": {
+        "spirit": "Y"
+      },
+      "film": "Anora \n Ali Abbasi",
+      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
+      "tmdbId": 118415
+    },
+    {
       "name": "Jacques Audiard",
       "film": "Emilia Pérez",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
         "critics": "X",
         "dga": "X",
         "astra": "X"
@@ -434,9 +483,9 @@
       "name": "Coralie Fargeat",
       "film": "The Substance",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
         "critics": "X",
         "astra": "X"
       },
@@ -447,8 +496,8 @@
       "name": "Edward Berger",
       "film": "Conclave",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "critics": "X",
         "dga": "X"
       }
@@ -494,6 +543,40 @@
       "tmdbId": 1467320
     },
     {
+      "name": "Andrea Arnold",
+      "film": "Bird",
+      "awards": {
+        "bifa": "X"
+      }
+    },
+    {
+      "name": "Nora Fingscheidt",
+      "film": "The Outrun",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/wjf96BGhggmdxiZVxOVJzWWVoq0.jpg",
+      "tmdbId": 1304847
+    },
+    {
+      "name": "Rose Glass",
+      "film": "Love Lies Bleeding",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/7cKh7iWFMD77CMz9rP0pdyXMPCK.jpg",
+      "tmdbId": 2219327
+    },
+    {
+      "name": "Rich Peppiatt",
+      "film": "Kneecap",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/bcqtGSm2CsVTD6fN3UXwIH8utrm.jpg",
+      "tmdbId": 1382853
+    },
+    {
       "name": "Ali Abbasi",
       "awards": {
         "spirit": "X"
@@ -536,14 +619,14 @@
       "film": "A Real Pain",
       "role": "Supporting",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "bafta": "Y",
-        "critics": "Y",
         "sag": "Y",
+        "critics": "Y",
         "astra": "Y",
-        "spirit": "Y",
         "lafca": "Y",
+        "spirit": "Y",
         "gotham": "X"
       },
       "profilePath": "/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg",
@@ -554,11 +637,11 @@
       "film": "The Brutalist",
       "role": "Leading",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "bafta": "Y",
-        "critics": "Y",
         "sag": "X",
+        "critics": "Y",
         "astra": "X",
         "gotham": "X"
       },
@@ -570,11 +653,11 @@
       "film": "A Complete Unknown",
       "role": "Leading",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
-        "critics": "X",
         "sag": "Y",
+        "critics": "X",
         "astra": "Y"
       },
       "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
@@ -585,14 +668,14 @@
       "film": "Anora",
       "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "astra": "X",
-        "spirit": "X",
         "lafca": "Y",
+        "spirit": "X",
         "gotham": "X"
       },
       "profilePath": "/zLcD2UmXJG6m3qOQhNZs13SQRIp.jpg",
@@ -603,11 +686,11 @@
       "film": "Sing Sing",
       "role": "Leading",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "astra": "X",
         "spirit": "X",
         "gotham": "Y"
@@ -623,8 +706,8 @@
         "bafta": "X",
         "critics": "X",
         "astra": "X",
-        "spirit": "X",
         "lafca": "X",
+        "spirit": "X",
         "gotham": "Y"
       },
       "profilePath": "/1nRVnEo3fICl9yhRyemn8PgrJ4q.jpg",
@@ -636,9 +719,9 @@
       "role": "Leading",
       "awards": {
         "gg": "X",
+        "sag": "X",
         "critics": "X",
-        "nbr": "Y",
-        "sag": "X"
+        "nbr": "Y"
       },
       "profilePath": "/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg",
       "tmdbId": 8784
@@ -663,24 +746,24 @@
       "tmdbId": 5443
     },
     {
-      "name": "Mikey Madison",
+      "name": "Franz Rogowski",
+      "film": "Bird",
       "awards": {
-        "spirit": "Y"
+        "bifa": "Y"
       },
-      "film": "Anora",
-      "profilePath": "/b0HZr4Xa4pIR7MzTPXfIWvUZELx.jpg",
-      "tmdbId": 1640439
+      "profilePath": "/mXehrpUeS4aXvDZPB0PyofqwSAi.jpg",
+      "tmdbId": 1285450
     },
     {
       "name": "Ralph Fiennes",
       "film": "Conclave",
       "role": "Leading",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "astra": "X"
       },
       "profilePath": "/u29BOqiV5GCQ8k8WUJM50i9xlBf.jpg",
@@ -691,9 +774,9 @@
       "film": "The Brutalist",
       "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
         "critics": "X",
         "astra": "X",
         "gotham": "X"
@@ -706,11 +789,11 @@
       "film": "A Complete Unknown",
       "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
-        "critics": "X",
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg",
       "tmdbId": 819
@@ -720,9 +803,9 @@
       "film": "The Apprentice",
       "role": "Leading",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
         "spirit": "X"
       },
       "profilePath": "/nKZgixTbHFXpkzzIpMFdLX98GYh.jpg",
@@ -733,9 +816,9 @@
       "film": "The Apprentice",
       "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
         "sag": "X"
       },
       "profilePath": "/jcMhXWICSi4QjQttJVhFSiKVvpF.jpg",
@@ -746,8 +829,8 @@
       "film": "Heretic",
       "role": "Leading",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "critics": "X"
       },
       "profilePath": "/dvV843fOuzsEPXHtFvdzsHpy1rC.jpg",
@@ -768,10 +851,11 @@
     {
       "name": "Adam Pearson",
       "awards": {
-        "spirit": "X",
         "lafca": "X",
+        "spirit": "X",
         "gotham": "X"
       },
+      "role": "Supporting",
       "film": "A Different Man",
       "profilePath": "/xRDaT60nU48yBDD20A2hSmSALZX.jpg",
       "tmdbId": 1675188
@@ -860,76 +944,38 @@
       "tmdbId": 88124
     },
     {
-      "name": "Amy Adams",
+      "name": "Elliot Page",
+      "film": "Close to You",
       "awards": {
-        "spirit": "X"
+        "bifa": "X"
       },
-      "film": "Nightbitch",
-      "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
-      "tmdbId": 9273
+      "profilePath": "/nXO8DE4biVXY4UDYP0NdIY1zvXS.jpg",
+      "tmdbId": 27578
     },
     {
-      "name": "Ryan Destiny",
+      "name": "Michele Austin",
+      "film": "Hard Truths",
       "awards": {
-        "spirit": "X"
-      },
-      "film": "The Fire Inside",
-      "profilePath": "/hyonGsa5L44MyEjN4AfrujW5R3h.jpg",
-      "tmdbId": 1711828
+        "bifa": "X"
+      }
     },
     {
-      "name": "Demi Moore",
+      "name": "Barry Keoghan",
+      "film": "Bird",
       "awards": {
-        "spirit": "X"
+        "bifa": "X"
       },
-      "film": "The Substance",
-      "profilePath": "/wApParZYBDi4yxekjfxjKEifJYh.jpg",
-      "tmdbId": 3416
+      "profilePath": "/15xPjrzSbtXlbQUhmLpQUil4tCN.jpg",
+      "tmdbId": 1290466
     },
     {
-      "name": "Hunter Schafer",
+      "name": "Jack O'Connell",
+      "film": "Back to Black",
       "awards": {
-        "spirit": "X"
+        "bifa": "X"
       },
-      "film": "Cuckoo",
-      "profilePath": "/6ZDieLlbm2m3jbYaxsHFo7cWWzJ.jpg",
-      "tmdbId": 2340180
-    },
-    {
-      "name": "June Squibb",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Thelma",
-      "profilePath": "/a7vkoLhc8JGkdvDbHvpgKKHUPHH.jpg",
-      "tmdbId": 35515
-    },
-    {
-      "name": "Joan Chen",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Dìdi",
-      "profilePath": "/7uMTJpY8B2hufXqmlxJpaUPpcJi.jpg",
-      "tmdbId": 6720
-    },
-    {
-      "name": "Danielle Deadwyler",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "The Piano Lesson",
-      "profilePath": "/ifQcCBM5B4dIJdz4B0laO4yQuzU.jpg",
-      "tmdbId": 1853909
-    },
-    {
-      "name": "Carol Kane",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Between the Temples",
-      "profilePath": "/3EOZ7B148lRwJcl3CmQhfpgubYQ.jpg",
-      "tmdbId": 10556
+      "profilePath": "/9RrqnB1BRaWWHEjlWVVAna0sdBB.jpg",
+      "tmdbId": 85065
     },
     {
       "name": "Karren Karagulian",
@@ -939,15 +985,6 @@
       "film": "Anora",
       "profilePath": "/rxyx8OFgShe0Kolptm5LpbsOUJj.jpg",
       "tmdbId": 966306
-    },
-    {
-      "name": "Kani Kusruti",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Girls Will Be Girls",
-      "profilePath": "/8WCuR3HcPYBeS2tQusFTEl596hM.jpg",
-      "tmdbId": 1399177
     },
     {
       "name": "Brian Tyree Henry",
@@ -965,49 +1002,51 @@
       "film": "Emilia Pérez",
       "role": "Supporting",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "bafta": "Y",
-        "critics": "Y",
         "sag": "Y",
+        "critics": "Y",
         "astra": "Y"
       },
       "profilePath": "/vQBwmsSOAd0JDaEcZ5p43J9xzsY.jpg",
       "tmdbId": 8691
     },
     {
-      "name": "Demi Moore",
-      "film": "The Substance",
-      "role": "Leading",
-      "awards": {
-        "gg": "Y",
-        "oscar": "X",
-        "bafta": "X",
-        "critics": "Y",
-        "sag": "Y",
-        "astra": "X",
-        "lafca": "X",
-        "gotham": "X"
-      },
-      "profilePath": "/wApParZYBDi4yxekjfxjKEifJYh.jpg",
-      "tmdbId": 3416
-    },
-    {
       "name": "Mikey Madison",
       "film": "Anora",
       "role": "Leading",
       "awards": {
+        "bafta": "Y",
         "gg": "X",
         "oscar": "Y",
-        "bafta": "Y",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "astra": "X",
         "lafca": "Y",
+        "spirit": "Y",
         "gotham": "X"
       },
       "profilePath": "/b0HZr4Xa4pIR7MzTPXfIWvUZELx.jpg",
       "tmdbId": 1640439
+    },
+    {
+      "name": "Demi Moore",
+      "film": "The Substance",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "Y",
+        "oscar": "X",
+        "sag": "Y",
+        "critics": "Y",
+        "astra": "X",
+        "lafca": "X",
+        "spirit": "X",
+        "gotham": "X"
+      },
+      "profilePath": "/wApParZYBDi4yxekjfxjKEifJYh.jpg",
+      "tmdbId": 3416
     },
     {
       "name": "Nicole Kidman",
@@ -1027,11 +1066,11 @@
       "film": "Wicked",
       "role": "Leading",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "astra": "Y"
       },
       "profilePath": "/gIAXqZwZCBqkh2ppfAV4xcnMxki.jpg",
@@ -1042,11 +1081,11 @@
       "film": "Wicked",
       "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "astra": "Y"
       },
       "profilePath": "/ojr2zF46BmPe7EALds7WQf6Ro4O.jpg",
@@ -1078,45 +1117,79 @@
       "tmdbId": 87335
     },
     {
+      "name": "Marianne Jean",
+      "film": "Baptiste",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/bJ6p32cswcp0xvqiZC7S5tiwa2K.jpg",
+      "tmdbId": 17352
+    },
+    {
       "name": "Karla Sofía Gascón",
       "film": "Emilia Pérez",
       "role": "Leading",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
-        "critics": "X",
         "sag": "X",
+        "critics": "X",
         "astra": "X"
       },
       "profilePath": "/vmg6gqpaXnoRFP7NWdSTrsr1CED.jpg",
       "tmdbId": 1505938
     },
     {
+      "name": "Danielle Deadwyler",
+      "film": "The Piano Lesson",
+      "role": "Supporting",
+      "awards": {
+        "sag": "X",
+        "critics": "X",
+        "astra": "X",
+        "spirit": "X",
+        "gotham": "X"
+      },
+      "profilePath": "/ifQcCBM5B4dIJdz4B0laO4yQuzU.jpg",
+      "tmdbId": 1853909
+    },
+    {
       "name": "Isabella Rossellini",
       "film": "Conclave",
       "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "bafta": "X",
         "critics": "X"
       },
       "profilePath": "/z0zojT6nwDxi35HMcXlVpBfuBAU.jpg",
       "tmdbId": 6588
     },
     {
-      "name": "Danielle Deadwyler",
-      "film": "The Piano Lesson",
-      "role": "Supporting",
+      "name": "Saoirse Ronan",
+      "film": "The Outrun",
+      "role": "Leading",
       "awards": {
-        "critics": "X",
-        "sag": "X",
-        "astra": "X",
+        "bafta": "X",
+        "bifa": "X",
         "gotham": "X"
       },
-      "profilePath": "/ifQcCBM5B4dIJdz4B0laO4yQuzU.jpg",
-      "tmdbId": 1853909
+      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
+      "tmdbId": 36592
+    },
+    {
+      "name": "Felicity Jones",
+      "film": "The Brutalist",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X"
+      },
+      "profilePath": "/fyhWRmxpTEYl5d8DnkIo6i8RdWJ.jpg",
+      "tmdbId": 72855
     },
     {
       "name": "Pamela Anderson",
@@ -1143,18 +1216,6 @@
       "tmdbId": 11701
     },
     {
-      "name": "Felicity Jones",
-      "film": "The Brutalist",
-      "role": "Supporting",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "bafta": "X"
-      },
-      "profilePath": "/fyhWRmxpTEYl5d8DnkIo6i8RdWJ.jpg",
-      "tmdbId": 72855
-    },
-    {
       "name": "Margaret Qualley",
       "film": "The Substance",
       "role": "Supporting",
@@ -1165,28 +1226,6 @@
       },
       "profilePath": "/9bfJ5jHKDEuBWxiH0s6MSxIkOPn.jpg",
       "tmdbId": 1392137
-    },
-    {
-      "name": "Monica Barbaro",
-      "film": "A Complete Unknown",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "sag": "X"
-      },
-      "profilePath": "/hiOYXzSkkuKyCEcjLxBoAc4bLZS.jpg",
-      "tmdbId": 1525043
-    },
-    {
-      "name": "Saoirse Ronan",
-      "film": "The Outrun",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gotham": "X"
-      },
-      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
-      "tmdbId": 36592
     },
     {
       "name": "Jamie Lee Curtis",
@@ -1211,6 +1250,28 @@
       "tmdbId": 77948
     },
     {
+      "name": "Amy Adams",
+      "film": "Nightbitch",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "spirit": "X"
+      },
+      "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
+      "tmdbId": 9273
+    },
+    {
+      "name": "Monica Barbaro",
+      "film": "A Complete Unknown",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X"
+      },
+      "profilePath": "/hiOYXzSkkuKyCEcjLxBoAc4bLZS.jpg",
+      "tmdbId": 1525043
+    },
+    {
       "name": "Tilda Swinton",
       "film": "The Room Next Door",
       "role": "Leading",
@@ -1229,16 +1290,6 @@
       },
       "profilePath": "/9xDnfZrWhM67wJlQJEsOOjQzDUQ.jpg",
       "tmdbId": 204
-    },
-    {
-      "name": "Amy Adams",
-      "film": "Nightbitch",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
-      "tmdbId": 9273
     },
     {
       "name": "Zendaya",
@@ -1286,6 +1337,105 @@
       "film": "Taylor",
       "profilePath": "/e54DfgDyS67xdtomYODFule6Ofa.jpg",
       "tmdbId": 53923
+    },
+    {
+      "name": "Radhika Apte",
+      "film": "Sister Midnight",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/wKPybRcSYcbgDiJZwELudrRNf0r.jpg",
+      "tmdbId": 223167
+    },
+    {
+      "name": "Susan Chardy",
+      "film": "On Becoming a Guinea Fowl",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/1IAWjFG17nBE92IywWgJdfMYLCB.jpg",
+      "tmdbId": 4685243
+    },
+    {
+      "name": "Alicia Vikander",
+      "film": "The Assessment",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/9pmHTbXeRxUF51jJKthmHI49u9z.jpg",
+      "tmdbId": 227454
+    },
+    {
+      "name": "Elizabeth Chisela",
+      "film": "On Becoming a Guinea Fowl",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/nMsiZtOC7HgMdiAXNdbb55gxUnz.jpg",
+      "tmdbId": 4685247
+    },
+    {
+      "name": "Hayley Squires",
+      "film": "Hoard",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/nBchYkC2f1boBqJlYny5OVsxgFQ.jpg",
+      "tmdbId": 1182598
+    },
+    {
+      "name": "Ryan Destiny",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Fire Inside",
+      "profilePath": "/hyonGsa5L44MyEjN4AfrujW5R3h.jpg",
+      "tmdbId": 1711828
+    },
+    {
+      "name": "Hunter Schafer",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Cuckoo",
+      "profilePath": "/6ZDieLlbm2m3jbYaxsHFo7cWWzJ.jpg",
+      "tmdbId": 2340180
+    },
+    {
+      "name": "June Squibb",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Thelma",
+      "profilePath": "/a7vkoLhc8JGkdvDbHvpgKKHUPHH.jpg",
+      "tmdbId": 35515
+    },
+    {
+      "name": "Joan Chen",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Dìdi",
+      "profilePath": "/7uMTJpY8B2hufXqmlxJpaUPpcJi.jpg",
+      "tmdbId": 6720
+    },
+    {
+      "name": "Carol Kane",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Between the Temples",
+      "profilePath": "/3EOZ7B148lRwJcl3CmQhfpgubYQ.jpg",
+      "tmdbId": 10556
+    },
+    {
+      "name": "Kani Kusruti",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Girls Will Be Girls",
+      "profilePath": "/8WCuR3HcPYBeS2tQusFTEl596hM.jpg",
+      "tmdbId": 1399177
     },
     {
       "name": "Natasha Lyonne",

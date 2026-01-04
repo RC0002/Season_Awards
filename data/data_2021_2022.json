@@ -5,8 +5,8 @@
       "awards": {
         "gg": "X",
         "oscar": "Y",
-        "sag": "Y",
         "afi": "Y",
+        "sag": "Y",
         "critics": "X",
         "pga": "Y",
         "wga": "Y",
@@ -19,54 +19,51 @@
     {
       "name": "The Power of the Dog",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "X",
         "afi": "Y",
         "critics": "Y",
-        "bafta": "Y",
-        "pga": "X",
         "lafca": "X",
+        "pga": "X",
         "astra": "X"
       },
-      "genre": "Drama",
       "posterPath": "/kEy48iCzGnp0ao1cZbNeWR6yIhC.jpg",
       "tmdbId": 600583
     },
     {
+      "name": "Don't Look Up",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "sag": "X",
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X",
+        "wga": "Y",
+        "adg": "X"
+      },
+      "posterPath": "/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
+      "tmdbId": 646380
+    },
+    {
       "name": "Dune",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
         "afi": "Y",
         "critics": "X",
-        "bafta": "X",
-        "pga": "X",
         "nbr": "Y",
+        "pga": "X",
         "wga": "X",
         "adg": "Y",
         "astra": "X"
       },
-      "genre": "Drama",
       "posterPath": "/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
       "tmdbId": 438631
-    },
-    {
-      "name": "Don't Look Up",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "afi": "Y",
-        "critics": "X",
-        "bafta": "X",
-        "pga": "X",
-        "nbr": "Y",
-        "wga": "Y",
-        "adg": "X"
-      },
-      "genre": "Comedy",
-      "posterPath": "/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
-      "tmdbId": 646380
     },
     {
       "name": "West Side Story",
@@ -75,14 +72,14 @@
         "oscar": "X",
         "afi": "Y",
         "critics": "X",
-        "pga": "X",
         "nbr": "Y",
+        "pga": "X",
         "wga": "X",
         "adg": "X"
       },
       "genre": "Comedy",
-      "posterPath": "/yfz3IUoYYSY32tkb97HlUBGFsnh.jpg",
-      "tmdbId": 511809
+      "posterPath": "/ilGDpIv7uqbicXB7j6j4UV9h6e9.jpg",
+      "tmdbId": 101628
     },
     {
       "name": "Nightmare Alley",
@@ -100,35 +97,33 @@
     {
       "name": "Licorice Pizza",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
         "afi": "Y",
         "critics": "X",
-        "bafta": "X",
-        "pga": "X",
         "nbr": "Y",
+        "pga": "X",
         "wga": "X",
         "adg": "X",
         "astra": "X"
       },
-      "genre": "Comedy",
       "posterPath": "/ivXtvzfliGvoJ1DhSHIGyYBToWe.jpg",
       "tmdbId": 718032
     },
     {
       "name": "Belfast",
       "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
         "afi": "Y",
+        "sag": "X",
         "critics": "X",
-        "bafta": "X",
-        "pga": "X",
         "nbr": "Y",
+        "pga": "X",
         "astra": "X"
       },
-      "genre": "Drama",
       "posterPath": "/4xs6nHNBjYpRymw8ZQmnVIbJ8Xa.jpg",
       "tmdbId": 777270
     },
@@ -137,11 +132,11 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
         "afi": "Y",
+        "sag": "X",
         "critics": "X",
-        "pga": "X",
         "nbr": "Y",
+        "pga": "X",
         "wga": "X",
         "astra": "X"
       },
@@ -236,6 +231,14 @@
       },
       "posterPath": "/iUgygt3fscRoKWCV1d0C7FbM9TP.jpg",
       "tmdbId": 370172
+    },
+    {
+      "name": "After Love",
+      "awards": {
+        "bifa": "Y"
+      },
+      "posterPath": "/mXaNg69iWEs0Qsj4AJxcvCXuWKw.jpg",
+      "tmdbId": 714011
     },
     {
       "name": "tick, tick... BOOM!",
@@ -336,6 +339,22 @@
       "tmdbId": 566525
     },
     {
+      "name": "Last Night in Soho",
+      "awards": {
+        "astra": "X"
+      },
+      "posterPath": "/n1ZRmjlk1BJTY7aASqACfPAaLn2.jpg",
+      "tmdbId": 576845
+    },
+    {
+      "name": "Spencer",
+      "awards": {
+        "astra": "X"
+      },
+      "posterPath": "/7GcqdBKaMM9BWXWN07BirBMkcBF.jpg",
+      "tmdbId": 716612
+    },
+    {
       "name": "A Chiara",
       "awards": {
         "spirit": "X"
@@ -368,20 +387,36 @@
       "tmdbId": 539565
     },
     {
-      "name": "Last Night in Soho",
+      "name": "Ali & Ava",
       "awards": {
-        "astra": "X"
+        "bifa": "X"
       },
-      "posterPath": "/n1ZRmjlk1BJTY7aASqACfPAaLn2.jpg",
-      "tmdbId": 576845
+      "posterPath": "/phBaAgc4EGxs0ScOb16ZfOShyfQ.jpg",
+      "tmdbId": 661365
     },
     {
-      "name": "Spencer",
+      "name": "Boiling Point",
       "awards": {
-        "astra": "X"
+        "bifa": "X"
       },
-      "posterPath": "/7GcqdBKaMM9BWXWN07BirBMkcBF.jpg",
-      "tmdbId": 716612
+      "posterPath": "/kdkk7OBnIL1peW2zwcAAp6O54Jo.jpg",
+      "tmdbId": 807196
+    },
+    {
+      "name": "The Nest",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/mSTrRgXGzu2t1jVhTexIqwSHlk7.jpg",
+      "tmdbId": 545237
+    },
+    {
+      "name": "The Souvenir Part II",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/fYNvmZ1vW7bNcUhrAzYjUBgKJWP.jpg",
+      "tmdbId": 473021
     },
     {
       "name": "Passing",
@@ -411,14 +446,14 @@
   "best-director": [
     {
       "name": "Jane Campion",
+      "film": "The Power of the Dog",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
         "critics": "Y",
-        "bafta": "Y",
         "lafca": "Y"
       },
-      "film": "The Power of the Dog",
       "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
       "tmdbId": 10757
     },
@@ -426,9 +461,9 @@
       "name": "Paul Thomas Anderson",
       "film": "Licorice Pizza",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
         "critics": "X",
-        "bafta": "X",
         "dga": "X",
         "nbr": "Y"
       },
@@ -482,6 +517,13 @@
       "tmdbId": 137427
     },
     {
+      "name": "After Love",
+      "film": "Aleem Khan",
+      "awards": {
+        "bifa": "Y"
+      }
+    },
+    {
       "name": "Kenneth Branagh",
       "awards": {
         "gg": "X",
@@ -508,6 +550,17 @@
       "tmdbId": 488
     },
     {
+      "name": "Ryusuke Hamaguchi",
+      "film": "Drive My Car",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "lafca": "X"
+      },
+      "profilePath": "/dwvo9EKhFlIXoe8d7u9LtF0XnNR.jpg",
+      "tmdbId": 1487492
+    },
+    {
       "name": "Denis Villeneuve",
       "awards": {
         "gg": "X",
@@ -517,17 +570,6 @@
       "film": "Dune",
       "profilePath": "/zdDx9Xs93UIrJFWYApYR28J8M6b.jpg",
       "tmdbId": 137427
-    },
-    {
-      "name": "Ryusuke Hamaguchi",
-      "film": "Drive My Car",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X",
-        "lafca": "X"
-      },
-      "profilePath": "/dwvo9EKhFlIXoe8d7u9LtF0XnNR.jpg",
-      "tmdbId": 1487492
     },
     {
       "name": "Guillermo del Toro",
@@ -567,47 +609,13 @@
       "tmdbId": 1361417
     },
     {
-      "name": "Janicza Bravo",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Zola",
-      "profilePath": "/v3uzLqWC0plJAbwHyG7N9BKcunf.jpg",
-      "tmdbId": 1176379
-    },
-    {
-      "name": "Lauren Hadaway",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "The Novice",
-      "profilePath": "/n8yvg8bs1wNBSu3DXvWDcC68hUr.jpg",
-      "tmdbId": 1437193
-    },
-    {
-      "name": "Mike Mills",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "C'mon C'mon",
-      "profilePath": "/oGudNIroZukBfQ8keZCM512KVRn.jpg",
-      "tmdbId": 17439
-    },
-    {
-      "name": "Ninja Thyberg",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Pleasure",
-      "profilePath": "/9uY75TQt9lX3mK9v3eAmChFUxaC.jpg",
-      "tmdbId": 1202063
-    },
-    {
       "name": "Lin",
       "awards": {
         "astra": "X"
       },
-      "film": "Manuel Miranda"
+      "film": "Manuel Miranda",
+      "profilePath": "/7FNn9Z5xkRS9EFbGL2tpmpph9xV.jpg",
+      "tmdbId": 2713
     },
     {
       "name": "Pablo Larraín",
@@ -644,54 +652,120 @@
       "film": "CODA",
       "profilePath": "/sTJnldwESQ7Bbc5EjzoE018KV0k.jpg",
       "tmdbId": 154865
+    },
+    {
+      "name": "Janicza Bravo",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Zola",
+      "profilePath": "/v3uzLqWC0plJAbwHyG7N9BKcunf.jpg",
+      "tmdbId": 1176379
+    },
+    {
+      "name": "Lauren Hadaway",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Novice",
+      "profilePath": "/n8yvg8bs1wNBSu3DXvWDcC68hUr.jpg",
+      "tmdbId": 1437193
+    },
+    {
+      "name": "Mike Mills",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "C'mon C'mon",
+      "profilePath": "/oGudNIroZukBfQ8keZCM512KVRn.jpg",
+      "tmdbId": 17439
+    },
+    {
+      "name": "Ninja Thyberg",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Pleasure",
+      "profilePath": "/9uY75TQt9lX3mK9v3eAmChFUxaC.jpg",
+      "tmdbId": 1202063
+    },
+    {
+      "name": "Ali & Ava",
+      "film": "Clio Barnard",
+      "awards": {
+        "bifa": "X"
+      }
+    },
+    {
+      "name": "Boiling Point",
+      "film": "Philip Barantini",
+      "awards": {
+        "bifa": "X"
+      }
+    },
+    {
+      "name": "The Nest",
+      "film": "Sean Durkin",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/mUeuIHyCp0MEKV3IDhxEXNRVQU8.jpg",
+      "tmdbId": 1021440
+    },
+    {
+      "name": "The Souvenir Part II",
+      "film": "Joanna Hogg",
+      "awards": {
+        "bifa": "X"
+      }
     }
   ],
   "best-actor": [
     {
       "name": "Troy Kotsur",
+      "film": "CODA",
+      "role": "Supporting",
       "awards": {
+        "bafta": "Y",
         "gg": "X",
         "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
-        "bafta": "Y",
-        "spirit": "Y",
         "astra": "Y",
+        "spirit": "Y",
         "gotham": "Y"
       },
-      "film": "CODA",
-      "role": "Supporting",
       "profilePath": "/24K3og12jGBGL9dqH5OYFdjF9wu.jpg",
       "tmdbId": 1571661
     },
     {
       "name": "Will Smith",
+      "film": "King Richard",
+      "role": "Leading",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
-        "bafta": "Y",
         "nbr": "Y",
         "astra": "X"
       },
-      "film": "King Richard",
-      "role": "Leading",
       "profilePath": "/8TlKqbXYgHmmaEoPBJ7djJ8Rxxa.jpg",
       "tmdbId": 2888
     },
     {
       "name": "Kodi Smit-McPhee",
+      "film": "The Power of the Dog",
+      "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "gg": "Y",
         "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "bafta": "X",
         "lafca": "Y"
       },
-      "film": "The Power of the Dog",
-      "role": "Supporting",
       "profilePath": "/sesCWba9NwPDYDZzbVLs7OgLOti.jpg",
       "tmdbId": 113505
     },
@@ -720,6 +794,17 @@
       "tmdbId": 35548
     },
     {
+      "name": "Adeel Akhtar",
+      "film": "Ali & Ava",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "bifa": "Y"
+      },
+      "profilePath": "/z1FSCVRLYP5FmHloQ2V9RGC3YYY.jpg",
+      "tmdbId": 81840
+    },
+    {
       "name": "Frankie Faison",
       "awards": {
         "spirit": "X",
@@ -728,15 +813,6 @@
       "film": "The Killing of Kenneth Chamberlain",
       "profilePath": "/bNHMANGaSqcki768UVAdYiYdawZ.jpg",
       "tmdbId": 13936
-    },
-    {
-      "name": "Vincent Lindon",
-      "awards": {
-        "lafca": "Y"
-      },
-      "film": "Titane",
-      "profilePath": "/tjRKMKfsIH7MrqtN7cMPIZubSXa.jpg",
-      "tmdbId": 5443
     },
     {
       "name": "John Arcilla",
@@ -748,20 +824,51 @@
       "tmdbId": 625924
     },
     {
-      "name": "Benedict Cumberbatch",
+      "name": "Vincent Lindon",
       "awards": {
+        "lafca": "Y"
+      },
+      "film": "Titane",
+      "profilePath": "/tjRKMKfsIH7MrqtN7cMPIZubSXa.jpg",
+      "tmdbId": 5443
+    },
+    {
+      "name": "Talid Ariss",
+      "film": "After Love",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/lPtl7mmDUK8ydvKknBDOPp07kri.jpg",
+      "tmdbId": 929820
+    },
+    {
+      "name": "Benedict Cumberbatch",
+      "film": "The Power of the Dog",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
         "gg": "X",
         "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "bafta": "X",
         "lafca": "X",
         "astra": "X"
       },
-      "film": "The Power of the Dog",
-      "role": "Leading",
       "profilePath": "/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg",
       "tmdbId": 71580
+    },
+    {
+      "name": "Ciarán Hinds",
+      "film": "Belfast",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "astra": "X",
+        "bifa": "X"
+      },
+      "profilePath": "/d8wLIX9VYgwXRGSp1gmUdUxmApv.jpg",
+      "tmdbId": 8785
     },
     {
       "name": "Denzel Washington",
@@ -813,38 +920,48 @@
       "tmdbId": 1254583
     },
     {
-      "name": "Ciarán Hinds",
-      "film": "Belfast",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X",
-        "astra": "X"
-      },
-      "profilePath": "/d8wLIX9VYgwXRGSp1gmUdUxmApv.jpg",
-      "tmdbId": 8785
-    },
-    {
       "name": "Mahershala Ali",
-      "awards": {
-        "gg": "X",
-        "bafta": "X"
-      },
       "film": "Swan Song",
       "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X"
+      },
       "profilePath": "/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg",
       "tmdbId": 932967
     },
     {
       "name": "Leonardo DiCaprio",
-      "awards": {
-        "gg": "X",
-        "bafta": "X"
-      },
       "film": "Don't Look Up",
       "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X"
+      },
       "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
       "tmdbId": 6193
+    },
+    {
+      "name": "Stephen Graham",
+      "film": "Boiling Point",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "bifa": "X"
+      },
+      "profilePath": "/wjDQ7MzciEsRwWDFbemcM1hS0aq.jpg",
+      "tmdbId": 1115
+    },
+    {
+      "name": "Jesse Plemons",
+      "film": "The Power of the Dog",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X"
+      },
+      "profilePath": "/og4I51GsuwohdPgoELOHVMMqMre.jpg",
+      "tmdbId": 88124
     },
     {
       "name": "Ben Affleck",
@@ -866,17 +983,6 @@
       "role": "Supporting",
       "profilePath": "/d8wLIX9VYgwXRGSp1gmUdUxmApv.jpg",
       "tmdbId": 8785
-    },
-    {
-      "name": "Jesse Plemons",
-      "film": "The Power of the Dog",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X"
-      },
-      "profilePath": "/og4I51GsuwohdPgoELOHVMMqMre.jpg",
-      "tmdbId": 88124
     },
     {
       "name": "J. K. Simmons",
@@ -932,6 +1038,26 @@
       "tmdbId": 91671
     },
     {
+      "name": "Mike Faist",
+      "film": "West Side Story",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/xRl1Pa8a80L3QUT7LrTtlTZv1l4.jpg",
+      "tmdbId": 1423520
+    },
+    {
+      "name": "Woody Norman",
+      "film": "C'mon C'mon",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/jQlx4bAGAmQfvzEuXw6A9cEmb95.jpg",
+      "tmdbId": 1945369
+    },
+    {
       "name": "Cooper Hoffman",
       "awards": {
         "gg": "X"
@@ -972,44 +1098,22 @@
       "tmdbId": 51329
     },
     {
-      "name": "Adeel Akhtar",
-      "film": "Ali & Ava",
-      "role": "Leading",
+      "name": "Jason Isaacs",
       "awards": {
-        "bafta": "X"
+        "astra": "X"
       },
-      "profilePath": "/z1FSCVRLYP5FmHloQ2V9RGC3YYY.jpg",
-      "tmdbId": 81840
+      "film": "Mass",
+      "profilePath": "/s6XRFjqUsrDJfDQuXPOoExAYPmb.jpg",
+      "tmdbId": 11355
     },
     {
-      "name": "Stephen Graham",
-      "film": "Boiling Point",
-      "role": "Leading",
+      "name": "Robin de Jesús",
       "awards": {
-        "bafta": "X"
+        "astra": "X"
       },
-      "profilePath": "/wjDQ7MzciEsRwWDFbemcM1hS0aq.jpg",
-      "tmdbId": 1115
-    },
-    {
-      "name": "Mike Faist",
-      "film": "West Side Story",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/xRl1Pa8a80L3QUT7LrTtlTZv1l4.jpg",
-      "tmdbId": 1423520
-    },
-    {
-      "name": "Woody Norman",
-      "film": "C'mon C'mon",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/jQlx4bAGAmQfvzEuXw6A9cEmb95.jpg",
-      "tmdbId": 1945369
+      "film": "tick, tick... BOOM!",
+      "profilePath": "/cnXFjsy7OaKBGtCV9nFD5rNvq0N.jpg",
+      "tmdbId": 110505
     },
     {
       "name": "Clifton Collins Jr.",
@@ -1055,22 +1159,58 @@
       "tmdbId": 84219
     },
     {
-      "name": "Jason Isaacs",
+      "name": "Riz Ahmed",
+      "film": "Encounter",
       "awards": {
-        "astra": "X"
+        "bifa": "X"
       },
-      "film": "Mass",
-      "profilePath": "/s6XRFjqUsrDJfDQuXPOoExAYPmb.jpg",
-      "tmdbId": 11355
+      "profilePath": "/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg",
+      "tmdbId": 53240
     },
     {
-      "name": "Robin de Jesús",
+      "name": "Jude Law",
+      "film": "The Nest",
       "awards": {
-        "astra": "X"
+        "bifa": "X"
       },
-      "film": "tick, tick... BOOM!",
-      "profilePath": "/cnXFjsy7OaKBGtCV9nFD5rNvq0N.jpg",
-      "tmdbId": 110505
+      "profilePath": "/1rTmD8B1YAE1MrrBJs4krIiIvNM.jpg",
+      "tmdbId": 9642
+    },
+    {
+      "name": "James Norton",
+      "film": "Nowhere Special",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/jQElUV2w7pMNEPX44qFMmr4zDDC.jpg",
+      "tmdbId": 1205278
+    },
+    {
+      "name": "Richard Ayoade",
+      "film": "The Souvenir Part II",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/qHKoy9kP4bsv4G9EkvU4FMUmYkS.jpg",
+      "tmdbId": 98103
+    },
+    {
+      "name": "Lucian River",
+      "film": "Chauhan",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/yJpRBSknptPyFORxFQtjIb3CkbM.jpg",
+      "tmdbId": 2670299
+    },
+    {
+      "name": "Ray Panthaki",
+      "film": "Boiling Point",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/9PQIwn0uTUES713pUhbgtiYucFL.jpg",
+      "tmdbId": 82107
     },
     {
       "name": "Oscar Isaac",
@@ -1110,17 +1250,17 @@
   "best-actress": [
     {
       "name": "Ariana DeBose",
+      "film": "West Side Story",
+      "role": "Supporting",
       "awards": {
+        "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
-        "bafta": "Y",
         "lafca": "Y",
         "astra": "Y"
       },
-      "film": "West Side Story",
-      "role": "Supporting",
       "profilePath": "/8HTSA2iVTsDN83OncAvFTcqxsAr.jpg",
       "tmdbId": 1437491
     },
@@ -1139,6 +1279,17 @@
       "tmdbId": 83002
     },
     {
+      "name": "Joanna Scanlan",
+      "film": "After Love",
+      "role": "Leading",
+      "awards": {
+        "bafta": "Y",
+        "bifa": "Y"
+      },
+      "profilePath": "/5qimZvgfU306k1SgX6ChjoX0EHB.jpg",
+      "tmdbId": 33450
+    },
+    {
       "name": "Rachel Zegler",
       "awards": {
         "gg": "Y",
@@ -1151,16 +1302,16 @@
     },
     {
       "name": "Ruth Negga",
-      "awards": {
-        "gg": "X",
-        "sag": "X",
-        "bafta": "X",
-        "spirit": "Y",
-        "astra": "X",
-        "gotham": "X"
-      },
       "film": "Passing",
       "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "sag": "X",
+        "astra": "X",
+        "spirit": "Y",
+        "gotham": "X"
+      },
       "profilePath": "/eUnSUgbD050mKSCqOJvXplAiF9S.jpg",
       "tmdbId": 17018
     },
@@ -1227,16 +1378,6 @@
       "tmdbId": 1335818
     },
     {
-      "name": "Joanna Scanlan",
-      "film": "After Love",
-      "role": "Leading",
-      "awards": {
-        "bafta": "Y"
-      },
-      "profilePath": "/5qimZvgfU306k1SgX6ChjoX0EHB.jpg",
-      "tmdbId": 33450
-    },
-    {
       "name": "Penélope Cruz",
       "awards": {
         "venice": "Y"
@@ -1246,32 +1387,55 @@
       "tmdbId": 955
     },
     {
-      "name": "Lady Gaga",
+      "name": "Vinette Robinson",
+      "film": "Boiling Point",
       "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/m9jFmatKXYyz1nfPdrfR5uCrGHC.jpg",
+      "tmdbId": 21679
+    },
+    {
+      "name": "Caitríona Balfe",
+      "film": "Belfast",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
         "gg": "X",
         "sag": "X",
         "critics": "X",
-        "bafta": "X",
-        "astra": "X"
+        "astra": "X",
+        "bifa": "X"
       },
+      "profilePath": "/4KQRDj74lKwU52Ewmzz7sVIakgn.jpg",
+      "tmdbId": 147056
+    },
+    {
+      "name": "Lady Gaga",
       "film": "House of Gucci",
       "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X",
+        "astra": "X"
+      },
       "profilePath": "/9Y4Pz7AEXhB9qNar2tMsx5EVXML.jpg",
       "tmdbId": 237405
     },
     {
-      "name": "Caitríona Balfe",
-      "awards": {
-        "gg": "X",
-        "sag": "X",
-        "critics": "X",
-        "bafta": "X",
-        "astra": "X"
-      },
-      "film": "Belfast",
+      "name": "Jessie Buckley",
+      "film": "The Lost Daughter",
       "role": "Supporting",
-      "profilePath": "/4KQRDj74lKwU52Ewmzz7sVIakgn.jpg",
-      "tmdbId": 147056
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "spirit": "X",
+        "gotham": "X"
+      },
+      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
+      "tmdbId": 1498158
     },
     {
       "name": "Kirsten Dunst",
@@ -1287,39 +1451,26 @@
       "tmdbId": 205
     },
     {
-      "name": "Jessie Buckley",
-      "film": "The Lost Daughter",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X",
-        "spirit": "X",
-        "gotham": "X"
-      },
-      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
-      "tmdbId": 1498158
-    },
-    {
       "name": "Alana Haim",
-      "awards": {
-        "gg": "X",
-        "critics": "X",
-        "bafta": "X"
-      },
       "film": "Licorice Pizza",
       "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X"
+      },
       "profilePath": "/uOU4uueRxH5BYhzNjzPxJOxZStJ.jpg",
       "tmdbId": 1741367
     },
     {
       "name": "Aunjanue Ellis-Taylor",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "bafta": "X"
-      },
       "film": "King Richard",
       "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X"
+      },
       "profilePath": "/e54DfgDyS67xdtomYODFule6Ofa.jpg",
       "tmdbId": 53923
     },
@@ -1334,17 +1485,6 @@
       },
       "profilePath": "/e54DfgDyS67xdtomYODFule6Ofa.jpg",
       "tmdbId": 53923
-    },
-    {
-      "name": "Ann Dowd",
-      "film": "Mass",
-      "role": "Supporting",
-      "awards": {
-        "critics": "X",
-        "bafta": "X"
-      },
-      "profilePath": "/zo44U71uiMNVW1HSiOa5F9MpqIq.jpg",
-      "tmdbId": 43366
     },
     {
       "name": "Emilia Jones",
@@ -1369,14 +1509,26 @@
       "tmdbId": 1576786
     },
     {
-      "name": "Brittany S. Hall",
+      "name": "Ann Dowd",
+      "film": "Mass",
+      "role": "Supporting",
       "awards": {
-        "spirit": "X",
-        "gotham": "X"
+        "bafta": "X",
+        "critics": "X"
       },
-      "film": "Test Pattern",
-      "profilePath": "/sIic0JYph8yUZndRZj5hwvvdCQY.jpg",
-      "tmdbId": 2088477
+      "profilePath": "/zo44U71uiMNVW1HSiOa5F9MpqIq.jpg",
+      "tmdbId": 43366
+    },
+    {
+      "name": "Judi Dench",
+      "film": "Belfast",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bifa": "X"
+      },
+      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
+      "tmdbId": 5309
     },
     {
       "name": "Marlee Matlin",
@@ -1387,6 +1539,26 @@
       "film": "CODA",
       "profilePath": "/1iV3yA07kdj7RFj2yyzwO2T6M8o.jpg",
       "tmdbId": 19797
+    },
+    {
+      "name": "Brittany S. Hall",
+      "awards": {
+        "spirit": "X",
+        "gotham": "X"
+      },
+      "film": "Test Pattern",
+      "profilePath": "/sIic0JYph8yUZndRZj5hwvvdCQY.jpg",
+      "tmdbId": 2088477
+    },
+    {
+      "name": "Tessa Thompson",
+      "film": "Passing",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
+      "tmdbId": 62561
     },
     {
       "name": "Marion Cotillard",
@@ -1419,16 +1591,6 @@
       "tmdbId": 54693
     },
     {
-      "name": "Judi Dench",
-      "film": "Belfast",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
-      "tmdbId": 5309
-    },
-    {
       "name": "Jennifer Hudson",
       "film": "Respect",
       "role": "Leading",
@@ -1456,16 +1618,6 @@
       },
       "profilePath": "/zB0M77jr7tmsmWHEr2bWO2Xq66L.jpg",
       "tmdbId": 13299
-    },
-    {
-      "name": "Tessa Thompson",
-      "film": "Passing",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
-      "tmdbId": 62561
     },
     {
       "name": "Isabelle Fuhrman",
@@ -1518,6 +1670,60 @@
       "film": "Red Rocket",
       "profilePath": "/85ROAQ2XoXWFGWOFk78GGCCZTGv.jpg",
       "tmdbId": 2971462
+    },
+    {
+      "name": "Carrie Coon",
+      "film": "The Nest",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/vWChiHhXFjZVKC6HbACyyRFmdW4.jpg",
+      "tmdbId": 1308445
+    },
+    {
+      "name": "Claire Rushbrook",
+      "film": "Ali & Ava",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/7jCBMV5n2HLPDtAIMPXOXNo7Nzh.jpg",
+      "tmdbId": 68384
+    },
+    {
+      "name": "Ruth Wilson",
+      "film": "True Things",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/fdFVatb9pt5dfT9tDK8tikKWafS.jpg",
+      "tmdbId": 47720
+    },
+    {
+      "name": "Jo Hartley",
+      "film": "Sweetheart",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/A8JMDj5yddYr5Pl7a35YPBGc2CS.jpg",
+      "tmdbId": 70518
+    },
+    {
+      "name": "Nathalie Richard",
+      "film": "After Love",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/299hXLV3NikHBGFm7J2iIO3c699.jpg",
+      "tmdbId": 6019
+    },
+    {
+      "name": "Tilda Swinton",
+      "film": "The Souvenir Part II",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
+      "tmdbId": 3063
     },
     {
       "name": "Lili Taylor",

@@ -1,50 +1,50 @@
 {
   "best-film": [
     {
-      "name": "Parasite",
-      "awards": {
-        "oscar": "Y",
-        "sag": "Y",
-        "afi": "Y",
-        "critics": "X",
-        "bafta": "X",
-        "pga": "X",
-        "lafca": "Y",
-        "adg": "Y",
-        "wga": "Y",
-        "astra": "X"
-      },
-      "posterPath": "/4DGPORlVIDIQvsuSDnM4uXKMjWS.jpg",
-      "tmdbId": 48311
-    },
-    {
       "name": "1917",
       "awards": {
-        "oscar": "X",
-        "gg": "Y",
-        "afi": "Y",
-        "critics": "X",
         "bafta": "Y",
-        "pga": "Y",
+        "gg": "Y",
+        "oscar": "X",
+        "afi": "Y",
         "nbr": "Y",
-        "adg": "X",
+        "critics": "X",
+        "pga": "Y",
         "wga": "X",
+        "adg": "X",
         "astra": "Y"
       },
       "posterPath": "/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
       "tmdbId": 530915
     },
     {
+      "name": "Parasite",
+      "awards": {
+        "bafta": "X",
+        "oscar": "Y",
+        "afi": "Y",
+        "sag": "Y",
+        "critics": "X",
+        "lafca": "Y",
+        "pga": "X",
+        "wga": "Y",
+        "adg": "Y",
+        "astra": "X"
+      },
+      "posterPath": "/4DGPORlVIDIQvsuSDnM4uXKMjWS.jpg",
+      "tmdbId": 48311
+    },
+    {
       "name": "Once Upon a Time in Hollywood",
       "awards": {
-        "oscar": "X",
-        "gg": "Y",
-        "sag": "X",
-        "afi": "Y",
-        "critics": "Y",
         "bafta": "X",
-        "pga": "X",
+        "gg": "Y",
+        "oscar": "X",
+        "afi": "Y",
+        "sag": "X",
         "nbr": "Y",
+        "critics": "Y",
+        "pga": "X",
         "adg": "Y",
         "astra": "X"
       },
@@ -52,53 +52,55 @@
       "tmdbId": 466272
     },
     {
-      "name": "Jojo Rabbit",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "sag": "X",
-        "afi": "Y",
-        "critics": "X",
-        "pga": "X",
-        "nbr": "Y",
-        "adg": "X",
-        "wga": "Y",
-        "astra": "X"
-      },
-      "posterPath": "/7GsM4mtM0worCtIVeiQt28HieeN.jpg",
-      "tmdbId": 515001
-    },
-    {
       "name": "Marriage Story",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "afi": "Y",
+        "nbr": "Y",
         "critics": "X",
         "pga": "X",
-        "nbr": "Y",
-        "gotham": "Y",
         "wga": "X",
-        "spirit": "X",
-        "astra": "X"
+        "gotham": "Y",
+        "astra": "X",
+        "spirit": "X"
       },
+      "genre": "Drama",
       "posterPath": "/2JRyCKaRKyJAVpsIHeLvPw5nHmw.jpg",
       "tmdbId": 492188
     },
     {
+      "name": "Jojo Rabbit",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "sag": "X",
+        "nbr": "Y",
+        "critics": "X",
+        "pga": "X",
+        "wga": "Y",
+        "adg": "X",
+        "astra": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/7GsM4mtM0worCtIVeiQt28HieeN.jpg",
+      "tmdbId": 515001
+    },
+    {
       "name": "The Irishman",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "sag": "X",
-        "afi": "Y",
-        "critics": "X",
         "bafta": "X",
-        "pga": "X",
+        "gg": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "sag": "X",
         "nbr": "Y",
+        "critics": "X",
         "lafca": "X",
-        "adg": "X",
+        "pga": "X",
         "wga": "X",
+        "adg": "X",
         "astra": "X"
       },
       "posterPath": "/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg",
@@ -107,16 +109,16 @@
     {
       "name": "Joker",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "X",
+        "oscar": "X",
         "afi": "Y",
         "critics": "X",
-        "bafta": "X",
-        "venice": "Y",
         "pga": "X",
-        "adg": "X",
         "wga": "X",
-        "astra": "X"
+        "adg": "X",
+        "astra": "X",
+        "venice": "Y"
       },
       "posterPath": "/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
       "tmdbId": 475557
@@ -126,10 +128,10 @@
       "awards": {
         "gg": "X",
         "afi": "Y",
-        "pga": "X",
         "nbr": "Y",
-        "adg": "X",
-        "wga": "X"
+        "pga": "X",
+        "wga": "X",
+        "adg": "X"
       },
       "genre": "Comedy",
       "posterPath": "/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
@@ -140,8 +142,8 @@
       "awards": {
         "afi": "Y",
         "gotham": "X",
-        "spirit": "Y",
-        "astra": "X"
+        "astra": "X",
+        "spirit": "Y"
       },
       "posterPath": "/7ht2IMGynDSVQGvAXhAb83DLET8.jpg",
       "tmdbId": 565310
@@ -159,9 +161,9 @@
       "name": "Ford v Ferrari",
       "awards": {
         "oscar": "X",
+        "nbr": "Y",
         "critics": "X",
         "pga": "X",
-        "nbr": "Y",
         "adg": "X"
       },
       "posterPath": "/dR1Ju50iudrOh3YgfwkAU1g2HZe.jpg",
@@ -182,8 +184,8 @@
     {
       "name": "Uncut Gems",
       "awards": {
-        "critics": "X",
         "nbr": "Y",
+        "critics": "X",
         "gotham": "X",
         "spirit": "X"
       },
@@ -228,13 +230,12 @@
       "tmdbId": 299534
     },
     {
-      "name": "A Beautiful Day in the Neighborhood",
+      "name": "For Sama",
       "awards": {
-        "adg": "X",
-        "wga": "X"
+        "bifa": "Y"
       },
-      "posterPath": "/p9vCAVhDK375XyobVcKqzqzsUHE.jpg",
-      "tmdbId": 501907
+      "posterPath": "/mDna51F8QfrJFZOgPGQUz3VKqsB.jpg",
+      "tmdbId": 576017
     },
     {
       "name": "Booksmart",
@@ -245,6 +246,16 @@
       "screenplay_type": "original",
       "posterPath": "/2aSxRDmisJP90H3S0aocyuQIe4z.jpg",
       "tmdbId": 505600
+    },
+    {
+      "name": "A Beautiful Day in the Neighborhood",
+      "awards": {
+        "wga": "X",
+        "adg": "X"
+      },
+      "screenplay_type": "adapted",
+      "posterPath": "/p9vCAVhDK375XyobVcKqzqzsUHE.jpg",
+      "tmdbId": 501907
     },
     {
       "name": "The Two Popes",
@@ -271,14 +282,6 @@
       },
       "posterPath": "/gbPfvwBqbiHpQkYZQvVwB6MVauV.jpg",
       "tmdbId": 525661
-    },
-    {
-      "name": "Hustlers",
-      "awards": {
-        "gotham": "X"
-      },
-      "posterPath": "/zBhv8rsLOfpFW2M5b6wW78Uoojs.jpg",
-      "tmdbId": 540901
     },
     {
       "name": "Ad Astra",
@@ -337,6 +340,14 @@
       "tmdbId": 458723
     },
     {
+      "name": "Hustlers",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/zBhv8rsLOfpFW2M5b6wW78Uoojs.jpg",
+      "tmdbId": 540901
+    },
+    {
       "name": "Clemency",
       "awards": {
         "spirit": "X"
@@ -351,6 +362,38 @@
       },
       "posterPath": "/rdG4jfH0rxkB2FgkYmjj9V4Q31M.jpg",
       "tmdbId": 403300
+    },
+    {
+      "name": "Bait",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/e2OIr4y90ZZjIRWQ0XBOVzpBn4x.jpg",
+      "tmdbId": 118957
+    },
+    {
+      "name": "The Personal History of David Copperfield",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/2epgo9k2Jrs7qrTL1Rork1mDSKT.jpg",
+      "tmdbId": 520900
+    },
+    {
+      "name": "The Souvenir",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/2Nj04HsZ0lNkv07JnfBZ0bAIECn.jpg",
+      "tmdbId": 473019
+    },
+    {
+      "name": "Wild Rose",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/79THplH9WM7y3gRPYM4dcC0IRPw.jpg",
+      "tmdbId": 482981
     }
   ],
   "best-director": [
@@ -358,11 +401,11 @@
       "name": "Sam Mendes",
       "film": "1917",
       "awards": {
-        "oscar": "X",
-        "gg": "Y",
-        "critics": "Y",
         "bafta": "Y",
-        "dga": "Y"
+        "gg": "Y",
+        "oscar": "X",
+        "dga": "Y",
+        "critics": "Y"
       },
       "profilePath": "/5z89X9rB76JDblqMQ52fviwXxAN.jpg",
       "tmdbId": 39
@@ -371,9 +414,9 @@
       "name": "Bong Joon-ho",
       "film": "Parasite",
       "awards": {
+        "bafta": "X",
         "oscar": "Y",
         "critics": "Y",
-        "bafta": "X",
         "lafca": "Y"
       },
       "profilePath": "/stwnTvZAoD8gEJEDHpDQyLCyDy5.jpg",
@@ -383,11 +426,11 @@
       "name": "Quentin Tarantino",
       "film": "Once Upon a Time in Hollywood",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "critics": "X",
         "bafta": "X",
-        "nbr": "Y"
+        "gg": "X",
+        "oscar": "X",
+        "nbr": "Y",
+        "critics": "X"
       },
       "profilePath": "/1gjcpAa99FAOWGnrUvHEXXsRs7o.jpg",
       "tmdbId": 138
@@ -399,6 +442,15 @@
         "critics": "X",
         "spirit": "Y"
       }
+    },
+    {
+      "name": "Waad Al",
+      "film": "Khateab  &  Edward Watts",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/rhpBO1OBzwdn4BtERlEmwy5JupZ.jpg",
+      "tmdbId": 2220265
     },
     {
       "name": "Roy Andersson",
@@ -413,11 +465,11 @@
       "name": "Martin Scorsese",
       "film": "The Irishman",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "critics": "X",
         "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
         "dga": "X",
+        "critics": "X",
         "lafca": "X"
       },
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
@@ -427,9 +479,9 @@
       "name": "Todd Phillips",
       "film": "Joker",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "X",
-        "bafta": "X"
+        "oscar": "X"
       }
     },
     {
@@ -441,24 +493,6 @@
       "film": "Parasite",
       "profilePath": "/stwnTvZAoD8gEJEDHpDQyLCyDy5.jpg",
       "tmdbId": 21684
-    },
-    {
-      "name": "Noah Baumbach",
-      "film": "Marriage Story",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/pNCt2m8jfiX3YOiCdnJT3OPxNvm.jpg",
-      "tmdbId": 5656
-    },
-    {
-      "name": "Greta Gerwig",
-      "film": "Little Women",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/6MwQ2GstYr0wnhp1eTOAbVMNBGN.jpg",
-      "tmdbId": 45400
     },
     {
       "name": "Quentin Tarantino",
@@ -477,6 +511,24 @@
       },
       "profilePath": "/ww6L2ksfJNMbuiIdDuvVKndUHsv.jpg",
       "tmdbId": 55934
+    },
+    {
+      "name": "Noah Baumbach",
+      "film": "Marriage Story",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/pNCt2m8jfiX3YOiCdnJT3OPxNvm.jpg",
+      "tmdbId": 5656
+    },
+    {
+      "name": "Greta Gerwig",
+      "film": "Little Women",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/6MwQ2GstYr0wnhp1eTOAbVMNBGN.jpg",
+      "tmdbId": 45400
     },
     {
       "name": "Robert Eggers",
@@ -513,6 +565,40 @@
       "film": "Hustlers",
       "profilePath": "/y7hsfDMYnJYTbtESNg3jrceQAvY.jpg",
       "tmdbId": 71551
+    },
+    {
+      "name": "Oliver Hermanus",
+      "film": "Moffie",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/sXBaKeAdA8jFE3vFRTL2oX460al.jpg",
+      "tmdbId": 1028297
+    },
+    {
+      "name": "Joanna Hogg",
+      "film": "The Souvenir",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/sF5ZZ8b51u4yNeoahJQD1UQfLHk.jpg",
+      "tmdbId": 105435
+    },
+    {
+      "name": "Mark Jenkin",
+      "film": "Bait",
+      "awards": {
+        "bifa": "X"
+      }
+    },
+    {
+      "name": "Asif Kapadia",
+      "film": "Diego Maradona",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/5FuAWpePS3R5UcIysUrmeNZEGFe.jpg",
+      "tmdbId": 55251
     }
   ],
   "best-actor": [
@@ -521,11 +607,11 @@
       "film": "Joker",
       "role": "Leading",
       "awards": {
-        "oscar": "Y",
+        "bafta": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
-        "bafta": "Y",
         "astra": "Y"
       },
       "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
@@ -536,11 +622,11 @@
       "film": "Once Upon a Time in Hollywood",
       "role": "Supporting",
       "awards": {
-        "oscar": "Y",
+        "bafta": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
-        "bafta": "Y",
         "astra": "X"
       },
       "profilePath": "/ajNaPmXVVMJFg9GWmu6MJzTaXdV.jpg",
@@ -548,14 +634,13 @@
     },
     {
       "name": "Adam Sandler",
-      "film": "Uncut Gems",
-      "role": "Leading",
       "awards": {
-        "critics": "X",
         "nbr": "Y",
+        "critics": "X",
         "gotham": "X",
         "spirit": "Y"
       },
+      "film": "Uncut Gems",
       "profilePath": "/gLkLCsQdwDDPabRhKPB25nGtKwS.jpg",
       "tmdbId": 19292
     },
@@ -564,11 +649,11 @@
       "film": "Marriage Story",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "bafta": "X",
         "lafca": "X",
         "gotham": "Y",
         "astra": "X"
@@ -577,43 +662,43 @@
       "tmdbId": 1023139
     },
     {
-      "name": "Antonio Banderas",
-      "film": "Pain and Glory",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "critics": "X",
-        "lafca": "Y"
-      },
-      "profilePath": "/fce7zl6elUzsv7wudHFc7RgFtjD.jpg",
-      "tmdbId": 3131
-    },
-    {
       "name": "Taron Egerton",
-      "awards": {
-        "gg": "Y",
-        "sag": "X",
-        "bafta": "X",
-        "astra": "X"
-      },
       "film": "Rocketman",
       "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "Y",
+        "sag": "X",
+        "astra": "X"
+      },
       "profilePath": "/uCaPhyKAQIfEzAWWCYIrO2004CB.jpg",
       "tmdbId": 1303037
     },
     {
       "name": "Joe Pesci",
+      "film": "The Irishman",
+      "role": "Supporting",
       "awards": {
-        "sag": "X",
         "bafta": "X",
+        "sag": "X",
         "lafca": "X",
         "astra": "Y"
       },
-      "film": "The Irishman",
-      "role": "Supporting",
       "profilePath": "/zbAdhqbMfRXSz26TjxJvB5f2eL5.jpg",
       "tmdbId": 4517
+    },
+    {
+      "name": "Antonio Banderas",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "critics": "X",
+        "lafca": "Y"
+      },
+      "film": "Pain and Glory",
+      "role": "Leading",
+      "profilePath": "/fce7zl6elUzsv7wudHFc7RgFtjD.jpg",
+      "tmdbId": 3131
     },
     {
       "name": "Willem Dafoe",
@@ -628,15 +713,6 @@
       "tmdbId": 5293
     },
     {
-      "name": "Luca Marinelli",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "Martin Eden",
-      "profilePath": "/9Tmzfhp9hY6Zouo8KtHcyzuKfdf.jpg",
-      "tmdbId": 509344
-    },
-    {
       "name": "Song Kang-ho",
       "awards": {
         "lafca": "Y"
@@ -646,15 +722,42 @@
       "tmdbId": 20738
     },
     {
+      "name": "Josh O'Connor",
+      "film": "Only You",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/vV9m1GnFVDFPC0kZgbUVe2ZKk3d.jpg",
+      "tmdbId": 1206334
+    },
+    {
+      "name": "Hugh Laurie",
+      "film": "The Personal History of David Copperfield",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/akArncggHnusP5jxzMBKmJDRrMo.jpg",
+      "tmdbId": 41419
+    },
+    {
+      "name": "Luca Marinelli",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Martin Eden",
+      "profilePath": "/9Tmzfhp9hY6Zouo8KtHcyzuKfdf.jpg",
+      "tmdbId": 509344
+    },
+    {
       "name": "Leonardo DiCaprio",
       "film": "Once Upon a Time in Hollywood",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "bafta": "X",
         "astra": "X"
       },
       "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
@@ -665,11 +768,11 @@
       "film": "A Beautiful Day in the Neighborhood",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "bafta": "X",
         "astra": "X"
       },
       "profilePath": "/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
@@ -680,11 +783,11 @@
       "film": "The Irishman",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
-        "critics": "X",
-        "bafta": "X"
+        "critics": "X"
       },
       "profilePath": "/iqJ6g9fTKjpp1zWH9v72whXeGIK.jpg",
       "tmdbId": 1158
@@ -694,10 +797,10 @@
       "film": "The Two Popes",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "X",
-        "critics": "X",
-        "bafta": "X"
+        "oscar": "X",
+        "critics": "X"
       },
       "profilePath": "/cbFWUHhk6pZKTEm48OKVM5awNNn.jpg",
       "tmdbId": 4173
@@ -707,24 +810,12 @@
       "film": "The Two Popes",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "X",
-        "bafta": "X"
+        "oscar": "X"
       },
       "profilePath": "/zwSv5uXzPTtmitFe39UdqnVwmdL.jpg",
       "tmdbId": 378
-    },
-    {
-      "name": "Joe Pesci",
-      "film": "Russell Bufalino",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/zbAdhqbMfRXSz26TjxJvB5f2eL5.jpg",
-      "tmdbId": 4517
     },
     {
       "name": "Eddie Murphy",
@@ -737,6 +828,18 @@
       "role": "Leading",
       "profilePath": "/qgjMfefsKwSYsyCaIX46uyOXIpy.jpg",
       "tmdbId": 776
+    },
+    {
+      "name": "Joe Pesci",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "critics": "X"
+      },
+      "film": "Russell Bufalino",
+      "role": "Supporting",
+      "profilePath": "/zbAdhqbMfRXSz26TjxJvB5f2eL5.jpg",
+      "tmdbId": 4517
     },
     {
       "name": "Christian Bale",
@@ -752,8 +855,8 @@
     {
       "name": "Shia LaBeouf",
       "awards": {
-        "spirit": "X",
-        "astra": "X"
+        "astra": "X",
+        "spirit": "X"
       },
       "film": "Honey Boy",
       "profilePath": "/frYAEeYMi9jdt9MIjGA8vCr5yUC.jpg",
@@ -816,6 +919,15 @@
       "film": "High Flying Bird",
       "profilePath": "/riYqFOgYLYH4Hw8p2JYTw5lXGDE.jpg",
       "tmdbId": 459980
+    },
+    {
+      "name": "Sterling K. Brown",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "Waves Ronald Williams",
+      "profilePath": "/vjFATaJfAyBie56J4Qv2DQ9Dyem.jpg",
+      "tmdbId": 1225953
     },
     {
       "name": "Chris Galust",
@@ -881,13 +993,74 @@
       "tmdbId": 17859
     },
     {
-      "name": "Sterling K. Brown",
+      "name": "Sam Adewunmi",
+      "film": "The Last Tree",
       "awards": {
-        "astra": "X"
+        "bifa": "X"
       },
-      "film": "Waves Ronald Williams",
-      "profilePath": "/vjFATaJfAyBie56J4Qv2DQ9Dyem.jpg",
-      "tmdbId": 1225953
+      "profilePath": "/j3Q9JlpO6HKUlEiDtWOTSnr5Prj.jpg",
+      "tmdbId": 1831731
+    },
+    {
+      "name": "Tom Burke",
+      "film": "The Souvenir",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/4IHlAZ9bJ82VAd6HUOWFgo81SDq.jpg",
+      "tmdbId": 52891
+    },
+    {
+      "name": "Kris Hitchen",
+      "film": "Sorry We Missed You",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/7HBX75MKwwoiFnLFMS2YKtiPQIB.jpg",
+      "tmdbId": 2188560
+    },
+    {
+      "name": "Dev Patel",
+      "film": "The Personal History of David Copperfield",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/gnlTW9ntMD6Mf6egiHlBw6knlsU.jpg",
+      "tmdbId": 76788
+    },
+    {
+      "name": "Chiwetel Ejiofor",
+      "film": "The Boy Who Harnessed the Wind",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/kq5DDnqqofoRI0t6ddtRlsJnNPT.jpg",
+      "tmdbId": 5294
+    },
+    {
+      "name": "Edlison Manuel Olbera Núñez",
+      "film": "Yuli: The Carlos Acosta Story",
+      "awards": {
+        "bifa": "X"
+      }
+    },
+    {
+      "name": "Peter Mullan",
+      "film": "The Vanishing",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/sFSoGUFQZmNMtipprZJkTum18r2.jpg",
+      "tmdbId": 3064
+    },
+    {
+      "name": "Bluey Robinson",
+      "film": "Dirty God",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/wd7yL00Y4IJ47hqfawc88d4veB6.jpg",
+      "tmdbId": 2676443
     }
   ],
   "best-actress": [
@@ -896,13 +1069,14 @@
       "film": "Judy",
       "role": "Leading",
       "awards": {
-        "oscar": "Y",
-        "gg": "Y",
-        "sag": "Y",
-        "critics": "Y",
         "bafta": "Y",
+        "gg": "Y",
+        "oscar": "Y",
+        "sag": "Y",
         "nbr": "Y",
-        "spirit": "Y"
+        "critics": "Y",
+        "spirit": "Y",
+        "bifa": "Y"
       },
       "profilePath": "/u4wQXVYhN9OOimHn5hbWKefdjjG.jpg",
       "tmdbId": 9137
@@ -912,11 +1086,11 @@
       "film": "Marriage Story",
       "role": "Supporting",
       "awards": {
-        "oscar": "Y",
+        "bafta": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
-        "bafta": "Y",
         "astra": "X"
       },
       "profilePath": "/gB9PnGEvxKg33OSlcqptQwTBwPE.jpg",
@@ -929,8 +1103,8 @@
         "sag": "X",
         "critics": "X",
         "lafca": "Y",
-        "spirit": "X",
-        "astra": "Y"
+        "astra": "Y",
+        "spirit": "X"
       },
       "film": "Hustlers",
       "role": "Supporting",
@@ -987,6 +1161,13 @@
       "tmdbId": 5960
     },
     {
+      "name": "Ruthxjiah Bellenea",
+      "film": "The Last Tree",
+      "awards": {
+        "bifa": "Y"
+      }
+    },
+    {
       "name": "Ariane Ascaride",
       "awards": {
         "venice": "Y"
@@ -996,71 +1177,58 @@
       "tmdbId": 72590
     },
     {
-      "name": "Scarlett Johansson",
-      "film": "Marriage Story",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "sag": "X",
-        "critics": "X",
-        "bafta": "X",
-        "astra": "X"
-      },
-      "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
-      "tmdbId": 1245
-    },
-    {
       "name": "Charlize Theron",
       "film": "Bombshell",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "bafta": "X",
         "astra": "X"
       },
       "profilePath": "/ie1KbeYFG5E0GVr1QP7tDNuXvga.jpg",
       "tmdbId": 6885
     },
     {
+      "name": "Scarlett Johansson",
+      "film": "Marriage Story",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X",
+        "astra": "X"
+      },
+      "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
+      "tmdbId": 1245
+    },
+    {
       "name": "Margot Robbie",
       "film": "Bombshell",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "X",
-        "sag": "X",
-        "critics": "X",
-        "bafta": "X"
-      },
-      "profilePath": "/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg",
-      "tmdbId": 234352
-    },
-    {
-      "name": "Cynthia Erivo",
-      "film": "Harriet",
-      "role": "Leading",
-      "awards": {
         "oscar": "X",
-        "gg": "X",
         "sag": "X",
         "critics": "X"
       },
-      "profilePath": "/gIAXqZwZCBqkh2ppfAV4xcnMxki.jpg",
-      "tmdbId": 1765068
+      "profilePath": "/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg",
+      "tmdbId": 234352
     },
     {
       "name": "Saoirse Ronan",
       "film": "Little Women",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "X",
-        "critics": "X",
-        "bafta": "X"
+        "oscar": "X",
+        "critics": "X"
       },
       "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
       "tmdbId": 36592
@@ -1070,36 +1238,49 @@
       "film": "Jojo Rabbit",
       "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
         "sag": "X",
-        "critics": "X",
-        "bafta": "X"
+        "critics": "X"
       },
       "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
       "tmdbId": 1245
+    },
+    {
+      "name": "Cynthia Erivo",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "film": "Harriet",
+      "role": "Leading",
+      "profilePath": "/gIAXqZwZCBqkh2ppfAV4xcnMxki.jpg",
+      "tmdbId": 1765068
     },
     {
       "name": "Florence Pugh",
       "film": "Little Women",
       "role": "Supporting",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
-        "critics": "X",
-        "bafta": "X"
+        "critics": "X"
       },
       "profilePath": "/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg",
       "tmdbId": 1373737
     },
     {
-      "name": "Kathy Bates",
-      "film": "Richard Jewell",
-      "role": "Supporting",
+      "name": "Jessie Buckley",
+      "film": "Wild Rose",
+      "role": "Leading",
       "awards": {
-        "oscar": "X",
-        "gg": "X"
+        "bafta": "X",
+        "bifa": "X"
       },
-      "profilePath": "/nP7zRmXJyMyj2OohclSSo6JAEbD.jpg",
-      "tmdbId": 8534
+      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
+      "tmdbId": 1498158
     },
     {
       "name": "Margot Robbie",
@@ -1111,6 +1292,17 @@
       },
       "profilePath": "/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg",
       "tmdbId": 234352
+    },
+    {
+      "name": "Kathy Bates",
+      "awards": {
+        "gg": "X",
+        "oscar": "X"
+      },
+      "film": "Richard Jewell",
+      "role": "Supporting",
+      "profilePath": "/nP7zRmXJyMyj2OohclSSo6JAEbD.jpg",
+      "tmdbId": 8534
     },
     {
       "name": "Elisabeth Moss",
@@ -1135,8 +1327,8 @@
     {
       "name": "Taylor Russell",
       "awards": {
-        "spirit": "X",
-        "astra": "X"
+        "astra": "X",
+        "spirit": "X"
       },
       "film": "Waves",
       "profilePath": "/3kW1SvpzyOPPZHxbz7cgR7ilmtQ.jpg",
@@ -1203,16 +1395,6 @@
       "tmdbId": 2227
     },
     {
-      "name": "Jessie Buckley",
-      "film": "Wild Rose",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
-      "tmdbId": 1498158
-    },
-    {
       "name": "Florence Pugh",
       "awards": {
         "gotham": "X"
@@ -1220,6 +1402,22 @@
       "film": "Midsommar",
       "profilePath": "/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg",
       "tmdbId": 1373737
+    },
+    {
+      "name": "Renee Zellweger",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "Judy",
+      "profilePath": "/u4wQXVYhN9OOimHn5hbWKefdjjG.jpg",
+      "tmdbId": 9137
+    },
+    {
+      "name": "Zhao Shu",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "zhen"
     },
     {
       "name": "Karen Allen",
@@ -1258,20 +1456,67 @@
       "tmdbId": 6944
     },
     {
-      "name": "Renee Zellweger",
+      "name": "Holliday Grainger",
+      "film": "Animals",
       "awards": {
-        "astra": "X"
+        "bifa": "X"
       },
-      "film": "Judy",
-      "profilePath": "/u4wQXVYhN9OOimHn5hbWKefdjjG.jpg",
-      "tmdbId": 9137
+      "profilePath": "/fHveeGXgEfTZ9slB5OvHDG4LAPw.jpg",
+      "tmdbId": 302165
     },
     {
-      "name": "Zhao Shu",
+      "name": "Sally Hawkins",
+      "film": "Eternal Beauty",
       "awards": {
-        "astra": "X"
+        "bifa": "X"
       },
-      "film": "zhen"
+      "profilePath": "/1dtDq82dM2YQ17lBL4ZKPJo5LKw.jpg",
+      "tmdbId": 39658
+    },
+    {
+      "name": "Vicky Knight",
+      "film": "Dirty God",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/yeXcUs3GfHk6a0RQmkb3L75yANk.jpg",
+      "tmdbId": 2146380
+    },
+    {
+      "name": "Jessica Barden",
+      "film": "Scarborough",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/yff76hxi2Y2yjezWZQ7jAWmbeGk.jpg",
+      "tmdbId": 550552
+    },
+    {
+      "name": "Elizabeth Debicki",
+      "film": "Vita and Virginia",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/nTTnQVTn13Ve4ifjRY9v8kVc99w.jpg",
+      "tmdbId": 1133349
+    },
+    {
+      "name": "Tilda Swinton",
+      "film": "The Personal History of David Copperfield",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
+      "tmdbId": 3063
+    },
+    {
+      "name": "Julie Walters",
+      "film": "Wild Rose",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/bCTkV2OUgzbJdQEoCk3GesE4DXq.jpg",
+      "tmdbId": 477
     }
   ]
 }

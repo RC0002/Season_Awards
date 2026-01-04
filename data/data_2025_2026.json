@@ -7,8 +7,8 @@
         "critics": "X",
         "afi": "Y",
         "nbr": "Y",
-        "astra": "X",
         "lafca": "Y",
+        "astra": "X",
         "gotham": "Y"
       },
       "posterPath": "/r4uXvqCeco0KmO0CjlhXuTEFuSE.jpg",
@@ -48,7 +48,7 @@
         "nbr": "Y",
         "astra": "X"
       },
-      "posterPath": "/lOfjeJMKS7cOaaTn6q3J0y2ypiA.jpg",
+      "posterPath": "/qTvFWCGeGXgBRaINLY1zqgTPSpn.jpg",
       "tmdbId": 1233413
     },
     {
@@ -82,7 +82,7 @@
         "nbr": "Y",
         "astra": "X"
       },
-      "posterPath": "/u7x3I5V9aP4tMZACmM8ClY8lK6K.jpg",
+      "posterPath": "/si9tolnefLSUKaqQEGz1bWArOaL.jpg",
       "tmdbId": 967941
     },
     {
@@ -161,13 +161,21 @@
       "tmdbId": 1159206
     },
     {
+      "name": "Pillion",
+      "awards": {
+        "bifa": "Y"
+      },
+      "posterPath": "/5mXwQKAGrtvYzNXkiPbqPxqb2zK.jpg",
+      "tmdbId": 1287141
+    },
+    {
       "name": "Sentimental Value",
       "awards": {
         "gg": "X",
         "critics": "X",
         "astra": "X"
       },
-      "posterPath": "/yy1J2MUxZPq9iVxFBIbgt3ey1su.jpg",
+      "posterPath": "/7YYrTByEx7fPetfcTa6pEF6XjD9.jpg",
       "tmdbId": 1124566
     },
     {
@@ -238,6 +246,38 @@
       "tmdbId": 1245347
     },
     {
+      "name": "The Ballad of Wallis Island",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/CBG77EwlLhxTb1yKoO4DTUGMM1.jpg",
+      "tmdbId": 1122099
+    },
+    {
+      "name": "I Swear",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/vUwyhNWBKkSwK8ELvEeBRwV724h.jpg",
+      "tmdbId": 1317149
+    },
+    {
+      "name": "My Father's Shadow",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/aLQYyqWlIBBU3L8L84txbh0x1nq.jpg",
+      "tmdbId": 1432605
+    },
+    {
+      "name": "Urchin",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/zc8n3hm3S2VxFxlNH1MNN28LVMa.jpg",
+      "tmdbId": 1283320
+    },
+    {
       "name": "East of Wall",
       "awards": {
         "gotham": "X"
@@ -286,8 +326,8 @@
         "gg": "X",
         "critics": "X",
         "nbr": "Y",
-        "astra": "X",
         "lafca": "Y",
+        "astra": "X",
         "gotham": "X"
       },
       "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
@@ -313,13 +353,22 @@
       "tmdbId": 227564
     },
     {
+      "name": "Akinola Davies Jr.",
+      "film": "My Father's Shadow \n Laura Carreira",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/jDef5RADc8j2j0kmpG3GAjflytD.jpg",
+      "tmdbId": 2807817
+    },
+    {
       "name": "Ryan Coogler",
       "film": "Sinners",
       "awards": {
         "gg": "X",
         "critics": "X",
-        "astra": "X",
-        "lafca": "X"
+        "lafca": "X",
+        "astra": "X"
       },
       "profilePath": "/dux4DCDaL6c639DTXGiV7nm1wcN.jpg",
       "tmdbId": 1056121
@@ -412,6 +461,42 @@
       "tmdbId": 2425998
     },
     {
+      "name": "Laura Carreira",
+      "film": "On Falling",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/dcDJ0qVqSNenfonO0QDwEEDT9e9.jpg",
+      "tmdbId": 2725163
+    },
+    {
+      "name": "Kirk Jones",
+      "film": "I Swear",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/6A8URaTJ0kQ6L3H3XXLzRzQ3VQ2.jpg",
+      "tmdbId": 64045
+    },
+    {
+      "name": "Harry Lighton",
+      "film": "Pillion",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/6N4Nrrzv0Cjj8njcLvkIpcFjQgp.jpg",
+      "tmdbId": 1941982
+    },
+    {
+      "name": "Lynne Ramsay",
+      "film": "Die My Love",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/hmSR9lVV65ojYHyyOtzmNPbVjSY.jpg",
+      "tmdbId": 83287
+    },
+    {
       "name": "Kelly Reichardt",
       "awards": {
         "gotham": "X"
@@ -438,8 +523,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "astra": "X",
         "lafca": "Y",
+        "astra": "X",
         "gotham": "X"
       },
       "profilePath": "/x78BtYHElirO7Iw8bL4m8CnzRDc.jpg",
@@ -481,6 +566,24 @@
       "tmdbId": 72782
     },
     {
+      "name": "Robert Aramayo",
+      "film": "I Swear",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/1wqSZVvB018H2mZbemMSn6gH4zq.jpg",
+      "tmdbId": 1648346
+    },
+    {
+      "name": "Jay Lycurgo",
+      "film": "Steve",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/pbsoexLxfXZZvITACzfOB1dsDip.jpg",
+      "tmdbId": 2588506
+    },
+    {
       "name": "Sopé Dìrísù",
       "awards": {
         "gotham": "Y"
@@ -496,8 +599,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "astra": "X",
         "lafca": "X",
+        "astra": "X",
         "gotham": "X"
       },
       "profilePath": "/yJjV1ZCQbCSSgRy05FncCKjyaY4.jpg",
@@ -523,8 +626,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "astra": "X",
-        "lafca": "X"
+        "lafca": "X",
+        "astra": "X"
       },
       "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
       "tmdbId": 1190668
@@ -658,6 +761,17 @@
       "tmdbId": 2228
     },
     {
+      "name": "Andrew Scott",
+      "awards": {
+        "lafca": "X",
+        "gotham": "X"
+      },
+      "role": "Supporting",
+      "film": "Blue Moon",
+      "profilePath": "/4F8XpjyQCvtuu21WFm5d8RF5Rl.jpg",
+      "tmdbId": 125660
+    },
+    {
       "name": "Dylan O'Brien",
       "awards": {
         "astra": "X",
@@ -668,15 +782,14 @@
       "tmdbId": 527393
     },
     {
-      "name": "Andrew Scott",
+      "name": "Alexander Skarsgård",
+      "film": "Pillion",
       "awards": {
-        "lafca": "X",
+        "bifa": "X",
         "gotham": "X"
       },
-      "role": "Supporting",
-      "film": "Blue Moon",
-      "profilePath": "/4F8XpjyQCvtuu21WFm5d8RF5Rl.jpg",
-      "tmdbId": 125660
+      "profilePath": "/hIuDik6KDmHLrqZWxBVdXzUw1kq.jpg",
+      "tmdbId": 28846
     },
     {
       "name": "Oscar Isaac",
@@ -779,38 +892,11 @@
       "tmdbId": 4577703
     },
     {
-      "name": "Rose Byrne",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "If I Had Legs I'd Kick You",
-      "profilePath": "/4Vd7w19asuBfUGgz0NIuQI5wxIA.jpg",
-      "tmdbId": 9827
-    },
-    {
-      "name": "Kathleen Chalfant",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Familiar Touch",
-      "profilePath": "/wjxN78pdzKpUiO9HG1vBqJdnf4x.jpg",
-      "tmdbId": 52003
-    },
-    {
       "name": "Chang Chen",
       "awards": {
         "spirit": "X"
       },
       "film": "Lucky Lu"
-    },
-    {
-      "name": "Keke Palmer",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "One of Them Days",
-      "profilePath": "/fXiKInUmPLs5F53yv2KZSuCXHJZ.jpg",
-      "tmdbId": 74688
     },
     {
       "name": "Théodore Pellerin",
@@ -822,15 +908,6 @@
       "tmdbId": 1505023
     },
     {
-      "name": "Tessa Thompson",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Hedda",
-      "profilePath": "/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
-      "tmdbId": 62561
-    },
-    {
       "name": "Ben Whishaw",
       "awards": {
         "spirit": "X"
@@ -838,60 +915,6 @@
       "film": "Peter Hujar's Day",
       "profilePath": "/2GBtQ6scGeSHkX1urOP1EJbmksx.jpg",
       "tmdbId": 17064
-    },
-    {
-      "name": "Naomi Ackie",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Sorry, Baby",
-      "profilePath": "/1MhRVn6xlShHhftRdK24HuO3TNR.jpg",
-      "tmdbId": 1537686
-    },
-    {
-      "name": "Zoey Deutch",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Nouvelle Vague",
-      "profilePath": "/i7KQJVFo8isaNOSs1ORvj4e2GXY.jpg",
-      "tmdbId": 1059597
-    },
-    {
-      "name": "Kirsten Dunst",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Roofman",
-      "profilePath": "/yhLKGjuiMMdbGnFrR8AREkCZcVF.jpg",
-      "tmdbId": 205
-    },
-    {
-      "name": "Rebecca Hall",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Peter Hujar's Day",
-      "profilePath": "/mpWtqob1BRKz4bpX8h8a9hdmIPv.jpg",
-      "tmdbId": 15556
-    },
-    {
-      "name": "Nina Hoss",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Hedda",
-      "profilePath": "/j4j3eenfrg0XgW0dVReFAdPNPE0.jpg",
-      "tmdbId": 681
-    },
-    {
-      "name": "Jane Levy",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "A Little Prayer",
-      "profilePath": "/7eGX3HbChmEn8G8nGzB7nvthlfI.jpg",
-      "tmdbId": 530618
     },
     {
       "name": "Archie Madekwe",
@@ -903,15 +926,6 @@
       "tmdbId": 2249745
     },
     {
-      "name": "Kali Reis",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Rebuilding",
-      "profilePath": "/qJcXQKgaq11aNNPPok0m4yfP2Og.jpg",
-      "tmdbId": 3119545
-    },
-    {
       "name": "Jacob Tremblay",
       "awards": {
         "spirit": "X"
@@ -921,13 +935,65 @@
       "tmdbId": 1277188
     },
     {
-      "name": "Haipeng Xu",
+      "name": "Frank Dillane",
+      "film": "Urchin",
       "awards": {
-        "spirit": "X"
+        "bifa": "X"
       },
-      "film": "Blue Sun Palace",
-      "profilePath": "/qoa5En2GrPWEGx1ZYZ4SYUfurFX.jpg",
-      "tmdbId": 3323814
+      "profilePath": "/1R7htemDSaHLgO2sNi0LmD0I4tj.jpg",
+      "tmdbId": 964834
+    },
+    {
+      "name": "David Jonsson",
+      "film": "Wasteman",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/2ZZNGZw57KKMrVIr27g7W16G0jV.jpg",
+      "tmdbId": 2761308
+    },
+    {
+      "name": "Harry Melling",
+      "film": "Pillion",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/b0pHwi2MeqxEpeWnF4Llihu53aJ.jpg",
+      "tmdbId": 10982
+    },
+    {
+      "name": "Cillian Murphy",
+      "film": "Steve",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/llkbyWKwpfowZ6C8peBjIV9jj99.jpg",
+      "tmdbId": 2037
+    },
+    {
+      "name": "Tom Blyth",
+      "film": "Wasteman",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/q8bkN1GvXqjs1ZGFYWViH9o2WDq.jpg",
+      "tmdbId": 1524100
+    },
+    {
+      "name": "Scott Ellis Watson",
+      "film": "I Swear",
+      "awards": {
+        "bifa": "X"
+      }
+    },
+    {
+      "name": "Peter Mullan",
+      "film": "I Swear",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/sFSoGUFQZmNMtipprZJkTum18r2.jpg",
+      "tmdbId": 3064
     },
     {
       "name": "Josh O'Connor",
@@ -946,15 +1012,6 @@
       "film": "Father Mother Sister Brother",
       "profilePath": "/uIRHpgbj9DfjMksigXmi497xRqU.jpg",
       "tmdbId": 1789788
-    },
-    {
-      "name": "Alexander Skarsgård",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Pillion",
-      "profilePath": "/hIuDik6KDmHLrqZWxBVdXzUw1kq.jpg",
-      "tmdbId": 28846
     }
   ],
   "best-actress": [
@@ -966,8 +1023,9 @@
         "gg": "X",
         "critics": "X",
         "nbr": "Y",
-        "astra": "X",
         "lafca": "Y",
+        "astra": "X",
+        "spirit": "X",
         "gotham": "X"
       },
       "profilePath": "/4Vd7w19asuBfUGgz0NIuQI5wxIA.jpg",
@@ -980,8 +1038,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "astra": "X",
         "lafca": "Y",
+        "astra": "X",
         "gotham": "X"
       },
       "profilePath": "/wVHbluUvjKl0NucSeuAhAJAr2oc.jpg",
@@ -1022,6 +1080,32 @@
       "tmdbId": 1498158
     },
     {
+      "name": "Jennifer Lawrence",
+      "film": "Die My Love",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "astra": "X",
+        "bifa": "X",
+        "gotham": "X"
+      },
+      "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
+      "tmdbId": 72129
+    },
+    {
+      "name": "Tessa Thompson",
+      "film": "Hedda",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "astra": "X",
+        "spirit": "X",
+        "gotham": "X"
+      },
+      "profilePath": "/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
+      "tmdbId": 62561
+    },
+    {
       "name": "Amanda Seyfried",
       "film": "The Testament of Ann Lee",
       "role": "Leading",
@@ -1035,18 +1119,6 @@
       "tmdbId": 71070
     },
     {
-      "name": "Jennifer Lawrence",
-      "film": "Die My Love",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "astra": "X",
-        "gotham": "X"
-      },
-      "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
-      "tmdbId": 72129
-    },
-    {
       "name": "Renate Reinsve",
       "film": "Sentimental Value",
       "role": "Leading",
@@ -1057,18 +1129,6 @@
       },
       "profilePath": "/eepHWTjtKRdGcrtchFb3axdp2eL.jpg",
       "tmdbId": 1576786
-    },
-    {
-      "name": "Tessa Thompson",
-      "film": "Hedda",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "astra": "X",
-        "gotham": "X"
-      },
-      "profilePath": "/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
-      "tmdbId": 62561
     },
     {
       "name": "Chase Infiniti",
@@ -1133,10 +1193,11 @@
     {
       "name": "Inga Ibsdotter Lilleaas",
       "awards": {
-        "astra": "X",
         "lafca": "X",
+        "astra": "X",
         "gotham": "X"
       },
+      "role": "Supporting",
       "film": "Sentimental Value",
       "profilePath": "/c6JojXrAi9ZAiCA07epc3eLmF1r.jpg",
       "tmdbId": 1421850
@@ -1172,6 +1233,16 @@
       },
       "profilePath": "/c6JojXrAi9ZAiCA07epc3eLmF1r.jpg",
       "tmdbId": 1421850
+    },
+    {
+      "name": "Nina Hoss",
+      "awards": {
+        "astra": "X",
+        "spirit": "X"
+      },
+      "film": "Hedda",
+      "profilePath": "/j4j3eenfrg0XgW0dVReFAdPNPE0.jpg",
+      "tmdbId": 681
     },
     {
       "name": "Julia Roberts",
@@ -1222,15 +1293,6 @@
       "tmdbId": 115440
     },
     {
-      "name": "Nina Hoss",
-      "awards": {
-        "astra": "X"
-      },
-      "film": "Hedda",
-      "profilePath": "/j4j3eenfrg0XgW0dVReFAdPNPE0.jpg",
-      "tmdbId": 681
-    },
-    {
       "name": "Hailee Steinfeld",
       "awards": {
         "astra": "X"
@@ -1274,6 +1336,96 @@
       "film": "Marty Supreme",
       "profilePath": "/mLarlXA8G02AdIMKptZmUzQluqF.jpg",
       "tmdbId": 12052
+    },
+    {
+      "name": "Kathleen Chalfant",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Familiar Touch",
+      "profilePath": "/wjxN78pdzKpUiO9HG1vBqJdnf4x.jpg",
+      "tmdbId": 52003
+    },
+    {
+      "name": "Keke Palmer",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "One of Them Days",
+      "profilePath": "/fXiKInUmPLs5F53yv2KZSuCXHJZ.jpg",
+      "tmdbId": 74688
+    },
+    {
+      "name": "Naomi Ackie",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Sorry, Baby",
+      "profilePath": "/1MhRVn6xlShHhftRdK24HuO3TNR.jpg",
+      "tmdbId": 1537686
+    },
+    {
+      "name": "Zoey Deutch",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Nouvelle Vague",
+      "profilePath": "/i7KQJVFo8isaNOSs1ORvj4e2GXY.jpg",
+      "tmdbId": 1059597
+    },
+    {
+      "name": "Kirsten Dunst",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Roofman",
+      "profilePath": "/yhLKGjuiMMdbGnFrR8AREkCZcVF.jpg",
+      "tmdbId": 205
+    },
+    {
+      "name": "Rebecca Hall",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Peter Hujar's Day",
+      "profilePath": "/mpWtqob1BRKz4bpX8h8a9hdmIPv.jpg",
+      "tmdbId": 15556
+    },
+    {
+      "name": "Jane Levy",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "A Little Prayer",
+      "profilePath": "/7eGX3HbChmEn8G8nGzB7nvthlfI.jpg",
+      "tmdbId": 530618
+    },
+    {
+      "name": "Kali Reis",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Rebuilding",
+      "profilePath": "/qJcXQKgaq11aNNPPok0m4yfP2Og.jpg",
+      "tmdbId": 3119545
+    },
+    {
+      "name": "Haipeng Xu",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Blue Sun Palace",
+      "profilePath": "/qoa5En2GrPWEGx1ZYZ4SYUfurFX.jpg",
+      "tmdbId": 3323814
+    },
+    {
+      "name": "Maxine Peake",
+      "film": "I Swear",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/uChlrL5WyeXhvGFaNvbzw1KqMgP.jpg",
+      "tmdbId": 76944
     }
   ]
 }

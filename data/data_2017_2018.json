@@ -4,14 +4,14 @@
       "name": "Call Me by Your Name",
       "awards": {
         "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "afi": "Y",
         "critics": "X",
-        "pga": "X",
-        "lafca": "Y",
-        "wga": "Y",
         "nbr": "Y",
+        "lafca": "Y",
+        "pga": "X",
+        "wga": "Y",
         "gotham": "Y",
         "spirit": "X"
       },
@@ -22,8 +22,8 @@
       "name": "The Shape of Water",
       "awards": {
         "bafta": "X",
-        "gg": "X",
         "oscar": "Y",
+        "gg": "X",
         "afi": "Y",
         "critics": "Y",
         "pga": "Y",
@@ -36,19 +36,18 @@
     {
       "name": "Get Out",
       "awards": {
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "afi": "Y",
         "sag": "X",
         "critics": "X",
+        "nbr": "Y",
         "pga": "X",
         "wga": "Y",
-        "nbr": "Y",
+        "adg": "X",
         "gotham": "X",
-        "spirit": "Y",
-        "adg": "X"
+        "spirit": "Y"
       },
-      "genre": "Comedy",
       "posterPath": "/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg",
       "tmdbId": 419430
     },
@@ -56,13 +55,14 @@
       "name": "Three Billboards Outside Ebbing, Missouri",
       "awards": {
         "bafta": "Y",
-        "gg": "Y",
         "oscar": "X",
+        "gg": "Y",
         "afi": "Y",
         "sag": "Y",
         "critics": "X",
         "pga": "X",
-        "adg": "X"
+        "adg": "X",
+        "bifa": "X"
       },
       "posterPath": "/bRYLt8fV82tdVoDppSFTZIcJiLN.jpg",
       "tmdbId": 359940
@@ -70,18 +70,17 @@
     {
       "name": "Lady Bird",
       "awards": {
-        "gg": "Y",
         "oscar": "X",
+        "gg": "Y",
         "afi": "Y",
         "sag": "X",
         "critics": "X",
+        "nbr": "Y",
         "pga": "X",
         "wga": "X",
-        "nbr": "Y",
-        "spirit": "X",
-        "adg": "X"
+        "adg": "X",
+        "spirit": "X"
       },
-      "genre": "Comedy",
       "posterPath": "/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg",
       "tmdbId": 391713
     },
@@ -89,12 +88,12 @@
       "name": "Dunkirk",
       "awards": {
         "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "afi": "Y",
         "critics": "X",
-        "pga": "X",
         "nbr": "Y",
+        "pga": "X",
         "adg": "X"
       },
       "posterPath": "/b4Oe15CGLL61Ped0RAS9JpqdmCt.jpg",
@@ -103,15 +102,14 @@
     {
       "name": "The Post",
       "awards": {
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "afi": "Y",
         "critics": "X",
-        "pga": "X",
         "nbr": "Y",
+        "pga": "X",
         "adg": "X"
       },
-      "genre": "Drama",
       "posterPath": "/h4XG3g6uMMPIBPjAoQhC2QIMdkl.jpg",
       "tmdbId": 446354
     },
@@ -120,8 +118,8 @@
       "awards": {
         "afi": "Y",
         "critics": "X",
-        "lafca": "X",
         "nbr": "Y",
+        "lafca": "X",
         "gotham": "X",
         "spirit": "X"
       },
@@ -131,11 +129,10 @@
     {
       "name": "Logan",
       "awards": {
-        "wga": "X",
         "nbr": "Y",
+        "wga": "X",
         "adg": "Y"
       },
-      "screenplay_type": "adapted",
       "posterPath": "/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg",
       "tmdbId": 263115
     },
@@ -155,8 +152,8 @@
       "name": "The Disaster Artist",
       "awards": {
         "gg": "X",
-        "wga": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "wga": "X"
       },
       "genre": "Comedy",
       "posterPath": "/2HuLGiyH0TPYxnCvYHAxc8K738o.jpg",
@@ -206,20 +203,28 @@
       "tmdbId": 339403
     },
     {
-      "name": "La forma dell'acqua - The Shape of Water",
-      "awards": {
-        "venice": "Y"
-      },
-      "posterPath": "/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
-      "tmdbId": 399055
-    },
-    {
       "name": "Blade Runner 2049",
       "awards": {
         "adg": "Y"
       },
       "posterPath": "/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
       "tmdbId": 335984
+    },
+    {
+      "name": "God's Own Country",
+      "awards": {
+        "bifa": "Y"
+      },
+      "posterPath": "/hKJz8Moim43P1f1kGrM9Gh0c0rf.jpg",
+      "tmdbId": 428493
+    },
+    {
+      "name": "La forma dell'acqua - The Shape of Water",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
+      "tmdbId": 399055
     },
     {
       "name": "Darkest Hour",
@@ -272,22 +277,6 @@
       "tmdbId": 316029
     },
     {
-      "name": "Good Time",
-      "awards": {
-        "gotham": "X"
-      },
-      "posterPath": "/yE1c9hj5Hf8a9KplAdRdhADqUro.jpg",
-      "tmdbId": 429200
-    },
-    {
-      "name": "The Rider",
-      "awards": {
-        "spirit": "X"
-      },
-      "posterPath": "/cFsrA0Is5xode2INrPj1VJcQ18n.jpg",
-      "tmdbId": 453278
-    },
-    {
       "name": "Murder on the Orient Express",
       "awards": {
         "adg": "X"
@@ -318,6 +307,46 @@
       },
       "posterPath": "/mMA1qhBFgZX8O36qPPTC016kQl1.jpg",
       "tmdbId": 281338
+    },
+    {
+      "name": "Good Time",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/yE1c9hj5Hf8a9KplAdRdhADqUro.jpg",
+      "tmdbId": 429200
+    },
+    {
+      "name": "The Rider",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/cFsrA0Is5xode2INrPj1VJcQ18n.jpg",
+      "tmdbId": 453278
+    },
+    {
+      "name": "The Death of Stalin",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/AqH7q89NxGRDAyRWKqsL3OBtYfV.jpg",
+      "tmdbId": 402897
+    },
+    {
+      "name": "I Am Not a Witch",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/tWkbuUHugbckItwcyCf8uq1utOJ.jpg",
+      "tmdbId": 449757
+    },
+    {
+      "name": "Lady Macbeth",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/xWTJbhTwSTJmhLlX5xAOxPhdnXc.jpg",
+      "tmdbId": 410117
     }
   ],
   "best-director": [
@@ -326,8 +355,8 @@
       "film": "The Shape of Water",
       "awards": {
         "bafta": "Y",
-        "gg": "Y",
         "oscar": "Y",
+        "gg": "Y",
         "critics": "Y",
         "lafca": "Y"
       },
@@ -364,8 +393,8 @@
       "awards": {
         "oscar": "X",
         "critics": "X",
-        "dga": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "dga": "X"
       },
       "profilePath": "/6MwQ2GstYr0wnhp1eTOAbVMNBGN.jpg",
       "tmdbId": 45400
@@ -380,6 +409,15 @@
       "tmdbId": 10828
     },
     {
+      "name": "Rungano Nyoni",
+      "film": "I Am Not a Witch",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/wliVrt4xI7iLMUxJxVEz97FPPeI.jpg",
+      "tmdbId": 557100
+    },
+    {
       "name": "Xavier Legrand",
       "awards": {
         "venice": "Y"
@@ -391,8 +429,8 @@
       "film": "Dunkirk",
       "awards": {
         "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "critics": "X",
         "dga": "X"
       },
@@ -406,7 +444,8 @@
         "bafta": "X",
         "gg": "X",
         "critics": "X",
-        "dga": "X"
+        "dga": "X",
+        "bifa": "X"
       },
       "profilePath": "/cjk2f3sYOqDnTUn4m07j4sNcncf.jpg",
       "tmdbId": 54472
@@ -431,15 +470,6 @@
       "tmdbId": 137427
     },
     {
-      "name": "Ridley Scott",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "All the Money in the World",
-      "profilePath": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg",
-      "tmdbId": 578
-    },
-    {
       "name": "Paul Thomas Anderson",
       "film": "Phantom Thread",
       "awards": {
@@ -447,6 +477,15 @@
       },
       "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
       "tmdbId": 4762
+    },
+    {
+      "name": "Ridley Scott",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "All the Money in the World",
+      "profilePath": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg",
+      "tmdbId": 578
     },
     {
       "name": "Sean Baker",
@@ -483,6 +522,33 @@
       "film": "The Rider",
       "profilePath": "/r8DmTdOqHbDUydCOVb277rncPTK.jpg",
       "tmdbId": 1395183
+    },
+    {
+      "name": "Armando Iannucci",
+      "film": "The Death of Stalin",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/9kdnLu0iALWI19dLTUEVDOxyyCB.jpg",
+      "tmdbId": 88926
+    },
+    {
+      "name": "Francis Lee",
+      "film": "God's Own Country",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/41pUchu4uLpJF9rsDJYRtMsQdHQ.jpg",
+      "tmdbId": 192852
+    },
+    {
+      "name": "William Oldroyd",
+      "film": "Lady Macbeth",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/e3cJeIVKozF9tCPfGoJVi066VTO.jpg",
+      "tmdbId": 1661862
     }
   ],
   "best-actor": [
@@ -492,12 +558,13 @@
       "role": "Supporting",
       "awards": {
         "bafta": "Y",
-        "gg": "Y",
         "oscar": "Y",
+        "gg": "Y",
         "sag": "Y",
         "critics": "Y",
         "lafca": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "bifa": "X"
       },
       "profilePath": "/ruaUgtATy70VygkqtfHPwpJ0Gcj.jpg",
       "tmdbId": 6807
@@ -508,8 +575,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "Y",
-        "gg": "Y",
         "oscar": "Y",
+        "gg": "Y",
         "sag": "Y",
         "critics": "Y"
       },
@@ -522,8 +589,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y",
@@ -553,8 +620,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y",
@@ -576,6 +643,24 @@
       "tmdbId": 31
     },
     {
+      "name": "Josh O'Connor",
+      "film": "God's Own Country",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/vV9m1GnFVDFPC0kZgbUVe2ZKk3d.jpg",
+      "tmdbId": 1206334
+    },
+    {
+      "name": "Simon Russell Beale",
+      "film": "The Death of Stalin",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/uw0ngaqgT8qXwJqVr353cx1mEdB.jpg",
+      "tmdbId": 57461
+    },
+    {
       "name": "Kamil al-Basha",
       "awards": {
         "venice": "Y"
@@ -588,8 +673,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X",
         "gotham": "X",
@@ -604,23 +689,36 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "critics": "X"
       },
       "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
       "tmdbId": 11856
     },
     {
-      "name": "Richard Jenkins",
+      "name": "Woody Harrelson",
+      "film": "Three Billboards Outside Ebbing, Missouri",
+      "role": "Supporting",
       "awards": {
-        "gg": "X",
+        "bafta": "X",
         "oscar": "X",
+        "sag": "X",
+        "bifa": "X"
+      },
+      "profilePath": "/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg",
+      "tmdbId": 57755
+    },
+    {
+      "name": "Richard Jenkins",
+      "film": "The Shape of Water",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X"
       },
-      "film": "The Shape of Water",
-      "role": "Leading",
       "profilePath": "/muT3RZG9hiKaKojD751RcQ5tGEy.jpg",
       "tmdbId": 28633
     },
@@ -630,33 +728,21 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "gg": "X",
-        "oscar": "X"
+        "oscar": "X",
+        "gg": "X"
       },
       "profilePath": "/iZh3s9Vy9vYD4DYnAda6C1kdeco.jpg",
       "tmdbId": 290
     },
     {
-      "name": "Woody Harrelson",
-      "film": "Three Billboards Outside Ebbing, Missouri",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "oscar": "X",
-        "sag": "X"
-      },
-      "profilePath": "/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg",
-      "tmdbId": 57755
-    },
-    {
       "name": "Denzel Washington",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X"
-      },
       "film": "Roman J. Israel, Esq.",
       "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X"
+      },
       "profilePath": "/jj2Gcobpopokal0YstuCQW0ldJ4.jpg",
       "tmdbId": 5292
     },
@@ -813,6 +899,60 @@
       "film": "Good Time",
       "profilePath": "/9tp4PLNyYPNfCJOWBXPPalWIpnq.jpg",
       "tmdbId": 227564
+    },
+    {
+      "name": "Jamie Bell",
+      "film": "Film Stars Don't Die",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/xAfNYOJYOy5ee9PHbBF8Y6xzZ9I.jpg",
+      "tmdbId": 478
+    },
+    {
+      "name": "Paddy Considine",
+      "film": "Journeyman",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/rui7HJUi2TzqMh2GQJ1bcQzr8M0.jpg",
+      "tmdbId": 14887
+    },
+    {
+      "name": "Johnny Harris",
+      "film": "Jawbone",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/bcoVPfOSXwFbq9yfPac7BO0Y0AF.jpg",
+      "tmdbId": 32300
+    },
+    {
+      "name": "Alec Secareanu",
+      "film": "God's Own Country",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/faV10C9gsWfF7E5HwKoqymhbDPb.jpg",
+      "tmdbId": 1672241
+    },
+    {
+      "name": "Steve Buscemi",
+      "film": "The Death of Stalin",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/kFzw4U5pExnLKZWhR48VSzL8Fre.jpg",
+      "tmdbId": 884
+    },
+    {
+      "name": "Ian Hart",
+      "film": "God's Own Country",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/xMC8aPDwhEZcjRHEFcgytSr3BzM.jpg",
+      "tmdbId": 10985
     }
   ],
   "best-actress": [
@@ -822,12 +962,13 @@
       "role": "Leading",
       "awards": {
         "bafta": "Y",
-        "gg": "Y",
         "oscar": "Y",
+        "gg": "Y",
         "sag": "Y",
         "critics": "Y",
         "lafca": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "bifa": "X"
       },
       "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
       "tmdbId": 3910
@@ -838,8 +979,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "Y",
-        "gg": "Y",
         "oscar": "Y",
+        "gg": "Y",
         "sag": "Y",
         "critics": "Y",
         "spirit": "Y"
@@ -853,8 +994,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "gg": "Y",
         "oscar": "X",
+        "gg": "Y",
         "sag": "X",
         "critics": "X",
         "gotham": "Y",
@@ -869,8 +1010,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y",
@@ -885,8 +1026,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y"
@@ -896,16 +1037,34 @@
     },
     {
       "name": "Meryl Streep",
+      "film": "The Post",
+      "role": "Leading",
       "awards": {
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "critics": "X",
         "nbr": "Y"
       },
-      "film": "The Post",
-      "role": "Leading",
       "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
       "tmdbId": 5064
+    },
+    {
+      "name": "Florence Pugh",
+      "film": "Lady Macbeth",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg",
+      "tmdbId": 1373737
+    },
+    {
+      "name": "Patricia Clarkson",
+      "film": "The Party",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/rHHM9G83fpBAcFathbSyV4Tot5j.jpg",
+      "tmdbId": 1276
     },
     {
       "name": "Charlotte Rampling",
@@ -922,8 +1081,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X",
         "gotham": "X",
@@ -934,15 +1093,15 @@
     },
     {
       "name": "Mary J. Blige",
+      "film": "Mudbound",
+      "role": "Supporting",
       "awards": {
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "X"
       },
-      "film": "Mudbound",
-      "role": "Leading",
       "profilePath": "/riQBsxzhbp8E7T9noJEZrEoLZWO.jpg",
       "tmdbId": 84933
     },
@@ -952,8 +1111,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "critics": "X"
       },
       "profilePath": "/35SOy4yQZ9xRSJ0q1L5RLhXfhqN.jpg",
@@ -1135,6 +1294,67 @@
       "film": "Good Time",
       "profilePath": "/7bbDLmF5kDKaPgp7DoVUv6F8rqa.jpg",
       "tmdbId": 1823853
+    },
+    {
+      "name": "Emily Beecham",
+      "film": "Daphne",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/12zgj8SvKEUML1kRC0CUlyxpJ6r.jpg",
+      "tmdbId": 130414
+    },
+    {
+      "name": "Margaret Mulubwa",
+      "film": "I Am Not a Witch",
+      "awards": {
+        "bifa": "X"
+      }
+    },
+    {
+      "name": "Ruth Wilson",
+      "film": "Dark River",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/fdFVatb9pt5dfT9tDK8tikKWafS.jpg",
+      "tmdbId": 47720
+    },
+    {
+      "name": "Naomi Ackie",
+      "film": "Lady Macbeth",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/1MhRVn6xlShHhftRdK24HuO3TNR.jpg",
+      "tmdbId": 1537686
+    },
+    {
+      "name": "Kelly Macdonald",
+      "film": "Goodbye Christopher Robin",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/k0yVocTnTMWlNdaeOO7YRViCdhO.jpg",
+      "tmdbId": 9015
+    },
+    {
+      "name": "Andrea Riseborough",
+      "film": "The Death of Stalin",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/dQzAXj6R8cTRqTwGzxUgegXbV13.jpg",
+      "tmdbId": 127558
+    },
+    {
+      "name": "Julie Walters",
+      "film": "Film Stars Don't Die",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/bCTkV2OUgzbJdQEoCk3GesE4DXq.jpg",
+      "tmdbId": 477
     }
   ]
 }
