@@ -115,6 +115,20 @@ CEREMONY_MAP = {
         2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
         2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
         2015: 2014, 2014: 2013, 2013: 2012
+    },
+    # Astra Film Awards (formerly Hollywood Critics Association - HCA)
+    # 9th Astra in 2026 for 2025 films (Season 2025/26)
+    # 8th Astra in 2025 for 2024 films (Season 2024/25)
+    'astra': {
+        2026: 9, 2025: 8, 2024: 7, 2023: 6, 2022: 5, 2021: 4,
+        2020: 3, 2019: 2, 2018: 1
+    },
+    # Spirit Awards (Independent Spirit Awards) - ceremony number
+    # 41st in 2026 for Season 2025/26 (films from 2025)
+    'spirit': {
+        2026: 41, 2025: 40, 2024: 39, 2023: 38, 2022: 37, 2021: 36,
+        2020: 35, 2019: 34, 2018: 33, 2017: 32, 2016: 31,
+        2015: 30, 2014: 29, 2013: 28
     }
 }
 
@@ -131,7 +145,8 @@ URL_TEMPLATES = {
     'lafca': 'https://en.wikipedia.org/wiki/{year}_Los_Angeles_Film_Critics_Association_Awards',
     'wga': 'https://en.wikipedia.org/wiki/{ord}_Writers_Guild_of_America_Awards',
     'adg': 'https://en.wikipedia.org/wiki/Art_Directors_Guild_Awards_{year}',
-    'gotham': 'https://en.wikipedia.org/wiki/Gotham_Independent_Film_Awards_{year}'
+    'gotham': 'https://en.wikipedia.org/wiki/Gotham_Independent_Film_Awards_{year}',
+    'spirit': 'https://en.wikipedia.org/wiki/{ord}_Independent_Spirit_Awards'
 }
 
 # Ordinal number suffix
@@ -2537,6 +2552,10 @@ def scrape_year(year, awards=None):
                 result = scrape_gotham(year)
                 if result:
                     all_results['gotham'] = result
+        elif award_key == 'astra':
+            result = scrape_astra(year)
+            if result:
+                all_results['astra'] = result
         else:
             result = scrape_award(award_key, year)
             if result:
@@ -2654,38 +2673,21 @@ def scrape_gotham_v2_logic(soup):
                 div_based_found = True
                 # Use recursive=True to get all li items including nested ones
                 for li in ul.find_all('li'):
-                    is_winner_li = bool(li.find('b'))
-                    full_text = li.get_text().strip()
+                    winners_text = [b.get_text().strip() for b in li.find_all('b')]
                     
-                    # Split by newlines (Gotham sometimes lists multiple nominees in one LI separated by BR)
+                    full_text = li.get_text().strip()
                     lines = [line.strip() for line in full_text.split('\n') if line.strip()]
                     
                     for text in lines:
-                        # If multiple lines, we need to be careful about "is_winner". 
-                        # Usually the winner is bolded. If the LI contains bold, does it apply to all lines?
-                        # Or specific lines? If we split text, we lose the bold association.
-                        # BUT usually only the winner is bold.
-                        # If the LI content is just text, checking `li.find('b')` applies to the whole LI.
-                        # If individual items are bolded, we should check them?
-                        # For safely, we'll assign is_winner to the line that matches the bold text?
-                        # Simplified: If line is in bold tag.
-                        
-                        is_winner = is_winner_li # Default to LI status
-                        
-                        # Refine is_winner if possible
-                        if is_winner_li and len(lines) > 1:
-                            # Re-check if this specific line is inside a bold tag
-                            # This is hard on text-only split. 
-                            # If the whole LI text was bold, then yes.
-                            pass
-
-                        # Parse name and film (first part before dash)
+                        # Parse name and film
                         name = text.split('–')[0].split(' – ')[0].strip()
                         film = ""
                         if '–' in text:
                             film = text.split('–')[1].strip()
                         elif ' – ' in text:
                             film = text.split(' – ')[1].strip()
+                        
+                        is_winner = any(name in w or w in name for w in winners_text if w)
                         
                         _add_gotham_v2(results, seen, cat_found, name, film, is_winner)
     
@@ -2779,13 +2781,13 @@ def scrape_gotham_v2_logic(soup):
                     winners_text = [b.get_text().strip() for b in cell0.find_all('b')]
                     
                     for nom in nominees:
-                        is_winner = any(w in nom or nom in w for w in winners_text if w)
-                        
                         text = nom
                         name = text.split('–')[0].split('-')[0].strip()
                         film = ""
                         if '–' in text: film = text.split('–')[1].strip()
                         elif '-' in text and len(text.split('-')) > 1: film = text.split('-')[1].strip()
+                        
+                        is_winner = any(name in w or w in name for w in winners_text if w)
                         
                         _add_gotham_v2(results, seen, current_category, name, film, is_winner)
                     
@@ -2806,23 +2808,43 @@ def scrape_gotham_v2_logic(soup):
                     if uls:
                         for ul in uls:
                             for li in ul.find_all('li'):
-                                is_winner = bool(li.find('b'))
                                 text = li.get_text().strip()
+                                # Pre-process name for check
                                 name = text.split('–')[0].split('-')[0].strip()
+                                
+                                winners_text = [b.get_text().strip() for b in li.find_all('b')]
+                                is_winner = any(name in w or w in name for w in winners_text if w)
+                                
+                                winners_text = [b.get_text().strip() for b in li.find_all('b')]
+                                is_winner = any(name in w or w in name for w in winners_text if w)
+                                
                                 film = ""
                                 if '–' in text: film = text.split('–')[1].strip()
                                 elif '-' in text: film = text.split('-')[1].strip()
                                 _add_gotham_v2(results, seen, current_category, name, film, is_winner)
                     else:
                         # Just text in cell
-                        is_winner = 'style' in row.attrs and 'background' in row.attrs['style']
-                        if not is_winner: is_winner = bool(cell0.find('b'))
-                        
                         text = cell0_text.replace('\n', ' ')
+                        
                         if current_category == 'best-film':
+                             # For best film, the whole text matches? or part?
+                             # Usually Winner is bold.
+                             winners_text = [b.get_text().strip() for b in cell0.find_all('b')]
+                             is_winner = ('style' in row.attrs and 'background' in row.attrs['style']) or \
+                                         any(text in w or w in text for w in winners_text if len(w) > 3)
+                             
                              _add_gotham_v2(results, seen, 'best-film', text, "", is_winner)
+                        
                         elif current_category in ['best-director', 'lead-performance', 'supporting-performance', 'best-actor', 'best-actress']:
                              name = text.split('–')[0].split('-')[0].strip()
+                             
+                             winners_text = [b.get_text().strip() for b in cell0.find_all('b')]
+                             is_winner = ('style' in row.attrs and 'background' in row.attrs['style']) or \
+                                         any(name in w or w in name for w in winners_text if w)
+                             
+                             is_winner = ('style' in row.attrs and 'background' in row.attrs['style']) or \
+                                         any(name in w or w in name for w in winners_text if w)
+                             
                              film = ""
                              if '–' in text: film = text.split('–')[1].strip()
                              elif '-' in text: film = text.split('-')[1].strip()
@@ -2835,6 +2857,11 @@ def scrape_gotham_v2_logic(soup):
 
 def _add_gotham_v2(results, seen, cat_type, name, film, is_winner):
     if not name: return
+
+    # Clean film name (remove character name starting with " as ")
+    if film and " as " in film:
+        film = film.split(" as ")[0].strip()
+
     award_val = 'Y' if is_winner else 'X'
     
     if cat_type == 'best-film':
@@ -2894,3 +2921,404 @@ if __name__ == "__main__":
     print("\n" + "="*60)
     print("  DONE!")
     print("="*60)
+
+def scrape_astra(year):
+    """
+    Scrape Astra Film Awards (formerly HCA) for a specific year.
+    Year >= 2025 (Season 2024/25) -> Astra 8th+
+    Year 2024 (Season 2023/24) -> Astra 7th (Wiki says '7th Astra Film Awards')
+    Year <= 2023 -> Hollywood Critics Association (HCA)
+    Mapping:
+      2026 (Season 2025/26) -> 9th
+      2025 (Season 2024/25) -> 8th
+      2024 (Season 2023/24) -> 7th (Astra)
+      2023 (Season 2022/23) -> 6th (HCA)
+    """
+    ceremony_num = CEREMONY_MAP['astra'].get(year)
+    if not ceremony_num:
+        print(f"  No Astra/HCA mapping for year {year}")
+        return {}
+
+    ord_str = ordinal(ceremony_num)
+    
+    # URL construction based on name change
+    if ceremony_num >= 7:
+        # Astra
+        url = f"https://en.wikipedia.org/wiki/{ord_str}_Astra_Film_Awards"
+    else:
+        # HCA
+        url = f"https://en.wikipedia.org/wiki/{ord_str}_Hollywood_Critics_Association_Film_Awards"
+    
+    print(f"  ASTRA/HCA ({ord_str}): {url}")
+    
+    soup = fetch_page(url)
+    if not soup:
+        return {}
+    
+    # Logic is very similar to Gotham V2 (List-based cells)
+    return scrape_astra_logic(soup)
+
+
+def scrape_astra_logic(soup):
+    import re
+    
+    results = {
+        'best-film': [],
+        'best-director': [],
+        'best-actor': [],
+        'best-actress': []
+    }
+    
+    seen = {'film': set(), 'director': set(), 'actor': set(), 'actress': set()}
+    
+    tables = soup.find_all('table', class_='wikitable')
+    if not tables:
+        print("    No wikitable found (Astra logic)")
+        # Try generic search for tables without class if wikitable missing?
+        tables = soup.find_all('table')
+        if not tables:
+             return results
+    
+    for table in tables:
+        # Skip summary tables if any (usually 'Wins' 'Nominations')
+        header_text = ' '.join([th.get_text().strip().lower() for th in table.find_all('th')])
+        if 'wins' in header_text and 'nominations' in header_text:
+            continue
+            
+        rows = table.find_all('tr')
+        
+        for row in rows:
+            cells = row.find_all(['td', 'th'])
+            for cell in cells:
+                # 1. Determine Category from Header (first non-empty text node/line)
+                cell_text = cell.get_text(separator='|').strip()
+                if not cell_text: continue
+                
+                # Split by | to check first part
+                parts_text = [p.strip() for p in cell_text.split('|') if p.strip()]
+                if not parts_text: continue
+                
+                cat_header = parts_text[0].lower()
+                
+                cat_found = None
+                # Best Picture/Film categories (drama, comedy, musical all map to best-film)
+                if 'best picture' in cat_header or 'best film' in cat_header:
+                    # Exclude animated, international, action, horror, indie, first feature
+                    if not any(x in cat_header for x in ['animated', 'international', 'action', 'editing', 'horror', 'indie', 'first']):
+                        cat_found = 'best-film'
+                elif 'best director' in cat_header:
+                     cat_found = 'best-director'
+                # Actor categories: leading and supporting, drama and comedy/musical all map to best-actor
+                elif 'actor' in cat_header and ('best' in cat_header or 'supporting' in cat_header):
+                    # Exclude voice over and youth categories (23 and under)
+                    if 'voice' not in cat_header and '23' not in cat_header and 'under' not in cat_header:
+                        cat_found = 'best-actor'
+                # Actress categories: leading and supporting, drama and comedy/musical all map to best-actress
+                elif 'actress' in cat_header and ('best' in cat_header or 'supporting' in cat_header):
+                    # Exclude voice over and youth categories (23 and under)
+                    if 'voice' not in cat_header and '23' not in cat_header and 'under' not in cat_header:
+                        cat_found = 'best-actress'
+                
+                if not cat_found:
+                    continue
+                
+                # 2. Extract Nominees using UL/LI if available
+                nominees_raw = []
+                
+                uls = cell.find_all('ul')
+                if uls and not cell.find_parent('ul'): # Ensure we are not inside another list
+                     # Use the first UL if found
+                     # Check if cell has text content before UL that indicates category
+                     # (Already checked cat_header)
+                     
+                     # Process first UL
+                     # Structure: 
+                     # LI (Winner)
+                     #   UL
+                     #     LI (Nominee)
+                     
+                     # Or flat list
+                     
+                     top_ul = uls[0]
+                     top_lis = top_ul.find_all('li', recursive=False)
+                     
+                     for li in top_lis:
+                         # Check for nested UL
+                         nested_ul = li.find('ul')
+                         
+                         # Get text of this LI (excluding nested UL text)
+                         own_text = ""
+                         for child in li.children:
+                             if child.name == 'ul': break
+                             own_text += child.get_text()
+                         
+                         own_text = own_text.strip()
+                         if not own_text: continue
+                         
+                         # Is this a winner?
+                         # Usually top LI (lines 1-x) are winners, nested are nominees
+                         # But sometimes flat list with bolds.
+                         
+                         # Check logical winner status:
+                         # If it has a nested UL, it is likely the winner.
+                         is_winner_li = bool(nested_ul) or bool(li.find('b', recursive=False)) or bool(li.find('b'))
+                         # Wait, simplistic bold check is fine if the name is wrapped in bold
+                         
+                         # Add this top item
+                         nominees_raw.append((own_text, is_winner_li))
+                         
+                         # Add nested items (Nominees)
+                         if nested_ul:
+                             for sub_li in nested_ul.find_all('li'):
+                                 sub_text = sub_li.get_text().strip()
+                                 if sub_text:
+                                     nominees_raw.append((sub_text, False))
+                else:
+                    # Fallback to line splitting if no UL found
+                    # But use the parts_text from before (split by pipe or newline)
+                    # Skip the first part (Header)
+                    lines = parts_text[1:]
+                    # Check bolds in cell
+                    winners_text = [b.get_text().strip() for b in cell.find_all('b')]
+                    
+                    for line in lines:
+                        # Check if line matches a winner text
+                        is_w = any(line in w or w in line for w in winners_text if len(w) > 3)
+                        nominees_raw.append((line, is_w))
+
+                # 3. Process Raw Nominees
+                for nom_text, is_winner in nominees_raw:
+                    # Clean brackets
+                    nom_text = re.sub(r'\[.*?\]', '', nom_text).strip()
+                    if not nom_text: continue
+                    if nom_text.lower() in [cat_header, 'winner', 'winners', 'nominees']: continue
+
+                    award_val = 'Y' if is_winner else 'X'
+                    
+                    # Delimiter handling (Endash, Emdash, Hyphen)
+                    parts = re.split(r'\s*[–—-]\s*', nom_text)
+                    
+                    if cat_found == 'best-film':
+                        film_name = parts[0].strip()
+                        if film_name and len(film_name) > 1 and film_name not in seen['film']:
+                            seen['film'].add(film_name)
+                            results['best-film'].append({'name': film_name, 'awards': {'astra': award_val}})
+                            
+                    elif cat_found == 'best-director':
+                        # Format: Person - Film
+                        person_name = parts[0].strip()
+                        film_name = parts[1].strip() if len(parts) > 1 else ""
+                        
+                        if person_name:
+                            entry = {'name': person_name, 'awards': {'astra': award_val}}
+                            if film_name: entry['film'] = film_name
+                            results['best-director'].append(entry)
+                    
+                    elif cat_found in ['best-actor', 'best-actress', 'supporting-actor', 'supporting-actress']:
+                        # Format: Person - Film as Role
+                        person_name = parts[0].strip()
+                        
+                        rest = parts[1].strip() if len(parts) > 1 else ""
+                        film_name = rest
+                        if " as " in rest:
+                            film_name = rest.split(" as ")[0].strip()
+                        
+                         # Determine category mapping
+                        target_cat = 'best-actor'
+                        seen_key = 'actor'
+                        
+                        if cat_found == 'best-actress' or cat_found == 'supporting-actress':
+                            target_cat = 'best-actress'
+                            seen_key = 'actress'
+
+                        if person_name:
+                             entry = {'name': person_name, 'awards': {'astra': award_val}}
+                             if film_name: entry['film'] = film_name
+                             results[target_cat].append(entry)
+
+    total = sum(len(v) for v in results.values())
+    print(f"    ASTRA/HCA: Found {total} entries (Films: {len(results['best-film'])}, Dir: {len(results['best-director'])})")
+    return results
+
+
+# =============================================================================
+# SPIRIT AWARDS (Independent Spirit Awards)
+# =============================================================================
+
+def scrape_spirit(year):
+    """Scrape Independent Spirit Awards from Wikipedia."""
+    ceremony_num = CEREMONY_MAP['spirit'].get(year)
+    if not ceremony_num:
+        print(f"  SPIRIT: No ceremony number mapped for year {year}")
+        return {}
+    
+    url = URL_TEMPLATES['spirit'].format(ord=ordinal(ceremony_num))
+    print(f"  SPIRIT ({ordinal(ceremony_num)}): {url}")
+    
+    return scrape_spirit_logic(url)
+
+
+def scrape_spirit_logic(url):
+    """
+    Scrape Spirit Awards categories:
+    - Best Feature -> best-film
+    - Best Director -> best-director
+    - Best Lead Performance -> best-actor (gender neutral)
+    - Best Supporting Performance -> best-actor (gender neutral)
+    """
+    results = {
+        'best-film': [],
+        'best-director': [],
+        'best-actor': [],  # Lead and Supporting Performance combined
+        'best-actress': []  # Not used - Spirit is gender neutral
+    }
+    
+    try:
+        soup = fetch_page(url)
+        if not soup:
+            return results
+    except Exception as e:
+        print(f"    Error: {e}")
+        return results
+    
+    # Find wikitables
+    tables = soup.find_all('table', class_='wikitable')
+    
+    for table in tables:
+        rows = table.find_all('tr')
+        
+        # Process rows in pairs: th row followed by td row
+        for row_idx in range(len(rows) - 1):
+            row = rows[row_idx]
+            next_row = rows[row_idx + 1]
+            
+            # Check if this row has th (headers) and next row has td (data)
+            headers = row.find_all('th')
+            data_cells = next_row.find_all('td')
+            
+            if not headers or not data_cells:
+                continue
+            
+            # Match headers to data cells
+            for i, header in enumerate(headers):
+                header_text = header.get_text(separator=' ').strip().lower()
+                
+                # Determine category - only Film categories, not TV
+                cat_found = None
+                if 'best feature' in header_text:
+                    cat_found = 'best-film'
+                elif 'best director' in header_text and 'series' not in header_text:
+                    cat_found = 'best-director'
+                # Gender-neutral categories (2022+)
+                elif 'best lead performance' in header_text and 'series' not in header_text:
+                    cat_found = 'best-actor'
+                elif 'best supporting performance' in header_text and 'series' not in header_text:
+                    cat_found = 'best-actor'  # Both map to best-actor
+                # Gendered categories (pre-2022)
+                elif 'best male lead' in header_text:
+                    cat_found = 'best-actor'
+                elif 'best female lead' in header_text:
+                    cat_found = 'best-actress'
+                elif 'best supporting male' in header_text:
+                    cat_found = 'best-actor'
+                elif 'best supporting female' in header_text:
+                    cat_found = 'best-actress'
+                
+                if not cat_found or i >= len(data_cells):
+                    continue
+                
+                cell = data_cells[i]
+                
+                # Collect all nominees: winner (bold text before list) + nominees (li elements)
+                nominees = []
+                
+                # 1. Check for winner as bold text BEFORE the ul (like "The Lost Daughter" in 37th)
+                # The winner is often in <p><i><b>Name</b></i></p> structure before <ul>
+                for child in cell.children:
+                    if hasattr(child, 'name'):
+                        if child.name == 'ul':
+                            break  # Stop when we reach the list
+                        # Check if this element contains a bold tag (winner)
+                        if child.name in ['b', 'strong']:
+                            winner_text = child.get_text(separator=' ').strip()
+                            if winner_text:
+                                nominees.append((winner_text, True))
+                        elif child.name in ['p', 'div', 'span', 'i']:
+                            # Look for bold inside these container elements
+                            bold = child.find(['b', 'strong'])
+                            if bold:
+                                winner_text = child.get_text(separator=' ').strip()
+                                if winner_text:
+                                    nominees.append((winner_text, True))
+                
+                # 2. Get all LI elements (other nominees)
+                lis = cell.find_all('li')
+                for li in lis:
+                    first_elem = li.find(['b', 'strong'])
+                    is_winner = bool(first_elem)
+                    text = li.get_text(separator=' ').strip()
+                    if text:
+                        nominees.append((text, is_winner))
+                
+                # Process all nominees
+                for text, is_winner in nominees:
+                    award_val = 'Y' if is_winner else 'X'
+                    
+                    # Parse based on category
+                    if cat_found == 'best-film':
+                        # Format: Film – Producers
+                        parts = text.split('–')
+                        if len(parts) >= 1:
+                            film_name = parts[0].strip()
+                            film_name = film_name.replace('|', '').strip()
+                            if film_name:
+                                results['best-film'].append({
+                                    'name': film_name,
+                                    'awards': {'spirit': award_val}
+                                })
+                    
+                    elif cat_found == 'best-director':
+                        # Format: Director – Film
+                        parts = text.split('–')
+                        person_name = parts[0].strip()
+                        film_name = parts[1].strip() if len(parts) > 1 else ""
+                        if person_name:
+                            entry = {'name': person_name, 'awards': {'spirit': award_val}}
+                            if film_name:
+                                entry['film'] = film_name
+                            results['best-director'].append(entry)
+                    
+                    elif cat_found == 'best-actor':
+                        # Format: Actor – Film as Character
+                        parts = text.split('–')
+                        person_name = parts[0].strip()
+                        rest = parts[1].strip() if len(parts) > 1 else ""
+                        
+                        # Extract film name (before " as ")
+                        film_name = rest.split(' as ')[0].strip() if ' as ' in rest else rest
+                        
+                        if person_name:
+                            entry = {'name': person_name, 'awards': {'spirit': award_val}}
+                            if film_name:
+                                entry['film'] = film_name
+                            results['best-actor'].append(entry)
+                    
+                    elif cat_found == 'best-actress':
+                        # Format: Actress – Film as Character
+                        parts = text.split('–')
+                        person_name = parts[0].strip()
+                        rest = parts[1].strip() if len(parts) > 1 else ""
+                        
+                        # Extract film name (before " as ")
+                        film_name = rest.split(' as ')[0].strip() if ' as ' in rest else rest
+                        
+                        if person_name:
+                            entry = {'name': person_name, 'awards': {'spirit': award_val}}
+                            if film_name:
+                                entry['film'] = film_name
+                            results['best-actress'].append(entry)
+    
+    total = sum(len(v) for v in results.values())
+    print(f"    Spirit: Found {total} entries (Films: {len(results['best-film'])}, Dir: {len(results['best-director'])}, Actors: {len(results['best-actor'])}, Actresses: {len(results['best-actress'])})")
+    return results
+

@@ -3,28 +3,47 @@
     {
       "name": "Nomadland",
       "awards": {
-        "bafta": "Y",
-        "gg": "Y",
         "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
         "afi": "Y",
-        "critics": "Y",
         "nbr": "Y",
-        "lafca": "X",
+        "critics": "Y",
         "pga": "Y",
+        "lafca": "X",
+        "venice": "Y",
         "gotham": "Y",
-        "venice": "Y"
+        "spirit": "Y",
+        "astra": "X"
       },
       "posterPath": "/dKT8rGDR55cM1vGn7QZLA9Tg9YC.jpg",
       "tmdbId": 581734
+    },
+    {
+      "name": "Promising Young Woman",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "nbr": "Y",
+        "critics": "X",
+        "pga": "X",
+        "wga": "Y",
+        "adg": "X",
+        "astra": "Y"
+      },
+      "posterPath": "/73QoFJFmUrJfDG2EynFjNc5gJxk.jpg",
+      "tmdbId": 582014
     },
     {
       "name": "Da 5 Bloods",
       "awards": {
         "afi": "Y",
         "sag": "X",
-        "critics": "X",
         "nbr": "Y",
-        "adg": "Y"
+        "critics": "X",
+        "adg": "Y",
+        "astra": "X"
       },
       "posterPath": "/yx4cp1ljJMDSFeEex0Zjv45b55E.jpg",
       "tmdbId": 581859
@@ -32,47 +51,19 @@
     {
       "name": "The Trial of the Chicago 7",
       "awards": {
-        "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
         "afi": "Y",
         "sag": "Y",
         "critics": "X",
         "pga": "X",
         "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "astra": "X"
       },
       "posterPath": "/ahf5cVdooMAlDRiJOZQNuLqa1Is.jpg",
       "tmdbId": 556984
-    },
-    {
-      "name": "Promising Young Woman",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "oscar": "X",
-        "critics": "X",
-        "nbr": "Y",
-        "pga": "X",
-        "wga": "Y",
-        "adg": "X"
-      },
-      "posterPath": "/73QoFJFmUrJfDG2EynFjNc5gJxk.jpg",
-      "tmdbId": 582014
-    },
-    {
-      "name": "Mank",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "afi": "Y",
-        "critics": "X",
-        "pga": "X",
-        "adg": "Y"
-      },
-      "genre": "Drama",
-      "posterPath": "/4yzTcAtvzyZLLto4z04xobUK9el.jpg",
-      "tmdbId": 614560
     },
     {
       "name": "Minari",
@@ -80,9 +71,11 @@
         "oscar": "X",
         "afi": "Y",
         "sag": "X",
-        "critics": "X",
         "nbr": "Y",
-        "pga": "X"
+        "critics": "X",
+        "pga": "X",
+        "spirit": "X",
+        "astra": "X"
       },
       "posterPath": "/6mPNdmjdbVKPITv3LLCmQoKs9Zw.jpg",
       "tmdbId": 615643
@@ -92,10 +85,11 @@
       "awards": {
         "oscar": "X",
         "afi": "Y",
-        "critics": "X",
         "nbr": "Y",
+        "critics": "X",
         "pga": "X",
-        "wga": "X"
+        "wga": "X",
+        "astra": "X"
       },
       "posterPath": "/3178oOJKKPDeQ2legWQvMPpllv.jpg",
       "tmdbId": 502033
@@ -107,10 +101,24 @@
         "afi": "Y",
         "nbr": "Y",
         "pga": "X",
-        "wga": "X"
+        "wga": "X",
+        "astra": "X"
       },
       "posterPath": "/iIgr75GoqFxe1X5Wz9siOODGe9u.jpg",
       "tmdbId": 583406
+    },
+    {
+      "name": "Mank",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "afi": "Y",
+        "critics": "X",
+        "pga": "X",
+        "adg": "Y"
+      },
+      "posterPath": "/4yzTcAtvzyZLLto4z04xobUK9el.jpg",
+      "tmdbId": 614560
     },
     {
       "name": "Borat Subsequent Moviefilm",
@@ -127,19 +135,11 @@
       "name": "Soul",
       "awards": {
         "afi": "Y",
-        "nbr": "Y"
-      },
-      "posterPath": "/pEz5aROvfy5FBW1OTlrDO3VryWO.jpg",
-      "tmdbId": 508442
-    },
-    {
-      "name": "First Cow",
-      "awards": {
         "nbr": "Y",
-        "gotham": "Y"
+        "astra": "X"
       },
-      "posterPath": "/yS41crZ1i0fFxCQbuL7I1Y1VBwm.jpg",
-      "tmdbId": 558582
+      "posterPath": "/6jmppcaubzLF8wkXM36ganVISCo.jpg",
+      "tmdbId": 508442
     },
     {
       "name": "Ma Rainey's Black Bottom",
@@ -148,7 +148,8 @@
         "sag": "X",
         "critics": "X",
         "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "spirit": "X"
       },
       "posterPath": "/pvtyxijaBrCSbByXLcUIDDSvc40.jpg",
       "tmdbId": 615667
@@ -160,7 +161,8 @@
         "sag": "X",
         "critics": "X",
         "pga": "X",
-        "wga": "X"
+        "wga": "X",
+        "astra": "X"
       },
       "posterPath": "/1DLUb9PTDqXMSgsD7RmiJs7ZJIx.jpg",
       "tmdbId": 661914
@@ -168,13 +170,23 @@
     {
       "name": "News of the World",
       "awards": {
-        "critics": "X",
         "nbr": "Y",
+        "critics": "X",
         "wga": "X",
         "adg": "X"
       },
       "posterPath": "/fYQCgVRsQTEfUrP7cW5iAFVYOlh.jpg",
       "tmdbId": 581032
+    },
+    {
+      "name": "First Cow",
+      "awards": {
+        "nbr": "Y",
+        "gotham": "X",
+        "spirit": "X"
+      },
+      "posterPath": "/yS41crZ1i0fFxCQbuL7I1Y1VBwm.jpg",
+      "tmdbId": 558582
     },
     {
       "name": "Hamilton",
@@ -218,35 +230,12 @@
       "tmdbId": 577922
     },
     {
-      "name": "The Assistant",
-      "awards": {
-        "gotham": "Y"
-      },
-      "posterPath": "/zJpJkVgezsR7dp6KQwyxtGIAOZv.jpg",
-      "tmdbId": 627463
-    },
-    {
-      "name": "Never Rarely Sometimes Always",
-      "awards": {
-        "gotham": "Y"
-      },
-      "posterPath": "/7yiSyQhhjTFphhfCUcn05tCQxyG.jpg",
-      "tmdbId": 595671
-    },
-    {
-      "name": "Relic",
-      "awards": {
-        "gotham": "Y"
-      },
-      "posterPath": "/3wZ0gxLqsPleneFSTZILmM3BE8Q.jpg",
-      "tmdbId": 539181
-    },
-    {
       "name": "The Father",
       "awards": {
-        "bafta": "X",
+        "oscar": "X",
         "gg": "X",
-        "oscar": "X"
+        "bafta": "X",
+        "astra": "X"
       },
       "posterPath": "/pr3bEQ517uMb5loLvjFQi8uLAsp.jpg",
       "tmdbId": 600354
@@ -273,12 +262,13 @@
       "tmdbId": 206512
     },
     {
-      "name": "The Mauritanian",
+      "name": "Never Rarely Sometimes Always",
       "awards": {
-        "bafta": "X"
+        "gotham": "X",
+        "spirit": "X"
       },
-      "posterPath": "/lIADEa6oH74uUapjsPbNRzxus8M.jpg",
-      "tmdbId": 644583
+      "posterPath": "/7yiSyQhhjTFphhfCUcn05tCQxyG.jpg",
+      "tmdbId": 595671
     },
     {
       "name": "Music",
@@ -290,12 +280,36 @@
       "tmdbId": 586101
     },
     {
+      "name": "The Mauritanian",
+      "awards": {
+        "bafta": "X"
+      },
+      "posterPath": "/lIADEa6oH74uUapjsPbNRzxus8M.jpg",
+      "tmdbId": 644583
+    },
+    {
       "name": "Ma Rainey’s Black Bottom",
       "awards": {
         "pga": "X"
       },
       "posterPath": "/pvtyxijaBrCSbByXLcUIDDSvc40.jpg",
       "tmdbId": 615667
+    },
+    {
+      "name": "The Assistant",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/zJpJkVgezsR7dp6KQwyxtGIAOZv.jpg",
+      "tmdbId": 627463
+    },
+    {
+      "name": "Relic",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/3wZ0gxLqsPleneFSTZILmM3BE8Q.jpg",
+      "tmdbId": 539181
     },
     {
       "name": "The White Tiger",
@@ -352,23 +366,24 @@
       "name": "Chloé Zhao",
       "film": "Nomadland",
       "awards": {
-        "bafta": "Y",
-        "gg": "Y",
         "oscar": "Y",
-        "critics": "Y",
+        "gg": "Y",
+        "bafta": "Y",
         "dga": "Y",
-        "lafca": "Y"
+        "critics": "Y",
+        "lafca": "Y",
+        "spirit": "Y"
       },
-      "profilePath": "/n0GzBiyx2KzwozZ9irQ8hJlf5By.jpg",
+      "profilePath": "/r8DmTdOqHbDUydCOVb277rncPTK.jpg",
       "tmdbId": 1395183
     },
     {
       "name": "Spike Lee",
-      "film": "Da 5 Bloods",
       "awards": {
-        "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X"
       },
+      "film": "Da 5 Bloods",
       "profilePath": "/2KOHXgk2uoRXl6u7V9xpAIo3uay.jpg",
       "tmdbId": 5281
     },
@@ -385,35 +400,37 @@
       "name": "Lee Isaac Chung",
       "film": "Minari",
       "awards": {
-        "bafta": "X",
         "oscar": "X",
+        "bafta": "X",
+        "dga": "X",
         "critics": "X",
-        "dga": "X"
+        "spirit": "X"
       },
       "profilePath": "/fwiIh7jECjefCco3ZCdug6i3t9U.jpg",
       "tmdbId": 931952
     },
     {
       "name": "Emerald Fennell",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "critics": "X",
-        "dga": "X"
-      },
       "film": "Promising Young Woman",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "dga": "X",
+        "critics": "X",
+        "spirit": "X"
+      },
       "profilePath": "/ytyHUsPb7Saulczm8nCJHypIWQF.jpg",
       "tmdbId": 1252934
     },
     {
       "name": "David Fincher",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "critics": "X",
-        "dga": "X"
-      },
       "film": "Mank",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "dga": "X",
+        "critics": "X"
+      },
       "profilePath": "/tpEczFclQZeKAiCeKZZ0adRvtfz.jpg",
       "tmdbId": 7467
     },
@@ -421,8 +438,8 @@
       "name": "Thomas Vinterberg",
       "film": "Another Round",
       "awards": {
-        "bafta": "X",
-        "oscar": "X"
+        "oscar": "X",
+        "bafta": "X"
       },
       "profilePath": "/1lChKBPVLqbn7Kl8lHghybBVzgw.jpg",
       "tmdbId": 4453
@@ -491,6 +508,24 @@
       "film": "Small Axe",
       "profilePath": "/mhHk4NRPXEJLL0SySheXZAArp5w.jpg",
       "tmdbId": 13565
+    },
+    {
+      "name": "Eliza Hittman",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Never Rarely Sometimes Always",
+      "profilePath": "/Wy3d1rQKZVAgQS9llQ1tBeHYlY.jpg",
+      "tmdbId": 1134669
+    },
+    {
+      "name": "Kelly Reichardt",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "First Cow",
+      "profilePath": "/j97hMhlRhcaHWgn9MQ78E0ft57U.jpg",
+      "tmdbId": 56383
     }
   ],
   "best-actor": [
@@ -499,11 +534,12 @@
       "film": "Judas and the Black Messiah",
       "role": "Supporting",
       "awards": {
-        "bafta": "Y",
-        "gg": "Y",
         "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "Y",
+        "astra": "X"
       },
       "profilePath": "/jj2kZqJobjom36wlhlYhc38nTwN.jpg",
       "tmdbId": 206919
@@ -513,45 +549,87 @@
       "film": "Ma Rainey's Black Bottom",
       "role": "Leading",
       "awards": {
-        "bafta": "X",
-        "gg": "Y",
         "oscar": "X",
+        "gg": "Y",
+        "bafta": "X",
         "sag": "Y",
         "critics": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "spirit": "X",
+        "astra": "X"
       },
       "profilePath": "/1lz1wLOuPFSRIratMz0SxD3tkJ.jpg",
       "tmdbId": 172069
-    },
-    {
-      "name": "Anthony Hopkins",
-      "film": "The Father",
-      "role": "Leading",
-      "awards": {
-        "bafta": "Y",
-        "gg": "X",
-        "oscar": "Y",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/cbFWUHhk6pZKTEm48OKVM5awNNn.jpg",
-      "tmdbId": 4173
     },
     {
       "name": "Riz Ahmed",
       "film": "Sound of Metal",
       "role": "Leading",
       "awards": {
-        "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
         "sag": "X",
-        "critics": "X",
         "nbr": "Y",
-        "lafca": "X"
+        "critics": "X",
+        "lafca": "X",
+        "gotham": "Y",
+        "spirit": "Y",
+        "astra": "X"
       },
       "profilePath": "/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg",
       "tmdbId": 53240
+    },
+    {
+      "name": "Anthony Hopkins",
+      "film": "The Father",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "X",
+        "bafta": "Y",
+        "sag": "X",
+        "critics": "X",
+        "astra": "X"
+      },
+      "profilePath": "/cbFWUHhk6pZKTEm48OKVM5awNNn.jpg",
+      "tmdbId": 4173
+    },
+    {
+      "name": "Paul Raci",
+      "film": "Sound of Metal",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "critics": "X",
+        "lafca": "X",
+        "spirit": "Y",
+        "astra": "Y"
+      },
+      "profilePath": "/1Vcfo559FK4JmleDbkaaGzGPJks.jpg",
+      "tmdbId": 1216195
+    },
+    {
+      "name": "Delroy Lindo",
+      "film": "Da 5 Bloods",
+      "role": "Leading",
+      "awards": {
+        "critics": "X",
+        "astra": "Y"
+      },
+      "profilePath": "/kLwUBBmEIdchrLqwsYzgLB2B6q5.jpg",
+      "tmdbId": 18792
+    },
+    {
+      "name": "Glynn Turman",
+      "awards": {
+        "lafca": "Y",
+        "spirit": "X"
+      },
+      "film": "Ma Rainey's Black Bottom",
+      "profilePath": "/ac5gjylih4RTCGf2HWuSnoZWDus.jpg",
+      "tmdbId": 114674
     },
     {
       "name": "Sacha Baron Cohen",
@@ -562,58 +640,6 @@
       "role": "Leading",
       "profilePath": "/irirhgOX0siCyqvMrt2hoJpXfOG.jpg",
       "tmdbId": 6730
-    },
-    {
-      "name": "Glynn Turman",
-      "awards": {
-        "lafca": "Y"
-      },
-      "film": "Ma Rainey's Black Bottom",
-      "profilePath": "/ac5gjylih4RTCGf2HWuSnoZWDus.jpg",
-      "tmdbId": 114674
-    },
-    {
-      "name": "Riz Ahmed",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Sound of Metal as Ruben Stone",
-      "profilePath": "/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg",
-      "tmdbId": 53240
-    },
-    {
-      "name": "Chadwick Boseman (posthumously)",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Ma Rainey's Black Bottom as Levee"
-    },
-    {
-      "name": "Jude Law",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "The Nest as Rory O'Hara",
-      "profilePath": "/1rTmD8B1YAE1MrrBJs4krIiIvNM.jpg",
-      "tmdbId": 9642
-    },
-    {
-      "name": "John Magaro",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "First Cow as Otis \"Cookie\" Figowitz",
-      "profilePath": "/ah4Jm4Lmrgab9xdHwRId80S4REd.jpg",
-      "tmdbId": 37154
-    },
-    {
-      "name": "Jesse Plemons",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "I'm Thinking of Ending Things as Jake",
-      "profilePath": "/og4I51GsuwohdPgoELOHVMMqMre.jpg",
-      "tmdbId": 88124
     },
     {
       "name": "Pierfrancesco Favino",
@@ -629,9 +655,9 @@
       "film": "One Night in Miami...",
       "role": "Supporting",
       "awards": {
-        "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -639,43 +665,17 @@
       "tmdbId": 1254614
     },
     {
-      "name": "Paul Raci",
-      "film": "Sound of Metal",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "oscar": "X",
-        "critics": "X",
-        "lafca": "X"
-      },
-      "profilePath": "/1Vcfo559FK4JmleDbkaaGzGPJks.jpg",
-      "tmdbId": 1216195
-    },
-    {
       "name": "Gary Oldman",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
       "film": "Mank",
       "role": "Leading",
-      "profilePath": "/2v9FVVBUrrkW2m3QOcYkuhq9A6o.jpg",
-      "tmdbId": 64
-    },
-    {
-      "name": "Sacha Baron Cohen",
       "awards": {
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X"
       },
-      "film": "The Trial of the Chicago 7",
-      "role": "Supporting",
-      "profilePath": "/irirhgOX0siCyqvMrt2hoJpXfOG.jpg",
-      "tmdbId": 6730
+      "profilePath": "/2v9FVVBUrrkW2m3QOcYkuhq9A6o.jpg",
+      "tmdbId": 64
     },
     {
       "name": "Steven Yeun",
@@ -684,19 +684,45 @@
       "awards": {
         "oscar": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "spirit": "X"
       },
       "profilePath": "/fOMFO2Xx4duzpNgS9Q5ytO44yGb.jpg",
       "tmdbId": 215055
     },
     {
+      "name": "Sacha Baron Cohen",
+      "film": "The Trial of the Chicago 7",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/irirhgOX0siCyqvMrt2hoJpXfOG.jpg",
+      "tmdbId": 6730
+    },
+    {
+      "name": "Chadwick Boseman",
+      "film": "Da 5 Bloods",
+      "role": "Supporting",
+      "awards": {
+        "sag": "X",
+        "critics": "X",
+        "astra": "X"
+      },
+      "profilePath": "/1lz1wLOuPFSRIratMz0SxD3tkJ.jpg",
+      "tmdbId": 172069
+    },
+    {
       "name": "Tahar Rahim",
+      "awards": {
+        "gg": "X",
+        "bafta": "X"
+      },
       "film": "The Mauritanian",
       "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "X"
-      },
       "profilePath": "/r1SJ9nkG9q4JbPHbtcvcVxmRcHw.jpg",
       "tmdbId": 81051
     },
@@ -723,65 +749,25 @@
       "tmdbId": 1532
     },
     {
-      "name": "Chadwick Boseman",
-      "film": "Da 5 Bloods",
-      "role": "Supporting",
-      "awards": {
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/1lz1wLOuPFSRIratMz0SxD3tkJ.jpg",
-      "tmdbId": 172069
-    },
-    {
       "name": "Adarsh Gourav",
       "film": "The White Tiger",
       "role": "Leading",
       "awards": {
-        "bafta": "X"
+        "bafta": "X",
+        "spirit": "X"
       },
       "profilePath": "/kuJ2ukWmuHnCSTOOvUMqiES5G2C.jpg",
       "tmdbId": 1605786
     },
     {
-      "name": "Mads Mikkelsen",
-      "film": "Another Round",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/2Lyv939p2iDIjRgv4jMFyD3yA6G.jpg",
-      "tmdbId": 1019
-    },
-    {
-      "name": "Alan Kim",
-      "film": "Minari",
+      "name": "LaKeith Stanfield",
+      "film": "Judas and the Black Messiah",
       "role": "Supporting",
       "awards": {
-        "bafta": "X"
+        "oscar": "X"
       },
-      "profilePath": "/mksORVS7tVouJZUWKlLrBSXgKQC.jpg",
-      "tmdbId": 2476742
-    },
-    {
-      "name": "Barry Keoghan",
-      "film": "Calm with Horses",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/15xPjrzSbtXlbQUhmLpQUil4tCN.jpg",
-      "tmdbId": 1290466
-    },
-    {
-      "name": "Clarke Peters",
-      "film": "Da 5 Bloods",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/ouDHDpocxXgXrosF3vShAEkOjHL.jpg",
-      "tmdbId": 61011
+      "profilePath": "/x3k0HCpMNqEtVf2VKQrSCol1ia2.jpg",
+      "tmdbId": 1200864
     },
     {
       "name": "James Corden",
@@ -824,14 +810,44 @@
       "tmdbId": 62861
     },
     {
-      "name": "LaKeith Stanfield",
-      "film": "Judas and the Black Messiah",
+      "name": "Mads Mikkelsen",
+      "film": "Another Round",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/2Lyv939p2iDIjRgv4jMFyD3yA6G.jpg",
+      "tmdbId": 1019
+    },
+    {
+      "name": "Alan Kim",
+      "film": "Minari",
       "role": "Supporting",
       "awards": {
-        "oscar": "X"
+        "bafta": "X"
       },
-      "profilePath": "/x3k0HCpMNqEtVf2VKQrSCol1ia2.jpg",
-      "tmdbId": 1200864
+      "profilePath": "/mksORVS7tVouJZUWKlLrBSXgKQC.jpg",
+      "tmdbId": 2476742
+    },
+    {
+      "name": "Barry Keoghan",
+      "film": "Calm with Horses",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/15xPjrzSbtXlbQUhmLpQUil4tCN.jpg",
+      "tmdbId": 1290466
+    },
+    {
+      "name": "Clarke Peters",
+      "film": "Da 5 Bloods",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/ouDHDpocxXgXrosF3vShAEkOjHL.jpg",
+      "tmdbId": 61011
     },
     {
       "name": "Ben Affleck",
@@ -854,29 +870,116 @@
       "tmdbId": 31
     },
     {
-      "name": "Delroy Lindo",
-      "film": "Da 5 Bloods",
-      "role": "Leading",
+      "name": "Chadwick Boseman (posthumously)",
       "awards": {
-        "critics": "X"
+        "gotham": "X"
       },
-      "profilePath": "/kLwUBBmEIdchrLqwsYzgLB2B6q5.jpg",
-      "tmdbId": 18792
+      "film": "Ma Rainey's Black Bottom"
+    },
+    {
+      "name": "Jude Law",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "The Nest",
+      "profilePath": "/1rTmD8B1YAE1MrrBJs4krIiIvNM.jpg",
+      "tmdbId": 9642
+    },
+    {
+      "name": "John Magaro",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "First Cow",
+      "profilePath": "/ah4Jm4Lmrgab9xdHwRId80S4REd.jpg",
+      "tmdbId": 37154
+    },
+    {
+      "name": "Jesse Plemons",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "I'm Thinking of Ending Things",
+      "profilePath": "/og4I51GsuwohdPgoELOHVMMqMre.jpg",
+      "tmdbId": 88124
+    },
+    {
+      "name": "Rob Morgan",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Bull",
+      "profilePath": "/ps6wR3JZnk6MY9tbtOLORgadqs6.jpg",
+      "tmdbId": 1281250
+    },
+    {
+      "name": "Colman Domingo",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Ma Rainey's Black Bottom",
+      "profilePath": "/r2usluS5vx7O7npAYfaAFfNGxc8.jpg",
+      "tmdbId": 91671
+    },
+    {
+      "name": "Orion Lee",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "First Cow"
+    },
+    {
+      "name": "Benedict Wong",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Nine Days",
+      "profilePath": "/yYfLyrC2CE6vBWSJfkpuVKL2POM.jpg",
+      "tmdbId": 30082
+    },
+    {
+      "name": "Kingsley Ben",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "Adir",
+      "profilePath": "/vQtBqpF2HDdzbfXHDzR4u37i1Ac.jpg",
+      "tmdbId": 2282
+    },
+    {
+      "name": "Bo Burnham",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "Promising Young Woman",
+      "profilePath": "/xMAatohXadCfz9ipvqvIaTLwOmV.jpg",
+      "tmdbId": 115128
+    },
+    {
+      "name": "Leslie Odom, Jr.",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "One Night in Miami...",
+      "profilePath": "/pDA11JMNAGQGJo7nRpZHp7pdp9N.jpg",
+      "tmdbId": 1254614
     }
   ],
   "best-actress": [
     {
       "name": "Carey Mulligan",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "Y",
-        "nbr": "Y",
-        "lafca": "Y"
-      },
       "film": "Promising Young Woman",
       "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "nbr": "Y",
+        "critics": "Y",
+        "lafca": "Y",
+        "spirit": "Y",
+        "astra": "Y"
+      },
       "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg",
       "tmdbId": 36662
     },
@@ -888,7 +991,8 @@
         "bafta": "Y",
         "sag": "Y",
         "critics": "X",
-        "lafca": "Y"
+        "lafca": "Y",
+        "spirit": "Y"
       },
       "profilePath": "/rSoSAX85gvPNSWmWXcCaJ2eBPrp.jpg",
       "tmdbId": 1080935
@@ -898,26 +1002,46 @@
       "film": "Nomadland",
       "role": "Leading",
       "awards": {
-        "bafta": "Y",
-        "gg": "X",
         "oscar": "Y",
+        "gg": "X",
+        "bafta": "Y",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "gotham": "X",
+        "spirit": "X",
+        "astra": "X"
       },
       "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
       "tmdbId": 3910
+    },
+    {
+      "name": "Viola Davis",
+      "film": "Ma Rainey's Black Bottom",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "Y",
+        "critics": "X",
+        "lafca": "X",
+        "spirit": "X",
+        "astra": "X"
+      },
+      "profilePath": "/xDssw6vpYNRjsybvMPRE30e0dPN.jpg",
+      "tmdbId": 19492
     },
     {
       "name": "Vanessa Kirby",
       "film": "Pieces of a Woman",
       "role": "Leading",
       "awards": {
-        "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
         "sag": "X",
         "critics": "X",
-        "venice": "Y"
+        "venice": "Y",
+        "astra": "X"
       },
       "profilePath": "/5fbvIkZ02RdcXfZHUUk4cQ9kILK.jpg",
       "tmdbId": 556356
@@ -927,36 +1051,45 @@
       "film": "Borat Subsequent Moviefilm",
       "role": "Supporting",
       "awards": {
-        "bafta": "X",
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
         "sag": "X",
         "critics": "Y"
       }
     },
     {
-      "name": "Viola Davis",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "Y",
-        "critics": "X",
-        "lafca": "X"
-      },
-      "film": "Ma Rainey's Black Bottom",
-      "role": "Leading",
-      "profilePath": "/xDssw6vpYNRjsybvMPRE30e0dPN.jpg",
-      "tmdbId": 19492
-    },
-    {
       "name": "Andra Day",
+      "film": "The United States vs. Billie Holiday",
+      "role": "Leading",
       "awards": {
-        "gg": "Y",
         "oscar": "X",
+        "gg": "Y",
         "critics": "X"
       },
-      "film": "The United States vs. Billie Holiday",
-      "role": "Leading"
+      "profilePath": "/54zMzFLxL5AKnDR9AlsZLl9VhaG.jpg",
+      "tmdbId": 1658802
+    },
+    {
+      "name": "Yuh-jung Youn",
+      "film": "Minari",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "gotham": "X"
+      },
+      "profilePath": "/rSoSAX85gvPNSWmWXcCaJ2eBPrp.jpg",
+      "tmdbId": 1080935
+    },
+    {
+      "name": "Nicole Beharie",
+      "awards": {
+        "gotham": "Y",
+        "spirit": "X"
+      },
+      "film": "Miss Juneteenth",
+      "profilePath": "/hQOHfd116bho3wR9aWZyU7XcUs7.jpg",
+      "tmdbId": 87243
     },
     {
       "name": "Rosamund Pike",
@@ -979,96 +1112,53 @@
       "tmdbId": 1038
     },
     {
-      "name": "Yuh-jung Youn",
-      "film": "Minari",
-      "role": "Supporting",
+      "name": "Youn Yuh",
       "awards": {
-        "oscar": "Y"
+        "astra": "Y"
       },
-      "profilePath": "/rSoSAX85gvPNSWmWXcCaJ2eBPrp.jpg",
-      "tmdbId": 1080935
-    },
-    {
-      "name": "Nicole Beharie",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Miss Juneteenth as Turquoise Jones",
-      "profilePath": "/hQOHfd116bho3wR9aWZyU7XcUs7.jpg",
-      "tmdbId": 87243
-    },
-    {
-      "name": "Jessie Buckley",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "I'm Thinking of Ending Things as Young Woman",
-      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
-      "tmdbId": 1498158
-    },
-    {
-      "name": "Carrie Coon",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "The Nest as Allison O'Hara",
-      "profilePath": "/vWChiHhXFjZVKC6HbACyyRFmdW4.jpg",
-      "tmdbId": 1308445
-    },
-    {
-      "name": "Frances McDormand",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Nomadland as Fern",
-      "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
-      "tmdbId": 3910
-    },
-    {
-      "name": "Yuh-jung Youn",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Minari as Soon-ja",
+      "film": "jung",
       "profilePath": "/rSoSAX85gvPNSWmWXcCaJ2eBPrp.jpg",
       "tmdbId": 1080935
     },
     {
       "name": "Glenn Close",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
       "film": "Hillbilly Elegy",
       "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X",
+        "astra": "X"
+      },
       "profilePath": "/4VHZ1GfLwN7MUgApy0LCBzdDF9L.jpg",
       "tmdbId": 515
     },
     {
       "name": "Olivia Colman",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
       "film": "The Father",
       "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X",
+        "astra": "X"
+      },
       "profilePath": "/lawJUdbLb1YW0niaYjiVGR9IBG8.jpg",
       "tmdbId": 39187
     },
     {
       "name": "Amanda Seyfried",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "critics": "X",
-        "lafca": "X"
-      },
       "film": "Mank",
       "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X",
+        "lafca": "X",
+        "astra": "X"
+      },
       "profilePath": "/gtBUIpZ3dvLpOMIVORxE6sHSyZj.jpg",
       "tmdbId": 71070
     },
@@ -1082,6 +1172,69 @@
       "role": "Supporting",
       "profilePath": "/6ousX9QcimaM2tuaeBcqYEfBjKG.jpg",
       "tmdbId": 1756490
+    },
+    {
+      "name": "Sidney Flanigan",
+      "film": "Never Rarely Sometimes Always",
+      "role": "Leading",
+      "awards": {
+        "critics": "X",
+        "spirit": "X"
+      },
+      "profilePath": "/rIikG5VcRAWYKM0JXXc5aNI2km1.jpg",
+      "tmdbId": 2475406
+    },
+    {
+      "name": "Zendaya",
+      "film": "Malcolm & Marie",
+      "role": "Leading",
+      "awards": {
+        "critics": "X",
+        "astra": "X"
+      },
+      "profilePath": "/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg",
+      "tmdbId": 505710
+    },
+    {
+      "name": "Ellen Burstyn",
+      "film": "Pieces of a Woman",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X",
+        "astra": "X"
+      },
+      "profilePath": "/uEHZoAtCnGCXvQDHe3s3DWW2G1c.jpg",
+      "tmdbId": 9560
+    },
+    {
+      "name": "Kate Hudson",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Music",
+      "role": "Leading",
+      "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
+      "tmdbId": 11661
+    },
+    {
+      "name": "Michelle Pfeiffer",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "French Exit",
+      "role": "Leading",
+      "profilePath": "/oGUmQBU87QXAsnaGleYaAjAXSlj.jpg",
+      "tmdbId": 1160
+    },
+    {
+      "name": "Anya Taylor-Joy",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Emma",
+      "role": "Leading",
+      "profilePath": "/qYNofOjlRke2MlJVihmJmEdQI4v.jpg",
+      "tmdbId": 1397778
     },
     {
       "name": "Alfre Woodard",
@@ -1163,36 +1316,6 @@
       "tmdbId": 1362813
     },
     {
-      "name": "Kate Hudson",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "Music",
-      "role": "Leading",
-      "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
-      "tmdbId": 11661
-    },
-    {
-      "name": "Michelle Pfeiffer",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "French Exit",
-      "role": "Leading",
-      "profilePath": "/oGUmQBU87QXAsnaGleYaAjAXSlj.jpg",
-      "tmdbId": 1160
-    },
-    {
-      "name": "Anya Taylor-Joy",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "Emma",
-      "role": "Leading",
-      "profilePath": "/qYNofOjlRke2MlJVihmJmEdQI4v.jpg",
-      "tmdbId": 1397778
-    },
-    {
       "name": "Amy Adams",
       "film": "Hillbilly Elegy",
       "role": "Leading",
@@ -1203,34 +1326,76 @@
       "tmdbId": 9273
     },
     {
-      "name": "Sidney Flanigan",
+      "name": "Jessie Buckley",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "I'm Thinking of Ending Things",
+      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
+      "tmdbId": 1498158
+    },
+    {
+      "name": "Carrie Coon",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "The Nest",
+      "profilePath": "/vWChiHhXFjZVKC6HbACyyRFmdW4.jpg",
+      "tmdbId": 1308445
+    },
+    {
+      "name": "Julia Garner",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Assistant",
+      "profilePath": "/ud1RXbvW70J89iqeic7no8olxvb.jpg",
+      "tmdbId": 936970
+    },
+    {
+      "name": "Alexis Chikaeze",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Miss Juneteenth",
+      "profilePath": "/4hPLayxTfEFO1ahX0wO9pE9oC5o.jpg",
+      "tmdbId": 2475609
+    },
+    {
+      "name": "Yeri Han",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Minari",
+      "profilePath": "/ukEY6AV2EjeGDjMayDj5rpo8pHw.jpg",
+      "tmdbId": 1057068
+    },
+    {
+      "name": "Valerie Mahaffey",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "French Exit",
+      "profilePath": "/d4Oc12PuuhTevEGjKEhs95XrVIl.jpg",
+      "tmdbId": 99351
+    },
+    {
+      "name": "Talia Ryder",
+      "awards": {
+        "spirit": "X"
+      },
       "film": "Never Rarely Sometimes Always",
-      "role": "Leading",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/rIikG5VcRAWYKM0JXXc5aNI2km1.jpg",
-      "tmdbId": 2475406
+      "profilePath": "/hvXlIhrMhz3bBoqulD40LT1Xctm.jpg",
+      "tmdbId": 2475409
     },
     {
-      "name": "Zendaya",
-      "film": "Malcolm & Marie",
-      "role": "Leading",
+      "name": "Elisabeth Moss",
       "awards": {
-        "critics": "X"
+        "astra": "X"
       },
-      "profilePath": "/3WdOloHpjtjL96uVOhFRRCcYSwq.jpg",
-      "tmdbId": 505710
-    },
-    {
-      "name": "Ellen Burstyn",
-      "film": "Pieces of a Woman",
-      "role": "Supporting",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/uEHZoAtCnGCXvQDHe3s3DWW2G1c.jpg",
-      "tmdbId": 9560
+      "film": "The Invisible Man",
+      "profilePath": "/vZDe22EtLtcHvPr28l4ZM0b7qjG.jpg",
+      "tmdbId": 32798
     }
   ]
 }

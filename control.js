@@ -6,7 +6,7 @@
 const FIREBASE_URL = 'https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app';
 const CURRENT_YEAR = '2025_2026';
 
-const AWARDS_ORDER = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham'];
+const AWARDS_ORDER = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit'];
 const AWARDS_NAMES = {
     'oscar': 'Oscar',
     'gg': 'Golden Globes',
@@ -21,7 +21,9 @@ const AWARDS_NAMES = {
     'lafca': 'LAFCA',
     'wga': 'WGA',
     'adg': 'ADG',
-    'gotham': 'Gotham'
+    'gotham': 'Gotham',
+    'astra': 'Astra',
+    'spirit': 'Spirit'
 };
 
 const CATEGORIES = ['best-film', 'best-director', 'best-actor', 'best-actress'];

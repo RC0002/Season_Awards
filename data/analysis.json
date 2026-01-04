@@ -1,5 +1,5 @@
 {
-  "generated": "2025-12-31T10:19:56.516926",
+  "generated": "2026-01-04T11:28:15.846052",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -84,6 +84,18 @@
       "best-director": 5,
       "best-actor": 10,
       "best-actress": 10
+    },
+    "astra": {
+      "best-film": 12,
+      "best-director": 6,
+      "best-actor": 24,
+      "best-actress": 24
+    },
+    "spirit": {
+      "best-film": 5,
+      "best-director": 5,
+      "best-actor": 20,
+      "best-actress": 0
     }
   },
   "years": {
@@ -429,7 +441,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -449,6 +461,58 @@
           "nominations": 0,
           "winners": 0,
           "status": "pending",
+          "expected": 10
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 11,
+          "winners": 2,
+          "status": "ok",
+          "expected": 11
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
           "expected": 10
         }
       }
@@ -795,7 +859,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -807,15 +871,67 @@
         },
         "best-actor": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": "actor+actress=10"
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 11,
+          "winners": 2,
+          "status": "ok",
+          "expected": 11
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         }
       }
     },
@@ -1161,7 +1277,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -1173,15 +1289,67 @@
         },
         "best-actor": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": "actor+actress=10"
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         }
       }
     },
@@ -1527,7 +1695,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -1539,15 +1707,67 @@
         },
         "best-actor": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "error",
           "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 6,
-          "winners": 6,
+          "winners": 1,
           "status": "error",
           "expected": "actor+actress=10"
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 6,
+          "winners": 1,
+          "status": "ok",
+          "expected": 6
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         }
       }
     },
@@ -1893,7 +2113,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -1905,15 +2125,67 @@
         },
         "best-actor": {
           "nominations": 5,
-          "winners": 5,
-          "status": "ok",
-          "expected": "actor+actress=10"
+          "winners": 1,
+          "status": "error",
+          "expected": "actor+actress=11"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
+          "status": "error",
+          "expected": "actor+actress=11"
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 0
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         }
       }
     },
@@ -2259,7 +2531,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -2271,15 +2543,67 @@
         },
         "best-actor": {
           "nominations": 6,
-          "winners": 6,
+          "winners": 1,
           "status": "error",
           "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "error",
           "expected": "actor+actress=10"
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 6,
+          "winners": 1,
+          "status": "ok",
+          "expected": 6
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 11,
+          "winners": 2,
+          "status": "ok",
+          "expected": 11
         }
       }
     },
@@ -2625,7 +2949,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -2637,15 +2961,67 @@
         },
         "best-actor": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": "actor+actress=10"
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 11,
+          "winners": 2,
+          "status": "ok",
+          "expected": 11
         }
       }
     },
@@ -2991,7 +3367,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -3003,15 +3379,67 @@
         },
         "best-actor": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": "actor+actress=10"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": "actor+actress=10"
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 10,
+          "winners": 1,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 11,
+          "winners": 2,
+          "status": "ok",
+          "expected": 11
         }
       }
     },
@@ -3357,7 +3785,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -3369,15 +3797,67 @@
         },
         "best-actor": {
           "nominations": 5,
-          "winners": 5,
-          "status": "ok",
-          "expected": "actor+actress=10"
+          "winners": 1,
+          "status": "error",
+          "expected": "actor+actress=17"
         },
         "best-actress": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
+          "status": "error",
+          "expected": "actor+actress=17"
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 10,
+          "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 10
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 11,
+          "winners": 2,
+          "status": "ok",
+          "expected": 11
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 11,
+          "winners": 2,
+          "status": "ok",
+          "expected": 11
         }
       }
     },
@@ -3723,7 +4203,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -3735,15 +4215,67 @@
         },
         "best-actor": {
           "nominations": 9,
-          "winners": 9,
+          "winners": 2,
           "status": "error",
           "expected": "actor+actress=20"
         },
         "best-actress": {
           "nominations": 8,
-          "winners": 8,
+          "winners": 1,
           "status": "error",
           "expected": "actor+actress=20"
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 10,
+          "winners": 1,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-director": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         }
       }
     },
@@ -4111,6 +4643,58 @@
           "status": "ok",
           "expected": "actor+actress=20"
         }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 10,
+          "winners": 1,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-director": {
+          "nominations": 10,
+          "winners": 1,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actor": {
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 11,
+          "winners": 2,
+          "status": "ok",
+          "expected": 11
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 20,
+          "winners": 2,
+          "status": "ok",
+          "expected": 20
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
       }
     },
     "2023_2024": {
@@ -4455,7 +5039,7 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -4467,15 +5051,67 @@
         },
         "best-actor": {
           "nominations": 8,
-          "winners": 8,
+          "winners": 2,
           "status": "ok",
           "expected": "actor+actress=20"
         },
         "best-actress": {
           "nominations": 12,
-          "winners": 12,
+          "winners": 0,
           "status": "ok",
           "expected": "actor+actress=20"
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 10,
+          "winners": 1,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-director": {
+          "nominations": 10,
+          "winners": 1,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-actor": {
+          "nominations": 18,
+          "winners": 3,
+          "status": "ok",
+          "expected": 18
+        },
+        "best-actress": {
+          "nominations": 18,
+          "winners": 4,
+          "status": "ok",
+          "expected": 18
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 6,
+          "winners": 1,
+          "status": "ok",
+          "expected": 6
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 20,
+          "winners": 2,
+          "status": "ok",
+          "expected": 20
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
         }
       }
     },
@@ -4821,27 +5457,79 @@
       "gotham": {
         "best-film": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
         "best-director": {
           "nominations": 5,
-          "winners": 5,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
         "best-actor": {
           "nominations": 11,
-          "winners": 11,
+          "winners": 2,
           "status": "ok",
           "expected": "actor+actress=20"
         },
         "best-actress": {
           "nominations": 9,
-          "winners": 9,
+          "winners": 0,
           "status": "ok",
           "expected": "actor+actress=20"
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 10,
+          "winners": 1,
+          "status": "ok",
+          "expected": 10
+        },
+        "best-director": {
+          "nominations": 6,
+          "winners": 1,
+          "status": "ok",
+          "expected": 6
+        },
+        "best-actor": {
+          "nominations": 12,
+          "winners": 2,
+          "status": "ok",
+          "expected": 12
+        },
+        "best-actress": {
+          "nominations": 12,
+          "winners": 3,
+          "status": "ok",
+          "expected": 12
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 20,
+          "winners": 2,
+          "status": "ok",
+          "expected": 20
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
         }
       }
     },
@@ -5208,6 +5896,58 @@
           "winners": 1,
           "status": "ok",
           "expected": "actor+actress=20"
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 12,
+          "winners": 0,
+          "status": "ok",
+          "expected": 12
+        },
+        "best-director": {
+          "nominations": 6,
+          "winners": 0,
+          "status": "ok",
+          "expected": 6
+        },
+        "best-actor": {
+          "nominations": 24,
+          "winners": 0,
+          "status": "ok",
+          "expected": 24
+        },
+        "best-actress": {
+          "nominations": 24,
+          "winners": 0,
+          "status": "ok",
+          "expected": 24
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 0,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 5,
+          "winners": 0,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 20,
+          "winners": 0,
+          "status": "ok",
+          "expected": 20
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
         }
       }
     }

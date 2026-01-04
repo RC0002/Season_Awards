@@ -69,6 +69,10 @@ HISTORICAL_AVERAGES = {
     'adg': {'best-film': 15, 'best-director': 0, 'best-actor': 0, 'best-actress': 0},
     # Gotham: 10 films, 5 directors, 20 performers split by gender (10 actor + 10 actress)
     'gotham': {'best-film': 5, 'best-director': 5, 'best-actor': 10, 'best-actress': 10},
+    # Astra (formerly HCA): 12 films (drama+comedy), 6 directors, 24 actors (lead+supp drama+comedy), 24 actresses
+    'astra': {'best-film': 12, 'best-director': 6, 'best-actor': 24, 'best-actress': 24},
+    # Spirit: 5 films, 5 directors, 20 performers (10 lead + 10 supporting, gender neutral)
+    'spirit': {'best-film': 5, 'best-director': 5, 'best-actor': 20, 'best-actress': 0},
 }
 
 # Year-specific overrides for historical rule changes
@@ -160,6 +164,34 @@ HISTORICAL_EXPECTED_OVERRIDES = {
         # Best Director was introduced at Gotham 2024 ceremony (season 2024/2025 = year 2025)
         # So for years 2013-2024, expected is 0 (no Best Director category existed)
         'best-director': {(2013, 2024): 0},  # No Best Director category before season 2024/2025
+    },
+    'astra': {
+        # Astra Film Awards (formerly HCA) - Wikipedia verified counts
+        # 1st/2nd HCA: Wikipedia pages don't exist (404)
+        # 3rd HCA (2019-20): 10F, 0D, 10A (5+5), 10As (5+5) - no Intl categories
+        # 4th HCA (2020-21): 10F, 0D, 10A (5+5), 11As (6+5)
+        # 5th HCA (2021-22): 10F, 10D, 10A (5+5), 10As (5+5)
+        # 6th HCA (2022-23): 10F, 10D, 10A (5+5), 11As (5+6)
+        # 7th Astra (2023-24): 10F, 10D, 18A (6+6+6intl), 18As (6+6+6intl)
+        # 8th Astra (2024-25): 10F, 6D, 12A (6+6), 12As (6+6)
+        # 9th Astra (2025-26): 12F, 6D, 24A (12+12), 24As (12+12)
+        'best-film': {(2013, 2019): 0, (2020, 2025): 10, (2026, 2026): 12},
+        'best-director': {(2013, 2021): 0, (2022, 2024): 10, (2025, 2026): 6},
+        'best-actor': {(2013, 2019): 0, (2020, 2023): 10, (2024, 2024): 18, (2025, 2025): 12, (2026, 2026): 24},
+        'best-actress': {(2013, 2019): 0, (2020, 2020): 10, (2021, 2021): 11, (2022, 2022): 10, (2023, 2023): 11, (2024, 2024): 18, (2025, 2025): 12, (2026, 2026): 24},
+    },
+    'spirit': {
+        # Spirit Awards - Wikipedia verified counts
+        # Pre-2022 (28th-37th): gendered categories (Male/Female Lead + Supporting)
+        # 2022+ (38th+): gender-neutral (Lead Performance + Supporting Performance)
+        # Film: mostly 5, but 39th (2024) has 6
+        'best-film': {(2024, 2024): 6},
+        # Director: mostly 5, but 31st (2016) and 33rd (2018) have 6
+        'best-director': {(2016, 2016): 6, (2018, 2018): 6},
+        # Actor: 10 for gendered years; 11 for 28th/29th; 20 for gender-neutral (2023+)
+        'best-actor': {(2013, 2014): 11, (2015, 2022): 10, (2023, 2099): 20},
+        # Actress: 10 for most gendered years; 11 for 33rd-36th; 0 for gender-neutral (2023+)
+        'best-actress': {(2013, 2017): 10, (2018, 2021): 11, (2022, 2022): 10, (2023, 2099): 0},
     },
 }
 
@@ -338,7 +370,7 @@ class ScrapeReport:
         
         # Status per award
         print(f"\n  📡 AWARD STATUS:")
-        for award_key in ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham']:
+        for award_key in ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit']:
             log = self.logs.get(award_key)
             if log:
                 total_entries = sum(log.counts.values())
@@ -402,7 +434,7 @@ def scrape_award_with_logging(award_key, year, report):
         
         # ==== CALL APPROPRIATE SCRAPER ====
         from master_scraper import (scrape_award, scrape_afi, scrape_nbr, 
-                                    scrape_venice, scrape_dga, scrape_pga, scrape_lafca, scrape_wga, scrape_adg, scrape_gotham)
+                                    scrape_venice, scrape_dga, scrape_pga, scrape_lafca, scrape_wga, scrape_adg, scrape_gotham, scrape_astra, scrape_spirit)
         
         result = None
         
@@ -433,6 +465,12 @@ def scrape_award_with_logging(award_key, year, report):
         elif award_key == 'gotham':
             result = scrape_gotham(year)
             log.log(f"Scraped Gotham Independent Film Awards")
+        elif award_key == 'astra':
+            result = scrape_astra(year)
+            log.log(f"Scraped Astra/HCA Film Awards")
+        elif award_key == 'spirit':
+            result = scrape_spirit(year)
+            log.log(f"Scraped Independent Spirit Awards")
         else:
             result = scrape_award(award_key, year)
             log.log(f"Scraped Wikipedia awards table")
@@ -479,7 +517,7 @@ def scrape_year_enhanced(year, awards=None, parallel=True):
     Enhanced scrape_year with detailed logging and report generation.
     """
     if awards is None:
-        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham']
+        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit']
     
     report = ScrapeReport(year)
     all_results = {}

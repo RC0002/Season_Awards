@@ -8,11 +8,12 @@
         "oscar": "X",
         "afi": "Y",
         "critics": "X",
-        "nbr": "Y",
-        "lafca": "Y",
         "pga": "X",
+        "lafca": "Y",
         "wga": "Y",
-        "gotham": "Y"
+        "nbr": "Y",
+        "gotham": "Y",
+        "spirit": "X"
       },
       "posterPath": "/mZ4gBdfkhP9tvLH1DO4m4HYtiyi.jpg",
       "tmdbId": 398818
@@ -40,11 +41,12 @@
         "afi": "Y",
         "sag": "X",
         "critics": "X",
-        "nbr": "Y",
         "pga": "X",
         "wga": "Y",
-        "adg": "X",
-        "gotham": "Y"
+        "nbr": "Y",
+        "gotham": "X",
+        "spirit": "Y",
+        "adg": "X"
       },
       "genre": "Comedy",
       "posterPath": "/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg",
@@ -73,26 +75,15 @@
         "afi": "Y",
         "sag": "X",
         "critics": "X",
-        "nbr": "Y",
         "pga": "X",
         "wga": "X",
+        "nbr": "Y",
+        "spirit": "X",
         "adg": "X"
       },
       "genre": "Comedy",
       "posterPath": "/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg",
       "tmdbId": 391713
-    },
-    {
-      "name": "The Florida Project",
-      "awards": {
-        "afi": "Y",
-        "critics": "X",
-        "nbr": "Y",
-        "lafca": "X",
-        "gotham": "Y"
-      },
-      "posterPath": "/bnSTP1PY2fDyat0eUa4QouuGV7F.jpg",
-      "tmdbId": 394117
     },
     {
       "name": "Dunkirk",
@@ -102,8 +93,8 @@
         "oscar": "X",
         "afi": "Y",
         "critics": "X",
-        "nbr": "Y",
         "pga": "X",
+        "nbr": "Y",
         "adg": "X"
       },
       "posterPath": "/b4Oe15CGLL61Ped0RAS9JpqdmCt.jpg",
@@ -116,8 +107,8 @@
         "oscar": "X",
         "afi": "Y",
         "critics": "X",
-        "nbr": "Y",
         "pga": "X",
+        "nbr": "Y",
         "adg": "X"
       },
       "genre": "Drama",
@@ -125,12 +116,26 @@
       "tmdbId": 446354
     },
     {
+      "name": "The Florida Project",
+      "awards": {
+        "afi": "Y",
+        "critics": "X",
+        "lafca": "X",
+        "nbr": "Y",
+        "gotham": "X",
+        "spirit": "X"
+      },
+      "posterPath": "/bnSTP1PY2fDyat0eUa4QouuGV7F.jpg",
+      "tmdbId": 394117
+    },
+    {
       "name": "Logan",
       "awards": {
-        "nbr": "Y",
         "wga": "X",
+        "nbr": "Y",
         "adg": "Y"
       },
+      "screenplay_type": "adapted",
       "posterPath": "/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg",
       "tmdbId": 263115
     },
@@ -147,23 +152,11 @@
       "tmdbId": 416477
     },
     {
-      "name": "I, Tonya",
-      "awards": {
-        "gg": "X",
-        "pga": "X",
-        "wga": "X",
-        "gotham": "Y"
-      },
-      "genre": "Comedy",
-      "posterPath": "/6gNXwSHxaksR1PjVZRqNapmkgj3.jpg",
-      "tmdbId": 389015
-    },
-    {
       "name": "The Disaster Artist",
       "awards": {
         "gg": "X",
-        "nbr": "Y",
-        "wga": "X"
+        "wga": "X",
+        "nbr": "Y"
       },
       "genre": "Comedy",
       "posterPath": "/2HuLGiyH0TPYxnCvYHAxc8K738o.jpg",
@@ -213,28 +206,20 @@
       "tmdbId": 339403
     },
     {
-      "name": "Blade Runner 2049",
-      "awards": {
-        "adg": "Y"
-      },
-      "posterPath": "/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
-      "tmdbId": 335984
-    },
-    {
-      "name": "Good Time",
-      "awards": {
-        "gotham": "Y"
-      },
-      "posterPath": "/yE1c9hj5Hf8a9KplAdRdhADqUro.jpg",
-      "tmdbId": 429200
-    },
-    {
       "name": "La forma dell'acqua - The Shape of Water",
       "awards": {
         "venice": "Y"
       },
       "posterPath": "/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
       "tmdbId": 399055
+    },
+    {
+      "name": "Blade Runner 2049",
+      "awards": {
+        "adg": "Y"
+      },
+      "posterPath": "/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+      "tmdbId": 335984
     },
     {
       "name": "Darkest Hour",
@@ -246,6 +231,18 @@
       },
       "posterPath": "/xa6G3aKlysQeVg9wOb0dRcIGlWu.jpg",
       "tmdbId": 399404
+    },
+    {
+      "name": "I, Tonya",
+      "awards": {
+        "gg": "X",
+        "pga": "X",
+        "wga": "X",
+        "gotham": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/6gNXwSHxaksR1PjVZRqNapmkgj3.jpg",
+      "tmdbId": 389015
     },
     {
       "name": "Mudbound",
@@ -273,6 +270,22 @@
       "genre": "Comedy",
       "posterPath": "/b9CeobiihCx1uG1tpw8hXmpi7nm.jpg",
       "tmdbId": 316029
+    },
+    {
+      "name": "Good Time",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/yE1c9hj5Hf8a9KplAdRdhADqUro.jpg",
+      "tmdbId": 429200
+    },
+    {
+      "name": "The Rider",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/cFsrA0Is5xode2INrPj1VJcQ18n.jpg",
+      "tmdbId": 453278
     },
     {
       "name": "Murder on the Orient Express",
@@ -322,6 +335,30 @@
       "tmdbId": 10828
     },
     {
+      "name": "Luca Guadagnino",
+      "film": "Call Me by Your Name",
+      "awards": {
+        "bafta": "X",
+        "critics": "X",
+        "lafca": "Y",
+        "spirit": "X"
+      },
+      "profilePath": "/lO2GD4s6fRloZLEhsZgBlhJQasE.jpg",
+      "tmdbId": 78160
+    },
+    {
+      "name": "Jordan Peele",
+      "film": "Get Out",
+      "awards": {
+        "oscar": "X",
+        "critics": "X",
+        "dga": "X",
+        "spirit": "Y"
+      },
+      "profilePath": "/kFUKn5g3ebpyZ3CSZZZo2HFWRNQ.jpg",
+      "tmdbId": 291263
+    },
+    {
       "name": "Greta Gerwig",
       "film": "Lady Bird",
       "awards": {
@@ -332,17 +369,6 @@
       },
       "profilePath": "/6MwQ2GstYr0wnhp1eTOAbVMNBGN.jpg",
       "tmdbId": 45400
-    },
-    {
-      "name": "Luca Guadagnino",
-      "film": "Call Me by Your Name",
-      "awards": {
-        "bafta": "X",
-        "critics": "X",
-        "lafca": "Y"
-      },
-      "profilePath": "/lO2GD4s6fRloZLEhsZgBlhJQasE.jpg",
-      "tmdbId": 78160
     },
     {
       "name": "Guillermo Del Toro",
@@ -386,17 +412,6 @@
       "tmdbId": 54472
     },
     {
-      "name": "Jordan Peele",
-      "film": "Get Out",
-      "awards": {
-        "oscar": "X",
-        "critics": "X",
-        "dga": "X"
-      },
-      "profilePath": "/kFUKn5g3ebpyZ3CSZZZo2HFWRNQ.jpg",
-      "tmdbId": 291263
-    },
-    {
       "name": "Steven Spielberg",
       "awards": {
         "gg": "X",
@@ -432,6 +447,42 @@
       },
       "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
       "tmdbId": 4762
+    },
+    {
+      "name": "Sean Baker",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Florida Project",
+      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
+      "tmdbId": 118415
+    },
+    {
+      "name": "Jonas Carpignano",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "A Ciambra",
+      "profilePath": "/s08QVJbYp6sc20mNXWmLeyuk6LP.jpg",
+      "tmdbId": 1456982
+    },
+    {
+      "name": "Safdie brothers",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Good Time",
+      "profilePath": "/9tp4PLNyYPNfCJOWBXPPalWIpnq.jpg",
+      "tmdbId": 227564
+    },
+    {
+      "name": "Chloé Zhao",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Rider",
+      "profilePath": "/r8DmTdOqHbDUydCOVb277rncPTK.jpg",
+      "tmdbId": 1395183
     }
   ],
   "best-actor": [
@@ -445,7 +496,8 @@
         "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
-        "lafca": "X"
+        "lafca": "X",
+        "spirit": "Y"
       },
       "profilePath": "/ruaUgtATy70VygkqtfHPwpJ0Gcj.jpg",
       "tmdbId": 6807
@@ -474,10 +526,26 @@
         "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "lafca": "Y"
+        "lafca": "Y",
+        "spirit": "Y"
       },
       "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
       "tmdbId": 1190668
+    },
+    {
+      "name": "James Franco",
+      "awards": {
+        "gg": "Y",
+        "sag": "X",
+        "critics": "X",
+        "lafca": "X",
+        "gotham": "Y",
+        "spirit": "X"
+      },
+      "film": "The Disaster Artist",
+      "role": "Leading",
+      "profilePath": "/bjmAntHGiibLZixH8nTNVBzaFQn.jpg",
+      "tmdbId": 17051
     },
     {
       "name": "Willem Dafoe",
@@ -489,23 +557,11 @@
         "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "lafca": "Y"
+        "lafca": "Y",
+        "gotham": "X"
       },
       "profilePath": "/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg",
       "tmdbId": 5293
-    },
-    {
-      "name": "James Franco",
-      "awards": {
-        "gg": "Y",
-        "sag": "X",
-        "critics": "X",
-        "lafca": "X"
-      },
-      "film": "The Disaster Artist",
-      "role": "Leading",
-      "profilePath": "/bjmAntHGiibLZixH8nTNVBzaFQn.jpg",
-      "tmdbId": 17051
     },
     {
       "name": "Tom Hanks",
@@ -518,58 +574,6 @@
       "role": "Leading",
       "profilePath": "/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
       "tmdbId": 31
-    },
-    {
-      "name": "James Franco",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "The Disaster Artist as Tommy Wiseau",
-      "profilePath": "/bjmAntHGiibLZixH8nTNVBzaFQn.jpg",
-      "tmdbId": 17051
-    },
-    {
-      "name": "Willem Dafoe",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "The Florida Project as Bobby Hicks",
-      "profilePath": "/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg",
-      "tmdbId": 5293
-    },
-    {
-      "name": "Daniel Kaluuya",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Get Out as Chris Washington",
-      "profilePath": "/jj2kZqJobjom36wlhlYhc38nTwN.jpg",
-      "tmdbId": 206919
-    },
-    {
-      "name": "Robert Pattinson",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Good Time as Constantine \"Connie\" Nikas",
-      "profilePath": "/8A4PS5iG7GWEAVFftyqMZKl3qcr.jpg",
-      "tmdbId": 11288
-    },
-    {
-      "name": "Adam Sandler",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "The Meyerowitz Stories as Danny Meyerowitz",
-      "profilePath": "/gLkLCsQdwDDPabRhKPB25nGtKwS.jpg",
-      "tmdbId": 19292
-    },
-    {
-      "name": "Harry Dean Stanton as Lucky",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Lucky"
     },
     {
       "name": "Kamil al-Basha",
@@ -587,7 +591,9 @@
         "gg": "X",
         "oscar": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "gotham": "X",
+        "spirit": "X"
       },
       "profilePath": "/jj2kZqJobjom36wlhlYhc38nTwN.jpg",
       "tmdbId": 206919
@@ -655,6 +661,18 @@
       "tmdbId": 5292
     },
     {
+      "name": "Armie Hammer",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "spirit": "X"
+      },
+      "film": "Call Me by Your Name",
+      "role": "Leading",
+      "profilePath": "/4Z5nLW2biRjqstDMKqSaeQYAesK.jpg",
+      "tmdbId": 53807
+    },
+    {
       "name": "Steve Carell",
       "awards": {
         "gg": "X",
@@ -666,15 +684,14 @@
       "tmdbId": 4495
     },
     {
-      "name": "Armie Hammer",
+      "name": "Robert Pattinson",
       "awards": {
-        "gg": "X",
-        "critics": "X"
+        "gotham": "X",
+        "spirit": "X"
       },
-      "film": "Call Me by Your Name",
-      "role": "Leading",
-      "profilePath": "/4Z5nLW2biRjqstDMKqSaeQYAesK.jpg",
-      "tmdbId": 53807
+      "film": "Good Time",
+      "profilePath": "/8A4PS5iG7GWEAVFftyqMZKl3qcr.jpg",
+      "tmdbId": 11288
     },
     {
       "name": "Jamie Bell",
@@ -713,7 +730,7 @@
       },
       "film": "The Greatest Showman",
       "role": "Leading",
-      "profilePath": "/oX6CpXmnXCHLyqsa4NEed1DZAKx.jpg",
+      "profilePath": "/4Xujtewxqt6aU0Y81tsS9gkjizk.jpg",
       "tmdbId": 6968
     },
     {
@@ -744,6 +761,58 @@
       },
       "profilePath": "/aYB3SQm3h6ZyAdlbGyiNfakjx56.jpg",
       "tmdbId": 72873
+    },
+    {
+      "name": "Adam Sandler",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "The Meyerowitz Stories",
+      "profilePath": "/gLkLCsQdwDDPabRhKPB25nGtKwS.jpg",
+      "tmdbId": 19292
+    },
+    {
+      "name": "Harry Dean Stanton as Lucky",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Lucky"
+    },
+    {
+      "name": "Harris Dickinson",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Beach Rats",
+      "profilePath": "/pqqnYWWHa3Va80EXofXrVlRqIDM.jpg",
+      "tmdbId": 1716493
+    },
+    {
+      "name": "Nnamdi Asomugha",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Crown Heights",
+      "profilePath": "/2JrUJzVMsHarxr7HcQGlGSgRK0L.jpg",
+      "tmdbId": 213058
+    },
+    {
+      "name": "Barry Keoghan",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Killing of a Sacred Deer",
+      "profilePath": "/15xPjrzSbtXlbQUhmLpQUil4tCN.jpg",
+      "tmdbId": 1290466
+    },
+    {
+      "name": "Benny Safdie",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Good Time",
+      "profilePath": "/9tp4PLNyYPNfCJOWBXPPalWIpnq.jpg",
+      "tmdbId": 227564
     }
   ],
   "best-actress": [
@@ -757,7 +826,8 @@
         "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
-        "lafca": "X"
+        "lafca": "X",
+        "spirit": "Y"
       },
       "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
       "tmdbId": 3910
@@ -771,10 +841,43 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "Y",
+        "spirit": "Y"
       },
       "profilePath": "/hpBKWV1jjoXQbr1s0iUZTSvw582.jpg",
       "tmdbId": 19
+    },
+    {
+      "name": "Saoirse Ronan",
+      "film": "Lady Bird",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "Y",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X",
+        "gotham": "Y",
+        "spirit": "X"
+      },
+      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
+      "tmdbId": 36592
+    },
+    {
+      "name": "Laurie Metcalf",
+      "film": "Lady Bird",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X",
+        "lafca": "Y",
+        "spirit": "X"
+      },
+      "profilePath": "/ypAppMZ1Q99cBjtX4BAnZmWjVXe.jpg",
+      "tmdbId": 12133
     },
     {
       "name": "Sally Hawkins",
@@ -792,35 +895,6 @@
       "tmdbId": 39658
     },
     {
-      "name": "Laurie Metcalf",
-      "film": "Lady Bird",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X",
-        "lafca": "Y"
-      },
-      "profilePath": "/ypAppMZ1Q99cBjtX4BAnZmWjVXe.jpg",
-      "tmdbId": 12133
-    },
-    {
-      "name": "Saoirse Ronan",
-      "film": "Lady Bird",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "Y",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
-      "tmdbId": 36592
-    },
-    {
       "name": "Meryl Streep",
       "awards": {
         "gg": "X",
@@ -834,55 +908,12 @@
       "tmdbId": 5064
     },
     {
-      "name": "Saoirse Ronan",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Lady Bird as Christine \"Lady Bird\" McPherson",
-      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
-      "tmdbId": 36592
-    },
-    {
-      "name": "Melanie Lynskey",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "I Don't Feel at Home in This World Anymore as Ruth Kimke",
-      "profilePath": "/4raNiD71caQXKKqIBZS1FDsvtkd.jpg",
-      "tmdbId": 15091
-    },
-    {
-      "name": "Haley Lu Richardson",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Columbus as Casey",
-      "profilePath": "/iTNWzU5FlKT8s0CBZQyMIvebBPh.jpg",
-      "tmdbId": 1286328
-    },
-    {
-      "name": "Margot Robbie",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "I, Tonya as Tonya Harding",
-      "profilePath": "/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg",
-      "tmdbId": 234352
-    },
-    {
-      "name": "Lois Smith",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Marjorie Prime as Marjorie Lancaster"
-    },
-    {
       "name": "Charlotte Rampling",
       "awards": {
         "venice": "Y"
       },
       "film": "Hannah",
-      "profilePath": "/7fhg5FCcl0VfYERP5D0unpybqgx.jpg",
+      "profilePath": "/Htvl9mN6mlf2a18RAFzNXF3RiG.jpg",
       "tmdbId": 44079
     },
     {
@@ -894,7 +925,9 @@
         "gg": "X",
         "oscar": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "gotham": "X",
+        "spirit": "X"
       },
       "profilePath": "/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg",
       "tmdbId": 234352
@@ -939,6 +972,18 @@
       "tmdbId": 1360317
     },
     {
+      "name": "Holly Hunter",
+      "awards": {
+        "sag": "X",
+        "critics": "X",
+        "spirit": "X"
+      },
+      "film": "The Big Sick",
+      "role": "Supporting",
+      "profilePath": "/kC7KX03VAWvogOCuwKbMo4V6TuU.jpg",
+      "tmdbId": 18686
+    },
+    {
       "name": "Lesley Manville",
       "film": "Phantom Thread",
       "role": "Supporting",
@@ -972,15 +1017,12 @@
       "tmdbId": 5309
     },
     {
-      "name": "Holly Hunter",
+      "name": "Lois Smith",
       "awards": {
-        "sag": "X",
-        "critics": "X"
+        "gotham": "X",
+        "spirit": "X"
       },
-      "film": "The Big Sick",
-      "role": "Supporting",
-      "profilePath": "/kC7KX03VAWvogOCuwKbMo4V6TuU.jpg",
-      "tmdbId": 18686
+      "film": "Marjorie Prime"
     },
     {
       "name": "Annette Bening",
@@ -1029,7 +1071,7 @@
       },
       "film": "Battle of the Sexes",
       "role": "Leading",
-      "profilePath": "/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg",
+      "profilePath": "/8NwSfyYWIIUE1cI9Xhz92b0w7WD.jpg",
       "tmdbId": 54693
     },
     {
@@ -1041,6 +1083,58 @@
       },
       "profilePath": "/pvAYqQD4LXavzDkBqCrC4IgVBur.jpg",
       "tmdbId": 1230868
+    },
+    {
+      "name": "Melanie Lynskey",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "I Don't Feel at Home in This World Anymore",
+      "profilePath": "/4raNiD71caQXKKqIBZS1FDsvtkd.jpg",
+      "tmdbId": 15091
+    },
+    {
+      "name": "Haley Lu Richardson",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Columbus",
+      "profilePath": "/iTNWzU5FlKT8s0CBZQyMIvebBPh.jpg",
+      "tmdbId": 1286328
+    },
+    {
+      "name": "Salma Hayek",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Beatriz at Dinner",
+      "profilePath": "/1qfYF7NGRObmeKR7IVXUFVIC0CN.jpg",
+      "tmdbId": 3136
+    },
+    {
+      "name": "Shinobu Terajima",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Oh Lucy!",
+      "profilePath": "/tOk9ggHemFL5FCvhfYeIkyS3Fk9.jpg",
+      "tmdbId": 83527
+    },
+    {
+      "name": "Regina Williams",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Life and Nothing More"
+    },
+    {
+      "name": "Taliah Lennice Webster",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Good Time",
+      "profilePath": "/7bbDLmF5kDKaPgp7DoVUv6F8rqa.jpg",
+      "tmdbId": 1823853
     }
   ]
 }

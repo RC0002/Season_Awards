@@ -52,7 +52,7 @@ const CONFIG = {
         { key: 'wga', label: 'WGA' },
         { key: 'adg', label: 'ADG' },
         { key: 'gotham', label: 'Gotham' },
-        { key: 'hca', label: 'HCA' },
+        { key: 'astra', label: 'Astra' },
         { key: 'spirit', label: 'Spirit' },
         { key: 'bifa', label: 'BIFA' },
         { key: 'annie', label: 'Annie' },
@@ -84,7 +84,7 @@ const CONFIG = {
         'wga': ['best-film'], // Film only (screenplay)
         'adg': ['best-film'],
         'gotham': 'all',
-        'hca': 'all',
+        'astra': 'all',
         'spirit': 'all',
         'bifa': 'all',
         'annie': ['best-film'],
@@ -114,7 +114,7 @@ const WHEEL_COOLDOWN = 600;
 // ============ CACHE MANAGER ============
 const CacheManager = {
     TTL: 1000 * 60 * 60 * 24, // 24 hours
-    PREFIX: 'sa_cache_',
+    PREFIX: 'sa_cache_v3_',
 
     // Generate a simple key from the URL
     getKey(url) {
@@ -744,7 +744,7 @@ async function loadScrapedData(year = null) {
 
     try {
         showLoading(true);
-        const response = await fetch(filename);
+        const response = await fetch(`${filename}?t=${new Date().getTime()}`);
 
         if (!response.ok) {
             console.warn(`⚠️ No scraped data for ${targetYear}`);

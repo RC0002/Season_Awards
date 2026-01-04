@@ -3,13 +3,13 @@
     {
       "name": "Oppenheimer",
       "awards": {
+        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
-        "oscar": "Y",
-        "sag": "Y",
         "afi": "Y",
-        "nbr": "Y",
+        "sag": "Y",
         "critics": "Y",
+        "nbr": "Y",
         "pga": "Y",
         "wga": "X",
         "adg": "Y",
@@ -19,14 +19,30 @@
       "tmdbId": 872585
     },
     {
+      "name": "Past Lives",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "afi": "Y",
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X",
+        "wga": "X",
+        "spirit": "Y",
+        "gotham": "Y"
+      },
+      "posterPath": "/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+      "tmdbId": 666277
+    },
+    {
       "name": "Poor Things",
       "awards": {
+        "oscar": "X",
         "gg": "Y",
         "bafta": "X",
-        "oscar": "X",
         "afi": "Y",
-        "nbr": "Y",
         "critics": "X",
+        "nbr": "Y",
         "pga": "X",
         "adg": "Y"
       },
@@ -34,29 +50,14 @@
       "tmdbId": 792307
     },
     {
-      "name": "Past Lives",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "afi": "Y",
-        "nbr": "Y",
-        "critics": "X",
-        "pga": "X",
-        "wga": "X",
-        "gotham": "Y"
-      },
-      "posterPath": "/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
-      "tmdbId": 666277
-    },
-    {
       "name": "The Holdovers",
       "awards": {
+        "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "oscar": "X",
         "afi": "Y",
-        "nbr": "Y",
         "critics": "X",
+        "nbr": "Y",
         "pga": "X",
         "wga": "Y"
       },
@@ -66,13 +67,13 @@
     {
       "name": "Killers of the Flower Moon",
       "awards": {
+        "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "oscar": "X",
-        "sag": "X",
         "afi": "Y",
-        "nbr": "Y",
+        "sag": "X",
         "critics": "X",
+        "nbr": "Y",
         "pga": "X",
         "wga": "X",
         "adg": "X"
@@ -83,12 +84,12 @@
     {
       "name": "Barbie",
       "awards": {
-        "gg": "X",
         "oscar": "X",
-        "sag": "X",
+        "gg": "X",
         "afi": "Y",
-        "nbr": "Y",
+        "sag": "X",
         "critics": "X",
+        "nbr": "Y",
         "pga": "X",
         "wga": "X",
         "adg": "X"
@@ -97,36 +98,39 @@
       "tmdbId": 346698
     },
     {
-      "name": "Maestro",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "afi": "Y",
-        "nbr": "Y",
-        "critics": "X",
-        "pga": "X",
-        "adg": "X"
-      }
-    },
-    {
       "name": "American Fiction",
       "awards": {
-        "gg": "X",
         "oscar": "X",
-        "sag": "X",
+        "gg": "X",
         "afi": "Y",
+        "sag": "X",
         "critics": "X",
         "pga": "X",
-        "wga": "Y"
+        "wga": "Y",
+        "spirit": "X"
       },
       "posterPath": "/57MFWGHarg9jid7yfDTka4RmcMU.jpg",
       "tmdbId": 1056360
     },
     {
+      "name": "Maestro",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "afi": "Y",
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X",
+        "adg": "X"
+      },
+      "posterPath": "/mxMV3gVXXw9J2g3u4BRLKxF2AOe.jpg",
+      "tmdbId": 279550
+    },
+    {
       "name": "The Zone of Interest",
       "awards": {
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "pga": "X",
         "lafca": "Y"
       },
@@ -138,7 +142,8 @@
       "awards": {
         "gg": "X",
         "afi": "Y",
-        "wga": "X"
+        "wga": "X",
+        "spirit": "X"
       },
       "posterPath": "/zhV7B610l7hjlri4ywikJ18ONuq.jpg",
       "tmdbId": 839369
@@ -193,43 +198,17 @@
       "tmdbId": 792307
     },
     {
-      "name": "Passages",
+      "name": "Barbie (Warner Bros. Pictures)",
       "awards": {
-        "gotham": "Y"
-      },
-      "posterPath": "/3azIrBfctN3HwEV8L9nM6ngKfxo.jpg",
-      "tmdbId": 993924
-    },
-    {
-      "name": "Reality",
-      "awards": {
-        "gotham": "Y"
-      },
-      "posterPath": "/bl2Hy8yyHXmTSDLz3NMxIe9wgIo.jpg",
-      "tmdbId": 103758
-    },
-    {
-      "name": "Showing Up",
-      "awards": {
-        "gotham": "Y"
-      },
-      "posterPath": "/iJw55oTb2MlG4NWjq3sbIFUVU76.jpg",
-      "tmdbId": 790416
-    },
-    {
-      "name": "A Thousand and One",
-      "awards": {
-        "gotham": "Y"
-      },
-      "posterPath": "/tjBg2W3UCxZIr5SnXyfgs9rTUqd.jpg",
-      "tmdbId": 85398
+        "astra": "Y"
+      }
     },
     {
       "name": "Anatomy of a Fall",
       "awards": {
+        "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "oscar": "X",
         "pga": "X"
       },
       "posterPath": "/kQs6keheMwCxJxrzV83VUwFtHkB.jpg",
@@ -252,6 +231,15 @@
       },
       "posterPath": "/h5bqIxM8GO4TewJ0u6Rzkg58ssJ.jpg",
       "tmdbId": 558915
+    },
+    {
+      "name": "Passages",
+      "awards": {
+        "spirit": "X",
+        "gotham": "X"
+      },
+      "posterPath": "/3azIrBfctN3HwEV8L9nM6ngKfxo.jpg",
+      "tmdbId": 993924
     },
     {
       "name": "Are You There God? It's Me, Margaret.",
@@ -342,6 +330,102 @@
       },
       "posterPath": "/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
       "tmdbId": 787699
+    },
+    {
+      "name": "Air (Amazon MGM Studios)",
+      "awards": {
+        "astra": "X"
+      }
+    },
+    {
+      "name": "American Fiction (Orion Pictures / Amazon MGM Studios)",
+      "awards": {
+        "astra": "X"
+      }
+    },
+    {
+      "name": "The Color Purple (Warner Bros. Pictures)",
+      "awards": {
+        "astra": "X"
+      }
+    },
+    {
+      "name": "The Holdovers (Focus Features)",
+      "awards": {
+        "astra": "X"
+      }
+    },
+    {
+      "name": "Killers of the Flower Moon (Apple Original Films)",
+      "awards": {
+        "astra": "X"
+      }
+    },
+    {
+      "name": "Maestro (Netflix)",
+      "awards": {
+        "astra": "X"
+      }
+    },
+    {
+      "name": "Oppenheimer (Universal Pictures)",
+      "awards": {
+        "astra": "X"
+      }
+    },
+    {
+      "name": "Past Lives (A24)",
+      "awards": {
+        "astra": "X"
+      }
+    },
+    {
+      "name": "Spider",
+      "awards": {
+        "astra": "X"
+      },
+      "posterPath": "/zvm4WuYxTiGkRagRqHUey0meRQL.jpg",
+      "tmdbId": 9613
+    },
+    {
+      "name": "All of Us Strangers",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/aviJMFZSnnCAsCVyJGaPNx4Ef3i.jpg",
+      "tmdbId": 994108
+    },
+    {
+      "name": "We Grown Now",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/fGYX0LCsL4hcirSChhHAevT09nT.jpg",
+      "tmdbId": 1163186
+    },
+    {
+      "name": "Reality",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/bl2Hy8yyHXmTSDLz3NMxIe9wgIo.jpg",
+      "tmdbId": 103758
+    },
+    {
+      "name": "Showing Up",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/iJw55oTb2MlG4NWjq3sbIFUVU76.jpg",
+      "tmdbId": 790416
+    },
+    {
+      "name": "A Thousand and One",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/tjBg2W3UCxZIr5SnXyfgs9rTUqd.jpg",
+      "tmdbId": 85398
     }
   ],
   "best-director": [
@@ -349,11 +433,12 @@
       "name": "Christopher Nolan",
       "film": "Oppenheimer",
       "awards": {
+        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
-        "oscar": "Y",
         "critics": "Y",
-        "dga": "Y"
+        "dga": "Y",
+        "astra": "Y"
       },
       "profilePath": "/xuAIuYSmsUzKlUMBFGVZaWsY3DZ.jpg",
       "tmdbId": 525
@@ -362,10 +447,11 @@
       "name": "Martin Scorsese",
       "film": "Killers of the Flower Moon",
       "awards": {
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
+        "critics": "X",
         "nbr": "Y",
-        "critics": "X"
+        "astra": "X"
       },
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
       "tmdbId": 1032
@@ -374,12 +460,23 @@
       "name": "Jonathan Glazer",
       "film": "The Zone of Interest",
       "awards": {
-        "bafta": "X",
         "oscar": "X",
+        "bafta": "X",
         "lafca": "Y"
       },
       "profilePath": "/lGaM7P0vjhhWs5EmIecsN6PYfxG.jpg",
       "tmdbId": 66728
+    },
+    {
+      "name": "Celine Song",
+      "film": "Past Lives",
+      "awards": {
+        "gg": "X",
+        "astra": "X",
+        "spirit": "Y"
+      },
+      "profilePath": "/y3LRIOp63f96fCSf2eTANgY8bQU.jpg",
+      "tmdbId": 2518227
     },
     {
       "name": "Matteo Garrone",
@@ -392,11 +489,12 @@
       "name": "Yorgos Lanthimos",
       "film": "Poor Things",
       "awards": {
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "critics": "X",
         "dga": "X",
-        "lafca": "X"
+        "lafca": "X",
+        "astra": "X"
       },
       "profilePath": "/dvtv8eV1O8Fl385ctOu3sqO2PbD.jpg",
       "tmdbId": 122423
@@ -407,7 +505,8 @@
       "awards": {
         "gg": "X",
         "bafta": "X",
-        "critics": "X"
+        "critics": "X",
+        "astra": "X"
       },
       "profilePath": "/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg",
       "tmdbId": 51329
@@ -418,7 +517,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "dga": "X"
+        "dga": "X",
+        "astra": "X"
       },
       "profilePath": "/6MwQ2GstYr0wnhp1eTOAbVMNBGN.jpg",
       "tmdbId": 45400
@@ -429,33 +529,26 @@
       "awards": {
         "bafta": "X",
         "critics": "X",
-        "dga": "X"
+        "dga": "X",
+        "astra": "X"
       }
     },
     {
       "name": "Justine Triet",
       "film": "Anatomy of a Fall",
       "awards": {
-        "bafta": "X",
-        "oscar": "X"
+        "oscar": "X",
+        "bafta": "X"
       },
       "profilePath": "/mOn5lo038i8vw6qqJTwKw35KCL7.jpg",
       "tmdbId": 1175620
     },
     {
-      "name": "Celine Song",
-      "film": "Past Lives",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/y3LRIOp63f96fCSf2eTANgY8bQU.jpg",
-      "tmdbId": 2518227
-    },
-    {
       "name": "Andrew Haigh",
       "film": "All of Us Strangers",
       "awards": {
-        "bafta": "X"
+        "bafta": "X",
+        "spirit": "X"
       }
     },
     {
@@ -466,6 +559,60 @@
       },
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
       "tmdbId": 1032
+    },
+    {
+      "name": "Ben Affleck",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "Air",
+      "profilePath": "/aTcqu8cI4wMohU17xTdqmXKTGrw.jpg",
+      "tmdbId": 880
+    },
+    {
+      "name": "Emerald Fennell",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "Saltburn",
+      "profilePath": "/ytyHUsPb7Saulczm8nCJHypIWQF.jpg",
+      "tmdbId": 1252934
+    },
+    {
+      "name": "Cord Jefferson",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "American Fiction",
+      "profilePath": "/fZhYZq1Q1llGA4EO7aFYNhuw0zd.jpg",
+      "tmdbId": 1893777
+    },
+    {
+      "name": "Todd Haynes",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "May December",
+      "profilePath": "/wBDazO2j49uoquoHTEDxcniyGGC.jpg",
+      "tmdbId": 16863
+    },
+    {
+      "name": "William Oldroyd",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Eileen",
+      "profilePath": "/e3cJeIVKozF9tCPfGoJVi066VTO.jpg",
+      "tmdbId": 1661862
+    },
+    {
+      "name": "Ira Sachs",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Passages",
+      "profilePath": "/ddw9iGneyLXo3hiz7uupHlEGpOH.jpg",
+      "tmdbId": 53708
     }
   ],
   "best-actor": [
@@ -474,43 +621,94 @@
       "film": "Oppenheimer",
       "role": "Supporting",
       "awards": {
+        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
-        "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "Y",
+        "astra": "X"
       },
-      "profilePath": "/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg",
+      "profilePath": "/8qLqYvGvXewL8pU5e2IoTj6sdM8.jpg",
       "tmdbId": 3223
-    },
-    {
-      "name": "Cillian Murphy",
-      "film": "Oppenheimer",
-      "role": "Leading",
-      "awards": {
-        "gg": "Y",
-        "bafta": "Y",
-        "oscar": "Y",
-        "sag": "Y",
-        "critics": "X"
-      },
-      "profilePath": "/llkbyWKwpfowZ6C8peBjIV9jj99.jpg",
-      "tmdbId": 2037
     },
     {
       "name": "Paul Giamatti",
       "film": "The Holdovers",
       "role": "Leading",
       "awards": {
+        "oscar": "X",
         "gg": "Y",
         "bafta": "X",
-        "oscar": "X",
         "sag": "X",
+        "critics": "Y",
         "nbr": "Y",
-        "critics": "Y"
+        "astra": "Y"
       },
       "profilePath": "/wbrVVJRr5TwhDZuvijBgOorzcAb.jpg",
       "tmdbId": 13242
+    },
+    {
+      "name": "Cillian Murphy",
+      "film": "Oppenheimer",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "sag": "Y",
+        "critics": "X",
+        "astra": "X"
+      },
+      "profilePath": "/llkbyWKwpfowZ6C8peBjIV9jj99.jpg",
+      "tmdbId": 2037
+    },
+    {
+      "name": "Jeffrey Wright",
+      "film": "American Fiction",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X",
+        "lafca": "X",
+        "astra": "X",
+        "spirit": "Y",
+        "gotham": "X"
+      },
+      "profilePath": "/yGcuHGW4glqRpOPxgiCvjcren7F.jpg",
+      "tmdbId": 2954
+    },
+    {
+      "name": "Ryan Gosling",
+      "film": "Barbie",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "lafca": "X",
+        "astra": "Y",
+        "gotham": "X"
+      },
+      "profilePath": "/5MzzwS5z3lcbmnbJrPepr1HFcli.jpg",
+      "tmdbId": 30614
+    },
+    {
+      "name": "Charles Melton",
+      "film": "May December",
+      "role": "Supporting",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "astra": "X",
+        "spirit": "X",
+        "gotham": "Y"
+      },
+      "profilePath": "/sxWslNRZdiBcPgwdVqoj7nSclr6.jpg",
+      "tmdbId": 1907002
     },
     {
       "name": "Peter Sarsgaard",
@@ -522,102 +720,43 @@
       "tmdbId": 133
     },
     {
+      "name": "Gael García Bernal",
+      "awards": {
+        "astra": "Y"
+      },
+      "film": "Cassandro",
+      "profilePath": "/7uEO29wtdyY9bjt2JN43gVpE6vt.jpg",
+      "tmdbId": 258
+    },
+    {
+      "name": "Da'Vine Joy Randolph",
+      "awards": {
+        "spirit": "Y"
+      },
+      "film": "The Holdovers",
+      "profilePath": "/7RuYeGxTwFRt2q8fkT8nuEz1nIC.jpg",
+      "tmdbId": 1180099
+    },
+    {
       "name": "Lily Gladstone",
       "awards": {
         "gotham": "Y"
       },
-      "film": "The Unknown Country as Tana",
+      "film": "The Unknown Country",
       "profilePath": "/zYAN84WqZv2sbVE2JDkcWoXGoF7.jpg",
       "tmdbId": 1183917
-    },
-    {
-      "name": "Franz Rogowski",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Passages as Tomas",
-      "profilePath": "/mXehrpUeS4aXvDZPB0PyofqwSAi.jpg",
-      "tmdbId": 1285450
-    },
-    {
-      "name": "Andrew Scott",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "All of Us Strangers as Adam",
-      "profilePath": "/4F8XpjyQCvtuu21WFm5d8RF5Rl.jpg",
-      "tmdbId": 125660
-    },
-    {
-      "name": "Jeffrey Wright",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "American Fiction as Thelonious \"Monk\" Ellison",
-      "profilePath": "/yGcuHGW4glqRpOPxgiCvjcren7F.jpg",
-      "tmdbId": 2954
-    },
-    {
-      "name": "Charles Melton",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "May December as Joe Yoo",
-      "profilePath": "/sxWslNRZdiBcPgwdVqoj7nSclr6.jpg",
-      "tmdbId": 1907002
-    },
-    {
-      "name": "Jamie Foxx",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "They Cloned Tyrone as Slick Charles",
-      "profilePath": "/25zzvFA6yx2Q9BYnugsbd4JWDfu.jpg",
-      "tmdbId": 134
-    },
-    {
-      "name": "Ryan Gosling",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Barbie as Ken",
-      "profilePath": "/5MzzwS5z3lcbmnbJrPepr1HFcli.jpg",
-      "tmdbId": 30614
-    },
-    {
-      "name": "Glenn Howerton",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "BlackBerry as Jim Balsillie",
-      "profilePath": "/r3KJd0Ea7lyrAHWl2Ww8lMh29hx.jpg",
-      "tmdbId": 77870
-    },
-    {
-      "name": "Ryan Gosling",
-      "film": "Barbie",
-      "role": "Supporting",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X",
-        "lafca": "X"
-      },
-      "profilePath": "/5MzzwS5z3lcbmnbJrPepr1HFcli.jpg",
-      "tmdbId": 30614
     },
     {
       "name": "Bradley Cooper",
       "film": "Maestro",
       "role": "Leading",
       "awards": {
+        "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "oscar": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "astra": "X"
       },
       "profilePath": "/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg",
       "tmdbId": 51329
@@ -627,54 +766,29 @@
       "film": "Rustin",
       "role": "Leading",
       "awards": {
+        "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "oscar": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "astra": "X"
       },
       "profilePath": "/r2usluS5vx7O7npAYfaAFfNGxc8.jpg",
       "tmdbId": 91671
-    },
-    {
-      "name": "Jeffrey Wright",
-      "film": "American Fiction",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X",
-        "lafca": "X"
-      },
-      "profilePath": "/yGcuHGW4glqRpOPxgiCvjcren7F.jpg",
-      "tmdbId": 2954
     },
     {
       "name": "Robert De Niro",
       "film": "Killers of the Flower Moon",
       "role": "Supporting",
       "awards": {
+        "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
       "profilePath": "/cT8htcckIuyI1Lqwt1CvD02ynTh.jpg",
       "tmdbId": 380
-    },
-    {
-      "name": "Mark Ruffalo",
-      "film": "Poor Things",
-      "role": "Supporting",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "critics": "X"
-      },
-      "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
-      "tmdbId": 103
     },
     {
       "name": "Sterling K. Brown",
@@ -683,10 +797,59 @@
       "awards": {
         "oscar": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "spirit": "X"
       },
       "profilePath": "/vjFATaJfAyBie56J4Qv2DQ9Dyem.jpg",
       "tmdbId": 1225953
+    },
+    {
+      "name": "Andrew Scott",
+      "film": "All of Us Strangers",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "lafca": "X",
+        "spirit": "X",
+        "gotham": "X"
+      },
+      "profilePath": "/4F8XpjyQCvtuu21WFm5d8RF5Rl.jpg",
+      "tmdbId": 125660
+    },
+    {
+      "name": "Mark Ruffalo",
+      "film": "Poor Things",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
+      "tmdbId": 103
+    },
+    {
+      "name": "Barry Keoghan",
+      "film": "Saltburn",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "astra": "X"
+      },
+      "profilePath": "/15xPjrzSbtXlbQUhmLpQUil4tCN.jpg",
+      "tmdbId": 1290466
+    },
+    {
+      "name": "Glenn Howerton",
+      "awards": {
+        "astra": "X",
+        "spirit": "X",
+        "gotham": "X"
+      },
+      "film": "BlackBerry",
+      "profilePath": "/r3KJd0Ea7lyrAHWl2Ww8lMh29hx.jpg",
+      "tmdbId": 77870
     },
     {
       "name": "Leonardo DiCaprio",
@@ -700,28 +863,6 @@
       "tmdbId": 6193
     },
     {
-      "name": "Barry Keoghan",
-      "film": "Saltburn",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "bafta": "X"
-      },
-      "profilePath": "/15xPjrzSbtXlbQUhmLpQUil4tCN.jpg",
-      "tmdbId": 1290466
-    },
-    {
-      "name": "Andrew Scott",
-      "film": "All of Us Strangers",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "lafca": "X"
-      },
-      "profilePath": "/4F8XpjyQCvtuu21WFm5d8RF5Rl.jpg",
-      "tmdbId": 125660
-    },
-    {
       "name": "Willem Dafoe",
       "film": "Poor Things",
       "role": "Supporting",
@@ -733,15 +874,36 @@
       "tmdbId": 5293
     },
     {
-      "name": "Charles Melton",
-      "film": "May December",
+      "name": "Teo Yoo",
+      "film": "Past Lives",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "spirit": "X"
+      },
+      "profilePath": "/yaYSLRP41hsb4bdyLlRZSOvBwKu.jpg",
+      "tmdbId": 1387126
+    },
+    {
+      "name": "Dominic Sessa",
+      "film": "The Holdovers",
       "role": "Supporting",
       "awards": {
-        "gg": "X",
-        "critics": "X"
+        "bafta": "X",
+        "astra": "X"
       },
-      "profilePath": "/sxWslNRZdiBcPgwdVqoj7nSclr6.jpg",
-      "tmdbId": 1907002
+      "profilePath": "/cTYdhJrye7oTREIkQaLAuLoJ8Rt.jpg",
+      "tmdbId": 3918497
+    },
+    {
+      "name": "Franz Rogowski",
+      "awards": {
+        "spirit": "X",
+        "gotham": "X"
+      },
+      "film": "Passages",
+      "profilePath": "/mXehrpUeS4aXvDZPB0PyofqwSAi.jpg",
+      "tmdbId": 1285450
     },
     {
       "name": "Nicolas Cage",
@@ -784,16 +946,6 @@
       "tmdbId": 73421
     },
     {
-      "name": "Teo Yoo",
-      "film": "Past Lives",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/yaYSLRP41hsb4bdyLlRZSOvBwKu.jpg",
-      "tmdbId": 1387126
-    },
-    {
       "name": "Jacob Elordi",
       "film": "Saltburn",
       "role": "Supporting",
@@ -814,14 +966,171 @@
       "tmdbId": 2326151
     },
     {
-      "name": "Dominic Sessa",
-      "film": "The Holdovers",
-      "role": "Supporting",
+      "name": "Colman Domingo",
       "awards": {
-        "bafta": "X"
+        "astra": "X"
       },
-      "profilePath": "/cTYdhJrye7oTREIkQaLAuLoJ8Rt.jpg",
-      "tmdbId": 3918497
+      "film": "The Color Purple",
+      "profilePath": "/r2usluS5vx7O7npAYfaAFfNGxc8.jpg",
+      "tmdbId": 91671
+    },
+    {
+      "name": "Eugenio Derbez",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "Radical",
+      "profilePath": "/6o1w3mYF947N6TTakQXcs3NNy4w.jpg",
+      "tmdbId": 239574
+    },
+    {
+      "name": "Christian Friedel",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "The Zone of Interest"
+    },
+    {
+      "name": "Mads Mikkelsen",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "The Promised Land",
+      "profilePath": "/2Lyv939p2iDIjRgv4jMFyD3yA6G.jpg",
+      "tmdbId": 1019
+    },
+    {
+      "name": "Enzo Vogrincic",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "Society of the Snow",
+      "profilePath": "/ebRL8vHFjA0vCYw66CmUa4UJ9Be.jpg",
+      "tmdbId": 3301646
+    },
+    {
+      "name": "Koji Yakusho",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "Perfect Days",
+      "profilePath": "/rF3pmX1yqoMXJLgRkgaLc7PGv68.jpg",
+      "tmdbId": 18056
+    },
+    {
+      "name": "Jessica Chastain",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Memory",
+      "profilePath": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
+      "tmdbId": 83002
+    },
+    {
+      "name": "Greta Lee",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Past Lives",
+      "profilePath": "/6SydTis4XUcovlwIGskT59JowLX.jpg",
+      "tmdbId": 1260481
+    },
+    {
+      "name": "Trace Lysette",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Monica",
+      "profilePath": "/g53HidaGX7t4uhZBIPldHul5nIo.jpg",
+      "tmdbId": 1472754
+    },
+    {
+      "name": "Natalie Portman",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "May December",
+      "profilePath": "/edPU5HxncLWa1YkgRPNkSd68ONG.jpg",
+      "tmdbId": 524
+    },
+    {
+      "name": "Judy Reyes",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Birth/Rebirth",
+      "profilePath": "/DQ8kIRHru9Zzy6CftVryHmIOJs.jpg",
+      "tmdbId": 159657
+    },
+    {
+      "name": "Teyana Taylor",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "A Thousand and One",
+      "profilePath": "/wVHbluUvjKl0NucSeuAhAJAr2oc.jpg",
+      "tmdbId": 964679
+    },
+    {
+      "name": "Erika Alexander",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "American Fiction",
+      "profilePath": "/8o9KbXYoRi9v1u94nbjrslOzE0n.jpg",
+      "tmdbId": 33655
+    },
+    {
+      "name": "Noah Galvin",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Theater Camp",
+      "profilePath": "/wKGpfo1BHeNMvFVGVJjGqOgiaMh.jpg",
+      "tmdbId": 1472747
+    },
+    {
+      "name": "Anne Hathaway",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Eileen",
+      "profilePath": "/s6tflSD20MGz04ZR2R1lZvhmC4Y.jpg",
+      "tmdbId": 1813
+    },
+    {
+      "name": "Marin Ireland",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Eileen",
+      "profilePath": "/jAIOQNraHjvIAdqk81QDV5Phupp.jpg",
+      "tmdbId": 164094
+    },
+    {
+      "name": "Catalina Saavedra",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Rotting in the Sun"
+    },
+    {
+      "name": "Ben Whishaw",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Passages",
+      "profilePath": "/2GBtQ6scGeSHkX1urOP1EJbmksx.jpg",
+      "tmdbId": 17064
+    },
+    {
+      "name": "Jamie Foxx",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "They Cloned Tyrone",
+      "profilePath": "/25zzvFA6yx2Q9BYnugsbd4JWDfu.jpg",
+      "tmdbId": 134
     }
   ],
   "best-actress": [
@@ -830,12 +1139,14 @@
       "film": "The Holdovers",
       "role": "Supporting",
       "awards": {
+        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
-        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "astra": "Y",
+        "gotham": "X"
       },
       "profilePath": "/7RuYeGxTwFRt2q8fkT8nuEz1nIC.jpg",
       "tmdbId": 1180099
@@ -845,14 +1156,15 @@
       "film": "Poor Things",
       "role": "Leading",
       "awards": {
+        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
-        "oscar": "Y",
         "sag": "X",
         "critics": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "astra": "X"
       },
-      "profilePath": "/cZ8a3QvAnj2cgcgVL6g4XaqPzpL.jpg",
+      "profilePath": "/8NwSfyYWIIUE1cI9Xhz92b0w7WD.jpg",
       "tmdbId": 54693
     },
     {
@@ -860,12 +1172,13 @@
       "film": "Killers of the Flower Moon",
       "role": "Leading",
       "awards": {
-        "gg": "Y",
         "oscar": "X",
+        "gg": "Y",
         "sag": "Y",
-        "nbr": "Y",
         "critics": "X",
-        "lafca": "X"
+        "nbr": "Y",
+        "lafca": "X",
+        "astra": "Y"
       },
       "profilePath": "/zYAN84WqZv2sbVE2JDkcWoXGoF7.jpg",
       "tmdbId": 1183917
@@ -875,185 +1188,15 @@
       "film": "Anatomy of a Fall",
       "role": "Leading",
       "awards": {
+        "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "oscar": "X",
         "critics": "X",
-        "lafca": "Y"
+        "lafca": "Y",
+        "astra": "Y"
       },
       "profilePath": "/t7wGqC2dRwTEnt9Fk5pxQ0uXTqs.jpg",
       "tmdbId": 7152
-    },
-    {
-      "name": "Cailee Spaeny",
-      "film": "Priscilla",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "venice": "Y"
-      },
-      "profilePath": "/qFqXdfZMtsWKyErnIC6dLEvvDKk.jpg",
-      "tmdbId": 1683343
-    },
-    {
-      "name": "Rachel McAdams",
-      "awards": {
-        "lafca": "Y"
-      },
-      "role": "Supporting",
-      "film": "Are You There God? It's Me, Margaret.",
-      "profilePath": "/2zyOjda95OfAAsJvuwTV0UaznPZ.jpg",
-      "tmdbId": 53714
-    },
-    {
-      "name": "Aunjanue Ellis-Taylor",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Origin as Isabel Wilkerson",
-      "profilePath": "/e54DfgDyS67xdtomYODFule6Ofa.jpg",
-      "tmdbId": 53923
-    },
-    {
-      "name": "Greta Lee",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Past Lives as Nora",
-      "profilePath": "/6SydTis4XUcovlwIGskT59JowLX.jpg",
-      "tmdbId": 1260481
-    },
-    {
-      "name": "Babetida Sadjo",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Our Father, the Devil as Marie Cissé",
-      "profilePath": "/wrjfsAZqcITkAgaGCZlAQp8JC1H.jpg",
-      "tmdbId": 1182996
-    },
-    {
-      "name": "Cailee Spaeny",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Priscilla as Priscilla Presley",
-      "profilePath": "/qFqXdfZMtsWKyErnIC6dLEvvDKk.jpg",
-      "tmdbId": 1683343
-    },
-    {
-      "name": "Teyana Taylor",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "A Thousand and One as Inez de la Paz",
-      "profilePath": "/wVHbluUvjKl0NucSeuAhAJAr2oc.jpg",
-      "tmdbId": 964679
-    },
-    {
-      "name": "Michelle Williams",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Showing Up as Lizzy",
-      "profilePath": "/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg",
-      "tmdbId": 1812
-    },
-    {
-      "name": "Juliette Binoche",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "The Taste of Things as Eugénie",
-      "profilePath": "/htdZZIroEyJaeHQAUTqokNfkPgl.jpg",
-      "tmdbId": 1137
-    },
-    {
-      "name": "Penélope Cruz",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Ferrari as Laura Ferrari",
-      "profilePath": "/2Lbc8QXgHik1D1saPqQ5qEWwUEh.jpg",
-      "tmdbId": 955
-    },
-    {
-      "name": "Claire Foy",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "All of Us Strangers as Mum",
-      "profilePath": "/a7ws0h1TQeoC97lBo0unFolNe4q.jpg",
-      "tmdbId": 120932
-    },
-    {
-      "name": "Sandra Hüller",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "The Zone of Interest as Hedwig Höss",
-      "profilePath": "/t7wGqC2dRwTEnt9Fk5pxQ0uXTqs.jpg",
-      "tmdbId": 7152
-    },
-    {
-      "name": "Rachel McAdams",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "Are You There God? It's Me, Margaret. as Barbara Simon",
-      "profilePath": "/2zyOjda95OfAAsJvuwTV0UaznPZ.jpg",
-      "tmdbId": 53714
-    },
-    {
-      "name": "Da'Vine Joy Randolph",
-      "awards": {
-        "gotham": "Y"
-      },
-      "film": "The Holdovers as Mary Lamb",
-      "profilePath": "/7RuYeGxTwFRt2q8fkT8nuEz1nIC.jpg",
-      "tmdbId": 1180099
-    },
-    {
-      "name": "Carey Mulligan",
-      "film": "Maestro",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg",
-      "tmdbId": 36662
-    },
-    {
-      "name": "Emily Blunt",
-      "film": "Oppenheimer",
-      "role": "Supporting",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
-      "tmdbId": 5081
-    },
-    {
-      "name": "Danielle Brooks",
-      "film": "The Color Purple",
-      "role": "Supporting",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/pPSG2Vmq24cwAL5XGK1NLs3KEoZ.jpg",
-      "tmdbId": 1075037
     },
     {
       "name": "Margot Robbie",
@@ -1063,18 +1206,87 @@
         "gg": "X",
         "bafta": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "astra": "Y"
       },
       "profilePath": "/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg",
       "tmdbId": 234352
+    },
+    {
+      "name": "Cailee Spaeny",
+      "film": "Priscilla",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "venice": "Y",
+        "gotham": "X"
+      },
+      "profilePath": "/qFqXdfZMtsWKyErnIC6dLEvvDKk.jpg",
+      "tmdbId": 1683343
+    },
+    {
+      "name": "Rachel McAdams",
+      "awards": {
+        "lafca": "Y",
+        "astra": "X",
+        "gotham": "X"
+      },
+      "role": "Supporting",
+      "film": "Are You There God? It's Me, Margaret.",
+      "profilePath": "/2zyOjda95OfAAsJvuwTV0UaznPZ.jpg",
+      "tmdbId": 53714
+    },
+    {
+      "name": "Carey Mulligan",
+      "film": "Maestro",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "astra": "X"
+      },
+      "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg",
+      "tmdbId": 36662
+    },
+    {
+      "name": "Danielle Brooks",
+      "film": "The Color Purple",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "astra": "X"
+      },
+      "profilePath": "/pPSG2Vmq24cwAL5XGK1NLs3KEoZ.jpg",
+      "tmdbId": 1075037
+    },
+    {
+      "name": "Emily Blunt",
+      "film": "Oppenheimer",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
+      "tmdbId": 5081
     },
     {
       "name": "Jodie Foster",
       "film": "Nyad",
       "role": "Supporting",
       "awards": {
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X"
       },
@@ -1082,27 +1294,41 @@
       "tmdbId": 1038
     },
     {
+      "name": "Greta Lee",
+      "film": "Past Lives",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "astra": "X",
+        "gotham": "X"
+      },
+      "profilePath": "/6SydTis4XUcovlwIGskT59JowLX.jpg",
+      "tmdbId": 1260481
+    },
+    {
       "name": "Annette Bening",
       "film": "Nyad",
       "role": "Leading",
       "awards": {
-        "gg": "X",
         "oscar": "X",
+        "gg": "X",
         "sag": "X"
       },
       "profilePath": "/sBiiRwAVXd0FCRZ87m0I89qGBvy.jpg",
       "tmdbId": 516
     },
     {
-      "name": "Greta Lee",
-      "film": "Past Lives",
-      "role": "Leading",
+      "name": "America Ferrera",
+      "film": "Barbie",
+      "role": "Supporting",
       "awards": {
-        "gg": "X",
-        "critics": "X"
+        "oscar": "X",
+        "critics": "X",
+        "astra": "X"
       },
-      "profilePath": "/6SydTis4XUcovlwIGskT59JowLX.jpg",
-      "tmdbId": 1260481
+      "profilePath": "/7F84Lh2lKpvkM3EiOvqqvlOmw93.jpg",
+      "tmdbId": 59174
     },
     {
       "name": "Fantasia Barrino",
@@ -1110,7 +1336,8 @@
       "role": "Leading",
       "awards": {
         "gg": "X",
-        "bafta": "X"
+        "bafta": "X",
+        "astra": "X"
       },
       "profilePath": "/z8EsOmdzNxUQooSjH4NBSpzhnP3.jpg",
       "tmdbId": 165909
@@ -1121,10 +1348,22 @@
       "role": "Supporting",
       "awards": {
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "astra": "X"
       },
       "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
       "tmdbId": 1231
+    },
+    {
+      "name": "Alma Pöysti",
+      "film": "Fallen Leaves",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "astra": "X"
+      },
+      "profilePath": "/lWr3JthLdoe80Ux87DHoUFyK5FS.jpg",
+      "tmdbId": 1364782
     },
     {
       "name": "Rosamund Pike",
@@ -1138,15 +1377,47 @@
       "tmdbId": 10882
     },
     {
-      "name": "America Ferrera",
-      "film": "Barbie",
+      "name": "Claire Foy",
+      "film": "All of Us Strangers",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
-        "critics": "X"
+        "bafta": "X",
+        "gotham": "X"
       },
-      "profilePath": "/7F84Lh2lKpvkM3EiOvqqvlOmw93.jpg",
-      "tmdbId": 59174
+      "profilePath": "/a7ws0h1TQeoC97lBo0unFolNe4q.jpg",
+      "tmdbId": 120932
+    },
+    {
+      "name": "Sandra Hüller",
+      "film": "The Zone of Interest",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gotham": "X"
+      },
+      "profilePath": "/t7wGqC2dRwTEnt9Fk5pxQ0uXTqs.jpg",
+      "tmdbId": 7152
+    },
+    {
+      "name": "Penélope Cruz",
+      "film": "Ferrari",
+      "role": "Supporting",
+      "awards": {
+        "sag": "X",
+        "gotham": "X"
+      },
+      "profilePath": "/2Lbc8QXgHik1D1saPqQ5qEWwUEh.jpg",
+      "tmdbId": 955
+    },
+    {
+      "name": "Juliette Binoche",
+      "awards": {
+        "astra": "X",
+        "gotham": "X"
+      },
+      "film": "The Taste of Things",
+      "profilePath": "/htdZZIroEyJaeHQAUTqokNfkPgl.jpg",
+      "tmdbId": 1137
     },
     {
       "name": "Jennifer Lawrence",
@@ -1169,16 +1440,6 @@
       "tmdbId": 524
     },
     {
-      "name": "Alma Pöysti",
-      "film": "Fallen Leaves",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/lWr3JthLdoe80Ux87DHoUFyK5FS.jpg",
-      "tmdbId": 1364782
-    },
-    {
       "name": "Vivian Oparah",
       "film": "Rye Lane",
       "role": "Leading",
@@ -1189,34 +1450,76 @@
       "tmdbId": 1675593
     },
     {
-      "name": "Claire Foy",
-      "film": "All of Us Strangers",
-      "role": "Supporting",
+      "name": "Viola Davis",
       "awards": {
-        "bafta": "X"
+        "astra": "X"
       },
-      "profilePath": "/a7ws0h1TQeoC97lBo0unFolNe4q.jpg",
-      "tmdbId": 120932
+      "film": "Air",
+      "profilePath": "/xDssw6vpYNRjsybvMPRE30e0dPN.jpg",
+      "tmdbId": 19492
     },
     {
-      "name": "Sandra Hüller",
-      "film": "The Zone of Interest",
-      "role": "Supporting",
+      "name": "Leonie Benesch",
       "awards": {
-        "bafta": "X"
+        "astra": "X"
       },
-      "profilePath": "/t7wGqC2dRwTEnt9Fk5pxQ0uXTqs.jpg",
-      "tmdbId": 7152
+      "film": "The Teachers' Lounge",
+      "profilePath": "/hIRRfgggHgz07HBLyEHVpCXldYX.jpg",
+      "tmdbId": 119065
     },
     {
-      "name": "Penélope Cruz",
-      "film": "Ferrari",
-      "role": "Supporting",
+      "name": "Roberta Colindrez",
       "awards": {
-        "sag": "X"
+        "astra": "X"
       },
-      "profilePath": "/2Lbc8QXgHik1D1saPqQ5qEWwUEh.jpg",
-      "tmdbId": 955
+      "film": "Cassandro",
+      "profilePath": "/g22h0SysH1Z2B5uk0nDhfztgqag.jpg",
+      "tmdbId": 563152
+    },
+    {
+      "name": "Layla Mohammadi",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "The Persian Version",
+      "profilePath": "/pjKw06MAlEwaF5lIAMh7XpoEFqk.jpg",
+      "tmdbId": 3161254
+    },
+    {
+      "name": "Aunjanue Ellis-Taylor",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Origin",
+      "profilePath": "/e54DfgDyS67xdtomYODFule6Ofa.jpg",
+      "tmdbId": 53923
+    },
+    {
+      "name": "Babetida Sadjo",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Our Father, the Devil",
+      "profilePath": "/wrjfsAZqcITkAgaGCZlAQp8JC1H.jpg",
+      "tmdbId": 1182996
+    },
+    {
+      "name": "Teyana Taylor",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "A Thousand and One",
+      "profilePath": "/wVHbluUvjKl0NucSeuAhAJAr2oc.jpg",
+      "tmdbId": 964679
+    },
+    {
+      "name": "Michelle Williams",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Showing Up",
+      "profilePath": "/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg",
+      "tmdbId": 1812
     }
   ]
 }
