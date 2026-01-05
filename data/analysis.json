@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-04T16:46:13.893477",
+  "generated": "2026-01-05T20:46:40.318401",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -102,6 +102,12 @@
       "best-director": 5,
       "best-actor": 6,
       "best-actress": 6
+    },
+    "cannes": {
+      "best-film": 1,
+      "best-director": 1,
+      "best-actor": 1,
+      "best-actress": 1
     }
   },
   "years": {
@@ -547,6 +553,32 @@
           "status": "ok",
           "expected": "actor+actress=20"
         }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        }
       }
     },
     "2013_2014": {
@@ -990,6 +1022,32 @@
           "winners": 2,
           "status": "ok",
           "expected": "actor+actress=20"
+        }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
         }
       }
     },
@@ -1435,6 +1493,32 @@
           "status": "ok",
           "expected": "actor+actress=20"
         }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        }
       }
     },
     "2015_2016": {
@@ -1878,6 +1962,32 @@
           "winners": 2,
           "status": "ok",
           "expected": "actor+actress=20"
+        }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
         }
       }
     },
@@ -2323,6 +2433,32 @@
           "status": "ok",
           "expected": "actor+actress=20"
         }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        }
       }
     },
     "2017_2018": {
@@ -2766,6 +2902,32 @@
           "winners": 2,
           "status": "ok",
           "expected": "actor+actress=20"
+        }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
         }
       }
     },
@@ -3211,6 +3373,32 @@
           "status": "ok",
           "expected": "actor+actress=20"
         }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        }
       }
     },
     "2019_2020": {
@@ -3654,6 +3842,32 @@
           "winners": 2,
           "status": "ok",
           "expected": "actor+actress=20"
+        }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
         }
       }
     },
@@ -4099,6 +4313,32 @@
           "status": "ok",
           "expected": "actor+actress=20"
         }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        }
       }
     },
     "2021_2022": {
@@ -4542,6 +4782,32 @@
           "winners": 2,
           "status": "ok",
           "expected": "actor+actress=20"
+        }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
         }
       }
     },
@@ -4987,6 +5253,32 @@
           "status": "ok",
           "expected": "actor+actress=17"
         }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        }
       }
     },
     "2023_2024": {
@@ -5430,6 +5722,32 @@
           "winners": 1,
           "status": "ok",
           "expected": "actor+actress=16"
+        }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
         }
       }
     },
@@ -5875,6 +6193,32 @@
           "status": "ok",
           "expected": "actor+actress=12"
         }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 4,
+          "winners": 4,
+          "status": "ok",
+          "expected": 4
+        }
       }
     },
     "2025_2026": {
@@ -5985,25 +6329,25 @@
       "critics": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
           "nominations": 6,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 6
         },
         "best-actor": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         },
         "best-actress": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         }
@@ -6318,6 +6662,32 @@
           "winners": 0,
           "status": "ok",
           "expected": "actor+actress=12"
+        }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
         }
       }
     }

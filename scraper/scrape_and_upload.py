@@ -77,6 +77,8 @@ HISTORICAL_AVERAGES = {
     # 6 per category often, so 12 total actors -> 6M/6F ? or 10? User request implies split.
     # User said "somma tra maschi e femmine deve fare 6 per lead + 6 PER SUPPORTING" -> Total 12 actors.
     'bifa': {'best-film': 5, 'best-director': 5, 'best-actor': 6, 'best-actress': 6},
+    # Cannes Film Festival: Winners only (Palme d'Or, Best Director, Best Actor, Best Actress)
+    'cannes': {'best-film': 1, 'best-director': 1, 'best-actor': 1, 'best-actress': 1},
 }
 
 # Year-specific overrides for historical rule changes
@@ -234,6 +236,14 @@ HISTORICAL_EXPECTED_OVERRIDES = {
         # Actress: 10 for most gendered years; 11 for 33rd-36th; 10 for gender-neutral (2023+) after split
         'best-actress': {(2013, 2017): 10, (2018, 2021): 11, (2022, 2022): 10, (2023, 2099): 10},
     },
+    'cannes': {
+        # Cannes multi-winner scenarios (shared awards)
+        'best-actress': {(2025, 2025): 4, (2016, 2016): 2, (2013, 2013): 2},
+        # Cannes 2018: 2 films (Shoplifters Palme d'Or + The Image Book Special Palme d'Or)
+        'best-film': {(2019, 2019): 2},
+        # Cannes 2016: 2 directors (Mungiu + Assayas shared Best Director)
+        'best-director': {(2017, 2017): 2},
+    }
 }
 
 
@@ -411,7 +421,7 @@ class ScrapeReport:
         
         # Status per award
         print(f"\n  📡 AWARD STATUS:")
-        for award_key in ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa']:
+        for award_key in ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'cannes', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa']:
             log = self.logs.get(award_key)
             if log:
                 total_entries = sum(log.counts.values())
@@ -475,7 +485,7 @@ def scrape_award_with_logging(award_key, year, report):
         
         # ==== CALL APPROPRIATE SCRAPER ====
         from master_scraper import (scrape_award, scrape_afi, scrape_nbr, 
-                                    scrape_venice, scrape_dga, scrape_pga, scrape_lafca, scrape_wga, scrape_adg, scrape_gotham, scrape_astra, scrape_spirit, scrape_bifa)
+                                    scrape_venice, scrape_dga, scrape_pga, scrape_lafca, scrape_wga, scrape_adg, scrape_gotham, scrape_astra, scrape_spirit, scrape_bifa, scrape_cannes)
         
         result = None
         
@@ -515,6 +525,9 @@ def scrape_award_with_logging(award_key, year, report):
         elif award_key == 'bifa':
             result = scrape_bifa(year)
             log.log(f"Scraped British Independent Film Awards")
+        elif award_key == 'cannes':
+            result = scrape_cannes(ceremony)
+            log.log(f"Scraped Cannes Film Festival")
         else:
             result = scrape_award(award_key, year)
             log.log(f"Scraped Wikipedia awards table")
@@ -561,7 +574,7 @@ def scrape_year_enhanced(year, awards=None, parallel=True):
     Enhanced scrape_year with detailed logging and report generation.
     """
     if awards is None:
-        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa']
+        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'cannes', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa']
     
     report = ScrapeReport(year)
     all_results = {}

@@ -134,6 +134,14 @@ CEREMONY_MAP = {
         2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
         2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
         2015: 2014, 2014: 2013, 2013: 2012
+    },
+    # Cannes Film Festival - uses calendar year
+    # Cannes 2025 (May/June 2025) → Season 2025/26
+    # Cannes 2024 (May 2024) → Season 2024/25
+    'cannes': {
+        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
+        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
+        2015: 2014, 2014: 2013, 2013: 2012
     }
 }
 
@@ -299,6 +307,7 @@ from scrapers.wga import scrape_wga
 from scrapers.adg import scrape_adg  
 from scrapers.gotham import scrape_gotham
 from scrapers.astra import scrape_astra
+from scrapers.cannes import scrape_cannes
 # Spirit already imported earlier at line ~3144
 
 

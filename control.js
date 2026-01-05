@@ -6,7 +6,7 @@
 const FIREBASE_URL = 'https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app';
 const CURRENT_YEAR = '2025_2026';
 
-const AWARDS_ORDER = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa'];
+const AWARDS_ORDER = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'cannes', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa'];
 const AWARDS_NAMES = {
     'oscar': 'Oscar',
     'gg': 'Golden Globes',
@@ -16,6 +16,7 @@ const AWARDS_NAMES = {
     'afi': 'AFI',
     'nbr': 'NBR',
     'venice': 'Venice',
+    'cannes': 'Cannes',
     'dga': 'DGA',
     'pga': 'PGA',
     'lafca': 'LAFCA',
@@ -192,7 +193,11 @@ function renderCurrentYear(data) {
                     expectedCount = 15;
                 }
 
-                if (expectedCount === 0 && catData.nominations === 0) {
+                // Special case: Cannes 2020 was cancelled (COVID-19)
+                const isCancelled = (expectedCount === 0 && catData.nominations === 0) ||
+                    (awardKey === 'cannes' && catData.status === 'pending' && catData.nominations === 0);
+
+                if (isCancelled) {
                     cells.push(`<span class="cp-recap-cell muted"><i class="bi bi-slash-lg text-muted op-50"></i></span>`);
                 } else {
                     cells.push(`<span class="cp-recap-cell ${catData.status}"><b>${catData.nominations}</b><small>/${expectedCount}</small></span>`);
@@ -295,8 +300,12 @@ function renderAwardCard(awardKey, data) {
                 const catData = yearData[category] || { nominations: 0, winners: 0, status: 'pending', expected: undefined };
                 const expectedCount = (catData.expected !== undefined) ? catData.expected : (data.expected[awardKey]?.[category] || 0);
 
-                if (expectedCount === 0 && catData.nominations === 0) {
-                    cells.push(`<span class="cp-recap-cell muted"></span>`);
+                // Special case: Cannes 2020 was cancelled (COVID-19) - year 2021 in season format
+                const isCancelled = (expectedCount === 0 && catData.nominations === 0) ||
+                    (awardKey === 'cannes' && yearNum === 2021 && catData.nominations === 0);
+
+                if (isCancelled) {
+                    cells.push(`<span class="cp-recap-cell muted"><i class="bi bi-dash-lg"></i></span>`);
                 } else {
                     cells.push(`<span class="cp-recap-cell ${catData.status}"><b>${catData.nominations}</b>/${expectedCount}</span>`);
                 }
