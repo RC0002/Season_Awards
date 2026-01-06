@@ -158,8 +158,8 @@
         "gotham": "Y",
         "spirit": "Y"
       },
-      "posterPath": "/t1oLNRFixpFOVsyz1HCqCUW3wiW.jpg",
-      "tmdbId": 554230
+      "posterPath": "/kCRpBO9xWtzDEJcdhTXpHy40QLS.jpg",
+      "tmdbId": 203051
     },
     {
       "name": "Drive My Car",
@@ -229,6 +229,14 @@
       "note": "Director: Julia Ducournau",
       "posterPath": "/AeQC4gFwkIvjAwnSd2RPAlgs1VE.jpg",
       "tmdbId": 630240
+    },
+    {
+      "name": "The Mitchells vs. the Machines",
+      "awards": {
+        "annie": "Y"
+      },
+      "posterPath": "/mI2Di7HmskQQ34kz0iau6J1vr70.jpg",
+      "tmdbId": 501929
     },
     {
       "name": "No Time to Die",
@@ -303,6 +311,38 @@
       },
       "posterPath": "/oJCQjD2byiVF1EG408F9dBn9ndU.jpg",
       "tmdbId": 644495
+    },
+    {
+      "name": "Encanto",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg",
+      "tmdbId": 568124
+    },
+    {
+      "name": "Luca",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/9x4i9uKGXt8IiiIF5Ey0DIoY738.jpg",
+      "tmdbId": 508943
+    },
+    {
+      "name": "Raya and the Last Dragon",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/5nVhgCzxKbK47OLIKxCR1syulOn.jpg",
+      "tmdbId": 527774
+    },
+    {
+      "name": "Sing 2",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg",
+      "tmdbId": 438695
     },
     {
       "name": "Candyman",
@@ -1297,7 +1337,7 @@
         "critics": "Y",
         "astra": "X"
       },
-      "profilePath": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
+      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
       "tmdbId": 83002
     },
     {

@@ -221,6 +221,14 @@
       "tmdbId": 620350
     },
     {
+      "name": "Klaus",
+      "awards": {
+        "annie": "Y"
+      },
+      "posterPath": "/q125RHUDgR4gjwh1QkfYuJLYkL.jpg",
+      "tmdbId": 508965
+    },
+    {
       "name": "Avengers: Endgame",
       "awards": {
         "adg": "Y"
@@ -281,6 +289,38 @@
       },
       "posterPath": "/gbPfvwBqbiHpQkYZQvVwB6MVauV.jpg",
       "tmdbId": 525661
+    },
+    {
+      "name": "How to Train Your Dragon: The Hidden World",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+      "tmdbId": 166428
+    },
+    {
+      "name": "Frozen 2",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/q8aIWm5wA0AlIblPvxQ9Xhf0Ljn.jpg",
+      "tmdbId": 1559039
+    },
+    {
+      "name": "Missing Link",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/dYXhlI8iwDmsD77rYgTSDVKW8lP.jpg",
+      "tmdbId": 918979
+    },
+    {
+      "name": "Toy Story 4",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/w9kR8qbmQ01HwnvK4alvnQ2ca0L.jpg",
+      "tmdbId": 301528
     },
     {
       "name": "Ad Astra",

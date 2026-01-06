@@ -220,6 +220,14 @@
       "tmdbId": 15912
     },
     {
+      "name": "Coco",
+      "awards": {
+        "annie": "Y"
+      },
+      "posterPath": "/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg",
+      "tmdbId": 354912
+    },
+    {
       "name": "Blade Runner 2049",
       "awards": {
         "adg": "Y"
@@ -284,6 +292,38 @@
       "genre": "Comedy",
       "posterPath": "/b9CeobiihCx1uG1tpw8hXmpi7nm.jpg",
       "tmdbId": 316029
+    },
+    {
+      "name": "Captain Underpants: The First Epic Movie",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/vKSmaPct5OEeMoD8ue30RisHlKD.jpg",
+      "tmdbId": 268531
+    },
+    {
+      "name": "Cars 3",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/fyy1nDC8wm553FCiBDojkJmKLCs.jpg",
+      "tmdbId": 260514
+    },
+    {
+      "name": "Despicable Me 3",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/6t3YWl7hrr88lCEFlGVqW5yV99R.jpg",
+      "tmdbId": 324852
+    },
+    {
+      "name": "The Boss Baby",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/unPB1iyEeTBcKiLg8W083rlViFH.jpg",
+      "tmdbId": 295693
     },
     {
       "name": "Murder on the Orient Express",
@@ -1197,7 +1237,7 @@
       },
       "film": "Molly's Game",
       "role": "Leading",
-      "profilePath": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
+      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
       "tmdbId": 83002
     },
     {

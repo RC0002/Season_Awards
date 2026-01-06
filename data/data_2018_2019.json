@@ -219,6 +219,14 @@
       "tmdbId": 414030
     },
     {
+      "name": "Spider-Man: Into the Spider-Verse —",
+      "awards": {
+        "annie": "Y"
+      },
+      "posterPath": "/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+      "tmdbId": 324857
+    },
+    {
       "name": "The Rider",
       "awards": {
         "gotham": "Y"
@@ -255,6 +263,38 @@
       },
       "posterPath": "/nx4lUyQNEzJowcF55VAP0TQEaX0.jpg",
       "tmdbId": 398181
+    },
+    {
+      "name": "Early Man —",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/esR5SuORqZPezKERZPTeSVStluF.jpg",
+      "tmdbId": 498394
+    },
+    {
+      "name": "Incredibles 2",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/9lFKBtaVIhP7E2Pk0IY1CwTKTMZ.jpg",
+      "tmdbId": 260513
+    },
+    {
+      "name": "Isle of Dogs —",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/c0nUX6Q1ZB0P2t1Jo6EeFSVnOGQ.jpg",
+      "tmdbId": 399174
+    },
+    {
+      "name": "Ralph Breaks the Internet",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/iVCrhBcpDaHGvv7CLYbK6PuXZo1.jpg",
+      "tmdbId": 404368
     },
     {
       "name": "Burning",
@@ -1398,7 +1438,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/2zyOjda95OfAAsJvuwTV0UaznPZ.jpg",
+      "profilePath": "/zmcwkvBGU4j6QEClXGu7ODjDEM.jpg",
       "tmdbId": 53714
     },
     {

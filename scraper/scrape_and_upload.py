@@ -79,6 +79,8 @@ HISTORICAL_AVERAGES = {
     'bifa': {'best-film': 5, 'best-director': 5, 'best-actor': 6, 'best-actress': 6},
     # Cannes Film Festival: Winners only (Palme d'Or, Best Director, Best Actor, Best Actress)
     'cannes': {'best-film': 1, 'best-director': 1, 'best-actor': 1, 'best-actress': 1},
+    # Annie Awards: Best Animated Feature only (typically 5 nominees in current format)
+    'annie': {'best-film': 5, 'best-director': 0, 'best-actor': 0, 'best-actress': 0},
 }
 
 # Year-specific overrides for historical rule changes
@@ -242,7 +244,28 @@ HISTORICAL_EXPECTED_OVERRIDES = {
         # Cannes 2018: 2 films (Shoplifters Palme d'Or + The Image Book Special Palme d'Or)
         'best-film': {(2019, 2019): 2},
         # Cannes 2016: 2 directors (Mungiu + Assayas shared Best Director)
+        # Cannes 2025: 2 actors (Wagner Moura + Philip Seymour Hoffman Jr. shared)
         'best-director': {(2017, 2017): 2},
+        'best-actor': {(2026, 2026): 2},
+    },
+    # Annie Awards: Historical nominee count variations
+    # Before 2017/18 (45th), Annie had 5-8 nominees based on year
+    'annie': {
+        'best-film': {
+            (2013, 2013): 8,  # 40th: 8 nominees
+            (2014, 2014): 7,  # 41st: 7 nominees (Frozen winner)
+            (2015, 2015): 8,  # 42nd: 8 nominees (How to Train Your Dragon 2)
+            (2016, 2016): 5,  # 43rd: 5 nominees (Inside Out winner)
+            (2017, 2017): 5,  # 44th: 5 nominees
+            (2018, 2018): 5,  # 45th: 5 nominees (Coco winner)
+            (2019, 2019): 5,  # 46th: 5 nominees
+            (2020, 2020): 5,  # 47th: 5 nominees
+            (2021, 2021): 5,  # 48th: 5 nominees
+            (2022, 2022): 5,  # 49th: 5 nominees
+            (2023, 2023): 5,  # 50th: 5 nominees
+            (2024, 2024): 5,  # 51st: 5 nominees
+            (2025, 2025): 6,  # 52nd: 6 nominees (current confirmed)
+        }
     }
 }
 
@@ -485,7 +508,7 @@ def scrape_award_with_logging(award_key, year, report):
         
         # ==== CALL APPROPRIATE SCRAPER ====
         from master_scraper import (scrape_award, scrape_afi, scrape_nbr, 
-                                    scrape_venice, scrape_dga, scrape_pga, scrape_lafca, scrape_wga, scrape_adg, scrape_gotham, scrape_astra, scrape_spirit, scrape_bifa, scrape_cannes)
+                                    scrape_venice, scrape_dga, scrape_pga, scrape_lafca, scrape_wga, scrape_adg, scrape_gotham, scrape_astra, scrape_spirit, scrape_bifa, scrape_cannes, scrape_annie)
         
         result = None
         
@@ -528,6 +551,9 @@ def scrape_award_with_logging(award_key, year, report):
         elif award_key == 'cannes':
             result = scrape_cannes(ceremony)
             log.log(f"Scraped Cannes Film Festival")
+        elif award_key == 'annie':
+            result = scrape_annie(ceremony)
+            log.log(f"Scraped Annie Awards (Best Animated Feature)")
         else:
             result = scrape_award(award_key, year)
             log.log(f"Scraped Wikipedia awards table")
@@ -574,7 +600,7 @@ def scrape_year_enhanced(year, awards=None, parallel=True):
     Enhanced scrape_year with detailed logging and report generation.
     """
     if awards is None:
-        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'cannes', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa']
+        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'cannes', 'annie', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa']
     
     report = ScrapeReport(year)
     all_results = {}

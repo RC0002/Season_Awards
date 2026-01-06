@@ -246,6 +246,14 @@
       "tmdbId": 1004663
     },
     {
+      "name": "Guillermo del Toro's Pinocchio",
+      "awards": {
+        "annie": "Y"
+      },
+      "posterPath": "/vx1u0uwxdlhV2MUzj4VlcMB0N6m.jpg",
+      "tmdbId": 555604
+    },
+    {
       "name": "Black Panther: Wakanda Forever",
       "awards": {
         "pga": "X",
@@ -254,6 +262,38 @@
       },
       "posterPath": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
       "tmdbId": 505642
+    },
+    {
+      "name": "Puss in Boots: The Last Wish",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
+      "tmdbId": 315162
+    },
+    {
+      "name": "The Sea Beast",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/9Zfv4Ap1e8eKOYnZPtYaWhLkk0d.jpg",
+      "tmdbId": 560057
+    },
+    {
+      "name": "Turning Red",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/qsdjk9oAKSQMWs0Vt5Pyfh6O4GZ.jpg",
+      "tmdbId": 508947
+    },
+    {
+      "name": "Wendell & Wild",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/s7XxXJ7ponaLAkxiySRxox2Ssc4.jpg",
+      "tmdbId": 511817
     },
     {
       "name": "The Whale",
@@ -694,7 +734,7 @@
         "lafca": "Y",
         "bifa": "X"
       },
-      "profilePath": "/acbigDOU1L1vMWAL3Wf0r8h8qLA.jpg",
+      "profilePath": "/xrMzXXR201n5u32OCS1UTLjGrQv.jpg",
       "tmdbId": 2440
     },
     {

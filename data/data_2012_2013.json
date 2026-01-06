@@ -198,6 +198,14 @@
       }
     },
     {
+      "name": "Wreck-It Ralph",
+      "awards": {
+        "annie": "Y"
+      },
+      "posterPath": "/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg",
+      "tmdbId": 82690
+    },
+    {
       "name": "Anna Karenina",
       "awards": {
         "adg": "Y"
@@ -263,6 +271,62 @@
       "genre": "Comedy",
       "posterPath": "/tSmZAKh1H80AGERgMOvXAWTwbVQ.jpg",
       "tmdbId": 81025
+    },
+    {
+      "name": "Brave",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/1XAuDtMWpL0sYSFK0R6EZate2Ux.jpg",
+      "tmdbId": 62177
+    },
+    {
+      "name": "Frankenweenie",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/yGjVbLVdZRBlZTTQVBsj2KUjL1s.jpg",
+      "tmdbId": 62214
+    },
+    {
+      "name": "Hotel Transylvania",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/eJGvzGrsfe2sqTUPv5IwLWXjVuR.jpg",
+      "tmdbId": 76492
+    },
+    {
+      "name": "ParaNorman",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/9DZPtuYTKYxt6vzHvZ5FLThG4fl.jpg",
+      "tmdbId": 77174
+    },
+    {
+      "name": "Rise of the Guardians",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/sW4qOa9yF0Ikg7lppncQ0n5UhKX.jpg",
+      "tmdbId": 81188
+    },
+    {
+      "name": "The Pirates! Band of Misfits",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/bkLeXPDP6sramrTiF5W7TzUl4t0.jpg",
+      "tmdbId": 72197
+    },
+    {
+      "name": "The Rabbi's Cat",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/pcjwhq6hF3z2Wir0ZcKHTxmtRsH.jpg",
+      "tmdbId": 75491
     },
     {
       "name": "Cloud Atlas",
@@ -1029,7 +1093,7 @@
         "critics": "Y",
         "nbr": "Y"
       },
-      "profilePath": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
+      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
       "tmdbId": 83002
     },
     {

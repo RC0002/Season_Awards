@@ -223,6 +223,46 @@
       "tmdbId": 1254808
     },
     {
+      "name": "Elio",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/7z8jDiTZZco9moIKpTUImFtTy7o.jpg",
+      "tmdbId": 1022787
+    },
+    {
+      "name": "KPop Demon Hunters",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg",
+      "tmdbId": 803796
+    },
+    {
+      "name": "Little Amélie or the Character of Rain",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/smasJY24MYsQ6JMxW817KmCimVt.jpg",
+      "tmdbId": 682012
+    },
+    {
+      "name": "The Bad Guys 2",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/c1msaKf1wyuKcmLjjJd6rIBPFcd.jpg",
+      "tmdbId": 1175942
+    },
+    {
+      "name": "Zootopia 2",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/bjUWGw0Ao0qVWxagN3VCwBJHVo6.jpg",
+      "tmdbId": 1084242
+    },
+    {
       "name": "East of Wall",
       "awards": {
         "gotham": "X"
@@ -512,7 +552,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/6N4Nrrzv0Cjj8njcLvkIpcFjQgp.jpg",
+      "profilePath": "/gmCJ8rWFv2mqLAo0ngOQFxdHvfT.jpg",
       "tmdbId": 1941982
     },
     {
@@ -526,21 +566,6 @@
     }
   ],
   "best-actor": [
-    {
-      "name": "Wagner Moura",
-      "film": "The Secret Agent",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "critics": "X",
-        "cannes": "Y",
-        "lafca": "X",
-        "gotham": "X",
-        "astra": "X"
-      },
-      "profilePath": "/yJjV1ZCQbCSSgRy05FncCKjyaY4.jpg",
-      "tmdbId": 52583
-    },
     {
       "name": "Stellan Skarsgård",
       "film": "Sentimental Value",
@@ -617,6 +642,20 @@
       "tmdbId": 72782
     },
     {
+      "name": "Wagner Moura",
+      "awards": {
+        "cannes": "Y"
+      },
+      "profilePath": "/yJjV1ZCQbCSSgRy05FncCKjyaY4.jpg",
+      "tmdbId": 52583
+    },
+    {
+      "name": "The Secret Agent",
+      "awards": {
+        "cannes": "Y"
+      }
+    },
+    {
       "name": "Sopé Dìrísù",
       "awards": {
         "gotham": "Y"
@@ -642,6 +681,20 @@
       },
       "profilePath": "/pbsoexLxfXZZvITACzfOB1dsDip.jpg",
       "tmdbId": 2588506
+    },
+    {
+      "name": "Wagner Moura",
+      "film": "The Secret Agent",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "lafca": "X",
+        "gotham": "X",
+        "astra": "X"
+      },
+      "profilePath": "/yJjV1ZCQbCSSgRy05FncCKjyaY4.jpg",
+      "tmdbId": 52583
     },
     {
       "name": "Joel Edgerton",

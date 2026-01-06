@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-05T20:46:40.318401",
+  "generated": "2026-01-06T13:11:46.002546",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -108,6 +108,12 @@
       "best-director": 1,
       "best-actor": 1,
       "best-actress": 1
+    },
+    "annie": {
+      "best-film": 5,
+      "best-director": 0,
+      "best-actor": 0,
+      "best-actress": 0
     }
   },
   "years": {
@@ -579,6 +585,32 @@
           "status": "ok",
           "expected": 2
         }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 8,
+          "winners": 1,
+          "status": "ok",
+          "expected": 8
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
       }
     },
     "2013_2014": {
@@ -1048,6 +1080,32 @@
           "winners": 1,
           "status": "ok",
           "expected": 1
+        }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 7,
+          "winners": 1,
+          "status": "ok",
+          "expected": 7
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
         }
       }
     },
@@ -1519,6 +1577,32 @@
           "status": "ok",
           "expected": 1
         }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 8,
+          "winners": 1,
+          "status": "ok",
+          "expected": 8
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
       }
     },
     "2015_2016": {
@@ -1988,6 +2072,32 @@
           "winners": 2,
           "status": "ok",
           "expected": 2
+        }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
         }
       }
     },
@@ -2459,6 +2569,32 @@
           "status": "ok",
           "expected": 1
         }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
       }
     },
     "2017_2018": {
@@ -2928,6 +3064,32 @@
           "winners": 1,
           "status": "ok",
           "expected": 1
+        }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
         }
       }
     },
@@ -3399,6 +3561,32 @@
           "status": "ok",
           "expected": 1
         }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
       }
     },
     "2019_2020": {
@@ -3868,6 +4056,32 @@
           "winners": 1,
           "status": "ok",
           "expected": 1
+        }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
         }
       }
     },
@@ -4339,6 +4553,32 @@
           "status": "pending",
           "expected": 1
         }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
       }
     },
     "2021_2022": {
@@ -4808,6 +5048,32 @@
           "winners": 1,
           "status": "ok",
           "expected": 1
+        }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
         }
       }
     },
@@ -5279,6 +5545,32 @@
           "status": "ok",
           "expected": 1
         }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
       }
     },
     "2023_2024": {
@@ -5748,6 +6040,32 @@
           "winners": 1,
           "status": "ok",
           "expected": 1
+        }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
         }
       }
     },
@@ -6219,6 +6537,32 @@
           "status": "ok",
           "expected": 4
         }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 6,
+          "winners": 1,
+          "status": "ok",
+          "expected": 6
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
       }
     },
     "2025_2026": {
@@ -6678,16 +7022,42 @@
           "expected": 1
         },
         "best-actor": {
-          "nominations": 1,
-          "winners": 1,
+          "nominations": 2,
+          "winners": 2,
           "status": "ok",
-          "expected": 1
+          "expected": 2
         },
         "best-actress": {
           "nominations": 1,
           "winners": 1,
           "status": "ok",
           "expected": 1
+        }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 5,
+          "winners": 0,
+          "status": "ok",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
         }
       }
     }

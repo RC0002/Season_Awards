@@ -205,6 +205,15 @@
       "tmdbId": 171274
     },
     {
+      "name": "The Lego Movie",
+      "awards": {
+        "nbr": "Y",
+        "annie": "X"
+      },
+      "posterPath": "/lbctonEnewCYZ4FYoTZhs8cidAl.jpg",
+      "tmdbId": 137106
+    },
+    {
       "name": "Guardians of the Galaxy",
       "awards": {
         "wga": "X",
@@ -231,14 +240,6 @@
       "tmdbId": 228150
     },
     {
-      "name": "The Lego Movie",
-      "awards": {
-        "nbr": "Y"
-      },
-      "posterPath": "/lbctonEnewCYZ4FYoTZhs8cidAl.jpg",
-      "tmdbId": 137106
-    },
-    {
       "name": "Un piccione seduto su un ramo riflette sull'esistenza",
       "awards": {
         "venice": "Y"
@@ -254,6 +255,14 @@
       "note": "Director: Nuri Bilge Ceylan",
       "posterPath": "/95j83qOqH3Ivz4RYkaSjGT0VSNr.jpg",
       "tmdbId": 265169
+    },
+    {
+      "name": "How to Train Your Dragon 2",
+      "awards": {
+        "annie": "Y"
+      },
+      "posterPath": "/d13Uj86LdbDLrfDoHR5aDOFYyJC.jpg",
+      "tmdbId": 82702
     },
     {
       "name": "The Theory of Everything",
@@ -286,6 +295,54 @@
       "genre": "Comedy",
       "posterPath": "/1bb7MTHCIPhpKZFysDpxNaNrdMk.jpg",
       "tmdbId": 239563
+    },
+    {
+      "name": "Big Hero 6",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/2mxS4wUimwlLmI1xp6QW6NSU361.jpg",
+      "tmdbId": 177572
+    },
+    {
+      "name": "Cheatin'",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/uNIbEUvcm7z6PxtlbCm19YshkBF.jpg",
+      "tmdbId": 228692
+    },
+    {
+      "name": "Song of the Sea",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/16LQC6zpqB0l74mVWb93a2oMFnX.jpg",
+      "tmdbId": 110416
+    },
+    {
+      "name": "The Book of Life",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/aotTZos5KswgCryEzx2rlOjFsm1.jpg",
+      "tmdbId": 228326
+    },
+    {
+      "name": "The Boxtrolls",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/npBf0yc5Gt7aAyyVOcYtFyT2IPa.jpg",
+      "tmdbId": 170687
+    },
+    {
+      "name": "The Tale of the Princess Kaguya",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/mWRQNlWXYYfd2z4FRm99MsgHgiA.jpg",
+      "tmdbId": 149871
     },
     {
       "name": "Wild",
@@ -1161,7 +1218,7 @@
       },
       "film": "A Most Violent Year",
       "role": "Supporting",
-      "profilePath": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
+      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
       "tmdbId": 83002
     },
     {

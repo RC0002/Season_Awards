@@ -78,6 +78,16 @@
       "tmdbId": 281957
     },
     {
+      "name": "Inside Out",
+      "awards": {
+        "afi": "Y",
+        "nbr": "Y",
+        "annie": "Y"
+      },
+      "posterPath": "/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
+      "tmdbId": 150540
+    },
+    {
       "name": "Bridge of Spies",
       "awards": {
         "oscar": "X",
@@ -115,15 +125,6 @@
       },
       "posterPath": "/1CiLJx8Xtv3TbbFj6k7BboSmKgC.jpg",
       "tmdbId": 277216
-    },
-    {
-      "name": "Inside Out",
-      "awards": {
-        "afi": "Y",
-        "nbr": "Y"
-      },
-      "posterPath": "/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
-      "tmdbId": 150540
     },
     {
       "name": "Carol",
@@ -255,6 +256,15 @@
       "tmdbId": 283587
     },
     {
+      "name": "Anomalisa",
+      "awards": {
+        "annie": "X",
+        "spirit": "X"
+      },
+      "posterPath": "/4DJ1zNr4Y6q7zQ27goEYla46VdO.jpg",
+      "tmdbId": 291270
+    },
+    {
       "name": "Tangerine",
       "awards": {
         "gotham": "X",
@@ -271,6 +281,30 @@
       "genre": "Comedy",
       "posterPath": "/vPBmfMHxQvRRNGYD5S5ko2KnX56.jpg",
       "tmdbId": 238713
+    },
+    {
+      "name": "Shaun the Sheep Movie",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/1GMvKNy2Ht5QwI0oV0ycYnxzWdC.jpg",
+      "tmdbId": 263109
+    },
+    {
+      "name": "The Good Dinosaur",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/8RSkxOO80btfKjyiC5ZiTaCHIT8.jpg",
+      "tmdbId": 105864
+    },
+    {
+      "name": "The Peanuts Movie",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/aiwdwnl7RFs1vcBanOKr13ye3wE.jpg",
+      "tmdbId": 227973
     },
     {
       "name": "Steve Jobs",
@@ -344,14 +378,6 @@
       },
       "posterPath": "/E1MMMNAd01p3nMkUIB6eFtB57J.jpg",
       "tmdbId": 285024
-    },
-    {
-      "name": "Anomalisa",
-      "awards": {
-        "spirit": "X"
-      },
-      "posterPath": "/4DJ1zNr4Y6q7zQ27goEYla46VdO.jpg",
-      "tmdbId": 291270
     },
     {
       "name": "45 Years",

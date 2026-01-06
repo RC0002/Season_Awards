@@ -142,6 +142,14 @@ CEREMONY_MAP = {
         2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
         2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
         2015: 2014, 2014: 2013, 2013: 2012
+    },
+    # Annie Awards - ceremony number = season_end_year - 1973
+    # 52nd Annie Awards (2025) → Season 2024/25
+    # 40th Annie Awards (2013) → Season 2012/13
+    'annie': {
+        2026: 53, 2025: 52, 2024: 51, 2023: 50, 2022: 49, 2021: 48,
+        2020: 47, 2019: 46, 2018: 45, 2017: 44, 2016: 43,
+        2015: 42, 2014: 41, 2013: 40
     }
 }
 
@@ -2522,7 +2530,7 @@ def enrich_with_tmdb(data):
 def scrape_year(year, awards=None):
     """Scrape all awards for a given year"""
     if awards is None:
-        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'dga', 'pga', 'wga']
+        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'cannes', 'annie', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa']
     
     print(f"\n{'='*60}")
     print(f"  SCRAPING SEASON {year-1}/{year}")
@@ -2594,6 +2602,25 @@ def scrape_year(year, awards=None):
             result = scrape_bifa(year)
             if result:
                 all_results['bifa'] = result
+        elif award_key == 'cannes':
+            cannes_year = CEREMONY_MAP['cannes'].get(year)
+            if cannes_year:
+                from scrapers.cannes import scrape_cannes
+                result = scrape_cannes(cannes_year)
+                if result:
+                    all_results['cannes'] = result
+        elif award_key == 'annie':
+            annie_num = CEREMONY_MAP['annie'].get(year)
+            if annie_num:
+                result = scrape_annie(annie_num)
+                if result:
+                    all_results['annie'] = result
+        elif award_key == 'spirit':
+            spirit_num = CEREMONY_MAP['spirit'].get(year)
+            if spirit_num:
+                result = scrape_spirit(spirit_num)
+                if result:
+                    all_results['spirit'] = result
         else:
             result = scrape_award(award_key, year)
             if result:
@@ -3189,3 +3216,4 @@ from scrapers.spirit import scrape_spirit, scrape_spirit_logic
 
 
 from scrapers.bifa import scrape_bifa
+from scrapers.annie import scrape_annie

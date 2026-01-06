@@ -127,6 +127,15 @@
       "tmdbId": 279550
     },
     {
+      "name": "Spider-Man: Across the Spider-Verse",
+      "awards": {
+        "afi": "Y",
+        "annie": "Y"
+      },
+      "posterPath": "/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+      "tmdbId": 569094
+    },
+    {
       "name": "Anatomy of a Fall",
       "awards": {
         "oscar": "X",
@@ -170,6 +179,15 @@
       "tmdbId": 930564
     },
     {
+      "name": "The Boy and the Heron",
+      "awards": {
+        "nbr": "Y",
+        "annie": "X"
+      },
+      "posterPath": "/f4oZTcfGrVTXKTWg157AwikXqmP.jpg",
+      "tmdbId": 508883
+    },
+    {
       "name": "All of Us Strangers",
       "awards": {
         "spirit": "X",
@@ -177,22 +195,6 @@
       },
       "posterPath": "/aviJMFZSnnCAsCVyJGaPNx4Ef3i.jpg",
       "tmdbId": 994108
-    },
-    {
-      "name": "Spider-Man: Across the Spider-Verse",
-      "awards": {
-        "afi": "Y"
-      },
-      "posterPath": "/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
-      "tmdbId": 569094
-    },
-    {
-      "name": "The Boy and the Heron",
-      "awards": {
-        "nbr": "Y"
-      },
-      "posterPath": "/f4oZTcfGrVTXKTWg157AwikXqmP.jpg",
-      "tmdbId": 508883
     },
     {
       "name": "Ferrari",
@@ -250,6 +252,30 @@
       },
       "posterPath": "/3azIrBfctN3HwEV8L9nM6ngKfxo.jpg",
       "tmdbId": 993924
+    },
+    {
+      "name": "Nimona",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/2NQljeavtfl22207D1kxLpa4LS3.jpg",
+      "tmdbId": 961323
+    },
+    {
+      "name": "Suzume",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/yStW1TXF5s7Tbtu9KjIZEaWl6HL.jpg",
+      "tmdbId": 916224
+    },
+    {
+      "name": "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/kbnhvFPyXKCKLNhg1pkz6rXQ4Le.jpg",
+      "tmdbId": 614930
     },
     {
       "name": "Are You There God? It's Me, Margaret.",
@@ -1294,7 +1320,7 @@
       },
       "role": "Supporting",
       "film": "Are You There God? It's Me, Margaret.",
-      "profilePath": "/2zyOjda95OfAAsJvuwTV0UaznPZ.jpg",
+      "profilePath": "/zmcwkvBGU4j6QEClXGu7ODjDEM.jpg",
       "tmdbId": 53714
     },
     {
@@ -1610,7 +1636,7 @@
         "spirit": "X"
       },
       "film": "Memory",
-      "profilePath": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
+      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
       "tmdbId": 83002
     },
     {

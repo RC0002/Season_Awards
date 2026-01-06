@@ -49,6 +49,17 @@
       "tmdbId": 581859
     },
     {
+      "name": "Soul",
+      "awards": {
+        "afi": "Y",
+        "nbr": "Y",
+        "annie": "Y",
+        "astra": "X"
+      },
+      "posterPath": "/6jmppcaubzLF8wkXM36ganVISCo.jpg",
+      "tmdbId": 508442
+    },
+    {
       "name": "The Trial of the Chicago 7",
       "awards": {
         "oscar": "X",
@@ -130,16 +141,6 @@
       "genre": "Comedy",
       "posterPath": "/3L1Ml5RWjFVfVq3rQENvgFymT0U.jpg",
       "tmdbId": 740985
-    },
-    {
-      "name": "Soul",
-      "awards": {
-        "afi": "Y",
-        "nbr": "Y",
-        "astra": "X"
-      },
-      "posterPath": "/6jmppcaubzLF8wkXM36ganVISCo.jpg",
-      "tmdbId": 508442
     },
     {
       "name": "Ma Rainey's Black Bottom",
@@ -295,6 +296,38 @@
       },
       "posterPath": "/lIADEa6oH74uUapjsPbNRzxus8M.jpg",
       "tmdbId": 644583
+    },
+    {
+      "name": "Onward",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/f4aul3FyD3jv3v4bul1IrkWZvzq.jpg",
+      "tmdbId": 508439
+    },
+    {
+      "name": "The Croods: A New Age",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/tbVZ3Sq88dZaCANlUcewQuHQOaE.jpg",
+      "tmdbId": 529203
+    },
+    {
+      "name": "The Willoughbys",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/9WrMmjdZvpxLQh1tCQ9tOd1asOb.jpg",
+      "tmdbId": 560044
+    },
+    {
+      "name": "Trolls World Tour",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/7W0G3YECgDAfnuiHG91r8WqgIOe.jpg",
+      "tmdbId": 446893
     },
     {
       "name": "Ma Rainey’s Black Bottom",

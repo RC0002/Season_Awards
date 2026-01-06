@@ -87,7 +87,7 @@ const CONFIG = {
         'astra': 'all',
         'spirit': 'all',
         'bifa': 'all',
-        'annie': ['best-film'],
+        'annie': 'all',
         'nyfcc': 'all',
         'cannes': 'all',
         'venice': 'all'

@@ -132,6 +132,15 @@
       "tmdbId": 68730
     },
     {
+      "name": "Zootopia",
+      "awards": {
+        "afi": "Y",
+        "annie": "Y"
+      },
+      "posterPath": "/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg",
+      "tmdbId": 269149
+    },
+    {
       "name": "Fences",
       "awards": {
         "oscar": "X",
@@ -172,14 +181,6 @@
       },
       "posterPath": "/41SVO0AElBAl7zks9dFhJ0OjHni.jpg",
       "tmdbId": 340485
-    },
-    {
-      "name": "Zootopia",
-      "awards": {
-        "afi": "Y"
-      },
-      "posterPath": "/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg",
-      "tmdbId": 269149
     },
     {
       "name": "O.J.: Made in America",
@@ -299,6 +300,38 @@
       },
       "posterPath": "/2sFME73GaD8UsUxPUKe60cPdLif.jpg",
       "tmdbId": 334533
+    },
+    {
+      "name": "Finding Dory",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/3UVe8NL1E2ZdUZ9EDlKGJY5UzE.jpg",
+      "tmdbId": 127380
+    },
+    {
+      "name": "Kubo and the Two Strings",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/la6QA9tk4Foq8OBH2Dyh5dTcw6H.jpg",
+      "tmdbId": 313297
+    },
+    {
+      "name": "Kung Fu Panda 3",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/oajNi4Su39WAByHI6EONu8G8HYn.jpg",
+      "tmdbId": 140300
+    },
+    {
+      "name": "Moana",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/8Kpmnbbb8Rp1wG99thlcZ9JAUqo.jpg",
+      "tmdbId": 1108427
     },
     {
       "name": "Café Society",
@@ -493,7 +526,7 @@
         "gg": "X",
         "critics": "X"
       },
-      "profilePath": "/jnqHMaOslt8cef2atSmOpGRvNla.jpg",
+      "profilePath": "/4wEWS5NgioKBGTi5fdv2BP3b4ZY.jpg",
       "tmdbId": 2461
     },
     {
@@ -1269,7 +1302,7 @@
       },
       "film": "Miss Sloane",
       "role": "Leading",
-      "profilePath": "/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg",
+      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
       "tmdbId": 83002
     },
     {

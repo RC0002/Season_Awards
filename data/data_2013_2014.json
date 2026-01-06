@@ -187,6 +187,14 @@
       }
     },
     {
+      "name": "Frozen",
+      "awards": {
+        "annie": "Y"
+      },
+      "posterPath": "/itAKcobTYGpYT8Phwjd8c9hleTo.jpg",
+      "tmdbId": 109445
+    },
+    {
       "name": "The Great Gatsby",
       "awards": {
         "adg": "Y"
@@ -271,6 +279,54 @@
       },
       "posterPath": "/pAi8Bl3ZKX6pANPVhNwbhbQANop.jpg",
       "tmdbId": 132363
+    },
+    {
+      "name": "A Letter to Momo",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/uH4c5t3Wzzv41Wq9ws2Q47N1Dzo.jpg",
+      "tmdbId": 100271
+    },
+    {
+      "name": "Despicable Me 2",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/5Fh4NdoEnCjCK9wLjdJ9DJNFl2b.jpg",
+      "tmdbId": 93456
+    },
+    {
+      "name": "Ernest & Celestine",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/iJPbRASktYW0I009Ktc2zUE6Fvg.jpg",
+      "tmdbId": 126319
+    },
+    {
+      "name": "Monsters University",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/y7thwJ7z5Bplv6vwl6RI0yteaDD.jpg",
+      "tmdbId": 62211
+    },
+    {
+      "name": "The Croods",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/27zvjVOtOi5ped1HSlJKNsKXkFH.jpg",
+      "tmdbId": 49519
+    },
+    {
+      "name": "The Wind Rises",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/jfwSexzlIzaOgxP9A8bTA6t8YYb.jpg",
+      "tmdbId": 149870
     },
     {
       "name": "Elysium",
