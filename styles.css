@@ -23,7 +23,7 @@ body {
     height: 100vh;
     padding-top: var(--header-height);
     overflow: hidden;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    /* No transition for instant dark/light switching */
 }
 
 /* ============ DARK SCROLLBAR ============ */
@@ -63,7 +63,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.5s ease, border-color 0.5s ease;
+    /* No transition for instant dark/light switching */
 }
 
 .nav-container {
@@ -587,7 +587,7 @@ body.light-mode .home-title {
     overflow: hidden;
     min-width: 300px;
     /* Prevent squishing on small screens */
-    transition: background-color 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+    /* No transition for instant dark/light switching */
 }
 
 /* Fixed category title section */

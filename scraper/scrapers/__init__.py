@@ -117,7 +117,9 @@ URL_TEMPLATES = {
     'oscar': 'https://en.wikipedia.org/wiki/{ord}_Academy_Awards',
     'gg': 'https://en.wikipedia.org/wiki/{ord}_Golden_Globe_Awards',
     'bafta': 'https://en.wikipedia.org/wiki/{ord}_British_Academy_Film_Awards',
+    # SAG Awards renamed to "Actor Awards" starting from 32nd edition (2026)
     'sag': 'https://en.wikipedia.org/wiki/{ord}_Screen_Actors_Guild_Awards',
+    'sag_new': 'https://en.wikipedia.org/wiki/{ord}_Actor_Awards',  # 32nd+ editions
     'critics': 'https://en.wikipedia.org/wiki/{ord}_Critics%27_Choice_Awards',
     'nbr': 'https://en.wikipedia.org/wiki/National_Board_of_Review_Awards_{year}',
     'venice': 'https://it.wikipedia.org/wiki/{ord}%C2%AA_Mostra_internazionale_d%27arte_cinematografica_di_Venezia',
