@@ -3,134 +3,130 @@
     {
       "name": "12 Years a Slave",
       "awards": {
-        "oscar": "Y",
-        "gg": "Y",
         "bafta": "Y",
+        "gg": "Y",
+        "oscar": "Y",
+        "afi": "Y",
         "sag": "X",
         "critics": "Y",
-        "afi": "Y",
         "nbr": "Y",
         "pga": "Y",
         "adg": "X",
         "gotham": "X",
         "spirit": "Y"
       },
-      "posterPath": "/xdANQijuNrJaw1HA61rDccME4Tm.jpg",
-      "tmdbId": 76203
+      "posterPath": "/xdANQijuNrJaw1HA61rDccME4Tm.jpg"
     },
     {
       "name": "Gravity",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "X",
-        "critics": "X",
+        "gg": "X",
+        "oscar": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
         "pga": "Y",
         "lafca": "Y",
         "adg": "Y"
       },
-      "posterPath": "/kZ2nZw8D681aphje8NJi8EfbL1U.jpg",
-      "tmdbId": 49047
+      "posterPath": "/kZ2nZw8D681aphje8NJi8EfbL1U.jpg"
     },
     {
       "name": "Her",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
         "pga": "X",
         "lafca": "Y",
-        "wga": "Y",
-        "adg": "Y"
+        "adg": "Y",
+        "wga": "Y"
       },
-      "posterPath": "/eCOtqtfvn7mxGl6nfmq4b1exJRc.jpg",
-      "tmdbId": 152601
+      "genre": "Comedy",
+      "posterPath": "/eCOtqtfvn7mxGl6nfmq4b1exJRc.jpg"
     },
     {
       "name": "American Hustle",
       "awards": {
-        "oscar": "X",
-        "gg": "Y",
         "bafta": "X",
+        "gg": "Y",
+        "oscar": "X",
+        "afi": "Y",
         "sag": "Y",
         "critics": "X",
-        "afi": "Y",
         "pga": "X",
-        "wga": "X",
-        "adg": "X"
+        "nyfcc": "Y",
+        "adg": "X",
+        "wga": "X"
       },
-      "posterPath": "/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg",
-      "tmdbId": 168672
+      "posterPath": "/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg"
     },
     {
       "name": "Inside Llewyn Davis",
       "awards": {
         "gg": "X",
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
         "adg": "X",
         "gotham": "Y",
         "spirit": "X"
       },
       "genre": "Comedy",
-      "posterPath": "/nNxK3pC3DMpPpWKMvo2p3liREVT.jpg",
-      "tmdbId": 86829
+      "posterPath": "/nNxK3pC3DMpPpWKMvo2p3liREVT.jpg"
     },
     {
       "name": "Captain Phillips",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "X",
-        "critics": "X",
+        "gg": "X",
+        "oscar": "X",
         "afi": "Y",
+        "critics": "X",
         "pga": "X",
-        "wga": "Y",
-        "adg": "X"
+        "adg": "X",
+        "wga": "Y"
       },
-      "posterPath": "/8Td0kkocW6sD3uRpzwfMfkqMWhx.jpg",
-      "tmdbId": 109424
+      "posterPath": "/8Td0kkocW6sD3uRpzwfMfkqMWhx.jpg"
     },
     {
       "name": "Nebraska",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
         "pga": "X",
         "wga": "X",
         "spirit": "X"
       },
-      "posterPath": "/o1t2Mw18EEBnl8v4Nby3PFjxnM1.jpg",
-      "tmdbId": 129670
+      "genre": "Comedy",
+      "posterPath": "/o1t2Mw18EEBnl8v4Nby3PFjxnM1.jpg"
     },
     {
       "name": "The Wolf of Wall Street",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
         "pga": "X",
-        "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
-      "posterPath": "/kW9LmvYHAaS9iA0tHmZVq8hQYoq.jpg",
-      "tmdbId": 106646
+      "genre": "Comedy",
+      "posterPath": "/kW9LmvYHAaS9iA0tHmZVq8hQYoq.jpg"
     },
     {
       "name": "Saving Mr. Banks",
       "awards": {
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
         "pga": "X",
         "adg": "X"
@@ -144,8 +140,7 @@
         "afi": "Y",
         "nbr": "Y"
       },
-      "posterPath": "/oXSy3nEKFtfw5iRxdG8ouEFAnxs.jpg",
-      "tmdbId": 157354
+      "posterPath": "/oXSy3nEKFtfw5iRxdG8ouEFAnxs.jpg"
     },
     {
       "name": "Lone Survivor",
@@ -169,16 +164,21 @@
       "awards": {
         "nbr": "Y"
       },
-      "posterPath": "/tY6ypjKOOtujhxiSwTmvA4OZ5IE.jpg",
-      "tmdbId": 116745
+      "posterPath": "/tY6ypjKOOtujhxiSwTmvA4OZ5IE.jpg"
     },
     {
       "name": "Sacro GRA",
       "awards": {
         "venice": "Y"
       },
-      "posterPath": "/7vsmiudJxiYYQWlnv6OmMT3tH9E.jpg",
-      "tmdbId": 216790
+      "posterPath": "/7vsmiudJxiYYQWlnv6OmMT3tH9E.jpg"
+    },
+    {
+      "name": "Frozen",
+      "awards": {
+        "annie": "Y"
+      },
+      "posterPath": "/itAKcobTYGpYT8Phwjd8c9hleTo.jpg"
     },
     {
       "name": "Blue Is the Warmest Colour[1][42]",
@@ -187,28 +187,18 @@
       }
     },
     {
-      "name": "Frozen",
-      "awards": {
-        "annie": "Y"
-      },
-      "posterPath": "/itAKcobTYGpYT8Phwjd8c9hleTo.jpg",
-      "tmdbId": 109445
-    },
-    {
       "name": "The Great Gatsby",
       "awards": {
         "adg": "Y"
       },
-      "posterPath": "/tyxfCBQv6Ap74jcu3xd7aBiaa29.jpg",
-      "tmdbId": 64682
+      "posterPath": "/tyxfCBQv6Ap74jcu3xd7aBiaa29.jpg"
     },
     {
       "name": "Metro Manila",
       "awards": {
         "bifa": "Y"
       },
-      "posterPath": "/o3HLYPfgNK1N04TqZSOU4Hv4iaq.jpg",
-      "tmdbId": 158091
+      "posterPath": "/o3HLYPfgNK1N04TqZSOU4Hv4iaq.jpg"
     },
     {
       "name": "Dallas Buyers Club",
@@ -219,26 +209,24 @@
         "pga": "X",
         "wga": "X"
       },
-      "posterPath": "/7Fdh7gUq3plvQqxRbNYhWvDABXA.jpg",
-      "tmdbId": 152532
+      "posterPath": "/7Fdh7gUq3plvQqxRbNYhWvDABXA.jpg"
     },
     {
       "name": "Philomena",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
         "bifa": "X"
       },
-      "posterPath": "/eBUv2GmGdXmCk1AaSOmyiu70hN8.jpg",
-      "tmdbId": 205220
+      "posterPath": "/eBUv2GmGdXmCk1AaSOmyiu70hN8.jpg"
     },
     {
       "name": "August: Osage County",
       "awards": {
         "sag": "X",
-        "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
       "posterPath": "/fvjxr77dfxdIOY3lvj0bHP4B5xT.jpg",
       "tmdbId": 152737
@@ -247,8 +235,8 @@
       "name": "Blue Jasmine",
       "awards": {
         "pga": "X",
-        "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
       "posterPath": "/nsj0RLRI10351uYMoAKPur6Derd.jpg",
       "tmdbId": 160588
@@ -260,8 +248,7 @@
         "gotham": "X"
       },
       "screenplay_type": "adapted",
-      "posterPath": "/qbGKJmNUroDz75kh5Oafoall89e.jpg",
-      "tmdbId": 132344
+      "posterPath": "/qbGKJmNUroDz75kh5Oafoall89e.jpg"
     },
     {
       "name": "Rush",
@@ -277,72 +264,63 @@
       "awards": {
         "sag": "X"
       },
-      "posterPath": "/pAi8Bl3ZKX6pANPVhNwbhbQANop.jpg",
-      "tmdbId": 132363
+      "posterPath": "/pAi8Bl3ZKX6pANPVhNwbhbQANop.jpg"
     },
     {
       "name": "A Letter to Momo",
       "awards": {
         "annie": "X"
       },
-      "posterPath": "/uH4c5t3Wzzv41Wq9ws2Q47N1Dzo.jpg",
-      "tmdbId": 100271
+      "posterPath": "/uH4c5t3Wzzv41Wq9ws2Q47N1Dzo.jpg"
     },
     {
       "name": "Despicable Me 2",
       "awards": {
         "annie": "X"
       },
-      "posterPath": "/5Fh4NdoEnCjCK9wLjdJ9DJNFl2b.jpg",
-      "tmdbId": 93456
+      "posterPath": "/5Fh4NdoEnCjCK9wLjdJ9DJNFl2b.jpg"
     },
     {
       "name": "Ernest & Celestine",
       "awards": {
         "annie": "X"
       },
-      "posterPath": "/iJPbRASktYW0I009Ktc2zUE6Fvg.jpg",
-      "tmdbId": 126319
+      "posterPath": "/kfAFq9Iy2uqetGbpsE8GBzgvbqg.jpg"
     },
     {
       "name": "Monsters University",
       "awards": {
         "annie": "X"
       },
-      "posterPath": "/y7thwJ7z5Bplv6vwl6RI0yteaDD.jpg",
-      "tmdbId": 62211
+      "posterPath": "/y7thwJ7z5Bplv6vwl6RI0yteaDD.jpg"
     },
     {
       "name": "The Croods",
       "awards": {
         "annie": "X"
       },
-      "posterPath": "/27zvjVOtOi5ped1HSlJKNsKXkFH.jpg",
-      "tmdbId": 49519
+      "posterPath": "/27zvjVOtOi5ped1HSlJKNsKXkFH.jpg"
     },
     {
       "name": "The Wind Rises",
       "awards": {
         "annie": "X"
       },
-      "posterPath": "/jfwSexzlIzaOgxP9A8bTA6t8YYb.jpg",
-      "tmdbId": 149870
+      "posterPath": "/jfwSexzlIzaOgxP9A8bTA6t8YYb.jpg"
     },
     {
       "name": "Elysium",
       "awards": {
         "adg": "X"
       },
-      "posterPath": "/uiiXHBd9oUrtUa4YqZiAoy05cRz.jpg",
-      "tmdbId": 68724
+      "posterPath": "/uiiXHBd9oUrtUa4YqZiAoy05cRz.jpg"
     },
     {
       "name": "The Hobbit: The Desolation of Smaug",
       "awards": {
         "adg": "X"
       },
-      "posterPath": "/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg",
-      "tmdbId": 57158
+      "posterPath": "/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg"
     },
     {
       "name": "Oblivion",
@@ -365,8 +343,7 @@
       "awards": {
         "gotham": "X"
       },
-      "posterPath": "/xkGkVjeMcvEg7P3VxWy8wYBJ7Dv.jpg",
-      "tmdbId": 152748
+      "posterPath": "/xkGkVjeMcvEg7P3VxWy8wYBJ7Dv.jpg"
     },
     {
       "name": "Upstream Color",
@@ -389,16 +366,14 @@
       "awards": {
         "spirit": "X"
       },
-      "posterPath": "/jrq1NoKvsxWCcffVOjegiYwloFN.jpg",
-      "tmdbId": 121986
+      "posterPath": "/jrq1NoKvsxWCcffVOjegiYwloFN.jpg"
     },
     {
       "name": "The Selfish Giant",
       "awards": {
         "bifa": "X"
       },
-      "posterPath": "/qrBkIMnOQhDm3QIsUQMku3UFWZS.jpg",
-      "tmdbId": 453500
+      "posterPath": "/5Bj6Oku5o7mcqZHMn6sZM1ifMhd.jpg"
     },
     {
       "name": "Starred Up",
@@ -422,24 +397,24 @@
       "name": "Alfonso Cuarón",
       "film": "Gravity",
       "awards": {
-        "oscar": "Y",
-        "gg": "Y",
         "bafta": "Y",
+        "gg": "Y",
+        "oscar": "Y",
         "critics": "Y",
         "dga": "Y",
         "lafca": "Y"
       },
-      "profilePath": "/eoCHiXaQzGgx9RiwXnt3k239FLc.jpg",
-      "tmdbId": 11218
+      "profilePath": "/eoCHiXaQzGgx9RiwXnt3k239FLc.jpg"
     },
     {
       "name": "Steve McQueen",
       "film": "12 Years a Slave",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
         "critics": "X",
+        "nyfcc": "Y",
         "spirit": "Y"
       },
       "profilePath": "/mhHk4NRPXEJLL0SySheXZAArp5w.jpg",
@@ -453,8 +428,7 @@
         "nbr": "Y",
         "lafca": "X"
       },
-      "profilePath": "/x2QeqEXvi3QjgTybvZ4mmqUf4qO.jpg",
-      "tmdbId": 5953
+      "profilePath": "/x2QeqEXvi3QjgTybvZ4mmqUf4qO.jpg"
     },
     {
       "name": "Alexandros Avranas",
@@ -462,8 +436,7 @@
         "venice": "Y"
       },
       "film": "Miss Violence",
-      "profilePath": "/hxbjQBLAL9G7PAZBqlwASOCDWn2.jpg",
-      "tmdbId": 1194907
+      "profilePath": "/hxbjQBLAL9G7PAZBqlwASOCDWn2.jpg"
     },
     {
       "name": "Amat Escalante",
@@ -471,8 +444,7 @@
         "cannes": "Y"
       },
       "film": "Heli",
-      "profilePath": "/dfVRwzLuZY67sHQCNd19ML12g0F.jpg",
-      "tmdbId": 56375
+      "profilePath": "/dfVRwzLuZY67sHQCNd19ML12g0F.jpg"
     },
     {
       "name": "Sean Ellis",
@@ -480,16 +452,15 @@
       "awards": {
         "bifa": "Y"
       },
-      "profilePath": "/b0YRn81Hxm1Lcsfzuctl9wSpJoB.jpg",
-      "tmdbId": 32250
+      "profilePath": "/b0YRn81Hxm1Lcsfzuctl9wSpJoB.jpg"
     },
     {
       "name": "David O. Russell",
       "film": "American Hustle",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
         "critics": "X",
         "dga": "X"
       },
@@ -498,35 +469,34 @@
     },
     {
       "name": "Paul Greengrass",
+      "film": "Captain Phillips",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "critics": "X",
         "dga": "X"
       },
-      "film": "Captain Phillips",
       "profilePath": "/kJxQWrERq8p7gxRP2fIcS8suwme.jpg",
       "tmdbId": 25598
-    },
-    {
-      "name": "Alexander Payne",
-      "film": "Nebraska",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "spirit": "X"
-      }
     },
     {
       "name": "Martin Scorsese",
       "film": "The Wolf of Wall Street",
       "awards": {
-        "oscar": "X",
         "bafta": "X",
+        "oscar": "X",
         "critics": "X"
       },
-      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
-      "tmdbId": 1032
+      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg"
+    },
+    {
+      "name": "Alexander Payne",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "spirit": "X"
+      },
+      "film": "Nebraska"
     },
     {
       "name": "Martin Scorsese",
@@ -534,8 +504,7 @@
       "awards": {
         "dga": "X"
       },
-      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
-      "tmdbId": 1032
+      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg"
     },
     {
       "name": "Steve McQueen",
@@ -543,8 +512,7 @@
       "awards": {
         "dga": "X"
       },
-      "profilePath": "/mhHk4NRPXEJLL0SySheXZAArp5w.jpg",
-      "tmdbId": 13565
+      "profilePath": "/mhHk4NRPXEJLL0SySheXZAArp5w.jpg"
     },
     {
       "name": "Shane Carruth",
@@ -561,8 +529,7 @@
         "spirit": "X"
       },
       "film": "All Is Lost",
-      "profilePath": "/6oaCrcLpqAvuWci6kStnuuAc34I.jpg",
-      "tmdbId": 556172
+      "profilePath": "/6oaCrcLpqAvuWci6kStnuuAc34I.jpg"
     },
     {
       "name": "Jeff Nichols",
@@ -577,8 +544,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/qs6Zx4RpQQ7fUH9X1iOqowZeFJT.jpg",
-      "tmdbId": 76965
+      "profilePath": "/qs6Zx4RpQQ7fUH9X1iOqowZeFJT.jpg"
     },
     {
       "name": "Clio Barnard",
@@ -595,8 +561,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/lGaM7P0vjhhWs5EmIecsN6PYfxG.jpg",
-      "tmdbId": 66728
+      "profilePath": "/lGaM7P0vjhhWs5EmIecsN6PYfxG.jpg"
     },
     {
       "name": "David Mackenzie",
@@ -604,37 +569,36 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/ik6YTYOWdgmou40xRyPlCP4tyGC.jpg",
-      "tmdbId": 3055
+      "profilePath": "/ik6YTYOWdgmou40xRyPlCP4tyGC.jpg"
     }
   ],
   "best-actor": [
     {
       "name": "Matthew McConaughey",
-      "film": "Dallas Buyers Club",
-      "role": "Leading",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
         "gotham": "Y",
         "spirit": "Y"
       },
-      "profilePath": "/lCySuYjhXix3FzQdS4oceDDrXKI.jpg",
-      "tmdbId": 10297
+      "film": "Dallas Buyers Club",
+      "role": "Leading",
+      "profilePath": "/lCySuYjhXix3FzQdS4oceDDrXKI.jpg"
     },
     {
       "name": "Jared Leto",
-      "film": "Dallas Buyers Club",
-      "role": "Supporting",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "critics": "Y",
         "lafca": "X",
+        "nyfcc": "Y",
         "spirit": "Y"
       },
+      "film": "Dallas Buyers Club",
+      "role": "Leading",
       "profilePath": "/lZaE3x8yxofNZ96xpthxuVXQxTM.jpg",
       "tmdbId": 7499
     },
@@ -643,9 +607,9 @@
       "film": "Nebraska",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "nbr": "Y",
@@ -653,50 +617,60 @@
         "lafca": "Y",
         "spirit": "X"
       },
-      "profilePath": "/5RKGcElQiFZh4Mu9gInyUhr9Uu7.jpg",
-      "tmdbId": 6905
+      "profilePath": "/5RKGcElQiFZh4Mu9gInyUhr9Uu7.jpg"
     },
     {
       "name": "Chiwetel Ejiofor",
       "film": "12 Years a Slave",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "Y",
+        "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "X",
         "gotham": "X",
         "spirit": "X"
       },
-      "profilePath": "/kq5DDnqqofoRI0t6ddtRlsJnNPT.jpg",
-      "tmdbId": 5294
+      "profilePath": "/kq5DDnqqofoRI0t6ddtRlsJnNPT.jpg"
+    },
+    {
+      "name": "Robert Redford",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "nyfcc": "Y",
+        "gotham": "X",
+        "spirit": "X"
+      },
+      "film": "All Is Lost",
+      "role": "Leading",
+      "profilePath": "/tCcg8rXzYIM4ota9grCCHc881bo.jpg",
+      "tmdbId": 4135
     },
     {
       "name": "Barkhad Abdi",
       "film": "Captain Phillips",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "Y",
+        "gg": "X",
+        "oscar": "X",
         "critics": "X"
       },
-      "profilePath": "/utfeg8GnGyW3aVNcRfhII9RCXB6.jpg",
-      "tmdbId": 1261694
+      "profilePath": "/utfeg8GnGyW3aVNcRfhII9RCXB6.jpg"
     },
     {
       "name": "Leonardo DiCaprio",
       "film": "The Wolf of Wall Street",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "Y",
-        "bafta": "X"
+        "oscar": "X"
       },
-      "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
-      "tmdbId": 6193
+      "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg"
     },
     {
       "name": "Jared Leto",
@@ -713,8 +687,7 @@
         "venice": "Y"
       },
       "film": "Miss Violence",
-      "profilePath": "/rb0ROJR5OxxW5uWpbrulyk32v9H.jpg",
-      "tmdbId": 1206241
+      "profilePath": "/rb0ROJR5OxxW5uWpbrulyk32v9H.jpg"
     },
     {
       "name": "James Franco",
@@ -722,8 +695,7 @@
         "lafca": "Y"
       },
       "film": "Spring Breakers",
-      "profilePath": "/bjmAntHGiibLZixH8nTNVBzaFQn.jpg",
-      "tmdbId": 17051
+      "profilePath": "/bjmAntHGiibLZixH8nTNVBzaFQn.jpg"
     },
     {
       "name": "James McAvoy",
@@ -740,17 +712,16 @@
       "awards": {
         "bifa": "Y"
       },
-      "profilePath": "/pA9mu9D2IolVA0v2Yo0tJm6uUyI.jpg",
-      "tmdbId": 77335
+      "profilePath": "/pA9mu9D2IolVA0v2Yo0tJm6uUyI.jpg"
     },
     {
       "name": "Michael Fassbender",
       "film": "12 Years a Slave",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
         "critics": "X",
         "spirit": "X"
       },
@@ -762,65 +733,49 @@
       "film": "American Hustle",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
         "critics": "X"
       },
-      "profilePath": "/gbcLQi7lQVaIF3WXNjW9Fqi84xZ.jpg",
-      "tmdbId": 3894
+      "profilePath": "/gbcLQi7lQVaIF3WXNjW9Fqi84xZ.jpg"
+    },
+    {
+      "name": "Tom Hanks",
+      "film": "Captain Phillips",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg"
+    },
+    {
+      "name": "Daniel Brühl",
+      "film": "Rush",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/3YlmTfiy5qZXkrdKGjaM1uMjGKP.jpg",
+      "tmdbId": 3872
     },
     {
       "name": "Bradley Cooper",
       "film": "American Hustle",
       "role": "Supporting",
       "awards": {
+        "bafta": "X",
+        "gg": "X",
         "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
         "critics": "X"
       },
-      "profilePath": "/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg",
-      "tmdbId": 51329
-    },
-    {
-      "name": "Tom Hanks",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "film": "Captain Phillips",
-      "role": "Leading",
-      "profilePath": "/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
-      "tmdbId": 31
-    },
-    {
-      "name": "Robert Redford",
-      "awards": {
-        "gg": "X",
-        "critics": "X",
-        "gotham": "X",
-        "spirit": "X"
-      },
-      "film": "All Is Lost",
-      "role": "Leading",
-      "profilePath": "/tCcg8rXzYIM4ota9grCCHc881bo.jpg",
-      "tmdbId": 4135
-    },
-    {
-      "name": "Daniel Brühl",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "film": "Rush",
-      "role": "Leading",
-      "profilePath": "/3YlmTfiy5qZXkrdKGjaM1uMjGKP.jpg",
-      "tmdbId": 3872
+      "profilePath": "/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg"
     },
     {
       "name": "Oscar Isaac",
@@ -843,38 +798,7 @@
       },
       "film": "Enough Said",
       "role": "Supporting",
-      "profilePath": "/vhtsFJZcfHdeDkFBoWMDzOS6xrP.jpg",
-      "tmdbId": 4691
-    },
-    {
-      "name": "Jonah Hill",
-      "film": "The Wolf of Wall Street",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/5aE4GgJADHzN1QsS6zkzElZSEYq.jpg",
-      "tmdbId": 21007
-    },
-    {
-      "name": "Idris Elba",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "Mandela: Long Walk to Freedom",
-      "role": "Leading",
-      "profilePath": "/be1bVF7qGX91a6c5WeRPs5pKXln.jpg",
-      "tmdbId": 17605
-    },
-    {
-      "name": "Joaquin Phoenix",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "Her",
-      "role": "Leading",
-      "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
-      "tmdbId": 73421
+      "profilePath": "/vhtsFJZcfHdeDkFBoWMDzOS6xrP.jpg"
     },
     {
       "name": "Matt Damon",
@@ -887,14 +811,41 @@
       "tmdbId": 1892
     },
     {
+      "name": "Idris Elba",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Mandela: Long Walk to Freedom",
+      "role": "Leading",
+      "profilePath": "/be1bVF7qGX91a6c5WeRPs5pKXln.jpg"
+    },
+    {
+      "name": "Joaquin Phoenix",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Her",
+      "role": "Leading",
+      "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
+      "tmdbId": 73421
+    },
+    {
+      "name": "Jonah Hill",
+      "film": "The Wolf of Wall Street",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/5aE4GgJADHzN1QsS6zkzElZSEYq.jpg"
+    },
+    {
       "name": "Forest Whitaker",
       "awards": {
         "sag": "X"
       },
       "film": "The Butler",
       "role": "Leading",
-      "profilePath": "/4w7l5JUwnwFNBy7J93ZwYN1nihm.jpg",
-      "tmdbId": 2178
+      "profilePath": "/4w7l5JUwnwFNBy7J93ZwYN1nihm.jpg"
     },
     {
       "name": "Barkhad Abdi",
@@ -913,8 +864,7 @@
       },
       "film": "Edwin Epps",
       "role": "Supporting",
-      "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg",
-      "tmdbId": 17288
+      "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg"
     },
     {
       "name": "Isaiah Washington",
@@ -922,8 +872,7 @@
         "gotham": "X"
       },
       "film": "Blue Caprice",
-      "profilePath": "/3yY5h1t7AKZpf4lfdSMwDQvCroQ.jpg",
-      "tmdbId": 21353
+      "profilePath": "/3yY5h1t7AKZpf4lfdSMwDQvCroQ.jpg"
     },
     {
       "name": "Michael B. Jordan",
@@ -940,8 +889,7 @@
         "spirit": "X"
       },
       "film": "Nebraska",
-      "profilePath": "/4VEzbkL3HwHTUZAPA5PyypFG2U.jpg",
-      "tmdbId": 62831
+      "profilePath": "/4VEzbkL3HwHTUZAPA5PyypFG2U.jpg"
     },
     {
       "name": "Lakeith Stanfield",
@@ -949,8 +897,7 @@
         "spirit": "X"
       },
       "film": "Short Term 12",
-      "profilePath": "/x3k0HCpMNqEtVf2VKQrSCol1ia2.jpg",
-      "tmdbId": 1200864
+      "profilePath": "/x3k0HCpMNqEtVf2VKQrSCol1ia2.jpg"
     },
     {
       "name": "Jim Broadbent",
@@ -958,8 +905,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/jTyvGwwR1NFpvgDhcmuWZCM241w.jpg",
-      "tmdbId": 388
+      "profilePath": "/jTyvGwwR1NFpvgDhcmuWZCM241w.jpg"
     },
     {
       "name": "Steve Coogan",
@@ -976,8 +922,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg",
-      "tmdbId": 2524
+      "profilePath": "/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg"
     },
     {
       "name": "Jack O'Connell",
@@ -985,8 +930,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/9RrqnB1BRaWWHEjlWVVAna0sdBB.jpg",
-      "tmdbId": 85065
+      "profilePath": "/9RrqnB1BRaWWHEjlWVVAna0sdBB.jpg"
     },
     {
       "name": "John Arcilla",
@@ -1021,8 +965,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/9atfOgIxhfOKvv2be8HEp6SzOct.jpg",
-      "tmdbId": 1665
+      "profilePath": "/9atfOgIxhfOKvv2be8HEp6SzOct.jpg"
     }
   ],
   "best-actress": [
@@ -1031,12 +974,13 @@
       "film": "Blue Jasmine",
       "role": "Leading",
       "awards": {
-        "oscar": "Y",
-        "gg": "Y",
         "bafta": "Y",
+        "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
         "lafca": "Y",
+        "nyfcc": "Y",
         "gotham": "X",
         "spirit": "Y"
       },
@@ -1048,9 +992,9 @@
       "film": "12 Years a Slave",
       "role": "Supporting",
       "awards": {
-        "oscar": "Y",
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
+        "oscar": "Y",
         "critics": "Y",
         "lafca": "Y",
         "spirit": "Y"
@@ -1063,40 +1007,38 @@
       "film": "American Hustle",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
-        "gg": "Y",
         "bafta": "Y",
+        "gg": "Y",
+        "oscar": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "nyfcc": "Y"
       },
-      "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
-      "tmdbId": 72129
+      "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg"
     },
     {
       "name": "Emma Thompson",
+      "film": "Saving Mr. Banks",
+      "role": "Leading",
       "awards": {
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
         "sag": "X",
         "critics": "X",
         "nbr": "Y"
       },
-      "film": "Saving Mr. Banks",
-      "role": "Leading",
-      "profilePath": "/bLGNyyVAGSDfRpLoC3gKD6S6j4P.jpg",
-      "tmdbId": 7056
+      "profilePath": "/bLGNyyVAGSDfRpLoC3gKD6S6j4P.jpg"
     },
     {
       "name": "Amy Adams",
       "film": "American Hustle",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
+        "bafta": "X",
         "gg": "Y",
-        "bafta": "X"
+        "oscar": "X"
       },
-      "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
-      "tmdbId": 9273
+      "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg"
     },
     {
       "name": "Brie Larson",
@@ -1107,8 +1049,7 @@
         "gotham": "Y",
         "spirit": "X"
       },
-      "profilePath": "/xSGvMwNNJcEQvVcjiIUTyxyMfkZ.jpg",
-      "tmdbId": 60073
+      "profilePath": "/xSGvMwNNJcEQvVcjiIUTyxyMfkZ.jpg"
     },
     {
       "name": "Lupita Nyong'o",
@@ -1117,8 +1058,7 @@
       },
       "film": "Patsey",
       "role": "Supporting",
-      "profilePath": "/y40Wu1T742kynOqtwXASc5Qgm49.jpg",
-      "tmdbId": 1267329
+      "profilePath": "/y40Wu1T742kynOqtwXASc5Qgm49.jpg"
     },
     {
       "name": "Elena Cotta",
@@ -1126,8 +1066,7 @@
         "venice": "Y"
       },
       "film": "Via Castellana Bandiera",
-      "profilePath": "/grusGGdgToZntzoQkl1fYpG2MKl.jpg",
-      "tmdbId": 93109
+      "profilePath": "/grusGGdgToZntzoQkl1fYpG2MKl.jpg"
     },
     {
       "name": "Bérénice Bejo",
@@ -1159,82 +1098,77 @@
       "film": "Philomena",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "bifa": "X"
       },
-      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
-      "tmdbId": 5309
+      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg"
     },
     {
       "name": "Sandra Bullock",
       "film": "Gravity",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
-      "profilePath": "/hPHGKPAWZ8gArYXMk225rrYPoyJ.jpg",
-      "tmdbId": 18277
+      "profilePath": "/hPHGKPAWZ8gArYXMk225rrYPoyJ.jpg"
     },
     {
       "name": "June Squibb",
-      "film": "Nebraska",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X",
         "lafca": "X",
         "spirit": "X"
       },
-      "profilePath": "/a7vkoLhc8JGkdvDbHvpgKKHUPHH.jpg",
-      "tmdbId": 35515
-    },
-    {
-      "name": "Meryl Streep",
-      "film": "August: Osage County",
+      "film": "Nebraska",
       "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
-      "tmdbId": 5064
+      "profilePath": "/a7vkoLhc8JGkdvDbHvpgKKHUPHH.jpg"
     },
     {
       "name": "Sally Hawkins",
       "film": "Blue Jasmine",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
         "spirit": "X"
       },
-      "profilePath": "/1dtDq82dM2YQ17lBL4ZKPJo5LKw.jpg",
-      "tmdbId": 39658
+      "profilePath": "/1dtDq82dM2YQ17lBL4ZKPJo5LKw.jpg"
     },
     {
       "name": "Julia Roberts",
       "film": "August: Osage County",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
         "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
         "critics": "X"
       },
-      "profilePath": "/h13yvG0tRNMTAwciQXxYmQWdYW8.jpg",
-      "tmdbId": 1204
+      "profilePath": "/h13yvG0tRNMTAwciQXxYmQWdYW8.jpg"
+    },
+    {
+      "name": "Meryl Streep",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "film": "August: Osage County",
+      "role": "Leading",
+      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
+      "tmdbId": 5064
     },
     {
       "name": "Julie Delpy",
@@ -1244,8 +1178,7 @@
       },
       "film": "Before Midnight",
       "role": "Leading",
-      "profilePath": "/rd40f4QpAUUne3hMaUhHrZtcK2c.jpg",
-      "tmdbId": 1146
+      "profilePath": "/rd40f4QpAUUne3hMaUhHrZtcK2c.jpg"
     },
     {
       "name": "Shailene Woodley",
@@ -1258,14 +1191,22 @@
       "tmdbId": 94185
     },
     {
+      "name": "Oprah Winfrey",
+      "film": "The Butler",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/nNpYieaDLxKZWw2FY9wsDkjwURu.jpg"
+    },
+    {
       "name": "Kate Winslet",
       "awards": {
         "gg": "X"
       },
       "film": "Labor Day",
       "role": "Leading",
-      "profilePath": "/9xDnfZrWhM67wJlQJEsOOjQzDUQ.jpg",
-      "tmdbId": 204
+      "profilePath": "/9xDnfZrWhM67wJlQJEsOOjQzDUQ.jpg"
     },
     {
       "name": "Greta Gerwig",
@@ -1274,8 +1215,7 @@
       },
       "film": "Frances Ha",
       "role": "Leading",
-      "profilePath": "/6MwQ2GstYr0wnhp1eTOAbVMNBGN.jpg",
-      "tmdbId": 45400
+      "profilePath": "/6MwQ2GstYr0wnhp1eTOAbVMNBGN.jpg"
     },
     {
       "name": "Julia Louis-Dreyfus",
@@ -1284,18 +1224,7 @@
       },
       "film": "Enough Said",
       "role": "Leading",
-      "profilePath": "/sXpjQoFoYqNehfWhlkScF8lo9vc.jpg",
-      "tmdbId": 15886
-    },
-    {
-      "name": "Oprah Winfrey",
-      "film": "The Butler",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/nNpYieaDLxKZWw2FY9wsDkjwURu.jpg",
-      "tmdbId": 13309
+      "profilePath": "/sXpjQoFoYqNehfWhlkScF8lo9vc.jpg"
     },
     {
       "name": "Julia Roberts",
@@ -1331,7 +1260,7 @@
       "awards": {
         "critics": "X"
       },
-      "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
+      "profilePath": "/6bBCPmc55gzP7TR9Th4WbykrYd0.jpg",
       "tmdbId": 1245
     },
     {
@@ -1341,8 +1270,7 @@
       "awards": {
         "critics": "X"
       },
-      "profilePath": "/nNpYieaDLxKZWw2FY9wsDkjwURu.jpg",
-      "tmdbId": 13309
+      "profilePath": "/nNpYieaDLxKZWw2FY9wsDkjwURu.jpg"
     },
     {
       "name": "Adèle Exarchopoulos",
@@ -1359,8 +1287,7 @@
         "gotham": "X"
       },
       "film": "Don Jon",
-      "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
-      "tmdbId": 1245
+      "profilePath": "/6bBCPmc55gzP7TR9Th4WbykrYd0.jpg"
     },
     {
       "name": "Amy Seimetz",
@@ -1368,8 +1295,7 @@
         "gotham": "X"
       },
       "film": "Upstream Color",
-      "profilePath": "/qa7vCi7TViddGjuYEszLdi8DRqN.jpg",
-      "tmdbId": 139150
+      "profilePath": "/qa7vCi7TViddGjuYEszLdi8DRqN.jpg"
     },
     {
       "name": "Gaby Hoffmann",
@@ -1377,8 +1303,7 @@
         "spirit": "X"
       },
       "film": "Crystal Fairy",
-      "profilePath": "/bMdxuHqCJkf4dAFKleYRs2GXDN9.jpg",
-      "tmdbId": 12930
+      "profilePath": "/bMdxuHqCJkf4dAFKleYRs2GXDN9.jpg"
     },
     {
       "name": "Melonie Diaz",
@@ -1386,8 +1311,7 @@
         "spirit": "X"
       },
       "film": "Fruitvale Station",
-      "profilePath": "/bZw2waOzKDE74crNL02L9EsBiH4.jpg",
-      "tmdbId": 53936
+      "profilePath": "/bZw2waOzKDE74crNL02L9EsBiH4.jpg"
     },
     {
       "name": "Yolonda Ross",
@@ -1395,8 +1319,7 @@
         "spirit": "X"
       },
       "film": "Go for Sisters",
-      "profilePath": "/ifu8J2Je89W2O2MwOO8P5GW7fYb.jpg",
-      "tmdbId": 36549
+      "profilePath": "/ifu8J2Je89W2O2MwOO8P5GW7fYb.jpg"
     },
     {
       "name": "Scarlett Johansson",
@@ -1404,8 +1327,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg",
-      "tmdbId": 1245
+      "profilePath": "/6bBCPmc55gzP7TR9Th4WbykrYd0.jpg"
     },
     {
       "name": "Felicity Jones",
@@ -1413,8 +1335,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/fyhWRmxpTEYl5d8DnkIo6i8RdWJ.jpg",
-      "tmdbId": 72855
+      "profilePath": "/fyhWRmxpTEYl5d8DnkIo6i8RdWJ.jpg"
     },
     {
       "name": "Saoirse Ronan",
@@ -1422,8 +1343,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
-      "tmdbId": 36592
+      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg"
     },
     {
       "name": "Siobhan Finneran",
@@ -1431,8 +1351,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/ijtVgLz8wia1ExjuAUIJt0i7FcA.jpg",
-      "tmdbId": 82711
+      "profilePath": "/ijtVgLz8wia1ExjuAUIJt0i7FcA.jpg"
     },
     {
       "name": "Shirley Henderson",
@@ -1440,8 +1359,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/dxVvLjGNKVMl5lDXXInJ7xWpCvl.jpg",
-      "tmdbId": 1834
+      "profilePath": "/dxVvLjGNKVMl5lDXXInJ7xWpCvl.jpg"
     },
     {
       "name": "Kristin Scott Thomas",
@@ -1449,8 +1367,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/axksw0vAjBPSW02ZqpcC0V8rPD7.jpg",
-      "tmdbId": 5470
+      "profilePath": "/axksw0vAjBPSW02ZqpcC0V8rPD7.jpg"
     },
     {
       "name": "Mia Wasikowska",

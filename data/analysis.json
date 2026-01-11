@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-06T13:11:46.002546",
+  "generated": "2026-01-11T16:12:48.554448",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -114,6 +114,12 @@
       "best-director": 0,
       "best-actor": 0,
       "best-actress": 0
+    },
+    "nyfcc": {
+      "best-film": 1,
+      "best-director": 1,
+      "best-actor": 2,
+      "best-actress": 2
     }
   },
   "years": {
@@ -611,6 +617,32 @@
           "status": "ok",
           "expected": 0
         }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        }
       }
     },
     "2013_2014": {
@@ -1106,6 +1138,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
         }
       }
     },
@@ -1603,6 +1661,32 @@
           "status": "ok",
           "expected": 0
         }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        }
       }
     },
     "2015_2016": {
@@ -2098,6 +2182,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
         }
       }
     },
@@ -2595,6 +2705,32 @@
           "status": "ok",
           "expected": 0
         }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        }
       }
     },
     "2017_2018": {
@@ -3090,6 +3226,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
         }
       }
     },
@@ -3587,6 +3749,32 @@
           "status": "ok",
           "expected": 0
         }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        }
       }
     },
     "2019_2020": {
@@ -4082,6 +4270,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
         }
       }
     },
@@ -4579,6 +4793,32 @@
           "status": "ok",
           "expected": 0
         }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        }
       }
     },
     "2021_2022": {
@@ -5074,6 +5314,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
         }
       }
     },
@@ -5571,6 +5837,32 @@
           "status": "ok",
           "expected": 0
         }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        }
       }
     },
     "2023_2024": {
@@ -6066,6 +6358,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
         }
       }
     },
@@ -6563,6 +6881,32 @@
           "status": "ok",
           "expected": 0
         }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        }
       }
     },
     "2025_2026": {
@@ -6646,9 +6990,9 @@
       },
       "sag": {
         "best-film": {
-          "nominations": 0,
+          "nominations": 5,
           "winners": 0,
-          "status": "pending",
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
@@ -6658,15 +7002,15 @@
           "expected": 0
         },
         "best-actor": {
-          "nominations": 0,
+          "nominations": 10,
           "winners": 0,
-          "status": "pending",
+          "status": "ok",
           "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
+          "nominations": 10,
           "winners": 0,
-          "status": "pending",
+          "status": "ok",
           "expected": 10
         }
       },
@@ -6802,10 +7146,10 @@
       },
       "pga": {
         "best-film": {
-          "nominations": 0,
+          "nominations": 10,
           "winners": 0,
-          "status": "pending",
-          "expected": 10
+          "status": "ok",
+          "expected": "10+"
         },
         "best-director": {
           "nominations": 0,
@@ -6880,9 +7224,9 @@
       },
       "adg": {
         "best-film": {
-          "nominations": 0,
+          "nominations": 15,
           "winners": 0,
-          "status": "pending",
+          "status": "ok",
           "expected": 15
         },
         "best-director": {
@@ -6933,25 +7277,25 @@
       "astra": {
         "best-film": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         },
         "best-director": {
           "nominations": 6,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 6
         },
         "best-actor": {
           "nominations": 24,
-          "winners": 0,
+          "winners": 4,
           "status": "ok",
           "expected": 24
         },
         "best-actress": {
           "nominations": 24,
-          "winners": 0,
+          "winners": 4,
           "status": "ok",
           "expected": 24
         }
@@ -7058,6 +7402,32 @@
           "winners": 0,
           "status": "ok",
           "expected": 0
+        }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
+          "expected": 2
         }
       }
     }

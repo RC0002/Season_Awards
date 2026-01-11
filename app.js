@@ -9,6 +9,7 @@
 // Initialize Firebase
 let db = null;
 let firebaseReady = false;
+let isStatsPageActive = false;
 
 try {
     firebase.initializeApp(firebaseConfig);
@@ -313,11 +314,31 @@ function setupNavigation() {
 
         link.addEventListener('click', (e) => {
             e.preventDefault();
+            // Hide stats page if open
+            if (isStatsPageActive) {
+                hideStatisticsPage();
+            }
             goToCategory(i);
         });
 
         navLinks.appendChild(link);
     });
+
+    // Add vertical separator
+    const separator = document.createElement('span');
+    separator.className = 'nav-separator';
+    navLinks.appendChild(separator);
+
+    // Add Stats link (not swipeable)
+    const statsLink = document.createElement('a');
+    statsLink.href = '#';
+    statsLink.className = 'nav-link nav-link-special';
+    statsLink.textContent = 'Statistics';
+    statsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        showStatisticsPage();
+    });
+    navLinks.appendChild(statsLink);
 }
 
 function setupYearSelector() {
@@ -875,25 +896,37 @@ async function fetchMissingImages() {
             if (needsImage && entry.name) {
                 const searchType = cat.isPerson ? 'person' : 'movie';
                 const endpoint = searchType === 'movie' ? '/search/movie' : '/search/person';
-                const url = `${CONFIG.TMDB_BASE_URL}${endpoint}?api_key=${CONFIG.TMDB_API_KEY}&query=${encodeURIComponent(entry.name)}`;
+                const seasonYear = parseInt(currentYear.split('_')[0]);
 
-                try {
-                    const json = await CacheManager.fetch(url);
+                // For movies, try year, year+1, then no filter (fallback for films like Nomadland)
+                const yearsToTry = searchType === 'movie' ? [seasonYear, seasonYear + 1, null] : [null];
 
-                    if (json.results?.length > 0) {
-                        const match = json.results[0];
-                        if (cat.isPerson && match.profile_path) {
-                            entry.profilePath = match.profile_path;
-                            entry.tmdbId = match.id;
-                            needsSave = true;
-                        } else if (!cat.isPerson && match.poster_path) {
-                            entry.posterPath = match.poster_path;
-                            entry.tmdbId = match.id;
-                            needsSave = true;
+                for (const tryYear of yearsToTry) {
+                    try {
+                        let url = `${CONFIG.TMDB_BASE_URL}${endpoint}?api_key=${CONFIG.TMDB_API_KEY}&query=${encodeURIComponent(entry.name)}`;
+                        if (tryYear) {
+                            url += `&primary_release_year=${tryYear}`;
                         }
+
+                        const json = await CacheManager.fetch(url);
+
+                        if (json.results?.length > 0) {
+                            const match = json.results[0];
+                            if (cat.isPerson && match.profile_path) {
+                                entry.profilePath = match.profile_path;
+                                entry.tmdbId = match.id;
+                                needsSave = true;
+                                break;
+                            } else if (!cat.isPerson && match.poster_path) {
+                                entry.posterPath = match.poster_path;
+                                entry.tmdbId = match.id;
+                                needsSave = true;
+                                break;
+                            }
+                        }
+                    } catch (err) {
+                        console.warn('Image fetch failed for:', entry.name);
                     }
-                } catch (err) {
-                    console.warn('Image fetch failed for:', entry.name);
                 }
             }
         }
@@ -906,6 +939,160 @@ async function fetchMissingImages() {
         console.log('✅ Updated missing images from TMDB');
     }
 }
+
+// Reset movie posters for current year to force re-fetch with correct year
+async function resetMoviePosters() {
+    console.log('🔄 Resetting movie posters for', currentYear);
+
+    const filmEntries = data['best-film'] || [];
+    for (const entry of filmEntries) {
+        // Clear existing tmdbId and posterPath to force re-fetch
+        delete entry.tmdbId;
+        delete entry.posterPath;
+    }
+
+    await saveData();
+    console.log('✅ Cleared', filmEntries.length, 'movie IDs. Re-fetching...');
+
+    // Re-fetch with year filter
+    await fetchMissingImages();
+    renderAllTables();
+    console.log('✅ Done! Refresh to see changes.');
+}
+
+// Reset movie posters for ALL years
+async function resetAllMoviePosters() {
+    if (!firebaseReady || !db) {
+        console.error('❌ Firebase not ready');
+        return;
+    }
+
+    console.log('🔄 Resetting movie posters for ALL years...');
+
+    const snapshot = await db.ref('awards').once('value');
+    const allData = snapshot.val();
+
+    if (!allData) {
+        console.log('No data found');
+        return;
+    }
+
+    let totalCleared = 0;
+
+    for (const yearKey in allData) {
+        const yearData = allData[yearKey];
+        if (yearData['best-film']) {
+            for (const entry of yearData['best-film']) {
+                if (entry.tmdbId || entry.posterPath) {
+                    delete entry.tmdbId;
+                    delete entry.posterPath;
+                    totalCleared++;
+                }
+            }
+
+            // Save back to Firebase
+            await db.ref(`awards/${yearKey}/best-film`).set(yearData['best-film']);
+            console.log(`  ✓ ${yearKey}: cleared ${yearData['best-film'].length} films`);
+        }
+    }
+
+    console.log(`✅ Cleared ${totalCleared} movie IDs across all years.`);
+    console.log('🔄 Reloading current year data...');
+
+    // Reload current year
+    await loadData();
+    console.log('✅ Done! Posters will be re-fetched with correct year filter.');
+}
+
+// Make available globally
+window.resetMoviePosters = resetMoviePosters;
+window.resetAllMoviePosters = resetAllMoviePosters;
+
+// Fetch missing images for ALL years and save to Firebase
+async function fetchAllYearsImages() {
+    if (!firebaseReady || !db) {
+        console.error('❌ Firebase not ready');
+        return;
+    }
+
+    console.log('🔄 Fetching missing images for ALL years...');
+
+    const snapshot = await db.ref('awards').once('value');
+    const allData = snapshot.val();
+
+    if (!allData) {
+        console.log('No data found');
+        return;
+    }
+
+    let totalUpdated = 0;
+
+    for (const yearKey in allData) {
+        const yearData = allData[yearKey];
+        const seasonYear = parseInt(yearKey.split('_')[0]);
+        let yearUpdated = 0;
+
+        // Process all categories
+        for (const catId of ['best-film', 'best-actor', 'best-actress', 'best-director']) {
+            if (!yearData[catId]) continue;
+
+            const isPerson = catId !== 'best-film';
+            const entries = yearData[catId];
+
+            for (const entry of entries) {
+                const needsImage = isPerson ? !entry.profilePath : !entry.posterPath;
+
+                if (needsImage && entry.name) {
+                    const searchType = isPerson ? 'person' : 'movie';
+                    const endpoint = searchType === 'movie' ? '/search/movie' : '/search/person';
+
+                    let url = `${CONFIG.TMDB_BASE_URL}${endpoint}?api_key=${CONFIG.TMDB_API_KEY}&query=${encodeURIComponent(entry.name)}`;
+                    if (searchType === 'movie') {
+                        url += `&primary_release_year=${seasonYear}`;
+                    }
+
+                    try {
+                        const response = await fetch(url);
+                        const json = await response.json();
+
+                        if (json.results?.length > 0) {
+                            const match = json.results[0];
+                            if (isPerson && match.profile_path) {
+                                entry.profilePath = match.profile_path;
+                                entry.tmdbId = match.id;
+                                yearUpdated++;
+                            } else if (!isPerson && match.poster_path) {
+                                entry.posterPath = match.poster_path;
+                                entry.tmdbId = match.id;
+                                yearUpdated++;
+                            }
+                        }
+
+                        // Small delay to avoid rate limiting
+                        await new Promise(r => setTimeout(r, 100));
+                    } catch (err) {
+                        console.warn(`  Failed: ${entry.name}`);
+                    }
+                }
+            }
+
+            // Save category back to Firebase
+            if (yearUpdated > 0) {
+                await db.ref(`awards/${yearKey}/${catId}`).set(entries);
+            }
+        }
+
+        if (yearUpdated > 0) {
+            console.log(`  ✓ ${yearKey}: updated ${yearUpdated} images`);
+            totalUpdated += yearUpdated;
+        }
+    }
+
+    console.log(`✅ Done! Updated ${totalUpdated} images total.`);
+    await loadData();
+}
+
+window.fetchAllYearsImages = fetchAllYearsImages;
 
 function renderTable(categoryId) {
     const tbody = document.getElementById(`${categoryId}-tbody`);
@@ -1081,7 +1268,9 @@ async function showFilmDetails(entry) {
 
         // If no ID, try to search for it first
         if (!tmdbId) {
-            const searchUrl = `${CONFIG.TMDB_BASE_URL}/search/movie?api_key=${CONFIG.TMDB_API_KEY}&query=${encodeURIComponent(entry.name)}`;
+            // Add year filter to get correct movie version
+            const seasonYear = parseInt(currentYear.split('_')[0]);
+            const searchUrl = `${CONFIG.TMDB_BASE_URL}/search/movie?api_key=${CONFIG.TMDB_API_KEY}&query=${encodeURIComponent(entry.name)}&primary_release_year=${seasonYear}`;
             const searchJson = await CacheManager.fetch(searchUrl);
             if (searchJson.results && searchJson.results.length > 0) {
                 tmdbId = searchJson.results[0].id;
@@ -1342,29 +1531,29 @@ function renderPersonDetails(person, entry) {
         'late night with', 'the talk', 'the view', 'ellen', 'jimmy kimmel',
         'the graham norton', 'conan', 'good morning', 'today show', 'live with', 'kelly clarkson'];
 
-    // Get notable credits (sorted by popularity, filter out talk shows, max 6)
+    // Get notable credits - ONLY MOVIES, sorted by year (newest first), max 8
     const notableCredits = person.combined_credits?.cast
         ?.filter(c => {
-            const title = (c.title || c.name || '').toLowerCase();
-            // Only movies and TV series (not mini-series episodes or talk shows)
-            const isMovie = c.media_type === 'movie' || c.title;
-            const isTvSeries = c.media_type === 'tv' && c.episode_count !== 1;
-            // Exclude talk shows
-            const isTalkShow = excludeTitles.some(t => title.includes(t));
-            return (isMovie || isTvSeries) && !isTalkShow && c.poster_path;
+            // ONLY movies (no TV shows like MasterChef, The Voice, Drag Race, etc.)
+            const isMovie = c.media_type === 'movie' || (c.title && !c.name);
+            return isMovie && c.poster_path;
         })
-        .sort((a, b) => (b.popularity || 0) - (a.popularity || 0))
-        .slice(0, 6)
+        .sort((a, b) => {
+            // Sort by year descending (newest first)
+            const yearA = parseInt((a.release_date || '0000').substring(0, 4));
+            const yearB = parseInt((b.release_date || '0000').substring(0, 4));
+            return yearB - yearA;
+        })
+        .slice(0, 8)
         .map(c => {
-            const year = (c.release_date || c.first_air_date)?.substring(0, 4) || '';
+            const year = c.release_date?.substring(0, 4) || '';
             const title = c.title || c.name;
-            const posterUrl = `${CONFIG.TMDB_IMAGE_BASE}w185${c.poster_path}`;
+            const posterUrl = `${CONFIG.TMDB_IMAGE_BASE}w154${c.poster_path}`;
             return `
                 <div class="fd-credit-card">
                     <img src="${posterUrl}" class="fd-credit-poster" alt="${title}">
                     <div class="fd-credit-overlay">
-                        <span class="fd-credit-title">${title}</span>
-                        <span class="fd-credit-year">${year}</span>
+                        <span class="fd-credit-title">${title}${year ? ` (${year})` : ''}</span>
                     </div>
                 </div>`;
         })
@@ -1411,4 +1600,307 @@ function renderPersonDetails(person, entry) {
     content.innerHTML = html;
 }
 
+// ============ STATISTICS PAGE ============
+
+async function showStatisticsPage() {
+    isStatsPageActive = true;
+
+    // Hide main content, show stats container
+    const mainContent = document.querySelector('.main-content');
+    const swipeIndicators = document.getElementById('swipe-indicators');
+
+    // Create stats container if it doesn't exist
+    let statsContainer = document.getElementById('stats-container');
+    if (!statsContainer) {
+        statsContainer = document.createElement('div');
+        statsContainer.id = 'stats-container';
+        statsContainer.className = 'stats-container';
+        mainContent.parentNode.insertBefore(statsContainer, mainContent.nextSibling);
+    }
+
+    // Hide other content
+    mainContent.style.display = 'none';
+    swipeIndicators.style.display = 'none';
+    statsContainer.style.display = 'block';
+
+    // Show loading
+    statsContainer.innerHTML = `
+        <div class="stats-loading">
+            <div class="loading-text">Caricamento statistiche...</div>
+        </div>
+    `;
+
+    // Deselect nav links, highlight stats
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+    });
+    document.querySelector('.nav-link-special')?.classList.add('active');
+
+    try {
+        const allYearsData = await loadAllYearsData();
+        const stats = aggregateStatistics(allYearsData);
+        renderStatisticsPage(stats, statsContainer);
+    } catch (err) {
+        console.error('Error loading statistics:', err);
+        statsContainer.innerHTML = `
+            <div class="stats-loading">
+                <span style="color: #ff6b6b;">Errore nel caricamento delle statistiche.</span>
+                <button onclick="hideStatisticsPage()" class="stats-back-btn">Torna Indietro</button>
+            </div>
+        `;
+    }
+}
+
+function hideStatisticsPage() {
+    isStatsPageActive = false;
+
+    const mainContent = document.querySelector('.main-content');
+    const swipeIndicators = document.getElementById('swipe-indicators');
+    const statsContainer = document.getElementById('stats-container');
+
+    if (statsContainer) {
+        statsContainer.style.display = 'none';
+    }
+    mainContent.style.display = 'flex';
+    swipeIndicators.style.display = 'flex';
+
+    // Restore nav state
+    updateNavigation();
+
+    // Deselect stats link
+    document.querySelector('.nav-link-special')?.classList.remove('active');
+}
+
+async function loadAllYearsData() {
+    const allData = {};
+    const now = new Date();
+    const endYear = now.getMonth() < 8 ? now.getFullYear() : now.getFullYear() + 1;
+
+    if (firebaseReady && db) {
+        // Load all years from Firebase
+        const snapshot = await db.ref('awards').once('value');
+        const firebaseData = snapshot.val();
+
+        if (firebaseData) {
+            for (const yearKey in firebaseData) {
+                allData[yearKey] = firebaseData[yearKey];
+            }
+        }
+    } else {
+        // Fallback: load from localStorage
+        for (let year = CONFIG.START_YEAR; year < endYear; year++) {
+            const lsKey = `seasonAwards_${year}_${year + 1}`;
+            const lsData = localStorage.getItem(lsKey);
+            if (lsData) {
+                allData[`${year}_${year + 1}`] = JSON.parse(lsData);
+            }
+        }
+    }
+
+    return allData;
+}
+
+function aggregateStatistics(allYearsData) {
+    const filmStats = {};      // { filmName: { nominations: 0, wins: 0, years: [] } }
+    const actorStats = {};     // { personName: { nominations: 0, wins: 0, years: [] } }
+    const actressStats = {};
+    const directorStats = {};
+
+    for (const yearKey in allYearsData) {
+        const yearData = allYearsData[yearKey];
+        const displayYear = yearKey.replace('_', '/');
+
+        // Process best-film
+        if (yearData['best-film']) {
+            for (const entry of yearData['best-film']) {
+                if (!filmStats[entry.name]) {
+                    filmStats[entry.name] = { nominations: 0, wins: 0, years: [], posterPath: entry.posterPath };
+                }
+                const awards = entry.awards || {};
+                for (const awardKey in awards) {
+                    if (awards[awardKey] === 'X') {
+                        filmStats[entry.name].nominations++;
+                    } else if (awards[awardKey] === 'Y') {
+                        filmStats[entry.name].wins++;
+                        filmStats[entry.name].nominations++;
+                    }
+                }
+                if (!filmStats[entry.name].years.includes(displayYear)) {
+                    filmStats[entry.name].years.push(displayYear);
+                }
+            }
+        }
+
+        // Process best-actor
+        if (yearData['best-actor']) {
+            for (const entry of yearData['best-actor']) {
+                if (!actorStats[entry.name]) {
+                    actorStats[entry.name] = { nominations: 0, wins: 0, years: [], profilePath: entry.profilePath };
+                }
+                const awards = entry.awards || {};
+                for (const awardKey in awards) {
+                    if (awards[awardKey] === 'X') {
+                        actorStats[entry.name].nominations++;
+                    } else if (awards[awardKey] === 'Y') {
+                        actorStats[entry.name].wins++;
+                        actorStats[entry.name].nominations++;
+                    }
+                }
+                if (!actorStats[entry.name].years.includes(displayYear)) {
+                    actorStats[entry.name].years.push(displayYear);
+                }
+            }
+        }
+
+        // Process best-actress
+        if (yearData['best-actress']) {
+            for (const entry of yearData['best-actress']) {
+                if (!actressStats[entry.name]) {
+                    actressStats[entry.name] = { nominations: 0, wins: 0, years: [], profilePath: entry.profilePath };
+                }
+                const awards = entry.awards || {};
+                for (const awardKey in awards) {
+                    if (awards[awardKey] === 'X') {
+                        actressStats[entry.name].nominations++;
+                    } else if (awards[awardKey] === 'Y') {
+                        actressStats[entry.name].wins++;
+                        actressStats[entry.name].nominations++;
+                    }
+                }
+                if (!actressStats[entry.name].years.includes(displayYear)) {
+                    actressStats[entry.name].years.push(displayYear);
+                }
+            }
+        }
+
+        // Process best-director
+        if (yearData['best-director']) {
+            for (const entry of yearData['best-director']) {
+                if (!directorStats[entry.name]) {
+                    directorStats[entry.name] = { nominations: 0, wins: 0, years: [], profilePath: entry.profilePath };
+                }
+                const awards = entry.awards || {};
+                for (const awardKey in awards) {
+                    if (awards[awardKey] === 'X') {
+                        directorStats[entry.name].nominations++;
+                    } else if (awards[awardKey] === 'Y') {
+                        directorStats[entry.name].wins++;
+                        directorStats[entry.name].nominations++;
+                    }
+                }
+                if (!directorStats[entry.name].years.includes(displayYear)) {
+                    directorStats[entry.name].years.push(displayYear);
+                }
+            }
+        }
+    }
+
+    // Sort by nominations (descending)
+    const sortByNominations = (a, b) => b[1].nominations - a[1].nominations;
+    const sortByWins = (a, b) => b[1].wins - a[1].wins;
+
+    return {
+        topFilmsByNominations: Object.entries(filmStats).sort(sortByNominations).slice(0, 10),
+        topFilmsByWins: Object.entries(filmStats).sort(sortByWins).slice(0, 10),
+        topActorsByNominations: Object.entries(actorStats).sort(sortByNominations).slice(0, 10),
+        topActorsByWins: Object.entries(actorStats).sort(sortByWins).slice(0, 10),
+        topActressesByNominations: Object.entries(actressStats).sort(sortByNominations).slice(0, 10),
+        topActressesByWins: Object.entries(actressStats).sort(sortByWins).slice(0, 10),
+        topDirectorsByNominations: Object.entries(directorStats).sort(sortByNominations).slice(0, 10),
+        topDirectorsByWins: Object.entries(directorStats).sort(sortByWins).slice(0, 10),
+    };
+}
+
+function renderStatisticsPage(stats, container) {
+    const renderList = (items, isPerson = false, showWins = false) => {
+        return items.map(([name, data], index) => {
+            const imageUrl = isPerson && data.profilePath
+                ? `${CONFIG.TMDB_IMAGE_BASE}w92${data.profilePath}`
+                : (!isPerson && data.posterPath ? `${CONFIG.TMDB_IMAGE_BASE}w92${data.posterPath}` : '');
+
+            const count = showWins ? data.wins : data.nominations;
+            const countLabel = showWins ? 'vittorie' : 'nomination';
+
+            return `
+                <div class="stats-item">
+                    <span class="stats-rank">${index + 1}</span>
+                    ${imageUrl ? `<img src="${imageUrl}" class="stats-img ${isPerson ? 'person' : 'poster'}" alt="" loading="lazy">` : '<div class="stats-img-placeholder"></div>'}
+                    <div class="stats-info">
+                        <span class="stats-name">${name}</span>
+                        <span class="stats-meta">${count} ${countLabel} · ${data.years.join(', ')}</span>
+                    </div>
+                </div>
+            `;
+        }).join('');
+    };
+
+    const html = `
+        <div class="stats-header">
+            <h1 class="stats-title">Statistiche All-Time</h1>
+            <p class="stats-subtitle">Nomination e vittorie aggregate da tutte le stagioni</p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stats-section">
+                <h2>Film con più Nomination</h2>
+                <div class="stats-list">
+                    ${renderList(stats.topFilmsByNominations, false, false)}
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <h2>Film con più Vittorie</h2>
+                <div class="stats-list">
+                    ${renderList(stats.topFilmsByWins, false, true)}
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <h2>Attori con più Nomination</h2>
+                <div class="stats-list">
+                    ${renderList(stats.topActorsByNominations, true, false)}
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <h2>Attori con più Vittorie</h2>
+                <div class="stats-list">
+                    ${renderList(stats.topActorsByWins, true, true)}
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <h2>Attrici con più Nomination</h2>
+                <div class="stats-list">
+                    ${renderList(stats.topActressesByNominations, true, false)}
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <h2>Attrici con più Vittorie</h2>
+                <div class="stats-list">
+                    ${renderList(stats.topActressesByWins, true, true)}
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <h2>Registi con più Nomination</h2>
+                <div class="stats-list">
+                    ${renderList(stats.topDirectorsByNominations, true, false)}
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <h2>Registi con più Vittorie</h2>
+                <div class="stats-list">
+                    ${renderList(stats.topDirectorsByWins, true, true)}
+                </div>
+            </div>
+        </div>
+        
+        <button onclick="hideStatisticsPage()" class="stats-back-btn">← Torna Indietro</button>
+    `;
+
+    container.innerHTML = html;
+}
 

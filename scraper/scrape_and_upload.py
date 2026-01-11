@@ -34,6 +34,17 @@ from master_scraper import scrape_year, save_year_data, CEREMONY_MAP
 from firebase_upload import upload_year_data, load_json_file, FIREBASE_DB_URL
 
 
+def emit_event(event_type, data=None):
+    """Emit a structured JSON event to stdout for the GUI"""
+    if data is None:
+        data = {}
+    data['type'] = event_type
+    # Ensure timestamp is included
+    data['timestamp'] = datetime.now().strftime('%H:%M:%S')
+    sys.stdout.write(f"EMIT:{json.dumps(data)}\n")
+    sys.stdout.flush()
+
+
 # =============================================================================
 # HISTORICAL AVERAGES (expected nomination counts per category per award)
 # Used to detect if scraping is working correctly
@@ -474,6 +485,7 @@ def scrape_award_with_logging(award_key, year, report):
     Scrape a single award with detailed logging.
     Returns the award data and adds log to report.
     """
+    emit_event('award_start', {'award': award_key, 'year': year})
     log = AwardLog(award_key, year)
     
     try:
@@ -485,12 +497,14 @@ def scrape_award_with_logging(award_key, year, report):
             log.error(f"Award '{award_key}' not in CEREMONY_MAP")
             log.finish(False)
             report.add_log(award_key, log)
+            emit_event('award_finish', {'award': award_key, 'success': False, 'error': 'Not in map'})
             return None
         
         if year not in CEREMONY_MAP[award_key]:
             log.warn(f"Year {year} not in mapping (max: {max(CEREMONY_MAP[award_key].keys())})")
             log.finish(False)
             report.add_log(award_key, log)
+            emit_event('award_finish', {'award': award_key, 'success': False, 'error': 'Year not mapped'})
             return None
         
         ceremony = CEREMONY_MAP[award_key][year]
@@ -586,9 +600,11 @@ def scrape_award_with_logging(award_key, year, report):
             
             log.set_counts(counts)
             log.finish(True)
+            emit_event('award_finish', {'award': award_key, 'success': True, 'stats': counts})
         else:
             log.error("Scraper returned empty result")
             log.finish(False)
+            emit_event('award_finish', {'award': award_key, 'success': False, 'error': 'Empty result'})
         
         report.add_log(award_key, log)
         return result
@@ -597,6 +613,7 @@ def scrape_award_with_logging(award_key, year, report):
         log.error(f"Exception: {str(e)}")
         log.finish(False)
         report.add_log(award_key, log)
+        emit_event('award_finish', {'award': award_key, 'success': False, 'error': str(e)})
         return None
 
 
@@ -740,6 +757,8 @@ def run_full_pipeline(years=None, parallel=True, force_upload=False):
     """
     if years is None:
         years = [2026]  # Default to current season
+        
+    emit_event('start_pipeline', {'years': years, 'parallel': parallel})
     
     print("\n" + "="*60)
     print("   🎬 SCRAPE AND UPLOAD PIPELINE")
@@ -754,9 +773,18 @@ def run_full_pipeline(years=None, parallel=True, force_upload=False):
         data = scrape_year_enhanced(year, parallel=parallel)
         save_year_data(year, data)
     
-    # Step 2: Upload
+    # Step 2: Generate analysis JSON for control panel
+    emit_event('award_start', {'award': 'gen_analysis'})
+    generate_analysis_json(years_to_update=years)
+    emit_event('award_finish', {'award': 'gen_analysis', 'success': True, 'stats': {'best-film': 0, 'best-director': 0}}) # Dummy stats for success
+    
+    # Step 3: Fetch missing TMDB images for ALL years (updates local JSON files)
+    fetch_all_tmdb_images()
+    
+    # Step 4: Upload ONCE to Firebase (after all local updates are done)
+    emit_event('upload_start')
     print(f"\n{'='*60}")
-    print(f"  📤 UPLOAD PHASE")
+    print(f"  📤 UPLOAD TO FIREBASE")
     print(f"{'='*60}")
     
     if force_upload:
@@ -768,9 +796,123 @@ def run_full_pipeline(years=None, parallel=True, force_upload=False):
     print("\n" + "="*60)
     print("   ✅ PIPELINE COMPLETE")
     print("="*60)
+    emit_event('pipeline_finish')
+
+
+# =============================================================================
+# TMDB IMAGE FETCHING
+# =============================================================================
+TMDB_API_KEY = '4399b8147e098e80be332f172d1fe490'
+TMDB_BASE_URL = 'https://api.themoviedb.org/3'
+
+def fetch_all_tmdb_images():
+    """
+    Fetch missing poster/profile images from TMDB for ALL years.
+    Only updates image fields, does not modify nominees.
+    """
+    emit_event('tmdb_start')
+    print("\n" + "="*60)
+    print("   🖼️ FETCHING TMDB IMAGES FOR ALL YEARS")
+    print("="*60)
     
-    # Step 3: Generate analysis JSON for control panel (only for scraped years)
-    generate_analysis_json(years_to_update=years)
+    # Load all JSON files from data folder
+    data_folder = 'data'
+    if not os.path.exists(data_folder):
+        print("  ❌ Data folder not found")
+        return
+    
+    total_updated = 0
+    all_files = [f for f in sorted(os.listdir(data_folder)) if f.startswith('data_') and f.endswith('.json')]
+    
+    for filename in all_files:
+        filepath = os.path.join(data_folder, filename)
+        year_key = filename.replace('data_', '').replace('.json', '')
+        season_year = int(year_key.split('_')[0])
+        
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        except:
+            continue
+        
+        year_updated = 0
+        
+        for cat_id in ['best-film', 'best-actor', 'best-actress', 'best-director']:
+            if cat_id not in data:
+                continue
+            
+            is_person = cat_id != 'best-film'
+            entries = data[cat_id]
+            
+            for entry in entries:
+                needs_image = (is_person and not entry.get('profilePath')) or \
+                              (not is_person and not entry.get('posterPath'))
+                
+                if needs_image and entry.get('name'):
+                    image_path = fetch_tmdb_image(
+                        entry['name'], 
+                        is_person, 
+                        season_year if not is_person else None
+                    )
+                    
+                    if image_path:
+                        if is_person:
+                            entry['profilePath'] = image_path
+                        else:
+                            entry['posterPath'] = image_path
+                        year_updated += 1
+                        # Emit granular progress if needed, but might be too spammy. 
+                        # We'll just emit generic progress updates if we want smoother bars.
+        
+        if year_updated > 0:
+            # Save updated data back to file
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+            print(f"  ✓ {year_key}: updated {year_updated} images")
+            total_updated += year_updated
+            emit_event('tmdb_progress', {'year_key': year_key, 'updated': year_updated})
+    
+    print(f"\n  📸 Total images fetched: {total_updated}")
+    emit_event('tmdb_finish', {'total_updated': total_updated})
+
+
+def fetch_tmdb_image(name, is_person, year=None):
+    """
+    Fetch a single image from TMDB.
+    For movies, tries year filter first, then year+1, then no filter (fallback).
+    Returns the image path or None.
+    """
+    search_type = 'person' if is_person else 'movie'
+    base_url = f"{TMDB_BASE_URL}/search/{search_type}?api_key={TMDB_API_KEY}&query={requests.utils.quote(name)}"
+    
+    # For movies, try multiple year options
+    if not is_person and year:
+        years_to_try = [year, year + 1, None]  # Try season year, next year, then no filter
+    else:
+        years_to_try = [None]  # Persons don't need year filter
+    
+    for try_year in years_to_try:
+        try:
+            url = base_url
+            if try_year:
+                url += f"&primary_release_year={try_year}"
+            
+            response = requests.get(url, timeout=10)
+            data = response.json()
+            
+            if data.get('results') and len(data['results']) > 0:
+                result = data['results'][0]
+                if is_person:
+                    return result.get('profile_path')
+                else:
+                    return result.get('poster_path')
+            
+            time.sleep(0.05)  # Small delay between retries
+            
+        except Exception as e:
+            pass
+    
+    return None
 
 
 def generate_analysis_json(years_to_update=None):

@@ -3,12 +3,12 @@
     {
       "name": "Spotlight",
       "awards": {
-        "oscar": "Y",
         "gg": "X",
         "bafta": "X",
+        "oscar": "Y",
+        "afi": "Y",
         "sag": "Y",
         "critics": "Y",
-        "afi": "Y",
         "nbr": "Y",
         "pga": "X",
         "lafca": "Y",
@@ -16,66 +16,67 @@
         "gotham": "Y",
         "spirit": "Y"
       },
-      "posterPath": "/8DPGG400FgaFWaqcv11n8mRd2NG.jpg",
-      "tmdbId": 314365
+      "genre": "Drama",
+      "posterPath": "/8DPGG400FgaFWaqcv11n8mRd2NG.jpg"
     },
     {
       "name": "The Martian",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
         "pga": "X",
-        "wga": "X",
-        "adg": "Y"
+        "adg": "Y",
+        "wga": "X"
       },
-      "posterPath": "/3ndAx3weG6KDkJIRMCi5vXX6Dyb.jpg",
-      "tmdbId": 286217
-    },
-    {
-      "name": "The Big Short",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "X",
-        "afi": "Y",
-        "pga": "Y",
-        "wga": "Y"
-      },
-      "posterPath": "/scVEaJEwP8zUix8vgmMoJJ9Nq0w.jpg",
-      "tmdbId": 318846
+      "genre": "Comedy",
+      "posterPath": "/3ndAx3weG6KDkJIRMCi5vXX6Dyb.jpg"
     },
     {
       "name": "Mad Max: Fury Road",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
         "pga": "X",
         "lafca": "X",
         "adg": "Y"
       },
+      "genre": "Drama",
       "posterPath": "/hA2ple9q4qnwxp3hKVNhroipsir.jpg",
       "tmdbId": 76341
     },
     {
+      "name": "The Big Short",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "sag": "X",
+        "critics": "X",
+        "pga": "Y",
+        "wga": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/scVEaJEwP8zUix8vgmMoJJ9Nq0w.jpg"
+    },
+    {
       "name": "The Revenant",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "X",
         "critics": "X",
         "pga": "X",
         "adg": "Y"
       },
-      "posterPath": "/ji3ecJphATlVgWNY0B0RVXZizdf.jpg",
-      "tmdbId": 281957
+      "genre": "Drama",
+      "posterPath": "/ji3ecJphATlVgWNY0B0RVXZizdf.jpg"
     },
     {
       "name": "Inside Out",
@@ -84,20 +85,34 @@
         "nbr": "Y",
         "annie": "Y"
       },
-      "posterPath": "/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
-      "tmdbId": 150540
+      "posterPath": "/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg"
+    },
+    {
+      "name": "Carol",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "afi": "Y",
+        "critics": "X",
+        "nyfcc": "Y",
+        "wga": "X",
+        "gotham": "X",
+        "spirit": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/cJeled7EyPdur6TnCA5GYg0UVna.jpg"
     },
     {
       "name": "Bridge of Spies",
       "awards": {
-        "oscar": "X",
         "bafta": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
         "pga": "X",
-        "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
       "posterPath": "/fmOOjHAQzxr0c1sfcY4qkiSRBH6.jpg",
       "tmdbId": 296098
@@ -105,41 +120,25 @@
     {
       "name": "Room",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X",
+        "oscar": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y"
       },
-      "posterPath": "/2hHDMeYyZjbGWn0BeNH1cTMxuM7.jpg",
-      "tmdbId": 264644
+      "genre": "Drama",
+      "posterPath": "/2hHDMeYyZjbGWn0BeNH1cTMxuM7.jpg"
     },
     {
       "name": "Straight Outta Compton",
       "awards": {
-        "sag": "X",
         "afi": "Y",
+        "sag": "X",
         "nbr": "Y",
         "pga": "X",
         "wga": "X"
       },
-      "posterPath": "/1CiLJx8Xtv3TbbFj6k7BboSmKgC.jpg",
-      "tmdbId": 277216
-    },
-    {
-      "name": "Carol",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "critics": "X",
-        "afi": "Y",
-        "wga": "X",
-        "gotham": "X",
-        "spirit": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/cJeled7EyPdur6TnCA5GYg0UVna.jpg",
-      "tmdbId": 258480
+      "posterPath": "/1CiLJx8Xtv3TbbFj6k7BboSmKgC.jpg"
     },
     {
       "name": "Sicario",
@@ -147,21 +146,19 @@
         "critics": "X",
         "nbr": "Y",
         "pga": "X",
-        "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
-      "posterPath": "/lz8vNyXeidqqOdJW9ZjnDAMb5Vr.jpg",
-      "tmdbId": 273481
+      "posterPath": "/lz8vNyXeidqqOdJW9ZjnDAMb5Vr.jpg"
     },
     {
       "name": "Star Wars: The Force Awakens",
       "awards": {
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "adg": "X"
       },
-      "posterPath": "/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg",
-      "tmdbId": 140607
+      "posterPath": "/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg"
     },
     {
       "name": "Ex Machina",
@@ -194,8 +191,7 @@
       "awards": {
         "venice": "Y"
       },
-      "posterPath": "/lxExFOPqTbm08e50T23eapbavV6.jpg",
-      "tmdbId": 345269
+      "posterPath": "/lxExFOPqTbm08e50T23eapbavV6.jpg"
     },
     {
       "name": "Dheepan",
@@ -213,18 +209,16 @@
         "critics": "X",
         "pga": "X"
       },
-      "posterPath": "/eqVRQcGhl1CRRjjct78tRR2SPrk.jpg",
-      "tmdbId": 291678
+      "posterPath": "/eqVRQcGhl1CRRjjct78tRR2SPrk.jpg"
     },
     {
       "name": "Trumbo",
       "awards": {
         "sag": "X",
-        "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
-      "posterPath": "/2RERIRnZkROSeHZAIf8PSxhzOqs.jpg",
-      "tmdbId": 294016
+      "posterPath": "/2RERIRnZkROSeHZAIf8PSxhzOqs.jpg"
     },
     {
       "name": "Joy",
@@ -256,22 +250,20 @@
       "tmdbId": 283587
     },
     {
-      "name": "Anomalisa",
-      "awards": {
-        "annie": "X",
-        "spirit": "X"
-      },
-      "posterPath": "/4DJ1zNr4Y6q7zQ27goEYla46VdO.jpg",
-      "tmdbId": 291270
-    },
-    {
       "name": "Tangerine",
       "awards": {
         "gotham": "X",
         "spirit": "X"
       },
-      "posterPath": "/EKLR5c61XQzBTeMokFrmS3kdt8.jpg",
-      "tmdbId": 308084
+      "posterPath": "/EKLR5c61XQzBTeMokFrmS3kdt8.jpg"
+    },
+    {
+      "name": "Anomalisa",
+      "awards": {
+        "spirit": "X",
+        "annie": "X"
+      },
+      "posterPath": "/4DJ1zNr4Y6q7zQ27goEYla46VdO.jpg"
     },
     {
       "name": "Spy",
@@ -279,41 +271,7 @@
         "gg": "X"
       },
       "genre": "Comedy",
-      "posterPath": "/vPBmfMHxQvRRNGYD5S5ko2KnX56.jpg",
-      "tmdbId": 238713
-    },
-    {
-      "name": "Shaun the Sheep Movie",
-      "awards": {
-        "annie": "X"
-      },
-      "posterPath": "/1GMvKNy2Ht5QwI0oV0ycYnxzWdC.jpg",
-      "tmdbId": 263109
-    },
-    {
-      "name": "The Good Dinosaur",
-      "awards": {
-        "annie": "X"
-      },
-      "posterPath": "/8RSkxOO80btfKjyiC5ZiTaCHIT8.jpg",
-      "tmdbId": 105864
-    },
-    {
-      "name": "The Peanuts Movie",
-      "awards": {
-        "annie": "X"
-      },
-      "posterPath": "/aiwdwnl7RFs1vcBanOKr13ye3wE.jpg",
-      "tmdbId": 227973
-    },
-    {
-      "name": "Steve Jobs",
-      "awards": {
-        "wga": "X"
-      },
-      "screenplay_type": "adapted",
-      "posterPath": "/ljiRO29Y9khEERRqMluptUYunJ9.jpg",
-      "tmdbId": 321697
+      "posterPath": "/vPBmfMHxQvRRNGYD5S5ko2KnX56.jpg"
     },
     {
       "name": "Crimson Peak",
@@ -328,8 +286,7 @@
       "awards": {
         "adg": "X"
       },
-      "posterPath": "/mXZZIacI5FC8thzSC0lgQBQ2uAX.jpg",
-      "tmdbId": 306819
+      "posterPath": "/mXZZIacI5FC8thzSC0lgQBQ2uAX.jpg"
     },
     {
       "name": "Cinderella",
@@ -344,8 +301,7 @@
       "awards": {
         "adg": "X"
       },
-      "posterPath": "/1RICxzeoNCAO5NpcRMIgg1XT6fm.jpg",
-      "tmdbId": 1234821
+      "posterPath": "/rhr4y79GpxQF9IsfJItRXVaoGs4.jpg"
     },
     {
       "name": "Tomorrowland",
@@ -360,82 +316,105 @@
       "awards": {
         "adg": "X"
       },
-      "posterPath": "/zj8ongFhtWNsVlfjOGo8pSr7PQg.jpg",
-      "tmdbId": 206647
+      "posterPath": "/zj8ongFhtWNsVlfjOGo8pSr7PQg.jpg"
+    },
+    {
+      "name": "Steve Jobs",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "adapted",
+      "posterPath": "/ljiRO29Y9khEERRqMluptUYunJ9.jpg",
+      "tmdbId": 321697
     },
     {
       "name": "The Diary of a Teenage Girl",
       "awards": {
         "gotham": "X"
       },
-      "posterPath": "/5YlUrdYKuscD7pwf3yy9duVLbui.jpg",
-      "tmdbId": 250124
+      "posterPath": "/5YlUrdYKuscD7pwf3yy9duVLbui.jpg"
     },
     {
       "name": "Heaven Knows What",
       "awards": {
         "gotham": "X"
       },
-      "posterPath": "/E1MMMNAd01p3nMkUIB6eFtB57J.jpg",
-      "tmdbId": 285024
+      "posterPath": "/E1MMMNAd01p3nMkUIB6eFtB57J.jpg"
     },
     {
       "name": "45 Years",
       "awards": {
         "bifa": "X"
       },
-      "posterPath": "/8elIJYYXWq2HpcZ6TgVMC9EwTnn.jpg",
-      "tmdbId": 311291
+      "posterPath": "/8elIJYYXWq2HpcZ6TgVMC9EwTnn.jpg"
     },
     {
       "name": "Amy",
       "awards": {
         "bifa": "X"
       },
-      "posterPath": "/nCSMHZR94JyDCbjNxyxg0FIJZkY.jpg",
-      "tmdbId": 225671
+      "posterPath": "/qBUM1eatfS6ldhdGlDw8K5yi5hX.jpg"
     },
     {
       "name": "The Lobster",
       "awards": {
         "bifa": "X"
       },
-      "posterPath": "/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg",
-      "tmdbId": 254320
+      "posterPath": "/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg"
     },
     {
       "name": "Macbeth",
       "awards": {
         "bifa": "X"
       },
-      "posterPath": "/4DbzuePqGcUY7olAKzGly7kCEmU.jpg",
-      "tmdbId": 27883
+      "posterPath": "/6XsaiY8jP2SENyQSzZkOSfeArbk.jpg"
+    },
+    {
+      "name": "Shaun the Sheep Movie",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/1GMvKNy2Ht5QwI0oV0ycYnxzWdC.jpg"
+    },
+    {
+      "name": "The Good Dinosaur",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/8RSkxOO80btfKjyiC5ZiTaCHIT8.jpg"
+    },
+    {
+      "name": "The Peanuts Movie",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/aiwdwnl7RFs1vcBanOKr13ye3wE.jpg",
+      "tmdbId": 227973
     }
   ],
   "best-director": [
     {
       "name": "George Miller",
-      "film": "Mad Max: Fury Road",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "Y",
         "dga": "X",
         "lafca": "Y"
       },
+      "film": "Mad Max: Fury Road",
       "profilePath": "/35NQ8HjFXQlGYDz9UkhT08lKl5C.jpg",
       "tmdbId": 20629
     },
     {
       "name": "Alejandro G. Iñárritu",
-      "film": "The Revenant",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "critics": "X"
       },
-      "profilePath": "/Av0jewh8wltCl1CB8MfEIrvgfMZ.jpg",
-      "tmdbId": 223
+      "film": "The Revenant",
+      "profilePath": "/Av0jewh8wltCl1CB8MfEIrvgfMZ.jpg"
     },
     {
       "name": "Alejandro González Iñárritu",
@@ -448,15 +427,30 @@
       "tmdbId": 223
     },
     {
-      "name": "Tom McCarthy",
-      "film": "Spotlight",
+      "name": "Todd Haynes",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "lafca": "X",
+        "nyfcc": "Y",
+        "spirit": "X"
+      },
+      "film": "Carol",
+      "profilePath": "/wBDazO2j49uoquoHTEDxcniyGGC.jpg"
+    },
+    {
+      "name": "Tom McCarthy",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
         "critics": "X",
         "dga": "X",
         "spirit": "Y"
-      }
+      },
+      "film": "Spotlight",
+      "profilePath": "/cEA6cxG3AiH0hUzFH9mUQQVy20O.jpg",
+      "tmdbId": 17867
     },
     {
       "name": "Ridley Scott",
@@ -468,8 +462,7 @@
         "dga": "X"
       },
       "film": "The Martian",
-      "profilePath": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg",
-      "tmdbId": 578
+      "profilePath": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg"
     },
     {
       "name": "Pablo Trapero",
@@ -477,8 +470,7 @@
         "venice": "Y"
       },
       "film": "Il clan",
-      "profilePath": "/h8qZtRXhyheacl37J3MYx7aN05G.jpg",
-      "tmdbId": 56210
+      "profilePath": "/h8qZtRXhyheacl37J3MYx7aN05G.jpg"
     },
     {
       "name": "Hou Hsiao-hsien",
@@ -486,8 +478,7 @@
         "cannes": "Y"
       },
       "film": "The Assassin",
-      "profilePath": "/rqP4CEO6toAwGhsj8mmdu3Bta6I.jpg",
-      "tmdbId": 64992
+      "profilePath": "/rqP4CEO6toAwGhsj8mmdu3Bta6I.jpg"
     },
     {
       "name": "Alex Garland",
@@ -495,28 +486,14 @@
       "awards": {
         "bifa": "Y"
       },
-      "profilePath": "/qSWzYnDw68xm4i5xprH9BwQ6q25.jpg",
-      "tmdbId": 2036
-    },
-    {
-      "name": "Todd Haynes",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "critics": "X",
-        "lafca": "X",
-        "spirit": "X"
-      },
-      "film": "Carol",
-      "profilePath": "/wBDazO2j49uoquoHTEDxcniyGGC.jpg",
-      "tmdbId": 16863
+      "profilePath": "/qSWzYnDw68xm4i5xprH9BwQ6q25.jpg"
     },
     {
       "name": "Adam McKay",
       "film": "The Big Short",
       "awards": {
-        "oscar": "X",
         "bafta": "X",
+        "oscar": "X",
         "dga": "X"
       }
     },
@@ -527,8 +504,7 @@
         "bafta": "X",
         "critics": "X"
       },
-      "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
-      "tmdbId": 488
+      "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg"
     },
     {
       "name": "Lenny Abrahamson",
@@ -536,8 +512,7 @@
       "awards": {
         "oscar": "X"
       },
-      "profilePath": "/tQYjfuxoZW9JrMqdiIdZMc9OEnR.jpg",
-      "tmdbId": 83281
+      "profilePath": "/tQYjfuxoZW9JrMqdiIdZMc9OEnR.jpg"
     },
     {
       "name": "Sean Baker",
@@ -545,8 +520,7 @@
         "spirit": "X"
       },
       "film": "Tangerine",
-      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
-      "tmdbId": 118415
+      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg"
     },
     {
       "name": "Cary Joji Fukunaga",
@@ -570,8 +544,7 @@
         "spirit": "X"
       },
       "film": "It Follows",
-      "profilePath": "/i0XKqclsHNO8JAD7yNuuUNOUXG3.jpg",
-      "tmdbId": 558929
+      "profilePath": "/i0XKqclsHNO8JAD7yNuuUNOUXG3.jpg"
     },
     {
       "name": "Andrew Haigh",
@@ -586,8 +559,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/5FuAWpePS3R5UcIysUrmeNZEGFe.jpg",
-      "tmdbId": 55251
+      "profilePath": "/5FuAWpePS3R5UcIysUrmeNZEGFe.jpg"
     },
     {
       "name": "Yorgos Lanthimos",
@@ -595,8 +567,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/dvtv8eV1O8Fl385ctOu3sqO2PbD.jpg",
-      "tmdbId": 122423
+      "profilePath": "/dvtv8eV1O8Fl385ctOu3sqO2PbD.jpg"
     },
     {
       "name": "Justin Kurzel",
@@ -604,51 +575,50 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/ukcExjQvlPu6pfnYOOVQm3kSYK4.jpg",
-      "tmdbId": 549310
+      "profilePath": "/ukcExjQvlPu6pfnYOOVQm3kSYK4.jpg"
     }
   ],
   "best-actor": [
     {
       "name": "Leonardo DiCaprio",
-      "film": "The Revenant",
-      "role": "Leading",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
       },
+      "film": "The Revenant",
+      "role": "Leading",
       "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
       "tmdbId": 6193
     },
     {
       "name": "Mark Rylance",
-      "film": "Bridge of Spies",
-      "role": "Supporting",
       "awards": {
-        "oscar": "Y",
         "gg": "X",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "X",
         "critics": "X",
-        "lafca": "X"
+        "lafca": "X",
+        "nyfcc": "Y"
       },
-      "profilePath": "/bztEZRyXrvW3Pg1fexNASXlZrq7.jpg",
-      "tmdbId": 40900
+      "film": "Bridge of Spies",
+      "role": "Leading",
+      "profilePath": "/bztEZRyXrvW3Pg1fexNASXlZrq7.jpg"
     },
     {
       "name": "Matt Damon",
-      "film": "The Martian",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
         "bafta": "X",
+        "oscar": "X",
         "critics": "X",
         "nbr": "Y"
       },
+      "film": "The Martian",
+      "role": "Leading",
       "profilePath": "/At3JgvaNeEN4Z4ESKlhhes85Xo3.jpg",
       "tmdbId": 1892
     },
@@ -662,35 +632,33 @@
       },
       "film": "Beasts of No Nation",
       "role": "Leading",
-      "profilePath": "/be1bVF7qGX91a6c5WeRPs5pKXln.jpg",
-      "tmdbId": 17605
+      "profilePath": "/be1bVF7qGX91a6c5WeRPs5pKXln.jpg"
     },
     {
       "name": "Sylvester Stallone",
-      "film": "Creed",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
+        "oscar": "X",
         "critics": "Y"
       },
+      "film": "Creed",
+      "role": "Leading",
       "profilePath": "/gn3pDWthJqR0VDYGViGD3048og7.jpg",
       "tmdbId": 16483
     },
     {
       "name": "Michael Fassbender",
-      "film": "Steve Jobs",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y"
       },
-      "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg",
-      "tmdbId": 17288
+      "film": "Steve Jobs",
+      "role": "Leading",
+      "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg"
     },
     {
       "name": "Michael Shannon",
@@ -726,8 +694,16 @@
         "venice": "Y"
       },
       "film": "La corte",
-      "profilePath": "/krR5EUfM13UJwsB07ffzPU7FXYR.jpg",
-      "tmdbId": 28255
+      "profilePath": "/krR5EUfM13UJwsB07ffzPU7FXYR.jpg"
+    },
+    {
+      "name": "Michael Keaton",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Spotlight",
+      "role": "Leading",
+      "profilePath": "/w6fwAQ7IwEFqtzByA1Wyz2Dwp7R.jpg"
     },
     {
       "name": "Vincent Lindon",
@@ -762,47 +738,44 @@
       "awards": {
         "bifa": "Y"
       },
-      "profilePath": "/ctPPJu5ZYDZr1IPmzoNpezczrm0.jpg",
-      "tmdbId": 2039
+      "profilePath": "/ctPPJu5ZYDZr1IPmzoNpezczrm0.jpg"
     },
     {
       "name": "Bryan Cranston",
-      "film": "Trumbo",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
-      "profilePath": "/npIIZJGSrcJIJ6yHdmbqO6Jzo5I.jpg",
-      "tmdbId": 17419
+      "film": "Trumbo",
+      "role": "Leading",
+      "profilePath": "/npIIZJGSrcJIJ6yHdmbqO6Jzo5I.jpg"
     },
     {
       "name": "Eddie Redmayne",
-      "film": "The Danish Girl",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
-      "profilePath": "/fSvG7qzoBBnJUmgtIuMgrK3EQPN.jpg",
-      "tmdbId": 37632
+      "film": "The Danish Girl",
+      "role": "Leading",
+      "profilePath": "/fSvG7qzoBBnJUmgtIuMgrK3EQPN.jpg"
     },
     {
       "name": "Christian Bale",
-      "film": "The Big Short",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X"
       },
+      "film": "The Big Short",
+      "role": "Leading",
       "profilePath": "/gbcLQi7lQVaIF3WXNjW9Fqi84xZ.jpg",
       "tmdbId": 3894
     },
@@ -811,12 +784,11 @@
       "film": "Spotlight",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "bafta": "X",
+        "oscar": "X",
         "critics": "X"
       },
-      "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
-      "tmdbId": 103
+      "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg"
     },
     {
       "name": "Tom Hardy",
@@ -826,8 +798,7 @@
         "oscar": "X",
         "critics": "X"
       },
-      "profilePath": "/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg",
-      "tmdbId": 2524
+      "profilePath": "/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg"
     },
     {
       "name": "Johnny Depp",
@@ -857,8 +828,7 @@
         "spirit": "X"
       },
       "film": "Results",
-      "profilePath": "/obSUGc68mQDvFONalMg25Xw5GZM.jpg",
-      "tmdbId": 18472
+      "profilePath": "/obSUGc68mQDvFONalMg25Xw5GZM.jpg"
     },
     {
       "name": "Will Smith",
@@ -867,8 +837,7 @@
       },
       "film": "Concussion",
       "role": "Leading",
-      "profilePath": "/8TlKqbXYgHmmaEoPBJ7djJ8Rxxa.jpg",
-      "tmdbId": 2888
+      "profilePath": "/8TlKqbXYgHmmaEoPBJ7djJ8Rxxa.jpg"
     },
     {
       "name": "Steve Carell",
@@ -877,8 +846,7 @@
       },
       "film": "The Big Short",
       "role": "Leading",
-      "profilePath": "/ULqKHMosznI7U2JyRZYMvSxUvq.jpg",
-      "tmdbId": 4495
+      "profilePath": "/ULqKHMosznI7U2JyRZYMvSxUvq.jpg"
     },
     {
       "name": "Al Pacino",
@@ -887,8 +855,7 @@
       },
       "film": "Danny Collins",
       "role": "Leading",
-      "profilePath": "/iqJ6g9fTKjpp1zWH9v72whXeGIK.jpg",
-      "tmdbId": 1158
+      "profilePath": "/iqJ6g9fTKjpp1zWH9v72whXeGIK.jpg"
     },
     {
       "name": "Mark Ruffalo",
@@ -907,8 +874,7 @@
       "awards": {
         "bafta": "X"
       },
-      "profilePath": "/cVh4UgCMu6aAkZ2BqymTLV86FzZ.jpg",
-      "tmdbId": 1121
+      "profilePath": "/cVh4UgCMu6aAkZ2BqymTLV86FzZ.jpg"
     },
     {
       "name": "Jacob Tremblay",
@@ -935,8 +901,7 @@
         "gotham": "X"
       },
       "film": "Experimenter",
-      "profilePath": "/gYnEJjeHgZVBZh6aGzgfzm4jIHM.jpg",
-      "tmdbId": 133
+      "profilePath": "/gYnEJjeHgZVBZh6aGzgfzm4jIHM.jpg"
     },
     {
       "name": "Ben Mendelsohn",
@@ -953,8 +918,7 @@
         "spirit": "X"
       },
       "film": "The End of the Tour",
-      "profilePath": "/aG6tVNSbl1YEjN65G3luFYnWbUM.jpg",
-      "tmdbId": 41088
+      "profilePath": "/aG6tVNSbl1YEjN65G3luFYnWbUM.jpg"
     },
     {
       "name": "Koudous Seihon",
@@ -962,8 +926,7 @@
         "spirit": "X"
       },
       "film": "Mediterranea",
-      "profilePath": "/y7QkiYovyuZ0f4DOCVr44QTviu0.jpg",
-      "tmdbId": 1456984
+      "profilePath": "/y7QkiYovyuZ0f4DOCVr44QTviu0.jpg"
     },
     {
       "name": "Richard Jenkins",
@@ -971,8 +934,7 @@
         "spirit": "X"
       },
       "film": "Bone Tomahawk",
-      "profilePath": "/muT3RZG9hiKaKojD751RcQ5tGEy.jpg",
-      "tmdbId": 28633
+      "profilePath": "/muT3RZG9hiKaKojD751RcQ5tGEy.jpg"
     },
     {
       "name": "Tom Courtenay",
@@ -989,8 +951,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/oyQVfpowL9eSudYhwoPGkd9WxS7.jpg",
-      "tmdbId": 72466
+      "profilePath": "/oyQVfpowL9eSudYhwoPGkd9WxS7.jpg"
     },
     {
       "name": "Michael Fassbender",
@@ -1016,8 +977,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/qUkYJcrDc4M0LHNYASs30luFvw0.jpg",
-      "tmdbId": 114019
+      "profilePath": "/qUkYJcrDc4M0LHNYASs30luFvw0.jpg"
     },
     {
       "name": "Domhnall Gleeson",
@@ -1025,8 +985,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/uDbwncuKlqL0fAuucXSvgakJDrc.jpg",
-      "tmdbId": 93210
+      "profilePath": "/uDbwncuKlqL0fAuucXSvgakJDrc.jpg"
     },
     {
       "name": "Sean Harris",
@@ -1034,8 +993,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/jouyaTu0UuZMNBrADRRkCQX1VX1.jpg",
-      "tmdbId": 16702
+      "profilePath": "/jouyaTu0UuZMNBrADRRkCQX1VX1.jpg"
     },
     {
       "name": "Ben Whishaw",
@@ -1043,88 +1001,84 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/2GBtQ6scGeSHkX1urOP1EJbmksx.jpg",
-      "tmdbId": 17064
+      "profilePath": "/2GBtQ6scGeSHkX1urOP1EJbmksx.jpg"
     }
   ],
   "best-actress": [
     {
       "name": "Brie Larson",
-      "film": "Room",
-      "role": "Leading",
       "awards": {
-        "oscar": "Y",
         "gg": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
         "nbr": "Y",
         "gotham": "X",
         "spirit": "Y"
       },
+      "film": "Room",
+      "role": "Leading",
       "profilePath": "/xSGvMwNNJcEQvVcjiIUTyxyMfkZ.jpg",
       "tmdbId": 60073
     },
     {
       "name": "Alicia Vikander",
-      "film": "The Danish Girl",
-      "role": "Supporting",
       "awards": {
-        "oscar": "Y",
         "gg": "X",
         "bafta": "X",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
         "bifa": "X"
       },
-      "profilePath": "/9pmHTbXeRxUF51jJKthmHI49u9z.jpg",
-      "tmdbId": 227454
-    },
-    {
-      "name": "Kate Winslet",
-      "film": "Steve Jobs",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "Y",
-        "bafta": "Y",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/9xDnfZrWhM67wJlQJEsOOjQzDUQ.jpg",
-      "tmdbId": 204
+      "film": "The Danish Girl",
+      "role": "Leading",
+      "profilePath": "/9pmHTbXeRxUF51jJKthmHI49u9z.jpg"
     },
     {
       "name": "Saoirse Ronan",
-      "film": "Brooklyn",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "X",
+        "nyfcc": "Y",
         "bifa": "Y"
       },
-      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
-      "tmdbId": 36592
+      "film": "Brooklyn",
+      "role": "Leading",
+      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg"
+    },
+    {
+      "name": "Kate Winslet",
+      "awards": {
+        "gg": "Y",
+        "bafta": "Y",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "film": "Steve Jobs",
+      "role": "Leading",
+      "profilePath": "/9xDnfZrWhM67wJlQJEsOOjQzDUQ.jpg"
     },
     {
       "name": "Rooney Mara",
-      "film": "Carol",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "cannes": "Y",
         "spirit": "X"
       },
-      "profilePath": "/zT6UyHFHEQ9RcKykplWCycKBnoS.jpg",
-      "tmdbId": 108916
+      "film": "Carol",
+      "role": "Leading",
+      "profilePath": "/zT6UyHFHEQ9RcKykplWCycKBnoS.jpg"
     },
     {
       "name": "Charlotte Rampling",
@@ -1136,18 +1090,17 @@
         "lafca": "Y",
         "bifa": "X"
       },
-      "profilePath": "/Htvl9mN6mlf2a18RAFzNXF3RiG.jpg",
-      "tmdbId": 44079
+      "profilePath": "/Htvl9mN6mlf2a18RAFzNXF3RiG.jpg"
     },
     {
       "name": "Jennifer Lawrence",
-      "film": "Joy",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "Y",
+        "oscar": "X",
         "critics": "X"
       },
+      "film": "Joy",
+      "role": "Leading",
       "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
       "tmdbId": 72129
     },
@@ -1160,8 +1113,16 @@
       },
       "film": "Ex Machina",
       "role": "Leading",
-      "profilePath": "/9pmHTbXeRxUF51jJKthmHI49u9z.jpg",
-      "tmdbId": 227454
+      "profilePath": "/9pmHTbXeRxUF51jJKthmHI49u9z.jpg"
+    },
+    {
+      "name": "Kristen Stewart",
+      "awards": {
+        "lafca": "X",
+        "nyfcc": "Y"
+      },
+      "film": "Clouds of Sils Maria",
+      "profilePath": "/ryhCjTGqS6G6OprbR0qUEH355lA.jpg"
     },
     {
       "name": "Bel Powley",
@@ -1170,8 +1131,7 @@
         "spirit": "X"
       },
       "film": "The Diary of a Teenage Girl",
-      "profilePath": "/xlzi5lol9UBvYK9Dw8AEQObSbrm.jpg",
-      "tmdbId": 1201716
+      "profilePath": "/xlzi5lol9UBvYK9Dw8AEQObSbrm.jpg"
     },
     {
       "name": "Valeria Golino",
@@ -1179,8 +1139,7 @@
         "venice": "Y"
       },
       "film": "Per amor vostro",
-      "profilePath": "/bLw0lNPEhICtbTLtnTswamefN7C.jpg",
-      "tmdbId": 3124
+      "profilePath": "/bLw0lNPEhICtbTLtnTswamefN7C.jpg"
     },
     {
       "name": "Emmanuelle Bercot",
@@ -1197,8 +1156,7 @@
         "spirit": "Y"
       },
       "film": "Tangerine",
-      "profilePath": "/tKkNUKQJJVUcPSsK8E8jLpVRe57.jpg",
-      "tmdbId": 1393916
+      "profilePath": "/tKkNUKQJJVUcPSsK8E8jLpVRe57.jpg"
     },
     {
       "name": "Olivia Colman",
@@ -1211,44 +1169,30 @@
     },
     {
       "name": "Cate Blanchett",
-      "film": "Carol",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "gotham": "X",
         "spirit": "X"
       },
-      "profilePath": "/vq4vuAVhYngfzVNn8SbnG0JEy15.jpg",
-      "tmdbId": 112
+      "film": "Carol",
+      "role": "Leading",
+      "profilePath": "/vq4vuAVhYngfzVNn8SbnG0JEy15.jpg"
     },
     {
       "name": "Jennifer Jason Leigh",
-      "film": "The Hateful Eight",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
-        "critics": "X"
-      },
-      "profilePath": "/yYD255SwZkFc1wGgBMVRZ2i7Ina.jpg",
-      "tmdbId": 10431
-    },
-    {
-      "name": "Rachel McAdams",
-      "film": "Spotlight",
-      "role": "Supporting",
-      "awards": {
         "oscar": "X",
-        "sag": "X",
         "critics": "X"
       },
-      "profilePath": "/zmcwkvBGU4j6QEClXGu7ODjDEM.jpg",
-      "tmdbId": 53714
+      "film": "The Hateful Eight",
+      "role": "Leading",
+      "profilePath": "/yYD255SwZkFc1wGgBMVRZ2i7Ina.jpg"
     },
     {
       "name": "Helen Mirren",
@@ -1263,6 +1207,18 @@
       "tmdbId": 15735
     },
     {
+      "name": "Rachel McAdams",
+      "film": "Spotlight",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/zmcwkvBGU4j6QEClXGu7ODjDEM.jpg",
+      "tmdbId": 53714
+    },
+    {
       "name": "Maggie Smith",
       "awards": {
         "gg": "X",
@@ -1270,8 +1226,7 @@
       },
       "film": "The Lady in the Van",
       "role": "Leading",
-      "profilePath": "/i7vcF4KzJTgH6kO0TqURuEEfoU3.jpg",
-      "tmdbId": 10978
+      "profilePath": "/i7vcF4KzJTgH6kO0TqURuEEfoU3.jpg"
     },
     {
       "name": "Lily Tomlin",
@@ -1281,8 +1236,7 @@
       },
       "film": "Grandma",
       "role": "Leading",
-      "profilePath": "/eoFMSqRykiaXMGCiz7Kxehfqy1W.jpg",
-      "tmdbId": 10437
+      "profilePath": "/eoFMSqRykiaXMGCiz7Kxehfqy1W.jpg"
     },
     {
       "name": "Julie Walters",
@@ -1292,8 +1246,7 @@
         "bafta": "X",
         "bifa": "X"
       },
-      "profilePath": "/bCTkV2OUgzbJdQEoCk3GesE4DXq.jpg",
-      "tmdbId": 477
+      "profilePath": "/bCTkV2OUgzbJdQEoCk3GesE4DXq.jpg"
     },
     {
       "name": "Melissa McCarthy",
@@ -1302,8 +1255,7 @@
       },
       "film": "Spy",
       "role": "Leading",
-      "profilePath": "/yl0qva0O4u92fvtItakdvKmKrW9.jpg",
-      "tmdbId": 55536
+      "profilePath": "/yl0qva0O4u92fvtItakdvKmKrW9.jpg"
     },
     {
       "name": "Amy Schumer",
@@ -1322,8 +1274,7 @@
       },
       "film": "Youth",
       "role": "Leading",
-      "profilePath": "/3uH6SFBWx8zn8Zqz9HvafZcfZm.jpg",
-      "tmdbId": 6352
+      "profilePath": "/5Yb3nmRWXXZAxNhfhEuOMdfyVNN.jpg"
     },
     {
       "name": "Helen Mirren",
@@ -1332,8 +1283,7 @@
       },
       "film": "Woman in Gold",
       "role": "Leading",
-      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
-      "tmdbId": 15735
+      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg"
     },
     {
       "name": "Sarah Silverman",
@@ -1352,17 +1302,7 @@
       "awards": {
         "critics": "X"
       },
-      "profilePath": "/ie1KbeYFG5E0GVr1QP7tDNuXvga.jpg",
-      "tmdbId": 6885
-    },
-    {
-      "name": "Kristen Stewart",
-      "awards": {
-        "lafca": "X"
-      },
-      "film": "Clouds of Sils Maria",
-      "profilePath": "/ryhCjTGqS6G6OprbR0qUEH355lA.jpg",
-      "tmdbId": 37917
+      "profilePath": "/ie1KbeYFG5E0GVr1QP7tDNuXvga.jpg"
     },
     {
       "name": "Blythe Danner",
@@ -1370,8 +1310,7 @@
         "gotham": "X"
       },
       "film": "I'll See You in My Dreams",
-      "profilePath": "/xIN3nX76b4qN8B32wdoqx053N68.jpg",
-      "tmdbId": 10401
+      "profilePath": "/xIN3nX76b4qN8B32wdoqx053N68.jpg"
     },
     {
       "name": "Kristen Wiig",
@@ -1388,8 +1327,7 @@
         "spirit": "X"
       },
       "film": "Tangerine",
-      "profilePath": "/iR8bJguB5TGPXJCHIT42ICIWTBs.jpg",
-      "tmdbId": 1393915
+      "profilePath": "/iR8bJguB5TGPXJCHIT42ICIWTBs.jpg"
     },
     {
       "name": "Robin Bartlett",
@@ -1397,8 +1335,7 @@
         "spirit": "X"
       },
       "film": "H.",
-      "profilePath": "/94OpCjYBbxIoCtJpFWAlFQornKO.jpg",
-      "tmdbId": 11902
+      "profilePath": "/94OpCjYBbxIoCtJpFWAlFQornKO.jpg"
     },
     {
       "name": "Marin Ireland",
@@ -1406,8 +1343,7 @@
         "spirit": "X"
       },
       "film": "Glass Chin",
-      "profilePath": "/jAIOQNraHjvIAdqk81QDV5Phupp.jpg",
-      "tmdbId": 164094
+      "profilePath": "/jAIOQNraHjvIAdqk81QDV5Phupp.jpg"
     },
     {
       "name": "Jennifer Jason Leigh",
@@ -1424,8 +1360,7 @@
         "spirit": "X"
       },
       "film": "James White",
-      "profilePath": "/a366FCtQYmT80vQnPMFZ4hsTwuU.jpg",
-      "tmdbId": 38024
+      "profilePath": "/a366FCtQYmT80vQnPMFZ4hsTwuU.jpg"
     },
     {
       "name": "Marion Cotillard",
@@ -1433,8 +1368,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/biitzOF0GffIqFYLyOPkoiaOngQ.jpg",
-      "tmdbId": 8293
+      "profilePath": "/biitzOF0GffIqFYLyOPkoiaOngQ.jpg"
     },
     {
       "name": "Carey Mulligan",
@@ -1442,8 +1376,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg",
-      "tmdbId": 36662
+      "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg"
     },
     {
       "name": "Helena Bonham Carter",
@@ -1451,8 +1384,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/hJMbNSPJ2PCahsP3rNEU39C8GWU.jpg",
-      "tmdbId": 1283
+      "profilePath": "/hJMbNSPJ2PCahsP3rNEU39C8GWU.jpg"
     },
     {
       "name": "Anne",
@@ -1467,8 +1399,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/ygv1xVsgLlfCG1DJD0cuRmZqM1V.jpg",
-      "tmdbId": 23459
+      "profilePath": "/ygv1xVsgLlfCG1DJD0cuRmZqM1V.jpg"
     }
   ]
 }
