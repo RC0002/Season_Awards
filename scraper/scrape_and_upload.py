@@ -81,6 +81,8 @@ HISTORICAL_AVERAGES = {
     'cannes': {'best-film': 1, 'best-director': 1, 'best-actor': 1, 'best-actress': 1},
     # Annie Awards: Best Animated Feature only (typically 5 nominees in current format)
     'annie': {'best-film': 5, 'best-director': 0, 'best-actor': 0, 'best-actress': 0},
+    # NYFCC: New York Film Critics Circle - winners only (1 per category)
+    'nyfcc': {'best-film': 1, 'best-director': 1, 'best-actor': 2, 'best-actress': 2},
 }
 
 # Year-specific overrides for historical rule changes
@@ -444,7 +446,7 @@ class ScrapeReport:
         
         # Status per award
         print(f"\n  📡 AWARD STATUS:")
-        for award_key in ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'cannes', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa']:
+        for award_key in ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'cannes', 'dga', 'pga', 'lafca', 'nyfcc', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa']:
             log = self.logs.get(award_key)
             if log:
                 total_entries = sum(log.counts.values())
@@ -508,7 +510,7 @@ def scrape_award_with_logging(award_key, year, report):
         
         # ==== CALL APPROPRIATE SCRAPER ====
         from master_scraper import (scrape_award, scrape_afi, scrape_nbr, 
-                                    scrape_venice, scrape_dga, scrape_pga, scrape_lafca, scrape_wga, scrape_adg, scrape_gotham, scrape_astra, scrape_spirit, scrape_bifa, scrape_cannes, scrape_annie)
+                                    scrape_venice, scrape_dga, scrape_pga, scrape_lafca, scrape_nyfcc, scrape_wga, scrape_adg, scrape_gotham, scrape_astra, scrape_spirit, scrape_bifa, scrape_cannes, scrape_annie)
         
         result = None
         
@@ -530,6 +532,9 @@ def scrape_award_with_logging(award_key, year, report):
         elif award_key == 'lafca':
             result = scrape_lafca(ceremony)
             log.log(f"Scraped LAFCA Awards (with gender detection)")
+        elif award_key == 'nyfcc':
+            result = scrape_nyfcc(ceremony)
+            log.log(f"Scraped NYFCC Winners")
         elif award_key == 'wga':
             result = scrape_wga(ceremony)
             log.log(f"Scraped WGA Original and Adapted Screenplay nominees")
@@ -600,7 +605,7 @@ def scrape_year_enhanced(year, awards=None, parallel=True):
     Enhanced scrape_year with detailed logging and report generation.
     """
     if awards is None:
-        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'cannes', 'annie', 'dga', 'pga', 'lafca', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa']
+        awards = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'cannes', 'annie', 'dga', 'pga', 'lafca', 'nyfcc', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa']
     
     report = ScrapeReport(year)
     all_results = {}

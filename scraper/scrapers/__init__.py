@@ -104,6 +104,12 @@ CEREMONY_MAP = {
         2026: 53, 2025: 52, 2024: 51, 2023: 50, 2022: 49, 2021: 48,
         2020: 47, 2019: 46, 2018: 45, 2017: 44, 2016: 43,
         2015: 42, 2014: 41, 2013: 40
+    },
+    # NYFCC: New York Film Critics Circle - year of films (like LAFCA)
+    'nyfcc': {
+        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
+        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
+        2015: 2014, 2014: 2013, 2013: 2012
     }
 }
 
@@ -122,7 +128,8 @@ URL_TEMPLATES = {
     'gotham': 'https://en.wikipedia.org/wiki/Gotham_Independent_Film_Awards_{year}',
     'astra': 'https://en.wikipedia.org/wiki/{ord}_Astra_Film_Awards',
     'spirit': 'https://en.wikipedia.org/wiki/{ord}_Independent_Spirit_Awards',
-    'bifa': 'https://en.wikipedia.org/wiki/British_Independent_Film_Awards_{year}'
+    'bifa': 'https://en.wikipedia.org/wiki/British_Independent_Film_Awards_{year}',
+    'nyfcc': 'https://en.wikipedia.org/wiki/{year}_New_York_Film_Critics_Circle_Awards'
 }
 
 

@@ -145,11 +145,16 @@ CEREMONY_MAP = {
     },
     # Annie Awards - ceremony number = season_end_year - 1973
     # 52nd Annie Awards (2025) → Season 2024/25
-    # 40th Annie Awards (2013) → Season 2012/13
     'annie': {
         2026: 53, 2025: 52, 2024: 51, 2023: 50, 2022: 49, 2021: 48,
         2020: 47, 2019: 46, 2018: 45, 2017: 44, 2016: 43,
         2015: 42, 2014: 41, 2013: 40
+    },
+    # NYFCC: New York Film Critics Circle - year of films (like LAFCA)
+    'nyfcc': {
+        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
+        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
+        2015: 2014, 2014: 2013, 2013: 2012
     }
 }
 
@@ -167,7 +172,8 @@ URL_TEMPLATES = {
     'wga': 'https://en.wikipedia.org/wiki/{ord}_Writers_Guild_of_America_Awards',
     'adg': 'https://en.wikipedia.org/wiki/Art_Directors_Guild_Awards_{year}',
     'gotham': 'https://en.wikipedia.org/wiki/Gotham_Independent_Film_Awards_{year}',
-    'spirit': 'https://en.wikipedia.org/wiki/{ord}_Independent_Spirit_Awards'
+    'spirit': 'https://en.wikipedia.org/wiki/{ord}_Independent_Spirit_Awards',
+    'nyfcc': 'https://en.wikipedia.org/wiki/{year}_New_York_Film_Critics_Circle_Awards'
 }
 
 # Ordinal number suffix
@@ -316,6 +322,7 @@ from scrapers.adg import scrape_adg
 from scrapers.gotham import scrape_gotham
 from scrapers.astra import scrape_astra
 from scrapers.cannes import scrape_cannes
+from scrapers.nyfcc import scrape_nyfcc
 # Spirit already imported earlier at line ~3144
 
 
