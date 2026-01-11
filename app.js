@@ -357,6 +357,9 @@ function setupYearSelector() {
     select.addEventListener('change', function () {
         currentYear = this.value;
         currentCategoryIndex = 0;
+        // Update year display in title
+        const yearDisplay = document.getElementById('year-display');
+        if (yearDisplay) yearDisplay.textContent = currentYear.replace('_', '/');
         loadData();
     });
 }
