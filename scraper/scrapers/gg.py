@@ -89,8 +89,9 @@ def scrape_gg_old_format(tables_or_soup, award_key):
                     current_main_cat = 'director-row'
                     # Keep subcategories as-is for idx matching
                 # For acting categories, validate that subcategories are actually actor/actress
+                # Also handle new format with male/female actor labels
                 elif current_main_cat in ['actor-drama', 'actor-comedy']:
-                    has_actor_actress = any('actor' in s or 'actress' in s for s in subcategories)
+                    has_actor_actress = any('actor' in s or 'actress' in s or 'male' in s or 'female' in s for s in subcategories)
                     if not has_actor_actress:
                         # Subcategories changed to Director/Screenplay/Score/Song - reset
                         current_main_cat = None
@@ -98,7 +99,9 @@ def scrape_gg_old_format(tables_or_soup, award_key):
                 continue
             
             # TD row = nominees
-            if tds and current_main_cat:
+            # NEW: Also process TDs even WITHOUT current_main_cat for 83rd GG+ format
+            # where category headers are embedded in <div> inside <td>
+            if tds:
                 for idx, td in enumerate(tds):
                     # Determine result key and genre/role
                     key = None
@@ -106,39 +109,59 @@ def scrape_gg_old_format(tables_or_soup, award_key):
                     role = None
                     entry_film_suffix = ''
                     
+                    # Try to get subcategory from TH row first, then from embedded div header
                     subcat = subcategories[idx].lower() if idx < len(subcategories) else ''
                     
-                    if current_main_cat == 'film':
+                    # NEW: If no subcategory from TH rows, check for embedded div header (83rd GG+ format)
+                    # Wikipedia now puts category names in <div> inside <td> instead of <th> rows
+                    if not subcat:
+                        header_div = td.find('div')
+                        if header_div:
+                            subcat = header_div.get_text().strip().lower()
+                    
+                    # Skip TV categories
+                    if 'television' in subcat or 'series' in subcat:
+                        continue
+                    
+                    # Process based on current_main_cat OR embedded header
+                    if current_main_cat == 'film' or ('best motion picture' in subcat and 'animated' not in subcat and 'foreign' not in subcat and 'non-english' not in subcat):
                         key = 'best-film'
                         genre = 'Drama' if 'drama' in subcat else 'Comedy'
-                    elif current_main_cat == 'actor-drama':
+                    elif current_main_cat == 'actor-drama' or ('actor' in subcat and 'drama' in subcat and 'motion picture' in subcat and 'supporting' not in subcat):
                         role = 'Leading'
                         genre = 'Drama'
-                        key = 'best-actress' if 'actress' in subcat else 'best-actor'
-                    elif current_main_cat == 'actor-comedy':
+                        # Handle both old format (actress/actor) and new format (female actor/male actor)
+                        if 'actress' in subcat or 'female' in subcat:
+                            key = 'best-actress'
+                        else:
+                            key = 'best-actor'
+                    elif current_main_cat == 'actor-comedy' or ('actor' in subcat and ('comedy' in subcat or 'musical' in subcat) and 'motion picture' in subcat and 'supporting' not in subcat):
                         role = 'Leading'
                         genre = 'Comedy'
-                        key = 'best-actress' if 'actress' in subcat else 'best-actor'
+                        # Handle both old format (actress/actor) and new format (female actor/male actor)
+                        if 'actress' in subcat or 'female' in subcat:
+                            key = 'best-actress'
+                        else:
+                            key = 'best-actor'
                     elif current_main_cat == 'supporting-film-actor':
                         role = 'Supporting'
                         key = 'best-actor'
-                        entry_film_suffix = ''
                     elif current_main_cat == 'supporting-film-actress':
                         role = 'Supporting'
                         key = 'best-actress'
-                        entry_film_suffix = ''
-                    elif current_main_cat == 'supporting-film':
+                    elif current_main_cat == 'supporting-film' or ('supporting' in subcat and 'actor' in subcat and 'motion picture' in subcat):
                         role = 'Supporting'
-                        entry_film_suffix = ''
-                        if 'actor' in subcat:
-                            key = 'best-actor'
-                        elif 'actress' in subcat:
+                        # Handle both old format (actress/actor) and new format (female actor/male actor)
+                        if 'actress' in subcat or 'female' in subcat:
                             key = 'best-actress'
-                    elif current_main_cat == 'other':
+                        elif 'actor' in subcat:
+                            # Check for male before assuming - 'male' is in 'female' so be careful
+                            if 'female' not in subcat:
+                                key = 'best-actor'
+                    elif current_main_cat == 'other' or 'best director' in subcat:
                         if 'director' in subcat:
                             key = 'best-director'
                     elif current_main_cat == 'director-row':
-                        # Direct "Best Director | Best Screenplay" header row (70th GG format)
                         if 'best director' in subcat:
                             key = 'best-director'
                     
