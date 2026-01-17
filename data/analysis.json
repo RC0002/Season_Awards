@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-17T11:06:44.982637",
+  "generated": "2026-01-17T15:28:57.877883",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -7366,10 +7366,10 @@
           "expected": 1
         },
         "best-actor": {
-          "nominations": 2,
-          "winners": 2,
+          "nominations": 1,
+          "winners": 1,
           "status": "ok",
-          "expected": 2
+          "expected": 1
         },
         "best-actress": {
           "nominations": 1,

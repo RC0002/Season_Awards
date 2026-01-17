@@ -10,6 +10,7 @@
 let db = null;
 let firebaseReady = false;
 let isStatsPageActive = false;
+let isPredictionsPageActive = false;
 
 try {
     firebase.initializeApp(firebaseConfig);
@@ -318,6 +319,9 @@ function setupNavigation() {
             if (isStatsPageActive) {
                 hideStatisticsPage();
             }
+            if (isPredictionsPageActive) {
+                hidePredictionsPage();
+            }
             goToCategory(i);
         });
 
@@ -336,9 +340,22 @@ function setupNavigation() {
     statsLink.textContent = 'Statistics';
     statsLink.addEventListener('click', (e) => {
         e.preventDefault();
+        if (isPredictionsPageActive) hidePredictionsPage();
         showStatisticsPage();
     });
     navLinks.appendChild(statsLink);
+
+    // Add Predictions link
+    const predictionsLink = document.createElement('a');
+    predictionsLink.href = '#';
+    predictionsLink.className = 'nav-link nav-link-predictions';
+    predictionsLink.textContent = 'Predictions';
+    predictionsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (isStatsPageActive) hideStatisticsPage();
+        showPredictionsPage();
+    });
+    navLinks.appendChild(predictionsLink);
 }
 
 function setupYearSelector() {
@@ -354,13 +371,22 @@ function setupYearSelector() {
         select.appendChild(option);
     }
 
-    select.addEventListener('change', function () {
+    select.addEventListener('change', async function () {
         currentYear = this.value;
         currentCategoryIndex = 0;
         // Update year display in title
         const yearDisplay = document.getElementById('year-display');
         if (yearDisplay) yearDisplay.textContent = currentYear.replace('_', '/');
-        loadData();
+
+        // ALWAYS load data for the new year first
+        await loadData();
+
+        // Auto-refresh active page
+        if (isPredictionsPageActive) {
+            showPredictionsPage();
+        } else if (isStatsPageActive) {
+            showStatisticsPage();
+        }
     });
 }
 
@@ -1123,17 +1149,33 @@ function createTableRow(entry, categoryId, index, isPerson) {
         imageHTML = `<img class="poster-bg" src="${CONFIG.TMDB_IMAGE_BASE}w185${entry.posterPath}" alt="">`;
     }
 
-    // Build film subtitle for persons (actors, directors)
+    // Build film subtitle for persons (actors, directors) with role after film
     let filmSubtitle = '';
     if (isPerson && entry.film) {
-        filmSubtitle = `<span class="entry-film">${entry.film}</span>`;
+        const roleText = entry.role ? ` <span class="entry-meta">${entry.role}</span>` : '';
+        filmSubtitle = `<span class="entry-film-line">${entry.film}${roleText}</span>`;
+    }
+
+    // Generate mobile badges (only for winners)
+    let mobileBadges = '';
+    const winningAwards = CONFIG.AWARDS.filter(award => {
+        const val = entry.awards?.[award.key];
+        return val === 'Y';
+    });
+
+    if (winningAwards.length > 0) {
+        const badgesHtml = winningAwards.map(a =>
+            `<span class="mobile-badge">${a.label}</span>`
+        ).join('');
+        mobileBadges = `<div class="mobile-badges">${badgesHtml}</div>`;
     }
 
     nameCell.innerHTML = `
         <div class="name-cell-content">
             <div class="name-text-wrapper">
-                <span class="entry-name">${entry.name}</span>
+                <span class="entry-name">${entry.name}</span>${(!isPerson && entry.genre) ? `<span class="entry-meta">${entry.genre}</span>` : ''}
                 ${filmSubtitle}
+                ${mobileBadges}
             </div>
             ${imageHTML}
         </div>
@@ -1444,9 +1486,8 @@ function renderAwardsSection(entry) {
             if (!isWinner && !isNominee) return '';
 
             return `
-                <div class="fd-award-item ${isWinner ? 'winner' : 'nominee'}">
+                <div class="fd-award-item ${isWinner ? 'winner' : 'nominee'}" title="${isWinner ? 'Vinto' : 'Nomination'}">
                     <span class="fd-award-name">${award.label}</span>
-                    <span class="fd-award-status">${isWinner ? 'VINTO' : 'NOM'}</span>
                 </div>
             `;
         })
@@ -1628,8 +1669,8 @@ async function showStatisticsPage() {
 
     // Show loading
     statsContainer.innerHTML = `
-        <div class="stats-loading">
-            <div class="loading-text">Caricamento statistiche...</div>
+        <div class="spinner-overlay">
+            <div class="spinner"></div>
         </div>
     `;
 
@@ -1717,7 +1758,17 @@ function aggregateStatistics(allYearsData) {
         if (yearData['best-film']) {
             for (const entry of yearData['best-film']) {
                 if (!filmStats[entry.name]) {
-                    filmStats[entry.name] = { nominations: 0, wins: 0, years: [], posterPath: entry.posterPath };
+                    filmStats[entry.name] = {
+                        nominations: 0,
+                        wins: 0,
+                        years: [],
+                        posterPath: entry.posterPath,
+                        genre: entry.genre
+                    };
+                }
+                // Update genre if missing
+                if (!filmStats[entry.name].genre && entry.genre) {
+                    filmStats[entry.name].genre = entry.genre;
                 }
                 const awards = entry.awards || {};
                 for (const awardKey in awards) {
@@ -1738,7 +1789,17 @@ function aggregateStatistics(allYearsData) {
         if (yearData['best-actor']) {
             for (const entry of yearData['best-actor']) {
                 if (!actorStats[entry.name]) {
-                    actorStats[entry.name] = { nominations: 0, wins: 0, years: [], profilePath: entry.profilePath };
+                    actorStats[entry.name] = {
+                        nominations: 0,
+                        wins: 0,
+                        years: [],
+                        profilePath: entry.profilePath,
+                        role: entry.role
+                    };
+                }
+                // Update role if missing
+                if (!actorStats[entry.name].role && entry.role) {
+                    actorStats[entry.name].role = entry.role;
                 }
                 const awards = entry.awards || {};
                 for (const awardKey in awards) {
@@ -1815,26 +1876,68 @@ function aggregateStatistics(allYearsData) {
 }
 
 function renderStatisticsPage(stats, container) {
-    const renderList = (items, isPerson = false, showWins = false) => {
-        return items.map(([name, data], index) => {
-            const imageUrl = isPerson && data.profilePath
-                ? `${CONFIG.TMDB_IMAGE_BASE}w92${data.profilePath}`
-                : (!isPerson && data.posterPath ? `${CONFIG.TMDB_IMAGE_BASE}w92${data.posterPath}` : '');
+    const renderStatsSection = (title, items, isPerson = false, showWins = false, layoutIndex = 0) => {
+        // Top 8 for visual grid (2 rows of 4)
+        const topVisuals = items.slice(0, 8);
+        // Top 10 for list
+        const topList = items.slice(0, 10);
 
-            const count = showWins ? data.wins : data.nominations;
-            const countLabel = showWins ? 'vittorie' : 'nomination';
+        const countLabel = showWins ? 'vittorie' : 'nomination';
+        const isReversed = layoutIndex % 2 !== 0;
+
+        const renderVisualItem = (name, data, index) => {
+            const imageUrl = isPerson && data.profilePath
+                ? `${CONFIG.TMDB_IMAGE_BASE}w342${data.profilePath}`
+                : (!isPerson && data.posterPath ? `${CONFIG.TMDB_IMAGE_BASE}w342${data.posterPath}` : '');
+
+            if (!imageUrl) return '';
 
             return `
-                <div class="stats-item">
-                    <span class="stats-rank">${index + 1}</span>
-                    ${imageUrl ? `<img src="${imageUrl}" class="stats-img ${isPerson ? 'person' : 'poster'}" alt="" loading="lazy">` : '<div class="stats-img-placeholder"></div>'}
-                    <div class="stats-info">
-                        <span class="stats-name">${name}</span>
-                        <span class="stats-meta">${count} ${countLabel} · ${data.years.join(', ')}</span>
+                <div class="stats-visual-item full-poster">
+                    <img src="${imageUrl}" class="stats-visual-img" loading="lazy">
+                    <div class="stats-visual-overlay">
+                        <span class="stats-visual-rank">#${index + 1}</span>
+                        <div class="stats-visual-info">
+                            <span class="stats-visual-name">${name}</span>
+                            <span class="stats-visual-count">${showWins ? data.wins : data.nominations}</span>
+                        </div>
                     </div>
                 </div>
             `;
-        }).join('');
+        };
+
+        const renderListItem = (name, data, index) => {
+            const count = showWins ? data.wins : data.nominations;
+            const isFirst = index === 0 ? 'is-first' : '';
+            // For list items, we might want a simpler look now
+            return `
+                <div class="stats-list-row ${isFirst}">
+                    <span class="stats-list-rank">${index + 1}</span>
+                    <div style="flex: 1; margin: 0 12px;">
+                        <span class="stats-list-name" style="padding: 0;">${name}</span>
+                        ${data.role ? `<span class="stats-meta">${data.role}</span>` : ''}
+                        ${data.genre ? `<span class="stats-meta">${data.genre}</span>` : ''}
+                    </div>
+                    <span class="stats-list-count">${count}</span>
+                </div>
+             `;
+        };
+
+        return `
+            <div class="stats-section-wide">
+                <h2 class="stats-section-title">${title}</h2>
+                <div class="stats-split-layout ${isReversed ? 'layout-reverse' : ''}">
+                    <div class="stats-list-side">
+                        ${topList.map(([name, data], idx) => renderListItem(name, data, idx)).join('')}
+                    </div>
+                    <div class="stats-visual-side">
+                        <div class="stats-visual-grid">
+                            ${topVisuals.map(([name, data], idx) => renderVisualItem(name, data, idx)).join('')}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
     };
 
     const html = `
@@ -1843,67 +1946,562 @@ function renderStatisticsPage(stats, container) {
             <p class="stats-subtitle">Nomination e vittorie aggregate da tutte le stagioni</p>
         </div>
         
-        <div class="stats-grid">
-            <div class="stats-section">
-                <h2>Film con più Nomination</h2>
-                <div class="stats-list">
-                    ${renderList(stats.topFilmsByNominations, false, false)}
-                </div>
-            </div>
+        <div class="stats-content-wrapper">
+            ${renderStatsSection('Film con più Nomination', stats.topFilmsByNominations, false, false, 0)}
+            ${renderStatsSection('Film con più Vittorie', stats.topFilmsByWins, false, true, 1)}
             
-            <div class="stats-section">
-                <h2>Film con più Vittorie</h2>
-                <div class="stats-list">
-                    ${renderList(stats.topFilmsByWins, false, true)}
-                </div>
-            </div>
+            ${renderStatsSection('Attori con più Nomination', stats.topActorsByNominations, true, false, 2)}
+            ${renderStatsSection('Attori con più Vittorie', stats.topActorsByWins, true, true, 3)}
             
-            <div class="stats-section">
-                <h2>Attori con più Nomination</h2>
-                <div class="stats-list">
-                    ${renderList(stats.topActorsByNominations, true, false)}
-                </div>
-            </div>
+            ${renderStatsSection('Attrici con più Nomination', stats.topActressesByNominations, true, false, 4)}
+            ${renderStatsSection('Attrici con più Vittorie', stats.topActressesByWins, true, true, 5)}
             
-            <div class="stats-section">
-                <h2>Attori con più Vittorie</h2>
-                <div class="stats-list">
-                    ${renderList(stats.topActorsByWins, true, true)}
-                </div>
-            </div>
-            
-            <div class="stats-section">
-                <h2>Attrici con più Nomination</h2>
-                <div class="stats-list">
-                    ${renderList(stats.topActressesByNominations, true, false)}
-                </div>
-            </div>
-            
-            <div class="stats-section">
-                <h2>Attrici con più Vittorie</h2>
-                <div class="stats-list">
-                    ${renderList(stats.topActressesByWins, true, true)}
-                </div>
-            </div>
-            
-            <div class="stats-section">
-                <h2>Registi con più Nomination</h2>
-                <div class="stats-list">
-                    ${renderList(stats.topDirectorsByNominations, true, false)}
-                </div>
-            </div>
-            
-            <div class="stats-section">
-                <h2>Registi con più Vittorie</h2>
-                <div class="stats-list">
-                    ${renderList(stats.topDirectorsByWins, true, true)}
-                </div>
-            </div>
+            ${renderStatsSection('Registi con più Nomination', stats.topDirectorsByNominations, true, false, 6)}
+            ${renderStatsSection('Registi con più Vittorie', stats.topDirectorsByWins, true, true, 7)}
         </div>
         
-        <button onclick="hideStatisticsPage()" class="stats-back-btn">← Torna Indietro</button>
+        </div>
     `;
 
     container.innerHTML = html;
 }
 
+// ============ PREDICTIONS PAGE ============
+
+// Award weights for Oscar prediction (higher = more predictive)
+const PREDICTION_WEIGHTS = {
+    sag: 20,       // SAG actors vote at Oscars
+    bafta: 18,     // Overlapping international voters
+    dga: 18,       // Directors category
+    pga: 16,       // Producers overlap
+    critics: 15,   // Critical acclaim indicator
+    gg: 12,        // Visibility but less predictive
+    lafca: 10,     // LA Film Critics
+    nyfcc: 10,     // NY Film Critics
+    nbr: 8,        // Early indicator
+    gotham: 6,     // Indie focus
+    spirit: 6,     // Indie focus
+    astra: 5,      // Industry buzz
+    afi: 3,        // Honorific
+    venice: 3,     // Festival
+    cannes: 3,     // Festival
+    bifa: 2,       // UK indie
+    annie: 2,      // Animation only
+    adg: 2         // Art Directors Guild
+};
+
+async function showPredictionsPage() {
+    isPredictionsPageActive = true;
+
+    const mainContent = document.querySelector('.main-content');
+    const swipeIndicators = document.getElementById('swipe-indicators');
+
+    // Create predictions container if it doesn't exist
+    let predictionsContainer = document.getElementById('predictions-container');
+    if (!predictionsContainer) {
+        predictionsContainer = document.createElement('div');
+        predictionsContainer.id = 'predictions-container';
+        predictionsContainer.className = 'predictions-container';
+        mainContent.parentNode.insertBefore(predictionsContainer, mainContent.nextSibling);
+    }
+
+    // Hide other content
+    mainContent.style.display = 'none';
+    swipeIndicators.style.display = 'none';
+    predictionsContainer.style.display = 'block';
+
+    // Show loading
+    predictionsContainer.innerHTML = `
+        <div class="spinner-overlay">
+            <div class="spinner"></div>
+        </div>
+    `;
+
+    // Deselect nav links, highlight predictions
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+    });
+    document.querySelector('.nav-link-predictions')?.classList.add('active');
+
+    try {
+        // Load historical data first for dynamic weighting
+        const allYearsData = await loadAllYearsData();
+        const historyAnalysis = analyzeHistoricalPrecursors(allYearsData);
+
+        // Calculate predictions using dynamic weights
+        const predictions = calculateOscarPredictions(data, historyAnalysis);
+
+        // Render page
+        renderPredictionsPage(predictions, predictionsContainer);
+
+        // Pass analysis data to the chart renderer so it doesn't need to reload
+        // (We'll modify renderPredictionsPage slightly or just use the global function if tailored)
+        setTimeout(() => {
+            renderPrecursorAnalysis(historyAnalysis, document.getElementById('precursor-analysis-container'));
+        }, 100);
+
+    } catch (err) {
+        console.error('Error calculating predictions:', err);
+        predictionsContainer.innerHTML = `
+            <div class="stats-loading">
+                <span style="color: #ff6b6b;">Errore nel calcolo delle predizioni.</span>
+            </div>
+        `;
+    }
+}
+
+function hidePredictionsPage() {
+    isPredictionsPageActive = false;
+
+    const mainContent = document.querySelector('.main-content');
+    const swipeIndicators = document.getElementById('swipe-indicators');
+    const predictionsContainer = document.getElementById('predictions-container');
+
+    if (predictionsContainer) {
+        predictionsContainer.style.display = 'none';
+    }
+    mainContent.style.display = 'flex';
+    swipeIndicators.style.display = 'flex';
+
+    // Restore nav state
+    updateNavigation();
+
+    // Deselect predictions link
+    document.querySelector('.nav-link-predictions')?.classList.remove('active');
+}
+
+function calculateOscarPredictions(yearData, historyAnalysis) {
+    const categories = ['best-film', 'best-director', 'best-actor', 'best-actress'];
+    const predictions = {};
+
+    // Build dynamic weights from history if available
+    const dynamicWeights = { ...PREDICTION_WEIGHTS };
+    if (historyAnalysis && historyAnalysis.overall) {
+        historyAnalysis.overall.forEach(item => {
+            // Use historical win percentage as weight (e.g. 80% -> weight 80)
+            // Only update if we have meaningful data (at least 5 years of history to be reliable?)
+            // For now, trusting the percentage directly.
+            if (item.percentage > 0) {
+                dynamicWeights[item.key] = item.percentage;
+            }
+        });
+    }
+
+    categories.forEach(categoryId => {
+        const entries = yearData[categoryId] || [];
+        const scored = entries.map(entry => {
+            let score = 0;
+            const precursorWins = [];
+
+            if (entry.awards) {
+                for (const [awardKey, status] of Object.entries(entry.awards)) {
+                    if (status === 'Y') { // Only wins count
+                        const weight = dynamicWeights[awardKey] || 2;
+                        score += weight;
+                        precursorWins.push(awardKey);
+                    }
+                }
+            }
+
+            return {
+                ...entry,
+                score,
+                precursorWins
+            };
+        });
+
+        // Sort by score descending
+        scored.sort((a, b) => b.score - a.score);
+
+        // Calculate total score for normalization (Sum = 100%)
+        const totalScore = scored.reduce((sum, entry) => sum + entry.score, 0);
+
+        // Add probability percentage
+        scored.forEach(entry => {
+            entry.probability = totalScore > 0 ? Math.round((entry.score / totalScore) * 100) : 0;
+        });
+
+        // Filter to only show entries with at least some score
+        predictions[categoryId] = scored.filter(e => e.score > 0);
+    });
+
+    return predictions;
+}
+
+function renderPredictionsPage(predictions, container) {
+    const categoryLabels = {
+        'best-film': 'Best Picture',
+        'best-director': 'Best Director',
+        'best-actor': 'Best Actor',
+        'best-actress': 'Best Actress'
+    };
+
+    const awardLabels = {
+        sag: 'SAG', bafta: 'BAFTA', dga: 'DGA', pga: 'PGA', critics: 'Critics',
+        gg: 'GG', lafca: 'LAFCA', nyfcc: 'NYFCC', nbr: 'NBR', gotham: 'Gotham',
+        spirit: 'Spirit', astra: 'Astra', afi: 'AFI', venice: 'Venice',
+        cannes: 'Cannes', bifa: 'BIFA', annie: 'Annie', adg: 'ADG'
+    };
+
+    const yearDisplay = currentYear ? currentYear.replace('_', '/') : '';
+
+    const renderCategorySplit = (categoryId, index) => {
+        const entries = predictions[categoryId] || [];
+        const isPerson = categoryId !== 'best-film';
+        const isReversed = index % 2 !== 0;
+
+        if (entries.length === 0) {
+            return `
+                <div class="stats-section-wide pred-section-wide">
+                    <h2 class="category-title-large">${categoryLabels[categoryId].toUpperCase()}</h2>
+                    <div class="pred-empty">Nessun dato disponibile</div>
+                </div>
+             `;
+        }
+
+        // Top 8 for the list
+        const topEntries = [...entries].slice(0, 8);
+        const winner = topEntries[0];
+
+        // --- VISUAL SIDE: THE WINNER POSTER ---
+        const renderWinnerCard = (entry) => {
+            const imageUrl = isPerson && entry.profilePath
+                ? `${CONFIG.TMDB_IMAGE_BASE}w500${entry.profilePath}`
+                : (!isPerson && entry.posterPath ? `${CONFIG.TMDB_IMAGE_BASE}w500${entry.posterPath}` : '');
+
+            const metaText = isPerson ? (entry.role || '') : (entry.genre || '');
+
+            return `
+                <div class="pred-winner-card">
+                    <div class="pred-winner-poster-wrapper">
+                        ${imageUrl ? `<img src="${imageUrl}" class="pred-winner-poster" loading="lazy">` : '<div class="pred-winner-placeholder"></div>'}
+                        <div class="pred-winner-overlay">
+                             <div class="pred-winner-badge">PREDICTED WINNER</div>
+                             <div class="pred-winner-name">${entry.name}</div>
+                             ${metaText ? `<div class="pred-winner-meta">${metaText}</div>` : ''}
+                             <div class="pred-winner-percent">${entry.probability}%</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        };
+
+        // --- LIST SIDE ---
+        const getBadges = (entry) => {
+            const badges = [];
+            // Add precursor wins
+            if (entry.precursorWins) {
+                entry.precursorWins.forEach(award => {
+                    badges.push(`<span class="nominee-badge badge-win">${awardLabels[award] || award.toUpperCase()}</span>`);
+                });
+            }
+            // Add manual wins
+            const allAwards = entry.awards || {};
+            Object.keys(allAwards).forEach(award => {
+                if (allAwards[award] === 'Y' && (!entry.precursorWins || !entry.precursorWins.includes(award))) {
+                    badges.push(`<span class="nominee-badge badge-win">${awardLabels[award] || award.toUpperCase()}</span>`);
+                }
+            });
+            return badges.join('');
+        };
+
+        const renderListItem = (entry, idx) => {
+            // Mobile badges
+            const mobileBadgesHtml = getBadges(entry);
+            const mobileBadges = mobileBadgesHtml ? `<div class="mobile-badges">${mobileBadgesHtml}</div>` : '';
+
+            const metaText = isPerson ? (entry.role || '') : (entry.genre || '');
+
+            return `
+                <div class="stats-list-row pred-list-row ${idx === 0 ? 'is-winner-row' : ''}">
+                    <span class="stats-list-rank">${idx + 1}</span>
+                    <div class="pred-list-info">
+                         <div class="pred-list-header">
+                            <span class="stats-list-name" style="padding: 0;">${entry.name}</span>${metaText ? `<span class="pred-meta">${metaText}</span>` : ''}
+                            <span class="pred-list-percent">${entry.probability}%</span>
+                         </div>
+                         ${mobileBadges}
+                         <div class="pred-badges-desktop">${mobileBadgesHtml}</div>
+                    </div>
+                </div>
+             `;
+        };
+
+        return `
+            <div class="stats-section-wide pred-section-wide">
+                <h2 class="category-title-large">${categoryLabels[categoryId].toUpperCase()}</h2>
+                
+                <div class="stats-split-layout ${isReversed ? 'layout-reverse' : ''}">
+                    <!-- VISUAL SIDE (Winner) -->
+                    <div class="stats-visual-side pred-visual-side">
+                        ${renderWinnerCard(winner)}
+                    </div>
+
+                    <!-- LIST SIDE -->
+                    <div class="stats-list-side pred-list-side">
+                        ${topEntries.map((e, idx) => renderListItem(e, idx)).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+    };
+
+    const html = `
+        <div class="stats-header">
+            <h1 class="stats-title">Oscar Predictions ${yearDisplay}</h1>
+            <p class="stats-subtitle">Probabilità basate sulle vittorie ai premi precursori</p>
+        </div>
+        
+        <div class="stats-content-wrapper">
+             ${Object.keys(categoryLabels).map((catId, idx) => renderCategorySplit(catId, idx)).join('')}
+        </div>
+        
+        <div class="pred-analysis-section">
+            <h2>Analisi Storica</h2>
+            <div id="precursor-analysis-container">
+                <div class="loading-analysis">Caricamento dati storici...</div>
+            </div>
+        </div>
+
+        </div>
+    `;
+
+    container.innerHTML = html;
+
+
+}
+
+function renderPredictionCharts(predictions, categoryLabels) {
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not loaded');
+        return;
+    }
+
+    const chartColors = {
+        gold: 'rgba(212, 168, 75, 0.8)',
+        silver: 'rgba(192, 192, 192, 0.8)',
+        bronze: 'rgba(205, 127, 50, 0.8)',
+        default: 'rgba(255, 255, 255, 0.3)'
+    };
+
+    Object.keys(categoryLabels).forEach(catId => {
+        const canvas = document.getElementById(`chart-${catId}`);
+        if (!canvas) return;
+
+        const entries = (predictions[catId] || []).slice(0, 5);
+        const labels = entries.map(e => e.name.length > 20 ? e.name.substring(0, 18) + '...' : e.name);
+        const data = entries.map(e => e.score);
+        const colors = entries.map((_, i) =>
+            i === 0 ? chartColors.gold :
+                i === 1 ? chartColors.silver :
+                    i === 2 ? chartColors.bronze : chartColors.default
+        );
+
+        new Chart(canvas, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Score',
+                    data: data,
+                    backgroundColor: colors,
+                    borderColor: colors.map(c => c.replace('0.8', '1')),
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: categoryLabels[catId],
+                        color: '#d4a84b',
+                        font: { size: 14, weight: 'bold' }
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { color: 'rgba(255,255,255,0.1)' },
+                        ticks: { color: '#888' }
+                    },
+                    y: {
+                        grid: { display: false },
+                        ticks: { color: '#ccc', font: { size: 11 } }
+                    }
+                }
+            }
+        });
+    });
+}
+
+// ============ HISTORICAL PRECURSOR ANALYSIS ============
+async function loadHistoricalAnalysis() {
+    const container = document.getElementById('precursor-analysis-container');
+    if (!container) return;
+
+    try {
+        // Use existing loadAllYearsData function (works with Firebase/localStorage)
+        const allData = await loadAllYearsData();
+
+        if (Object.keys(allData).length === 0) {
+            container.innerHTML = `<div class="analysis-error">Nessun dato storico disponibile. Assicurati di aver caricato i dati delle stagioni precedenti.</div>`;
+            return;
+        }
+
+        // Analyze precursor success rates
+        const analysis = analyzeHistoricalPrecursors(allData);
+        renderPrecursorAnalysis(analysis, container);
+    } catch (error) {
+        container.innerHTML = `<div class="analysis-error">Errore nel caricamento dati: ${error.message}</div>`;
+    }
+}
+
+function analyzeHistoricalPrecursors(allData) {
+    const precursors = ['sag', 'bafta', 'dga', 'pga', 'critics', 'gg', 'lafca', 'nyfcc', 'nbr', 'gotham', 'spirit'];
+    const categories = ['best-film', 'best-director', 'best-actor', 'best-actress'];
+
+    // Track: for each precursor, how many times did the Oscar winner ALSO win/nominate that precursor?
+    const stats = {};
+    precursors.forEach(p => {
+        stats[p] = { wins: 0, noms: 0, total: 0, label: p.toUpperCase() };
+    });
+
+    const labelMap = {
+        sag: 'SAG', bafta: 'BAFTA', dga: 'DGA', pga: 'PGA', critics: 'Critics Choice',
+        gg: 'Golden Globes', lafca: 'LAFCA', nyfcc: 'NYFCC', nbr: 'NBR', gotham: 'Gotham', spirit: 'Spirit'
+    };
+    precursors.forEach(p => stats[p].label = labelMap[p] || p.toUpperCase());
+
+    // Category-specific results
+    const categoryStats = {};
+    categories.forEach(cat => {
+        categoryStats[cat] = {};
+        precursors.forEach(p => {
+            categoryStats[cat][p] = { wins: 0, noms: 0, total: 0 };
+        });
+    });
+
+    // Process each year
+    Object.keys(allData).forEach(yearKey => {
+        const yearData = allData[yearKey];
+
+        categories.forEach(catId => {
+            const entries = yearData[catId] || [];
+
+            // Find Oscar winner (has 'oscar' in awards with 'Y')
+            const oscarWinner = entries.find(e => e.awards && e.awards.oscar === 'Y');
+            if (!oscarWinner) return;
+
+            // Check which precursors the Oscar winner also won/nominated
+            precursors.forEach(precursor => {
+                stats[precursor].total++;
+                categoryStats[catId][precursor].total++;
+
+                // If key exists, it's a nomination (or win)
+                if (oscarWinner.awards[precursor]) {
+                    stats[precursor].noms++;
+                    categoryStats[catId][precursor].noms++;
+                }
+
+                if (oscarWinner.awards[precursor] === 'Y') {
+                    stats[precursor].wins++;
+                    categoryStats[catId][precursor].wins++;
+                }
+            });
+        });
+    });
+
+    // Calculate percentages and sort
+    const results = precursors.map(p => ({
+        key: p,
+        label: stats[p].label,
+        wins: stats[p].wins,
+        noms: stats[p].noms,
+        total: stats[p].total,
+        percentage: stats[p].total > 0 ? Math.round((stats[p].wins / stats[p].total) * 100) : 0,
+        nomPercentage: stats[p].total > 0 ? Math.round((stats[p].noms / stats[p].total) * 100) : 0
+    })).sort((a, b) => b.percentage - a.percentage);
+
+    // Category breakdowns
+    const categoryBreakdown = {};
+    categories.forEach(cat => {
+        categoryBreakdown[cat] = precursors.map(p => ({
+            key: p,
+            label: stats[p].label,
+            wins: categoryStats[cat][p].wins,
+            total: categoryStats[cat][p].total,
+            percentage: categoryStats[cat][p].total > 0 ?
+                Math.round((categoryStats[cat][p].wins / categoryStats[cat][p].total) * 100) : 0,
+            nomPercentage: categoryStats[cat][p].total > 0 ?
+                Math.round((categoryStats[cat][p].noms / categoryStats[cat][p].total) * 100) : 0
+        })).sort((a, b) => b.percentage - a.percentage);
+    });
+
+    return { overall: results, byCategory: categoryBreakdown };
+}
+
+function renderPrecursorAnalysis(analysis, container) {
+    const categoryLabels = {
+        'best-film': 'Best Picture',
+        'best-director': 'Best Director',
+        'best-actor': 'Best Actor',
+        'best-actress': 'Best Actress'
+    };
+
+    // Overall chart
+    let html = `
+        <div class="analysis-overall">
+            <h3>Correlazione Generale vari premi rispetto agli Oscar</h3>
+            <p class="analysis-note">% di volte che il vincitore Oscar ha vinto anche il seguente premio (2013-2026)</p>
+            <div class="analysis-bars">
+                ${analysis.overall.map((item, idx) => {
+        const barColor = idx < 3 ? 'var(--gold)' : 'rgba(255,255,255,0.4)';
+        const isTop = idx < 3;
+        return `
+                        <div class="analysis-bar-row ${isTop ? 'top-predictor' : ''}">
+                            <span class="analysis-label">${item.label}</span>
+                            <div class="analysis-bar-container">
+                                <div class="analysis-bar-nom" style="width: ${item.nomPercentage}%; background: rgba(255,255,255,0.15)"></div>
+                                <div class="analysis-bar" style="width: ${item.percentage}%; background: ${barColor}"></div>
+                            </div>
+                            <div class="analysis-percent-group">
+                                <span class="analysis-percent">${item.percentage}%</span>
+                                <span class="analysis-percent-nom">${item.nomPercentage}%</span>
+                            </div>
+                            <span class="analysis-detail">(${item.wins}/${item.total})</span>
+                        </div>
+                    `;
+    }).join('')}
+            </div>
+        </div>
+
+        <div class="analysis-categories">
+            <h3>Analisi per Categoria</h3>
+            <div class="analysis-category-grid">
+                ${Object.keys(categoryLabels).map(catId => {
+        const catData = analysis.byCategory[catId] || [];
+        const top3 = catData.slice(0, 3);
+        return `
+                        <div class="analysis-category-card">
+                            <h4>${categoryLabels[catId]}</h4>
+                            <div class="analysis-category-top">
+                                ${top3.map((item, idx) => `
+                                    <div class="top-predictor-row">
+                                        <span class="top-rank">${idx + 1}.</span>
+                                        <span class="top-name">${item.label}</span>
+                                        <span class="top-percent">${item.percentage}%</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `;
+    }).join('')}
+            </div>
+        </div>
+    `;
+
+    container.innerHTML = html;
+}

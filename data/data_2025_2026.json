@@ -8,14 +8,15 @@
         "critics": "Y",
         "afi": "Y",
         "nbr": "Y",
-        "pga": "X",
         "nyfcc": "Y",
+        "pga": "X",
         "adg": "X",
         "astra": "Y",
         "lafca": "Y",
         "gotham": "Y"
       },
       "posterPath": "/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
+      "genre": "Drama",
       "tmdbId": 1054867
     },
     {
@@ -31,6 +32,7 @@
         "astra": "Y"
       },
       "posterPath": "/qTvFWCGeGXgBRaINLY1zqgTPSpn.jpg",
+      "genre": "Thriller",
       "tmdbId": 1233413
     },
     {
@@ -46,6 +48,7 @@
         "gotham": "X"
       },
       "posterPath": "/61xMzN4h8iLk0hq6oUzr9Ts6GE9.jpg",
+      "genre": "Drama",
       "tmdbId": 858024
     },
     {
@@ -471,15 +474,6 @@
       "tmdbId": 1056121
     },
     {
-      "name": "Benny Safdie",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "The Smashing Machine",
-      "profilePath": "/d1LVZAt1W2Wg6yTWRWkDkkyyGI.jpg",
-      "tmdbId": 227564
-    },
-    {
       "name": "Kleber Mendonça Filho",
       "awards": {
         "cannes": "Y"
@@ -487,6 +481,15 @@
       "film": "The Secret Agent",
       "profilePath": "/7jOzp98FiL6C22tphTHEPWAhK11.jpg",
       "tmdbId": 1016214
+    },
+    {
+      "name": "Benny Safdie",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "The Smashing Machine",
+      "profilePath": "/d1LVZAt1W2Wg6yTWRWkDkkyyGI.jpg",
+      "tmdbId": 227564
     },
     {
       "name": "Akinola Davies Jr.",
@@ -641,6 +644,22 @@
   ],
   "best-actor": [
     {
+      "name": "Wagner Moura",
+      "film": "The Secret Agent",
+      "role": "Leading",
+      "awards": {
+        "gg": "Y",
+        "critics": "X",
+        "cannes": "Y",
+        "nyfcc": "Y",
+        "astra": "X",
+        "lafca": "X",
+        "gotham": "X"
+      },
+      "profilePath": "/yJjV1ZCQbCSSgRy05FncCKjyaY4.jpg",
+      "tmdbId": 52583
+    },
+    {
       "name": "Timothée Chalamet",
       "film": "Marty Supreme",
       "role": "Leading",
@@ -667,21 +686,6 @@
       },
       "profilePath": "/x78BtYHElirO7Iw8bL4m8CnzRDc.jpg",
       "tmdbId": 1640
-    },
-    {
-      "name": "Wagner Moura",
-      "film": "The Secret Agent",
-      "role": "Leading",
-      "awards": {
-        "gg": "Y",
-        "critics": "X",
-        "nyfcc": "Y",
-        "astra": "X",
-        "lafca": "X",
-        "gotham": "X"
-      },
-      "profilePath": "/yJjV1ZCQbCSSgRy05FncCKjyaY4.jpg",
-      "tmdbId": 52583
     },
     {
       "name": "Benicio del Toro",
@@ -774,20 +778,6 @@
       "film": "La grazia",
       "profilePath": "/h9Js3JQOFD5h4uNtJB2VwSgMcYq.jpg",
       "tmdbId": 72782
-    },
-    {
-      "name": "Wagner Moura",
-      "awards": {
-        "cannes": "Y"
-      },
-      "profilePath": "/yJjV1ZCQbCSSgRy05FncCKjyaY4.jpg",
-      "tmdbId": 52583
-    },
-    {
-      "name": "The Secret Agent",
-      "awards": {
-        "cannes": "Y"
-      }
     },
     {
       "name": "Robert Aramayo",
@@ -1265,15 +1255,6 @@
       "tmdbId": 134774
     },
     {
-      "name": "Xin Zhilei",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "Rì guà zhōngtiān",
-      "profilePath": "/aFhdcO9nzA1vbABsqDmGkaTLsjg.jpg",
-      "tmdbId": 1569934
-    },
-    {
       "name": "Nadia Melliti",
       "awards": {
         "cannes": "Y"
@@ -1281,6 +1262,15 @@
       "film": "The Little Sister",
       "profilePath": "/cuuwXDvLXWroFlOhfB1Xf2eYamw.jpg",
       "tmdbId": 5375369
+    },
+    {
+      "name": "Xin Zhilei",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Rì guà zhōngtiān",
+      "profilePath": "/aFhdcO9nzA1vbABsqDmGkaTLsjg.jpg",
+      "tmdbId": 1569934
     },
     {
       "name": "Jennifer Lawrence",
@@ -1366,6 +1356,7 @@
         "gotham": "X"
       },
       "film": "Sentimental Value",
+      "role": "Supporting",
       "profilePath": "/c6JojXrAi9ZAiCA07epc3eLmF1r.jpg",
       "tmdbId": 1421850
     },

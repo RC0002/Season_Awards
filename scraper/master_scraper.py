@@ -2308,6 +2308,12 @@ def merge_results(all_results):
                     if 'awards' not in existing:
                         existing['awards'] = {}
                     existing['awards'].update(entry.get('awards', {}))
+                    # Preserve role if the incoming entry has it and existing doesn't
+                    if 'role' in entry and 'role' not in existing:
+                        existing['role'] = entry['role']
+                    # Preserve genre if the incoming entry has it and existing doesn't
+                    if 'genre' in entry and 'genre' not in existing:
+                        existing['genre'] = entry['genre']
                 else:
                     merged[cat_id].append(entry.copy())
     

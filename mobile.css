@@ -318,4 +318,25 @@
     .poster-marquee {
         gap: 8px;
     }
+
+    /* Mobile Badges in Table */
+    .mobile-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-top: 6px;
+        width: 100%;
+    }
+
+    .mobile-badge {
+        font-size: 9px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--gold);
+        border: 1px solid var(--gold);
+        padding: 2px 5px;
+        border-radius: 3px;
+        background: rgba(212, 168, 75, 0.1);
+        letter-spacing: 0.05em;
+    }
 }

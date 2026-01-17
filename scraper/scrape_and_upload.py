@@ -259,7 +259,6 @@ HISTORICAL_EXPECTED_OVERRIDES = {
         # Cannes 2016: 2 directors (Mungiu + Assayas shared Best Director)
         # Cannes 2025: 2 actors (Wagner Moura + Philip Seymour Hoffman Jr. shared)
         'best-director': {(2017, 2017): 2},
-        'best-actor': {(2026, 2026): 2},
     },
     # Annie Awards: Historical nominee count variations
     # Before 2017/18 (45th), Annie had 5-8 nominees based on year

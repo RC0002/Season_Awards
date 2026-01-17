@@ -220,14 +220,18 @@ def scrape_cannes(year):
                                 results[category].append(entry)
                     
                     else:
-                        # Single winner - old logic
+                        # Single winner - direct in LI (not nested list)
                         # Structure: "Best Actor: Name for Film"
                         film_name = None
                         i_tag = li.find('i')
                         if i_tag:
+                            # Case 1: <i><a>Film</a></i> - link inside italic
                             film_link = i_tag.find('a')
                             if film_link:
                                 film_name = film_link.get_text().strip()
+                            else:
+                                # Case 2: <a><i>Film</i></a> - italic inside link (Wikipedia uses this)
+                                film_name = i_tag.get_text().strip()
                         
                         # Person is the first link NOT in <i> tag
                         skip_texts = ['best director', 'best actor', 'best actress']
@@ -253,6 +257,7 @@ def scrape_cannes(year):
                                 if film_name:
                                     entry['film'] = film_name
                                 results[category].append(entry)
+                                break  # Only add one entry per LI, stop after first valid person
         
         current = current.next_sibling
     
