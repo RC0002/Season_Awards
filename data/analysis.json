@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-11T16:12:48.554448",
+  "generated": "2026-01-17T11:06:44.982637",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -6939,25 +6939,25 @@
       "gg": {
         "best-film": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         },
         "best-director": {
           "nominations": 6,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 6
         },
         "best-actor": {
           "nominations": 18,
-          "winners": 0,
+          "winners": 3,
           "status": "ok",
           "expected": 18
         },
         "best-actress": {
           "nominations": 18,
-          "winners": 0,
+          "winners": 3,
           "status": "ok",
           "expected": 18
         }
