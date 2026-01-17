@@ -745,7 +745,7 @@ def upload_with_change_detection(years):
     return uploaded, skipped
 
 
-def run_full_pipeline(years=None, parallel=True, force_upload=False):
+def run_full_pipeline(years=None, parallel=True, force_upload=False, no_upload=False):
     """
     Run the full scrape and upload pipeline.
     
@@ -781,17 +781,23 @@ def run_full_pipeline(years=None, parallel=True, force_upload=False):
     fetch_all_tmdb_images()
     
     # Step 4: Upload ONCE to Firebase (after all local updates are done)
-    emit_event('upload_start')
-    print(f"\n{'='*60}")
-    print(f"  📤 UPLOAD TO FIREBASE")
-    print(f"{'='*60}")
-    
-    if force_upload:
-        from firebase_upload import upload_all_years
-        upload_all_years()
+    # Step 4: Upload ONCE to Firebase (after all local updates are done)
+    if not no_upload:
+        emit_event('upload_start')
+        print(f"\n{'='*60}")
+        print(f"  📤 UPLOAD TO FIREBASE")
+        print(f"{'='*60}")
+        
+        if force_upload:
+            from firebase_upload import upload_all_years
+            upload_all_years()
+        else:
+            uploaded, skipped = upload_with_change_detection(years)
     else:
-        uploaded, skipped = upload_with_change_detection(years)
-    
+        print(f"\n{'='*60}")
+        print(f"  🚫 UPLOAD SKIPPED (--no-upload)")
+        print(f"{'='*60}")
+
     print("\n" + "="*60)
     print("   ✅ PIPELINE COMPLETE")
     print("="*60)
@@ -1193,6 +1199,8 @@ Season Logic:
                         help='Force upload even if unchanged')
     parser.add_argument('--upload-only', action='store_true',
                         help='Skip scraping, only upload existing files')
+    parser.add_argument('--no-upload', action='store_true',
+                        help='Skip Firebase upload (save local only)')
     args = parser.parse_args()
     
     # Determine years to process
@@ -1219,5 +1227,6 @@ Season Logic:
         run_full_pipeline(
             years=years,
             parallel=not args.no_parallel,
-            force_upload=args.force
+            force_upload=args.force,
+            no_upload=args.no_upload
         )

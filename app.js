@@ -27,7 +27,7 @@ const CONFIG = {
     TMDB_BASE_URL: 'https://api.themoviedb.org/3',
     TMDB_IMAGE_BASE: 'https://image.tmdb.org/t/p/',
 
-    START_YEAR: 2012,
+    START_YEAR: 2000,
 
     // Map award keys to CSS classes for styling
     AWARD_CLASSES: {
@@ -236,6 +236,9 @@ function buildPage() {
     container.innerHTML = `
         <nav class="top-nav">
             <div class="nav-container">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger-icon"></span>
+                </button>
                 <div class="nav-logo">Season Awards</div>
                 <div class="nav-links" id="nav-links"></div>
                 <div class="nav-actions">
@@ -250,6 +253,8 @@ function buildPage() {
                 </div>
             </div>
         </nav>
+
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
         
         <main class="main-content">
             <div class="category-title-section" id="category-title-section">
@@ -280,6 +285,7 @@ function buildPage() {
     `;
 
     setupNavigation();
+    setupMobileMenu();
     setupYearSelector();
     setupThemeToggle(); // Add theme toggle setup
     createCategoryCards();
@@ -288,6 +294,41 @@ function buildPage() {
 
     // Show home page on load
     showHomeOnLoad();
+}
+
+// ============ MOBILE MENU SETUP ============
+function setupMobileMenu() {
+    const toggleBtn = document.getElementById('mobile-menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const overlay = document.getElementById('mobile-menu-overlay');
+    const topNav = document.querySelector('.top-nav');
+
+    if (!toggleBtn || !navLinks) return;
+
+    function toggleMenu() {
+        const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+        toggleBtn.setAttribute('aria-expanded', !isExpanded);
+        topNav.classList.toggle('mobile-menu-open');
+        document.body.style.overflow = !isExpanded ? 'hidden' : '';
+    }
+
+    toggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleMenu();
+    });
+
+    if (overlay) {
+        overlay.addEventListener('click', toggleMenu);
+    }
+
+    // Close menu when a link is clicked
+    navLinks.addEventListener('click', (e) => {
+        if (e.target.classList.contains('nav-link')) {
+            if (topNav.classList.contains('mobile-menu-open')) {
+                toggleMenu();
+            }
+        }
+    });
 }
 
 function showHomeOnLoad() {
@@ -340,7 +381,10 @@ function setupNavigation() {
     statsLink.textContent = 'Statistics';
     statsLink.addEventListener('click', (e) => {
         e.preventDefault();
+        // Force hide main content if it was active
         if (isPredictionsPageActive) hidePredictionsPage();
+        // Hide main content (important if we came from home without standard navigation)
+        document.querySelector('.main-content').style.display = 'none';
         showStatisticsPage();
     });
     navLinks.appendChild(statsLink);
@@ -353,6 +397,7 @@ function setupNavigation() {
     predictionsLink.addEventListener('click', (e) => {
         e.preventDefault();
         if (isStatsPageActive) hideStatisticsPage();
+        document.querySelector('.main-content').style.display = 'none';
         showPredictionsPage();
     });
     navLinks.appendChild(predictionsLink);
@@ -1187,8 +1232,8 @@ function createTableRow(entry, categoryId, index, isPerson) {
     if (categoryId === 'best-film') {
         nameCell.style.cursor = 'pointer';
         nameCell.addEventListener('click', (e) => {
-            // Prevent triggering if clicking on other interactive elements
-            if (e.target.closest('.winner, .nominee')) return;
+            // Prevent triggering if clicking on other interactive elements or if scrolling
+            if (e.target.closest('.winner, .nominee') || !isClickAllowed()) return;
             showFilmDetails(entry);
         });
     }
@@ -1197,7 +1242,7 @@ function createTableRow(entry, categoryId, index, isPerson) {
     if (isPerson) {
         nameCell.style.cursor = 'pointer';
         nameCell.addEventListener('click', (e) => {
-            if (e.target.closest('.winner, .nominee')) return;
+            if (e.target.closest('.winner, .nominee') || !isClickAllowed()) return;
             showPersonDetails(entry);
         });
     }
@@ -1417,16 +1462,16 @@ function renderFilmDetails(movie, entry) {
                 
                 <div class="fd-crew-section">
                     <div class="fd-crew-item">
-                        <span class="fd-crew-label">Regia</span>
+                        <span class="fd-crew-label">Director</span>
                         <span class="fd-crew-value">${directorText}</span>
                     </div>
                     ${writerText ? `
                     <div class="fd-crew-item">
-                        <span class="fd-crew-label">Sceneggiatura</span>
+                        <span class="fd-crew-label">Screenplay</span>
                         <span class="fd-crew-value">${writerText}</span>
                     </div>` : ''}
                     <div class="fd-crew-item">
-                        <span class="fd-crew-label">Produzione</span>
+                        <span class="fd-crew-label">Production</span>
                         <span class="fd-crew-value">${productionCompanies}</span>
                     </div>
                 </div>
@@ -1439,14 +1484,14 @@ function renderFilmDetails(movie, entry) {
                 ${tagline}
                 
                 <div class="fd-meta-grid">
-                    <div class="fd-meta-row"><span class="fd-meta-label">Anno</span><span class="fd-meta-value">${year}</span></div>
-                    <div class="fd-meta-row"><span class="fd-meta-label">Durata</span><span class="fd-meta-value">${runtime}</span></div>
-                    <div class="fd-meta-row"><span class="fd-meta-label">Genere</span><span class="fd-meta-value">${genres}</span></div>
-                    <div class="fd-meta-row"><span class="fd-meta-label">Uscita</span><span class="fd-meta-value">${releaseDate}</span></div>
-                    <div class="fd-meta-row"><span class="fd-meta-label">Lingua</span><span class="fd-meta-value">${originalLanguage}</span></div>
-                    <div class="fd-meta-row"><span class="fd-meta-label">Paese</span><span class="fd-meta-value">${countries}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Year</span><span class="fd-meta-value">${year}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Runtime</span><span class="fd-meta-value">${runtime}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Genre</span><span class="fd-meta-value">${genres}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Release</span><span class="fd-meta-value">${releaseDate}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Language</span><span class="fd-meta-value">${originalLanguage}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Country</span><span class="fd-meta-value">${countries}</span></div>
                     <div class="fd-meta-row"><span class="fd-meta-label">Budget</span><span class="fd-meta-value">${budget}</span></div>
-                    <div class="fd-meta-row"><span class="fd-meta-label">Incasso</span><span class="fd-meta-value">${revenue}</span></div>
+                    <div class="fd-meta-row"><span class="fd-meta-label">Revenue</span><span class="fd-meta-value">${revenue}</span></div>
                 </div>
                 
                 <div class="fd-section">
@@ -1486,7 +1531,7 @@ function renderAwardsSection(entry) {
             if (!isWinner && !isNominee) return '';
 
             return `
-                <div class="fd-award-item ${isWinner ? 'winner' : 'nominee'}" title="${isWinner ? 'Vinto' : 'Nomination'}">
+                <div class="fd-award-item ${isWinner ? 'winner' : 'nominee'}" title="${isWinner ? 'Winner' : 'Nominee'}">
                     <span class="fd-award-name">${award.label}</span>
                 </div>
             `;
@@ -1501,7 +1546,7 @@ function renderAwardsSection(entry) {
 
     return `
         <div class="fd-awards-section">
-            <h3>Premi e Nomination ${yearDisplay}</h3>
+            <h3>Awards & Nominations ${yearDisplay}</h3>
             <div class="fd-awards-grid">
                 ${awardItems}
             </div>
@@ -1519,7 +1564,7 @@ async function showPersonDetails(entry) {
     // Show loading state
     content.innerHTML = `
         <div class="fd-loading">
-            <div class="loading-text">Caricamento...</div>
+            <div class="loading-text">Loading...</div>
         </div>
     `;
 
@@ -1610,16 +1655,16 @@ function renderPersonDetails(person, entry) {
                 
                 <div class="fd-crew-section">
                     <div class="fd-crew-item">
-                        <span class="fd-crew-label">Nato/a</span>
+                        <span class="fd-crew-label">Born</span>
                         <span class="fd-crew-value">${birthday} ${ageText}</span>
                     </div>
                     <div class="fd-crew-item">
-                        <span class="fd-crew-label">Luogo</span>
+                        <span class="fd-crew-label">Place</span>
                         <span class="fd-crew-value">${birthplace}</span>
                     </div>
                     ${person.known_for_department ? `
                     <div class="fd-crew-item">
-                        <span class="fd-crew-label">Ruolo</span>
+                        <span class="fd-crew-label">Role</span>
                         <span class="fd-crew-value">${person.known_for_department}</span>
                     </div>` : ''}
                 </div>
@@ -1632,7 +1677,7 @@ function renderPersonDetails(person, entry) {
 
                 ${notableCredits ? `
                 <div class="fd-section">
-                    <h3>Filmografia Notevole</h3>
+                    <h3>Notable Filmography</h3>
                     <div class="fd-credits-list">
                         ${notableCredits}
                     </div>
@@ -1766,6 +1811,10 @@ function aggregateStatistics(allYearsData) {
                         genre: entry.genre
                     };
                 }
+                // Update posterPath if missing and current has it
+                if (!filmStats[entry.name].posterPath && entry.posterPath) {
+                    filmStats[entry.name].posterPath = entry.posterPath;
+                }
                 // Update genre if missing
                 if (!filmStats[entry.name].genre && entry.genre) {
                     filmStats[entry.name].genre = entry.genre;
@@ -1797,6 +1846,10 @@ function aggregateStatistics(allYearsData) {
                         role: entry.role
                     };
                 }
+                // Update profilePath if missing
+                if (!actorStats[entry.name].profilePath && entry.profilePath) {
+                    actorStats[entry.name].profilePath = entry.profilePath;
+                }
                 // Update role if missing
                 if (!actorStats[entry.name].role && entry.role) {
                     actorStats[entry.name].role = entry.role;
@@ -1822,6 +1875,9 @@ function aggregateStatistics(allYearsData) {
                 if (!actressStats[entry.name]) {
                     actressStats[entry.name] = { nominations: 0, wins: 0, years: [], profilePath: entry.profilePath };
                 }
+                if (!actressStats[entry.name].profilePath && entry.profilePath) {
+                    actressStats[entry.name].profilePath = entry.profilePath;
+                }
                 const awards = entry.awards || {};
                 for (const awardKey in awards) {
                     if (awards[awardKey] === 'X') {
@@ -1842,6 +1898,9 @@ function aggregateStatistics(allYearsData) {
             for (const entry of yearData['best-director']) {
                 if (!directorStats[entry.name]) {
                     directorStats[entry.name] = { nominations: 0, wins: 0, years: [], profilePath: entry.profilePath };
+                }
+                if (!directorStats[entry.name].profilePath && entry.profilePath) {
+                    directorStats[entry.name].profilePath = entry.profilePath;
                 }
                 const awards = entry.awards || {};
                 for (const awardKey in awards) {
@@ -1882,7 +1941,7 @@ function renderStatisticsPage(stats, container) {
         // Top 10 for list
         const topList = items.slice(0, 10);
 
-        const countLabel = showWins ? 'vittorie' : 'nomination';
+        const countLabel = showWins ? 'wins' : 'nominations';
         const isReversed = layoutIndex % 2 !== 0;
 
         const renderVisualItem = (name, data, index) => {
@@ -1890,11 +1949,14 @@ function renderStatisticsPage(stats, container) {
                 ? `${CONFIG.TMDB_IMAGE_BASE}w342${data.profilePath}`
                 : (!isPerson && data.posterPath ? `${CONFIG.TMDB_IMAGE_BASE}w342${data.posterPath}` : '');
 
-            if (!imageUrl) return '';
+            // If no image, show a placeholder instead of nothing
+            const imageHtml = imageUrl
+                ? `<img src="${imageUrl}" class="stats-visual-img" loading="lazy">`
+                : `<div class="stats-visual-img stats-visual-placeholder"></div>`;
 
             return `
                 <div class="stats-visual-item full-poster">
-                    <img src="${imageUrl}" class="stats-visual-img" loading="lazy">
+                    ${imageHtml}
                     <div class="stats-visual-overlay">
                         <span class="stats-visual-rank">#${index + 1}</span>
                         <div class="stats-visual-info">
@@ -1942,22 +2004,22 @@ function renderStatisticsPage(stats, container) {
 
     const html = `
         <div class="stats-header">
-            <h1 class="stats-title">Statistiche All-Time</h1>
-            <p class="stats-subtitle">Nomination e vittorie aggregate da tutte le stagioni</p>
+            <h1 class="stats-title">All-Time Statistics</h1>
+            <p class="stats-subtitle">Aggregated nominations and wins from all seasons</p>
         </div>
         
         <div class="stats-content-wrapper">
-            ${renderStatsSection('Film con più Nomination', stats.topFilmsByNominations, false, false, 0)}
-            ${renderStatsSection('Film con più Vittorie', stats.topFilmsByWins, false, true, 1)}
+            ${renderStatsSection('Films with Most Nominations', stats.topFilmsByNominations, false, false, 0)}
+            ${renderStatsSection('Films with Most Wins', stats.topFilmsByWins, false, true, 1)}
             
-            ${renderStatsSection('Attori con più Nomination', stats.topActorsByNominations, true, false, 2)}
-            ${renderStatsSection('Attori con più Vittorie', stats.topActorsByWins, true, true, 3)}
+            ${renderStatsSection('Actors with Most Nominations', stats.topActorsByNominations, true, false, 2)}
+            ${renderStatsSection('Actors with Most Wins', stats.topActorsByWins, true, true, 3)}
             
-            ${renderStatsSection('Attrici con più Nomination', stats.topActressesByNominations, true, false, 4)}
-            ${renderStatsSection('Attrici con più Vittorie', stats.topActressesByWins, true, true, 5)}
+            ${renderStatsSection('Actresses with Most Nominations', stats.topActressesByNominations, true, false, 4)}
+            ${renderStatsSection('Actresses with Most Wins', stats.topActressesByWins, true, true, 5)}
             
-            ${renderStatsSection('Registi con più Nomination', stats.topDirectorsByNominations, true, false, 6)}
-            ${renderStatsSection('Registi con più Vittorie', stats.topDirectorsByWins, true, true, 7)}
+            ${renderStatsSection('Directors with Most Nominations', stats.topDirectorsByNominations, true, false, 6)}
+            ${renderStatsSection('Directors with Most Wins', stats.topDirectorsByWins, true, true, 7)}
         </div>
         
         </div>
@@ -2044,7 +2106,7 @@ async function showPredictionsPage() {
         console.error('Error calculating predictions:', err);
         predictionsContainer.innerHTML = `
             <div class="stats-loading">
-                <span style="color: #ff6b6b;">Errore nel calcolo delle predizioni.</span>
+                <span style="color: #ff6b6b;">Error calculating predictions.</span>
             </div>
         `;
     }
@@ -2177,7 +2239,7 @@ function renderPredictionsPage(predictions, container) {
                 htmlSections += `
                     <div class="stats-section-wide pred-section-wide">
                         <h2 class="category-title-large">${group.title}</h2>
-                        <div class="pred-empty">Nessun dato disponibile</div>
+                        <div class="pred-empty">No data available</div>
                     </div>
                  `;
             } else {
@@ -2263,7 +2325,7 @@ function renderPredictionsPage(predictions, container) {
     const html = `
         <div class="stats-header">
             <h1 class="stats-title">Oscar Predictions ${yearDisplay}</h1>
-            <p class="stats-subtitle">Probabilità basate sulle vittorie ai premi precursori</p>
+            <p class="stats-subtitle">Probabilities based on precursor award wins</p>
         </div>
         
         <div class="stats-content-wrapper">
@@ -2271,9 +2333,9 @@ function renderPredictionsPage(predictions, container) {
         </div>
         
         <div class="pred-analysis-section">
-            <h2>Analisi Storica</h2>
+            <h2>Historical Analysis</h2>
             <div id="precursor-analysis-container">
-                <div class="loading-analysis">Caricamento dati storici...</div>
+                <div class="loading-analysis">Loading historical data...</div>
             </div>
         </div>
 
@@ -2360,7 +2422,7 @@ async function loadHistoricalAnalysis() {
         const allData = await loadAllYearsData();
 
         if (Object.keys(allData).length === 0) {
-            container.innerHTML = `<div class="analysis-error">Nessun dato storico disponibile. Assicurati di aver caricato i dati delle stagioni precedenti.</div>`;
+            container.innerHTML = `<div class="analysis-error">No historical data available. Please ensure past season data is loaded.</div>`;
             return;
         }
 
@@ -2368,7 +2430,7 @@ async function loadHistoricalAnalysis() {
         const analysis = analyzeHistoricalPrecursors(allData);
         renderPrecursorAnalysis(analysis, container);
     } catch (error) {
-        container.innerHTML = `<div class="analysis-error">Errore nel caricamento dati: ${error.message}</div>`;
+        container.innerHTML = `<div class="analysis-error">Error loading data: ${error.message}</div>`;
     }
 }
 
@@ -2467,17 +2529,19 @@ function renderPrecursorAnalysis(analysis, container) {
     // Overall chart
     let html = `
         <div class="analysis-overall">
-            <h3>Correlazione Generale vari premi rispetto agli Oscar</h3>
-            <p class="analysis-note">% di volte che il vincitore Oscar ha vinto anche il seguente premio (2013-2026)</p>
+            <h3>Overall Correlation of Awards vs Oscars</h3>
+            <p class="analysis-note">% of times the Oscar winner also won the following award (2013-2026)</p>
             <div class="analysis-bars">
                 ${analysis.overall.map((item, idx) => {
-        const barColor = idx < 3 ? 'var(--gold)' : 'rgba(255,255,255,0.4)';
+        // Use standard colors for all items as requested
+        const barColor = 'var(--gold)';
+        const nomBarColor = 'var(--bar-bg-nom)';
         const isTop = idx < 3;
         return `
                         <div class="analysis-bar-row ${isTop ? 'top-predictor' : ''}">
                             <span class="analysis-label">${item.label}</span>
                             <div class="analysis-bar-container">
-                                <div class="analysis-bar-nom" style="width: ${item.nomPercentage}%; background: rgba(255,255,255,0.15)"></div>
+                                <div class="analysis-bar-nom" style="width: ${item.nomPercentage}%; background: ${nomBarColor}"></div>
                                 <div class="analysis-bar" style="width: ${item.percentage}%; background: ${barColor}"></div>
                             </div>
                             <div class="analysis-percent-group">
@@ -2492,7 +2556,7 @@ function renderPrecursorAnalysis(analysis, container) {
         </div>
 
         <div class="analysis-categories">
-            <h3>Analisi per Categoria</h3>
+            <h3>Analysis by Category</h3>
             <div class="analysis-category-grid">
                 ${Object.keys(categoryLabels).map(catId => {
         const catData = analysis.byCategory[catId] || [];
@@ -2505,7 +2569,10 @@ function renderPrecursorAnalysis(analysis, container) {
                                     <div class="top-predictor-row">
                                         <span class="top-rank">${idx + 1}.</span>
                                         <span class="top-name">${item.label}</span>
-                                        <span class="top-percent">${item.percentage}%</span>
+                                        <div class="top-percentages">
+                                            <span class="top-percent">${item.percentage}%</span>
+                                            <span class="top-percent-nom" style="color: rgba(255,255,255,0.7); font-size: 0.85em; margin-left: 6px;">${item.nomPercentage}%</span>
+                                        </div>
                                     </div>
                                 `).join('')}
                             </div>
@@ -2517,4 +2584,22 @@ function renderPrecursorAnalysis(analysis, container) {
     `;
 
     container.innerHTML = html;
+}
+
+// ============ GLOBAL SCROLL TRACKING ============
+let isScrolling = false;
+let scrollTimeout;
+
+// Use CAPTURE phase to detect scrolling on ANY element (like overflow divs)
+window.addEventListener('scroll', () => {
+    isScrolling = true;
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+        isScrolling = false;
+    }, 150);
+}, true); // true = capture phase
+
+// Helper to check if we should allow a click
+function isClickAllowed() {
+    return !isScrolling;
 }

@@ -1,0 +1,921 @@
+{
+  "best-film": [
+    {
+      "name": "A Beautiful Mind",
+      "awards": {
+        "oscar": "Y",
+        "bafta": "X",
+        "gg": "Y",
+        "critics": "Y",
+        "sag": "X",
+        "pga": "X",
+        "wga": "Y"
+      },
+      "genre": "Drama",
+      "posterPath": "/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg",
+      "tmdbId": 453
+    },
+    {
+      "name": "Moulin Rouge!",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "Y",
+        "critics": "X",
+        "sag": "X",
+        "pga": "Y",
+        "wga": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/kYjdxRL2RJhFRLZBlL78xMT52GK.jpg",
+      "tmdbId": 562144
+    },
+    {
+      "name": "Gosford Park",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "Y",
+        "wga": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/mQlmUTLxFG5irSVHlvIxRHCCjKf.jpg",
+      "tmdbId": 5279
+    },
+    {
+      "name": "The Lord of the Rings: The Fellowship of the Ring",
+      "awards": {
+        "oscar": "X",
+        "bafta": "Y",
+        "gg": "X",
+        "critics": "X",
+        "sag": "X",
+        "pga": "X",
+        "wga": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+      "tmdbId": 120
+    },
+    {
+      "name": "In the Bedroom",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X",
+        "sag": "X",
+        "lafca": "Y"
+      },
+      "genre": "Drama",
+      "posterPath": "/IQj11YbraLDyPYaz79jtDoAscc.jpg",
+      "tmdbId": 1999
+    },
+    {
+      "name": "Palme d'Or",
+      "awards": {
+        "cannes": "Y"
+      },
+      "note": "Director: Nanni Moretti"
+    },
+    {
+      "name": "Mulholland Dr.",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "posterPath": "/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+      "tmdbId": 1018
+    },
+    {
+      "name": "Shrek",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X",
+        "pga": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg",
+      "tmdbId": 808
+    },
+    {
+      "name": "The Man Who Wasn't There",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "wga": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/aAf6k3B98uyp50yEqTEJh9ZGyaX.jpg",
+      "tmdbId": 29610
+    },
+    {
+      "name": "Mulholland Drive",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "lafca": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/x7A59t6ySylr1L7aubOQEA480vM.jpg",
+      "tmdbId": 1018
+    },
+    {
+      "name": "Bridget Jones's Diary",
+      "awards": {
+        "gg": "X",
+        "wga": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/dkauRl9TosBFikftrC3OVcKWDoz.jpg",
+      "tmdbId": 634
+    },
+    {
+      "name": "Amélie",
+      "awards": {
+        "bafta": "X"
+      },
+      "posterPath": "/nSxDa3M9aMvGVLoItzWTepQ5h5d.jpg",
+      "tmdbId": 194
+    },
+    {
+      "name": "Legally Blonde",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/9ohlMrJHQqKhfUKh7Zr3JQqHNLZ.jpg",
+      "tmdbId": 8835
+    },
+    {
+      "name": "Ali",
+      "awards": {
+        "critics": "X"
+      },
+      "posterPath": "/3VIZRakftZZFys2ee9S7ufNNNyR.jpg",
+      "tmdbId": 8489
+    },
+    {
+      "name": "Memento",
+      "awards": {
+        "critics": "X"
+      },
+      "posterPath": "/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+      "tmdbId": 77
+    },
+    {
+      "name": "The Shipping News",
+      "awards": {
+        "critics": "X"
+      },
+      "posterPath": "/3IdEZw4YN4NfvjLRyZVWpI0z2IH.jpg",
+      "tmdbId": 6440
+    },
+    {
+      "name": "Harry Potter and the Sorcerer's Stone",
+      "awards": {
+        "pga": "X"
+      },
+      "posterPath": "/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+      "tmdbId": 671
+    },
+    {
+      "name": "Monster's Ball",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "original",
+      "posterPath": "/rQeufx98gKH4CCeVw57KT1Fd0gr.jpg",
+      "tmdbId": 1365
+    },
+    {
+      "name": "The Royal Tenenbaums",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "original",
+      "posterPath": "/nG7hZJn7wQTSDCQT39Gy3s3tbrp.jpg",
+      "tmdbId": 9428
+    },
+    {
+      "name": "Black Hawk Down",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "adapted",
+      "posterPath": "/7fU5dSqKRL4XHeEUz62rCKBfYok.jpg",
+      "tmdbId": 855
+    },
+    {
+      "name": "Ghost World",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "adapted",
+      "posterPath": "/uwKqnUPE4dSM0kKuMW0vXpURh2T.jpg",
+      "tmdbId": 1548
+    }
+  ],
+  "best-director": [
+    {
+      "name": "Robert Altman",
+      "film": "Gosford Park",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "Y",
+        "nyfcc": "Y",
+        "lafca": "X"
+      },
+      "profilePath": "/wB1R6patGi35oaxKU5PWEGJlIZg.jpg",
+      "tmdbId": 9789
+    },
+    {
+      "name": "Ron Howard",
+      "film": "A Beautiful Mind",
+      "awards": {
+        "oscar": "Y",
+        "bafta": "X",
+        "gg": "X",
+        "critics": "Y"
+      },
+      "profilePath": "/g3n8qduLaPO2l4kJZsV6xNMXozn.jpg",
+      "tmdbId": 6159
+    },
+    {
+      "name": "Peter Jackson",
+      "film": "The Lord of the Rings: The Fellowship of the Ring",
+      "awards": {
+        "oscar": "X",
+        "bafta": "Y",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/bNc908d59Ba8VDNr4eCcm4G1cR.jpg",
+      "tmdbId": 108
+    },
+    {
+      "name": "David Lynch",
+      "film": "Mulholland Drive",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "lafca": "Y"
+      },
+      "profilePath": "/wwBzRDoIW6Ld64h6OkQ6ImCZKsR.jpg",
+      "tmdbId": 5602
+    },
+    {
+      "name": "David Lynch",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "Mulholland Dr.",
+      "profilePath": "/wwBzRDoIW6Ld64h6OkQ6ImCZKsR.jpg",
+      "tmdbId": 5602
+    },
+    {
+      "name": "Joel Coen",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "The Man Who Wasn't There",
+      "profilePath": "/rgVaJNkZCgMarUcZuUAsVfXMWk3.jpg",
+      "tmdbId": 1223
+    },
+    {
+      "name": "Baz Luhrmann",
+      "film": "Moulin Rouge!",
+      "awards": {
+        "bafta": "X",
+        "gg": "X"
+      },
+      "profilePath": "/8K8ih7uFyGanOApYYzlzdxzcfDF.jpg",
+      "tmdbId": 6201
+    },
+    {
+      "name": "Ridley Scott",
+      "film": "Black Hawk Down",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg",
+      "tmdbId": 578
+    },
+    {
+      "name": "Jean-Pierre Jeunet",
+      "film": "Amélie",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/4DhPaNaxYnkgxVJHVLyL5gKmKpG.jpg",
+      "tmdbId": 2419
+    },
+    {
+      "name": "Steven Spielberg",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "A.I. Artificial Intelligence",
+      "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
+      "tmdbId": 488
+    }
+  ],
+  "best-actor": [
+    {
+      "name": "Russell Crowe",
+      "film": "A Beautiful Mind",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "bafta": "Y",
+        "gg": "Y",
+        "critics": "Y",
+        "sag": "Y"
+      },
+      "profilePath": "/uxiXuVH4vNWrKlJMVVPG1sxAJFe.jpg",
+      "tmdbId": 934
+    },
+    {
+      "name": "Jim Broadbent",
+      "film": "Iris",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "bafta": "X",
+        "gg": "Y",
+        "critics": "X",
+        "lafca": "Y"
+      },
+      "profilePath": "/jTyvGwwR1NFpvgDhcmuWZCM241w.jpg",
+      "tmdbId": 388
+    },
+    {
+      "name": "Denzel Washington",
+      "film": "Training Day",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "X",
+        "sag": "X",
+        "lafca": "Y"
+      },
+      "profilePath": "/jj2Gcobpopokal0YstuCQW0ldJ4.jpg",
+      "tmdbId": 5292
+    },
+    {
+      "name": "Tom Wilkinson",
+      "film": "In the Bedroom",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "sag": "X",
+        "nyfcc": "Y",
+        "lafca": "X"
+      }
+    },
+    {
+      "name": "Ben Kingsley",
+      "film": "Sexy Beast",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "Y",
+        "sag": "X",
+        "lafca": "X"
+      },
+      "profilePath": "/vQtBqpF2HDdzbfXHDzR4u37i1Ac.jpg",
+      "tmdbId": 2282
+    },
+    {
+      "name": "Ian McKellen",
+      "film": "The Lord of the Rings: The Fellowship of the Ring",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "sag": "Y"
+      },
+      "profilePath": "/coWjgMEYJjk2OrNddlXCBm8EIr3.jpg",
+      "tmdbId": 1327
+    },
+    {
+      "name": "Steve Buscemi",
+      "awards": {
+        "gg": "X",
+        "nyfcc": "Y"
+      },
+      "film": "Ghost World",
+      "role": "Leading",
+      "profilePath": "/kFzw4U5pExnLKZWhR48VSzL8Fre.jpg",
+      "tmdbId": 884
+    },
+    {
+      "name": "Jim Broadbent",
+      "film": "Moulin Rouge!",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "Y"
+      },
+      "profilePath": "/jTyvGwwR1NFpvgDhcmuWZCM241w.jpg",
+      "tmdbId": 388
+    },
+    {
+      "name": "Gene Hackman",
+      "awards": {
+        "gg": "Y"
+      },
+      "film": "The Royal Tenenbaums",
+      "role": "Leading",
+      "profilePath": "/wN8brfOI8AjngGchkQtFqfEPam5.jpg",
+      "tmdbId": 193
+    },
+    {
+      "name": "Benoît Magimel",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "The Piano Teacher",
+      "profilePath": "/uctqbM33Qws7bzVawdCJmb4nyJY.jpg",
+      "tmdbId": 5442
+    },
+    {
+      "name": "Sean Penn",
+      "film": "I Am Sam",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "critics": "X",
+        "sag": "X"
+      },
+      "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
+      "tmdbId": 2228
+    },
+    {
+      "name": "Will Smith",
+      "film": "Ali",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/8TlKqbXYgHmmaEoPBJ7djJ8Rxxa.jpg",
+      "tmdbId": 2888
+    },
+    {
+      "name": "Jon Voight",
+      "film": "Ali",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/oxLsItDwLddXu8YYJCfkddYNejL.jpg",
+      "tmdbId": 10127
+    },
+    {
+      "name": "Kevin Spacey",
+      "film": "The Shipping News",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X"
+      },
+      "profilePath": "/nPrUZDEbGQe6jwpVbHKJCXsMd7r.jpg",
+      "tmdbId": 1979
+    },
+    {
+      "name": "Ethan Hawke",
+      "film": "Training Day",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
+      "tmdbId": 569
+    },
+    {
+      "name": "Colin Firth",
+      "film": "Bridget Jones's Diary",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/4VBeYEUQbfhnivdkqInM36u5fda.jpg",
+      "tmdbId": 5472
+    },
+    {
+      "name": "Eddie Murphy",
+      "film": "Shrek",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/qgjMfefsKwSYsyCaIX46uyOXIpy.jpg",
+      "tmdbId": 776
+    },
+    {
+      "name": "Hugh Bonneville",
+      "film": "Iris",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/skbxj8MUuNiI39ZkP38uEirU0bC.jpg",
+      "tmdbId": 19923
+    },
+    {
+      "name": "Robbie Coltrane",
+      "film": "Harry Potter and the Philosopher's Stone",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/jOHs3xvlwRiiG2CLtso5zzmGCXg.jpg",
+      "tmdbId": 1923
+    },
+    {
+      "name": "Billy Bob Thornton",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Man Who Wasn't There",
+      "role": "Leading",
+      "profilePath": "/i5EKWHuXokznIDMy2prTXzRmklI.jpg",
+      "tmdbId": 879
+    },
+    {
+      "name": "Hugh Jackman",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Kate & Leopold",
+      "role": "Leading",
+      "profilePath": "/4Xujtewxqt6aU0Y81tsS9gkjizk.jpg",
+      "tmdbId": 6968
+    },
+    {
+      "name": "Ewan McGregor",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Moulin Rouge!",
+      "role": "Leading",
+      "profilePath": "/q2UDxfwWnmXTB7khOUF3J9puBVP.jpg",
+      "tmdbId": 3061
+    },
+    {
+      "name": "John Cameron Mitchell",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Hedwig and the Angry Inch",
+      "role": "Leading",
+      "profilePath": "/iDyhkjtgy7U8xl9tKk9xcJA3yEY.jpg",
+      "tmdbId": 17114
+    },
+    {
+      "name": "Billy Bob Thornton",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Bandits",
+      "role": "Leading",
+      "profilePath": "/i5EKWHuXokznIDMy2prTXzRmklI.jpg",
+      "tmdbId": 879
+    },
+    {
+      "name": "Hayden Christensen",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Life as a House",
+      "role": "Leading",
+      "profilePath": "/RuwAecNK9VDeTrfw6LUE4q4rIt.jpg",
+      "tmdbId": 17244
+    },
+    {
+      "name": "Jude Law",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "A.I. Artificial Intelligence",
+      "role": "Leading",
+      "profilePath": "/1rTmD8B1YAE1MrrBJs4krIiIvNM.jpg",
+      "tmdbId": 9642
+    },
+    {
+      "name": "Kevin Kline",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "Life as a House",
+      "role": "Leading",
+      "profilePath": "/ArH5dACd9AmWNNMnI6bGEkiFYIM.jpg",
+      "tmdbId": 8945
+    },
+    {
+      "name": "Jim Broadbent",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "John Bayley",
+      "role": "Supporting",
+      "profilePath": "/jTyvGwwR1NFpvgDhcmuWZCM241w.jpg",
+      "tmdbId": 388
+    },
+    {
+      "name": "Hayden Christensen",
+      "awards": {
+        "sag": "X"
+      },
+      "role": "Supporting",
+      "profilePath": "/RuwAecNK9VDeTrfw6LUE4q4rIt.jpg",
+      "tmdbId": 17244
+    },
+    {
+      "name": "Ethan Hawke",
+      "awards": {
+        "sag": "X"
+      },
+      "role": "Supporting",
+      "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
+      "tmdbId": 569
+    }
+  ],
+  "best-actress": [
+    {
+      "name": "Sissy Spacek",
+      "film": "In the Bedroom",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "Y",
+        "critics": "Y",
+        "nyfcc": "Y",
+        "lafca": "Y"
+      },
+      "profilePath": "/xAxenjxjLNQFq4v1ccS2to3Mnoq.jpg",
+      "tmdbId": 5606
+    },
+    {
+      "name": "Jennifer Connelly",
+      "film": "A Beautiful Mind",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "bafta": "Y",
+        "gg": "Y",
+        "critics": "Y"
+      },
+      "profilePath": "/wdmcJagSRJ65AuJ4IUCzuHAdvgy.jpg",
+      "tmdbId": 6161
+    },
+    {
+      "name": "Helen Mirren",
+      "film": "Gosford Park",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X",
+        "sag": "Y",
+        "nyfcc": "Y",
+        "lafca": "X"
+      },
+      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
+      "tmdbId": 15735
+    },
+    {
+      "name": "Halle Berry",
+      "film": "Monster's Ball",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "X",
+        "sag": "Y"
+      },
+      "profilePath": "/yfAJMERSlDIZD1iy6Aab8bArcCK.jpg",
+      "tmdbId": 4587
+    },
+    {
+      "name": "Judi Dench",
+      "film": "Iris",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "bafta": "Y",
+        "gg": "X",
+        "sag": "X"
+      },
+      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
+      "tmdbId": 5309
+    },
+    {
+      "name": "Kate Winslet",
+      "film": "Iris",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X",
+        "lafca": "Y"
+      },
+      "profilePath": "/9xDnfZrWhM67wJlQJEsOOjQzDUQ.jpg",
+      "tmdbId": 204
+    },
+    {
+      "name": "Nicole Kidman",
+      "film": "Moulin Rouge!",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/n1xlczx1w44DqUkJvJtAGJf9fyx.jpg",
+      "tmdbId": 2227
+    },
+    {
+      "name": "Isabelle Huppert",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "The Piano Teacher",
+      "profilePath": "/wGG9v1Uci3sfrbjt0bRXkLrTqjY.jpg",
+      "tmdbId": 17882
+    },
+    {
+      "name": "Renée Zellweger",
+      "film": "Bridget Jones's Diary",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X",
+        "sag": "X"
+      },
+      "profilePath": "/u4wQXVYhN9OOimHn5hbWKefdjjG.jpg",
+      "tmdbId": 9137
+    },
+    {
+      "name": "Marisa Tomei",
+      "film": "In the Bedroom",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/5w6qM8FWsl5SutKSpx6Va64eCTE.jpg",
+      "tmdbId": 3141
+    },
+    {
+      "name": "Cameron Diaz",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "sag": "X"
+      },
+      "film": "Vanilla Sky",
+      "role": "Leading",
+      "profilePath": "/d4f4cQ9EiYuvNMjT1IB2h06KoRx.jpg",
+      "tmdbId": 6941
+    },
+    {
+      "name": "Nicole Kidman",
+      "film": "The Others",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X"
+      },
+      "profilePath": "/n1xlczx1w44DqUkJvJtAGJf9fyx.jpg",
+      "tmdbId": 2227
+    },
+    {
+      "name": "Judi Dench",
+      "film": "The Shipping News",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "sag": "X"
+      },
+      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
+      "tmdbId": 5309
+    },
+    {
+      "name": "Maggie Smith",
+      "film": "Gosford Park",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gg": "X"
+      },
+      "profilePath": "/i7vcF4KzJTgH6kO0TqURuEEfoU3.jpg",
+      "tmdbId": 10978
+    },
+    {
+      "name": "Cate Blanchett",
+      "awards": {
+        "gg": "X",
+        "sag": "X"
+      },
+      "film": "Bandits",
+      "role": "Leading",
+      "profilePath": "/vq4vuAVhYngfzVNn8SbnG0JEy15.jpg",
+      "tmdbId": 112
+    },
+    {
+      "name": "Maggie Smith",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/i7vcF4KzJTgH6kO0TqURuEEfoU3.jpg",
+      "tmdbId": 10978
+    },
+    {
+      "name": "Audrey Tautou",
+      "film": "Amélie",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/d1HVrV8zXy1FJVptmOCkHWG8Jf2.jpg",
+      "tmdbId": 2405
+    },
+    {
+      "name": "Tilda Swinton",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Deep End",
+      "role": "Leading",
+      "profilePath": "/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
+      "tmdbId": 3063
+    },
+    {
+      "name": "Thora Birch",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Ghost World",
+      "role": "Leading",
+      "profilePath": "/m0D1wqgQeVCr7gWY7GVej7lZlwY.jpg",
+      "tmdbId": 2155
+    },
+    {
+      "name": "Reese Witherspoon",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Legally Blonde",
+      "role": "Leading",
+      "profilePath": "/o1z4UwW2137IViFIRk8AV8hWze1.jpg",
+      "tmdbId": 368
+    },
+    {
+      "name": "Jennifer Connelly",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "Alicia Nash",
+      "role": "Leading",
+      "profilePath": "/wdmcJagSRJ65AuJ4IUCzuHAdvgy.jpg",
+      "tmdbId": 6161
+    },
+    {
+      "name": "Sissy Spacek",
+      "awards": {
+        "sag": "X"
+      },
+      "role": "Leading",
+      "profilePath": "/xAxenjxjLNQFq4v1ccS2to3Mnoq.jpg",
+      "tmdbId": 5606
+    },
+    {
+      "name": "Dakota Fanning",
+      "awards": {
+        "sag": "X"
+      },
+      "role": "Supporting",
+      "profilePath": "/hwcO08SVWkelfvgfIa5HsTMxsK8.jpg",
+      "tmdbId": 501
+    },
+    {
+      "name": "Naomi Watts",
+      "awards": {
+        "lafca": "X"
+      },
+      "film": "Mulholland Drive",
+      "profilePath": "/5s6UE6VjYx5TBDvyFk4vfOdS9GR.jpg",
+      "tmdbId": 3489
+    }
+  ]
+}

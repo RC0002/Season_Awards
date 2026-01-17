@@ -1,0 +1,1080 @@
+{
+  "best-film": [
+    {
+      "name": "The Departed",
+      "awards": {
+        "bafta": "X",
+        "oscar": "Y",
+        "gg": "X",
+        "sag": "X",
+        "critics": "Y",
+        "nbr": "Y",
+        "pga": "X",
+        "adg": "X",
+        "gotham": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/nT97ifVT2J1yMQmeq20Qblg61T.jpg",
+      "tmdbId": 1422
+    },
+    {
+      "name": "Babel",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "gg": "Y",
+        "sag": "X",
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X",
+        "adg": "Y"
+      },
+      "genre": "Drama",
+      "posterPath": "/bZByZbvU7u14WjoUJERqCRW9saN.jpg",
+      "tmdbId": 1164
+    },
+    {
+      "name": "Little Miss Sunshine",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "gg": "X",
+        "sag": "Y",
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/wKn7AJw730emlmzLSmJtzquwaeW.jpg",
+      "tmdbId": 773
+    },
+    {
+      "name": "Dreamgirls",
+      "awards": {
+        "gg": "Y",
+        "sag": "X",
+        "critics": "X",
+        "pga": "X",
+        "adg": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/sG5JyOj8Spe13QkNJMH8b5kzQUh.jpg",
+      "tmdbId": 1125
+    },
+    {
+      "name": "Letters from Iwo Jima",
+      "awards": {
+        "oscar": "X",
+        "critics": "X",
+        "nbr": "Y",
+        "lafca": "Y"
+      },
+      "posterPath": "/kZokxQtzMPURvijWYFuvh1fAvnv.jpg",
+      "tmdbId": 1251
+    },
+    {
+      "name": "The Queen",
+      "awards": {
+        "bafta": "Y",
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X",
+        "pga": "X",
+        "lafca": "X",
+        "adg": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/v08RH5Cx9EFAQMBWQuE5jHAgHYs.jpg",
+      "tmdbId": 1165
+    },
+    {
+      "name": "The Devil Wears Prada",
+      "awards": {
+        "gg": "X",
+        "nbr": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+      "tmdbId": 350
+    },
+    {
+      "name": "Blood Diamond",
+      "awards": {
+        "critics": "X",
+        "nbr": "Y"
+      },
+      "posterPath": "/bqKNoySmI4eOjsSjJEnLj4j2HAp.jpg",
+      "tmdbId": 1372
+    },
+    {
+      "name": "Notes on a Scandal",
+      "awards": {
+        "critics": "X",
+        "nbr": "Y"
+      },
+      "posterPath": "/ieX6ZO2Kf2qjoIBXbQW5awivbhY.jpg",
+      "tmdbId": 1259
+    },
+    {
+      "name": "United 93",
+      "awards": {
+        "critics": "X",
+        "nyfcc": "Y"
+      },
+      "posterPath": "/r3mdSgsnpoi4UiUufdybhjha68t.jpg",
+      "tmdbId": 9829
+    },
+    {
+      "name": "Flags of Our Fathers",
+      "awards": {
+        "nbr": "Y",
+        "adg": "X"
+      },
+      "posterPath": "/2nkPrhf4YIyMFelfe4zdOnGRYz5.jpg",
+      "tmdbId": 3683
+    },
+    {
+      "name": "Forest Whitaker",
+      "awards": {
+        "gg": "Y"
+      },
+      "genre": "Drama"
+    },
+    {
+      "name": "Helen Mirren",
+      "awards": {
+        "gg": "Y"
+      },
+      "genre": "Drama",
+      "posterPath": "/8dXlrrxl3e6vlxqZgEXzUdRtUWj.jpg",
+      "tmdbId": 1123935
+    },
+    {
+      "name": "Sacha Baron Cohen",
+      "awards": {
+        "gg": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/l4MUsqBBteiQc0CdA9Gt3HgzPHt.jpg",
+      "tmdbId": 1157470
+    },
+    {
+      "name": "Meryl Streep",
+      "awards": {
+        "gg": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/dFkZVsaCyE2Tgfgr9qt0HBH3eNi.jpg",
+      "tmdbId": 733984
+    },
+    {
+      "name": "Eddie Murphy",
+      "awards": {
+        "gg": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/kmbfB1CS54UySYDVCxi1x6ITd4Y.jpg",
+      "tmdbId": 1188412
+    },
+    {
+      "name": "Jennifer Hudson",
+      "awards": {
+        "gg": "Y"
+      },
+      "genre": "Comedy"
+    },
+    {
+      "name": "The Wind That Shakes the Barley",
+      "awards": {
+        "cannes": "Y"
+      },
+      "note": "Director: Ken Loach",
+      "posterPath": "/yCb4LweL6U7KTgSda3Wb7vHiA9J.jpg",
+      "tmdbId": 1116
+    },
+    {
+      "name": "[2]",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/bjUWGw0Ao0qVWxagN3VCwBJHVo6.jpg",
+      "tmdbId": 1084242
+    },
+    {
+      "name": "The History Boys",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/klybhTU75GUcQbzdVXUhsZgq1EV.jpg",
+      "tmdbId": 8618
+    },
+    {
+      "name": "The Painted Veil",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/yNSi6p6AexlKzKbwEwlyH8LNVuA.jpg",
+      "tmdbId": 82096
+    },
+    {
+      "name": "- Children of Men",
+      "awards": {
+        "adg": "Y"
+      },
+      "posterPath": "/8Xgvmx7WWc7Z9Ws9RAYk7uya2kh.jpg",
+      "tmdbId": 9693
+    },
+    {
+      "name": "Half Nelson",
+      "awards": {
+        "gotham": "Y"
+      },
+      "posterPath": "/fdUCisMpTwy0oJOGwM7NrFFs400.jpg",
+      "tmdbId": 7859
+    },
+    {
+      "name": "Little Children",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "gotham": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/l2wTSP0Ifo9vY03nJEfkFBbT2S9.jpg",
+      "tmdbId": 1440
+    },
+    {
+      "name": "Bobby",
+      "awards": {
+        "gg": "X",
+        "sag": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/ea6aSTUFQopOW7kWFZB9AvMYnbs.jpg",
+      "tmdbId": 10741
+    },
+    {
+      "name": "The Last King of Scotland",
+      "awards": {
+        "bafta": "X"
+      },
+      "posterPath": "/n1CgN2mS7RSxHhv2R1DdisYDvT6.jpg",
+      "tmdbId": 1523
+    },
+    {
+      "name": "Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/kfkyALfD4G1mlBJI1lOt2QCra4i.jpg",
+      "tmdbId": 496
+    },
+    {
+      "name": "Thank You for Smoking",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/cJpeM7U36diFinieBWNLVi0FlQz.jpg",
+      "tmdbId": 9388
+    },
+    {
+      "name": "Leonardo DiCaprio",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/oO8CotrnqhHAGbVMcCqNHrb89pP.jpg",
+      "tmdbId": 792166
+    },
+    {
+      "name": "Peter O'Toole",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/rnXkAntngphHE1dhLlvyFj0ZLgd.jpg",
+      "tmdbId": 1067946
+    },
+    {
+      "name": "Will Smith",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/sm417MFmhiJmFZuuBq4KliH0kS3.jpg",
+      "tmdbId": 773790
+    },
+    {
+      "name": "Penélope Cruz",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/7wTgB1PlmfSgMojlR3fdd0LmQGT.jpg",
+      "tmdbId": 987248
+    },
+    {
+      "name": "Judi Dench",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/2inI1HcNTVbCLgDithSpsYHtaWQ.jpg",
+      "tmdbId": 1068505
+    },
+    {
+      "name": "Maggie Gyllenhaal",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/v9f1dKAaiJ1jVmYqYbwatLXMGE.jpg",
+      "tmdbId": 1159831
+    },
+    {
+      "name": "Kate Winslet",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/tYbL1o4dj9Xhc1ZlFYGfp5sWtCf.jpg",
+      "tmdbId": 1359054
+    },
+    {
+      "name": "Johnny Depp",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/uU8KgJcbyvPJJKIpK4lkD7R59we.jpg",
+      "tmdbId": 930333
+    },
+    {
+      "name": "Aaron Eckhart",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy"
+    },
+    {
+      "name": "Chiwetel Ejiofor",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy"
+    },
+    {
+      "name": "Will Ferrell",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/2gdMnD7wDaTy0RJ1h1i1kX9BS7M.jpg",
+      "tmdbId": 289401
+    },
+    {
+      "name": "Annette Bening",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/7qkTxVF9uaMo5547Yv184pddRtW.jpg",
+      "tmdbId": 1408375
+    },
+    {
+      "name": "Beyoncé",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/mMUyHGc0GuaIQ6Zh731wqARSZI8.jpg",
+      "tmdbId": 344862
+    },
+    {
+      "name": "Toni Collette",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy"
+    },
+    {
+      "name": "Renée Zellweger",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy"
+    },
+    {
+      "name": "Ben Affleck",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/8ClRQSqe22Jef5pn6GCvPvM8EHC.jpg",
+      "tmdbId": 1230631
+    },
+    {
+      "name": "Jack Nicholson",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/1HJxpnPjj6pnM78RLHLAbvo6EmQ.jpg",
+      "tmdbId": 499235
+    },
+    {
+      "name": "Brad Pitt",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/euK4kW6tkeDdVFTFeDpIgYffLYR.jpg",
+      "tmdbId": 1033548
+    },
+    {
+      "name": "Mark Wahlberg",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy"
+    },
+    {
+      "name": "Adriana Barraza",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy"
+    },
+    {
+      "name": "Cate Blanchett",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy"
+    },
+    {
+      "name": "Emily Blunt",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy"
+    },
+    {
+      "name": "Rinko Kikuchi",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy"
+    },
+    {
+      "name": "The Da Vinci Code",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/9ejKfNk0LBhSI9AahH4f9NJNZNM.jpg",
+      "tmdbId": 591
+    },
+    {
+      "name": "- Pirates of the Caribbean: Dead Man's Chest",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/uXEqmloGyP7UXAiphJUu2v2pcuE.jpg",
+      "tmdbId": 58
+    },
+    {
+      "name": "Superman Returns",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/385XwTQZDpRX2d3kxtnpiLrjBXw.jpg",
+      "tmdbId": 1452
+    },
+    {
+      "name": "V for Vendetta",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/piZOwjyk1g51oPHonc7zaQY3WOv.jpg",
+      "tmdbId": 752
+    },
+    {
+      "name": "The Good Shepherd",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/AkNl18FRZcbuifRo6rYvVuYtVrf.jpg",
+      "tmdbId": 10356
+    },
+    {
+      "name": "The Prestige",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/Ag2B2KHKQPukjH7WutmgnnSNurZ.jpg",
+      "tmdbId": 1124
+    },
+    {
+      "name": "Marie Antoinette",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/cybXGmv8Rjd5Os8Xml6YxMBQ0Zt.jpg",
+      "tmdbId": 1887
+    },
+    {
+      "name": "Old Joy",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/AdFKZOf0LtPpGq8be9T8qsNHTbs.jpg",
+      "tmdbId": 26518
+    }
+  ],
+  "best-director": [
+    {
+      "name": "Martin Scorsese",
+      "film": "The Departed",
+      "awards": {
+        "bafta": "X",
+        "oscar": "Y",
+        "gg": "Y",
+        "critics": "Y",
+        "nbr": "Y",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
+      "tmdbId": 1032
+    },
+    {
+      "name": "Paul Greengrass",
+      "film": "United 93",
+      "awards": {
+        "bafta": "Y",
+        "oscar": "X",
+        "critics": "X",
+        "lafca": "Y"
+      },
+      "profilePath": "/kJxQWrERq8p7gxRP2fIcS8suwme.jpg",
+      "tmdbId": 25598
+    },
+    {
+      "name": "Alejandro González Iñárritu",
+      "film": "Babel",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "gg": "X",
+        "cannes": "Y"
+      },
+      "profilePath": "/Av0jewh8wltCl1CB8MfEIrvgfMZ.jpg",
+      "tmdbId": 223
+    },
+    {
+      "name": "Stephen Frears",
+      "film": "The Queen",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/6VPZp1rJKU4Jq6yx4Xo224BWr0I.jpg",
+      "tmdbId": 3224
+    },
+    {
+      "name": "Clint Eastwood",
+      "film": "Letters from Iwo Jima",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/8TwdCfeOZH7ucRlfLZ6wObxa7cO.jpg",
+      "tmdbId": 190
+    },
+    {
+      "name": "Clint Eastwood",
+      "awards": {
+        "gg": "X",
+        "lafca": "X"
+      },
+      "film": "Flags of Our Fathers",
+      "profilePath": "/8TwdCfeOZH7ucRlfLZ6wObxa7cO.jpg",
+      "tmdbId": 190
+    },
+    {
+      "name": "Jonathan Dayton and Valerie Faris",
+      "film": "Little Miss Sunshine",
+      "awards": {
+        "bafta": "X"
+      }
+    },
+    {
+      "name": "Bill Condon",
+      "film": "Dreamgirls",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/dk7EK0mbUxgoDr7ki9kgYHu4cZs.jpg",
+      "tmdbId": 15557
+    }
+  ],
+  "best-actor": [
+    {
+      "name": "Forest Whitaker",
+      "film": "The Last King of Scotland",
+      "role": "Leading",
+      "awards": {
+        "bafta": "Y",
+        "oscar": "Y",
+        "sag": "Y",
+        "critics": "Y",
+        "nbr": "Y",
+        "lafca": "X",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/4w7l5JUwnwFNBy7J93ZwYN1nihm.jpg",
+      "tmdbId": 2178
+    },
+    {
+      "name": "Alan Arkin",
+      "film": "Little Miss Sunshine",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "Y",
+        "oscar": "Y",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/lTMMpkqL0G3WeFNfbtdP5COZEiX.jpg",
+      "tmdbId": 1903
+    },
+    {
+      "name": "Eddie Murphy",
+      "film": "Dreamgirls",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "Y",
+        "critics": "Y"
+      },
+      "profilePath": "/qgjMfefsKwSYsyCaIX46uyOXIpy.jpg",
+      "tmdbId": 776
+    },
+    {
+      "name": "Jackie Earle Haley",
+      "film": "Little Children",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/xDPeiyklN8f9Ilowsti4lGVbioj.jpg",
+      "tmdbId": 17183
+    },
+    {
+      "name": "Michael Sheen",
+      "film": "The Queen",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "lafca": "Y"
+      },
+      "profilePath": "/nGxIcIcfJjdPN3k8zFabtA1gRqL.jpg",
+      "tmdbId": 3968
+    },
+    {
+      "name": "Jamel Debbouze",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "Days of Glory",
+      "profilePath": "/aiqWSWbRJ6rrjxxVE6y2Xb3KdSp.jpg",
+      "tmdbId": 2408
+    },
+    {
+      "name": "Sacha Baron Cohen",
+      "awards": {
+        "lafca": "Y"
+      },
+      "film": "Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan",
+      "profilePath": "/irirhgOX0siCyqvMrt2hoJpXfOG.jpg",
+      "tmdbId": 6730
+    },
+    {
+      "name": "Peter O'Toole",
+      "film": "Venus",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/cQdULVxbxK1HbgqblImXfVXkGyO.jpg",
+      "tmdbId": 11390
+    },
+    {
+      "name": "Leonardo DiCaprio",
+      "film": "The Departed",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
+      "tmdbId": 6193
+    },
+    {
+      "name": "Leonardo DiCaprio",
+      "film": "Blood Diamond",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
+      "tmdbId": 6193
+    },
+    {
+      "name": "Ryan Gosling",
+      "film": "Half Nelson",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/asoKC7CLCqpZKZDL6iovNurQUdf.jpg",
+      "tmdbId": 30614
+    },
+    {
+      "name": "Will Smith",
+      "film": "The Pursuit of Happyness",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/8TlKqbXYgHmmaEoPBJ7djJ8Rxxa.jpg",
+      "tmdbId": 2888
+    },
+    {
+      "name": "Djimon Hounsou",
+      "film": "Blood Diamond",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/tpvtxxvCx2Mb5DV632hmuYlHoiY.jpg",
+      "tmdbId": 938
+    },
+    {
+      "name": "Jack Nicholson",
+      "film": "The Departed",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/hBHcQIEa6P48HQAlLZkh0eKSSkG.jpg",
+      "tmdbId": 514
+    },
+    {
+      "name": "Daniel Craig",
+      "film": "Casino Royale",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg",
+      "tmdbId": 8784
+    },
+    {
+      "name": "Richard Griffiths",
+      "film": "The History Boys",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/4H4uQfMzvgs11RCLaoSMQsyElw8.jpg",
+      "tmdbId": 10983
+    },
+    {
+      "name": "James McAvoy",
+      "film": "The Last King of Scotland",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/u4REKbm3zhFI2J5tVyqRovGRYUJ.jpg",
+      "tmdbId": 5530
+    },
+    {
+      "name": "Leslie Phillips",
+      "film": "Venus",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/xD1ud9ud75GRRQz2EDATyE7NhUV.jpg",
+      "tmdbId": 10655
+    },
+    {
+      "name": "Mark Wahlberg",
+      "film": "The Departed",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/bTEFpaWd7A6AZVWOqKKBWzKEUe8.jpg",
+      "tmdbId": 13240
+    },
+    {
+      "name": "Ben Affleck",
+      "film": "Hollywoodland",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/aTcqu8cI4wMohU17xTdqmXKTGrw.jpg",
+      "tmdbId": 880
+    },
+    {
+      "name": "Adam Beach",
+      "film": "Flags of Our Fathers",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/3ZMGfnRc7dYnAPl6ZSbGhqj6LHx.jpg",
+      "tmdbId": 33527
+    },
+    {
+      "name": "Sergi López",
+      "awards": {
+        "lafca": "X"
+      },
+      "film": "Pan's Labyrinth"
+    }
+  ],
+  "best-actress": [
+    {
+      "name": "Helen Mirren",
+      "film": "The Queen",
+      "role": "Leading",
+      "awards": {
+        "bafta": "Y",
+        "oscar": "Y",
+        "sag": "Y",
+        "critics": "Y",
+        "nbr": "Y",
+        "lafca": "Y",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
+      "tmdbId": 15735
+    },
+    {
+      "name": "Jennifer Hudson",
+      "film": "Dreamgirls",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "Y",
+        "oscar": "Y",
+        "sag": "Y",
+        "critics": "Y",
+        "lafca": "X",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/2XPtoGs9GnM1NPj2xCxstzGma4V.jpg",
+      "tmdbId": 15565
+    },
+    {
+      "name": "Chus Lampreave",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "Volver",
+      "profilePath": "/86dFl41dHUzRYHRBoMt8Mocvfzf.jpg",
+      "tmdbId": 3482
+    },
+    {
+      "name": "Luminița Gheorghiu",
+      "awards": {
+        "lafca": "Y"
+      },
+      "film": "The Death of Mr. Lazarescu",
+      "profilePath": "/2DdsK4FFtw869rMjcnhlFSwddwx.jpg",
+      "tmdbId": 39961
+    },
+    {
+      "name": "Penélope Cruz",
+      "film": "Volver",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X",
+        "lafca": "X"
+      },
+      "profilePath": "/2Lbc8QXgHik1D1saPqQ5qEWwUEh.jpg",
+      "tmdbId": 955
+    },
+    {
+      "name": "Judi Dench",
+      "film": "Notes on a Scandal",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
+      "tmdbId": 5309
+    },
+    {
+      "name": "Kate Winslet",
+      "film": "Little Children",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/9xDnfZrWhM67wJlQJEsOOjQzDUQ.jpg",
+      "tmdbId": 204
+    },
+    {
+      "name": "Meryl Streep",
+      "film": "The Devil Wears Prada",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
+      "tmdbId": 5064
+    },
+    {
+      "name": "Abigail Breslin",
+      "film": "Little Miss Sunshine",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "X"
+      },
+      "profilePath": "/1MQMfcb3fuN0lC1egdaOnHcTlm8.jpg",
+      "tmdbId": 17140
+    },
+    {
+      "name": "Adriana Barraza",
+      "film": "Babel",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/kfww4YbO9J2HpCldEqyyhQugwy5.jpg",
+      "tmdbId": 270
+    },
+    {
+      "name": "Cate Blanchett",
+      "film": "Notes on a Scandal",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/vq4vuAVhYngfzVNn8SbnG0JEy15.jpg",
+      "tmdbId": 112
+    },
+    {
+      "name": "Rinko Kikuchi",
+      "awards": {
+        "sag": "X",
+        "critics": "X"
+      },
+      "film": "Babel",
+      "role": "Supporting",
+      "profilePath": "/n1GSGFdpoiDXT3ozZflsmcJy21Y.jpg",
+      "tmdbId": 18054
+    },
+    {
+      "name": "Emily Blunt",
+      "film": "The Devil Wears Prada",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
+      "tmdbId": 5081
+    },
+    {
+      "name": "Frances de la Tour",
+      "film": "The History Boys",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/aDSge7DWhUyMyA0rEXEZpGiZzGO.jpg",
+      "tmdbId": 47468
+    },
+    {
+      "name": "Toni Collette",
+      "film": "Little Miss Sunshine",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/lzXRh16qe4HHeBN6tMyw0DHvaMn.jpg",
+      "tmdbId": 3051
+    },
+    {
+      "name": "Rinko Kikuchi",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/n1GSGFdpoiDXT3ozZflsmcJy21Y.jpg",
+      "tmdbId": 18054
+    },
+    {
+      "name": "Catherine O'Hara",
+      "film": "For Your Consideration",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/xjthrsXA31PVX91ByIQzORKSD0E.jpg",
+      "tmdbId": 11514
+    },
+    {
+      "name": "Emma Thompson",
+      "film": "Stranger than Fiction",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/bLGNyyVAGSDfRpLoC3gKD6S6j4P.jpg",
+      "tmdbId": 7056
+    }
+  ]
+}

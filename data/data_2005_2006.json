@@ -1,0 +1,989 @@
+{
+  "best-film": [
+    {
+      "name": "Brokeback Mountain",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "bafta": "Y",
+        "critics": "Y",
+        "sag": "X",
+        "pga": "Y",
+        "lafca": "Y",
+        "nyfcc": "Y",
+        "gotham": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/aByfQOQBNa4CMFwIgq3QrqY2ZHh.jpg",
+      "tmdbId": 142
+    },
+    {
+      "name": "Crash",
+      "awards": {
+        "oscar": "Y",
+        "bafta": "X",
+        "critics": "X",
+        "sag": "Y",
+        "pga": "X",
+        "adg": "Y"
+      },
+      "posterPath": "/gpai5oUFyFGLHOCsYTvVMqlbY7A.jpg",
+      "tmdbId": 884
+    },
+    {
+      "name": "Capote",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "critics": "X",
+        "sag": "X",
+        "pga": "X",
+        "gotham": "Y"
+      },
+      "posterPath": "/tzsxkZMnJvozpHQEl1KzO8KwWu.jpg",
+      "tmdbId": 398
+    },
+    {
+      "name": "Walk the Line",
+      "awards": {
+        "gg": "Y",
+        "critics": "X",
+        "pga": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/p8lPTjvjOjTfvC1E9pmMwcF9vkn.jpg",
+      "tmdbId": 69
+    },
+    {
+      "name": "L'Enfant",
+      "awards": {
+        "cannes": "Y"
+      },
+      "note": "Director: Jean-Pierre and Luc Dardenne",
+      "posterPath": "/dk7ZpsVKLt2nwjQZZIde0WP4oQV.jpg",
+      "tmdbId": 11490
+    },
+    {
+      "name": "Good Night, and Good Luck.",
+      "awards": {
+        "adg": "Y"
+      },
+      "posterPath": "/fINjqjQNWYr7g9nVawzPDenxVO3.jpg",
+      "tmdbId": 1481851
+    },
+    {
+      "name": "Good Night, and Good Luck",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "sag": "X",
+        "pga": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/fINjqjQNWYr7g9nVawzPDenxVO3.jpg",
+      "tmdbId": 1481851
+    },
+    {
+      "name": "The Constant Gardener",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "adg": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/nkXq7V7mmJVbvwZGr3nxkHo7HkS.jpg",
+      "tmdbId": 1985
+    },
+    {
+      "name": "A History of Violence",
+      "awards": {
+        "gg": "X",
+        "lafca": "X",
+        "gotham": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/A26rcvipOqptVs7i5uRmKicXRxE.jpg",
+      "tmdbId": 59
+    },
+    {
+      "name": "Munich",
+      "awards": {
+        "oscar": "X",
+        "critics": "X"
+      },
+      "posterPath": "/iUekaw96QLInZpsNwRTlRKrZgwm.jpg",
+      "tmdbId": 612
+    },
+    {
+      "name": "King Kong",
+      "awards": {
+        "critics": "X",
+        "adg": "X"
+      },
+      "posterPath": "/6a2HY6UmD7XiDD3NokgaBAXEsD2.jpg",
+      "tmdbId": 254
+    },
+    {
+      "name": "Match Point",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/vHjEVTD8ucuwKSFOZJeyAnTZYli.jpg",
+      "tmdbId": 116
+    },
+    {
+      "name": "Mrs Henderson Presents",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/rFmx0ajncGacM8Ono9vpXiHt7Vy.jpg",
+      "tmdbId": 10773
+    },
+    {
+      "name": "Pride & Prejudice",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/zu0gBfUFW3gsr3kQ6CCJ7StB51v.jpg",
+      "tmdbId": 4348
+    },
+    {
+      "name": "The Producers",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/9qCIkNWGuRj5lMyeOXwJs8z9nRz.jpg",
+      "tmdbId": 30197
+    },
+    {
+      "name": "The Squid and the Whale",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/9NbXn1NMdfGM491V3EFjZADR9SX.jpg",
+      "tmdbId": 10707
+    },
+    {
+      "name": "Cinderella Man",
+      "awards": {
+        "critics": "X"
+      },
+      "posterPath": "/wkeOjIcpuqLMW4GnVowlM9VI0JE.jpg",
+      "tmdbId": 921
+    },
+    {
+      "name": "Memoirs of a Geisha",
+      "awards": {
+        "critics": "X"
+      },
+      "posterPath": "/pBwYsQaSTgnPphIy02DJjCF2cqs.jpg",
+      "tmdbId": 1904
+    },
+    {
+      "name": "Hustle & Flow",
+      "awards": {
+        "sag": "X"
+      },
+      "posterPath": "/yO5QTMZ2Oex6mwsgJuwRuINGuOQ.jpg",
+      "tmdbId": 10476
+    },
+    {
+      "name": "Jarhead",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/6vdj47RAWOUZBkeQmqToeZ7eaio.jpg",
+      "tmdbId": 25
+    },
+    {
+      "name": "Syriana",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/mO3hWUTOxmLJxihvDU0YFkb0Mb5.jpg",
+      "tmdbId": 231
+    },
+    {
+      "name": "Batman Begins",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
+      "tmdbId": 272
+    },
+    {
+      "name": "Charlie and the Chocolate Factory",
+      "awards": {
+        "adg": "X"
+      },
+      "posterPath": "/iKP6wg3c6COUe8gYutoGG7qcPnO.jpg",
+      "tmdbId": 118
+    },
+    {
+      "name": "Keane",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/9i0mdCNik76ULpWMQQ4YM6Ecpg1.jpg",
+      "tmdbId": 13468
+    },
+    {
+      "name": "Me and You and Everyone We Know",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/hrj9VsInHnqSDBhEc2FvY0qd79F.jpg",
+      "tmdbId": 1382
+    }
+  ],
+  "best-director": [
+    {
+      "name": "Ang Lee",
+      "film": "Brokeback Mountain",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "critics": "Y",
+        "lafca": "Y",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg",
+      "tmdbId": 1614
+    },
+    {
+      "name": "Michael Haneke",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "Caché",
+      "profilePath": "/9wDbsPQ5lu9A04FJ1pVi9y1dRjn.jpg",
+      "tmdbId": 6011
+    },
+    {
+      "name": "George Clooney",
+      "film": "Good Night, and Good Luck",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
+      "tmdbId": 1461
+    },
+    {
+      "name": "Paul Haggis",
+      "film": "Crash",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "critics": "X"
+      }
+    },
+    {
+      "name": "Steven Spielberg",
+      "film": "Munich",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
+      "tmdbId": 488
+    },
+    {
+      "name": "Bennett Miller",
+      "film": "Capote",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X"
+      },
+      "profilePath": "/r1XGBl8TYNuCm7APjWN8npP4DEw.jpg",
+      "tmdbId": 5345
+    },
+    {
+      "name": "Peter Jackson",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "film": "King Kong",
+      "profilePath": "/bNc908d59Ba8VDNr4eCcm4G1cR.jpg",
+      "tmdbId": 108
+    },
+    {
+      "name": "Fernando Meirelles",
+      "awards": {
+        "gg": "X",
+        "bafta": "X"
+      },
+      "film": "The Constant Gardener",
+      "profilePath": "/usc1zwBXEHN4A6rkvJcmgWpc7rS.jpg",
+      "tmdbId": 8557
+    },
+    {
+      "name": "Woody Allen",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Match Point",
+      "profilePath": "/wcPQgZLDibuej1RwNTy1R2U2ZJw.jpg",
+      "tmdbId": 1243
+    },
+    {
+      "name": "Ron Howard",
+      "film": "Cinderella Man",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/g3n8qduLaPO2l4kJZsV6xNMXozn.jpg",
+      "tmdbId": 6159
+    },
+    {
+      "name": "David Cronenberg",
+      "awards": {
+        "lafca": "X"
+      },
+      "film": "A History of Violence",
+      "profilePath": "/3xh4e2gWHDilMLtucHzDGsmJMuQ.jpg",
+      "tmdbId": 224
+    }
+  ],
+  "best-actor": [
+    {
+      "name": "Philip Seymour Hoffman",
+      "film": "Capote",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "critics": "Y",
+        "sag": "Y",
+        "lafca": "Y"
+      },
+      "profilePath": "/50rqDkmvXwjwVhFH7q6ph2Rkw7S.jpg",
+      "tmdbId": 1233
+    },
+    {
+      "name": "George Clooney",
+      "film": "Syriana",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "X",
+        "critics": "X",
+        "sag": "X"
+      },
+      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
+      "tmdbId": 1461
+    },
+    {
+      "name": "William Hurt",
+      "film": "A History of Violence",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "lafca": "Y",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/j3mjmuHLBW4XQSw53C8Sh0Lh3ZQ.jpg",
+      "tmdbId": 227
+    },
+    {
+      "name": "Heath Ledger",
+      "film": "Brokeback Mountain",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "sag": "X",
+        "lafca": "X",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/5Y9HnYYa9jF4NunY9lSgJGjSe8E.jpg",
+      "tmdbId": 1810
+    },
+    {
+      "name": "Joaquin Phoenix",
+      "film": "Walk the Line",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "bafta": "X",
+        "critics": "X",
+        "sag": "X"
+      },
+      "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
+      "tmdbId": 73421
+    },
+    {
+      "name": "Paul Giamatti",
+      "film": "Cinderella Man",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "Y"
+      },
+      "profilePath": "/wbrVVJRr5TwhDZuvijBgOorzcAb.jpg",
+      "tmdbId": 13242
+    },
+    {
+      "name": "Jake Gyllenhaal",
+      "film": "Brokeback Mountain",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/j2Yahha9C0zN5DRaTDzYA7WtdOT.jpg",
+      "tmdbId": 131
+    },
+    {
+      "name": "Paul Giamatti",
+      "awards": {
+        "sag": "Y"
+      },
+      "film": "Joe Gould",
+      "role": "Supporting",
+      "profilePath": "/wbrVVJRr5TwhDZuvijBgOorzcAb.jpg",
+      "tmdbId": 13242
+    },
+    {
+      "name": "Tommy Lee Jones",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "The Three Burials of Melquiades Estrada",
+      "profilePath": "/mCiZNRAzbnPojJEZwVZWLw9kzxR.jpg",
+      "tmdbId": 2176
+    },
+    {
+      "name": "David Strathairn",
+      "film": "Good Night, and Good Luck",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "sag": "X"
+      },
+      "profilePath": "/6MRnh27jFz0347S6uU11LZG6aaz.jpg",
+      "tmdbId": 11064
+    },
+    {
+      "name": "Matt Dillon",
+      "film": "Crash",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/wVoSUexYH79igPgxIXKWRlV2uBk.jpg",
+      "tmdbId": 2876
+    },
+    {
+      "name": "Terrence Howard",
+      "film": "Hustle & Flow",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/eZ6uRZOYWZAyjNmWpDKGdLL6WUC.jpg",
+      "tmdbId": 18288
+    },
+    {
+      "name": "Russell Crowe",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "sag": "X"
+      },
+      "film": "Cinderella Man",
+      "role": "Leading",
+      "profilePath": "/uxiXuVH4vNWrKlJMVVPG1sxAJFe.jpg",
+      "tmdbId": 934
+    },
+    {
+      "name": "Don Cheadle",
+      "film": "Crash",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "sag": "X"
+      },
+      "profilePath": "/2SjWNlcBMHBGC5Io0F2vzElCaiO.jpg",
+      "tmdbId": 1896
+    },
+    {
+      "name": "Pierce Brosnan",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Matador",
+      "role": "Leading",
+      "profilePath": "/dzXVwwJLPwiZeXOnf7YxorqVEEM.jpg",
+      "tmdbId": 517
+    },
+    {
+      "name": "Jeff Daniels",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Squid and the Whale",
+      "role": "Leading",
+      "profilePath": "/r0mkZJZnTSJO3HJRsMW5HtszxE8.jpg",
+      "tmdbId": 8447
+    },
+    {
+      "name": "Johnny Depp",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Charlie and the Chocolate Factory",
+      "role": "Leading",
+      "profilePath": "/drl9qDZoxPHhUbDamYcOQEhlHzW.jpg",
+      "tmdbId": 85
+    },
+    {
+      "name": "Nathan Lane",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Producers",
+      "role": "Leading",
+      "profilePath": "/nEYS0KO1qVO3y0RAt8V8pFxnPb7.jpg",
+      "tmdbId": 78729
+    },
+    {
+      "name": "Cillian Murphy",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Breakfast on Pluto",
+      "role": "Leading",
+      "profilePath": "/llkbyWKwpfowZ6C8peBjIV9jj99.jpg",
+      "tmdbId": 2037
+    },
+    {
+      "name": "Will Ferrell",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Producers",
+      "role": "Leading",
+      "profilePath": "/vL1QjMdMtuM2f8fQZzei6WAvicZ.jpg",
+      "tmdbId": 23659
+    },
+    {
+      "name": "Bob Hoskins",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Mrs Henderson Presents",
+      "role": "Leading",
+      "profilePath": "/qOeE7bVHAsNTbP77Qk6TwrrWHZc.jpg",
+      "tmdbId": 382
+    },
+    {
+      "name": "Ralph Fiennes",
+      "film": "The Constant Gardener",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/u29BOqiV5GCQ8k8WUJM50i9xlBf.jpg",
+      "tmdbId": 5469
+    },
+    {
+      "name": "George Clooney",
+      "film": "Good Night, and Good Luck",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
+      "tmdbId": 1461
+    },
+    {
+      "name": "Kevin Costner",
+      "film": "The Upside of Anger",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/bykmxJHLfbFM3NT05RZXhx8YTzF.jpg",
+      "tmdbId": 1269
+    },
+    {
+      "name": "Terrence Howard",
+      "film": "Crash",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/eZ6uRZOYWZAyjNmWpDKGdLL6WUC.jpg",
+      "tmdbId": 18288
+    },
+    {
+      "name": "Matt Dillon",
+      "awards": {
+        "sag": "X"
+      },
+      "role": "Supporting",
+      "profilePath": "/wVoSUexYH79igPgxIXKWRlV2uBk.jpg",
+      "tmdbId": 2876
+    },
+    {
+      "name": "Jake Gyllenhaal",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "Jack Twist",
+      "role": "Supporting",
+      "profilePath": "/j2Yahha9C0zN5DRaTDzYA7WtdOT.jpg",
+      "tmdbId": 131
+    },
+    {
+      "name": "Frank Langella",
+      "awards": {
+        "lafca": "X"
+      },
+      "film": "Good Night, and Good Luck",
+      "profilePath": "/86DEo3sBguyc1l46606yVKD28T4.jpg",
+      "tmdbId": 8924
+    }
+  ],
+  "best-actress": [
+    {
+      "name": "Reese Witherspoon",
+      "film": "Walk the Line",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "Y",
+        "critics": "Y",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/o1z4UwW2137IViFIRk8AV8hWze1.jpg",
+      "tmdbId": 368
+    },
+    {
+      "name": "Rachel Weisz",
+      "film": "The Constant Gardener",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "gg": "Y",
+        "bafta": "X",
+        "critics": "X",
+        "sag": "Y"
+      },
+      "profilePath": "/msTqKPA33ryVtcVNgOdeaJGYq16.jpg",
+      "tmdbId": 3293
+    },
+    {
+      "name": "Felicity Huffman",
+      "film": "Transamerica",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "critics": "X",
+        "sag": "X"
+      },
+      "profilePath": "/hbGEEamG47fo4rrfBKU6YgbasVQ.jpg",
+      "tmdbId": 7427
+    },
+    {
+      "name": "Amy Adams",
+      "film": "Junebug",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "critics": "Y",
+        "sag": "X",
+        "lafca": "X"
+      },
+      "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
+      "tmdbId": 9273
+    },
+    {
+      "name": "Maria Bello",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "nyfcc": "Y"
+      },
+      "film": "A History of Violence",
+      "role": "Leading",
+      "profilePath": "/it1f5mxiGIWO0DzTBfwtLTjphZb.jpg",
+      "tmdbId": 49
+    },
+    {
+      "name": "Thandiwe Newton",
+      "film": "[a]",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "Y"
+      },
+      "profilePath": "/hZQLvxj7nV7pBrRyWTvWVz1CDi8.jpg",
+      "tmdbId": 9030
+    },
+    {
+      "name": "Reese Witherspoon",
+      "awards": {
+        "sag": "Y"
+      },
+      "film": "June Carter Cash",
+      "role": "Leading",
+      "profilePath": "/o1z4UwW2137IViFIRk8AV8hWze1.jpg",
+      "tmdbId": 368
+    },
+    {
+      "name": "Hanna Laslo",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "Free Zone",
+      "profilePath": "/7qBri3zUXGgo1cjfOhOtsQlSnP4.jpg",
+      "tmdbId": 52684
+    },
+    {
+      "name": "Vera Farmiga",
+      "awards": {
+        "lafca": "Y"
+      },
+      "film": "Down to the Bone",
+      "profilePath": "/5Vs7huBmTKftwlsc2BPAntyaQYj.jpg",
+      "tmdbId": 21657
+    },
+    {
+      "name": "Catherine Keener",
+      "awards": {
+        "lafca": "Y"
+      },
+      "film": "The 40-Year-Old Virgin",
+      "profilePath": "/n4CTwGszs6cwS1wJRlDQ5Mlh7Ex.jpg",
+      "tmdbId": 2229
+    },
+    {
+      "name": "Judi Dench",
+      "film": "Mrs Henderson Presents",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "sag": "X",
+        "lafca": "X"
+      },
+      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
+      "tmdbId": 5309
+    },
+    {
+      "name": "Charlize Theron",
+      "film": "North Country",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "sag": "X"
+      },
+      "profilePath": "/ie1KbeYFG5E0GVr1QP7tDNuXvga.jpg",
+      "tmdbId": 6885
+    },
+    {
+      "name": "Frances McDormand",
+      "film": "North Country",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
+      "tmdbId": 3910
+    },
+    {
+      "name": "Keira Knightley",
+      "film": "Pride & Prejudice",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/bRC1B2VwV0wK3ElciFAK6QZf2wD.jpg",
+      "tmdbId": 116
+    },
+    {
+      "name": "Catherine Keener",
+      "film": "Capote",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/n4CTwGszs6cwS1wJRlDQ5Mlh7Ex.jpg",
+      "tmdbId": 2229
+    },
+    {
+      "name": "Michelle Williams",
+      "film": "Brokeback Mountain",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X"
+      },
+      "profilePath": "/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg",
+      "tmdbId": 1812
+    },
+    {
+      "name": "Ziyi Zhang",
+      "awards": {
+        "gg": "X",
+        "bafta": "X"
+      },
+      "film": "Memoirs of a Geisha",
+      "role": "Leading",
+      "profilePath": "/sjtAc10h5LaIaKV6Y1LoZoeE7HT.jpg",
+      "tmdbId": 1339
+    },
+    {
+      "name": "Gwyneth Paltrow",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Proof",
+      "role": "Leading",
+      "profilePath": "/8x3jpWD7DEvyMXO1FOjwNdd1UZT.jpg",
+      "tmdbId": 12052
+    },
+    {
+      "name": "Laura Linney",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Squid and the Whale",
+      "role": "Leading",
+      "profilePath": "/yIopIq7l7eIvjoQqnZJkpdQEvds.jpg",
+      "tmdbId": 350
+    },
+    {
+      "name": "Sarah Jessica Parker",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Family Stone",
+      "role": "Leading",
+      "profilePath": "/tEhHY7Uyn8VktwLhawBRuR0tdaJ.jpg",
+      "tmdbId": 520
+    },
+    {
+      "name": "Scarlett Johansson",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Match Point",
+      "role": "Leading",
+      "profilePath": "/6bBCPmc55gzP7TR9Th4WbykrYd0.jpg",
+      "tmdbId": 1245
+    },
+    {
+      "name": "Shirley MacLaine",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "In Her Shoes",
+      "role": "Leading",
+      "profilePath": "/mpW9c34IAFPW0ODuKR8J0FAqN5i.jpg",
+      "tmdbId": 4090
+    },
+    {
+      "name": "Brenda Blethyn",
+      "film": "Pride & Prejudice",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/mxENo8tEvN0998PrNidYkN4wGGO.jpg",
+      "tmdbId": 4154
+    },
+    {
+      "name": "Joan Allen",
+      "film": "The Upside of Anger",
+      "role": "Leading",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/ipUhzenaOCmrxqbPqc7RadYxWao.jpg",
+      "tmdbId": 11148
+    },
+    {
+      "name": "Zhang Ziyi",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "Memoirs of a Geisha",
+      "role": "Leading",
+      "profilePath": "/sjtAc10h5LaIaKV6Y1LoZoeE7HT.jpg",
+      "tmdbId": 1339
+    },
+    {
+      "name": "Catherine Keener",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "Harper Lee",
+      "role": "Supporting",
+      "profilePath": "/n4CTwGszs6cwS1wJRlDQ5Mlh7Ex.jpg",
+      "tmdbId": 2229
+    },
+    {
+      "name": "Frances McDormand",
+      "awards": {
+        "sag": "X"
+      },
+      "role": "Supporting",
+      "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
+      "tmdbId": 3910
+    },
+    {
+      "name": "Michelle Williams",
+      "awards": {
+        "sag": "X"
+      },
+      "role": "Supporting",
+      "profilePath": "/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg",
+      "tmdbId": 1812
+    }
+  ]
+}

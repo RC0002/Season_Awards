@@ -7,13 +7,13 @@
         "gg": "Y",
         "sag": "X",
         "critics": "Y",
-        "nbr": "Y",
         "afi": "Y",
+        "nbr": "Y",
         "pga": "X",
         "nyfcc": "Y",
-        "adg": "X",
-        "astra": "Y",
         "lafca": "Y",
+        "astra": "Y",
+        "adg": "X",
         "gotham": "Y"
       },
       "posterPath": "/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
@@ -26,11 +26,11 @@
         "gg": "X",
         "sag": "X",
         "critics": "X",
-        "nbr": "Y",
         "afi": "Y",
+        "nbr": "Y",
         "pga": "X",
-        "adg": "X",
-        "astra": "Y"
+        "astra": "Y",
+        "adg": "X"
       },
       "posterPath": "/qTvFWCGeGXgBRaINLY1zqgTPSpn.jpg",
       "tmdbId": 1233413
@@ -44,8 +44,8 @@
         "critics": "X",
         "afi": "Y",
         "pga": "X",
-        "adg": "X",
         "astra": "X",
+        "adg": "X",
         "gotham": "X"
       },
       "posterPath": "/61xMzN4h8iLk0hq6oUzr9Ts6GE9.jpg",
@@ -58,11 +58,11 @@
         "gg": "X",
         "sag": "X",
         "critics": "X",
-        "nbr": "Y",
         "afi": "Y",
+        "nbr": "Y",
         "pga": "X",
-        "adg": "X",
-        "astra": "X"
+        "astra": "X",
+        "adg": "X"
       },
       "posterPath": "/g4JtvGlQO7DByTI6frUobqvSL3R.jpg",
       "tmdbId": 1062722
@@ -74,11 +74,11 @@
         "gg": "X",
         "sag": "X",
         "critics": "X",
-        "nbr": "Y",
         "afi": "Y",
+        "nbr": "Y",
         "pga": "X",
-        "adg": "X",
-        "astra": "X"
+        "astra": "X",
+        "adg": "X"
       },
       "posterPath": "/firAhZA0uQvRL2slp7v3AnOj0ZX.jpg",
       "tmdbId": 1317288
@@ -87,8 +87,8 @@
       "name": "Train Dreams",
       "awards": {
         "critics": "X",
-        "nbr": "Y",
         "afi": "Y",
+        "nbr": "Y",
         "pga": "X",
         "astra": "X",
         "spirit": "X",
@@ -101,10 +101,10 @@
       "name": "Wicked: For Good",
       "awards": {
         "critics": "X",
-        "nbr": "Y",
         "afi": "Y",
-        "adg": "X",
-        "astra": "X"
+        "nbr": "Y",
+        "astra": "X",
+        "adg": "X"
       },
       "posterPath": "/si9tolnefLSUKaqQEGz1bWArOaL.jpg",
       "tmdbId": 967941
@@ -125,8 +125,8 @@
       "name": "Jay Kelly",
       "awards": {
         "critics": "X",
-        "nbr": "Y",
         "afi": "Y",
+        "nbr": "Y",
         "astra": "X"
       },
       "posterPath": "/lEXYpY9X17pGC7xYYy17Guv0L3J.jpg",
@@ -135,8 +135,8 @@
     {
       "name": "Avatar: Fire and Ash",
       "awards": {
-        "nbr": "Y",
         "afi": "Y",
+        "nbr": "Y",
         "adg": "X"
       },
       "posterPath": "/lE9KpVwgeWHMwgwkNaeH5nEFh20.jpg",
@@ -150,8 +150,8 @@
         "critics": "X",
         "afi": "Y",
         "pga": "X",
-        "adg": "X",
         "astra": "X",
+        "adg": "X",
         "gotham": "X"
       },
       "posterPath": "/oxgsAQDAAxA92mFGYCZllgWkH9J.jpg",
@@ -348,30 +348,6 @@
       "tmdbId": 1061474
     },
     {
-      "name": "Peter Hujar's Day",
-      "awards": {
-        "spirit": "X"
-      },
-      "posterPath": "/6ZIerMBfLbQpO0Es9JpN6OhxQzg.jpg",
-      "tmdbId": 1159539
-    },
-    {
-      "name": "The Plague",
-      "awards": {
-        "spirit": "X"
-      },
-      "posterPath": "/s5oNGHGZLE1pIhspvOoTD8IQjAp.jpg",
-      "tmdbId": 1370814
-    },
-    {
-      "name": "Twinless",
-      "awards": {
-        "spirit": "X"
-      },
-      "posterPath": "/9vaw9Az5tPLMjNLj426KgKsp0k8.jpg",
-      "tmdbId": 1245347
-    },
-    {
       "name": "The Ballad of Wallis Island",
       "awards": {
         "bifa": "X"
@@ -402,6 +378,30 @@
       },
       "posterPath": "/zc8n3hm3S2VxFxlNH1MNN28LVMa.jpg",
       "tmdbId": 1283320
+    },
+    {
+      "name": "Peter Hujar's Day",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/6ZIerMBfLbQpO0Es9JpN6OhxQzg.jpg",
+      "tmdbId": 1159539
+    },
+    {
+      "name": "The Plague",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/s5oNGHGZLE1pIhspvOoTD8IQjAp.jpg",
+      "tmdbId": 1370814
+    },
+    {
+      "name": "Twinless",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/9vaw9Az5tPLMjNLj426KgKsp0k8.jpg",
+      "tmdbId": 1245347
     },
     {
       "name": "East of Wall",
@@ -452,8 +452,8 @@
         "gg": "Y",
         "critics": "Y",
         "nbr": "Y",
-        "astra": "X",
         "lafca": "Y",
+        "astra": "X",
         "gotham": "X"
       },
       "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
@@ -476,8 +476,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "astra": "Y",
-        "lafca": "X"
+        "lafca": "X",
+        "astra": "Y"
       },
       "profilePath": "/dux4DCDaL6c639DTXGiV7nm1wcN.jpg",
       "tmdbId": 1056121
@@ -563,40 +563,6 @@
       "tmdbId": 935669
     },
     {
-      "name": "Clint Bentley",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Train Dreams",
-      "profilePath": "/fP89nBimnLvUcWhIBPJfgkqVRsf.jpg",
-      "tmdbId": 1590194
-    },
-    {
-      "name": "Lloyd Lee Choi",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Lucky Lu"
-    },
-    {
-      "name": "Ira Sachs",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Peter Hujar's Day",
-      "profilePath": "/ddw9iGneyLXo3hiz7uupHlEGpOH.jpg",
-      "tmdbId": 53708
-    },
-    {
-      "name": "Eva Victor",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Sorry, Baby",
-      "profilePath": "/nlEirkGOQPVUVgNzIqEJysnt70q.jpg",
-      "tmdbId": 2425998
-    },
-    {
       "name": "Laura Carreira",
       "film": "On Falling",
       "awards": {
@@ -633,6 +599,40 @@
       "tmdbId": 83287
     },
     {
+      "name": "Clint Bentley",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Train Dreams",
+      "profilePath": "/fP89nBimnLvUcWhIBPJfgkqVRsf.jpg",
+      "tmdbId": 1590194
+    },
+    {
+      "name": "Lloyd Lee Choi",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Lucky Lu"
+    },
+    {
+      "name": "Ira Sachs",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Peter Hujar's Day",
+      "profilePath": "/ddw9iGneyLXo3hiz7uupHlEGpOH.jpg",
+      "tmdbId": 53708
+    },
+    {
+      "name": "Eva Victor",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Sorry, Baby",
+      "profilePath": "/nlEirkGOQPVUVgNzIqEJysnt70q.jpg",
+      "tmdbId": 2425998
+    },
+    {
       "name": "Kelly Reichardt",
       "awards": {
         "gotham": "X"
@@ -661,8 +661,8 @@
         "critics": "X",
         "cannes": "Y",
         "nyfcc": "Y",
-        "astra": "X",
         "lafca": "X",
+        "astra": "X",
         "gotham": "X"
       },
       "profilePath": "/yJjV1ZCQbCSSgRy05FncCKjyaY4.jpg",
@@ -676,8 +676,8 @@
         "gg": "Y",
         "sag": "X",
         "critics": "Y",
-        "astra": "Y",
-        "lafca": "X"
+        "lafca": "X",
+        "astra": "Y"
       },
       "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
       "tmdbId": 1190668
@@ -689,8 +689,8 @@
       "awards": {
         "gg": "Y",
         "critics": "X",
-        "astra": "Y",
         "lafca": "Y",
+        "astra": "Y",
         "gotham": "X"
       },
       "profilePath": "/x78BtYHElirO7Iw8bL4m8CnzRDc.jpg",
@@ -920,16 +920,6 @@
       "tmdbId": 4688032
     },
     {
-      "name": "Dylan O'Brien",
-      "awards": {
-        "astra": "X",
-        "spirit": "X"
-      },
-      "film": "Twinless",
-      "profilePath": "/xN3GdvIlqsR838gDoblhPH0numP.jpg",
-      "tmdbId": 527393
-    },
-    {
       "name": "Andrew Scott",
       "awards": {
         "lafca": "X",
@@ -939,6 +929,16 @@
       "film": "Blue Moon",
       "profilePath": "/4F8XpjyQCvtuu21WFm5d8RF5Rl.jpg",
       "tmdbId": 125660
+    },
+    {
+      "name": "Dylan O'Brien",
+      "awards": {
+        "astra": "X",
+        "spirit": "X"
+      },
+      "film": "Twinless",
+      "profilePath": "/xN3GdvIlqsR838gDoblhPH0numP.jpg",
+      "tmdbId": 527393
     },
     {
       "name": "Alexander Skarsgård",
@@ -1031,58 +1031,6 @@
       "tmdbId": 6384
     },
     {
-      "name": "Everett Blunck",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "The Plague",
-      "profilePath": "/r2nFAae69Ze9xJcAAQ5sGG13iyO.jpg",
-      "tmdbId": 4577703
-    },
-    {
-      "name": "Chang Chen",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Lucky Lu"
-    },
-    {
-      "name": "Théodore Pellerin",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Lurker",
-      "profilePath": "/gBeDZe5Iv58Yw6Ymtq6yMwZV3UQ.jpg",
-      "tmdbId": 1505023
-    },
-    {
-      "name": "Ben Whishaw",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Peter Hujar's Day",
-      "profilePath": "/2GBtQ6scGeSHkX1urOP1EJbmksx.jpg",
-      "tmdbId": 17064
-    },
-    {
-      "name": "Archie Madekwe",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Lurker",
-      "profilePath": "/ccEoCYVL3yCYsAYH9DSeGl5oFYp.jpg",
-      "tmdbId": 2249745
-    },
-    {
-      "name": "Jacob Tremblay",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Sovereign",
-      "profilePath": "/h8CXDp86Y36CUENF4SXJq5ZRTsf.jpg",
-      "tmdbId": 1277188
-    },
-    {
       "name": "Frank Dillane",
       "film": "Urchin",
       "awards": {
@@ -1144,6 +1092,58 @@
       "tmdbId": 3064
     },
     {
+      "name": "Everett Blunck",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Plague",
+      "profilePath": "/r2nFAae69Ze9xJcAAQ5sGG13iyO.jpg",
+      "tmdbId": 4577703
+    },
+    {
+      "name": "Chang Chen",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Lucky Lu"
+    },
+    {
+      "name": "Théodore Pellerin",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Lurker",
+      "profilePath": "/gBeDZe5Iv58Yw6Ymtq6yMwZV3UQ.jpg",
+      "tmdbId": 1505023
+    },
+    {
+      "name": "Ben Whishaw",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Peter Hujar's Day",
+      "profilePath": "/2GBtQ6scGeSHkX1urOP1EJbmksx.jpg",
+      "tmdbId": 17064
+    },
+    {
+      "name": "Archie Madekwe",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Lurker",
+      "profilePath": "/ccEoCYVL3yCYsAYH9DSeGl5oFYp.jpg",
+      "tmdbId": 2249745
+    },
+    {
+      "name": "Jacob Tremblay",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Sovereign",
+      "profilePath": "/h8CXDp86Y36CUENF4SXJq5ZRTsf.jpg",
+      "tmdbId": 1277188
+    },
+    {
       "name": "Josh O'Connor",
       "awards": {
         "gotham": "X"
@@ -1173,8 +1173,8 @@
         "critics": "X",
         "nbr": "Y",
         "nyfcc": "Y",
-        "astra": "X",
         "lafca": "Y",
+        "astra": "X",
         "spirit": "X",
         "gotham": "X"
       },
@@ -1217,8 +1217,8 @@
         "gg": "Y",
         "sag": "X",
         "critics": "X",
-        "astra": "X",
         "lafca": "Y",
+        "astra": "X",
         "gotham": "X"
       },
       "profilePath": "/foj8l6GGlZxZXcW6pU5wnNxDjSx.jpg",
@@ -1360,12 +1360,12 @@
     {
       "name": "Inga Ibsdotter Lilleaas",
       "awards": {
-        "astra": "X",
         "lafca": "X",
+        "astra": "X",
         "gotham": "X"
       },
-      "film": "Sentimental Value",
       "role": "Supporting",
+      "film": "Sentimental Value",
       "profilePath": "/c6JojXrAi9ZAiCA07epc3eLmF1r.jpg",
       "tmdbId": 1421850
     },
@@ -1440,7 +1440,7 @@
       "awards": {
         "gg": "X"
       },
-      "profilePath": "/h13yvG0tRNMTAwciQXxYmQWdYW8.jpg",
+      "profilePath": "/fQacAdIa1WUNChQ6FgEko13eqOA.jpg",
       "tmdbId": 1204
     },
     {
@@ -1506,6 +1506,15 @@
       "film": "Marty Supreme",
       "profilePath": "/8x3jpWD7DEvyMXO1FOjwNdd1UZT.jpg",
       "tmdbId": 12052
+    },
+    {
+      "name": "Maxine Peake",
+      "film": "I Swear",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/uChlrL5WyeXhvGFaNvbzw1KqMgP.jpg",
+      "tmdbId": 76944
     },
     {
       "name": "Kathleen Chalfant",
@@ -1587,15 +1596,6 @@
       "film": "Blue Sun Palace",
       "profilePath": "/qoa5En2GrPWEGx1ZYZ4SYUfurFX.jpg",
       "tmdbId": 3323814
-    },
-    {
-      "name": "Maxine Peake",
-      "film": "I Swear",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/uChlrL5WyeXhvGFaNvbzw1KqMgP.jpg",
-      "tmdbId": 76944
     }
   ]
 }

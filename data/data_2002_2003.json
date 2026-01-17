@@ -1,0 +1,946 @@
+{
+  "best-film": [
+    {
+      "name": "Chicago",
+      "awards": {
+        "oscar": "Y",
+        "bafta": "X",
+        "gg": "Y",
+        "afi": "Y",
+        "critics": "Y",
+        "sag": "Y",
+        "pga": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/3ED8cWCXY9zkx77Sd0N5qMbsdDP.jpg",
+      "tmdbId": 1574
+    },
+    {
+      "name": "The Hours",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "Y",
+        "afi": "Y",
+        "critics": "X",
+        "sag": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/4myDtowDJQPQnkEDB1IWGtJR1Fo.jpg",
+      "tmdbId": 590
+    },
+    {
+      "name": "The Pianist",
+      "awards": {
+        "oscar": "X",
+        "bafta": "Y",
+        "gg": "X",
+        "critics": "X",
+        "cannes": "Y"
+      },
+      "genre": "Drama",
+      "posterPath": "/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg",
+      "tmdbId": 423
+    },
+    {
+      "name": "About Schmidt",
+      "awards": {
+        "gg": "X",
+        "afi": "Y",
+        "critics": "X",
+        "lafca": "Y"
+      },
+      "genre": "Drama",
+      "posterPath": "/tstvsrJHY57hc951lb190alXRQm.jpg",
+      "tmdbId": 2755
+    },
+    {
+      "name": "The Lord of the Rings: The Two Towers",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X",
+        "afi": "Y",
+        "critics": "X",
+        "sag": "X",
+        "pga": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+      "tmdbId": 121
+    },
+    {
+      "name": "Gangs of New York",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X",
+        "afi": "Y",
+        "critics": "X",
+        "pga": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/lemqKtcCuAano5aqrzxYiKC8kkn.jpg",
+      "tmdbId": 3131
+    },
+    {
+      "name": "Far from Heaven",
+      "awards": {
+        "critics": "X",
+        "lafca": "X",
+        "nyfcc": "Y"
+      },
+      "posterPath": "/9gQuvFDRPLx39smUvyafm36tp0d.jpg",
+      "tmdbId": 10712
+    },
+    {
+      "name": "About a Boy",
+      "awards": {
+        "gg": "X",
+        "afi": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/qoZ1bD0q9EFqcNiEYbEigsRcNCt.jpg",
+      "tmdbId": 245
+    },
+    {
+      "name": "Adaptation.",
+      "awards": {
+        "gg": "X",
+        "afi": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg",
+      "tmdbId": 2757
+    },
+    {
+      "name": "Antwone Fisher",
+      "awards": {
+        "afi": "Y"
+      },
+      "posterPath": "/j9lCK1aFXqMO3hzhGiqCNU8coIX.jpg",
+      "tmdbId": 13435
+    },
+    {
+      "name": "Frida",
+      "awards": {
+        "afi": "Y"
+      },
+      "posterPath": "/a4hgR6aKoohB6MHni171jbi9BkU.jpg",
+      "tmdbId": 1360
+    },
+    {
+      "name": "The Quiet American",
+      "awards": {
+        "afi": "Y"
+      },
+      "posterPath": "/vA0kDUkwUhjS9wedIx1zmPnXPer.jpg",
+      "tmdbId": 8198
+    },
+    {
+      "name": "My Big Fat Greek Wedding",
+      "awards": {
+        "gg": "X",
+        "sag": "X",
+        "pga": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/lfPqApnLVPsYfdbpSHNnHIxTdmd.jpg",
+      "tmdbId": 302688
+    },
+    {
+      "name": "Adaptation",
+      "awards": {
+        "critics": "X",
+        "sag": "X",
+        "pga": "X"
+      },
+      "posterPath": "/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg",
+      "tmdbId": 2757
+    },
+    {
+      "name": "Road to Perdition",
+      "awards": {
+        "critics": "X",
+        "pga": "X"
+      },
+      "posterPath": "/loSpBeirRfTPJ3cMIqpQArstGhh.jpg",
+      "tmdbId": 4147
+    },
+    {
+      "name": "Nicholas Nickleby",
+      "awards": {
+        "gg": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/uLilCY2We3Ore9Ke7CdafntHvmT.jpg",
+      "tmdbId": 29339
+    },
+    {
+      "name": "Catch Me If You Can",
+      "awards": {
+        "critics": "X"
+      },
+      "posterPath": "/sdYgEkKCDPWNU6KnoL4qd8xZ4w7.jpg",
+      "tmdbId": 640
+    },
+    {
+      "name": "Ice Age",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/gLhHHZUzeseRXShoDyC4VqLgsNv.jpg",
+      "tmdbId": 425
+    },
+    {
+      "name": "Lilo & Stitch",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/ckQzKpQJO4ZQDCN5evdpKcfm7Ys.jpg",
+      "tmdbId": 552524
+    },
+    {
+      "name": "Monsters, Inc.",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/wFSpyMsp7H0ttERbxY7Trlv8xry.jpg",
+      "tmdbId": 585
+    },
+    {
+      "name": "Spirit: Stallion of the Cimarron",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/cUgYrz4twiJ3QgVGpRfey984NIB.jpg",
+      "tmdbId": 9023
+    }
+  ],
+  "best-director": [
+    {
+      "name": "Roman Polanski",
+      "film": "The Pianist",
+      "awards": {
+        "oscar": "Y",
+        "bafta": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/60UYC6apdoC8VBh62WCkZ2LPGPk.jpg",
+      "tmdbId": 3556
+    },
+    {
+      "name": "Martin Scorsese",
+      "film": "Gangs of New York",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
+      "tmdbId": 1032
+    },
+    {
+      "name": "Pedro Almodóvar",
+      "film": "Talk to Her",
+      "awards": {
+        "oscar": "X",
+        "lafca": "Y"
+      },
+      "profilePath": "/dKlaXJk3NLcsC1CKMx6xmyW5BZD.jpg",
+      "tmdbId": 309
+    },
+    {
+      "name": "Todd Haynes",
+      "awards": {
+        "lafca": "X",
+        "nyfcc": "Y"
+      },
+      "film": "Far from Heaven",
+      "profilePath": "/wBDazO2j49uoquoHTEDxcniyGGC.jpg",
+      "tmdbId": 16863
+    },
+    {
+      "name": "Steven Spielberg",
+      "film": "Catch Me If You Can",
+      "awards": {
+        "critics": "Y"
+      },
+      "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
+      "tmdbId": 488
+    },
+    {
+      "name": "Im Kwon-taek",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "Chi-hwa-seon",
+      "profilePath": "/3fmzflxgc2q1lyRVHjNfsp80Fb0.jpg",
+      "tmdbId": 87554
+    },
+    {
+      "name": "Paul Thomas Anderson",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "Punch-Drunk Love",
+      "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
+      "tmdbId": 4762
+    },
+    {
+      "name": "Rob Marshall",
+      "film": "Chicago",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X"
+      },
+      "profilePath": "/4cTHkbMpsHHNI23HP3RHNLFoPRz.jpg",
+      "tmdbId": 17633
+    },
+    {
+      "name": "Stephen Daldry",
+      "film": "The Hours",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X"
+      },
+      "profilePath": "/jJSZVEOIyZnT70lUILjS9YVv0pb.jpg",
+      "tmdbId": 468
+    },
+    {
+      "name": "Peter Jackson",
+      "film": "The Lord of the Rings: The Two Towers",
+      "awards": {
+        "bafta": "X",
+        "gg": "X"
+      },
+      "profilePath": "/bNc908d59Ba8VDNr4eCcm4G1cR.jpg",
+      "tmdbId": 108
+    },
+    {
+      "name": "Spike Jonze",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Adaptation.",
+      "profilePath": "/x2QeqEXvi3QjgTybvZ4mmqUf4qO.jpg",
+      "tmdbId": 5953
+    },
+    {
+      "name": "Alexander Payne",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "About Schmidt"
+    }
+  ],
+  "best-actor": [
+    {
+      "name": "Daniel Day-Lewis",
+      "film": "Gangs of New York",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "bafta": "Y",
+        "gg": "X",
+        "critics": "Y",
+        "sag": "Y",
+        "lafca": "Y",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
+      "tmdbId": 11856
+    },
+    {
+      "name": "Christopher Walken",
+      "film": "Catch Me If You Can",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "Y",
+        "sag": "Y",
+        "lafca": "X"
+      },
+      "profilePath": "/ApgDL7nudR9T2GpjCG4vESgymO2.jpg",
+      "tmdbId": 4690
+    },
+    {
+      "name": "Chris Cooper",
+      "film": "Adaptation",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "bafta": "X",
+        "critics": "Y"
+      },
+      "profilePath": "/j0sQDzaDlnNAdaYhy6HRRAFi22.jpg",
+      "tmdbId": 2955
+    },
+    {
+      "name": "Chris Cooper",
+      "awards": {
+        "gg": "Y",
+        "lafca": "Y"
+      },
+      "film": "Adaptation.",
+      "role": "Leading",
+      "profilePath": "/j0sQDzaDlnNAdaYhy6HRRAFi22.jpg",
+      "tmdbId": 2955
+    },
+    {
+      "name": "Jack Nicholson",
+      "film": "About Schmidt",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "Y",
+        "sag": "X",
+        "lafca": "X"
+      },
+      "profilePath": "/hBHcQIEa6P48HQAlLZkh0eKSSkG.jpg",
+      "tmdbId": 514
+    },
+    {
+      "name": "Adrien Brody",
+      "film": "The Pianist",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "bafta": "X",
+        "gg": "X",
+        "sag": "X"
+      },
+      "profilePath": "/qBc7ahQrpVpcllaZ5hkivsOEb3C.jpg",
+      "tmdbId": 3490
+    },
+    {
+      "name": "Richard Gere",
+      "awards": {
+        "gg": "Y",
+        "sag": "X"
+      },
+      "film": "Chicago",
+      "role": "Leading",
+      "profilePath": "/lWjnKsszeYaY7McFPyyQxK2gONV.jpg",
+      "tmdbId": 1205
+    },
+    {
+      "name": "Olivier Gourmet",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "The Son",
+      "profilePath": "/6FQNMThslrNxHimAN2BBCtTYeUM.jpg",
+      "tmdbId": 45152
+    },
+    {
+      "name": "Dennis Quaid",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Far from Heaven",
+      "role": "Supporting",
+      "profilePath": "/lMaDAJHzsKH7U3dln2B3kY3rOhE.jpg",
+      "tmdbId": 6065
+    },
+    {
+      "name": "Paul Newman",
+      "film": "Road to Perdition",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/bP2fByqNR7BorsUNuD6nSm0u2vJ.jpg",
+      "tmdbId": 3636
+    },
+    {
+      "name": "Nicolas Cage",
+      "film": "Adaptation",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "sag": "X"
+      },
+      "profilePath": "/y1RtezurZYveYkVNRht7CwEgSYY.jpg",
+      "tmdbId": 2963
+    },
+    {
+      "name": "Michael Caine",
+      "film": "The Quiet American",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X"
+      },
+      "profilePath": "/bVZRMlpjTAO2pJK6v90buFgVbSW.jpg",
+      "tmdbId": 3895
+    },
+    {
+      "name": "Ed Harris",
+      "film": "The Hours",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X"
+      },
+      "profilePath": "/kUbUA70WPiosPT4kBJMWtGk0ASd.jpg",
+      "tmdbId": 228
+    },
+    {
+      "name": "John C. Reilly",
+      "film": "Chicago",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X"
+      },
+      "profilePath": "/iDQ8w4qcxU3le5ZWoCKpHs1QNok.jpg",
+      "tmdbId": 4764
+    },
+    {
+      "name": "Alfred Molina",
+      "film": "Frida",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/nJo91Czesn6z0d0pkfbDoVZY3sg.jpg",
+      "tmdbId": 658
+    },
+    {
+      "name": "Leonardo DiCaprio",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Catch Me If You Can",
+      "role": "Leading",
+      "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
+      "tmdbId": 6193
+    },
+    {
+      "name": "Nicolas Cage",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Adaptation.",
+      "role": "Leading",
+      "profilePath": "/y1RtezurZYveYkVNRht7CwEgSYY.jpg",
+      "tmdbId": 2963
+    },
+    {
+      "name": "Kieran Culkin",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Igby Goes Down",
+      "role": "Leading",
+      "profilePath": "/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg",
+      "tmdbId": 18793
+    },
+    {
+      "name": "Hugh Grant",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "About a Boy",
+      "role": "Leading",
+      "profilePath": "/dvV843fOuzsEPXHtFvdzsHpy1rC.jpg",
+      "tmdbId": 3291
+    },
+    {
+      "name": "Adam Sandler",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Punch-Drunk Love",
+      "role": "Leading",
+      "profilePath": "/iTMnXrPfC1rmom6a9q4hy6YSJWG.jpg",
+      "tmdbId": 19292
+    },
+    {
+      "name": "Dennis Quaid",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Far From Heaven",
+      "role": "Leading",
+      "profilePath": "/lMaDAJHzsKH7U3dln2B3kY3rOhE.jpg",
+      "tmdbId": 6065
+    },
+    {
+      "name": "Robin Williams",
+      "film": "One Hour Photo",
+      "role": "Leading",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/iYdeP6K0qz44Wg2Nw9LPJGMBkQ5.jpg",
+      "tmdbId": 2157
+    },
+    {
+      "name": "Chris Cooper",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "John Laroche",
+      "role": "Supporting",
+      "profilePath": "/j0sQDzaDlnNAdaYhy6HRRAFi22.jpg",
+      "tmdbId": 2955
+    },
+    {
+      "name": "Ed Harris",
+      "awards": {
+        "sag": "X"
+      },
+      "role": "Supporting",
+      "profilePath": "/kUbUA70WPiosPT4kBJMWtGk0ASd.jpg",
+      "tmdbId": 228
+    },
+    {
+      "name": "Alfred Molina",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "Diego Rivera",
+      "role": "Supporting",
+      "profilePath": "/nJo91Czesn6z0d0pkfbDoVZY3sg.jpg",
+      "tmdbId": 658
+    },
+    {
+      "name": "Dennis Quaid",
+      "awards": {
+        "sag": "X"
+      },
+      "role": "Supporting",
+      "profilePath": "/lMaDAJHzsKH7U3dln2B3kY3rOhE.jpg",
+      "tmdbId": 6065
+    }
+  ],
+  "best-actress": [
+    {
+      "name": "Nicole Kidman",
+      "film": "The Hours",
+      "role": "Leading",
+      "awards": {
+        "oscar": "Y",
+        "bafta": "Y",
+        "gg": "Y",
+        "critics": "X",
+        "sag": "X"
+      },
+      "profilePath": "/n1xlczx1w44DqUkJvJtAGJf9fyx.jpg",
+      "tmdbId": 2227
+    },
+    {
+      "name": "Catherine Zeta-Jones",
+      "film": "Chicago",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "Y",
+        "bafta": "Y",
+        "gg": "X",
+        "critics": "Y"
+      },
+      "profilePath": "/bBZKAbjNCGS9VpDKaK6TWGsL3ws.jpg",
+      "tmdbId": 1922
+    },
+    {
+      "name": "Julianne Moore",
+      "film": "Far from Heaven",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "critics": "Y",
+        "sag": "X",
+        "lafca": "Y"
+      },
+      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
+      "tmdbId": 1231
+    },
+    {
+      "name": "Diane Lane",
+      "film": "Unfaithful",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X",
+        "sag": "X",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/6OfP3vFMuCL51zamFKgb8aS74hs.jpg",
+      "tmdbId": 2882
+    },
+    {
+      "name": "Renée Zellweger",
+      "film": "Chicago",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "Y"
+      },
+      "profilePath": "/u4wQXVYhN9OOimHn5hbWKefdjjG.jpg",
+      "tmdbId": 9137
+    },
+    {
+      "name": "Meryl Streep",
+      "awards": {
+        "gg": "Y"
+      },
+      "film": "Adaptation.",
+      "role": "Leading",
+      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
+      "tmdbId": 5064
+    },
+    {
+      "name": "Renée Zellweger",
+      "awards": {
+        "sag": "Y"
+      },
+      "film": "Salma Hayek",
+      "role": "Leading",
+      "profilePath": "/u4wQXVYhN9OOimHn5hbWKefdjjG.jpg",
+      "tmdbId": 9137
+    },
+    {
+      "name": "Catherine Zeta-Jones",
+      "awards": {
+        "sag": "Y"
+      },
+      "film": "Kathy Bates",
+      "role": "Supporting",
+      "profilePath": "/bBZKAbjNCGS9VpDKaK6TWGsL3ws.jpg",
+      "tmdbId": 1922
+    },
+    {
+      "name": "Kati Outinen",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "The Man Without a Past",
+      "profilePath": "/cQSSc5IPpU8BoJsQw7EjWLPt98C.jpg",
+      "tmdbId": 5999
+    },
+    {
+      "name": "Edie Falco",
+      "awards": {
+        "lafca": "Y"
+      },
+      "film": "Sunshine State",
+      "profilePath": "/jS2Hnr5OmntpX0J7EpH70zAG0mz.jpg",
+      "tmdbId": 36190
+    },
+    {
+      "name": "Patricia Clarkson",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Far from Heaven",
+      "role": "Supporting",
+      "profilePath": "/rHHM9G83fpBAcFathbSyV4Tot5j.jpg",
+      "tmdbId": 1276
+    },
+    {
+      "name": "Salma Hayek",
+      "film": "Frida",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X",
+        "sag": "X"
+      },
+      "profilePath": "/1qfYF7NGRObmeKR7IVXUFVIC0CN.jpg",
+      "tmdbId": 3136
+    },
+    {
+      "name": "Kathy Bates",
+      "film": "About Schmidt",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "critics": "X",
+        "lafca": "X"
+      },
+      "profilePath": "/nP7zRmXJyMyj2OohclSSo6JAEbD.jpg",
+      "tmdbId": 8534
+    },
+    {
+      "name": "Queen Latifah",
+      "film": "Chicago",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X"
+      },
+      "profilePath": "/fnOghG8JjYDicgNrsy80mKdwj5B.jpg",
+      "tmdbId": 15758
+    },
+    {
+      "name": "Meryl Streep",
+      "film": "Adaptation",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "critics": "X"
+      },
+      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
+      "tmdbId": 5064
+    },
+    {
+      "name": "Julianne Moore",
+      "film": "The Hours",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X"
+      },
+      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
+      "tmdbId": 1231
+    },
+    {
+      "name": "Meryl Streep",
+      "film": "The Hours",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X"
+      },
+      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
+      "tmdbId": 5064
+    },
+    {
+      "name": "Halle Berry",
+      "film": "Monster's Ball",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/yfAJMERSlDIZD1iy6Aab8bArcCK.jpg",
+      "tmdbId": 4587
+    },
+    {
+      "name": "Toni Collette",
+      "film": "About a Boy",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/lzXRh16qe4HHeBN6tMyw0DHvaMn.jpg",
+      "tmdbId": 3051
+    },
+    {
+      "name": "Julianne Moore",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Far From Heaven",
+      "role": "Leading",
+      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
+      "tmdbId": 1231
+    },
+    {
+      "name": "Maggie Gyllenhaal",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Secretary",
+      "role": "Leading",
+      "profilePath": "/vsfkWdYWmA9CpzMHTJzrFxlDnEZ.jpg",
+      "tmdbId": 1579
+    },
+    {
+      "name": "Goldie Hawn",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "The Banger Sisters",
+      "role": "Leading",
+      "profilePath": "/vfJ4qaIp5KnyqmkrpXgcdLopn7b.jpg",
+      "tmdbId": 18892
+    },
+    {
+      "name": "Nia Vardalos",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "My Big Fat Greek Wedding",
+      "role": "Leading",
+      "profilePath": "/vEsVp3bbVG72BBPJW3ciIcsUOX5.jpg",
+      "tmdbId": 54645
+    },
+    {
+      "name": "Cameron Diaz",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Gangs of New York",
+      "role": "Leading",
+      "profilePath": "/d4f4cQ9EiYuvNMjT1IB2h06KoRx.jpg",
+      "tmdbId": 6941
+    },
+    {
+      "name": "Susan Sarandon",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Igby Goes Down",
+      "role": "Leading",
+      "profilePath": "/jR6l2EfvvGA8qCzZ7MB5FT9ZLkq.jpg",
+      "tmdbId": 4038
+    },
+    {
+      "name": "Kathy Bates",
+      "awards": {
+        "sag": "X"
+      },
+      "role": "Supporting",
+      "profilePath": "/nP7zRmXJyMyj2OohclSSo6JAEbD.jpg",
+      "tmdbId": 8534
+    },
+    {
+      "name": "Michelle Pfeiffer",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "White Oleander",
+      "role": "Supporting",
+      "profilePath": "/oGUmQBU87QXAsnaGleYaAjAXSlj.jpg",
+      "tmdbId": 1160
+    },
+    {
+      "name": "Queen Latifah",
+      "awards": {
+        "sag": "X"
+      },
+      "role": "Supporting",
+      "profilePath": "/fnOghG8JjYDicgNrsy80mKdwj5B.jpg",
+      "tmdbId": 15758
+    },
+    {
+      "name": "Isabelle Huppert",
+      "awards": {
+        "lafca": "X"
+      },
+      "film": "The Piano Teacher",
+      "profilePath": "/wGG9v1Uci3sfrbjt0bRXkLrTqjY.jpg",
+      "tmdbId": 17882
+    }
+  ]
+}

@@ -15,28 +15,18 @@
     }
 
     .nav-logo {
-        font-size: 14px;
+        font-size: 19px;
+        /* Increased legibility */
     }
 
-    .nav-links {
-        display: none;
-        /* Hide nav links on mobile - use swipe */
+    /* Hide sync status on mobile */
+    .sync-status,
+    .sync-dot,
+    .connection-status {
+        display: none !important;
     }
 
-    .nav-year-select {
-        font-size: 12px;
-        padding: 4px 20px 4px 8px;
-    }
-
-    .theme-toggle {
-        display: none;
-        /* Hide on mobile */
-    }
-
-    .sync-status {
-        display: none;
-        /* Hide on mobile */
-    }
+    /* nav-links, theme-toggle visibility handled by styles.css now */
 
     /* ============ MAIN CONTENT ============ */
     body {
@@ -48,10 +38,30 @@
         padding: 8px 0;
     }
 
+    .stats-container,
+    .predictions-container {
+        height: calc(100vh - 56px);
+        padding: 8px 0;
+        overflow-y: auto;
+    }
+
     .category-title-section {
         padding: 0 16px;
-        margin-bottom: 8px;
-        margin-top: 8px;
+        margin-bottom: 2px;
+        margin-top: 4px;
+        padding-bottom: 8px;
+        /* Give some space for the line inside this container if it exists */
+        position: relative;
+    }
+
+    /* Move line closer to text */
+    .category-title-section::after {
+        bottom: 2px !important;
+        width: 100%;
+        /* Make it full width if requested, or keep small? User said 'white line' */
+        /* If the user sees a WHITE line, it might be the card border or something else? 
+           But let's assume it's the title decoration. 
+           Wait, user said 'Attaccata alla tabella'. */
     }
 
     .category-title {
@@ -76,6 +86,11 @@
     }
 
     /* ============ TABLE - MOBILE OPTIMIZED ============ */
+    /* Hide header completely on mobile as requested */
+    thead {
+        display: none !important;
+    }
+
     /* Hide all award columns on mobile - show only name column */
     th:not(:first-child),
     td:not(:first-child) {
@@ -311,6 +326,26 @@
         font-size: 14px;
     }
 
+    /* Header Layout: Logo Left, Actions Right */
+    .nav-container {
+        justify-content: space-between;
+        padding: 0 12px;
+    }
+
+    .nav-logo {
+        position: static;
+        transform: none;
+        max-width: 50%;
+        /* Give it space but don't let it take everything */
+        text-align: left;
+    }
+
+    .nav-year-select {
+        font-size: 12px;
+        padding: 2px 16px 2px 6px;
+        height: 24px;
+    }
+
     .poster-marquee img {
         height: 26vh;
     }
@@ -328,15 +363,82 @@
         width: 100%;
     }
 
+    /* ============ STATISTICS & PREDICTIONS MOBILE ============ */
+    .stats-split-layout,
+    .stats-split-layout.layout-reverse {
+        flex-direction: column;
+        /* List first, then visuals */
+        gap: 24px;
+    }
+
+    .stats-visual-side,
+    .stats-list-side {
+        width: 100%;
+        flex: none;
+    }
+
+    .stats-visual-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns is good, 3 is too small */
+        gap: 8px;
+    }
+
+    /* Reduce text size in visual overlay */
+    .stats-visual-name {
+        font-size: 11px;
+    }
+
+    .stats-visual-count {
+        font-size: 12px;
+    }
+
+    .stats-visual-overlay {
+        padding: 8px;
+    }
+
+    /* Adjust list row padding */
+    .stats-list-row {
+        padding: 8px 0;
+    }
+
+    .stats-list-name {
+        font-size: 13px;
+        padding: 0 8px;
+    }
+
+    .stats-list-rank {
+        width: 20px;
+        font-size: 11px;
+    }
+
+    /* Winner card scaling */
+    .pred-winner-card {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+
+    .pred-winner-name {
+        font-size: 18px;
+    }
+
+    .pred-winner-percent {
+        font-size: 24px;
+    }
+
     .mobile-badge {
-        font-size: 9px;
+        font-size: 8px;
         font-weight: 700;
         text-transform: uppercase;
         color: var(--gold);
         border: 1px solid var(--gold);
-        padding: 2px 5px;
+        padding: 1px 4px;
         border-radius: 3px;
         background: rgba(212, 168, 75, 0.1);
         letter-spacing: 0.05em;
+    }
+
+    /* Hide desktop badges in Predictions to avoid duplicates */
+    .pred-badges-desktop {
+        display: none !important;
     }
 }

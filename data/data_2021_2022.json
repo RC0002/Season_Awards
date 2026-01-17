@@ -42,8 +42,8 @@
         "critics": "X",
         "nbr": "Y",
         "pga": "X",
-        "adg": "Y",
         "wga": "X",
+        "adg": "Y",
         "astra": "X"
       },
       "genre": "Drama",
@@ -61,8 +61,8 @@
         "critics": "X",
         "nbr": "Y",
         "pga": "X",
-        "adg": "X",
-        "wga": "Y"
+        "wga": "Y",
+        "adg": "X"
       },
       "genre": "Comedy",
       "posterPath": "/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
@@ -77,8 +77,8 @@
         "critics": "X",
         "nbr": "Y",
         "pga": "X",
-        "adg": "X",
-        "wga": "X"
+        "wga": "X",
+        "adg": "X"
       },
       "genre": "Comedy",
       "posterPath": "/yfz3IUoYYSY32tkb97HlUBGFsnh.jpg",
@@ -91,8 +91,8 @@
         "afi": "Y",
         "critics": "X",
         "nbr": "Y",
-        "adg": "Y",
-        "wga": "X"
+        "wga": "X",
+        "adg": "Y"
       },
       "posterPath": "/vfn1feL0V9HNSXuLLpaxAW8O6LO.jpg",
       "tmdbId": 597208
@@ -107,8 +107,8 @@
         "critics": "X",
         "nbr": "Y",
         "pga": "X",
-        "adg": "X",
         "wga": "X",
+        "adg": "X",
         "astra": "X"
       },
       "genre": "Comedy",
@@ -223,14 +223,6 @@
       "tmdbId": 763329
     },
     {
-      "name": "La scelta di Anne - L'Événement",
-      "awards": {
-        "venice": "Y"
-      },
-      "posterPath": "/f2lTAmLYpWpd8JxtJrMXFFGV9gZ.jpg",
-      "tmdbId": 793998
-    },
-    {
       "name": "Titane",
       "awards": {
         "cannes": "Y"
@@ -254,6 +246,14 @@
       },
       "posterPath": "/iUgygt3fscRoKWCV1d0C7FbM9TP.jpg",
       "tmdbId": 370172
+    },
+    {
+      "name": "La scelta di Anne - L'Événement",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/f2lTAmLYpWpd8JxtJrMXFFGV9gZ.jpg",
+      "tmdbId": 793998
     },
     {
       "name": "After Love",
@@ -288,9 +288,10 @@
     {
       "name": "The French Dispatch",
       "awards": {
-        "adg": "X",
-        "wga": "X"
+        "wga": "X",
+        "adg": "X"
       },
+      "screenplay_type": "original",
       "posterPath": "/6JXR3KJH5roiBCjWFt09xfgxHZc.jpg",
       "tmdbId": 542178
     },
@@ -477,8 +478,8 @@
       "awards": {
         "gotham": "X"
       },
-      "posterPath": "/t4tYUT1oSWOP6XKZBoclPAG96KP.jpg",
-      "tmdbId": 541524
+      "posterPath": "/mq8Zzz4bamXnUfpFpO3RWE6iwl5.jpg",
+      "tmdbId": 1142600
     },
     {
       "name": "Pig",
@@ -536,13 +537,13 @@
       "tmdbId": 1579
     },
     {
-      "name": "Jane Campion",
+      "name": "Leos Carax",
       "awards": {
-        "venice": "Y"
+        "cannes": "Y"
       },
-      "film": "Il potere del cane",
-      "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
-      "tmdbId": 10757
+      "film": "Annette",
+      "profilePath": "/88XIIn3LGljoBghXnTAPe7WBkxI.jpg",
+      "tmdbId": 27977
     },
     {
       "name": "Jane Campion",
@@ -554,13 +555,13 @@
       "tmdbId": 10757
     },
     {
-      "name": "Leos Carax",
+      "name": "Jane Campion",
       "awards": {
-        "cannes": "Y"
+        "venice": "Y"
       },
-      "film": "Annette",
-      "profilePath": "/88XIIn3LGljoBghXnTAPe7WBkxI.jpg",
-      "tmdbId": 27977
+      "film": "Il potere del cane",
+      "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
+      "tmdbId": 10757
     },
     {
       "name": "Jane Campion",
@@ -895,15 +896,6 @@
       "tmdbId": 13936
     },
     {
-      "name": "John Arcilla",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "On the Job 2: The Missing 8",
-      "profilePath": "/2K4vH6uYsA3gWABQsdlqotyMZBk.jpg",
-      "tmdbId": 625924
-    },
-    {
       "name": "Caleb Landry Jones",
       "awards": {
         "cannes": "Y"
@@ -920,6 +912,15 @@
       "film": "Titane",
       "profilePath": "/tjRKMKfsIH7MrqtN7cMPIZubSXa.jpg",
       "tmdbId": 5443
+    },
+    {
+      "name": "John Arcilla",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "On the Job 2: The Missing 8",
+      "profilePath": "/2K4vH6uYsA3gWABQsdlqotyMZBk.jpg",
+      "tmdbId": 625924
     },
     {
       "name": "Talid Ariss",
@@ -1043,7 +1044,7 @@
         "bafta": "X",
         "bifa": "X"
       },
-      "profilePath": "/wjDQ7MzciEsRwWDFbemcM1hS0aq.jpg",
+      "profilePath": "/1m9RWRRkQzJEAphJm9kQhMk1r1Q.jpg",
       "tmdbId": 1115
     },
     {
@@ -1334,7 +1335,7 @@
       },
       "film": "West Side Story",
       "role": "Supporting",
-      "profilePath": "/8HTSA2iVTsDN83OncAvFTcqxsAr.jpg",
+      "profilePath": "/hEamSutadgLbVNHch3KhJ5LfPdp.jpg",
       "tmdbId": 1437491
     },
     {
@@ -1414,7 +1415,7 @@
       },
       "film": "Being the Ricardos",
       "role": "Leading",
-      "profilePath": "/a1sAEtSkIpa3yUlQHnnDakMYXJB.jpg",
+      "profilePath": "/n1xlczx1w44DqUkJvJtAGJf9fyx.jpg",
       "tmdbId": 2227
     },
     {
@@ -1478,15 +1479,6 @@
       "tmdbId": 1335818
     },
     {
-      "name": "Penélope Cruz",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "Madres paralelas",
-      "profilePath": "/2Lbc8QXgHik1D1saPqQ5qEWwUEh.jpg",
-      "tmdbId": 955
-    },
-    {
       "name": "Kathryn Hunter",
       "awards": {
         "nyfcc": "Y"
@@ -1495,6 +1487,15 @@
       "role": "Supporting",
       "profilePath": "/ni98cNE8kOAj6kcpEVmIfi8iAsw.jpg",
       "tmdbId": 72309
+    },
+    {
+      "name": "Penélope Cruz",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Madres paralelas",
+      "profilePath": "/2Lbc8QXgHik1D1saPqQ5qEWwUEh.jpg",
+      "tmdbId": 955
     },
     {
       "name": "Vinette Robinson",
@@ -1543,7 +1544,7 @@
         "spirit": "X",
         "gotham": "X"
       },
-      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
+      "profilePath": "/vx49N2pa7hYbEc2hrpA3ZoCGtME.jpg",
       "tmdbId": 1498158
     },
     {
@@ -1662,7 +1663,7 @@
       },
       "film": "Cruella",
       "role": "Leading",
-      "profilePath": "/8NwSfyYWIIUE1cI9Xhz92b0w7WD.jpg",
+      "profilePath": "/s7PVcnnA05JcRiMtplwgK49Z2UU.jpg",
       "tmdbId": 54693
     },
     {

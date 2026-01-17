@@ -12,9 +12,9 @@
         "critics": "Y",
         "pga": "Y",
         "wga": "Y",
-        "adg": "Y",
-        "astra": "Y",
         "lafca": "Y",
+        "astra": "Y",
+        "adg": "Y",
         "spirit": "Y",
         "gotham": "Y"
       },
@@ -31,11 +31,11 @@
         "afi": "Y",
         "critics": "X",
         "pga": "X",
-        "nyfcc": "Y",
         "wga": "X",
-        "adg": "X",
-        "astra": "X",
+        "nyfcc": "Y",
         "lafca": "Y",
+        "astra": "X",
+        "adg": "X",
         "spirit": "X",
         "gotham": "X"
       },
@@ -54,8 +54,8 @@
         "critics": "X",
         "pga": "X",
         "wga": "X",
-        "adg": "X",
-        "astra": "X"
+        "astra": "X",
+        "adg": "X"
       },
       "genre": "Drama",
       "posterPath": "/h7llKkqkkJtJrTOaDLuVeUYDQ7I.jpg",
@@ -103,8 +103,8 @@
         "critics": "X",
         "pga": "X",
         "wga": "X",
-        "adg": "X",
-        "astra": "X"
+        "astra": "X",
+        "adg": "X"
       },
       "genre": "Drama",
       "posterPath": "/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
@@ -119,8 +119,8 @@
         "nbr": "Y",
         "critics": "X",
         "pga": "X",
-        "adg": "X",
-        "astra": "X"
+        "astra": "X",
+        "adg": "X"
       },
       "genre": "Drama",
       "posterPath": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
@@ -169,8 +169,8 @@
         "afi": "Y",
         "critics": "X",
         "pga": "X",
-        "adg": "X",
-        "astra": "X"
+        "astra": "X",
+        "adg": "X"
       },
       "genre": "Drama",
       "posterPath": "/rva3UhKaMeiB0Vej5A2pm1leX7K.jpg",
@@ -247,20 +247,20 @@
       "tmdbId": 854239
     },
     {
-      "name": "Tutta la bellezza e il dolore - All the Beauty and the Bloodshed",
-      "awards": {
-        "venice": "Y"
-      },
-      "posterPath": "/cvO51xxtIUHc5w5ZgFsigiFaUaO.jpg",
-      "tmdbId": 1004663
-    },
-    {
       "name": "Guillermo del Toro's Pinocchio",
       "awards": {
         "annie": "Y"
       },
       "posterPath": "/vx1u0uwxdlhV2MUzj4VlcMB0N6m.jpg",
       "tmdbId": 555604
+    },
+    {
+      "name": "Tutta la bellezza e il dolore - All the Beauty and the Bloodshed",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/cvO51xxtIUHc5w5ZgFsigiFaUaO.jpg",
+      "tmdbId": 1004663
     },
     {
       "name": "Black Panther: Wakanda Forever",
@@ -453,8 +453,8 @@
         "oscar": "X",
         "critics": "X",
         "dga": "X",
-        "astra": "X",
         "lafca": "Y",
+        "astra": "X",
         "spirit": "X"
       },
       "profilePath": "/KR12bc20pVnlTr0wir8XuxW3Pt.jpg",
@@ -466,8 +466,8 @@
       "awards": {
         "critics": "X",
         "nyfcc": "Y",
-        "astra": "X",
-        "lafca": "X"
+        "lafca": "X",
+        "astra": "X"
       },
       "profilePath": "/g7jXGAVT8T5vq81fO5JWDleDc75.jpg",
       "tmdbId": 147021
@@ -490,6 +490,13 @@
       }
     },
     {
+      "name": "Daniel Kwan & Daniel Scheinert",
+      "film": "Everything Everywhere All At Once",
+      "awards": {
+        "dga": "Y"
+      }
+    },
+    {
       "name": "Luca Guadagnino",
       "awards": {
         "venice": "Y"
@@ -497,13 +504,6 @@
       "film": "Bones and All",
       "profilePath": "/lO2GD4s6fRloZLEhsZgBlhJQasE.jpg",
       "tmdbId": 78160
-    },
-    {
-      "name": "Daniel Kwan & Daniel Scheinert",
-      "film": "Everything Everywhere All At Once",
-      "awards": {
-        "dga": "Y"
-      }
     },
     {
       "name": "Aftersun",
@@ -633,7 +633,7 @@
         "spirit": "X"
       },
       "film": "Bodies Bodies Bodies",
-      "profilePath": "/ypsQjJrnuL1QyxHmYFnVAokpO5h.jpg",
+      "profilePath": "/su9FMcM5wKfZiSNs35OLlot4hLd.jpg",
       "tmdbId": 39847
     },
     {
@@ -675,8 +675,8 @@
         "sag": "Y",
         "critics": "Y",
         "nyfcc": "Y",
-        "astra": "Y",
         "lafca": "Y",
+        "astra": "Y",
         "spirit": "Y",
         "gotham": "Y"
       },
@@ -759,17 +759,8 @@
       },
       "film": "The Banshees of Inisherin",
       "role": "Supporting",
-      "profilePath": "/15xPjrzSbtXlbQUhmLpQUil4tCN.jpg",
+      "profilePath": "/mLEd5v9rUZqalyWnXBDAWRQZtwK.jpg",
       "tmdbId": 1290466
-    },
-    {
-      "name": "Colin Farrell",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "Gli spiriti dell'isola",
-      "profilePath": "/oyQVfpowL9eSudYhwoPGkd9WxS7.jpg",
-      "tmdbId": 72466
     },
     {
       "name": "Song Kang-ho",
@@ -779,6 +770,15 @@
       "film": "Broker",
       "profilePath": "/7dw9wIpFZ5nJZ3zqrue8t7hUUgQ.jpg",
       "tmdbId": 20738
+    },
+    {
+      "name": "Colin Farrell",
+      "awards": {
+        "venice": "Y"
+      },
+      "film": "Gli spiriti dell'isola",
+      "profilePath": "/oyQVfpowL9eSudYhwoPGkd9WxS7.jpg",
+      "tmdbId": 72466
     },
     {
       "name": "Brendan Gleeson",
@@ -807,7 +807,7 @@
         "spirit": "X",
         "gotham": "X"
       },
-      "profilePath": "/vrzZ41TGNAFgfmZjC2sOJySzBLd.jpg",
+      "profilePath": "/p4HOSwF9yUyP0x0H18LaKzsS476.jpg",
       "tmdbId": 2326151
     },
     {
@@ -817,8 +817,8 @@
       "awards": {
         "oscar": "X",
         "critics": "X",
-        "astra": "X",
         "lafca": "X",
+        "astra": "X",
         "spirit": "X",
         "gotham": "X"
       },
@@ -866,7 +866,7 @@
         "sag": "X",
         "critics": "X"
       },
-      "profilePath": "/15xPjrzSbtXlbQUhmLpQUil4tCN.jpg",
+      "profilePath": "/mLEd5v9rUZqalyWnXBDAWRQZtwK.jpg",
       "tmdbId": 1290466
     },
     {
@@ -1084,7 +1084,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/vrzZ41TGNAFgfmZjC2sOJySzBLd.jpg",
+      "profilePath": "/p4HOSwF9yUyP0x0H18LaKzsS476.jpg",
       "tmdbId": 2326151
     },
     {
@@ -1126,8 +1126,8 @@
         "critics": "Y",
         "venice": "Y",
         "nyfcc": "Y",
-        "astra": "X",
         "lafca": "Y",
+        "astra": "X",
         "spirit": "X",
         "gotham": "X"
       },
@@ -1145,8 +1145,8 @@
         "sag": "Y",
         "nbr": "Y",
         "critics": "X",
-        "astra": "Y",
         "lafca": "X",
+        "astra": "Y",
         "spirit": "Y",
         "gotham": "X"
       },
@@ -1209,8 +1209,8 @@
         "bafta": "X",
         "sag": "X",
         "critics": "X",
-        "astra": "X",
         "lafca": "X",
+        "astra": "X",
         "gotham": "Y"
       },
       "profilePath": "/ifQcCBM5B4dIJdz4B0laO4yQuzU.jpg",
@@ -1291,7 +1291,7 @@
         "astra": "X",
         "gotham": "X"
       },
-      "profilePath": "/tRQnoEzqSq5TU0nYTzNXnLsKmET.jpg",
+      "profilePath": "/yGEw6uiSUBo838HkiCARs4BR40y.jpg",
       "tmdbId": 1360317
     },
     {
@@ -1329,7 +1329,7 @@
         "lafca": "X",
         "gotham": "X"
       },
-      "profilePath": "/jKhDQOMVQ1JP4gaUXCQg75gvsrm.jpg",
+      "profilePath": "/vx49N2pa7hYbEc2hrpA3ZoCGtME.jpg",
       "tmdbId": 1498158
     },
     {
@@ -1547,7 +1547,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/bd0qiJXHoLNpkCqABsh67AKRtjC.jpg",
+      "profilePath": "/mxdvFzjhKrRUhpZLdrwp3u00dP6.jpg",
       "tmdbId": 1639
     },
     {
