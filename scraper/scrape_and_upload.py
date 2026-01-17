@@ -101,18 +101,17 @@ HISTORICAL_AVERAGES = {
 # Based on actual nomination counts and regulation changes
 HISTORICAL_EXPECTED_OVERRIDES = {
     'oscar': {
-        # Oscar Best Picture: 5 before 2010, 10 in 2010-2011, 5-10 variable 2012-2021, 10 from 2022
-        # Using 5 for pre-2010, using actual counts for variable years
+        # Oscar Best Picture: 5 before 2010, 10 in 2010-2011, variable 5-10 in 2012-2021
+        # Using actual counts for variable years
         'best-film': {
-            (2013, 2013): 9,  # 85th: 9 nominees
-            (2014, 2014): 9,  # 86th: 9 nominees
-            (2015, 2015): 8,  # 87th: 8 nominees
-            (2016, 2016): 8,  # 88th: 8 nominees
-            (2017, 2017): 9,  # 89th: 9 nominees
-            (2018, 2018): 9,  # 90th: 9 nominees
-            (2019, 2019): 8,  # 91st: 8 nominees
-            (2020, 2020): 9,  # 92nd: 9 nominees
-            (2021, 2021): 8,  # 93rd: 8 nominees
+            (2000, 2009): 5,  # 5 nominees era (until 81st/2009)
+            # 2010-2011: 10 nominees (82nd, 83rd) - default
+            (2012, 2014): 9,  # 84th, 85th, 86th had 9
+            (2015, 2016): 8,  # 87th, 88th had 8
+            (2017, 2018): 9,  # 89th, 90th had 9
+            (2019, 2019): 8,  # 91st had 8
+            (2020, 2020): 9,  # 92nd had 9
+            (2021, 2021): 8,  # 93rd had 8
         },
     },
     'gg': {
@@ -233,10 +232,10 @@ HISTORICAL_EXPECTED_OVERRIDES = {
         # 7th Astra (2023-24): 10F, 10D, 18A (6+6+6intl), 18As (6+6+6intl)
         # 8th Astra (2024-25): 10F, 6D, 12A (6+6), 12As (6+6)
         # 9th Astra (2025-26): 12F, 6D, 24A (12+12), 24As (12+12)
-        'best-film': {(2013, 2019): 0, (2020, 2025): 10, (2026, 2026): 12},
-        'best-director': {(2013, 2021): 0, (2022, 2024): 10, (2025, 2026): 6},
-        'best-actor': {(2013, 2019): 0, (2020, 2023): 10, (2024, 2024): 18, (2025, 2025): 12, (2026, 2026): 24},
-        'best-actress': {(2013, 2019): 0, (2020, 2020): 10, (2021, 2021): 11, (2022, 2022): 10, (2023, 2023): 11, (2024, 2024): 18, (2025, 2025): 12, (2026, 2026): 24},
+        'best-film': {(2000, 2019): 0, (2020, 2025): 10, (2026, 2026): 12},
+        'best-director': {(2000, 2021): 0, (2022, 2024): 10, (2025, 2026): 6},
+        'best-actor': {(2000, 2019): 0, (2020, 2023): 10, (2024, 2024): 18, (2025, 2025): 12, (2026, 2026): 24},
+        'best-actress': {(2000, 2019): 0, (2020, 2020): 10, (2021, 2021): 11, (2022, 2022): 10, (2023, 2023): 11, (2024, 2024): 18, (2025, 2025): 12, (2026, 2026): 24},
     },
     'spirit': {
         # Spirit Awards - Wikipedia verified counts

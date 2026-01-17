@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-17T19:40:54.353965",
+  "generated": "2026-01-17T20:07:52.930437",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -7436,8 +7436,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": 10
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 5,
@@ -7800,26 +7800,26 @@
         "best-film": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 12
+          "status": "ok",
+          "expected": 0
         },
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         }
       },
       "spirit": {
@@ -7958,8 +7958,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": 10
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 5,
@@ -8322,26 +8322,26 @@
         "best-film": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 12
+          "status": "ok",
+          "expected": 0
         },
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         }
       },
       "spirit": {
@@ -8480,8 +8480,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": 10
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 5,
@@ -8844,26 +8844,26 @@
         "best-film": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 12
+          "status": "ok",
+          "expected": 0
         },
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         }
       },
       "spirit": {
@@ -9002,8 +9002,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": 10
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 5,
@@ -9366,26 +9366,26 @@
         "best-film": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 12
+          "status": "ok",
+          "expected": 0
         },
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         }
       },
       "spirit": {
@@ -9524,8 +9524,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": 10
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 5,
@@ -9888,26 +9888,26 @@
         "best-film": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 12
+          "status": "ok",
+          "expected": 0
         },
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         }
       },
       "spirit": {
@@ -10046,8 +10046,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": 10
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 5,
@@ -10410,26 +10410,26 @@
         "best-film": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 12
+          "status": "ok",
+          "expected": 0
         },
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         }
       },
       "spirit": {
@@ -10568,8 +10568,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": 10
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 5,
@@ -10932,26 +10932,26 @@
         "best-film": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 12
+          "status": "ok",
+          "expected": 0
         },
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         }
       },
       "spirit": {
@@ -11090,8 +11090,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": 10
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 5,
@@ -11454,26 +11454,26 @@
         "best-film": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 12
+          "status": "ok",
+          "expected": 0
         },
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         }
       },
       "spirit": {
@@ -11612,8 +11612,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": 10
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 5,
@@ -11976,26 +11976,26 @@
         "best-film": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 12
+          "status": "ok",
+          "expected": 0
         },
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         }
       },
       "spirit": {
@@ -12498,26 +12498,26 @@
         "best-film": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 12
+          "status": "ok",
+          "expected": 0
         },
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         }
       },
       "spirit": {
@@ -13020,26 +13020,26 @@
         "best-film": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 12
+          "status": "ok",
+          "expected": 0
         },
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         }
       },
       "spirit": {
@@ -13178,8 +13178,8 @@
         "best-film": {
           "nominations": 9,
           "winners": 1,
-          "status": "error",
-          "expected": 10
+          "status": "ok",
+          "expected": 9
         },
         "best-director": {
           "nominations": 5,
@@ -13542,26 +13542,26 @@
         "best-film": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 12
+          "status": "ok",
+          "expected": 0
         },
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 24
+          "status": "ok",
+          "expected": 0
         }
       },
       "spirit": {

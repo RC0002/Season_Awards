@@ -1253,8 +1253,13 @@ function createTableRow(entry, categoryId, index, isPerson) {
         const cell = document.createElement('td');
 
         // Check if this award covers this category
-        const coverage = CONFIG.AWARD_CATEGORIES[award.key];
-        const coversCategory = coverage === 'all' || (Array.isArray(coverage) && coverage.includes(categoryId));
+        let coverage = CONFIG.AWARD_CATEGORIES[award.key];
+        let coversCategory = coverage === 'all' || (Array.isArray(coverage) && coverage.includes(categoryId));
+
+        // Astra didn't exist before 2017 (Season 2017/2018)
+        if (award.key === 'astra' && parseInt(currentYear) < 2017) {
+            coversCategory = false;
+        }
 
         if (!coversCategory) {
             // Award doesn't cover this category - show N/A strikethrough
