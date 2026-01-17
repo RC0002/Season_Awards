@@ -1173,7 +1173,7 @@ function createTableRow(entry, categoryId, index, isPerson) {
     nameCell.innerHTML = `
         <div class="name-cell-content">
             <div class="name-text-wrapper">
-                <span class="entry-name">${entry.name}</span>${(!isPerson && entry.genre) ? `<span class="entry-meta">${entry.genre}</span>` : ''}
+                <span class="entry-name">${entry.name}</span>
                 ${filmSubtitle}
                 ${mobileBadges}
             </div>
@@ -2121,8 +2121,8 @@ function calculateOscarPredictions(yearData, historyAnalysis) {
             entry.probability = totalScore > 0 ? Math.round((entry.score / totalScore) * 100) : 0;
         });
 
-        // Filter to only show entries with at least some score
-        predictions[categoryId] = scored.filter(e => e.score > 0);
+        // Show all entries to fill the list, even if 0%
+        predictions[categoryId] = scored;
     });
 
     return predictions;
@@ -2145,106 +2145,120 @@ function renderPredictionsPage(predictions, container) {
 
     const yearDisplay = currentYear ? currentYear.replace('_', '/') : '';
 
-    const renderCategorySplit = (categoryId, index) => {
-        const entries = predictions[categoryId] || [];
-        const isPerson = categoryId !== 'best-film';
-        const isReversed = index % 2 !== 0;
+    let htmlSections = '';
+    let isReversed = false;
 
-        if (entries.length === 0) {
-            return `
-                <div class="stats-section-wide pred-section-wide">
-                    <h2 class="category-title-large">${categoryLabels[categoryId].toUpperCase()}</h2>
-                    <div class="pred-empty">Nessun dato disponibile</div>
-                </div>
-             `;
+    Object.keys(categoryLabels).forEach(categoryId => {
+        const allEntries = predictions[categoryId] || [];
+        const isPerson = categoryId !== 'best-film';
+        const isActorCategory = categoryId === 'best-actor' || categoryId === 'best-actress';
+
+        let groups = [];
+
+        // Split logic for Actor/Actress
+        if (isActorCategory) {
+            const leading = allEntries.filter(e => e.role === 'Leading');
+            const supporting = allEntries.filter(e => e.role === 'Supporting');
+
+            if (leading.length > 0 || supporting.length > 0) {
+                if (leading.length > 0) groups.push({ title: `${categoryLabels[categoryId].toUpperCase()} - LEADING`, entries: leading });
+                if (supporting.length > 0) groups.push({ title: `${categoryLabels[categoryId].toUpperCase()} - SUPPORTING`, entries: supporting });
+            } else {
+                groups.push({ title: categoryLabels[categoryId].toUpperCase(), entries: allEntries });
+            }
+        } else {
+            groups.push({ title: categoryLabels[categoryId].toUpperCase(), entries: allEntries });
         }
 
-        // Top 8 for the list
-        const topEntries = [...entries].slice(0, 8);
-        const winner = topEntries[0];
+        groups.forEach(group => {
+            const entries = group.entries;
 
-        // --- VISUAL SIDE: THE WINNER POSTER ---
-        const renderWinnerCard = (entry) => {
-            const imageUrl = isPerson && entry.profilePath
-                ? `${CONFIG.TMDB_IMAGE_BASE}w500${entry.profilePath}`
-                : (!isPerson && entry.posterPath ? `${CONFIG.TMDB_IMAGE_BASE}w500${entry.posterPath}` : '');
+            if (entries.length === 0) {
+                htmlSections += `
+                    <div class="stats-section-wide pred-section-wide">
+                        <h2 class="category-title-large">${group.title}</h2>
+                        <div class="pred-empty">Nessun dato disponibile</div>
+                    </div>
+                 `;
+            } else {
+                const topEntries = [...entries].slice(0, 8);
+                const winner = topEntries[0];
 
-            const metaText = isPerson ? (entry.role || '') : (entry.genre || '');
+                const renderWinnerCard = (entry) => {
+                    const imageUrl = isPerson && entry.profilePath
+                        ? `${CONFIG.TMDB_IMAGE_BASE}w500${entry.profilePath}`
+                        : (!isPerson && entry.posterPath ? `${CONFIG.TMDB_IMAGE_BASE}w500${entry.posterPath}` : '');
 
-            return `
-                <div class="pred-winner-card">
-                    <div class="pred-winner-poster-wrapper">
-                        ${imageUrl ? `<img src="${imageUrl}" class="pred-winner-poster" loading="lazy">` : '<div class="pred-winner-placeholder"></div>'}
-                        <div class="pred-winner-overlay">
-                             <div class="pred-winner-badge">PREDICTED WINNER</div>
-                             <div class="pred-winner-name">${entry.name}</div>
-                             ${metaText ? `<div class="pred-winner-meta">${metaText}</div>` : ''}
-                             <div class="pred-winner-percent">${entry.probability}%</div>
+                    const metaText = isPerson ? (entry.role || '') : (entry.genre || '');
+
+                    return `
+                        <div class="pred-winner-card">
+                            <div class="pred-winner-poster-wrapper">
+                                ${imageUrl ? `<img src="${imageUrl}" class="pred-winner-poster" loading="lazy">` : '<div class="pred-winner-placeholder"></div>'}
+                                <div class="pred-winner-overlay">
+                                     <div class="pred-winner-badge">PREDICTED WINNER</div>
+                                     <div class="pred-winner-name">${entry.name}</div>
+                                     ${metaText ? `<div class="pred-winner-meta">${metaText}</div>` : ''}
+                                     <div class="pred-winner-percent">${entry.probability}%</div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                };
+
+                const getBadges = (entry) => {
+                    const badges = [];
+                    if (entry.precursorWins) {
+                        entry.precursorWins.forEach(award => {
+                            badges.push(`<span class="nominee-badge badge-win">${awardLabels[award] || award.toUpperCase()}</span>`);
+                        });
+                    }
+                    const allAwards = entry.awards || {};
+                    Object.keys(allAwards).forEach(award => {
+                        if (allAwards[award] === 'Y' && (!entry.precursorWins || !entry.precursorWins.includes(award))) {
+                            badges.push(`<span class="nominee-badge badge-win">${awardLabels[award] || award.toUpperCase()}</span>`);
+                        }
+                    });
+                    return badges.join('');
+                };
+
+                const renderListItem = (entry, idx) => {
+                    const mobileBadgesHtml = getBadges(entry);
+                    const mobileBadges = mobileBadgesHtml ? `<div class="mobile-badges">${mobileBadgesHtml}</div>` : '';
+                    const metaText = isPerson ? (entry.role || '') : (entry.genre || '');
+
+                    return `
+                        <div class="stats-list-row pred-list-row ${idx === 0 ? 'is-winner-row' : ''}">
+                            <span class="stats-list-rank">${idx + 1}</span>
+                            <div class="pred-list-info">
+                                 <div class="pred-list-header">
+                                    <span class="stats-list-name" style="padding: 0;">${entry.name}</span>${metaText ? `<span class="pred-meta">${metaText}</span>` : ''}
+                                    <span class="pred-list-percent">${entry.probability}%</span>
+                                 </div>
+                                 ${mobileBadges}
+                                 <div class="pred-badges-desktop">${mobileBadgesHtml}</div>
+                            </div>
+                        </div>
+                     `;
+                };
+
+                htmlSections += `
+                    <div class="stats-section-wide pred-section-wide">
+                        <h2 class="category-title-large">${group.title}</h2>
+                        <div class="stats-split-layout ${isReversed ? 'layout-reverse' : ''}">
+                            <div class="stats-visual-side pred-visual-side">
+                                ${renderWinnerCard(winner)}
+                            </div>
+                            <div class="stats-list-side pred-list-side">
+                                ${topEntries.map((e, idx) => renderListItem(e, idx)).join('')}
+                            </div>
                         </div>
                     </div>
-                </div>
-            `;
-        };
-
-        // --- LIST SIDE ---
-        const getBadges = (entry) => {
-            const badges = [];
-            // Add precursor wins
-            if (entry.precursorWins) {
-                entry.precursorWins.forEach(award => {
-                    badges.push(`<span class="nominee-badge badge-win">${awardLabels[award] || award.toUpperCase()}</span>`);
-                });
+                `;
             }
-            // Add manual wins
-            const allAwards = entry.awards || {};
-            Object.keys(allAwards).forEach(award => {
-                if (allAwards[award] === 'Y' && (!entry.precursorWins || !entry.precursorWins.includes(award))) {
-                    badges.push(`<span class="nominee-badge badge-win">${awardLabels[award] || award.toUpperCase()}</span>`);
-                }
-            });
-            return badges.join('');
-        };
-
-        const renderListItem = (entry, idx) => {
-            // Mobile badges
-            const mobileBadgesHtml = getBadges(entry);
-            const mobileBadges = mobileBadgesHtml ? `<div class="mobile-badges">${mobileBadgesHtml}</div>` : '';
-
-            const metaText = isPerson ? (entry.role || '') : (entry.genre || '');
-
-            return `
-                <div class="stats-list-row pred-list-row ${idx === 0 ? 'is-winner-row' : ''}">
-                    <span class="stats-list-rank">${idx + 1}</span>
-                    <div class="pred-list-info">
-                         <div class="pred-list-header">
-                            <span class="stats-list-name" style="padding: 0;">${entry.name}</span>${metaText ? `<span class="pred-meta">${metaText}</span>` : ''}
-                            <span class="pred-list-percent">${entry.probability}%</span>
-                         </div>
-                         ${mobileBadges}
-                         <div class="pred-badges-desktop">${mobileBadgesHtml}</div>
-                    </div>
-                </div>
-             `;
-        };
-
-        return `
-            <div class="stats-section-wide pred-section-wide">
-                <h2 class="category-title-large">${categoryLabels[categoryId].toUpperCase()}</h2>
-                
-                <div class="stats-split-layout ${isReversed ? 'layout-reverse' : ''}">
-                    <!-- VISUAL SIDE (Winner) -->
-                    <div class="stats-visual-side pred-visual-side">
-                        ${renderWinnerCard(winner)}
-                    </div>
-
-                    <!-- LIST SIDE -->
-                    <div class="stats-list-side pred-list-side">
-                        ${topEntries.map((e, idx) => renderListItem(e, idx)).join('')}
-                    </div>
-                </div>
-            </div>
-        `;
-    };
+            isReversed = !isReversed;
+        });
+    });
 
     const html = `
         <div class="stats-header">
@@ -2253,7 +2267,7 @@ function renderPredictionsPage(predictions, container) {
         </div>
         
         <div class="stats-content-wrapper">
-             ${Object.keys(categoryLabels).map((catId, idx) => renderCategorySplit(catId, idx)).join('')}
+             ${htmlSections}
         </div>
         
         <div class="pred-analysis-section">
@@ -2267,9 +2281,8 @@ function renderPredictionsPage(predictions, container) {
     `;
 
     container.innerHTML = html;
-
-
 }
+
 
 function renderPredictionCharts(predictions, categoryLabels) {
     if (typeof Chart === 'undefined') {

@@ -2,41 +2,42 @@
   "best-film": [
     {
       "name": "One Battle After Another",
+      "genre": "Comedy",
       "awards": {
         "gg": "Y",
         "sag": "X",
         "critics": "Y",
-        "afi": "Y",
         "nbr": "Y",
-        "nyfcc": "Y",
+        "afi": "Y",
         "pga": "X",
+        "nyfcc": "Y",
         "adg": "X",
         "astra": "Y",
         "lafca": "Y",
         "gotham": "Y"
       },
       "posterPath": "/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
-      "genre": "Drama",
       "tmdbId": 1054867
     },
     {
       "name": "Sinners",
+      "genre": "Drama",
       "awards": {
         "gg": "X",
         "sag": "X",
         "critics": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "pga": "X",
         "adg": "X",
         "astra": "Y"
       },
       "posterPath": "/qTvFWCGeGXgBRaINLY1zqgTPSpn.jpg",
-      "genre": "Thriller",
       "tmdbId": 1233413
     },
     {
       "name": "Hamnet",
+      "genre": "Drama",
       "awards": {
         "gg": "Y",
         "sag": "X",
@@ -48,17 +49,17 @@
         "gotham": "X"
       },
       "posterPath": "/61xMzN4h8iLk0hq6oUzr9Ts6GE9.jpg",
-      "genre": "Drama",
       "tmdbId": 858024
     },
     {
       "name": "Frankenstein",
+      "genre": "Drama",
       "awards": {
         "gg": "X",
         "sag": "X",
         "critics": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "pga": "X",
         "adg": "X",
         "astra": "X"
@@ -68,12 +69,13 @@
     },
     {
       "name": "Marty Supreme",
+      "genre": "Comedy",
       "awards": {
         "gg": "X",
         "sag": "X",
         "critics": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "pga": "X",
         "adg": "X",
         "astra": "X"
@@ -85,8 +87,8 @@
       "name": "Train Dreams",
       "awards": {
         "critics": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "pga": "X",
         "astra": "X",
         "spirit": "X",
@@ -99,8 +101,8 @@
       "name": "Wicked: For Good",
       "awards": {
         "critics": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "adg": "X",
         "astra": "X"
       },
@@ -109,6 +111,7 @@
     },
     {
       "name": "It Was Just an Accident",
+      "genre": "Drama",
       "awards": {
         "gg": "X",
         "afi": "Y",
@@ -122,8 +125,8 @@
       "name": "Jay Kelly",
       "awards": {
         "critics": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "astra": "X"
       },
       "posterPath": "/lEXYpY9X17pGC7xYYy17Guv0L3J.jpg",
@@ -132,8 +135,8 @@
     {
       "name": "Avatar: Fire and Ash",
       "awards": {
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "adg": "X"
       },
       "posterPath": "/lE9KpVwgeWHMwgwkNaeH5nEFh20.jpg",
@@ -141,6 +144,7 @@
     },
     {
       "name": "Bugonia",
+      "genre": "Comedy",
       "awards": {
         "gg": "X",
         "critics": "X",
@@ -198,6 +202,7 @@
     },
     {
       "name": "Sentimental Value",
+      "genre": "Drama",
       "awards": {
         "gg": "X",
         "critics": "X",
@@ -209,6 +214,7 @@
     },
     {
       "name": "The Secret Agent",
+      "genre": "Drama",
       "awards": {
         "gg": "X",
         "lafca": "X"
@@ -218,6 +224,7 @@
     },
     {
       "name": "No Other Choice",
+      "genre": "Comedy",
       "awards": {
         "gg": "X",
         "astra": "X"
@@ -236,6 +243,7 @@
     },
     {
       "name": "Blue Moon",
+      "genre": "Comedy",
       "awards": {
         "gg": "X"
       },
@@ -244,10 +252,11 @@
     },
     {
       "name": "Nouvelle Vague",
+      "genre": "Comedy",
       "awards": {
         "gg": "X"
       },
-      "posterPath": "/mNcqF4IBrIV7zitgwM6EnpPRzli.jpg",
+      "posterPath": "/xXIfRSL38VcdJfEfqrpwWbRYjKG.jpg",
       "tmdbId": 1254808
     },
     {
@@ -474,15 +483,6 @@
       "tmdbId": 1056121
     },
     {
-      "name": "Kleber Mendonça Filho",
-      "awards": {
-        "cannes": "Y"
-      },
-      "film": "The Secret Agent",
-      "profilePath": "/7jOzp98FiL6C22tphTHEPWAhK11.jpg",
-      "tmdbId": 1016214
-    },
-    {
       "name": "Benny Safdie",
       "awards": {
         "venice": "Y"
@@ -490,6 +490,15 @@
       "film": "The Smashing Machine",
       "profilePath": "/d1LVZAt1W2Wg6yTWRWkDkkyyGI.jpg",
       "tmdbId": 227564
+    },
+    {
+      "name": "Kleber Mendonça Filho",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "The Secret Agent",
+      "profilePath": "/7jOzp98FiL6C22tphTHEPWAhK11.jpg",
+      "tmdbId": 1016214
     },
     {
       "name": "Akinola Davies Jr.",
@@ -1255,15 +1264,6 @@
       "tmdbId": 134774
     },
     {
-      "name": "Nadia Melliti",
-      "awards": {
-        "cannes": "Y"
-      },
-      "film": "The Little Sister",
-      "profilePath": "/cuuwXDvLXWroFlOhfB1Xf2eYamw.jpg",
-      "tmdbId": 5375369
-    },
-    {
       "name": "Xin Zhilei",
       "awards": {
         "venice": "Y"
@@ -1271,6 +1271,15 @@
       "film": "Rì guà zhōngtiān",
       "profilePath": "/aFhdcO9nzA1vbABsqDmGkaTLsjg.jpg",
       "tmdbId": 1569934
+    },
+    {
+      "name": "Nadia Melliti",
+      "awards": {
+        "cannes": "Y"
+      },
+      "film": "The Little Sister",
+      "profilePath": "/cuuwXDvLXWroFlOhfB1Xf2eYamw.jpg",
+      "tmdbId": 5375369
     },
     {
       "name": "Jennifer Lawrence",

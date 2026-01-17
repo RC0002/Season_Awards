@@ -2122,6 +2122,7 @@ def scrape_award(award_key, year):
 
         
         role = None
+        genre = None
         key = None
         cat_type = None
         
@@ -2155,6 +2156,11 @@ def scrape_award(award_key, year):
                 if 'animated' not in header_text and 'non-english' not in header_text:
                     key = 'best-film'
                     cat_type = 'film'
+                    # Set genre based on header text
+                    if 'drama' in header_text:
+                        genre = 'Drama'
+                    elif 'musical' in header_text or 'comedy' in header_text:
+                        genre = 'Comedy'
             elif 'director' in header_text:
                 key = 'best-director'
                 cat_type = 'director'
@@ -2247,6 +2253,10 @@ def scrape_award(award_key, year):
         if role:
             for nom in nominees:
                 nom['role'] = role
+                
+        if genre:
+            for nom in nominees:
+                nom['genre'] = genre
         
         # Mark with award key
         for nom in nominees:
