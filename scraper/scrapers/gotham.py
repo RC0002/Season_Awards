@@ -53,7 +53,6 @@ def scrape_gotham(year):
     if not soup:
         return {}
     
-    return scrape_gotham_v2_logic(soup)
     
     results = {
         'best-film': [],
@@ -93,6 +92,7 @@ def scrape_gotham(year):
             category_type = 'lead-performance'
         elif 'supporting performance' in category_text or 'outstanding supporting' in category_text:
             category_type = 'supporting-performance'
+
         else:
             continue  # Skip other categories
         

@@ -3020,6 +3020,12 @@ body.light-mode .fd-award-item.nominee .fd-award-status {
     border-color: rgba(212, 168, 75, 0.5);
 }
 
+.nominee-badge.badge-nom {
+    background: rgba(192, 192, 192, 0.2);
+    color: #c0c0c0;
+    border-color: rgba(192, 192, 192, 0.5);
+}
+
 /* Prediction Card */
 .pred-card {
     display: flex;
@@ -3086,6 +3092,14 @@ body.light-mode .fd-award-item.nominee .fd-award-status {
 .pred-film {
     font-size: 11px;
     color: var(--muted);
+}
+
+.pred-list-poster-mobile {
+    display: none;
+}
+
+.mobile-poster-wrapper {
+    display: none;
 }
 
 .pred-pills {

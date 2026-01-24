@@ -5,10 +5,11 @@
       "awards": {
         "oscar": "X",
         "gg": "X",
-        "afi": "Y",
         "sag": "Y",
-        "wga": "Y",
-        "nyfcc": "Y"
+        "afi": "Y",
+        "nbr": "Y",
+        "nyfcc": "Y",
+        "wga": "Y"
       },
       "genre": "Drama",
       "posterPath": "/jbccmnqE4oAPI67bApgt2JiRPz8.jpg",
@@ -18,11 +19,17 @@
       "name": "Gladiator",
       "awards": {
         "oscar": "Y",
+        "gg": {
+          "winner": true
+        },
         "bafta": "Y",
-        "afi": "Y",
         "sag": "X",
-        "pga": "Y"
+        "afi": "Y",
+        "nbr": "Y",
+        "pga": "Y",
+        "critics": "Y"
       },
+      "genre": "Drama",
       "posterPath": "/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
       "tmdbId": 98
     },
@@ -30,17 +37,40 @@
       "name": "You Can Count on Me",
       "awards": {
         "afi": "Y",
+        "nbr": "Y",
         "wga": "Y"
       },
       "posterPath": "/7mGFmij1FZD5eUnNwvUjmpqrDl6.jpg",
       "tmdbId": 14295
     },
     {
+      "name": "Wonder Boys",
+      "awards": {
+        "gg": "X",
+        "afi": "Y",
+        "nbr": "Y",
+        "lafca": "X",
+        "wga": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/c9CvpQSOriSanl1Uow2A22sQ8SL.jpg",
+      "tmdbId": 553091
+    },
+    {
+      "name": "Before Night Falls",
+      "awards": {
+        "afi": "Y",
+        "nbr": "Y"
+      },
+      "posterPath": "/kb2dqj73cfmt6qHAh1ySIlVm6v0.jpg",
+      "tmdbId": 5001
+    },
+    {
       "name": "Erin Brockovich",
       "awards": {
         "oscar": "X",
-        "bafta": "X",
         "gg": "X",
+        "bafta": "X",
         "afi": "Y",
         "pga": "X",
         "wga": "X"
@@ -48,6 +78,20 @@
       "genre": "Drama",
       "posterPath": "/jEMvWBWVjndZT0vJnLrRWi9ajea.jpg",
       "tmdbId": 462
+    },
+    {
+      "name": "Billy Elliot",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "nbr": "Y",
+        "pga": "X",
+        "wga": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/nOr5diUZxphmAD3li9aiILyI28F.jpg",
+      "tmdbId": 71
     },
     {
       "name": "Crouching Tiger, Hidden Dragon",
@@ -63,27 +107,22 @@
     },
     {
       "name": "Almost Famous",
+      "film": "",
+      "runner_up": false,
+      "winner": true,
       "awards": {
+        "gg": {
+          "winner": true
+        },
         "bafta": "X",
-        "afi": "Y",
         "sag": "X",
+        "afi": "Y",
         "pga": "X",
         "wga": "X"
       },
+      "genre": "Comedy",
       "posterPath": "/3rrkyLYbgLj84AYvjhdcJot4JPx.jpg",
       "tmdbId": 786
-    },
-    {
-      "name": "Wonder Boys",
-      "awards": {
-        "gg": "X",
-        "afi": "Y",
-        "lafca": "X",
-        "wga": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/c9CvpQSOriSanl1Uow2A22sQ8SL.jpg",
-      "tmdbId": 553091
     },
     {
       "name": "Best in Show",
@@ -97,6 +136,16 @@
       "tmdbId": 13785
     },
     {
+      "name": "Sunshine",
+      "awards": {
+        "gg": "X",
+        "nbr": "Y"
+      },
+      "genre": "Drama",
+      "posterPath": "/oKGGeJ8qvm0UmClz43VJ31fzPP7.jpg",
+      "tmdbId": 1272
+    },
+    {
       "name": "High Fidelity",
       "awards": {
         "afi": "Y",
@@ -104,14 +153,6 @@
       },
       "posterPath": "/e2LZGB62GMhv3Fo8tDZjY87I81a.jpg",
       "tmdbId": 243
-    },
-    {
-      "name": "Before Night Falls",
-      "awards": {
-        "afi": "Y"
-      },
-      "posterPath": "/kb2dqj73cfmt6qHAh1ySIlVm6v0.jpg",
-      "tmdbId": 5001
     },
     {
       "name": "Requiem for a Dream",
@@ -122,32 +163,41 @@
       "tmdbId": 641
     },
     {
+      "name": "Quills",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/AvGdw3BpvJV2wHmK2qY0N7XHqET.jpg",
+      "tmdbId": 10876
+    },
+    {
+      "name": "Croupier",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/7O9TEodTfWsXm9jpXFNv0DDkhYF.jpg",
+      "tmdbId": 12706
+    },
+    {
+      "name": "Dancer in the Dark",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/pWzOfTJRZHPNO1VNrMnNFqRcJwg.jpg",
+      "tmdbId": 16
+    },
+    {
+      "name": "Il cerchio ( Dāyere ), regia",
+      "awards": {
+        "venice": "Y"
+      }
+    },
+    {
       "name": "Palme d'Or",
       "awards": {
         "cannes": "Y"
       },
       "note": "Director: Lars von Trier"
-    },
-    {
-      "name": "Il cerchio",
-      "awards": {
-        "venice": "Y"
-      },
-      "posterPath": "/fqxpGHjSh0SqfrrtgK6LKTHcQJ.jpg",
-      "tmdbId": 1054171
-    },
-    {
-      "name": "Billy Elliot",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "sag": "X",
-        "pga": "X",
-        "wga": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/nOr5diUZxphmAD3li9aiILyI28F.jpg",
-      "tmdbId": 71
     },
     {
       "name": "Chocolat",
@@ -160,15 +210,6 @@
       "genre": "Comedy",
       "posterPath": "/qoFmpeLPaj3YC1DABs5QxC31aQ7.jpg",
       "tmdbId": 41951
-    },
-    {
-      "name": "Sunshine",
-      "awards": {
-        "gg": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/oKGGeJ8qvm0UmClz43VJ31fzPP7.jpg",
-      "tmdbId": 1272
     },
     {
       "name": "Chicken Run",
@@ -195,10 +236,12 @@
       "film": "Erin Brockovich",
       "awards": {
         "oscar": "X",
-        "bafta": "X",
         "gg": "X",
+        "bafta": "X",
+        "nbr": "Y",
         "lafca": "Y",
-        "nyfcc": "Y"
+        "nyfcc": "Y",
+        "critics": "Y"
       },
       "profilePath": "/y8JlSDcQzd7gAaKyxFpExupMwDz.jpg",
       "tmdbId": 1884
@@ -225,6 +268,24 @@
       "tmdbId": 1884
     },
     {
+      "name": "Julian Schnabel",
+      "film": "Prima che sia notte ( Before Night Falls ), regia",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/pg4vhqMaVNlXtor4kHGPc8P68Zb.jpg",
+      "tmdbId": 7482
+    },
+    {
+      "name": "Buddhadeb Dasgupta",
+      "film": "Uttarā",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/rDm0uUmK8Buzq3SAELkwT6jOIaA.jpg",
+      "tmdbId": 1081568
+    },
+    {
       "name": "Edward Yang",
       "awards": {
         "cannes": "Y"
@@ -234,21 +295,12 @@
       "tmdbId": 143035
     },
     {
-      "name": "Buddhadeb Dasgupta",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "Uttarā",
-      "profilePath": "/rDm0uUmK8Buzq3SAELkwT6jOIaA.jpg",
-      "tmdbId": 1081568
-    },
-    {
       "name": "Ridley Scott",
       "film": "Gladiator",
       "awards": {
         "oscar": "X",
-        "bafta": "X",
-        "gg": "X"
+        "gg": "X",
+        "bafta": "X"
       },
       "profilePath": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg",
       "tmdbId": 578
@@ -264,17 +316,30 @@
       "tmdbId": 468
     },
     {
+      "name": "Istvan Szabo",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Sunshine"
+    },
+    {
       "name": "Traffic",
       "awards": {
         "bafta": "X"
       }
     },
     {
-      "name": "Istvan Szabo",
+      "name": "Ang Lee",
+      "film": "",
+      "runner_up": false,
+      "winner": true,
       "awards": {
-        "gg": "X"
+        "gg": {
+          "winner": true
+        }
       },
-      "film": "Sunshine"
+      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg",
+      "tmdbId": 1614
     }
   ],
   "best-actor": [
@@ -298,12 +363,26 @@
       "role": "Leading",
       "awards": {
         "oscar": "Y",
-        "bafta": "X",
         "gg": "X",
-        "sag": "X"
+        "bafta": "X",
+        "sag": "X",
+        "critics": "Y"
       },
       "profilePath": "/uxiXuVH4vNWrKlJMVVPG1sxAJFe.jpg",
       "tmdbId": 934
+    },
+    {
+      "name": "Javier Bardem",
+      "film": "Before Night Falls",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "nbr": "Y",
+        "lafca": "X"
+      },
+      "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
+      "tmdbId": 3810
     },
     {
       "name": "Tom Hanks",
@@ -332,14 +411,27 @@
       "tmdbId": 5293
     },
     {
-      "name": "Michael Douglas",
-      "film": "Wonder Boys",
-      "role": "Leading",
+      "name": "Albert Finney",
+      "film": "Erin Brockovich",
+      "role": "Supporting",
       "awards": {
-        "bafta": "X",
+        "oscar": "X",
         "gg": "X",
+        "bafta": "X",
+        "sag": "Y"
+      },
+      "profilePath": "/8WCFO9lMHel1bHVYl5lj8pYEw2s.jpg",
+      "tmdbId": 3926
+    },
+    {
+      "name": "Michael Douglas",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
         "lafca": "Y"
       },
+      "film": "Wonder Boys",
+      "role": "Leading",
       "profilePath": "/kVYGPIZowzXLEQfAGUNOqKjAbBb.jpg",
       "tmdbId": 3392
     },
@@ -355,14 +447,13 @@
       "tmdbId": 478
     },
     {
-      "name": "Albert Finney",
+      "name": "Javier Bardem",
+      "film": "Prima che sia notte",
       "awards": {
-        "sag": "Y"
+        "venice": "Y"
       },
-      "film": "Ed Masry",
-      "role": "Supporting",
-      "profilePath": "/8WCFO9lMHel1bHVYl5lj8pYEw2s.jpg",
-      "tmdbId": 3926
+      "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
+      "tmdbId": 3810
     },
     {
       "name": "Tony Leung Chiu-wai",
@@ -374,50 +465,17 @@
       "tmdbId": 1337
     },
     {
-      "name": "Javier Bardem",
-      "awards": {
-        "venice": "Y"
-      },
-      "film": "Prima che sia notte",
-      "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
-      "tmdbId": 3810
-    },
-    {
       "name": "Geoffrey Rush",
       "film": "Quills",
       "role": "Leading",
       "awards": {
         "oscar": "X",
-        "bafta": "X",
         "gg": "X",
+        "bafta": "X",
         "sag": "X"
       },
       "profilePath": "/npXFjaFQzBNroCEPllGPTZ5IisA.jpg",
       "tmdbId": 118
-    },
-    {
-      "name": "Javier Bardem",
-      "film": "Before Night Falls",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "lafca": "X"
-      },
-      "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
-      "tmdbId": 3810
-    },
-    {
-      "name": "Albert Finney",
-      "film": "Erin Brockovich",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X",
-        "gg": "X"
-      },
-      "profilePath": "/8WCFO9lMHel1bHVYl5lj8pYEw2s.jpg",
-      "tmdbId": 3926
     },
     {
       "name": "Joaquin Phoenix",
@@ -425,8 +483,10 @@
       "role": "Supporting",
       "awards": {
         "oscar": "X",
+        "gg": "X",
         "bafta": "X",
-        "gg": "X"
+        "sag": "X",
+        "critics": "Y"
       },
       "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
       "tmdbId": 73421
@@ -437,7 +497,8 @@
       "role": "Supporting",
       "awards": {
         "oscar": "X",
-        "gg": "X"
+        "gg": "X",
+        "sag": "X"
       },
       "profilePath": "/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg",
       "tmdbId": 1229
@@ -451,25 +512,6 @@
       },
       "profilePath": "/kUbUA70WPiosPT4kBJMWtGk0ASd.jpg",
       "tmdbId": 228
-    },
-    {
-      "name": "Gary Lewis",
-      "film": "Billy Elliot",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/cOaibfAluUeWPtcSOjedfGXn9ym.jpg",
-      "tmdbId": 480
-    },
-    {
-      "name": "Oliver Reed",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/dWfotc1X71wNCGyPO9hXpv8U9Gw.jpg",
-      "tmdbId": 936
     },
     {
       "name": "Jim Carrey",
@@ -512,32 +554,78 @@
       "tmdbId": 2461
     },
     {
-      "name": "Jeff Bridges",
-      "awards": {
-        "sag": "X"
-      },
+      "name": "Gary Lewis",
+      "film": "Billy Elliot",
       "role": "Supporting",
-      "profilePath": "/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg",
-      "tmdbId": 1229
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/cOaibfAluUeWPtcSOjedfGXn9ym.jpg",
+      "tmdbId": 480
+    },
+    {
+      "name": "Oliver Reed",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/dWfotc1X71wNCGyPO9hXpv8U9Gw.jpg",
+      "tmdbId": 936
     },
     {
       "name": "Gary Oldman",
       "awards": {
         "sag": "X"
       },
+      "film": "The Contender",
       "role": "Supporting",
       "profilePath": "/2v9FVVBUrrkW2m3QOcYkuhq9A6o.jpg",
       "tmdbId": 64
     },
     {
-      "name": "Joaquin Phoenix",
+      "name": "Tom Hanks",
+      "film": "",
+      "runner_up": false,
+      "winner": true,
       "awards": {
-        "sag": "X"
+        "gg": {
+          "winner": true
+        }
       },
-      "film": "Commodus",
-      "role": "Supporting",
-      "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
-      "tmdbId": 73421
+      "genre": "Drama",
+      "role": "Leading",
+      "profilePath": "/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
+      "tmdbId": 31
+    },
+    {
+      "name": "George Clooney",
+      "film": "",
+      "runner_up": false,
+      "winner": true,
+      "awards": {
+        "gg": {
+          "winner": true
+        }
+      },
+      "genre": "Comedy",
+      "role": "Leading",
+      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
+      "tmdbId": 1461
+    },
+    {
+      "name": "Benicio del Toro",
+      "film": "",
+      "runner_up": false,
+      "winner": true,
+      "awards": {
+        "gg": {
+          "winner": true
+        }
+      },
+      "genre": "Drama",
+      "role": "Leading",
+      "profilePath": "/cVh4UgCMu6aAkZ2BqymTLV86FzZ.jpg",
+      "tmdbId": 1121
     }
   ],
   "best-actress": [
@@ -549,7 +637,9 @@
         "oscar": "Y",
         "bafta": "Y",
         "sag": "Y",
-        "lafca": "Y"
+        "nbr": "Y",
+        "lafca": "Y",
+        "critics": "Y"
       },
       "profilePath": "/fQacAdIa1WUNChQ6FgEko13eqOA.jpg",
       "tmdbId": 1204
@@ -580,26 +670,41 @@
       "tmdbId": 350
     },
     {
+      "name": "Judi Dench",
+      "film": "Chocolat",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "bafta": "X",
+        "sag": "Y"
+      },
+      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
+      "tmdbId": 5309
+    },
+    {
       "name": "Julie Walters",
       "film": "Billy Elliot",
       "role": "Supporting",
       "awards": {
         "oscar": "X",
+        "gg": "X",
         "bafta": "Y",
-        "gg": "X"
+        "sag": "X"
       },
       "profilePath": "/bCTkV2OUgzbJdQEoCk3GesE4DXq.jpg",
       "tmdbId": 477
     },
     {
       "name": "Frances McDormand",
-      "film": "Almost Famous",
-      "role": "Supporting",
       "awards": {
-        "bafta": "X",
         "gg": "X",
+        "bafta": "X",
+        "sag": "X",
         "lafca": "Y"
       },
+      "film": "Almost Famous",
+      "role": "Leading",
       "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
       "tmdbId": 3910
     },
@@ -613,21 +718,11 @@
       "role": "Leading"
     },
     {
-      "name": "Judi Dench",
-      "awards": {
-        "sag": "Y"
-      },
-      "film": "Kate Hudson",
-      "role": "Supporting",
-      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
-      "tmdbId": 5309
-    },
-    {
       "name": "Rose Byrne",
+      "film": "La dea del '67",
       "awards": {
         "venice": "Y"
       },
-      "film": "La dea del '67",
       "profilePath": "/4Vd7w19asuBfUGgz0NIuQI5wxIA.jpg",
       "tmdbId": 9827
     },
@@ -637,11 +732,11 @@
       "role": "Leading",
       "awards": {
         "oscar": "X",
-        "bafta": "X",
         "gg": "X",
+        "bafta": "X",
         "sag": "X"
       },
-      "profilePath": "/htdZZIroEyJaeHQAUTqokNfkPgl.jpg",
+      "profilePath": "/llNGfF2gNBa1l39iqmjhZuDDzn6.jpg",
       "tmdbId": 1137
     },
     {
@@ -669,18 +764,6 @@
       "tmdbId": 9560
     },
     {
-      "name": "Judi Dench",
-      "film": "Chocolat",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X",
-        "gg": "X"
-      },
-      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
-      "tmdbId": 5309
-    },
-    {
       "name": "Kate Hudson",
       "film": "Almost Famous",
       "role": "Supporting",
@@ -691,16 +774,6 @@
       },
       "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
       "tmdbId": 11661
-    },
-    {
-      "name": "Frances McDormand",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "sag": "X"
-      },
-      "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
-      "tmdbId": 3910
     },
     {
       "name": "Zhang Ziyi",
@@ -714,33 +787,14 @@
       "tmdbId": 1339
     },
     {
-      "name": "Hilary Swank",
-      "film": "Boys Don't Cry",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/uin6aAehUGpPCiJCaSjZG8B7M7d.jpg",
-      "tmdbId": 448
-    },
-    {
-      "name": "Michelle Yeoh",
-      "film": "Crouching Tiger, Hidden Dragon",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/nrbHNzSMydpWK9um5VqWIFJihB5.jpg",
-      "tmdbId": 1620
-    },
-    {
-      "name": "Lena Olin",
+      "name": "Frances McDormand",
       "role": "Supporting",
       "awards": {
-        "bafta": "X"
+        "oscar": "X",
+        "critics": "Y"
       },
-      "profilePath": "/tUg7cH4qLqs5WdOIH0WMQby9kWH.jpg",
-      "tmdbId": 5313
+      "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
+      "tmdbId": 3910
     },
     {
       "name": "Brenda Blethyn",
@@ -783,22 +837,94 @@
       "tmdbId": 1922
     },
     {
-      "name": "Julie Walters",
+      "name": "Hilary Swank",
+      "film": "Boys Don't Cry",
+      "role": "Leading",
       "awards": {
-        "sag": "X"
+        "bafta": "X"
       },
+      "profilePath": "/uin6aAehUGpPCiJCaSjZG8B7M7d.jpg",
+      "tmdbId": 448
+    },
+    {
+      "name": "Michelle Yeoh",
+      "film": "Crouching Tiger, Hidden Dragon",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/nrbHNzSMydpWK9um5VqWIFJihB5.jpg",
+      "tmdbId": 1620
+    },
+    {
+      "name": "Lena Olin",
       "role": "Supporting",
-      "profilePath": "/bCTkV2OUgzbJdQEoCk3GesE4DXq.jpg",
-      "tmdbId": 477
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/tUg7cH4qLqs5WdOIH0WMQby9kWH.jpg",
+      "tmdbId": 5313
     },
     {
       "name": "Kate Winslet",
       "awards": {
         "sag": "X"
       },
+      "film": "Quills",
       "role": "Supporting",
       "profilePath": "/9xDnfZrWhM67wJlQJEsOOjQzDUQ.jpg",
       "tmdbId": 204
+    },
+    {
+      "name": "Julia Roberts",
+      "film": "",
+      "runner_up": false,
+      "winner": true,
+      "awards": {
+        "gg": {
+          "winner": true
+        }
+      },
+      "genre": "Drama",
+      "role": "Leading",
+      "profilePath": "/fQacAdIa1WUNChQ6FgEko13eqOA.jpg",
+      "tmdbId": 1204
+    },
+    {
+      "name": "Renée Zellweger",
+      "film": "",
+      "runner_up": false,
+      "winner": true,
+      "awards": {
+        "gg": {
+          "winner": true
+        }
+      },
+      "genre": "Comedy",
+      "role": "Leading",
+      "profilePath": "/u4wQXVYhN9OOimHn5hbWKefdjjG.jpg",
+      "tmdbId": 9137
+    },
+    {
+      "name": "Kate Hudson",
+      "film": "",
+      "runner_up": false,
+      "winner": true,
+      "awards": {
+        "gg": {
+          "winner": true
+        }
+      },
+      "genre": "Drama",
+      "role": "Leading",
+      "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
+      "tmdbId": 11661
     }
-  ]
+  ],
+  "gotham": {
+    "best-film": [],
+    "best-director": [],
+    "best-actor": [],
+    "best-actress": []
+  }
 }

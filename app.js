@@ -1174,7 +1174,32 @@ function renderTable(categoryId) {
     tbody.innerHTML = '';
 
     const cat = CONFIG.CATEGORIES.find(c => c.id === categoryId);
-    const entries = data[categoryId] || [];
+    let entries = data[categoryId] || [];
+
+    // Sort entries:
+    // 1. Wins (DESC)
+    // 2. Nominations (DESC) (Tie-breaker)
+    entries.sort((a, b) => {
+        const getStats = (entry) => {
+            let wins = 0;
+            let noms = 0;
+            if (entry.awards) {
+                Object.values(entry.awards).forEach(val => {
+                    if (val === 'Y') wins++;
+                    if (val === 'X') noms++;
+                });
+            }
+            return { wins, noms };
+        };
+
+        const statsA = getStats(a);
+        const statsB = getStats(b);
+
+        if (statsB.wins !== statsA.wins) {
+            return statsB.wins - statsA.wins;
+        }
+        return statsB.noms - statsA.noms;
+    });
 
     entries.forEach((entry, index) => {
         tbody.appendChild(createTableRow(entry, categoryId, index, cat.isPerson));
@@ -1201,22 +1226,34 @@ function createTableRow(entry, categoryId, index, isPerson) {
         filmSubtitle = `<span class="entry-film-line">${entry.film}${roleText}</span>`;
     }
 
-    // Generate mobile badges (only for winners)
+    // Generate mobile badges (winners AND nominees)
     let mobileBadges = '';
-    const winningAwards = CONFIG.AWARDS.filter(award => {
+    const relevantAwards = CONFIG.AWARDS.filter(award => {
         const val = entry.awards?.[award.key];
-        return val === 'Y';
+        return val === 'Y' || val === 'X';
     });
 
-    if (winningAwards.length > 0) {
-        const badgesHtml = winningAwards.map(a =>
-            `<span class="mobile-badge">${a.label}</span>`
-        ).join('');
+    if (relevantAwards.length > 0) {
+        const badgesHtml = relevantAwards.map(a => {
+            const val = entry.awards[a.key];
+            const typeClass = val === 'Y' ? 'winner' : 'nominee';
+            return `<span class="mobile-badge ${typeClass}">${a.label}</span>`;
+        }).join('');
         mobileBadges = `<div class="mobile-badges">${badgesHtml}</div>`;
     }
 
+    // Mobile Poster Injection
+    const mobilePosterUrl = isPerson && entry.profilePath
+        ? `${CONFIG.TMDB_IMAGE_BASE}w185${entry.profilePath}`
+        : (!isPerson && entry.posterPath ? `${CONFIG.TMDB_IMAGE_BASE}w185${entry.posterPath}` : '');
+
+    const mobilePosterHtml = mobilePosterUrl
+        ? `<div class="mobile-poster-wrapper"><img src="${mobilePosterUrl}" class="mobile-poster-img" loading="lazy"></div>`
+        : `<div class="mobile-poster-wrapper" style="background:#222;"></div>`;
+
     nameCell.innerHTML = `
         <div class="name-cell-content">
+            ${mobilePosterHtml} 
             <div class="name-text-wrapper">
                 <span class="entry-name">${entry.name}</span>
                 ${filmSubtitle}
@@ -1258,6 +1295,19 @@ function createTableRow(entry, categoryId, index, isPerson) {
 
         // Astra didn't exist before 2017 (Season 2017/2018)
         if (award.key === 'astra' && parseInt(currentYear) < 2017) {
+            coversCategory = false;
+        }
+
+        // Gotham: No Best Actor/Actress/Director before 2013 (Season 2013/2014)
+        // User requested "bars" (N/A) for these years
+        if (award.key === 'gotham' && parseInt(currentYear) < 2013 && ['best-actor', 'best-actress', 'best-director'].includes(categoryId)) {
+            coversCategory = false;
+        }
+
+        // Gotham: No Best Feature before 2004 (Season 2004/2005) - specifically 2004 ceremony
+        // System year 2004 (2003/04) no film. System year 2005 (2004/05) yes film.
+        // So start year < 2004.
+        if (award.key === 'gotham' && parseInt(currentYear) < 2004 && categoryId === 'best-film') {
             coversCategory = false;
         }
 
@@ -2159,6 +2209,7 @@ function calculateOscarPredictions(yearData, historyAnalysis) {
         const scored = entries.map(entry => {
             let score = 0;
             const precursorWins = [];
+            const precursorNoms = [];
 
             if (entry.awards) {
                 for (const [awardKey, status] of Object.entries(entry.awards)) {
@@ -2166,6 +2217,9 @@ function calculateOscarPredictions(yearData, historyAnalysis) {
                         const weight = dynamicWeights[awardKey] || 2;
                         score += weight;
                         precursorWins.push(awardKey);
+                    } else {
+                        // Any other status ('X') implies nomination
+                        precursorNoms.push(awardKey);
                     }
                 }
             }
@@ -2173,12 +2227,22 @@ function calculateOscarPredictions(yearData, historyAnalysis) {
             return {
                 ...entry,
                 score,
-                precursorWins
+                precursorWins,
+                precursorNoms
             };
         });
 
-        // Sort by score descending
-        scored.sort((a, b) => b.score - a.score);
+        // Sort by score descending, then by number of nominations (Tie-breaker)
+        scored.sort((a, b) => {
+            if (b.score !== a.score) {
+                return b.score - a.score;
+            }
+            // Tie-breaker: Number of nominations (precursorNoms)
+            // More nominations = better currency even if they didn't win high weight awards
+            const nomsA = a.precursorNoms ? a.precursorNoms.length : 0;
+            const nomsB = b.precursorNoms ? b.precursorNoms.length : 0;
+            return nomsB - nomsA;
+        });
 
         // Calculate total score for normalization (Sum = 100%)
         const totalScore = scored.reduce((sum, entry) => sum + entry.score, 0);
@@ -2275,17 +2339,33 @@ function renderPredictionsPage(predictions, container) {
 
                 const getBadges = (entry) => {
                     const badges = [];
+                    // Wins (Gold)
                     if (entry.precursorWins) {
                         entry.precursorWins.forEach(award => {
                             badges.push(`<span class="nominee-badge badge-win">${awardLabels[award] || award.toUpperCase()}</span>`);
                         });
                     }
+                    // Nominations (Silver)
+                    if (entry.precursorNoms) {
+                        entry.precursorNoms.forEach(award => {
+                            badges.push(`<span class="nominee-badge badge-nom">${awardLabels[award] || award.toUpperCase()}</span>`);
+                        });
+                    }
+
+                    // Fallback for awards not processed in precursor arrays (safety check)
                     const allAwards = entry.awards || {};
                     Object.keys(allAwards).forEach(award => {
-                        if (allAwards[award] === 'Y' && (!entry.precursorWins || !entry.precursorWins.includes(award))) {
+                        const isWin = allAwards[award] === 'Y';
+                        const inWins = entry.precursorWins && entry.precursorWins.includes(award);
+                        const inNoms = entry.precursorNoms && entry.precursorNoms.includes(award);
+
+                        if (isWin && !inWins) {
                             badges.push(`<span class="nominee-badge badge-win">${awardLabels[award] || award.toUpperCase()}</span>`);
+                        } else if (!isWin && !inNoms && !inWins) {
+                            badges.push(`<span class="nominee-badge badge-nom">${awardLabels[award] || award.toUpperCase()}</span>`);
                         }
                     });
+
                     return badges.join('');
                 };
 
@@ -2294,14 +2374,28 @@ function renderPredictionsPage(predictions, container) {
                     const mobileBadges = mobileBadgesHtml ? `<div class="mobile-badges">${mobileBadgesHtml}</div>` : '';
                     const metaText = isPerson ? (entry.role || '') : (entry.genre || '');
 
+                    const imageUrl = isPerson && entry.profilePath
+                        ? `${CONFIG.TMDB_IMAGE_BASE}w185${entry.profilePath}`
+                        : (!isPerson && entry.posterPath ? `${CONFIG.TMDB_IMAGE_BASE}w185${entry.posterPath}` : '');
+
+                    const posterHtml = imageUrl
+                        ? `<img src="${imageUrl}" class="pred-list-poster-img" loading="lazy">`
+                        : `<div class="pred-list-poster-img" style="background:var(--line);"></div>`;
+
                     return `
                         <div class="stats-list-row pred-list-row ${idx === 0 ? 'is-winner-row' : ''}">
+                            <div class="pred-list-poster-mobile">
+                                ${posterHtml}
+                            </div>
+                            <!-- Rank hidden on mobile via CSS if desired, but kept in DOM -->
                             <span class="stats-list-rank">${idx + 1}</span>
+                            
                             <div class="pred-list-info">
                                  <div class="pred-list-header">
-                                    <span class="stats-list-name" style="padding: 0;">${entry.name}</span>${metaText ? `<span class="pred-meta">${metaText}</span>` : ''}
+                                    <span class="stats-list-name" style="padding: 0;">${entry.name}</span>
                                     <span class="pred-list-percent">${entry.probability}%</span>
                                  </div>
+                                 ${metaText ? `<span class="pred-meta">${metaText}</span>` : ''}
                                  ${mobileBadges}
                                  <div class="pred-badges-desktop">${mobileBadgesHtml}</div>
                             </div>

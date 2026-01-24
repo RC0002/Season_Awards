@@ -6,14 +6,15 @@
         "bafta": "Y",
         "gg": "X",
         "oscar": "Y",
-        "afi": "Y",
         "sag": "X",
-        "critics": "Y",
         "nbr": "Y",
+        "afi": "Y",
+        "critics": "Y",
         "pga": "Y",
         "lafca": "Y",
         "adg": "Y",
-        "gotham": "Y"
+        "gotham": "Y",
+        "nyfcc": "Y"
       },
       "genre": "Drama",
       "posterPath": "/io2dfBJhasvGbgkCX9cCGVOiA99.jpg",
@@ -25,9 +26,9 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
+        "nbr": "Y",
         "afi": "Y",
         "critics": "X",
-        "nbr": "Y",
         "pga": "X",
         "lafca": "X",
         "adg": "X"
@@ -42,8 +43,8 @@
         "gg": "X",
         "oscar": "X",
         "sag": "Y",
-        "critics": "X",
         "nbr": "Y",
+        "critics": "X",
         "pga": "X",
         "adg": "X"
       },
@@ -69,9 +70,9 @@
       "name": "A Serious Man",
       "awards": {
         "oscar": "X",
+        "nbr": "Y",
         "afi": "Y",
         "critics": "X",
-        "nbr": "Y",
         "adg": "X",
         "gotham": "X"
       },
@@ -82,9 +83,10 @@
       "name": "Up",
       "awards": {
         "oscar": "X",
+        "nbr": "Y",
         "afi": "Y",
         "critics": "X",
-        "nbr": "Y",
+        "annie": "X",
         "pga": "X"
       },
       "posterPath": "/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg",
@@ -104,8 +106,8 @@
     {
       "name": "The Messenger",
       "awards": {
-        "afi": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "afi": "Y"
       },
       "posterPath": "/p4fJyH7mMbasiFYwiw2nE7D6pMY.jpg",
       "tmdbId": 28089
@@ -116,8 +118,8 @@
         "bafta": "X",
         "oscar": "X",
         "sag": "X",
-        "critics": "X",
         "nbr": "Y",
+        "critics": "X",
         "pga": "X"
       },
       "posterPath": "/gLIvvUdlocGjm8XVLxhWHAKWrRq.jpg",
@@ -127,8 +129,8 @@
       "name": "Precious: Based on the Novel 'Push' by Sapphire",
       "awards": {
         "oscar": "X",
-        "afi": "Y",
-        "sag": "X"
+        "sag": "X",
+        "afi": "Y"
       },
       "posterPath": "/d4ltLIDbvZskSwbzXqi0Hfv5ma4.jpg",
       "tmdbId": 25793
@@ -136,8 +138,8 @@
     {
       "name": "Invictus",
       "awards": {
-        "critics": "X",
         "nbr": "Y",
+        "critics": "X",
         "pga": "X"
       },
       "posterPath": "/runuhBAAX7PmdjGhqRKCyl4bh7z.jpg",
@@ -166,10 +168,19 @@
     {
       "name": "Coraline",
       "awards": {
-        "afi": "Y"
+        "afi": "Y",
+        "annie": "X"
       },
       "posterPath": "/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
       "tmdbId": 14836
+    },
+    {
+      "name": "Where the Wild Things Are",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/sDFV9VEjwTUWF1s5sjOllsb70jk.jpg",
+      "tmdbId": 16523
     },
     {
       "name": "A Single Man",
@@ -188,6 +199,14 @@
       "tmdbId": 17003
     },
     {
+      "name": "a Lebanon",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/6uORNAUCygv0b1fGsDaf8gD3DvJ.jpg",
+      "tmdbId": 1340687
+    },
+    {
       "name": "The White Ribbon",
       "awards": {
         "cannes": "Y"
@@ -195,14 +214,6 @@
       "note": "Director: Michael Haneke",
       "posterPath": "/54dlnGDexrwAFlDb8HWKfmmX4LB.jpg",
       "tmdbId": 37903
-    },
-    {
-      "name": "Where the Wild Things Are",
-      "awards": {
-        "nbr": "Y"
-      },
-      "posterPath": "/sDFV9VEjwTUWF1s5sjOllsb70jk.jpg",
-      "tmdbId": 16523
     },
     {
       "name": "Sherlock Holmes",
@@ -271,6 +282,38 @@
       },
       "posterPath": "/bMgq7VBriuBFknXEe9E9pVBYGZq.jpg",
       "tmdbId": 22881
+    },
+    {
+      "name": "Cloudy with a Chance of Meatballs",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/qhOhIKf7QEyQ5dMrRUqs5eTX1Oq.jpg",
+      "tmdbId": 22794
+    },
+    {
+      "name": "Fantastic Mr. Fox",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/euZyZb6iGreujYKrGyZHRddhUYh.jpg",
+      "tmdbId": 10315
+    },
+    {
+      "name": "The Princess and the Frog",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/v6nAUs62OJ4DXmnnmPFeVmMz8H9.jpg",
+      "tmdbId": 10198
+    },
+    {
+      "name": "The Secret of Kells",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/vBymyj7QsXiW4TICD2JC5pAuBHO.jpg",
+      "tmdbId": 26963
     },
     {
       "name": "Public Enemies",
@@ -345,18 +388,19 @@
         "bafta": "Y",
         "oscar": "Y",
         "critics": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/llfsTIvItT7IEmX5qK1qUX0dbqc.jpg",
       "tmdbId": 14392
     },
     {
       "name": "Clint Eastwood",
-      "film": "Invictus",
       "awards": {
-        "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X"
       },
+      "film": "Invictus",
       "profilePath": "/8TwdCfeOZH7ucRlfLZ6wObxa7cO.jpg",
       "tmdbId": 190
     },
@@ -368,6 +412,15 @@
       "film": "Kathryn Bigelow",
       "profilePath": "/9NAZnTjBQ9WcXAQEzZpKy4vdQto.jpg",
       "tmdbId": 2710
+    },
+    {
+      "name": "a Shirin Neshat",
+      "film": "Donne senza uomini",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/2sLZvr1pNtwFaCzTMKo1U1NYs8l.jpg",
+      "tmdbId": 144492
     },
     {
       "name": "Brillante Mendoza",
@@ -499,7 +552,8 @@
         "sag": "Y",
         "critics": "Y",
         "cannes": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/jMvLGCVXLaBqjRLf5olyvEucZob.jpg",
       "tmdbId": 27319
@@ -516,7 +570,7 @@
         "critics": "Y",
         "lafca": "Y"
       },
-      "profilePath": "/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg",
+      "profilePath": "/6ItMc51AeORUz6iIQxGnX3HEZaB.jpg",
       "tmdbId": 1229
     },
     {
@@ -529,10 +583,26 @@
         "oscar": "X",
         "sag": "X",
         "critics": "X",
+        "venice": "Y",
         "lafca": "X"
       },
       "profilePath": "/4VBeYEUQbfhnivdkqInM36u5fda.jpg",
       "tmdbId": 5472
+    },
+    {
+      "name": "George Clooney",
+      "film": "Up in the Air",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "nbr": "Y",
+        "critics": "X"
+      },
+      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
+      "tmdbId": 1461
     },
     {
       "name": "Morgan Freeman",
@@ -540,8 +610,8 @@
         "gg": "X",
         "oscar": "X",
         "sag": "X",
-        "critics": "X",
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "X"
       },
       "film": "Invictus",
       "role": "Leading",
@@ -567,20 +637,6 @@
       "role": "Supporting",
       "profilePath": "/jMvLGCVXLaBqjRLf5olyvEucZob.jpg",
       "tmdbId": 27319
-    },
-    {
-      "name": "George Clooney",
-      "film": "Up in the Air",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
-      "tmdbId": 1461
     },
     {
       "name": "Stanley Tucci",
@@ -623,6 +679,18 @@
       "tmdbId": 57755
     },
     {
+      "name": "Matt Damon",
+      "film": "Invictus",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/elSlNgV8xVifsbHpFsqrPGxJToZ.jpg",
+      "tmdbId": 1892
+    },
+    {
       "name": "Alfred Molina",
       "film": "An Education",
       "role": "Supporting",
@@ -646,25 +714,14 @@
     },
     {
       "name": "Christopher Plummer",
-      "awards": {
-        "gg": "X",
-        "sag": "X"
-      },
-      "film": "Leo Tolstoy",
-      "role": "Supporting",
-      "profilePath": "/iZh3s9Vy9vYD4DYnAda6C1kdeco.jpg",
-      "tmdbId": 290
-    },
-    {
-      "name": "Matt Damon",
-      "film": "Invictus",
+      "film": "The Last Station",
       "role": "Supporting",
       "awards": {
         "oscar": "X",
-        "critics": "X"
+        "sag": "X"
       },
-      "profilePath": "/At3JgvaNeEN4Z4ESKlhhes85Xo3.jpg",
-      "tmdbId": 1892
+      "profilePath": "/iZh3s9Vy9vYD4DYnAda6C1kdeco.jpg",
+      "tmdbId": 290
     },
     {
       "name": "Andy Serkis",
@@ -703,7 +760,7 @@
       },
       "film": "The Informant!",
       "role": "Leading",
-      "profilePath": "/At3JgvaNeEN4Z4ESKlhhes85Xo3.jpg",
+      "profilePath": "/elSlNgV8xVifsbHpFsqrPGxJToZ.jpg",
       "tmdbId": 1892
     },
     {
@@ -745,23 +802,13 @@
     },
     {
       "name": "Christopher Plummer",
-      "film": "The Last Station",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X"
+        "gg": "X"
       },
+      "film": "Leo Tolstoy",
+      "role": "Supporting",
       "profilePath": "/iZh3s9Vy9vYD4DYnAda6C1kdeco.jpg",
       "tmdbId": 290
-    },
-    {
-      "name": "Matt Damon",
-      "awards": {
-        "sag": "X"
-      },
-      "film": "Francois Pienaar",
-      "role": "Supporting",
-      "profilePath": "/At3JgvaNeEN4Z4ESKlhhes85Xo3.jpg",
-      "tmdbId": 1892
     },
     {
       "name": "Viggo Mortensen",
@@ -781,6 +828,15 @@
       "film": "In the Loop",
       "profilePath": "/r5bEXZBOSA89SZvv4jjqa4iSgst.jpg",
       "tmdbId": 12982
+    },
+    {
+      "name": "George Clooney",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Fantastic Mr. Fox and Up in the Air",
+      "role": "Leading",
+      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg"
     }
   ],
   "best-actress": [
@@ -804,7 +860,8 @@
       "awards": {
         "bafta": "Y",
         "critics": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/bzSVVBKTyMi4K6MZvFCzBJs91F5.jpg",
       "tmdbId": 60561
@@ -818,12 +875,27 @@
         "gg": "X",
         "oscar": "X",
         "sag": "X",
-        "critics": "X",
         "nbr": "Y",
+        "critics": "X",
         "lafca": "X"
       },
       "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg",
       "tmdbId": 36662
+    },
+    {
+      "name": "Meryl Streep",
+      "film": "Julie & Julia",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "Y",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "Y",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
+      "tmdbId": 5064
     },
     {
       "name": "Mo'Nique",
@@ -837,19 +909,6 @@
       "tmdbId": 60561
     },
     {
-      "name": "Meryl Streep",
-      "film": "Julie & Julia",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "Y",
-        "oscar": "X",
-        "sag": "X"
-      },
-      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
-      "tmdbId": 5064
-    },
-    {
       "name": "Mo'Nique",
       "awards": {
         "gg": "Y"
@@ -858,6 +917,13 @@
       "role": "Supporting",
       "profilePath": "/bzSVVBKTyMi4K6MZvFCzBJs91F5.jpg",
       "tmdbId": 60561
+    },
+    {
+      "name": "Ksenia Rappoport",
+      "film": "La doppia ora",
+      "awards": {
+        "venice": "Y"
+      }
     },
     {
       "name": "Charlotte Gainsbourg",
@@ -876,6 +942,19 @@
       "film": "Séraphine",
       "profilePath": "/hh5gwfxXuvAqljjiJ3IsJlFO0QU.jpg",
       "tmdbId": 2415
+    },
+    {
+      "name": "Anna Kendrick",
+      "film": "Up in the Air",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "lafca": "X"
+      },
+      "profilePath": "/i2HIJQcBsUQ3o9HwEeDwou45D60.jpg",
+      "tmdbId": 84223
     },
     {
       "name": "Vera Farmiga",
@@ -903,18 +982,6 @@
       "tmdbId": 109560
     },
     {
-      "name": "Anna Kendrick",
-      "film": "Up in the Air",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "critics": "X",
-        "lafca": "X"
-      },
-      "profilePath": "/i2HIJQcBsUQ3o9HwEeDwou45D60.jpg",
-      "tmdbId": 84223
-    },
-    {
       "name": "Helen Mirren",
       "awards": {
         "gg": "X",
@@ -925,17 +992,6 @@
       "role": "Leading",
       "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
       "tmdbId": 15735
-    },
-    {
-      "name": "Anna Kendrick",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X"
-      },
-      "role": "Supporting",
-      "profilePath": "/i2HIJQcBsUQ3o9HwEeDwou45D60.jpg",
-      "tmdbId": 84223
     },
     {
       "name": "Saoirse Ronan",
@@ -958,6 +1014,16 @@
       "role": "Leading",
       "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
       "tmdbId": 5081
+    },
+    {
+      "name": "Anna Kendrick",
+      "awards": {
+        "gg": "X",
+        "oscar": "X"
+      },
+      "role": "Supporting",
+      "profilePath": "/i2HIJQcBsUQ3o9HwEeDwou45D60.jpg",
+      "tmdbId": 84223
     },
     {
       "name": "Gabourey Sidibe",
@@ -1034,7 +1100,7 @@
       },
       "film": "Duplicity",
       "role": "Leading",
-      "profilePath": "/fQacAdIa1WUNChQ6FgEko13eqOA.jpg",
+      "profilePath": "/mQ7076pL4Ac0ZzY4w31labWIdQt.jpg",
       "tmdbId": 1204
     },
     {
@@ -1079,6 +1145,7 @@
       "awards": {
         "sag": "X"
       },
+      "film": "Inglourious Basterds",
       "role": "Supporting",
       "profilePath": "/o5gVowcjVw4ThYi0L3883Y4X7kH.jpg",
       "tmdbId": 9824
@@ -1113,5 +1180,85 @@
       "profilePath": "/v84b7MENeD9rwX6xTD7fSdhSOC9.jpg",
       "tmdbId": 2206
     }
-  ]
+  ],
+  "annie": {
+    "best-film": [
+      {
+        "name": "Up",
+        "awards": {
+          "annie": "Y"
+        }
+      },
+      {
+        "name": "Cloudy with a Chance of Meatballs",
+        "awards": {
+          "annie": "X"
+        }
+      },
+      {
+        "name": "Coraline",
+        "awards": {
+          "annie": "X"
+        }
+      },
+      {
+        "name": "Fantastic Mr. Fox",
+        "awards": {
+          "annie": "X"
+        }
+      },
+      {
+        "name": "The Princess and the Frog",
+        "awards": {
+          "annie": "X"
+        }
+      },
+      {
+        "name": "The Secret of Kells",
+        "awards": {
+          "annie": "X"
+        }
+      }
+    ],
+    "best-director": [],
+    "best-actor": [],
+    "best-actress": []
+  },
+  "gotham": {
+    "best-film": [
+      {
+        "name": "The Hurt Locker",
+        "awards": {
+          "gotham": "Y"
+        }
+      },
+      {
+        "name": "Amreeka",
+        "awards": {
+          "gotham": "X"
+        }
+      },
+      {
+        "name": "Big Fan",
+        "awards": {
+          "gotham": "X"
+        }
+      },
+      {
+        "name": "The Maid",
+        "awards": {
+          "gotham": "X"
+        }
+      },
+      {
+        "name": "A Serious Man",
+        "awards": {
+          "gotham": "X"
+        }
+      }
+    ],
+    "best-director": [],
+    "best-actor": [],
+    "best-actress": []
+  }
 }

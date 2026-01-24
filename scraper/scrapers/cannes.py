@@ -222,6 +222,7 @@ def scrape_cannes(year):
                     else:
                         # Single winner - direct in LI (not nested list)
                         # Structure: "Best Actor: Name for Film"
+                        # OR multi-winner comma-separated: "Best Actress: Name1, Name2, Name3, and Name4 for Film"
                         film_name = None
                         i_tag = li.find('i')
                         if i_tag:
@@ -233,10 +234,13 @@ def scrape_cannes(year):
                                 # Case 2: <a><i>Film</i></a> - italic inside link (Wikipedia uses this)
                                 film_name = i_tag.get_text().strip()
                         
-                        # Person is the first link NOT in <i> tag
+                        # Collect ALL valid person names (not just the first one)
+                        # This handles comma-separated format like "Name1, Name2, Name3, and Name4 for Film"
                         skip_texts = ['best director', 'best actor', 'best actress']
+                        persons_found = []
+                        
                         for link in links:
-                            # Skip if link is inside <i> tag
+                            # Skip if link is inside <i> tag (it's a film)
                             if link.find_parent('i'):
                                 continue
                             
@@ -250,14 +254,17 @@ def scrape_cannes(year):
                             
                             # Valid person name
                             if len(link_text) >= 2:
-                                entry = {
-                                    'name': link_text,
-                                    'awards': {'cannes': 'Y'}
-                                }
-                                if film_name:
-                                    entry['film'] = film_name
-                                results[category].append(entry)
-                                break  # Only add one entry per LI, stop after first valid person
+                                persons_found.append(link_text)
+                        
+                        # Add all found persons as separate entries
+                        for person_name in persons_found:
+                            entry = {
+                                'name': person_name,
+                                'awards': {'cannes': 'Y'}
+                            }
+                            if film_name:
+                                entry['film'] = film_name
+                            results[category].append(entry)
         
         current = current.next_sibling
     

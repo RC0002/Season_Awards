@@ -161,7 +161,7 @@ function renderCurrentYear(data) {
                 const expectedCount = (catData.expected !== undefined) ? catData.expected : (expected[awardKey]?.[category] || 0);
 
                 if (expectedCount === 0 && catData.nominations === 0) {
-                    cells.push(`<span class="cp-recap-cell muted"><i class="bi bi-slash-lg text-muted op-50"></i></span>`);
+                    cells.push(`<span class="cp-recap-cell muted"><i class="bi bi-dash-lg text-muted op-50"></i></span>`);
                 } else {
                     cells.push(`<span class="cp-recap-cell ${catData.status}"><b>${catData.nominations}</b><small>/${expectedCount}</small></span>`);
                 }
@@ -258,7 +258,7 @@ function renderAwardCard(awardKey, data) {
                 const expectedCount = (catData.expected !== undefined) ? catData.expected : (data.expected[awardKey]?.[category] || 0);
 
                 if (expectedCount === 0 && catData.nominations === 0) {
-                    cells.push(`<span class="cp-recap-cell muted"></span>`);
+                    cells.push(`<span class="cp-recap-cell muted"><i class="bi bi-dash-lg text-muted op-50"></i></span>`);
                 } else {
                     cells.push(`<span class="cp-recap-cell ${catData.status}"><b>${catData.nominations}</b>/${expectedCount}</span>`);
                 }
@@ -295,7 +295,11 @@ function renderAwardCard(awardKey, data) {
             }
             const combinedStatus = (combined === targetTotal) ? 'ok' : (combined === 0 && targetTotal === 0 ? 'ok' : (combined === 0 ? 'pending' : 'error'));
 
-            cells.push(`<span class="cp-recap-cell ${combinedStatus}" style="grid-column: span 2; text-align: center;"><b>${actorData.nominations}+${actressData.nominations}</b>/${targetTotal}</span>`);
+            if (targetTotal === 0 && combined === 0) {
+                cells.push(`<span class="cp-recap-cell muted" style="grid-column: span 2; text-align: center;"><i class="bi bi-dash-lg text-muted op-50"></i></span>`);
+            } else {
+                cells.push(`<span class="cp-recap-cell ${combinedStatus}" style="grid-column: span 2; text-align: center;"><b>${actorData.nominations}+${actressData.nominations}</b>/${targetTotal}</span>`);
+            }
         } else {
             // Standard awards: separate columns
             for (const category of CATEGORIES) {

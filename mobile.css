@@ -108,8 +108,35 @@
     }
 
     .name-cell-content {
-        height: 64px;
+        height: auto !important;
+        /* Allow growth */
+        min-height: 80px;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 4px 0;
+    }
+
+    .mobile-poster-wrapper {
+        display: block !important;
+        width: 60px;
+        height: 90px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        overflow: hidden;
+        background: #222;
+    }
+
+    .mobile-poster-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .name-text-wrapper {
+        padding: 0 !important;
+        /* Reset padding since we have gap */
     }
 
     /* Make the whole row look clickable */
@@ -125,14 +152,14 @@
         font-size: 13px;
     }
 
-    .poster-bg {
-        width: 70px;
-        opacity: 0.9;
+    .entry-film {
+        font-size: 13px;
     }
 
+    /* Hide right-side poster/photo background on mobile (since we have the left one now) */
+    .poster-bg,
     .person-photo-bg {
-        width: 44px;
-        height: 44px;
+        display: none !important;
     }
 
     /* ============ FILM DETAIL OVERLAY - MOBILE ============ */
@@ -425,16 +452,105 @@
         font-size: 24px;
     }
 
+    /* Redesigned Mobile Prediction List Item */
+    .pred-list-row {
+        display: flex;
+        align-items: flex-start;
+        /* Top align for poster */
+        gap: 12px;
+        padding: 8px 12px;
+        background: rgba(255, 255, 255, 0.03);
+        /* Subtle card bg */
+        border-radius: 8px;
+        margin-bottom: 8px;
+        position: relative;
+    }
+
+    .pred-list-poster-mobile {
+        display: block !important;
+        width: 70px;
+        height: 105px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .pred-list-poster-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .pred-list-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Center content vertically relative to poster height if needed, or top */
+        min-width: 0;
+        padding-top: 4px;
+    }
+
+    .pred-list-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 4px;
+    }
+
+    .pred-list-percent {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--gold);
+        background: rgba(0, 0, 0, 0.4);
+        padding: 2px 6px;
+        border-radius: 4px;
+    }
+
+    .stats-list-name {
+        font-size: 15px;
+        /* Slightly larger name */
+        white-space: normal;
+        /* Allow wrapping */
+        padding: 0;
+        margin-bottom: 2px;
+        line-height: 1.3;
+    }
+
+    .pred-meta {
+        font-size: 12px;
+        color: #888;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .stats-list-rank {
+        display: none;
+        /* Hide rank number to save space, order is implicit */
+    }
+
     .mobile-badge {
         font-size: 8px;
         font-weight: 700;
         text-transform: uppercase;
-        color: var(--gold);
-        border: 1px solid var(--gold);
         padding: 1px 4px;
         border-radius: 3px;
-        background: rgba(212, 168, 75, 0.1);
         letter-spacing: 0.05em;
+        margin-right: 4px;
+        display: inline-block;
+        margin-bottom: 2px;
+    }
+
+    .mobile-badge.winner {
+        color: var(--gold);
+        border: 1px solid var(--gold);
+        background: rgba(212, 168, 75, 0.1);
+    }
+
+    .mobile-badge.nominee {
+        color: #c0c0c0;
+        border: 1px solid #c0c0c0;
+        background: rgba(192, 192, 192, 0.1);
     }
 
     /* Hide desktop badges in Predictions to avoid duplicates */

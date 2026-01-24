@@ -124,7 +124,19 @@ def scrape_gg_old_format(tables_or_soup, award_key):
                         continue
                     
                     # Process based on current_main_cat OR embedded header
-                    if current_main_cat == 'film' or ('best motion picture' in subcat and 'animated' not in subcat and 'foreign' not in subcat and 'non-english' not in subcat):
+                    # SAFETY: When current_main_cat is 'film', verify subcat is indeed a film subcategory
+                    # This prevents actors from being added to best-film when headers aren't properly parsed
+                    is_valid_film_context = False
+                    if current_main_cat == 'film':
+                        # Must have Drama/Comedy in subcat, or subcat must be empty (first TD after header)
+                        # Must NOT have actor/actress/supporting/performance terms indicating wrong category
+                        has_actor_terms = any(term in subcat for term in ['actor', 'actress', 'supporting', 'performance', 'director'])
+                        has_film_terms = 'drama' in subcat or 'comedy' in subcat or 'musical' in subcat or subcat == ''
+                        is_valid_film_context = has_film_terms and not has_actor_terms
+                    elif 'best motion picture' in subcat and 'animated' not in subcat and 'foreign' not in subcat and 'non-english' not in subcat:
+                        is_valid_film_context = True
+                    
+                    if is_valid_film_context:
                         key = 'best-film'
                         genre = 'Drama' if 'drama' in subcat else 'Comedy'
                     elif current_main_cat == 'actor-drama' or ('actor' in subcat and 'drama' in subcat and 'motion picture' in subcat and 'supporting' not in subcat):
@@ -143,6 +155,19 @@ def scrape_gg_old_format(tables_or_soup, award_key):
                             key = 'best-actress'
                         else:
                             key = 'best-actor'
+                    # NEW: Explicit actress detection for old GG format where columns are separate
+                    # Old format has "Actor in Drama | Actress in Drama" as separate TH headers
+                    elif 'actress' in subcat and 'motion picture' in subcat and 'drama' in subcat and 'supporting' not in subcat:
+                        role = 'Leading'
+                        genre = 'Drama'
+                        key = 'best-actress'
+                    elif 'actress' in subcat and 'motion picture' in subcat and ('comedy' in subcat or 'musical' in subcat) and 'supporting' not in subcat:
+                        role = 'Leading'
+                        genre = 'Comedy'
+                        key = 'best-actress'
+                    elif 'actress' in subcat and 'supporting' in subcat and 'motion picture' in subcat:
+                        role = 'Supporting'
+                        key = 'best-actress'
                     elif current_main_cat == 'supporting-film-actor':
                         role = 'Supporting'
                         key = 'best-actor'
@@ -172,6 +197,59 @@ def scrape_gg_old_format(tables_or_soup, award_key):
                     if key in ['best-actor', 'best-actress', 'best-director']:
                          if 'animated' in td.get_text().lower():
                              continue
+
+                    # SPECIAL CASE: Old format (e.g. 2001) has winners outside <ul> as <b><a>Winner</a></b>
+                    # Find bold tags properly
+                    bolds = td.find_all('b')
+                    for bold in bolds:
+                        # Skip if this bold tag is inside an <li> (handled by list loop below)
+                        if bold.find_parent('li'):
+                            continue
+                        
+                        # Use first link in bold tag
+                        first_link = bold.find('a')
+                        if not first_link:
+                            # Sometimes bold text is just the name without link? Rare but strictly looking for links for consistency
+                            continue
+                            
+                        name = first_link.get_text().strip()
+                        # print(f"DEBUG BOLD: Found candidate '{name}' for key '{key}'") 
+                        if len(name) < 2:
+                            continue
+                            
+                        # For actors/directors, check for film name (usually not present in this outside-list format, but checking next sibling/line)
+                        entry_film = '' 
+                        # In the "Winner<br><ul>" format, film is usually implied or part of the bold text? 
+                        # For 58th GG Film: "<b><a..>Gladiator</a></b>" -> Name is Gladiator. Film is Gladiator.
+                        # For 58th GG Director: "<b>Ang Lee</b> - <a..>Crouching Tiger</a>" -> Complex.
+                        # Let's handle simple case first. If key is film, name is film.
+                        
+                        seen_key = f"{name}|{entry_film}"
+                        if seen_key in seen_names[key]:
+                            continue
+                        seen_names[key].add(seen_key)
+                        
+                        entry = {
+                            'name': name,
+                            'film': entry_film, # Might be empty for director/actor in this format, will fallback later?
+                            'runner_up': False,
+                            'winner': True,
+                            'awards': {'gg': {'winner': True}}
+                        }
+                        
+                        if genre:
+                            entry['genre'] = genre
+                        if role:
+                            entry['role'] = role
+                            
+                        if key == 'best-film':
+                             results[key].append(entry)
+                        elif key in ['best-actor', 'best-actress', 'best-director']:
+                             # For director/actor outside list, retrieving film is hard without scraping siblings.
+                             # For now, append. The clean step might handle empty film? 
+                             # 58th GG Director winner is "Ang Lee - Crouching Tiger..." text node.
+                             # Simple extract won't get film. But better to have Director than nothing.
+                             results[key].append(entry)
 
                     # Parse nominees from <li> items
                     lis = td.find_all('li')

@@ -6,10 +6,10 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "afi": "Y",
-        "sag": "X",
-        "nbr": "Y",
         "critics": "Y",
+        "sag": "X",
+        "afi": "Y",
+        "nbr": "Y",
         "pga": "Y",
         "nyfcc": "Y",
         "adg": "X"
@@ -24,15 +24,15 @@
         "bafta": "X",
         "gg": "Y",
         "oscar": "X",
-        "afi": "Y",
-        "sag": "X",
-        "nbr": "Y",
         "critics": "X",
+        "sag": "X",
+        "afi": "Y",
+        "nbr": "Y",
         "pga": "X",
         "lafca": "Y",
+        "adg": "X",
         "wga": "Y",
-        "gotham": "X",
-        "adg": "X"
+        "gotham": "X"
       },
       "genre": "Drama",
       "posterPath": "/8cDq5UlOPYeKm39okALCEOsZPxk.jpg",
@@ -43,12 +43,12 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
+        "critics": "X",
         "afi": "Y",
         "nbr": "Y",
-        "critics": "X",
         "pga": "X",
-        "wga": "X",
-        "adg": "Y"
+        "adg": "Y",
+        "wga": "X"
       },
       "genre": "Drama",
       "posterPath": "/1dxRq3o3l3bVWNRvvSb7rRf68qp.jpg",
@@ -58,9 +58,9 @@
       "name": "The Tree of Life",
       "awards": {
         "oscar": "X",
+        "critics": "X",
         "afi": "Y",
         "nbr": "Y",
-        "critics": "X",
         "cannes": "Y",
         "lafca": "X"
       },
@@ -73,8 +73,8 @@
         "afi": "Y",
         "nbr": "Y",
         "pga": "X",
-        "wga": "X",
-        "adg": "Y"
+        "adg": "Y",
+        "wga": "X"
       },
       "posterPath": "/8bokS83zGdhaXgN9tjidUKmAftW.jpg",
       "tmdbId": 65754
@@ -85,12 +85,12 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "afi": "Y",
-        "sag": "Y",
         "critics": "X",
+        "sag": "Y",
+        "afi": "Y",
         "pga": "X",
-        "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
       "genre": "Drama",
       "posterPath": "/3kmfoWWEc9Vtyuaf9v5VipRgdjx.jpg",
@@ -101,9 +101,9 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
+        "critics": "X",
         "afi": "Y",
         "nbr": "Y",
-        "critics": "X",
         "pga": "X"
       },
       "genre": "Drama",
@@ -115,8 +115,8 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "afi": "Y",
         "critics": "X",
+        "afi": "Y",
         "pga": "X",
         "wga": "Y"
       },
@@ -147,8 +147,8 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "afi": "Y",
         "critics": "X",
+        "afi": "Y",
         "pga": "X",
         "wga": "X"
       },
@@ -160,11 +160,11 @@
       "name": "Bridesmaids",
       "awards": {
         "gg": "X",
-        "afi": "Y",
         "sag": "X",
+        "afi": "Y",
         "pga": "X",
-        "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
       "genre": "Comedy",
       "posterPath": "/gJtA7hYsBMQ7EM3sPBMUdBfU7a0.jpg",
@@ -174,8 +174,8 @@
       "name": "Drive",
       "awards": {
         "bafta": "X",
-        "nbr": "Y",
         "critics": "X",
+        "nbr": "Y",
         "adg": "X"
       },
       "posterPath": "/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
@@ -200,6 +200,14 @@
       "note": "AFI Special Award",
       "posterPath": "/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
       "tmdbId": 671
+    },
+    {
+      "name": "Faust",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/8jH8wVLNZ24QVxm5IEByWpsmHXJ.jpg",
+      "tmdbId": 77560
     },
     {
       "name": "Beginners (TIE)",
@@ -259,38 +267,76 @@
       "tmdbId": 59436
     },
     {
-      "name": "Win Win",
+      "name": "A Cat in Paris",
       "awards": {
-        "wga": "X"
+        "annie": "X"
       },
-      "screenplay_type": "original",
-      "posterPath": "/xX0Ryq5J2weFF5BPYb80giKUL02.jpg",
-      "tmdbId": 55725
+      "posterPath": "/oTAC9Htd7rAZuxrmkgTMIihtqMR.jpg",
+      "tmdbId": 52264
     },
     {
-      "name": "Young Adult",
+      "name": "Wrinkles",
       "awards": {
-        "wga": "X"
+        "annie": "X"
       },
-      "screenplay_type": "original",
-      "posterPath": "/A8g8rTSpdDKvKC1Y5zgf2NnwaD2.jpg",
-      "tmdbId": 987923
+      "posterPath": "/36LCqpkOTNi2PTlFQXqmspcgjmT.jpg",
+      "tmdbId": 1084239
     },
     {
-      "name": "Meek's Cutoff",
+      "name": "Arthur Christmas",
       "awards": {
-        "gotham": "X"
+        "annie": "X"
       },
-      "posterPath": "/jxjLpZseFdzMBvGfTscTTpM94Yk.jpg",
-      "tmdbId": 57120
+      "posterPath": "/yF7SNheAGWavNnjbAronedwjC1N.jpg",
+      "tmdbId": 51052
     },
     {
-      "name": "Take Shelter",
+      "name": "Cars 2",
       "awards": {
-        "gotham": "X"
+        "annie": "X"
       },
-      "posterPath": "/dldIX0q5jewe8rSyCh8d5I1RYx3.jpg",
-      "tmdbId": 64720
+      "posterPath": "/okIz1HyxeVOMzYwwHUjH2pHi74I.jpg",
+      "tmdbId": 49013
+    },
+    {
+      "name": "Chico & Rita",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/Kj9JAhMNSektw6RVYR1oJWGZWa.jpg",
+      "tmdbId": 63498
+    },
+    {
+      "name": "Kung Fu Panda 2",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/mtqqD00vB4PGRt20gWtGqFhrkd0.jpg",
+      "tmdbId": 49444
+    },
+    {
+      "name": "Puss in Boots",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/n4UkIqNYSTr4DPoHCVfLrL8mbre.jpg",
+      "tmdbId": 417859
+    },
+    {
+      "name": "Rio",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/4nJxhUknKV8Gqdhov8pU1YWDYfb.jpg",
+      "tmdbId": 46195
+    },
+    {
+      "name": "The Adventures of Tintin",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/fQZ3sLR1Fi63NMsNRbjm9q5qODJ.jpg",
+      "tmdbId": 17578
     },
     {
       "name": "Anonymous",
@@ -339,6 +385,40 @@
       },
       "posterPath": "/6pszViNvKr1r31pP7gJNYDHEx5P.jpg",
       "tmdbId": 64685
+    },
+    {
+      "name": "Win Win",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "original",
+      "posterPath": "/xX0Ryq5J2weFF5BPYb80giKUL02.jpg",
+      "tmdbId": 55725
+    },
+    {
+      "name": "Young Adult",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "original",
+      "posterPath": "/A8g8rTSpdDKvKC1Y5zgf2NnwaD2.jpg",
+      "tmdbId": 987923
+    },
+    {
+      "name": "Meek's Cutoff",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/jxjLpZseFdzMBvGfTscTTpM94Yk.jpg",
+      "tmdbId": 57120
+    },
+    {
+      "name": "Take Shelter",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/dldIX0q5jewe8rSyCh8d5I1RYx3.jpg",
+      "tmdbId": 64720
     }
   ],
   "best-director": [
@@ -362,8 +442,8 @@
         "bafta": "X",
         "gg": "Y",
         "oscar": "X",
-        "nbr": "Y",
         "critics": "X",
+        "nbr": "Y",
         "lafca": "X"
       },
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
@@ -389,6 +469,15 @@
       },
       "profilePath": "/6FSi5aeyCNxJp96gxOmX7R4hCFu.jpg",
       "tmdbId": 30715
+    },
+    {
+      "name": "Cai Shangjun",
+      "film": "Rénshānrénhǎi",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/bwIMqPng74Tug9ZU0oP46oAxSP9.jpg",
+      "tmdbId": 15162
     },
     {
       "name": "Alexander Payne",
@@ -464,8 +553,8 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "sag": "Y",
         "critics": "Y",
+        "sag": "Y",
         "lafca": "Y"
       },
       "profilePath": "/iZh3s9Vy9vYD4DYnAda6C1kdeco.jpg",
@@ -479,8 +568,8 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "sag": "Y",
         "critics": "X",
+        "sag": "Y",
         "cannes": "Y"
       },
       "profilePath": "/iPtSWWoO8vajj6fIUQLQeuGOCsk.jpg",
@@ -494,9 +583,9 @@
         "bafta": "X",
         "gg": "Y",
         "oscar": "X",
+        "critics": "Y",
         "sag": "X",
-        "nbr": "Y",
-        "critics": "Y"
+        "nbr": "Y"
       },
       "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
       "tmdbId": 1461
@@ -509,12 +598,25 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
         "critics": "X",
+        "sag": "X",
         "nyfcc": "Y"
       },
-      "profilePath": "/ajNaPmXVVMJFg9GWmu6MJzTaXdV.jpg",
+      "profilePath": "/cckcYc2v0yh1tc9QjRelptcOBko.jpg",
       "tmdbId": 287
+    },
+    {
+      "name": "Michael Fassbender",
+      "film": "Shame",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X",
+        "venice": "Y"
+      },
+      "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg",
+      "tmdbId": 17288
     },
     {
       "name": "Albert Brooks",
@@ -545,22 +647,11 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg",
       "tmdbId": 11181
-    },
-    {
-      "name": "Michael Fassbender",
-      "film": "Shame",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg",
-      "tmdbId": 17288
     },
     {
       "name": "Jonah Hill",
@@ -569,7 +660,8 @@
       "awards": {
         "bafta": "X",
         "gg": "X",
-        "oscar": "X"
+        "oscar": "X",
+        "sag": "X"
       },
       "profilePath": "/5aE4GgJADHzN1QsS6zkzElZSEYq.jpg",
       "tmdbId": 21007
@@ -578,12 +670,12 @@
       "name": "Leonardo DiCaprio",
       "awards": {
         "gg": "X",
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "film": "J. Edgar",
       "role": "Leading",
-      "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
+      "profilePath": "/iqPBAdsFdAVCdahQM29kTG6UgD7.jpg",
       "tmdbId": 6193
     },
     {
@@ -592,8 +684,8 @@
       "role": "Supporting",
       "awards": {
         "oscar": "X",
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/jpYzFBi6zfn8CHVaXmqgiOTas4V.jpg",
       "tmdbId": 1733
@@ -606,7 +698,7 @@
         "bafta": "X",
         "oscar": "X"
       },
-      "profilePath": "/2v9FVVBUrrkW2m3QOcYkuhq9A6o.jpg",
+      "profilePath": "/4HxoaJ8619S6eHOO901FMuxQ1FE.jpg",
       "tmdbId": 64
     },
     {
@@ -722,36 +814,6 @@
       "tmdbId": 2201
     },
     {
-      "name": "Kenneth Branagh",
-      "awards": {
-        "sag": "X"
-      },
-      "film": "Laurence Olivier",
-      "role": "Supporting",
-      "profilePath": "/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg",
-      "tmdbId": 11181
-    },
-    {
-      "name": "Armie Hammer",
-      "awards": {
-        "sag": "X"
-      },
-      "film": "Clyde Tolson",
-      "role": "Supporting",
-      "profilePath": "/4Z5nLW2biRjqstDMKqSaeQYAesK.jpg",
-      "tmdbId": 53807
-    },
-    {
-      "name": "Jonah Hill",
-      "awards": {
-        "sag": "X"
-      },
-      "film": "Peter Brand",
-      "role": "Supporting",
-      "profilePath": "/5aE4GgJADHzN1QsS6zkzElZSEYq.jpg",
-      "tmdbId": 21007
-    },
-    {
       "name": "Ryan Gosling",
       "film": "Drive",
       "role": "Leading",
@@ -772,6 +834,16 @@
       "tmdbId": 1333
     },
     {
+      "name": "Armie Hammer",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "J. Edgar",
+      "role": "Supporting",
+      "profilePath": "/4Z5nLW2biRjqstDMKqSaeQYAesK.jpg",
+      "tmdbId": 53807
+    },
+    {
       "name": "Michael Shannon",
       "awards": {
         "lafca": "X"
@@ -783,21 +855,6 @@
   ],
   "best-actress": [
     {
-      "name": "Meryl Streep",
-      "film": "The Iron Lady",
-      "role": "Leading",
-      "awards": {
-        "bafta": "Y",
-        "gg": "Y",
-        "oscar": "Y",
-        "sag": "X",
-        "critics": "X",
-        "nyfcc": "Y"
-      },
-      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
-      "tmdbId": 5064
-    },
-    {
       "name": "Octavia Spencer",
       "film": "The Help",
       "role": "Supporting",
@@ -805,10 +862,26 @@
         "bafta": "Y",
         "gg": "Y",
         "oscar": "Y",
-        "critics": "Y"
+        "critics": "Y",
+        "sag": "Y"
       },
       "profilePath": "/35SOy4yQZ9xRSJ0q1L5RLhXfhqN.jpg",
       "tmdbId": 6944
+    },
+    {
+      "name": "Meryl Streep",
+      "film": "The Iron Lady",
+      "role": "Leading",
+      "awards": {
+        "bafta": "Y",
+        "gg": "Y",
+        "oscar": "Y",
+        "critics": "X",
+        "sag": "X",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
+      "tmdbId": 5064
     },
     {
       "name": "Viola Davis",
@@ -818,11 +891,26 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "sag": "Y",
-        "critics": "Y"
+        "critics": "Y",
+        "sag": "Y"
       },
       "profilePath": "/xDssw6vpYNRjsybvMPRE30e0dPN.jpg",
       "tmdbId": 19492
+    },
+    {
+      "name": "Jessica Chastain",
+      "film": "The Help",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "critics": "X",
+        "sag": "X",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
+      "tmdbId": 83002
     },
     {
       "name": "Michelle Williams",
@@ -832,8 +920,8 @@
         "bafta": "X",
         "gg": "Y",
         "oscar": "X",
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg",
       "tmdbId": 1812
@@ -845,26 +933,12 @@
       "awards": {
         "bafta": "X",
         "gg": "X",
+        "critics": "X",
         "sag": "X",
-        "nbr": "Y",
-        "critics": "X"
+        "nbr": "Y"
       },
       "profilePath": "/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
       "tmdbId": 3063
-    },
-    {
-      "name": "Jessica Chastain",
-      "film": "The Help",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "oscar": "X",
-        "critics": "X",
-        "nyfcc": "Y"
-      },
-      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
-      "tmdbId": 83002
     },
     {
       "name": "Kirsten Dunst",
@@ -877,13 +951,13 @@
       "tmdbId": 205
     },
     {
-      "name": "Octavia Spencer",
+      "name": "Deanie Yip",
+      "film": "A Simple Life",
       "awards": {
-        "sag": "Y"
+        "venice": "Y"
       },
-      "role": "Supporting",
-      "profilePath": "/35SOy4yQZ9xRSJ0q1L5RLhXfhqN.jpg",
-      "tmdbId": 6944
+      "profilePath": "/cbLmEQf2bzjEB4tOcoCPOVTZLeb.jpg",
+      "tmdbId": 87840
     },
     {
       "name": "Yoon Jeong-hee",
@@ -911,7 +985,8 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/bdMPpjb6jaKaFkbA3xj0jsxusb0.jpg",
       "tmdbId": 82923
@@ -923,11 +998,24 @@
       "awards": {
         "bafta": "X",
         "oscar": "X",
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/yl0qva0O4u92fvtItakdvKmKrW9.jpg",
       "tmdbId": 55536
+    },
+    {
+      "name": "Janet McTeer",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "lafca": "X"
+      },
+      "film": "Albert Nobbs",
+      "role": "Leading",
+      "profilePath": "/kl8cHLOQbwLrBfMWtAwtP4hUXFk.jpg",
+      "tmdbId": 47627
     },
     {
       "name": "Glenn Close",
@@ -940,18 +1028,6 @@
       "role": "Leading",
       "profilePath": "/4VHZ1GfLwN7MUgApy0LCBzdDF9L.jpg",
       "tmdbId": 515
-    },
-    {
-      "name": "Janet McTeer",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "lafca": "X"
-      },
-      "film": "Albert Nobbs",
-      "role": "Leading",
-      "profilePath": "/kl8cHLOQbwLrBfMWtAwtP4hUXFk.jpg",
-      "tmdbId": 47627
     },
     {
       "name": "Rooney Mara",
@@ -1037,33 +1113,6 @@
       "tmdbId": 204
     },
     {
-      "name": "Bérénice Bejo",
-      "awards": {
-        "sag": "X"
-      },
-      "role": "Supporting",
-      "profilePath": "/bdMPpjb6jaKaFkbA3xj0jsxusb0.jpg",
-      "tmdbId": 82923
-    },
-    {
-      "name": "Jessica Chastain",
-      "awards": {
-        "sag": "X"
-      },
-      "role": "Supporting",
-      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
-      "tmdbId": 83002
-    },
-    {
-      "name": "Janet McTeer",
-      "awards": {
-        "sag": "X"
-      },
-      "role": "Supporting",
-      "profilePath": "/kl8cHLOQbwLrBfMWtAwtP4hUXFk.jpg",
-      "tmdbId": 47627
-    },
-    {
       "name": "Elizabeth Olsen",
       "film": "Martha Marcy May Marlene",
       "role": "Leading",
@@ -1083,5 +1132,79 @@
       "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg",
       "tmdbId": 36662
     }
-  ]
+  ],
+  "annie": {
+    "best-film": [
+      {
+        "name": "A Cat in Paris",
+        "awards": {
+          "annie": "X"
+        }
+      },
+      {
+        "name": "Wrinkles",
+        "awards": {
+          "annie": "X"
+        }
+      },
+      {
+        "name": "Arthur Christmas",
+        "awards": {
+          "annie": "X"
+        }
+      },
+      {
+        "name": "Cars 2",
+        "awards": {
+          "annie": "X"
+        }
+      },
+      {
+        "name": "Chico & Rita",
+        "awards": {
+          "annie": "X"
+        }
+      },
+      {
+        "name": "Kung Fu Panda 2",
+        "awards": {
+          "annie": "X"
+        }
+      },
+      {
+        "name": "Puss in Boots",
+        "awards": {
+          "annie": "X"
+        }
+      },
+      {
+        "name": "Rio",
+        "awards": {
+          "annie": "X"
+        }
+      },
+      {
+        "name": "The Adventures of Tintin",
+        "awards": {
+          "annie": "X"
+        }
+      }
+    ],
+    "best-director": [],
+    "best-actor": [],
+    "best-actress": []
+  },
+  "gotham": {
+    "best-film": [
+      {
+        "name": "Beginners (TIE)",
+        "awards": {
+          "gotham": "Y"
+        }
+      }
+    ],
+    "best-director": [],
+    "best-actor": [],
+    "best-actress": []
+  }
 }

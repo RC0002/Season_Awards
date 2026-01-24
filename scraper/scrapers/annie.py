@@ -42,9 +42,144 @@ def scrape_annie(ceremony_number):
             best_feature_th = th
             break
     
+    # FALLBACK: Check for h2/h3 headers by ID (used in older Annie Awards pages like 29th-39th)
+    # Wikipedia uses IDs like "Best_Animated_Feature" or "Best_Feature" in section headers
+    if not best_feature_th:
+        # Try to find section by ID
+        section_ids = ['Best_Animated_Feature', 'Best_Feature']
+        section_header = None
+        for sid in section_ids:
+            elem = soup.find(id=sid)
+            if elem:
+                # The ID might be on a span inside h2, or on h2 itself
+                section_header = elem.find_parent(['h2', 'h3']) or (elem if elem.name in ['h2', 'h3'] else None)
+                if section_header:
+                    break
+        
+        if section_header:
+            # Found header-based structure
+            # Use find_all_next to get p and ul elements (not siblings due to wiki structure)
+            following_elements = section_header.find_all_next(['p', 'ul', 'h2', 'h3'])
+            
+            found_winner = None
+            nominees = []
+            winner_section = False
+            
+            for elem in following_elements:
+                # Stop at next h2/h3 section
+                if elem.name in ['h2', 'h3']:
+                    break
+                
+                text = elem.get_text()
+                
+                # Check if this is a "Winner:" header
+                if elem.name == 'p' and 'Winner' in text:
+                    winner_section = True
+                    continue
+                
+                # Check if this is a "Nominees:" header
+                if elem.name == 'p' and 'Nominee' in text:
+                    winner_section = False
+                    continue
+                
+                # Process ul lists
+                if elem.name == 'ul':
+                    for li in elem.find_all('li', recursive=False):
+                        # Check if this list item is bold (winner)
+                        is_bold = li.find(['b', 'strong'])
+                        
+                        # Get film name - try italic first, then link, then text
+                        film_i = li.find('i')
+                        if film_i:
+                            film_name = film_i.get_text().strip()
+                        else:
+                            first_link = li.find('a')
+                            if first_link:
+                                film_name = first_link.get_text().strip()
+                            else:
+                                film_name = li.get_text().strip()
+                        
+                        # Clean up film name
+                        if ' - ' in film_name:
+                            film_name = film_name.split(' - ')[0].strip()
+                        if '-' in film_name and len(film_name.split('-')[0]) > 3:
+                            film_name = film_name.split('-')[0].strip()
+                        if '(' in film_name:
+                            film_name = film_name.split('(')[0].strip()
+                        
+                        if film_name:
+                            # If we are in a winner section OR the item is bold, it's a winner
+                            if (winner_section or is_bold) and not found_winner:
+                                found_winner = film_name
+                            else:
+                                if film_name != found_winner:
+                                    nominees.append(film_name)
+            
+            # Add results
+            if found_winner:
+                results['best-film'].append({
+                    'name': found_winner,
+                    'awards': {'annie': 'Y'}
+                })
+            
+            for nominee in nominees:
+                results['best-film'].append({
+                    'name': nominee,
+                    'awards': {'annie': 'X'}
+                })
+            
+            if results['best-film']:
+                total = len(results['best-film'])
+                winners = len([f for f in results['best-film'] if f['awards']['annie'] == 'Y'])
+                print(f"    Annie {ordinal_str}: Found {total} entries (Winner: {winners}, Nominees: {total - winners}) [header structure]")
+                return results
+    
+    # FALLBACK 2: Search for wikitable containing "Best Animated Feature" in cell text
+    # Used in 35th Annie Awards where category is in td, not th
+    if not best_feature_th:
+        for table in soup.find_all('table', class_='wikitable'):
+            table_text = table.get_text()
+            if 'Best Animated Feature' in table_text:
+                # Find the cell containing "Best Animated Feature"
+                for td in table.find_all('td'):
+                    td_text = td.get_text()
+                    if 'Best Animated Feature' in td_text:
+                        # Parse films from this cell - each line is a film
+                        # Films with † are winners
+                        lines = [line.strip() for line in td_text.split('\n') if line.strip()]
+                        for line in lines:
+                            if 'Best Animated Feature' in line or 'Best Home' in line:
+                                continue
+                            
+                            # Check for winner marker (†)
+                            is_winner = '†' in line
+                            
+                            # Extract film name (before – or - that separates studio)
+                            film_name = line.replace('†', '').strip()
+                            if '–' in film_name:
+                                film_name = film_name.split('–')[0].strip()
+                            elif ' - ' in film_name:
+                                film_name = film_name.split(' - ')[0].strip()
+                            
+                            if film_name and len(film_name) > 2:
+                                results['best-film'].append({
+                                    'name': film_name,
+                                    'awards': {'annie': 'Y' if is_winner else 'X'}
+                                })
+                        
+                        if results['best-film']:
+                            total = len(results['best-film'])
+                            winners = len([f for f in results['best-film'] if f['awards']['annie'] == 'Y'])
+                            print(f"    Annie {ordinal_str}: Found {total} entries (Winner: {winners}, Nominees: {total - winners}) [table text structure]")
+                            return results
+                        break
+                break
+    
     if not best_feature_th:
         print(f"    Annie: 'Best Animated Feature' / 'Best Feature' section not found")
         return results
+
+
     
     # Get the <td> cell that contains the films
     table = best_feature_th.find_parent('table')

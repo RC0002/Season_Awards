@@ -144,6 +144,15 @@ CEREMONY_MAP = {
         2009: 2008, 2008: 2007, 2007: 2006, 2006: 2005, 2005: 2004, 2004: 2003,
         2003: 2002, 2002: 2001, 2001: 2000
     },
+    # Annie Awards: 53rd in 2026 for 2025 films (Season 2025/26)
+    # Formula: Year - 1973 = Ceremony Number
+    'annie': {
+        2026: 53, 2025: 52, 2024: 51, 2023: 50, 2022: 49, 2021: 48,
+        2020: 47, 2019: 46, 2018: 45, 2017: 44, 2016: 43,
+        2015: 42, 2014: 41, 2013: 40, 2012: 39, 2011: 38, 2010: 37,
+        2009: 36, 2008: 35, 2007: 34, 2006: 33, 2005: 32, 2004: 31,
+        2003: 30, 2002: 29, 2001: 28
+    },
     # Astra Film Awards (formerly Hollywood Critics Association - HCA)
     # 9th Astra in 2026 for 2025 films (Season 2025/26)
     # 8th Astra in 2025 for 2024 films (Season 2024/25)
@@ -241,60 +250,107 @@ def parse_nominees_from_cell(cell, category_type, award_name):
     
     # First, check for winners in bold text BEFORE the list (common in Critics Choice)
     # Look for <b> tags that contain <a> links and are NOT inside <li>
+    # IMPORTANT: Handle TIE winners where multiple winners are in the same <b> tag separated by <br>
     for bold in cell.find_all('b', recursive=True):
         # Skip if this bold is inside a list item (will be processed later)
         if bold.find_parent('li'):
             continue
         
-        first_link = bold.find('a')
-        if not first_link:
+        # Get ALL links in this bold tag (for ties, there may be multiple winners)
+        all_links_in_bold = bold.find_all('a')
+        if not all_links_in_bold:
             continue
         
-        link_title = first_link.get('title', '') or ''
-        if any(w in link_title for w in skip_words):
-            continue
+        # Process each potential winner link
+        # Strategy: alternate between person and film if category is director/actor
+        # For simple cases: first link = person, second link = film
+        # For ties: multiple persons, each with their own film
         
-        name = first_link.get_text().strip()
-        if len(name) < 2:
-            continue
+        # Separate text segments by <br> to detect tie format
+        bold_html = str(bold)
+        segments = bold_html.split('<br')  # Split on <br> or <br/>
         
-        # Get film name for person categories
-        film = None
-        if category_type in ['director', 'actor']:
-            # Look for links after the name within the same bold or nearby
-            all_links = bold.find_all('a')
-            for link in all_links[1:]:
-                link_text = link.get_text().strip()
-                link_title = link.get('title', '') or ''
+        if len(segments) > 1:
+            # TIE FORMAT: Multiple winners separated by <br>
+            for segment in segments:
+                # Parse this segment to find person and film
+                from bs4 import BeautifulSoup as BS
+                seg_soup = BS('<span>' + segment + '</span>', 'html.parser')
+                links = seg_soup.find_all('a')
+                
+                if not links:
+                    continue
+                
+                # First link is the person
+                person_link = links[0]
+                person_name = person_link.get_text().strip()
+                link_title = person_link.get('title', '') or ''
+                
                 if any(w in link_title for w in skip_words):
                     continue
-                if len(link_text) > 1:
-                    film = link_text
-                    break
-            # If no film found in bold, check the parent element
-            if not film:
-                parent = bold.parent
-                if parent:
-                    for link in parent.find_all('a'):
-                        if link == first_link or link in bold.find_all('a'):
-                            continue
-                        link_text = link.get_text().strip()
-                        link_title = link.get('title', '') or ''
-                        if any(w in link_title for w in skip_words):
-                            continue
-                        if len(link_text) > 1:
-                            film = link_text
-                            break
-        # Check for dedup AFTER we have the film (use tuple key)
-        entry_key = (name, film) if film else (name, None)
-        if entry_key in seen_entries:
-            continue
-        seen_entries.add(entry_key)
-        
-        entry = {'name': name, 'is_winner': True}  # Bold outside list = winner
-        if film:
-            entry['film'] = film
-        nominees.append(entry)
+                if len(person_name) < 2:
+                    continue
+                
+                # Second link (if exists) is the film
+                film = None
+                if category_type in ['director', 'actor'] and len(links) > 1:
+                    film = links[1].get_text().strip()
+                
+                entry_key = (person_name, film) if film else (person_name, None)
+                if entry_key in seen_entries:
+                    continue
+                seen_entries.add(entry_key)
+                
+                entry = {'name': person_name, 'is_winner': True}
+                if film:
+                    entry['film'] = film
+                nominees.append(entry)
+        else:
+            # SINGLE WINNER FORMAT: Just one person in bold
+            first_link = all_links_in_bold[0]
+            link_title = first_link.get('title', '') or ''
+            if any(w in link_title for w in skip_words):
+                continue
+            
+            name = first_link.get_text().strip()
+            if len(name) < 2:
+                continue
+            
+            # Get film name for person categories
+            film = None
+            if category_type in ['director', 'actor']:
+                for link in all_links_in_bold[1:]:
+                    link_text = link.get_text().strip()
+                    link_title = link.get('title', '') or ''
+                    if any(w in link_title for w in skip_words):
+                        continue
+                    if len(link_text) > 1:
+                        film = link_text
+                        break
+                # If no film found in bold, check the parent element
+                if not film:
+                    parent = bold.parent
+                    if parent:
+                        for link in parent.find_all('a'):
+                            if link in all_links_in_bold:
+                                continue
+                            link_text = link.get_text().strip()
+                            link_title = link.get('title', '') or ''
+                            if any(w in link_title for w in skip_words):
+                                continue
+                            if len(link_text) > 1:
+                                film = link_text
+                                break
+            
+            entry_key = (name, film) if film else (name, None)
+            if entry_key in seen_entries:
+                continue
+            seen_entries.add(entry_key)
+            
+            entry = {'name': name, 'is_winner': True}
+            if film:
+                entry['film'] = film
+            nominees.append(entry)
     
     # Then process list items as before
     lis = cell.find_all('li', recursive=True)
@@ -504,15 +560,36 @@ def scrape_sag_old_format(tables_or_soup, award_key):
                                     }
                                     results[key].append(entry)
                         else:
-                            # For actors, get from first <a> tag
+                            # For actors, get from first <a> tag or text before dash if no link
                             first_link = li.find('a')
-                            if not first_link:
-                                continue
-                            
-                            name = first_link.get_text().strip()
-                            # Get film name first for deduplication
-                            all_links = li.find_all('a')
-                            film_name = all_links[1].get_text().strip() if len(all_links) >= 2 else ''
+                            if first_link:
+                                name = first_link.get_text().strip()
+                            else:
+                                # Fallback: extract name from text before "–" or "-"
+                                li_text = li.get_text().strip()
+                                if '–' in li_text:
+                                    name = li_text.split('–')[0].strip()
+                                elif '-' in li_text:
+                                    name = li_text.split('-')[0].strip()
+                                else:
+                                    continue
+                                if len(name) < 2:
+                                    continue
+                            # Get film name - first try <i> tag (common in SAG pages), then 2nd <a> link
+                            film_name = ''
+                            i_tag = li.find('i')
+                            if i_tag:
+                                # Film name is in italic - extract first <a> inside <i> or text
+                                i_link = i_tag.find('a')
+                                if i_link:
+                                    film_name = i_link.get_text().strip()
+                                else:
+                                    film_name = i_tag.get_text().strip()
+                            else:
+                                # Fallback: use 2nd <a> link if no <i> tag
+                                all_links = li.find_all('a')
+                                if len(all_links) >= 2:
+                                    film_name = all_links[1].get_text().strip()
                             entry_key = (name, film_name)
                             
                             if len(name) < 2 or entry_key in seen_entries.get(key, set()):
@@ -522,7 +599,7 @@ def scrape_sag_old_format(tables_or_soup, award_key):
                                 seen_entries[key].add(entry_key)
                             
                             # Check if winner (bold)
-                            is_bold = li.find('b') is not None or first_link.find_parent('b') is not None
+                            is_bold = li.find('b') is not None or (first_link and first_link.find_parent('b') is not None)
                             
                             entry = {
                                 'name': name,
@@ -602,37 +679,65 @@ def scrape_afi(year):
         containing_div = None
         if current.name == 'h3':
             h3 = current
-        elif current.name == 'div':
+        elif current.name == 'div' or current.name == 'link':
             h3 = current.find('h3')
-            if h3:
-                containing_div = current
-        
+            if not h3:
+                h3 = current.find('h4')
+        elif current.name == 'h4':
+            h3 = current
+
         if h3:
             h3_text = h3.get_text().lower()
-            if 'top 10 films' in h3_text or 'top 11 films' in h3_text:
+            is_people_category = any(x in h3_text for x in ['actor', 'actress', 'director', 'screenwriter'])
+            
+            if (('top 10 films' in h3_text or 'top 11 films' in h3_text or 'movie of the year' in h3_text or 'movies' == h3_text.strip()) and not is_people_category):
                 found_films = True
                 found_special = False
                 # Check if UL is inside this same div
-                if containing_div:
-                    ul = containing_div.find('ul')
+                if current.name == 'div' or current.name == 'link':
+                    ul = current.find('ul')
                     if ul:
-                        for li in ul.find_all('li', recursive=False):
-                            link = li.find('a')
-                            if link:
-                                film_name = link.get_text().strip()
+                        # Helper to extract films recursively (for 2001 nested format)
+                        def extract_films_from_ul(ul_tag):
+                            extracted = []
+                            for li in ul_tag.find_all('li', recursive=False):
+                                # Check for link in this li provided it's not just a container for another ul
+                                # Actually in 2001: Winner is text/link in li, Nominees are in nested ul
+                                
+                                # 1. Extract film from this li
+                                link = li.find('a')
+                                if link:
+                                    film_name = link.get_text().strip()
+                                else:
+                                    # Use text but exclude nested ul content if any
+                                    # Get text node only? Or get text and strip
+                                    film_name = li.get_text().split('\n')[0].strip()
+                                
                                 if len(film_name) >= 2:
-                                    entry = {
-                                        'name': film_name,
-                                        'awards': {'afi': 'Y'}
-                                    }
-                                    results['best-film'].append(entry)
+                                    extracted.append(film_name)
+                                
+                                # 2. Check for nested ul
+                                nested_ul = li.find('ul')
+                                if nested_ul:
+                                    extracted.extend(extract_films_from_ul(nested_ul))
+                            return extracted
+
+                        films = extract_films_from_ul(ul)
+                        for film_name in films:
+                            entry = {
+                                'name': film_name,
+                                'awards': {'afi': 'Y'}
+                            }
+                            results['best-film'].append(entry)
                         found_films = False  # Already processed
+                
+                # Also check for p/i tags for 2000 format? (Maybe not needed yet)
             elif 'special award' in h3_text:
                 found_special = True
                 found_films = False
                 # Check if UL is inside this same div
-                if containing_div:
-                    ul = containing_div.find('ul')
+                if current.name == 'div' or current.name == 'link':
+                    ul = current.find('ul')
                     if ul:
                         for li in ul.find_all('li', recursive=False):
                             link = li.find('a')
@@ -653,11 +758,26 @@ def scrape_afi(year):
         
         # Also parse ul elements that come as siblings (for older format pages)
         if (found_films or found_special) and current.name == 'ul':
-            for li in current.find_all('li', recursive=False):
-                link = li.find('a')
-                if link:
-                    film_name = link.get_text().strip()
+            # Helper to extract films recursively (for 2001 nested format)
+            def extract_films_from_ul(ul_tag):
+                extracted = []
+                for li in ul_tag.find_all('li', recursive=False):
+                    link = li.find('a')
+                    if link:
+                        film_name = link.get_text().strip()
+                    else:
+                        film_name = li.get_text().split('\n')[0].strip()
+                    
                     if len(film_name) >= 2:
+                        extracted.append(film_name)
+                    
+                    nested_ul = li.find('ul')
+                    if nested_ul:
+                        extracted.extend(extract_films_from_ul(nested_ul))
+                return extracted
+
+            films = extract_films_from_ul(current)
+            for film_name in films:
                         entry = {
                             'name': film_name,
                             'awards': {'afi': 'Y'}
@@ -697,71 +817,74 @@ def scrape_nbr(year):
     
     seen_films = set()
     
-    # Find Top 10 Films section (h2 with id="Top_10_Films")
-    # Wikipedia wraps h2 in <div class="mw-heading mw-heading2">
-    top10_h2 = soup.find('h2', id='Top_10_Films')
-    if not top10_h2:
-        # Fallback: search all h2 for text match
+    # 1. FIND TOP 10 FILMS section
+    top10_header = None
+    # ID check
+    if soup.find(id='Top_10_Films'): top10_header = soup.find(id='Top_10_Films')
+    elif soup.find(id='Top_10_films'): top10_header = soup.find(id='Top_10_films')
+    
+    # Text fallback
+    if not top10_header:
         for h2 in soup.find_all('h2'):
-            if 'top' in h2.get_text().lower() and 'film' in h2.get_text().lower():
-                top10_h2 = h2
+            text = h2.get_text().lower()
+            if 'top' in text and 'film' in text and ('10' in text or 'ten' in text):
+                top10_header = h2
                 break
     
-    if top10_h2:
-        # Navigate from parent div (mw-heading wrapper)
-        container = top10_h2.parent
-        current = container.next_sibling if container else top10_h2.next_sibling
-        
+    if top10_header:
+        container = top10_header.parent
+        # If header is wrapped in mw-heading div, start searching after that div
+        if container.name == 'div' and 'mw-heading' in container.get('class', []):
+            current = container.next_sibling
+        else:
+            current = top10_header.next_sibling
+            
         while current:
             if not hasattr(current, 'name'):
                 current = current.next_sibling
                 continue
             
-            # Stop at next section (div with mw-heading class or h2)
-            if current.name == 'h2':
-                break
-            if current.name == 'div' and 'mw-heading' in current.get('class', []):
+            # Stop at next section
+            if current.name in ['h2', 'h3'] or (current.name == 'div' and 'mw-heading' in current.get('class', [])):
                 break
             
-            # Parse films from ul or p elements
-            if current.name == 'ul':
+            # Parse films from UL (unordered) or OL (ordered - older years)
+            if current.name in ['ul', 'ol']:
                 for li in current.find_all('li', recursive=False):
                     link = li.find('a')
                     if link:
                         film_name = link.get_text().strip()
                         if len(film_name) >= 2 and film_name not in seen_films:
                             seen_films.add(film_name)
-                            entry = {
-                                'name': film_name,
-                                'awards': {'nbr': 'Y'}
-                            }
+                            entry = {'name': film_name, 'awards': {'nbr': 'Y'}}
                             results['best-film'].append(entry)
-            elif current.name == 'p':
-                # Best Film might be in a p tag with link
-                link = current.find('a')
-                if link:
-                    film_name = link.get_text().strip()
-                    if len(film_name) >= 2 and film_name not in seen_films:
-                        seen_films.add(film_name)
-                        entry = {
-                            'name': film_name,
-                            'awards': {'nbr': 'Y'}
-                        }
-                        results['best-film'].append(entry)
+            
+            # Sometimes Best Film is in a separate P tag with a link (e.g. 2005 Best Film: Good Night, and Good Luck)
+            # Only if we haven't found a list yet or in addition? Usually list contains top 10.
+            # Older pages put "Best Film" in the "Winners" section, so this might be redundant if we check winners properly.
             
             current = current.next_sibling
-    
-    # Find Winners section (h2 with id="Winners")
-    winners_h2 = soup.find('h2', id='Winners')
-    if not winners_h2:
+
+    # 2. FIND WINNERS section
+    winners_header = None
+    for keyword in ['Winners', 'Awards', 'Award Winners']:
+        if soup.find(id=keyword):
+            winners_header = soup.find(id=keyword)
+            break
+            
+    if not winners_header:
         for h2 in soup.find_all('h2'):
-            if 'winner' in h2.get_text().lower():
-                winners_h2 = h2
+            if 'winner' in h2.get_text().lower() or 'award' in h2.get_text().lower():
+                winners_header = h2
                 break
     
-    if winners_h2:
-        container = winners_h2.parent
-        current = container.next_sibling if container else winners_h2.next_sibling
+    if winners_header:
+        container = winners_header.parent
+        if container.name == 'div' and 'mw-heading' in container.get('class', []):
+            current = container.next_sibling
+        else:
+            current = winners_header.next_sibling
+            
         current_category = None
         
         while current:
@@ -769,45 +892,87 @@ def scrape_nbr(year):
                 current = current.next_sibling
                 continue
             
-            # Stop at next section
-            if current.name == 'h2':
-                break
-            if current.name == 'div' and 'mw-heading' in current.get('class', []):
+            if current.name in ['h2', 'h3'] or (current.name == 'div' and 'mw-heading' in current.get('class', [])):
                 break
             
-            # Check for category header (p > b with colon)
+            # Case A: Category Header followed by list (Modern format)
+            # <p><b>Best Actor:</b></p> <ul><li>...</li></ul>
             if current.name == 'p':
                 b = current.find('b')
                 if b:
                     cat_text = b.get_text().lower()
-                    if 'best director' in cat_text and 'debut' not in cat_text:
-                        current_category = 'best-director'
-                    elif 'best actor' in cat_text and 'supporting' not in cat_text:
-                        current_category = 'best-actor'
-                    elif 'best actress' in cat_text and 'supporting' not in cat_text:
-                        current_category = 'best-actress'
-                    else:
-                        current_category = None
+                    if 'director' in cat_text and 'debut' not in cat_text: current_category = 'best-director'
+                    elif 'actor' in cat_text and 'supporting' not in cat_text: current_category = 'best-actor'
+                    elif 'actress' in cat_text and 'supporting' not in cat_text: current_category = 'best-actress'
+                    elif ('best film' in cat_text or 'best picture' in cat_text) and 'foreign' not in cat_text: current_category = 'best-film'
+                    else: current_category = None
             
-            # Parse winner from ul after category header
             if current.name == 'ul' and current_category:
-                li = current.find('li')
-                if li:
+                for li in current.find_all('li', recursive=False):
                     links = li.find_all('a')
                     if links:
+                        # Logic: Name usually first link, film second
                         name = links[0].get_text().strip()
-                        film = links[1].get_text().strip() if len(links) > 1 else None
-                        
-                        if len(name) >= 2:
-                            entry = {
-                                'name': name,
-                                'awards': {'nbr': 'Y'}
-                            }
-                            if film:
-                                entry['film'] = film
+                        if current_category == 'best-film':
+                            # For best film, the name is the film
+                            if name not in seen_films:
+                                seen_films.add(name)
+                                results['best-film'].append({'name': name, 'awards': {'nbr': 'Y'}})
+                        else:
+                            # For person awards
+                            film = links[1].get_text().strip() if len(links) > 1 else None
+                            entry = {'name': name, 'awards': {'nbr': 'Y'}}
+                            if film: entry['film'] = film
                             results[current_category].append(entry)
-                current_category = None  # Reset after processing
-            
+                current_category = None
+                
+            # Case B: Single List with bolded categories (Older format)
+            # <ul><li><b>Best Actor:</b> Name</li> ... </ul>
+            if current.name == 'ul' and not current_category:
+                for li in current.find_all('li', recursive=False):
+                    text = li.get_text().lower()
+                    b = li.find('b')
+                    
+                    cat = None
+                    if 'best director' in text and 'debut' not in text: cat = 'best-director'
+                    elif 'best actor' in text and 'supporting' not in text: cat = 'best-actor'
+                    elif 'best actress' in text and 'supporting' not in text: cat = 'best-actress'
+                    elif ('best film' in text or 'best picture' in text) and 'foreign' not in text: cat = 'best-film'
+                    
+                    if cat:
+                        # Extract Content: "Category: Name" or "Category - Name"
+                        # If <b> present, text after </b> is the winner
+                        links = li.find_all('a')
+                        
+                        if cat == 'best-film':
+                            # Identify the film link. It might be the first link AFTER the category b tag
+                            # Or blindly take the last link? Risk of taking director name if listed.
+                            # Usually: <b>Best Picture:</b> <i><a>Film</a></i>
+                            for link in links:
+                                name = link.get_text().strip()
+                                # Filtering out "Best Picture" if it is linked (rare)
+                                if 'best' not in name.lower() and name not in seen_films:
+                                    seen_films.add(name)
+                                    results['best-film'].insert(0, {'name': name, 'awards': {'nbr': 'Y'}}) # Winner first
+                                    break
+                        else:
+                            # Person Category
+                            # Expect: Name (Film) or Name - Film
+                            # Typically Name is the first link found in the line (excluding category if linked)
+                            winner_name = None
+                            winner_film = None
+                            
+                            valid_links = [l for l in links if 'best' not in l.get_text().lower()]
+                            if valid_links:
+                                winner_name = valid_links[0].get_text().strip()
+                                if len(valid_links) > 1:
+                                    winner_film = valid_links[1].get_text().strip()
+                                    
+                            if winner_name:
+                                entry = {'name': winner_name, 'awards': {'nbr': 'Y'}}
+                                if winner_film: entry['film'] = winner_film
+                                results[cat].append(entry)
+
             current = current.next_sibling
     
     total = sum(len(v) for v in results.values())
@@ -1059,200 +1224,7 @@ def scrape_lafca(year):
     return results
 
 
-def scrape_venice(ceremony_num):
-    """
-    Scrape Venice Film Festival (Mostra di Venezia) from Italian Wikipedia.
-    Extracts from 'Premi della selezione ufficiale' > 'Concorso' section:
-    - Leone d'oro (best film)
-    - Leone d'argento - regia (best director)
-    - Coppa Volpi maschile (best actor)
-    - Coppa Volpi femminile (best actress)
-    """
-    url = URL_TEMPLATES['venice'].format(ord=ceremony_num)
-    print(f"  VENICE ({ceremony_num}th): {url}")
-    
-    soup = fetch_page(url)
-    if not soup:
-        return {}
-    
-    results = {
-        'best-film': [],
-        'best-director': [],
-        'best-actor': [],
-        'best-actress': []
-    }
-    
-    # Find 'Premi della selezione ufficiale' section (h3 with id)
-    premi_h3 = soup.find('h3', id='Premi_della_selezione_ufficiale')
-    if not premi_h3:
-        # Fallback: search by text
-        for h3 in soup.find_all('h3'):
-            if 'premi' in h3.get_text().lower() and 'selezione' in h3.get_text().lower():
-                premi_h3 = h3
-                break
-    
-    if not premi_h3:
-        print(f"    Venice: 'Premi della selezione ufficiale' section not found")
-        return results
-    
-    # Helper function to parse awards from li items
-    def parse_venice_li(li, results, forced_category=None):
-        nested_ul = li.find('ul')
-        li_text = li.get_text().lower()
-        
-        # If li has nested ul, process children
-        if nested_ul:
-            # Determine if parent defines a category
-            parent_category = None
-            
-            # Check for ambiguity (both maschile and femminile)
-            is_male_volpi = 'coppa volpi' in li_text and 'maschile' in li_text
-            is_female_volpi = 'coppa volpi' in li_text and 'femminile' in li_text
-            
-            if is_male_volpi and not is_female_volpi:
-                parent_category = 'best-actor'
-            elif is_female_volpi and not is_male_volpi:
-                parent_category = 'best-actress'
-            elif "leone d'oro" in li_text:
-                parent_category = 'best-film'
-            elif "leone d'argento" in li_text and 'regia' in li_text:
-                parent_category = 'best-director'
-            
-            # Recurse into children
-            # If we found a category in parent, force it on children
-            # Otherwise, children must self-identify
-            nested_lis = nested_ul.find_all('li', recursive=False)
-            
-            for nested_li in nested_lis:
-                parse_venice_li(nested_li, results, forced_category=parent_category)
-            
-            return
-        
-        # Determine category for this LI
-        category = forced_category
-        
-        if not category:
-            if "leone d'oro" in li_text and 'miglior film' in li_text:
-                category = 'best-film'
-            elif "leone d'argento" in li_text and 'regia' in li_text and 'giuria' not in li_text:
-                category = 'best-director'
-            elif 'coppa volpi' in li_text and 'maschile' in li_text:
-                category = 'best-actor'
-            elif 'coppa volpi' in li_text and 'femminile' in li_text:
-                category = 'best-actress'
-        
-        if not category:
-            return
 
-        # Extract winners
-        # Handle shared wins (multiple <b> tags)
-        b_tags = li.find_all('b')
-        i_tags = li.find_all('i')
-        
-        if not b_tags and category == 'best-film':
-             # Sometimes film is just in <i> without bold in older years? 
-             # Or sometimes <i> is the film.
-             pass
-
-        if category == 'best-film':
-            # Usually only one film winner
-            # Prefer <i> tag content
-            film_name = None
-            if i_tags:
-                film_name = i_tags[0].get_text().strip()
-            elif b_tags:
-                film_name = b_tags[0].get_text().strip()
-            
-            if film_name and len(film_name) >= 2:
-                results['best-film'].append({
-                    'name': film_name,
-                    'awards': {'venice': 'Y'}
-                })
-                
-        elif category in ['best-director', 'best-actor', 'best-actress']:
-            # Handle possible shared winners
-            # Case 1: Multiple names, one film (e.g. "Name1 e Name2 per il film Film")
-            # Case 2: Multiple names, multiple films (e.g. "Name1 (Film1) e Name2 (Film2)")
-            
-            if not b_tags:
-                return
-
-            if len(b_tags) == 1:
-                # Simple case
-                name = b_tags[0].get_text().strip()
-                entry = {'name': name, 'awards': {'venice': 'Y'}}
-                if i_tags:
-                    entry['film'] = i_tags[0].get_text().strip()
-                results[category].append(entry)
-            else:
-                # Multiple winners
-                if len(i_tags) == 1:
-                    # Shared film
-                    shared_film = i_tags[0].get_text().strip()
-                    for b in b_tags:
-                        name = b.get_text().strip()
-                        results[category].append({
-                            'name': name,
-                            'awards': {'venice': 'Y'},
-                            'film': shared_film
-                        })
-                elif len(i_tags) == len(b_tags):
-                     # One film per person
-                     for b, i in zip(b_tags, i_tags):
-                        results[category].append({
-                            'name': b.get_text().strip(),
-                            'awards': {'venice': 'Y'},
-                            'film': i.get_text().strip()
-                        })
-                else:
-                    # Mismatch or unknown structure - just add names
-                    # Try to map if possible, or leave film empty
-                    for idx, b in enumerate(b_tags):
-                         entry = {'name': b.get_text().strip(), 'awards': {'venice': 'Y'}}
-                         # Heuristic: if we have more names than films, maybe first film applies to all?
-                         # Or just ignore film to avoid wrong attribution
-                         if i_tags and idx < len(i_tags):
-                             entry['film'] = i_tags[idx].get_text().strip()
-                         elif i_tags:
-                             entry['film'] = i_tags[0].get_text().strip() # Fallback
-                         results[category].append(entry)
-    
-    # Navigate siblings - look for section elements OR direct UL (older format)
-    container = premi_h3.parent
-    current = container.next_sibling
-    found_awards = False
-    
-    while current:
-        if not hasattr(current, 'name'):
-            current = current.next_sibling
-            continue
-        
-        # Stop at next h2/h3 section
-        if current.name == 'div' and 'mw-heading' in str(current.get('class', [])):
-            break
-        
-        # NEW FORMAT: Look for section containing 'Concorso'
-        if current.name == 'section':
-            section_text = current.get_text().lower()
-            if 'concorso' in section_text:
-                # Only get direct ul children to avoid duplicates from nested ul
-                for ul in current.find_all('ul', recursive=False):
-                    for li in ul.find_all('li', recursive=False):
-                        parse_venice_li(li, results)
-                found_awards = True
-                break
-        
-        # OLD FORMAT: Direct UL after premi header (no section tags)
-        elif current.name == 'ul' and not found_awards:
-            for li in current.find_all('li', recursive=False):
-                parse_venice_li(li, results)
-            # Don't break - there might be multiple ULs
-        
-        current = current.next_sibling
-    
-    total = sum(len(v) for v in results.values())
-    print(f"    Venice {ceremony_num}: Found {total} entries (Films: {len(results['best-film'])}, Dir: {len(results['best-director'])}, Actor: {len(results['best-actor'])}, Actress: {len(results['best-actress'])})")
-    return results
 
 
 def scrape_dga(year):
@@ -2169,25 +2141,29 @@ def scrape_award(award_key, year):
             if 'best picture' in header_text:
                 key = 'best-film'
                 cat_type = 'film'
-            elif 'directing' in header_text:
+            elif 'directing' in header_text or header_text == 'best director':
+                # Handle both old format "Directing" and new 2026 format "Best Director"
                 key = 'best-director'
                 cat_type = 'director'
-            elif 'actor' in header_text and 'leading' in header_text:
-                key = 'best-actor'
-                cat_type = 'actor'
-                role = 'Leading'
-            elif 'actress' in header_text and 'leading' in header_text:
+            elif 'actress' in header_text and 'supporting' in header_text:
+                # Check supporting FIRST to avoid false match with simpler headers
                 key = 'best-actress'
                 cat_type = 'actor'
-                role = 'Leading'
+                role = 'Supporting'
             elif 'actor' in header_text and 'supporting' in header_text:
                 key = 'best-actor'
                 cat_type = 'actor'
                 role = 'Supporting'
-            elif 'actress' in header_text and 'supporting' in header_text:
+            elif 'actress' in header_text and ('leading' in header_text or header_text == 'best actress'):
+                # Handle both old format "Actress in a Leading Role" and new 2026 format "Best Actress"
                 key = 'best-actress'
                 cat_type = 'actor'
-                role = 'Supporting'
+                role = 'Leading'
+            elif 'actor' in header_text and ('leading' in header_text or header_text == 'best actor'):
+                # Handle both old format "Actor in a Leading Role" and new 2026 format "Best Actor"
+                key = 'best-actor'
+                cat_type = 'actor'
+                role = 'Leading'
                 
         elif award_key == 'gg':
             if 'best motion picture' in header_text and ('drama' in header_text or 'musical' in header_text or 'comedy' in header_text):
@@ -3099,3 +3075,4 @@ from scrapers.spirit import scrape_spirit, scrape_spirit_logic
 
 from scrapers.bifa import scrape_bifa
 from scrapers.annie import scrape_annie
+from scrapers.venice import scrape_venice
