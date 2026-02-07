@@ -4,8 +4,8 @@
       "name": "Call Me by Your Name",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "afi": "Y",
         "nbr": "Y",
         "critics": "X",
@@ -23,8 +23,8 @@
       "name": "The Shape of Water",
       "awards": {
         "bafta": "X",
-        "oscar": "Y",
         "gg": "X",
+        "oscar": "Y",
         "afi": "Y",
         "critics": "Y",
         "pga": "Y",
@@ -38,8 +38,8 @@
     {
       "name": "Get Out",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "afi": "Y",
         "sag": "X",
         "nbr": "Y",
@@ -55,30 +55,11 @@
       "tmdbId": 419430
     },
     {
-      "name": "Lady Bird",
-      "awards": {
-        "oscar": "X",
-        "gg": "Y",
-        "afi": "Y",
-        "sag": "X",
-        "nbr": "Y",
-        "critics": "X",
-        "pga": "X",
-        "nyfcc": "Y",
-        "wga": "X",
-        "adg": "X",
-        "spirit": "X"
-      },
-      "genre": "Comedy",
-      "posterPath": "/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg",
-      "tmdbId": 391713
-    },
-    {
       "name": "Three Billboards Outside Ebbing, Missouri",
       "awards": {
         "bafta": "Y",
-        "oscar": "X",
         "gg": "Y",
+        "oscar": "X",
         "afi": "Y",
         "sag": "Y",
         "critics": "X",
@@ -91,11 +72,29 @@
       "tmdbId": 359940
     },
     {
+      "name": "Lady Bird",
+      "awards": {
+        "gg": "Y",
+        "oscar": "X",
+        "afi": "Y",
+        "sag": "X",
+        "nbr": "Y",
+        "critics": "X",
+        "pga": "X",
+        "wga": "X",
+        "adg": "X",
+        "spirit": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg",
+      "tmdbId": 391713
+    },
+    {
       "name": "Dunkirk",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "afi": "Y",
         "nbr": "Y",
         "critics": "X",
@@ -109,8 +108,8 @@
     {
       "name": "The Post",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "afi": "Y",
         "nbr": "Y",
         "critics": "X",
@@ -213,6 +212,14 @@
       "tmdbId": 339403
     },
     {
+      "name": "La forma dell'acqua - The Shape of Water ( The Shape of Water )",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
+      "tmdbId": 399055
+    },
+    {
       "name": "The Square",
       "awards": {
         "cannes": "Y"
@@ -220,6 +227,14 @@
       "note": "Director: Ruben Östlund",
       "posterPath": "/kLed7chodgFBAC2hUFqtVt9KyGk.jpg",
       "tmdbId": 15912
+    },
+    {
+      "name": "La La Land",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "posterPath": "/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+      "tmdbId": 313369
     },
     {
       "name": "Coco",
@@ -236,14 +251,6 @@
       },
       "posterPath": "/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
       "tmdbId": 335984
-    },
-    {
-      "name": "La forma dell'acqua - The Shape of Water",
-      "awards": {
-        "venice": "Y"
-      },
-      "posterPath": "/9zfwPffUXpBrEP26yp0q1ckXDcj.jpg",
-      "tmdbId": 399055
     },
     {
       "name": "God's Own Country",
@@ -316,7 +323,7 @@
       "awards": {
         "annie": "X"
       },
-      "posterPath": "/jJ8TnHvWHaVadW5JJjGYsM07j9i.jpg",
+      "posterPath": "/zg5RDxvIIAKsucjuU2EZJIHEIvz.jpg",
       "tmdbId": 260514
     },
     {
@@ -340,8 +347,8 @@
       "awards": {
         "adg": "X"
       },
-      "posterPath": "/oJjKcuoH7SuiqZaEpHt2Nd5ZxNY.jpg",
-      "tmdbId": 4176
+      "posterPath": "/7GtdJU6iAg6fjQu3E3zta3bIAQh.jpg",
+      "tmdbId": 392044
     },
     {
       "name": "Beauty and the Beast",
@@ -356,7 +363,7 @@
       "awards": {
         "adg": "X"
       },
-      "posterPath": "/ySaaKHOLAQU5HoZqWmzDIj1VvZ1.jpg",
+      "posterPath": "/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
       "tmdbId": 181808
     },
     {
@@ -414,8 +421,8 @@
       "film": "The Shape of Water",
       "awards": {
         "bafta": "Y",
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "critics": "Y",
         "lafca": "Y"
       },
@@ -459,23 +466,11 @@
       "tmdbId": 45400
     },
     {
-      "name": "Sean Baker",
+      "name": "Xavier Legrand",
+      "film": "L'affido ( Jusqu'à la garde )",
       "awards": {
-        "nyfcc": "Y",
-        "spirit": "X"
-      },
-      "film": "The Florida Project",
-      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
-      "tmdbId": 118415
-    },
-    {
-      "name": "Sofia Coppola",
-      "awards": {
-        "cannes": "Y"
-      },
-      "film": "The Beguiled",
-      "profilePath": "/dzHC2LxmarkBxWLhjp2DRa5oCev.jpg",
-      "tmdbId": 1769
+        "venice": "Y"
+      }
     },
     {
       "name": "Guillermo Del Toro",
@@ -487,11 +482,22 @@
       "tmdbId": 10828
     },
     {
-      "name": "Xavier Legrand",
+      "name": "Sofia Coppola",
       "awards": {
-        "venice": "Y"
+        "cannes": "Y"
       },
-      "film": "L'affido"
+      "film": "The Beguiled",
+      "profilePath": "/dzHC2LxmarkBxWLhjp2DRa5oCev.jpg",
+      "tmdbId": 1769
+    },
+    {
+      "name": "Barry Jenkins",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Moonlight",
+      "profilePath": "/6nld5eQwiJmuLmyesk4EUeCaoo3.jpg",
+      "tmdbId": 92784
     },
     {
       "name": "Rungano Nyoni",
@@ -507,8 +513,8 @@
       "film": "Dunkirk",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X",
         "dga": "X"
       },
@@ -548,6 +554,15 @@
       "tmdbId": 137427
     },
     {
+      "name": "Ridley Scott",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "All the Money in the World",
+      "profilePath": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg",
+      "tmdbId": 578
+    },
+    {
       "name": "Paul Thomas Anderson",
       "film": "Phantom Thread",
       "awards": {
@@ -557,13 +572,13 @@
       "tmdbId": 4762
     },
     {
-      "name": "Ridley Scott",
+      "name": "Sean Baker",
       "awards": {
-        "gg": "X"
+        "spirit": "X"
       },
-      "film": "All the Money in the World",
-      "profilePath": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg",
-      "tmdbId": 578
+      "film": "The Florida Project",
+      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
+      "tmdbId": 118415
     },
     {
       "name": "Jonas Carpignano",
@@ -580,8 +595,8 @@
         "spirit": "X"
       },
       "film": "Good Time",
-      "profilePath": "/iNyilK3Ag6qeOguc0zysxZXEIpJ.jpg",
-      "tmdbId": 129561
+      "profilePath": "/d1LVZAt1W2Wg6yTWRWkDkkyyGI.jpg",
+      "tmdbId": 227564
     },
     {
       "name": "Chloé Zhao",
@@ -627,15 +642,15 @@
       "role": "Supporting",
       "awards": {
         "bafta": "Y",
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
         "lafca": "X",
         "spirit": "Y",
         "bifa": "X"
       },
-      "profilePath": "/vYpWxV0bnUgKo7SdasfGP9HttUq.jpg",
+      "profilePath": "/afYhNpLwpa65Yy0Q0g00FNFhzx5.jpg",
       "tmdbId": 6807
     },
     {
@@ -644,8 +659,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "Y",
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y"
       },
@@ -658,33 +673,15 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y",
-        "nyfcc": "Y",
         "spirit": "Y"
       },
       "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
       "tmdbId": 1190668
-    },
-    {
-      "name": "Willem Dafoe",
-      "film": "The Florida Project",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "oscar": "X",
-        "gg": "X",
-        "sag": "X",
-        "critics": "X",
-        "lafca": "Y",
-        "nyfcc": "Y",
-        "gotham": "X"
-      },
-      "profilePath": "/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg",
-      "tmdbId": 5293
     },
     {
       "name": "James Franco",
@@ -702,6 +699,22 @@
       "tmdbId": 17051
     },
     {
+      "name": "Willem Dafoe",
+      "film": "The Florida Project",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X",
+        "lafca": "Y",
+        "gotham": "X"
+      },
+      "profilePath": "/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg",
+      "tmdbId": 5293
+    },
+    {
       "name": "Tom Hanks",
       "awards": {
         "gg": "X",
@@ -710,8 +723,15 @@
       },
       "film": "The Post",
       "role": "Leading",
-      "profilePath": "/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
+      "profilePath": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg",
       "tmdbId": 31
+    },
+    {
+      "name": "Kamil al-Basha",
+      "film": "L'insulto",
+      "awards": {
+        "venice": "Y"
+      }
     },
     {
       "name": "Joaquin Phoenix",
@@ -723,11 +743,24 @@
       "tmdbId": 73421
     },
     {
-      "name": "Kamil al-Basha",
+      "name": "Casey Affleck",
       "awards": {
-        "venice": "Y"
+        "nyfcc": "Y"
       },
-      "film": "L'insulto"
+      "film": "Manchester by the Sea",
+      "role": "Leading",
+      "profilePath": "/304ilSygaCRWykoBWAL67TOw8g9.jpg",
+      "tmdbId": 1893
+    },
+    {
+      "name": "Mahershala Ali",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Moonlight",
+      "role": "Supporting",
+      "profilePath": "/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg",
+      "tmdbId": 932967
     },
     {
       "name": "Josh O'Connor",
@@ -735,7 +768,7 @@
       "awards": {
         "bifa": "Y"
       },
-      "profilePath": "/vV9m1GnFVDFPC0kZgbUVe2ZKk3d.jpg",
+      "profilePath": "/iFGxCv7wMaComYR40Mt7fwbfY1k.jpg",
       "tmdbId": 1206334
     },
     {
@@ -753,8 +786,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "gotham": "X",
@@ -769,8 +802,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X"
       },
       "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
@@ -791,14 +824,14 @@
     },
     {
       "name": "Richard Jenkins",
-      "film": "The Shape of Water",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X"
       },
+      "film": "The Shape of Water",
+      "role": "Leading",
       "profilePath": "/muT3RZG9hiKaKojD751RcQ5tGEy.jpg",
       "tmdbId": 28633
     },
@@ -808,21 +841,21 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
-        "gg": "X"
+        "gg": "X",
+        "oscar": "X"
       },
-      "profilePath": "/iZh3s9Vy9vYD4DYnAda6C1kdeco.jpg",
+      "profilePath": "/khs2MTZYTtiu4RCwmLLnLWAREul.jpg",
       "tmdbId": 290
     },
     {
       "name": "Denzel Washington",
-      "film": "Roman J. Israel, Esq.",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X"
       },
+      "film": "Roman J. Israel, Esq.",
+      "role": "Leading",
       "profilePath": "/jj2Gcobpopokal0YstuCQW0ldJ4.jpg",
       "tmdbId": 5292
     },
@@ -846,7 +879,7 @@
       },
       "film": "Battle of the Sexes",
       "role": "Leading",
-      "profilePath": "/ULqKHMosznI7U2JyRZYMvSxUvq.jpg",
+      "profilePath": "/cS7Cbyff6wFVfUGem497vy9LS7A.jpg",
       "tmdbId": 4495
     },
     {
@@ -968,7 +1001,7 @@
         "spirit": "X"
       },
       "film": "The Killing of a Sacred Deer",
-      "profilePath": "/mLEd5v9rUZqalyWnXBDAWRQZtwK.jpg",
+      "profilePath": "/ngoitknM6hw8fffLywyvjzy6Iti.jpg",
       "tmdbId": 1290466
     },
     {
@@ -1042,8 +1075,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "Y",
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
         "lafca": "X",
@@ -1059,13 +1092,13 @@
       "role": "Supporting",
       "awards": {
         "bafta": "Y",
-        "oscar": "Y",
         "gg": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
         "spirit": "Y"
       },
-      "profilePath": "/hpBKWV1jjoXQbr1s0iUZTSvw582.jpg",
+      "profilePath": "/kSaSnQ9xU8eVNL0mTppab95dZA8.jpg",
       "tmdbId": 19
     },
     {
@@ -1074,11 +1107,10 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "Y",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "nyfcc": "Y",
         "gotham": "Y",
         "spirit": "X"
       },
@@ -1091,8 +1123,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y",
@@ -1107,8 +1139,8 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y"
@@ -1118,27 +1150,25 @@
     },
     {
       "name": "Meryl Streep",
-      "film": "The Post",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "nbr": "Y",
         "critics": "X"
       },
+      "film": "The Post",
+      "role": "Leading",
       "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
       "tmdbId": 5064
     },
     {
-      "name": "Tiffany Haddish",
-      "film": "Girls Trip",
-      "role": "Supporting",
+      "name": "Charlotte Rampling",
+      "film": "Hannah",
       "awards": {
-        "critics": "X",
-        "nyfcc": "Y"
+        "venice": "Y"
       },
-      "profilePath": "/pvAYqQD4LXavzDkBqCrC4IgVBur.jpg",
-      "tmdbId": 1230868
+      "profilePath": "/Htvl9mN6mlf2a18RAFzNXF3RiG.jpg",
+      "tmdbId": 44079
     },
     {
       "name": "Diane Kruger",
@@ -1150,13 +1180,24 @@
       "tmdbId": 9824
     },
     {
-      "name": "Charlotte Rampling",
+      "name": "Isabelle Huppert",
       "awards": {
-        "venice": "Y"
+        "nyfcc": "Y"
       },
-      "film": "Hannah",
-      "profilePath": "/Htvl9mN6mlf2a18RAFzNXF3RiG.jpg",
-      "tmdbId": 44079
+      "film": "Elle",
+      "role": "Leading",
+      "profilePath": "/wGG9v1Uci3sfrbjt0bRXkLrTqjY.jpg",
+      "tmdbId": 17882
+    },
+    {
+      "name": "Michelle Williams",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Certain Women",
+      "role": "Supporting",
+      "profilePath": "/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg",
+      "tmdbId": 1812
     },
     {
       "name": "Florence Pugh",
@@ -1182,27 +1223,27 @@
       "role": "Leading",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "gotham": "X",
         "spirit": "X"
       },
-      "profilePath": "/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg",
+      "profilePath": "/8LqG2N6j98lFGMpuYsRUAhOunSd.jpg",
       "tmdbId": 234352
     },
     {
       "name": "Mary J. Blige",
-      "film": "Mudbound",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "X"
       },
+      "film": "Mudbound",
+      "role": "Leading",
       "profilePath": "/riQBsxzhbp8E7T9noJEZrEoLZWO.jpg",
       "tmdbId": 84933
     },
@@ -1212,11 +1253,11 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X"
       },
-      "profilePath": "/35SOy4yQZ9xRSJ0q1L5RLhXfhqN.jpg",
+      "profilePath": "/zDGydyM1fmvNWzQlTAns9IZjNxT.jpg",
       "tmdbId": 6944
     },
     {
@@ -1282,7 +1323,9 @@
         "gotham": "X",
         "spirit": "X"
       },
-      "film": "Marjorie Prime"
+      "film": "Marjorie Prime",
+      "profilePath": "/unvPSZshdNoj7c5wl6D30gPwKtS.jpg",
+      "tmdbId": 2207
     },
     {
       "name": "Annette Bening",
@@ -1331,8 +1374,18 @@
       },
       "film": "Battle of the Sexes",
       "role": "Leading",
-      "profilePath": "/s7PVcnnA05JcRiMtplwgK49Z2UU.jpg",
+      "profilePath": "/8NwSfyYWIIUE1cI9Xhz92b0w7WD.jpg",
       "tmdbId": 54693
+    },
+    {
+      "name": "Tiffany Haddish",
+      "film": "Girls Trip",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/pvAYqQD4LXavzDkBqCrC4IgVBur.jpg",
+      "tmdbId": 1230868
     },
     {
       "name": "Melanie Lynskey",

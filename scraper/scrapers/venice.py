@@ -87,14 +87,20 @@ def scrape_venice(ceremony_num):
         
         # --- PATTERN MATCHING ---
         
-        # 1. Best Film (Leone d'oro)
-        # User format: "Leone d'oro al miglior film: Faust di Aleksandr Sokurov"
-        # Check explicit phrase OR if we are already in best-film context
-        # EXCLUDE "alla carriera" (Lifetime Achievement) and "Leone d'oro speciale" (Special Golden Lion)
-        if "carriera" in text_lower:
+        # 1. EXCLUSIONS for special awards
+        # "Leone d'oro alla carriera", "Leone d'oro speciale", "Gran Premio della Giuria" are NOT the main prizes we track.
+        # Exception: "Premio speciale per la regia" IS a director award we WANT.
+        if "carriera" in text_lower or "ensemble" in text_lower:
             return
-        if "leone d'oro speciale" in text_lower or "leone speciale" in text_lower:
+        
+        # Skip "speciale" UNLESS it's specifically for "regia"
+        if "speciale" in text_lower and "regia" not in text_lower:
             return
+            
+        # Skip Grand Jury Prize (not the main film winner, not a director award)
+        if "gran premio" in text_lower:
+            return
+            
         # EXCLUDE "Cinema del presente" section awards (non-main competition)
         if "cinema del presente" in text_lower or "presente" in text_lower:
             return
@@ -134,16 +140,37 @@ def scrape_venice(ceremony_num):
             # Regex: "...: [Name] per [Film]"
             match = re.search(r":\s*(.+?)\s+per\s+(.+)", text, re.IGNORECASE)
             if match:
-                person = match.group(1).strip()
+                person_text = match.group(1).strip()
                 film = match.group(2).strip()
                 # Clean up film (remove parentheses like "(Tao Jie)")
                 film = re.sub(r'\s*\(.*?\)$', '', film)
                 
-                results[key].append({
-                    'name': person,
-                    'film': film,
-                    'awards': {'venice': 'Y'}
-                })
+                # Handle co-winners: split on " e " or " and " (Italian and English)
+                # Pattern: "Name1 e Name2" or "Name1, Name2 e Name3"
+                persons = []
+                if ' e ' in person_text.lower():
+                    # Split on " e " (case insensitive)
+                    parts = re.split(r'\s+e\s+', person_text, flags=re.IGNORECASE)
+                    for part in parts:
+                        # Further split on comma for format "Name1, Name2 e Name3"
+                        sub_parts = [p.strip() for p in part.split(',') if p.strip()]
+                        persons.extend(sub_parts)
+                elif ' and ' in person_text.lower():
+                    parts = re.split(r'\s+and\s+', person_text, flags=re.IGNORECASE)
+                    for part in parts:
+                        sub_parts = [p.strip() for p in part.split(',') if p.strip()]
+                        persons.extend(sub_parts)
+                else:
+                    persons = [person_text]
+                
+                # Add each person as a separate entry
+                for person in persons:
+                    if person:  # Skip empty strings
+                        results[key].append({
+                            'name': person,
+                            'film': film,
+                            'awards': {'venice': 'Y'}
+                        })
                 return
 
         # 3. Best Director (Leone d'argento)
@@ -162,6 +189,22 @@ def scrape_venice(ceremony_num):
         
         if is_director:
              # Pattern A: "...: [Director] per [Film]" (e.g. Leone d'Argento a X per Y)
+            # First check for Double Winner (e.g. 2016: "Name1 per Film1 e Name2 per Film2")
+            match_double = re.search(r":\s*(.+?)\s+per\s+(.+?)\s+(?:e|and)\s+(.+?)\s+per\s+(.+)", text, re.IGNORECASE)
+            if match_double:
+                dir1 = match_double.group(1).strip()
+                film1 = match_double.group(2).strip()
+                dir2 = match_double.group(3).strip()
+                film2 = match_double.group(4).strip()
+                
+                # Cleanup films (remove parens like "(ex aequo)")
+                film1 = re.sub(r'\s*\(.*?\)$', '', film1)
+                film2 = re.sub(r'\s*\(.*?\)$', '', film2)
+                
+                results['best-director'].append({'name': dir1, 'film': film1, 'awards': {'venice': 'Y'}})
+                results['best-director'].append({'name': dir2, 'film': film2, 'awards': {'venice': 'Y'}})
+                return
+
             match = re.search(r":\s*(.+?)\s+per\s+(.+)", text, re.IGNORECASE)
             if match:
                 person = match.group(1).strip()

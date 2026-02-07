@@ -293,7 +293,7 @@ def scrape_bifa_section_format(soup):
             
             # Handle supporting / gender assignment
             if 'supporting' in text:
-                if 'performance' in text:
+                if 'performance' in text or 'actor/actress' in text:
                      # Neutral logic
                      gender = get_person_gender(name)
                      if gender == 1: final_cat = 'best-actress'

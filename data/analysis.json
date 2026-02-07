@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-24T13:20:23.982880",
+  "generated": "2026-02-07T17:01:15.163070",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -94,8 +94,8 @@
     "spirit": {
       "best-film": 5,
       "best-director": 5,
-      "best-actor": 20,
-      "best-actress": 0
+      "best-actor": 10,
+      "best-actress": 10
     },
     "bifa": {
       "best-film": 5,
@@ -230,10 +230,10 @@
       },
       "critics": {
         "best-film": {
-          "nominations": 1,
-          "winners": 1,
+          "nominations": 11,
+          "winners": 11,
           "status": "ok",
-          "expected": 1
+          "expected": 11
         },
         "best-director": {
           "nominations": 1,
@@ -314,9 +314,9 @@
           "expected": 1
         },
         "best-director": {
-          "nominations": 2,
-          "winners": 2,
-          "status": "error",
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
           "expected": 1
         },
         "best-actor": {
@@ -340,9 +340,9 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
@@ -362,8 +362,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "10+"
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 0,
@@ -401,13 +401,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -438,10 +438,10 @@
       },
       "adg": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 15
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -516,54 +516,54 @@
       },
       "spirit": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 20
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 2,
           "status": "ok",
-          "expected": 0
+          "expected": 10
         }
       },
       "bifa": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
         }
       },
       "cannes": {
@@ -594,9 +594,9 @@
       },
       "annie": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
@@ -862,9 +862,9 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
@@ -884,8 +884,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "10+"
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 0,
@@ -923,13 +923,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -960,10 +960,10 @@
       },
       "adg": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 15
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -1038,54 +1038,54 @@
       },
       "spirit": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 20
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 2,
           "status": "ok",
-          "expected": 0
+          "expected": 10
         }
       },
       "bifa": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 5
+          "nominations": 4,
+          "winners": 1,
+          "status": "ok",
+          "expected": 4
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 4,
+          "winners": 1,
+          "status": "ok",
+          "expected": 4
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 4,
+          "winners": 1,
+          "status": "ok",
+          "expected": 4
         }
       },
       "cannes": {
@@ -1098,8 +1098,8 @@
         "best-director": {
           "nominations": 2,
           "winners": 2,
-          "status": "error",
-          "expected": 1
+          "status": "ok",
+          "expected": 2
         },
         "best-actor": {
           "nominations": 1,
@@ -1384,9 +1384,9 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
@@ -1406,8 +1406,8 @@
         "best-film": {
           "nominations": 6,
           "winners": 1,
-          "status": "error",
-          "expected": "10+"
+          "status": "ok",
+          "expected": 6
         },
         "best-director": {
           "nominations": 0,
@@ -1445,20 +1445,20 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
           "expected": 10
         },
         "best-director": {
@@ -1482,10 +1482,10 @@
       },
       "adg": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 15
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -1560,54 +1560,54 @@
       },
       "spirit": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 20
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 2,
           "status": "ok",
-          "expected": 0
+          "expected": 10
         }
       },
       "bifa": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 5
+          "nominations": 4,
+          "winners": 1,
+          "status": "ok",
+          "expected": 4
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 4,
+          "winners": 1,
+          "status": "ok",
+          "expected": 4
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 4,
+          "winners": 1,
+          "status": "ok",
+          "expected": 4
         }
       },
       "cannes": {
@@ -1620,8 +1620,8 @@
         "best-director": {
           "nominations": 2,
           "winners": 2,
-          "status": "error",
-          "expected": 1
+          "status": "ok",
+          "expected": 2
         },
         "best-actor": {
           "nominations": 1,
@@ -1638,9 +1638,9 @@
       },
       "annie": {
         "best-film": {
-          "nominations": 4,
-          "winners": 0,
-          "status": "error",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
@@ -1906,9 +1906,9 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
@@ -1928,8 +1928,8 @@
         "best-film": {
           "nominations": 6,
           "winners": 1,
-          "status": "error",
-          "expected": "10+"
+          "status": "ok",
+          "expected": 6
         },
         "best-director": {
           "nominations": 0,
@@ -1967,20 +1967,20 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
           "expected": 10
         },
         "best-director": {
@@ -2004,10 +2004,10 @@
       },
       "adg": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 15
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -2082,54 +2082,54 @@
       },
       "spirit": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 20
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 2,
           "status": "ok",
-          "expected": 0
+          "expected": 10
         }
       },
       "bifa": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
         }
       },
       "cannes": {
@@ -2148,8 +2148,8 @@
         "best-actor": {
           "nominations": 2,
           "winners": 2,
-          "status": "error",
-          "expected": 1
+          "status": "ok",
+          "expected": 2
         },
         "best-actress": {
           "nominations": 1,
@@ -2428,9 +2428,9 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
@@ -2450,8 +2450,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "10+"
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 0,
@@ -2489,20 +2489,20 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
           "expected": 10
         },
         "best-director": {
@@ -2528,8 +2528,8 @@
         "best-film": {
           "nominations": 10,
           "winners": 2,
-          "status": "error",
-          "expected": 15
+          "status": "ok",
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -2604,54 +2604,54 @@
       },
       "spirit": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 20
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 2,
           "status": "ok",
-          "expected": 0
+          "expected": 10
         }
       },
       "bifa": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
         }
       },
       "cannes": {
@@ -2683,7 +2683,7 @@
       "annie": {
         "best-film": {
           "nominations": 4,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 4
         },
@@ -2950,9 +2950,9 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
@@ -2972,8 +2972,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "10+"
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 0,
@@ -3011,20 +3011,20 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
           "expected": 10
         },
         "best-director": {
@@ -3048,10 +3048,10 @@
       },
       "adg": {
         "best-film": {
-          "nominations": 8,
+          "nominations": 10,
           "winners": 2,
-          "status": "error",
-          "expected": 15
+          "status": "ok",
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -3126,54 +3126,54 @@
       },
       "spirit": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 20
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 2,
           "status": "ok",
-          "expected": 0
+          "expected": 10
         }
       },
       "bifa": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
+          "expected": 5
         }
       },
       "cannes": {
@@ -3205,7 +3205,7 @@
       "annie": {
         "best-film": {
           "nominations": 5,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -3472,9 +3472,9 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
@@ -3494,8 +3494,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "10+"
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 0,
@@ -3533,20 +3533,20 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
           "expected": 10
         },
         "best-director": {
@@ -3570,9 +3570,9 @@
       },
       "adg": {
         "best-film": {
-          "nominations": 12,
+          "nominations": 15,
           "winners": 3,
-          "status": "error",
+          "status": "ok",
           "expected": 15
         },
         "best-director": {
@@ -3648,53 +3648,53 @@
       },
       "spirit": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 20
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 2,
           "status": "ok",
-          "expected": 0
+          "expected": 10
         }
       },
       "bifa": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 9,
+          "winners": 2,
+          "status": "ok",
+          "expected": 9
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 6,
+          "winners": 1,
+          "status": "ok",
           "expected": 6
         }
       },
@@ -3714,20 +3714,20 @@
         "best-actor": {
           "nominations": 5,
           "winners": 5,
-          "status": "error",
-          "expected": 1
+          "status": "ok",
+          "expected": 5
         },
         "best-actress": {
           "nominations": 6,
           "winners": 6,
-          "status": "error",
-          "expected": 1
+          "status": "ok",
+          "expected": 6
         }
       },
       "annie": {
         "best-film": {
           "nominations": 5,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -3994,9 +3994,9 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
@@ -4016,8 +4016,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "10+"
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 0,
@@ -4055,20 +4055,20 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
           "expected": 10
         },
         "best-director": {
@@ -4170,54 +4170,54 @@
       },
       "spirit": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 20
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 2,
           "status": "ok",
-          "expected": 0
+          "expected": 10
         }
       },
       "bifa": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 8,
+          "winners": 2,
+          "status": "ok",
+          "expected": 8
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 7,
+          "winners": 1,
+          "status": "ok",
+          "expected": 7
         }
       },
       "cannes": {
@@ -4248,9 +4248,9 @@
       },
       "annie": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
@@ -4516,9 +4516,9 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
@@ -4538,8 +4538,8 @@
         "best-film": {
           "nominations": 5,
           "winners": 1,
-          "status": "error",
-          "expected": "10+"
+          "status": "ok",
+          "expected": 5
         },
         "best-director": {
           "nominations": 0,
@@ -4577,20 +4577,20 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
           "expected": 10
         },
         "best-director": {
@@ -4692,54 +4692,54 @@
       },
       "spirit": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 20
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 2,
           "status": "ok",
-          "expected": 0
+          "expected": 10
         }
       },
       "bifa": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         }
       },
       "cannes": {
@@ -4771,7 +4771,7 @@
       "annie": {
         "best-film": {
           "nominations": 5,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -5038,9 +5038,9 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
@@ -5061,7 +5061,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -5099,20 +5099,20 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
         "best-film": {
-          "nominations": 0,
+          "nominations": 10,
           "winners": 0,
-          "status": "pending",
+          "status": "ok",
           "expected": 10
         },
         "best-director": {
@@ -5214,54 +5214,54 @@
       },
       "spirit": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 20
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 2,
           "status": "ok",
-          "expected": 0
+          "expected": 10
         }
       },
       "bifa": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         }
       },
       "cannes": {
@@ -5293,7 +5293,7 @@
       "annie": {
         "best-film": {
           "nominations": 6,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 6
         },
@@ -5530,8 +5530,8 @@
         "best-film": {
           "nominations": 2,
           "winners": 2,
-          "status": "error",
-          "expected": 1
+          "status": "ok",
+          "expected": 2
         },
         "best-director": {
           "nominations": 1,
@@ -5560,9 +5560,9 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
@@ -5583,7 +5583,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -5621,20 +5621,20 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
           "expected": 10
         },
         "best-director": {
@@ -5736,54 +5736,54 @@
       },
       "spirit": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 20
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 11,
+          "winners": 2,
           "status": "ok",
-          "expected": 0
+          "expected": 11
         }
       },
       "bifa": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         }
       },
       "cannes": {
@@ -5814,9 +5814,9 @@
       },
       "annie": {
         "best-film": {
-          "nominations": 4,
-          "winners": 0,
-          "status": "error",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
@@ -6082,9 +6082,9 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
@@ -6105,7 +6105,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -6143,13 +6143,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -6258,54 +6258,54 @@
       },
       "spirit": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 5
+          "nominations": 6,
+          "winners": 1,
+          "status": "ok",
+          "expected": 6
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 20
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 10,
+          "winners": 2,
           "status": "ok",
-          "expected": 0
+          "expected": 10
         }
       },
       "bifa": {
         "best-film": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
+          "nominations": 5,
+          "winners": 1,
+          "status": "ok",
           "expected": 5
         },
         "best-actor": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         },
         "best-actress": {
-          "nominations": 0,
-          "winners": 0,
-          "status": "pending",
-          "expected": 6
+          "nominations": 10,
+          "winners": 2,
+          "status": "ok",
+          "expected": 10
         }
       },
       "cannes": {
@@ -6336,9 +6336,9 @@
       },
       "annie": {
         "best-film": {
-          "nominations": 9,
-          "winners": 0,
-          "status": "error",
+          "nominations": 10,
+          "winners": 1,
+          "status": "ok",
           "expected": 10
         },
         "best-director": {
@@ -6627,7 +6627,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -6665,13 +6665,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -6742,14 +6742,14 @@
         "best-actor": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 5
+          "status": "ok",
+          "expected": 0
         },
         "best-actress": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 5
+          "status": "ok",
+          "expected": 0
         }
       },
       "astra": {
@@ -6821,13 +6821,13 @@
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "cannes": {
@@ -6850,9 +6850,9 @@
           "expected": 1
         },
         "best-actress": {
-          "nominations": 1,
-          "winners": 1,
-          "status": "error",
+          "nominations": 2,
+          "winners": 2,
+          "status": "ok",
           "expected": 2
         }
       },
@@ -7149,7 +7149,7 @@
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -7187,13 +7187,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -7265,13 +7265,13 @@
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 5
         },
         "best-actress": {
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 5
         }
       },
       "astra": {
@@ -7343,13 +7343,13 @@
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "cannes": {
@@ -7602,10 +7602,10 @@
           "expected": 1
         },
         "best-actor": {
-          "nominations": 1,
-          "winners": 1,
+          "nominations": 2,
+          "winners": 2,
           "status": "ok",
-          "expected": 1
+          "expected": 2
         },
         "best-actress": {
           "nominations": 1,
@@ -7671,7 +7671,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -7709,13 +7709,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -7787,13 +7787,13 @@
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 5
         },
         "best-actress": {
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 5
         }
       },
       "astra": {
@@ -7865,13 +7865,13 @@
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "cannes": {
@@ -8193,7 +8193,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -8231,13 +8231,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -8309,13 +8309,13 @@
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=11"
+          "expected": 5
         },
         "best-actress": {
           "nominations": 6,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=11"
+          "expected": 6
         }
       },
       "astra": {
@@ -8387,13 +8387,13 @@
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "cannes": {
@@ -8715,7 +8715,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -8753,13 +8753,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -8831,13 +8831,13 @@
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 5
         },
         "best-actress": {
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 5
         }
       },
       "astra": {
@@ -8909,13 +8909,13 @@
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "cannes": {
@@ -9237,7 +9237,7 @@
           "nominations": 11,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 11
         },
         "best-director": {
           "nominations": 0,
@@ -9275,13 +9275,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -9353,13 +9353,13 @@
           "nominations": 6,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=11"
+          "expected": 6
         },
         "best-actress": {
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=11"
+          "expected": 5
         }
       },
       "astra": {
@@ -9431,13 +9431,13 @@
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "cannes": {
@@ -9759,7 +9759,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -9797,13 +9797,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -9875,13 +9875,13 @@
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 5
         },
         "best-actress": {
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 5
         }
       },
       "astra": {
@@ -9953,13 +9953,13 @@
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "cannes": {
@@ -10281,7 +10281,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -10319,13 +10319,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -10397,13 +10397,13 @@
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 5
         },
         "best-actress": {
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 5
         }
       },
       "astra": {
@@ -10475,13 +10475,13 @@
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "cannes": {
@@ -10803,7 +10803,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -10841,13 +10841,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -10919,13 +10919,13 @@
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 5
         },
         "best-actress": {
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=10"
+          "expected": 5
         }
       },
       "astra": {
@@ -10997,13 +10997,13 @@
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "cannes": {
@@ -11325,7 +11325,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -11363,13 +11363,13 @@
           "nominations": 4,
           "winners": 3,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -11441,13 +11441,13 @@
           "nominations": 9,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=17"
+          "expected": 9
         },
         "best-actress": {
           "nominations": 8,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=17"
+          "expected": 8
         }
       },
       "astra": {
@@ -11519,13 +11519,13 @@
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "cannes": {
@@ -11847,7 +11847,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -11885,13 +11885,13 @@
           "nominations": 3,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 3
         },
         "best-actress": {
           "nominations": 5,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 5
         }
       },
       "wga": {
@@ -11963,13 +11963,13 @@
           "nominations": 8,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 12,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "astra": {
@@ -12015,13 +12015,13 @@
           "nominations": 9,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 11,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "bifa": {
@@ -12041,13 +12041,13 @@
           "nominations": 6,
           "winners": 0,
           "status": "ok",
-          "expected": "actor+actress=17"
+          "expected": 6
         },
         "best-actress": {
           "nominations": 11,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=17"
+          "expected": 11
         }
       },
       "cannes": {
@@ -12369,7 +12369,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -12407,13 +12407,13 @@
           "nominations": 3,
           "winners": 0,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 3
         },
         "best-actress": {
           "nominations": 5,
           "winners": 4,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 5
         }
       },
       "wga": {
@@ -12485,13 +12485,13 @@
           "nominations": 8,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 12,
           "winners": 0,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "astra": {
@@ -12537,13 +12537,13 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "bifa": {
@@ -12563,13 +12563,13 @@
           "nominations": 9,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=16"
+          "expected": 9
         },
         "best-actress": {
           "nominations": 7,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=16"
+          "expected": 7
         }
       },
       "cannes": {
@@ -12891,7 +12891,7 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -12929,13 +12929,13 @@
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 4,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
@@ -13007,13 +13007,13 @@
           "nominations": 11,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 9,
           "winners": 0,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "astra": {
@@ -13059,13 +13059,13 @@
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 10,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "bifa": {
@@ -13085,13 +13085,13 @@
           "nominations": 5,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=12"
+          "expected": 5
         },
         "best-actress": {
           "nominations": 7,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=12"
+          "expected": 7
         }
       },
       "cannes": {
@@ -13114,9 +13114,9 @@
           "expected": 1
         },
         "best-actress": {
-          "nominations": 1,
-          "winners": 1,
-          "status": "error",
+          "nominations": 4,
+          "winners": 4,
+          "status": "ok",
           "expected": 4
         }
       },
@@ -13228,27 +13228,27 @@
       },
       "bafta": {
         "best-film": {
-          "nominations": 0,
+          "nominations": 5,
           "winners": 0,
-          "status": "pending",
+          "status": "ok",
           "expected": 5
         },
         "best-director": {
-          "nominations": 0,
+          "nominations": 6,
           "winners": 0,
-          "status": "pending",
+          "status": "ok",
           "expected": 6
         },
         "best-actor": {
-          "nominations": 0,
+          "nominations": 12,
           "winners": 0,
-          "status": "pending",
+          "status": "ok",
           "expected": 12
         },
         "best-actress": {
-          "nominations": 0,
+          "nominations": 12,
           "winners": 0,
-          "status": "pending",
+          "status": "ok",
           "expected": 12
         }
       },
@@ -13392,8 +13392,8 @@
         "best-director": {
           "nominations": 0,
           "winners": 0,
-          "status": "pending",
-          "expected": 5
+          "status": "ok",
+          "expected": 0
         },
         "best-actor": {
           "nominations": 0,
@@ -13413,7 +13413,7 @@
           "nominations": 10,
           "winners": 0,
           "status": "ok",
-          "expected": "10+"
+          "expected": 10
         },
         "best-director": {
           "nominations": 0,
@@ -13451,20 +13451,20 @@
           "nominations": 5,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         },
         "best-actress": {
           "nominations": 3,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=8"
+          "expected": 4
         }
       },
       "wga": {
         "best-film": {
-          "nominations": 0,
+          "nominations": 10,
           "winners": 0,
-          "status": "pending",
+          "status": "ok",
           "expected": 10
         },
         "best-director": {
@@ -13529,13 +13529,13 @@
           "nominations": 12,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 8,
           "winners": 1,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "astra": {
@@ -13581,13 +13581,13 @@
           "nominations": 8,
           "winners": 0,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         },
         "best-actress": {
           "nominations": 12,
           "winners": 0,
           "status": "ok",
-          "expected": "actor+actress=20"
+          "expected": 10
         }
       },
       "bifa": {
@@ -13607,13 +13607,13 @@
           "nominations": 10,
           "winners": 2,
           "status": "ok",
-          "expected": "actor+actress=12"
+          "expected": 6
         },
         "best-actress": {
           "nominations": 2,
           "winners": 0,
           "status": "ok",
-          "expected": "actor+actress=12"
+          "expected": 6
         }
       },
       "cannes": {
@@ -13630,10 +13630,10 @@
           "expected": 1
         },
         "best-actor": {
-          "nominations": 2,
-          "winners": 2,
+          "nominations": 1,
+          "winners": 1,
           "status": "ok",
-          "expected": 2
+          "expected": 1
         },
         "best-actress": {
           "nominations": 1,

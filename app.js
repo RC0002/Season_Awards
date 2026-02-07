@@ -2629,7 +2629,7 @@ function renderPrecursorAnalysis(analysis, container) {
     let html = `
         <div class="analysis-overall">
             <h3>Overall Correlation of Awards vs Oscars</h3>
-            <p class="analysis-note">% of times the Oscar winner also won the following award (2013-2026)</p>
+            <p class="analysis-note">% of times the Oscar winner also won the following award (2000-2026)</p>
             <div class="analysis-bars">
                 ${analysis.overall.map((item, idx) => {
         // Use standard colors for all items as requested

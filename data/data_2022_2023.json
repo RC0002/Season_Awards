@@ -4,17 +4,17 @@
       "name": "Everything Everywhere All at Once",
       "awards": {
         "gg": "X",
-        "bafta": "X",
         "oscar": "Y",
-        "afi": "Y",
-        "sag": "Y",
-        "nbr": "Y",
         "critics": "Y",
+        "afi": "Y",
+        "bafta": "X",
+        "nbr": "Y",
+        "sag": "Y",
         "pga": "Y",
-        "wga": "Y",
         "lafca": "Y",
-        "astra": "Y",
         "adg": "Y",
+        "wga": "Y",
+        "astra": "Y",
         "spirit": "Y",
         "gotham": "Y"
       },
@@ -23,39 +23,18 @@
       "tmdbId": 545611
     },
     {
-      "name": "Tár",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "afi": "Y",
-        "critics": "X",
-        "pga": "X",
-        "wga": "X",
-        "nyfcc": "Y",
-        "lafca": "Y",
-        "astra": "X",
-        "adg": "X",
-        "spirit": "X",
-        "gotham": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/dRVAlaU0vbG6hMf2K45NSiIyoUe.jpg",
-      "tmdbId": 817758
-    },
-    {
       "name": "The Fabelmans",
       "awards": {
         "gg": "Y",
         "oscar": "X",
-        "afi": "Y",
-        "sag": "X",
-        "nbr": "Y",
         "critics": "X",
+        "afi": "Y",
+        "nbr": "Y",
+        "sag": "X",
         "pga": "X",
+        "adg": "X",
         "wga": "X",
-        "astra": "X",
-        "adg": "X"
+        "astra": "X"
       },
       "genre": "Drama",
       "posterPath": "/h7llKkqkkJtJrTOaDLuVeUYDQ7I.jpg",
@@ -65,12 +44,12 @@
       "name": "The Banshees of Inisherin",
       "awards": {
         "gg": "Y",
-        "bafta": "X",
         "oscar": "X",
-        "afi": "Y",
-        "sag": "X",
-        "nbr": "Y",
         "critics": "X",
+        "afi": "Y",
+        "bafta": "X",
+        "nbr": "Y",
+        "sag": "X",
         "pga": "X",
         "astra": "X"
       },
@@ -82,10 +61,10 @@
       "name": "Women Talking",
       "awards": {
         "oscar": "X",
-        "afi": "Y",
-        "sag": "X",
-        "nbr": "Y",
         "critics": "X",
+        "afi": "Y",
+        "nbr": "Y",
+        "sag": "X",
         "wga": "Y",
         "astra": "X",
         "spirit": "X"
@@ -94,17 +73,37 @@
       "tmdbId": 777245
     },
     {
+      "name": "Tár",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "critics": "X",
+        "afi": "Y",
+        "bafta": "X",
+        "pga": "X",
+        "lafca": "Y",
+        "adg": "X",
+        "wga": "X",
+        "astra": "X",
+        "spirit": "X",
+        "gotham": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/dRVAlaU0vbG6hMf2K45NSiIyoUe.jpg",
+      "tmdbId": 817758
+    },
+    {
       "name": "Top Gun: Maverick",
       "awards": {
         "gg": "X",
         "oscar": "X",
+        "critics": "X",
         "afi": "Y",
         "nbr": "Y",
-        "critics": "X",
         "pga": "X",
+        "adg": "X",
         "wga": "X",
-        "astra": "X",
-        "adg": "X"
+        "astra": "X"
       },
       "genre": "Drama",
       "posterPath": "/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
@@ -115,12 +114,12 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
+        "critics": "X",
         "afi": "Y",
         "nbr": "Y",
-        "critics": "X",
         "pga": "X",
-        "astra": "X",
-        "adg": "X"
+        "adg": "X",
+        "astra": "X"
       },
       "genre": "Drama",
       "posterPath": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
@@ -130,11 +129,11 @@
       "name": "Glass Onion: A Knives Out Mystery",
       "awards": {
         "gg": "X",
-        "nbr": "Y",
         "critics": "X",
+        "nbr": "Y",
         "pga": "X",
-        "wga": "X",
-        "adg": "Y"
+        "adg": "Y",
+        "wga": "X"
       },
       "genre": "Comedy",
       "posterPath": "/vDGr1YdrlfbU9wxTOdpf3zChmv9.jpg",
@@ -164,13 +163,13 @@
       "name": "Elvis",
       "awards": {
         "gg": "X",
-        "bafta": "X",
         "oscar": "X",
-        "afi": "Y",
         "critics": "X",
+        "afi": "Y",
+        "bafta": "X",
         "pga": "X",
-        "astra": "X",
-        "adg": "X"
+        "adg": "X",
+        "astra": "X"
       },
       "genre": "Drama",
       "posterPath": "/rva3UhKaMeiB0Vej5A2pm1leX7K.jpg",
@@ -180,8 +179,8 @@
       "name": "Babylon",
       "awards": {
         "gg": "X",
-        "sag": "X",
         "critics": "X",
+        "sag": "X",
         "adg": "Y"
       },
       "genre": "Comedy",
@@ -202,32 +201,32 @@
     {
       "name": "All Quiet on the Western Front",
       "awards": {
-        "bafta": "Y",
         "oscar": "X",
+        "bafta": "Y",
         "adg": "X"
       },
       "posterPath": "/2IRjbi9cADuDMKmHdLK7LaqQDKA.jpg",
       "tmdbId": 49046
     },
     {
-      "name": "Nope",
-      "awards": {
-        "afi": "Y",
-        "wga": "X",
-        "adg": "X"
-      },
-      "posterPath": "/AcKVlWaNVVVFQwro3nLXqPljcYA.jpg",
-      "tmdbId": 762504
-    },
-    {
       "name": "RRR",
       "awards": {
-        "nbr": "Y",
         "critics": "X",
+        "nbr": "Y",
         "astra": "X"
       },
       "posterPath": "/u0XUBNQWlOvrh0Gd97ARGpIkL0.jpg",
       "tmdbId": 579974
+    },
+    {
+      "name": "Nope",
+      "awards": {
+        "afi": "Y",
+        "adg": "X",
+        "wga": "X"
+      },
+      "posterPath": "/AcKVlWaNVVVFQwro3nLXqPljcYA.jpg",
+      "tmdbId": 762504
     },
     {
       "name": "She Said",
@@ -255,6 +254,14 @@
       "tmdbId": 555604
     },
     {
+      "name": "Drive My Car",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "posterPath": "/3cOsf5HBjPK2QCz9ebQlGHNnE7y.jpg",
+      "tmdbId": 758866
+    },
+    {
       "name": "Tutta la bellezza e il dolore - All the Beauty and the Bloodshed",
       "awards": {
         "venice": "Y"
@@ -266,11 +273,19 @@
       "name": "Black Panther: Wakanda Forever",
       "awards": {
         "pga": "X",
-        "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
       "posterPath": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
       "tmdbId": 505642
+    },
+    {
+      "name": "The Whale",
+      "awards": {
+        "pga": "X"
+      },
+      "posterPath": "/jQ0gylJMxWSL490sy0RrPj1Lj7e.jpg",
+      "tmdbId": 785084
     },
     {
       "name": "Puss in Boots: The Last Wish",
@@ -305,23 +320,6 @@
       "tmdbId": 511817
     },
     {
-      "name": "The Whale",
-      "awards": {
-        "pga": "X"
-      },
-      "posterPath": "/jQ0gylJMxWSL490sy0RrPj1Lj7e.jpg",
-      "tmdbId": 785084
-    },
-    {
-      "name": "The Menu",
-      "awards": {
-        "wga": "X"
-      },
-      "screenplay_type": "original",
-      "posterPath": "/fPtUgMcLIboqlTlPrq0bQpKK8eq.jpg",
-      "tmdbId": 593643
-    },
-    {
       "name": "Bardo, False Chronicle of a Handful of Truths",
       "awards": {
         "adg": "X"
@@ -342,8 +340,8 @@
       "awards": {
         "adg": "X"
       },
-      "posterPath": "/ncB9SvOclmXYALlcAsF1jRIuISl.jpg",
-      "tmdbId": 11804
+      "posterPath": "/i0k03pGW9vDUtQfV1piyOcVwKGL.jpg",
+      "tmdbId": 508757
     },
     {
       "name": "The Batman",
@@ -354,20 +352,13 @@
       "tmdbId": 414906
     },
     {
-      "name": "Bones and All",
+      "name": "The Menu",
       "awards": {
-        "spirit": "X"
+        "wga": "X"
       },
-      "posterPath": "/dBQuk2LkHjrDsSjueirPQg96GCc.jpg",
-      "tmdbId": 791177
-    },
-    {
-      "name": "Our Father, the Devil",
-      "awards": {
-        "spirit": "X"
-      },
-      "posterPath": "/xD0RsrVeQTmWTiNH9pORoOom0G5.jpg",
-      "tmdbId": 854547
+      "screenplay_type": "original",
+      "posterPath": "/fPtUgMcLIboqlTlPrq0bQpKK8eq.jpg",
+      "tmdbId": 593643
     },
     {
       "name": "Blue Jean",
@@ -402,12 +393,28 @@
       "tmdbId": 823766
     },
     {
+      "name": "Bones and All",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/dBQuk2LkHjrDsSjueirPQg96GCc.jpg",
+      "tmdbId": 791177
+    },
+    {
+      "name": "Our Father, the Devil",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/xD0RsrVeQTmWTiNH9pORoOom0G5.jpg",
+      "tmdbId": 854547
+    },
+    {
       "name": "The Cathedral",
       "awards": {
         "gotham": "X"
       },
-      "posterPath": "/407FyvsDEVkD22lzFnyr4DRKLnL.jpg",
-      "tmdbId": 854546
+      "posterPath": "/PGXP7brE8A4IPzYwTz2WWiBggv.jpg",
+      "tmdbId": 1045057
     },
     {
       "name": "Dos Estaciones",
@@ -423,9 +430,9 @@
       "name": "Daniel Kwan and Daniel Scheinert",
       "awards": {
         "gg": "X",
-        "bafta": "X",
         "oscar": "Y",
         "critics": "Y",
+        "bafta": "X",
         "astra": "Y",
         "spirit": "Y"
       },
@@ -436,8 +443,8 @@
       "awards": {
         "gg": "Y",
         "oscar": "X",
-        "nbr": "Y",
         "critics": "X",
+        "nbr": "Y",
         "dga": "X",
         "astra": "X"
       },
@@ -449,9 +456,9 @@
       "name": "Todd Field",
       "film": "Tár",
       "awards": {
-        "bafta": "X",
         "oscar": "X",
         "critics": "X",
+        "bafta": "X",
         "dga": "X",
         "lafca": "Y",
         "astra": "X",
@@ -459,18 +466,6 @@
       },
       "profilePath": "/KR12bc20pVnlTr0wir8XuxW3Pt.jpg",
       "tmdbId": 5010
-    },
-    {
-      "name": "S. S. Rajamouli",
-      "film": "RRR",
-      "awards": {
-        "critics": "X",
-        "nyfcc": "Y",
-        "lafca": "X",
-        "astra": "X"
-      },
-      "profilePath": "/g7jXGAVT8T5vq81fO5JWDleDc75.jpg",
-      "tmdbId": 147021
     },
     {
       "name": "Park Chan-wook",
@@ -497,11 +492,20 @@
       }
     },
     {
+      "name": "Jane Campion",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "The Power of the Dog",
+      "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
+      "tmdbId": 10757
+    },
+    {
       "name": "Luca Guadagnino",
+      "film": "Bones and All",
       "awards": {
         "venice": "Y"
       },
-      "film": "Bones and All",
       "profilePath": "/lO2GD4s6fRloZLEhsZgBlhJQasE.jpg",
       "tmdbId": 78160
     },
@@ -516,9 +520,9 @@
       "name": "Martin McDonagh",
       "awards": {
         "gg": "X",
-        "bafta": "X",
         "oscar": "X",
         "critics": "X",
+        "bafta": "X",
         "astra": "X"
       },
       "film": "The Banshees of Inisherin",
@@ -559,11 +563,22 @@
       "tmdbId": 98
     },
     {
+      "name": "S. S. Rajamouli",
+      "film": "RRR",
+      "awards": {
+        "critics": "X",
+        "lafca": "X",
+        "astra": "X"
+      },
+      "profilePath": "/g7jXGAVT8T5vq81fO5JWDleDc75.jpg",
+      "tmdbId": 147021
+    },
+    {
       "name": "Gina Prince-Bythewood",
       "film": "The Woman King",
       "awards": {
-        "bafta": "X",
-        "critics": "X"
+        "critics": "X",
+        "bafta": "X"
       },
       "profilePath": "/vXEqrYSSqeAssUanykR3h98KfXz.jpg",
       "tmdbId": 71947
@@ -619,24 +634,6 @@
       "film": "wook"
     },
     {
-      "name": "Kogonada",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "After Yang",
-      "profilePath": "/vtAELNwYG6DNHgUS9rBxHTIISS9.jpg",
-      "tmdbId": 1555636
-    },
-    {
-      "name": "Halina Reijn",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Bodies Bodies Bodies",
-      "profilePath": "/su9FMcM5wKfZiSNs35OLlot4hLd.jpg",
-      "tmdbId": 39847
-    },
-    {
       "name": "Living",
       "film": "Oliver Hermanus",
       "awards": {
@@ -663,6 +660,24 @@
       "awards": {
         "bifa": "X"
       }
+    },
+    {
+      "name": "Kogonada",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "After Yang",
+      "profilePath": "/vtAELNwYG6DNHgUS9rBxHTIISS9.jpg",
+      "tmdbId": 1555636
+    },
+    {
+      "name": "Halina Reijn",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Bodies Bodies Bodies",
+      "profilePath": "/su9FMcM5wKfZiSNs35OLlot4hLd.jpg",
+      "tmdbId": 39847
     }
   ],
   "best-actor": [
@@ -670,11 +685,10 @@
       "name": "Ke Huy Quan",
       "awards": {
         "gg": "Y",
-        "bafta": "X",
         "oscar": "Y",
-        "sag": "Y",
         "critics": "Y",
-        "nyfcc": "Y",
+        "bafta": "X",
+        "sag": "Y",
         "lafca": "Y",
         "astra": "Y",
         "spirit": "Y",
@@ -689,10 +703,10 @@
       "name": "Brendan Fraser",
       "awards": {
         "gg": "X",
-        "bafta": "X",
         "oscar": "Y",
-        "sag": "Y",
         "critics": "Y",
+        "bafta": "X",
+        "sag": "Y",
         "astra": "Y",
         "gotham": "X"
       },
@@ -705,12 +719,11 @@
       "name": "Colin Farrell",
       "awards": {
         "gg": "Y",
-        "bafta": "X",
         "oscar": "X",
-        "sag": "X",
-        "nbr": "Y",
         "critics": "X",
-        "nyfcc": "Y",
+        "bafta": "X",
+        "nbr": "Y",
+        "sag": "X",
         "astra": "X"
       },
       "film": "The Banshees of Inisherin",
@@ -722,44 +735,44 @@
       "name": "Austin Butler",
       "awards": {
         "gg": "Y",
-        "bafta": "Y",
         "oscar": "X",
-        "sag": "X",
         "critics": "X",
+        "bafta": "Y",
+        "sag": "X",
         "astra": "X"
       },
       "film": "Elvis",
       "role": "Leading",
-      "profilePath": "/aGZKvPmjopFfbehunaXXzeZ8eXy.jpg",
+      "profilePath": "/atdAs4pFGjUQ4m2W8kJYly7N6cC.jpg",
       "tmdbId": 86654
     },
     {
       "name": "Bill Nighy",
       "awards": {
         "gg": "X",
-        "bafta": "X",
         "oscar": "X",
-        "sag": "X",
         "critics": "X",
+        "bafta": "X",
+        "sag": "X",
         "lafca": "Y",
         "bifa": "X"
       },
       "film": "Living",
       "role": "Leading",
-      "profilePath": "/xrMzXXR201n5u32OCS1UTLjGrQv.jpg",
+      "profilePath": "/ixFI2YCGNGJfwlpI8iyhvVZRg8C.jpg",
       "tmdbId": 2440
     },
     {
       "name": "Barry Keoghan",
       "awards": {
         "gg": "X",
-        "bafta": "Y",
         "oscar": "X",
+        "bafta": "Y",
         "astra": "X"
       },
       "film": "The Banshees of Inisherin",
       "role": "Supporting",
-      "profilePath": "/mLEd5v9rUZqalyWnXBDAWRQZtwK.jpg",
+      "profilePath": "/ngoitknM6hw8fffLywyvjzy6Iti.jpg",
       "tmdbId": 1290466
     },
     {
@@ -772,11 +785,31 @@
       "tmdbId": 20738
     },
     {
+      "name": "Benedict Cumberbatch",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "The Power of the Dog",
+      "role": "Leading",
+      "profilePath": "/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg",
+      "tmdbId": 71580
+    },
+    {
+      "name": "Kodi Smit-McPhee",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "The Power of the Dog",
+      "role": "Supporting",
+      "profilePath": "/sesCWba9NwPDYDZzbVLs7OgLOti.jpg",
+      "tmdbId": 113505
+    },
+    {
       "name": "Colin Farrell",
+      "film": "Gli spiriti dell'isola",
       "awards": {
         "venice": "Y"
       },
-      "film": "Gli spiriti dell'isola",
       "profilePath": "/oyQVfpowL9eSudYhwoPGkd9WxS7.jpg",
       "tmdbId": 72466
     },
@@ -784,10 +817,10 @@
       "name": "Brendan Gleeson",
       "awards": {
         "gg": "X",
-        "bafta": "X",
         "oscar": "X",
-        "sag": "X",
         "critics": "X",
+        "bafta": "X",
+        "sag": "X",
         "astra": "X"
       },
       "film": "The Banshees of Inisherin",
@@ -800,14 +833,14 @@
       "film": "Aftersun",
       "role": "Leading",
       "awards": {
-        "bafta": "X",
         "oscar": "X",
         "critics": "X",
+        "bafta": "X",
         "astra": "X",
         "spirit": "X",
         "gotham": "X"
       },
-      "profilePath": "/p4HOSwF9yUyP0x0H18LaKzsS476.jpg",
+      "profilePath": "/vrzZ41TGNAFgfmZjC2sOJySzBLd.jpg",
       "tmdbId": 2326151
     },
     {
@@ -849,12 +882,23 @@
       "tmdbId": 1974324
     },
     {
+      "name": "Tom Cruise",
+      "film": "Top Gun: Maverick",
+      "role": "Leading",
+      "awards": {
+        "critics": "X",
+        "astra": "X"
+      },
+      "profilePath": "/maf8PhSvDCdEwjEMbYfGpojR5RP.jpg",
+      "tmdbId": 500
+    },
+    {
       "name": "Paul Dano",
       "film": "The Fabelmans",
       "role": "Supporting",
       "awards": {
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/zEJJsm0z07EPNl2Pi1h67xuCmcA.jpg",
       "tmdbId": 17142
@@ -863,22 +907,11 @@
       "name": "Barry Keoghan",
       "role": "Supporting",
       "awards": {
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/mLEd5v9rUZqalyWnXBDAWRQZtwK.jpg",
-      "tmdbId": 1290466
-    },
-    {
-      "name": "Tom Cruise",
-      "film": "Top Gun: Maverick",
-      "role": "Leading",
-      "awards": {
         "critics": "X",
-        "astra": "X"
+        "sag": "X"
       },
-      "profilePath": "/3mShHjSQR7NXOVbdTu5rT2Qd0MN.jpg",
-      "tmdbId": 500
+      "profilePath": "/ngoitknM6hw8fffLywyvjzy6Iti.jpg",
+      "tmdbId": 1290466
     },
     {
       "name": "Ben Whishaw",
@@ -917,7 +950,7 @@
       },
       "film": "Babylon",
       "role": "Leading",
-      "profilePath": "/6JrirYMMyt7xuWICSvROipsMjOm.jpg",
+      "profilePath": "/k5khi8PwsYs2d7uL0uuO5zenL9R.jpg",
       "tmdbId": 1413390
     },
     {
@@ -957,8 +990,27 @@
       },
       "film": "Babylon",
       "role": "Supporting",
-      "profilePath": "/ajNaPmXVVMJFg9GWmu6MJzTaXdV.jpg",
+      "profilePath": "/cckcYc2v0yh1tc9QjRelptcOBko.jpg",
       "tmdbId": 287
+    },
+    {
+      "name": "Judd Hirsch",
+      "film": "The Fabelmans",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/7rJ0TZfMoPLTcO203tHhE6tcPKP.jpg",
+      "tmdbId": 6167
+    },
+    {
+      "name": "Judd Hirsch",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/7rJ0TZfMoPLTcO203tHhE6tcPKP.jpg",
+      "tmdbId": 6167
     },
     {
       "name": "Daryl McCormack",
@@ -991,16 +1043,6 @@
       "tmdbId": 2380397
     },
     {
-      "name": "Judd Hirsch",
-      "film": "The Fabelmans",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/7rJ0TZfMoPLTcO203tHhE6tcPKP.jpg",
-      "tmdbId": 6167
-    },
-    {
       "name": "Adam Sandler",
       "film": "Hustle",
       "role": "Leading",
@@ -1011,13 +1053,45 @@
       "tmdbId": 19292
     },
     {
-      "name": "Judd Hirsch",
-      "role": "Supporting",
+      "name": "Cosmo Jarvis",
+      "film": "It Is In Us All",
       "awards": {
-        "critics": "X"
+        "bifa": "X"
       },
-      "profilePath": "/7rJ0TZfMoPLTcO203tHhE6tcPKP.jpg",
-      "tmdbId": 6167
+      "profilePath": "/1kgghZ558CxZCJip5ufO6BAqUGp.jpg",
+      "tmdbId": 1363054
+    },
+    {
+      "name": "Hala Zein",
+      "film": "Nezouh",
+      "awards": {
+        "bifa": "X"
+      }
+    },
+    {
+      "name": "Zainab Joda",
+      "film": "Our River... Our Sky",
+      "awards": {
+        "bifa": "X"
+      }
+    },
+    {
+      "name": "Paul Mescal",
+      "film": "God's Creatures",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/vrzZ41TGNAFgfmZjC2sOJySzBLd.jpg",
+      "tmdbId": 2326151
+    },
+    {
+      "name": "Fionn Whitehead",
+      "film": "Emily",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/2JjRhwG6BEWeF4n9TlvDEDzlP5P.jpg",
+      "tmdbId": 1687041
     },
     {
       "name": "Brian d'Arcy James",
@@ -1056,47 +1130,6 @@
       "tmdbId": 17243
     },
     {
-      "name": "Cosmo Jarvis",
-      "film": "It Is In Us All",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/1kgghZ558CxZCJip5ufO6BAqUGp.jpg",
-      "tmdbId": 1363054
-    },
-    {
-      "name": "Hala Zein",
-      "film": "Nezouh",
-      "awards": {
-        "bifa": "X"
-      }
-    },
-    {
-      "name": "Zainab Joda",
-      "film": "Our River... Our Sky",
-      "awards": {
-        "bifa": "X"
-      }
-    },
-    {
-      "name": "Paul Mescal",
-      "film": "God's Creatures",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/p4HOSwF9yUyP0x0H18LaKzsS476.jpg",
-      "tmdbId": 2326151
-    },
-    {
-      "name": "Fionn Whitehead",
-      "film": "Emily",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/2JjRhwG6BEWeF4n9TlvDEDzlP5P.jpg",
-      "tmdbId": 1687041
-    },
-    {
       "name": "Colin Farrell",
       "awards": {
         "gotham": "X"
@@ -1117,34 +1150,14 @@
   ],
   "best-actress": [
     {
-      "name": "Cate Blanchett",
-      "awards": {
-        "gg": "Y",
-        "bafta": "Y",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "Y",
-        "venice": "Y",
-        "nyfcc": "Y",
-        "lafca": "Y",
-        "astra": "X",
-        "spirit": "X",
-        "gotham": "X"
-      },
-      "film": "Tár",
-      "role": "Leading",
-      "profilePath": "/vq4vuAVhYngfzVNn8SbnG0JEy15.jpg",
-      "tmdbId": 112
-    },
-    {
       "name": "Michelle Yeoh",
       "awards": {
         "gg": "Y",
-        "bafta": "X",
         "oscar": "Y",
-        "sag": "Y",
-        "nbr": "Y",
         "critics": "X",
+        "bafta": "X",
+        "nbr": "Y",
+        "sag": "Y",
         "lafca": "X",
         "astra": "Y",
         "spirit": "Y",
@@ -1156,13 +1169,32 @@
       "tmdbId": 1620
     },
     {
+      "name": "Cate Blanchett",
+      "awards": {
+        "gg": "Y",
+        "oscar": "X",
+        "critics": "Y",
+        "bafta": "Y",
+        "sag": "X",
+        "lafca": "Y",
+        "venice": "Y",
+        "astra": "X",
+        "spirit": "X",
+        "gotham": "X"
+      },
+      "film": "Tár",
+      "role": "Leading",
+      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
+      "tmdbId": 112
+    },
+    {
       "name": "Angela Bassett",
       "awards": {
         "gg": "Y",
-        "bafta": "X",
         "oscar": "X",
-        "sag": "X",
         "critics": "Y",
+        "bafta": "X",
+        "sag": "X",
         "astra": "Y"
       },
       "film": "Black Panther: Wakanda Forever",
@@ -1174,26 +1206,26 @@
       "name": "Jamie Lee Curtis",
       "awards": {
         "gg": "X",
-        "bafta": "X",
         "oscar": "Y",
-        "sag": "Y",
         "critics": "X",
+        "bafta": "X",
+        "sag": "Y",
         "astra": "X",
         "spirit": "X"
       },
       "film": "Everything Everywhere All at Once",
       "role": "Supporting",
-      "profilePath": "/eWKubKAAssRzmFwCZKh1mdYqGCH.jpg",
+      "profilePath": "/eb0lIt32WwrjtCULe5z6l9eBf06.jpg",
       "tmdbId": 8944
     },
     {
       "name": "Kerry Condon",
       "awards": {
         "gg": "X",
-        "bafta": "Y",
         "oscar": "X",
-        "sag": "X",
         "critics": "X",
+        "bafta": "Y",
+        "sag": "X",
         "astra": "X"
       },
       "film": "The Banshees of Inisherin",
@@ -1206,9 +1238,9 @@
       "film": "Till",
       "role": "Leading",
       "awards": {
+        "critics": "X",
         "bafta": "X",
         "sag": "X",
-        "critics": "X",
         "lafca": "X",
         "astra": "X",
         "gotham": "Y"
@@ -1225,19 +1257,8 @@
       },
       "film": "Triangle of Sadness",
       "role": "Supporting",
-      "profilePath": "/uoSUx7tgIDFvhXk90lCMDpu4Cy9.jpg",
+      "profilePath": "/mNskbR6hayRY3DjTcECqIJ7eQsO.jpg",
       "tmdbId": 1513304
-    },
-    {
-      "name": "Keke Palmer",
-      "awards": {
-        "nyfcc": "Y",
-        "astra": "X"
-      },
-      "film": "Nope",
-      "role": "Supporting",
-      "profilePath": "/fXiKInUmPLs5F53yv2KZSuCXHJZ.jpg",
-      "tmdbId": 74688
     },
     {
       "name": "Zar Amir Ebrahimi",
@@ -1247,6 +1268,26 @@
       "film": "Holy Spider",
       "profilePath": "/dtrpzRUt1ZW8aFKBswArMYXaeZo.jpg",
       "tmdbId": 1236122
+    },
+    {
+      "name": "Lady Gaga",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "House of Gucci",
+      "role": "Leading",
+      "profilePath": "/9Y4Pz7AEXhB9qNar2tMsx5EVXML.jpg",
+      "tmdbId": 237405
+    },
+    {
+      "name": "Kathryn Hunter",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "The Tragedy of Macbeth",
+      "role": "Supporting",
+      "profilePath": "/ni98cNE8kOAj6kcpEVmIfi8iAsw.jpg",
+      "tmdbId": 72309
     },
     {
       "name": "Rosy McEwen",
@@ -1270,9 +1311,9 @@
       "name": "Viola Davis",
       "awards": {
         "gg": "X",
+        "critics": "X",
         "bafta": "X",
         "sag": "X",
-        "critics": "X",
         "astra": "X"
       },
       "film": "The Woman King",
@@ -1285,8 +1326,8 @@
       "film": "The Whale",
       "role": "Supporting",
       "awards": {
-        "bafta": "X",
         "oscar": "X",
+        "bafta": "X",
         "sag": "X",
         "astra": "X",
         "gotham": "X"
@@ -1298,13 +1339,13 @@
       "name": "Ana de Armas",
       "awards": {
         "gg": "X",
-        "bafta": "X",
         "oscar": "X",
+        "bafta": "X",
         "sag": "X"
       },
       "film": "Blonde",
       "role": "Leading",
-      "profilePath": "/5Qne374OM0ewMM7uSN9eq9jNrWq.jpg",
+      "profilePath": "/tkBWBvcLTihUcVf6iwbMQTFqEEv.jpg",
       "tmdbId": 224513
     },
     {
@@ -1329,7 +1370,7 @@
         "lafca": "X",
         "gotham": "X"
       },
-      "profilePath": "/vx49N2pa7hYbEc2hrpA3ZoCGtME.jpg",
+      "profilePath": "/i8IlkFbZqKUgkypZKpdhrw00uqw.jpg",
       "tmdbId": 1498158
     },
     {
@@ -1340,7 +1381,7 @@
       },
       "film": "Babylon",
       "role": "Leading",
-      "profilePath": "/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg",
+      "profilePath": "/8LqG2N6j98lFGMpuYsRUAhOunSd.jpg",
       "tmdbId": 234352
     },
     {
@@ -1351,7 +1392,7 @@
       },
       "film": "Good Luck to You, Leo Grande",
       "role": "Leading",
-      "profilePath": "/bLGNyyVAGSDfRpLoC3gKD6S6j4P.jpg",
+      "profilePath": "/xVrrH7dAoeotune3TWjv5Tr3F3U.jpg",
       "tmdbId": 7056
     },
     {
@@ -1469,15 +1510,6 @@
     },
     {
       "name": "Stephanie Hsu",
-      "role": "Supporting",
-      "awards": {
-        "sag": "X"
-      },
-      "profilePath": "/8gb3lfIHKQAGOQyeC4ynQPsCiHr.jpg",
-      "tmdbId": 1381186
-    },
-    {
-      "name": "Stephanie Hsu",
       "film": "[j]",
       "role": "Supporting",
       "awards": {
@@ -1493,26 +1525,26 @@
       "awards": {
         "critics": "X"
       },
-      "profilePath": "/xavjGiGltQEDWqNdbe0zd1lO0UR.jpg",
+      "profilePath": "/axTIbPz6ZbqlcCwkNBgD59gY3lx.jpg",
       "tmdbId": 1005852
     },
     {
-      "name": "Mia Goth",
+      "name": "Stephanie Hsu",
+      "role": "Supporting",
       "awards": {
-        "spirit": "X"
+        "sag": "X"
       },
-      "film": "Pearl",
-      "profilePath": "/rwko7XVaKFcJH1dtAIIsrgLMzHb.jpg",
-      "tmdbId": 1137824
+      "profilePath": "/8gb3lfIHKQAGOQyeC4ynQPsCiHr.jpg",
+      "tmdbId": 1381186
     },
     {
-      "name": "Regina Hall",
+      "name": "Keke Palmer",
       "awards": {
-        "spirit": "X"
+        "astra": "X"
       },
-      "film": "Honk for Jesus. Save Your Soul.",
-      "profilePath": "/jiFZ4xNrvUUZLBHnJu71CvdN4kj.jpg",
-      "tmdbId": 35705
+      "film": "Nope",
+      "profilePath": "/f5i3WzdMt02mlfm9I9LHKRJtZ4J.jpg",
+      "tmdbId": 74688
     },
     {
       "name": "Sally Hawkins",
@@ -1529,7 +1561,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/y8nDoKXpyNViFL8Eam4Ey1PkgQ6.jpg",
+      "profilePath": "/l4JOGnGOAeZr3BQvAerFyvakrU0.jpg",
       "tmdbId": 2201315
     },
     {
@@ -1547,7 +1579,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/mxdvFzjhKrRUhpZLdrwp3u00dP6.jpg",
+      "profilePath": "/bd0qiJXHoLNpkCqABsh67AKRtjC.jpg",
       "tmdbId": 1639
     },
     {
@@ -1596,6 +1628,24 @@
       "tmdbId": 2201317
     },
     {
+      "name": "Mia Goth",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Pearl",
+      "profilePath": "/rwko7XVaKFcJH1dtAIIsrgLMzHb.jpg",
+      "tmdbId": 1137824
+    },
+    {
+      "name": "Regina Hall",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Honk for Jesus. Save Your Soul.",
+      "profilePath": "/jiFZ4xNrvUUZLBHnJu71CvdN4kj.jpg",
+      "tmdbId": 35705
+    },
+    {
       "name": "Thandiwe Newton",
       "awards": {
         "gotham": "X"
@@ -1610,7 +1660,7 @@
         "gotham": "X"
       },
       "film": "Tár",
-      "profilePath": "/lg83RO8HugXg9zbGtLtlsZSKjgA.jpg",
+      "profilePath": "/l9ECDc9GGIESuKuT5zxIJknAD33.jpg",
       "tmdbId": 1385600
     }
   ]

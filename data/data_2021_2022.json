@@ -6,8 +6,8 @@
         "gg": "X",
         "oscar": "Y",
         "afi": "Y",
-        "sag": "Y",
         "critics": "X",
+        "sag": "Y",
         "pga": "Y",
         "wga": "Y",
         "astra": "Y"
@@ -42,8 +42,8 @@
         "critics": "X",
         "nbr": "Y",
         "pga": "X",
-        "wga": "X",
         "adg": "Y",
+        "wga": "X",
         "astra": "X"
       },
       "genre": "Drama",
@@ -57,12 +57,12 @@
         "bafta": "X",
         "oscar": "X",
         "afi": "Y",
-        "sag": "X",
         "critics": "X",
+        "sag": "X",
         "nbr": "Y",
         "pga": "X",
-        "wga": "Y",
-        "adg": "X"
+        "adg": "X",
+        "wga": "Y"
       },
       "genre": "Comedy",
       "posterPath": "/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
@@ -77,8 +77,8 @@
         "critics": "X",
         "nbr": "Y",
         "pga": "X",
-        "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
       "genre": "Comedy",
       "posterPath": "/yfz3IUoYYSY32tkb97HlUBGFsnh.jpg",
@@ -91,8 +91,8 @@
         "afi": "Y",
         "critics": "X",
         "nbr": "Y",
-        "wga": "X",
-        "adg": "Y"
+        "adg": "Y",
+        "wga": "X"
       },
       "posterPath": "/vfn1feL0V9HNSXuLLpaxAW8O6LO.jpg",
       "tmdbId": 597208
@@ -107,8 +107,8 @@
         "critics": "X",
         "nbr": "Y",
         "pga": "X",
-        "wga": "X",
         "adg": "X",
+        "wga": "X",
         "astra": "X"
       },
       "genre": "Comedy",
@@ -122,8 +122,8 @@
         "bafta": "X",
         "oscar": "X",
         "afi": "Y",
-        "sag": "X",
         "critics": "X",
+        "sag": "X",
         "nbr": "Y",
         "pga": "X",
         "astra": "X"
@@ -138,8 +138,8 @@
         "gg": "X",
         "oscar": "X",
         "afi": "Y",
-        "sag": "X",
         "critics": "X",
+        "sag": "X",
         "nbr": "Y",
         "pga": "X",
         "wga": "X",
@@ -148,16 +148,6 @@
       "genre": "Drama",
       "posterPath": "/2dfujXrxePtYJPiPHj1HkAFQvpu.jpg",
       "tmdbId": 614917
-    },
-    {
-      "name": "Drive My Car",
-      "awards": {
-        "oscar": "X",
-        "lafca": "Y",
-        "nyfcc": "Y"
-      },
-      "posterPath": "/3cOsf5HBjPK2QCz9ebQlGHNnE7y.jpg",
-      "tmdbId": 758866
     },
     {
       "name": "The Tragedy of Macbeth",
@@ -178,6 +168,15 @@
       },
       "posterPath": "/kCRpBO9xWtzDEJcdhTXpHy40QLS.jpg",
       "tmdbId": 203051
+    },
+    {
+      "name": "Drive My Car",
+      "awards": {
+        "oscar": "X",
+        "lafca": "Y"
+      },
+      "posterPath": "/3cOsf5HBjPK2QCz9ebQlGHNnE7y.jpg",
+      "tmdbId": 758866
     },
     {
       "name": "Tick, Tick... Boom!",
@@ -232,6 +231,14 @@
       "tmdbId": 630240
     },
     {
+      "name": "La scelta",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/nqO8OTsloHIje8XO5y12oVAsOtU.jpg",
+      "tmdbId": 707258
+    },
+    {
       "name": "The Mitchells vs. the Machines",
       "awards": {
         "annie": "Y"
@@ -240,20 +247,20 @@
       "tmdbId": 501929
     },
     {
+      "name": "First Cow",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "posterPath": "/yS41crZ1i0fFxCQbuL7I1Y1VBwm.jpg",
+      "tmdbId": 558582
+    },
+    {
       "name": "No Time to Die",
       "awards": {
         "adg": "Y"
       },
       "posterPath": "/iUgygt3fscRoKWCV1d0C7FbM9TP.jpg",
       "tmdbId": 370172
-    },
-    {
-      "name": "La scelta di Anne - L'Événement",
-      "awards": {
-        "venice": "Y"
-      },
-      "posterPath": "/f2lTAmLYpWpd8JxtJrMXFFGV9gZ.jpg",
-      "tmdbId": 793998
     },
     {
       "name": "After Love",
@@ -288,10 +295,9 @@
     {
       "name": "The French Dispatch",
       "awards": {
-        "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
-      "screenplay_type": "original",
       "posterPath": "/6JXR3KJH5roiBCjWFt09xfgxHZc.jpg",
       "tmdbId": 542178
     },
@@ -506,8 +512,7 @@
         "bafta": "Y",
         "oscar": "Y",
         "critics": "Y",
-        "lafca": "Y",
-        "nyfcc": "Y"
+        "lafca": "Y"
       },
       "film": "The Power of the Dog",
       "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
@@ -556,12 +561,21 @@
     },
     {
       "name": "Jane Campion",
+      "film": "Il potere del cane ( The Power of the Dog )",
       "awards": {
         "venice": "Y"
       },
-      "film": "Il potere del cane",
       "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
       "tmdbId": 10757
+    },
+    {
+      "name": "Chloé Zhao",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Nomadland",
+      "profilePath": "/r8DmTdOqHbDUydCOVb277rncPTK.jpg",
+      "tmdbId": 1395183
     },
     {
       "name": "Jane Campion",
@@ -695,7 +709,7 @@
         "astra": "X"
       },
       "film": "Passing",
-      "profilePath": "/mpWtqob1BRKz4bpX8h8a9hdmIPv.jpg",
+      "profilePath": "/u1Q7HF01llNzx0yx0A8g2W0Xj9L.jpg",
       "tmdbId": 15556
     },
     {
@@ -790,8 +804,8 @@
         "gg": "X",
         "bafta": "Y",
         "oscar": "Y",
-        "sag": "Y",
         "critics": "Y",
+        "sag": "Y",
         "astra": "Y",
         "spirit": "Y",
         "gotham": "Y"
@@ -807,8 +821,8 @@
         "gg": "Y",
         "bafta": "Y",
         "oscar": "Y",
-        "sag": "Y",
         "critics": "Y",
+        "sag": "Y",
         "nbr": "Y",
         "astra": "X"
       },
@@ -823,10 +837,9 @@
         "gg": "Y",
         "bafta": "X",
         "oscar": "X",
-        "sag": "X",
         "critics": "X",
-        "lafca": "Y",
-        "nyfcc": "Y"
+        "sag": "X",
+        "lafca": "Y"
       },
       "film": "The Power of the Dog",
       "role": "Supporting",
@@ -837,8 +850,8 @@
       "name": "Andrew Garfield",
       "awards": {
         "gg": "Y",
-        "sag": "X",
         "critics": "X",
+        "sag": "X",
         "astra": "Y"
       },
       "film": "tick, tick... BOOM!",
@@ -856,23 +869,6 @@
       "film": "Red Rocket",
       "profilePath": "/hpFwRpxrJt7k4ccWEwc37xRZ8pT.jpg",
       "tmdbId": 35548
-    },
-    {
-      "name": "Benedict Cumberbatch",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X",
-        "lafca": "X",
-        "nyfcc": "Y",
-        "astra": "X"
-      },
-      "film": "The Power of the Dog",
-      "role": "Leading",
-      "profilePath": "/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg",
-      "tmdbId": 71580
     },
     {
       "name": "Adeel Akhtar",
@@ -905,6 +901,15 @@
       "tmdbId": 572541
     },
     {
+      "name": "John Arcilla",
+      "film": "On the Job 2: The Missing 8",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/2K4vH6uYsA3gWABQsdlqotyMZBk.jpg",
+      "tmdbId": 625924
+    },
+    {
       "name": "Vincent Lindon",
       "awards": {
         "lafca": "Y"
@@ -914,13 +919,24 @@
       "tmdbId": 5443
     },
     {
-      "name": "John Arcilla",
+      "name": "Delroy Lindo",
       "awards": {
-        "venice": "Y"
+        "nyfcc": "Y"
       },
-      "film": "On the Job 2: The Missing 8",
-      "profilePath": "/2K4vH6uYsA3gWABQsdlqotyMZBk.jpg",
-      "tmdbId": 625924
+      "film": "Da 5 Bloods",
+      "role": "Leading",
+      "profilePath": "/kLwUBBmEIdchrLqwsYzgLB2B6q5.jpg",
+      "tmdbId": 18792
+    },
+    {
+      "name": "Chadwick Boseman",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Da 5 Bloods",
+      "role": "Supporting",
+      "profilePath": "/1lz1wLOuPFSRIratMz0SxD3tkJ.jpg",
+      "tmdbId": 172069
     },
     {
       "name": "Talid Ariss",
@@ -932,12 +948,28 @@
       "tmdbId": 929820
     },
     {
+      "name": "Benedict Cumberbatch",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "X",
+        "sag": "X",
+        "lafca": "X",
+        "astra": "X"
+      },
+      "film": "The Power of the Dog",
+      "role": "Leading",
+      "profilePath": "/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg",
+      "tmdbId": 71580
+    },
+    {
       "name": "Denzel Washington",
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "film": "The Tragedy of Macbeth",
       "role": "Leading",
@@ -1023,7 +1055,7 @@
       },
       "film": "The Tender Bar",
       "role": "Supporting",
-      "profilePath": "/aTcqu8cI4wMohU17xTdqmXKTGrw.jpg",
+      "profilePath": "/u525jeDOzg9hVdvYfeehTGnw7Aa.jpg",
       "tmdbId": 880
     },
     {
@@ -1044,7 +1076,7 @@
         "bafta": "X",
         "bifa": "X"
       },
-      "profilePath": "/1m9RWRRkQzJEAphJm9kQhMk1r1Q.jpg",
+      "profilePath": "/wjDQ7MzciEsRwWDFbemcM1hS0aq.jpg",
       "tmdbId": 1115
     },
     {
@@ -1070,17 +1102,6 @@
       "tmdbId": 18999
     },
     {
-      "name": "Jared Leto",
-      "film": "House of Gucci",
-      "role": "Supporting",
-      "awards": {
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/lZaE3x8yxofNZ96xpthxuVXQxTM.jpg",
-      "tmdbId": 7499
-    },
-    {
       "name": "Nicolas Cage",
       "film": "Pig",
       "role": "Leading",
@@ -1090,6 +1111,17 @@
       },
       "profilePath": "/y1RtezurZYveYkVNRht7CwEgSYY.jpg",
       "tmdbId": 2963
+    },
+    {
+      "name": "Jared Leto",
+      "film": "House of Gucci",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X",
+        "sag": "X"
+      },
+      "profilePath": "/ca3x0OfIKbJppZh8S1Alx3GfUZO.jpg",
+      "tmdbId": 7499
     },
     {
       "name": "Michael Greyeyes",
@@ -1328,8 +1360,8 @@
         "gg": "Y",
         "bafta": "Y",
         "oscar": "Y",
-        "sag": "Y",
         "critics": "Y",
+        "sag": "Y",
         "lafca": "Y",
         "astra": "Y"
       },
@@ -1343,8 +1375,8 @@
       "awards": {
         "gg": "X",
         "oscar": "Y",
-        "sag": "Y",
         "critics": "Y",
+        "sag": "Y",
         "astra": "X"
       },
       "film": "The Eyes of Tammy Faye",
@@ -1375,21 +1407,6 @@
       "tmdbId": 33450
     },
     {
-      "name": "Lady Gaga",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "X",
-        "nyfcc": "Y",
-        "astra": "X"
-      },
-      "film": "House of Gucci",
-      "role": "Leading",
-      "profilePath": "/9Y4Pz7AEXhB9qNar2tMsx5EVXML.jpg",
-      "tmdbId": 237405
-    },
-    {
       "name": "Ruth Negga",
       "awards": {
         "gg": "X",
@@ -1409,13 +1426,13 @@
       "awards": {
         "gg": "Y",
         "oscar": "X",
-        "sag": "X",
         "critics": "X",
+        "sag": "X",
         "astra": "X"
       },
       "film": "Being the Ricardos",
       "role": "Leading",
-      "profilePath": "/n1xlczx1w44DqUkJvJtAGJf9fyx.jpg",
+      "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
       "tmdbId": 2227
     },
     {
@@ -1423,8 +1440,8 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
         "critics": "X",
+        "sag": "X",
         "gotham": "Y"
       },
       "film": "The Lost Daughter",
@@ -1479,23 +1496,31 @@
       "tmdbId": 1335818
     },
     {
-      "name": "Kathryn Hunter",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Tragedy of Macbeth",
-      "role": "Supporting",
-      "profilePath": "/ni98cNE8kOAj6kcpEVmIfi8iAsw.jpg",
-      "tmdbId": 72309
-    },
-    {
       "name": "Penélope Cruz",
+      "film": "Madres paralelas",
       "awards": {
         "venice": "Y"
       },
-      "film": "Madres paralelas",
       "profilePath": "/2Lbc8QXgHik1D1saPqQ5qEWwUEh.jpg",
       "tmdbId": 955
+    },
+    {
+      "name": "Sidney Flanigan",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Never Rarely Sometimes Always",
+      "role": "Leading",
+      "profilePath": "/rIikG5VcRAWYKM0JXXc5aNI2km1.jpg",
+      "tmdbId": 2475406
+    },
+    {
+      "name": "Maria Bakalova",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Borat Subsequent Moviefilm",
+      "role": "Supporting"
     },
     {
       "name": "Vinette Robinson",
@@ -1511,8 +1536,8 @@
       "awards": {
         "gg": "X",
         "bafta": "X",
-        "sag": "X",
         "critics": "X",
+        "sag": "X",
         "astra": "X",
         "bifa": "X"
       },
@@ -1522,12 +1547,26 @@
       "tmdbId": 147056
     },
     {
+      "name": "Lady Gaga",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "sag": "X",
+        "astra": "X"
+      },
+      "film": "House of Gucci",
+      "role": "Leading",
+      "profilePath": "/9Y4Pz7AEXhB9qNar2tMsx5EVXML.jpg",
+      "tmdbId": 237405
+    },
+    {
       "name": "Kirsten Dunst",
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "sag": "X"
       },
       "film": "The Power of the Dog",
       "role": "Supporting",
@@ -1544,7 +1583,7 @@
         "spirit": "X",
         "gotham": "X"
       },
-      "profilePath": "/vx49N2pa7hYbEc2hrpA3ZoCGtME.jpg",
+      "profilePath": "/i8IlkFbZqKUgkypZKpdhrw00uqw.jpg",
       "tmdbId": 1498158
     },
     {
@@ -1556,7 +1595,7 @@
       },
       "film": "Licorice Pizza",
       "role": "Leading",
-      "profilePath": "/uOU4uueRxH5BYhzNjzPxJOxZStJ.jpg",
+      "profilePath": "/5c8zq41exvPUd7ph1tNeoBmaPgj.jpg",
       "tmdbId": 1741367
     },
     {
@@ -1663,7 +1702,7 @@
       },
       "film": "Cruella",
       "role": "Leading",
-      "profilePath": "/s7PVcnnA05JcRiMtplwgK49Z2UU.jpg",
+      "profilePath": "/8NwSfyYWIIUE1cI9Xhz92b0w7WD.jpg",
       "tmdbId": 54693
     },
     {
@@ -1675,6 +1714,15 @@
       },
       "profilePath": "/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
       "tmdbId": 62561
+    },
+    {
+      "name": "Rita Moreno",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
+      "profilePath": "/zB0M77jr7tmsmWHEr2bWO2Xq66L.jpg",
+      "tmdbId": 13299
     },
     {
       "name": "Jennifer Hudson",
@@ -1693,17 +1741,8 @@
       "awards": {
         "sag": "X"
       },
-      "profilePath": "/vq4vuAVhYngfzVNn8SbnG0JEy15.jpg",
+      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
       "tmdbId": 112
-    },
-    {
-      "name": "Rita Moreno",
-      "role": "Supporting",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/zB0M77jr7tmsmWHEr2bWO2Xq66L.jpg",
-      "tmdbId": 13299
     },
     {
       "name": "Isabelle Fuhrman",

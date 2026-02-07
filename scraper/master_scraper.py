@@ -12,6 +12,14 @@ import json
 import sys
 import time
 
+try:
+    from manual_adg_data import MANUAL_ADG_DATA
+except ImportError:
+    try:
+        from scraper.manual_adg_data import MANUAL_ADG_DATA
+    except ImportError:
+         MANUAL_ADG_DATA = {}
+
 sys.stdout.reconfigure(encoding='utf-8')
 
 TMDB_API_KEY = "4399b8147e098e80be332f172d1fe490"
@@ -197,10 +205,7 @@ CEREMONY_MAP = {
     },
     # NYFCC: New York Film Critics Circle - year of films (like LAFCA)
     'nyfcc': {
-        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
-        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
-        2015: 2014, 2014: 2013, 2013: 2012, 2012: 2011, 2011: 2010, 2010: 2009,
-        2009: 2008, 2008: 2007, 2007: 2006, 2006: 2005, 2005: 2004, 2004: 2003,
+        2009: 2008, 2008: 2007, 2007: 2006, 2006: 2005, 2005: 2004, 2004: 2003, 
         2003: 2002, 2002: 2001, 2001: 2000
     }
 }
@@ -217,6 +222,7 @@ URL_TEMPLATES = {
     'nbr': 'https://en.wikipedia.org/wiki/National_Board_of_Review_Awards_{year}',
     'venice': 'https://it.wikipedia.org/wiki/{ord}%C2%AA_Mostra_internazionale_d%27arte_cinematografica_di_Venezia',
     'pga': 'https://en.wikipedia.org/wiki/{ord}_Producers_Guild_of_America_Awards',
+    'dga': 'https://en.wikipedia.org/wiki/{ord}_Directors_Guild_of_America_Awards',
     'lafca': 'https://en.wikipedia.org/wiki/{year}_Los_Angeles_Film_Critics_Association_Awards',
     'wga': 'https://en.wikipedia.org/wiki/{ord}_Writers_Guild_of_America_Awards',
     'adg': 'https://en.wikipedia.org/wiki/Art_Directors_Guild_Awards_{year}',
@@ -902,8 +908,8 @@ def scrape_nbr(year):
                 if b:
                     cat_text = b.get_text().lower()
                     if 'director' in cat_text and 'debut' not in cat_text: current_category = 'best-director'
-                    elif 'actor' in cat_text and 'supporting' not in cat_text: current_category = 'best-actor'
-                    elif 'actress' in cat_text and 'supporting' not in cat_text: current_category = 'best-actress'
+                    elif 'actor' in cat_text and 'supporting' not in cat_text and 'breakthrough' not in cat_text: current_category = 'best-actor'
+                    elif 'actress' in cat_text and 'supporting' not in cat_text and 'breakthrough' not in cat_text: current_category = 'best-actress'
                     elif ('best film' in cat_text or 'best picture' in cat_text) and 'foreign' not in cat_text: current_category = 'best-film'
                     else: current_category = None
             
@@ -935,8 +941,8 @@ def scrape_nbr(year):
                     
                     cat = None
                     if 'best director' in text and 'debut' not in text: cat = 'best-director'
-                    elif 'best actor' in text and 'supporting' not in text: cat = 'best-actor'
-                    elif 'best actress' in text and 'supporting' not in text: cat = 'best-actress'
+                    elif 'best actor' in text and 'supporting' not in text and 'breakthrough' not in text: cat = 'best-actor'
+                    elif 'best actress' in text and 'supporting' not in text and 'breakthrough' not in text: cat = 'best-actress'
                     elif ('best film' in text or 'best picture' in text) and 'foreign' not in text: cat = 'best-film'
                     
                     if cat:
@@ -1482,6 +1488,45 @@ def scrape_wga(ceremony_num):
                                 'screenplay_type': screenplay_type
                             })
             
+            # Try Format C (modern 68th+): Winner is first link with film title, nominees in li as links
+            # Check if we haven't found any films yet (via p/b/i)
+            if not any(e.get('screenplay_type') == screenplay_type for e in results['best-film']):
+                # Winner: first link that looks like a film title
+                # Skip links that are clearly studios, writers, etc.
+                skip_patterns = ['films', 'pictures', 'studios', 'entertainment', 'releasing', 'productions', 'searchlight']
+                all_links = data_td.find_all('a')
+                for link in all_links:
+                    title = link.get('title', '').lower()
+                    text = link.get_text().strip()
+                    # Skip if link title contains studio indicators or is empty
+                    if not text or len(text) < 2:
+                        continue
+                    if any(pattern in title for pattern in skip_patterns):
+                        continue
+                    # Accept film link (has (film) OR first non-studio link)
+                    if '(film)' in title or 'film)' in title or (title and not any(pattern in title for pattern in skip_patterns)):
+                        if text not in seen_films:
+                            seen_films.add(text)
+                            results['best-film'].append({
+                                'name': text,
+                                'awards': {'wga': 'Y'},
+                                'screenplay_type': screenplay_type
+                            })
+                        break
+                
+                # Nominees: li elements - get first link in each li
+                for li in data_td.find_all('li'):
+                    link = li.find('a')
+                    if link:
+                        text = link.get_text().strip()
+                        if text and len(text) > 1 and text not in seen_films:
+                            seen_films.add(text)
+                            results['best-film'].append({
+                                'name': text,
+                                'awards': {'wga': 'X'},
+                                'screenplay_type': screenplay_type
+                            })
+            
             # Nominees in sibling <ul><li><i>
             ul = data_td.find('ul')
             if ul:
@@ -1535,63 +1580,139 @@ def scrape_wga(ceremony_num):
                             'awards': {'wga': 'X'},
                             'screenplay_type': screenplay_type
                         })
+    # Categories to look for (lowercase for matching)
+    target_categories = {
+        'original screenplay': 'Original',
+        'adapted screenplay': 'Adapted'
+    }
+    
+    # Iterate through all headers to track sections
+    all_elements = soup.find_all(['h2', 'h3', 'h4'])
+    
+    current_section = ""
+    
+    for header in all_elements:
+        header_text = header.get_text().lower().strip()
+        
+        # Update current section if h2 or h3
+        if header.name in ['h2', 'h3']:
+            current_section = header_text
+            # Only continue if it's strictly H2, as H3 might BE the category header we want to parse
+            if header.name == 'h2':
+                continue
+            
+        # Skip if not in Film section
+        # Section usually "film", "screenplay (film)", "motion picture"
+        # Avoid "television", "radio", "promotional"
+        if 'television' in current_section or 'radio' in current_section or 'promotional' in current_section or 'series' in current_section:
             continue
+            
+        # Identify category - accept full "original screenplay" OR just "original"/"adapted"
+        screenplay_type = None
+        for cat_key, type_val in target_categories.items():
+            if cat_key in header_text:
+                screenplay_type = type_val
+                break
         
-        # Try VERY OLD format (65th-66th): h4 with id="Original"/"Adapted"
-        # Header is <h4 id="Original"> or <h4 id="Adapted">
-        h4_id = 'Original' if screenplay_type == 'original' else 'Adapted'
-        h4 = soup.find('h4', id=h4_id)
-        if not h4:
-            # Try finding by span inside h4
-            span = soup.find('span', id=h4_id)
-            if span:
-                h4 = span.find_parent('h4')
+        # Fallback: match just "original" or "adapted" if in film section
+        if not screenplay_type:
+            if 'film' in current_section or 'motion picture' in current_section or current_section == '':
+                if header_text.strip() == 'original' or header_text.strip().startswith('original['):
+                    screenplay_type = 'Original'
+                elif header_text.strip() == 'adapted' or header_text.strip().startswith('adapted['):
+                    screenplay_type = 'Adapted'
         
-        if h4:
-            # Find content after h4: winner in <p>, nominees in <ul>
-            # h4 is often wrapped in a <div class="mw-heading">, so navigate from parent
-            start_element = h4.parent if h4.parent and h4.parent.name == 'div' else h4
-            current = start_element.next_sibling
-            while current:
-                if hasattr(current, 'name'):
-                    # Winner in <p> with <i> (may be <i><b> or <b><i> or just <i>)
-                    if current.name == 'p':
-                        # Try to find first <i> tag in paragraph
+        if not screenplay_type:
+            continue
+        # Navigate content following header
+        # Structure variants:
+        # Modern: h4 -> ul (first item winner with bold/icon, others nominees)
+        # Historical (2002-2011): h3 -> p (winner bold/italic) -> ul (nominees)
+        
+        # Start looking from next sibling
+        # Handle wrappings (e.g. h4 in div.mw-heading)
+        start_element = header.parent if header.parent and header.parent.name == 'div' and 'mw-heading' in str(header.parent.get('class', [])) else header
+        
+        current = start_element.next_sibling
+        
+        while current:
+            if hasattr(current, 'name') and current.name:
+                
+                # Stop conditions
+                # Check for direct headers
+                if current.name in ['h2', 'h3', 'h4']:
+                    # Stop if we hit a header of same or higher importance
+                    if current.name == 'h2': break
+                    if current.name == header.name: break
+                    if header.name == 'h4' and current.name == 'h3': break
+                    # If we are parsing H3, H4 is a child, so continues (technically)
+                    pass
+
+                # Check for wrapped headers (div.mw-heading)
+                if current.name == 'div' and any(cls.startswith('mw-heading') for cls in current.get('class', [])):
+                    # Find the header inside to check level
+                    h = current.find(['h2', 'h3', 'h4'])
+                    if h:
+                        if h.name == 'h2': break
+                        if h.name == header.name: break
+                        if header.name == 'h4' and h.name == 'h3': break
+                
+                # Case 1: Winner in Paragraph
+                if current.name == 'p':
+                    winner_film = None
+                    bold_italic = current.find('b')
+                    if bold_italic:
+                        italic_in_bold = bold_italic.find('i')
+                        if italic_in_bold:
+                             winner_film = italic_in_bold.get_text().strip()
+                        elif bold_italic.get_text().strip():
+                             pass
+                    
+                    if not winner_film:
                         italic = current.find('i')
                         if italic:
-                            film_name = italic.get_text().strip()
-                            if film_name and film_name not in seen_films:
-                                seen_films.add(film_name)
-                                results['best-film'].append({
-                                    'name': film_name,
-                                    'awards': {'wga': 'Y'},
-                                    'screenplay_type': screenplay_type
-                                })
+                             winner_film = italic.get_text().strip()
                     
-                    # Nominees in <ul><li><i>
-                    if current.name == 'ul':
-                        for li in current.find_all('li', recursive=False):
+                    if winner_film and winner_film not in seen_films:
+                        # Extra validation to avoid TV
+                        if len(winner_film) > 1 and "see also" not in winner_film.lower():
+                            seen_films.add(winner_film)
+                            results['best-film'].append({
+                                'name': winner_film,
+                                'awards': {'wga': 'Y'},
+                                'screenplay_type': screenplay_type
+                            })
+
+                # Case 2: List (Nominees)
+                elif current.name == 'ul':
+                    for li in current.find_all('li', recursive=False):
+                        film_name = None
+                        is_winner = False
+                        
+                        bold = li.find('b')
+                        if bold:
+                             italic = bold.find('i')
+                             if italic:
+                                 film_name = italic.get_text().strip()
+                                 is_winner = True
+                        
+                        if not film_name:
                             italic = li.find('i')
-                            if not italic:
-                                continue
-                            
-                            film_name = italic.get_text().strip()
-                            
-                            if film_name and film_name not in seen_films:
-                                seen_films.add(film_name)
-                                results['best-film'].append({
-                                    'name': film_name,
-                                    'awards': {'wga': 'X'},
-                                    'screenplay_type': screenplay_type
-                                })
-                        break  # Found the ul, stop
-                    
-                    # Stop if we hit next h3/h4 (new section)
-                    if current.name in ['h3', 'h4']:
-                        break
+                            if italic:
+                                film_name = italic.get_text().strip()
+                        
+                        if film_name and film_name not in seen_films:
+                             if "screenplay" in film_name.lower(): continue 
+                             seen_films.add(film_name)
+                             badge = 'Y' if is_winner else 'X'
+                             results['best-film'].append({
+                                'name': film_name,
+                                'awards': {'wga': badge},
+                                'screenplay_type': screenplay_type
+                             })
                 
-                current = current.next_sibling
-    
+            current = current.next_sibling
+
     print(f"    WGA {ordinal(ceremony_num)}: Found {len(results['best-film'])} films")
     return results
 
@@ -1603,29 +1724,41 @@ def scrape_adg(year):
     """
     import re
     
-    if year not in CEREMONY_MAP['adg']:
-        print(f"  No mapping for ADG {year}")
-        return {}
+    season_year = year # Define season_year for use in URL logic
     
-    adg_year = CEREMONY_MAP['adg'][year]
-    url = URL_TEMPLATES['adg'].format(year=adg_year)
+    adg_year = CEREMONY_MAP['adg'].get(year)
+    if not adg_year:
+        print(f"  No ADG mapping for year {year}")
+        return {}
+
+    # Check for manual data override
+    if adg_year in MANUAL_ADG_DATA:
+        print(f"  ADG {adg_year}: Using MANUAL DATA override")
+        return MANUAL_ADG_DATA[adg_year]
+    
+    # Logic for ADG URLs
+    # 2004-2006: Wiki pages are "Art_Directors_Guild_Awards_YYYY"
+    
+    if 'adg' in URL_TEMPLATES:
+         url = URL_TEMPLATES['adg'].format(year=adg_year)
+    else:
+         url = f"https://en.wikipedia.org/wiki/Art_Directors_Guild_Awards_{adg_year}"
+    
     print(f"  ADG ({adg_year}): {url}")
     
     soup = fetch_page(url)
     if not soup:
         return {}
     
-    results = {
-        'best-film': [],
-        'best-director': [],
-        'best-actor': [],
-        'best-actress': []
-    }
-    
+    results = {'best-film': []}
     seen_films = set()
     
-    # Find all wikitables
+    # Initialize all_tables here to avoid NameError if logic below depends on it
     all_tables = soup.find_all('table', class_='wikitable')
+    
+    # ADG Parsing Logic update for combined categories (Period or Fantasy)
+    # The original loop handles "Period Film", "Fantasy Film", "Contemporary Film".
+    # We need to make sure "Period or Fantasy Film" triggers the category collection.
     
     # We need to find which tables are in the "Film" section (before "Television")
     # Strategy: Look at preceding h2/h3 headers to identify Film tables
@@ -1774,33 +1907,153 @@ def scrape_adg(year):
                     continue
                 
                 # Check for category labels in p tags (e.g., "Period Film:", "Fantasy Film:")
+                # Also handle combined "Period or Fantasy Film" (2004-2006)
+                # AND handle "Winner in P tag" format (2005-2006) where <p>Winner</p><ul>Nominees</ul>
+                
+                next_ul_is_nominees_only = False
+                
                 if tag_name == 'p':
-                    if any(cat in element_text for cat in ['period', 'contemporary', 'fantasy', 'animated']):
+                    txt_lower = element_text.lower()
+                    full_text = element.get_text().strip()
+                    
+                    if any(cat in txt_lower for cat in ['period', 'contemporary', 'fantasy', 'animated']):
                         current_category = element_text
+                    else:
+                        # Check if this might be a winner (followed by UL, not a category label)
+                        # Look ahead for next sibling being UL? 
+                        # We are iterating `element.find_all_next`, so we can't easily check 'next' in the loop
+                        # but we can rely on state.
+                        # Actually, we can check if the text looks like a winner?
+                        # 2006: "Casino Royale[1]"
+                        # 2005: "David J. Bomba – Walk the Line[1]"
+                        
+                        # Heuristic: If it has content, and we are in the Film section... 
+                        # checking if next element is UL is hard in this loop structure.
+                        # But we can try to parse it as a film.
+                        
+                        # Clean text
+                        cleaned_text = re.sub(r'\s*\[.*?\]', '', full_text).strip()
+                        if '–' in cleaned_text:
+                            possible_film = cleaned_text.split('–')[-1].strip()
+                        elif '-' in cleaned_text: # Hyphen fallback
+                            possible_film = cleaned_text.split('-')[-1].strip()
+                        else:
+                            possible_film = cleaned_text
+                        
+                        # Only treat as winner if NOT empty and NOT a known header-like word
+                        if possible_film and len(possible_film) > 2 and "film" not in possible_film.lower():
+                            # We assume this is a winner.
+                            # We need to set a flag so the NEXT ul knows it contains only nominees.
+                            # But wait, how do we confirm it IS followed by UL?
+                            # We can blindly add it, but safeguards are better.
+                            # For now, let's add it if 2005/2006.
+                            is_special_year = 2004 <= season_year <= 2006 # Seasons 2005, 2006, 2007?
+                            # Actually 2004 page (Season 2005) had Headers "Contemporary Film" in P tags.
+                            # 2005 page (Season 2006) has Winner in P tag.
+                            # 2006 page (Season 2007) has Winner in P tag.
+                            
+                            if 2005 <= season_year <= 2007: # Seasons where this format was observed
+                                if possible_film not in seen_films:
+                                    seen_films.add(possible_film)
+                                    results['best-film'].append({
+                                        'name': possible_film,
+                                        'awards': {'adg': 'Y'}
+                                    })
+                                    # Implicitly, the next UL will be processed.
+                                    # We need to tell the UL processor that the first item is NOT a winner.
+                                    # We can set a temporary variable in the loop?
+                                    # But `element` changes. We need a persistent flag outside the loop?
+                                    # `next_ul_is_nominees_only` needs to be defined outside.
+                                    # Let's use a class attribute or just a variable that resets?
+                                    # The loop iterates `find_all_next`. It's flat.
+                                    # So we can set `flag = True`.
+                                    pass
+                                    
                     continue
                 
-                # Process bulleted lists (ul) - these contain the actual film nominees
+                # Processing UL
                 if tag_name == 'ul':
-                    # Skip animated category (user requested)
-                    # Keep current_category as animated so all ul in this section are skipped
-                    if current_category and 'animated' in current_category:
+                    if current_category and 'animated' in current_category.lower():
                         continue
+                        
+                    # Determine if first item is winner
+                    # If we just added a winner from P tag, then NO.
+                    # How to track?
+                    # We can check if the PREVIOUS processed element was that P tag winner.
+                    # Use `seen_films` most recent addition?
+                    # Safer: Check the year.
+                    
+                    is_winner_default = True
+                    if 2005 <= season_year <= 2007:
+                         # In these years, winner was likely in P tag.
+                         # But be careful if we DIDN'T find a P tag winner (e.g. 2004 which is season 2005?)
+                         # Wait, scraping 2004 (Season 2005) worked fine with standard logic (P tags were headers).
+                         # 2005 (Season 2006) and 2006 (Season 2007) failed.
+                         if season_year >= 2005: 
+                             is_winner_default = False
                     
                     lis = element.find_all('li', recursive=False)
                     for idx, li in enumerate(lis):
                         italic = li.find('i')
                         if italic:
                             film_name = italic.get_text().strip()
-                            film_name = re.sub(r'\s*\[.*?\]', '', film_name).strip()
+                        else:
+                            text = li.get_text().strip()
+                            parts = text.split('–')
+                            if len(parts) > 1:
+                                film_name = parts[1].strip()
+                            else:
+                                film_name = parts[0].strip()
+
+                        film_name = re.sub(r'\s*\[.*?\]', '', film_name).strip()
                             
-                            if film_name and film_name not in seen_films:
-                                seen_films.add(film_name)
-                                # First item in each category list is typically the winner
-                                is_winner = idx == 0
-                                results['best-film'].append({
-                                    'name': film_name,
-                                    'awards': {'adg': 'Y' if is_winner else 'X'}
-                                })
+                        if film_name and film_name not in seen_films:
+                            seen_films.add(film_name)
+                            
+                            is_winner = False
+                            
+                            # Check for nested UL (indicates winner in 2004 style)
+                            nested_ul = li.find('ul')
+                            
+                            if is_winner_default and idx == 0:
+                                # Standard logic: First item is winner
+                                is_winner = True
+                            elif nested_ul:
+                                # 2004 style: Outer LI is winner
+                                is_winner = True
+                            
+                            results['best-film'].append({
+                                'name': film_name,
+                                'awards': {'adg': 'Y' if is_winner else 'X'}
+                            })
+                        
+                        # Process nested nominees
+                        # nested_ul is already found above
+                        if nested_ul:
+                            for nested_li in nested_ul.find_all('li', recursive=False):
+                                # ... existing nested logic ...
+                                nested_italic = nested_li.find('i')
+                                if nested_italic:
+                                    n_film_name = nested_italic.get_text().strip()
+                                else:
+                                     # Fallback
+                                    text = nested_li.get_text().strip()
+                                    parts = text.split('–')
+                                    if len(parts) > 1:
+                                        n_film_name = parts[1].strip()
+                                    else:
+                                        n_film_name = parts[0].strip()
+                                        
+                                n_film_name = re.sub(r'\s*\[.*?\]', '', n_film_name).strip()
+                                
+                                if n_film_name and n_film_name not in seen_films:
+                                    seen_films.add(n_film_name)
+                                    results['best-film'].append({
+                                        'name': n_film_name,
+                                        'awards': {'adg': 'X'}
+                                    })
+
+
                         
                         # Also check nested ul for additional nominees
                         nested_ul = li.find('ul')

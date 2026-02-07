@@ -10,8 +10,8 @@
         "sag": "Y",
         "critics": "Y",
         "nbr": "Y",
-        "pga": "X",
         "lafca": "Y",
+        "pga": "X",
         "wga": "Y",
         "gotham": "Y",
         "spirit": "Y"
@@ -33,7 +33,7 @@
         "wga": "X"
       },
       "genre": "Comedy",
-      "posterPath": "/3ndAx3weG6KDkJIRMCi5vXX6Dyb.jpg",
+      "posterPath": "/fASz8A0yFE3QB6LgGoOfwvFSseV.jpg",
       "tmdbId": 286217
     },
     {
@@ -44,8 +44,8 @@
         "afi": "Y",
         "critics": "X",
         "nbr": "Y",
-        "pga": "X",
         "lafca": "X",
+        "pga": "X",
         "adg": "Y"
       },
       "genre": "Drama",
@@ -93,22 +93,6 @@
       "tmdbId": 150540
     },
     {
-      "name": "Carol",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "afi": "Y",
-        "critics": "X",
-        "nyfcc": "Y",
-        "wga": "X",
-        "gotham": "X",
-        "spirit": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/cJeled7EyPdur6TnCA5GYg0UVna.jpg",
-      "tmdbId": 258480
-    },
-    {
       "name": "Bridge of Spies",
       "awards": {
         "bafta": "X",
@@ -149,6 +133,21 @@
       "tmdbId": 277216
     },
     {
+      "name": "Carol",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "afi": "Y",
+        "critics": "X",
+        "wga": "X",
+        "gotham": "X",
+        "spirit": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/z2epoeGzT4RMhj0G1AaNXNxDzYa.jpg",
+      "tmdbId": 1387514
+    },
+    {
       "name": "Sicario",
       "awards": {
         "critics": "X",
@@ -181,15 +180,6 @@
       "tmdbId": 264660
     },
     {
-      "name": "Dheepan",
-      "awards": {
-        "cannes": "Y"
-      },
-      "note": "Director: Jacques Audiard",
-      "posterPath": "/qNMjRNrIzvljInNLf3aLYZI3Ih4.jpg",
-      "tmdbId": 314402
-    },
-    {
       "name": "Creed",
       "awards": {
         "nbr": "Y"
@@ -206,12 +196,29 @@
       "tmdbId": 273248
     },
     {
-      "name": "Ti guardo",
+      "name": "Ti guardo ( Desde allá )",
       "awards": {
         "venice": "Y"
       },
-      "posterPath": "/lxExFOPqTbm08e50T23eapbavV6.jpg",
-      "tmdbId": 345269
+      "posterPath": "/iAJDa3lBKCB5YBE9QiXEFSnXNZl.jpg",
+      "tmdbId": 352162
+    },
+    {
+      "name": "Dheepan",
+      "awards": {
+        "cannes": "Y"
+      },
+      "note": "Director: Jacques Audiard",
+      "posterPath": "/qNMjRNrIzvljInNLf3aLYZI3Ih4.jpg",
+      "tmdbId": 314402
+    },
+    {
+      "name": "Boyhood",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "posterPath": "/2BvtvDUyxiMJ4dmKfiQf4qdOHQN.jpg",
+      "tmdbId": 85350
     },
     {
       "name": "Brooklyn",
@@ -342,8 +349,8 @@
       "awards": {
         "adg": "X"
       },
-      "posterPath": "/rhr4y79GpxQF9IsfJItRXVaoGs4.jpg",
-      "tmdbId": 135397
+      "posterPath": "/1RICxzeoNCAO5NpcRMIgg1XT6fm.jpg",
+      "tmdbId": 1234821
     },
     {
       "name": "Tomorrowland",
@@ -369,6 +376,22 @@
       "screenplay_type": "adapted",
       "posterPath": "/ljiRO29Y9khEERRqMluptUYunJ9.jpg",
       "tmdbId": 321697
+    },
+    {
+      "name": "The Diary of a Teenage Girl",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/5YlUrdYKuscD7pwf3yy9duVLbui.jpg",
+      "tmdbId": 250124
+    },
+    {
+      "name": "Heaven Knows What",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/4oyWMOWJ6trsRuyzn5cHPv50zVH.jpg",
+      "tmdbId": 285024
     },
     {
       "name": "45 Years",
@@ -399,24 +422,8 @@
       "awards": {
         "bifa": "X"
       },
-      "posterPath": "/4DbzuePqGcUY7olAKzGly7kCEmU.jpg",
-      "tmdbId": 27883
-    },
-    {
-      "name": "The Diary of a Teenage Girl",
-      "awards": {
-        "gotham": "X"
-      },
-      "posterPath": "/5YlUrdYKuscD7pwf3yy9duVLbui.jpg",
-      "tmdbId": 250124
-    },
-    {
-      "name": "Heaven Knows What",
-      "awards": {
-        "gotham": "X"
-      },
-      "posterPath": "/E1MMMNAd01p3nMkUIB6eFtB57J.jpg",
-      "tmdbId": 285024
+      "posterPath": "/bIL16flakUTXG1RGiIjDLkVFDJX.jpg",
+      "tmdbId": 649930
     }
   ],
   "best-director": [
@@ -455,20 +462,6 @@
       "tmdbId": 223
     },
     {
-      "name": "Todd Haynes",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "critics": "X",
-        "nyfcc": "Y",
-        "lafca": "X",
-        "spirit": "X"
-      },
-      "film": "Carol",
-      "profilePath": "/wBDazO2j49uoquoHTEDxcniyGGC.jpg",
-      "tmdbId": 16863
-    },
-    {
       "name": "Tom McCarthy",
       "awards": {
         "gg": "X",
@@ -477,9 +470,7 @@
         "dga": "X",
         "spirit": "Y"
       },
-      "film": "Spotlight",
-      "profilePath": "/cEA6cxG3AiH0hUzFH9mUQQVy20O.jpg",
-      "tmdbId": 17867
+      "film": "Spotlight"
     },
     {
       "name": "Ridley Scott",
@@ -495,6 +486,15 @@
       "tmdbId": 578
     },
     {
+      "name": "Pablo Trapero",
+      "film": "Il clan ( El Clan ) (Argentina)",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/h8qZtRXhyheacl37J3MYx7aN05G.jpg",
+      "tmdbId": 56210
+    },
+    {
       "name": "Hou Hsiao-hsien",
       "awards": {
         "cannes": "Y"
@@ -504,13 +504,13 @@
       "tmdbId": 64992
     },
     {
-      "name": "Pablo Trapero",
+      "name": "Richard Linklater",
       "awards": {
-        "venice": "Y"
+        "nyfcc": "Y"
       },
-      "film": "Il clan",
-      "profilePath": "/h8qZtRXhyheacl37J3MYx7aN05G.jpg",
-      "tmdbId": 56210
+      "film": "Boyhood",
+      "profilePath": "/xSctxeZQzQbZoaxIvcDeHlDjbiN.jpg",
+      "tmdbId": 564
     },
     {
       "name": "Alex Garland",
@@ -522,6 +522,19 @@
       "tmdbId": 2036
     },
     {
+      "name": "Todd Haynes",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "lafca": "X",
+        "spirit": "X"
+      },
+      "film": "Carol",
+      "profilePath": "/wBDazO2j49uoquoHTEDxcniyGGC.jpg",
+      "tmdbId": 16863
+    },
+    {
       "name": "Adam McKay",
       "film": "The Big Short",
       "awards": {
@@ -529,7 +542,8 @@
         "oscar": "X",
         "dga": "X"
       },
-      "profilePath": "/vOyZXNJq7Oo01LPtSD5AZHjctgH.jpg"
+      "profilePath": "/vOyZXNJq7Oo01LPtSD5AZHjctgH.jpg",
+      "tmdbId": 55710
     },
     {
       "name": "Steven Spielberg",
@@ -642,7 +656,6 @@
         "oscar": "Y",
         "sag": "X",
         "critics": "X",
-        "nyfcc": "Y",
         "lafca": "X"
       },
       "film": "Bridge of Spies",
@@ -661,7 +674,7 @@
       },
       "film": "The Martian",
       "role": "Leading",
-      "profilePath": "/At3JgvaNeEN4Z4ESKlhhes85Xo3.jpg",
+      "profilePath": "/andBr2Vvf5Gj54gFyoz7ctBKLBj.jpg",
       "tmdbId": 1892
     },
     {
@@ -733,6 +746,15 @@
       "tmdbId": 17142
     },
     {
+      "name": "Fabrice Luchini",
+      "film": "La corte",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/krR5EUfM13UJwsB07ffzPU7FXYR.jpg",
+      "tmdbId": 28255
+    },
+    {
       "name": "Vincent Lindon",
       "awards": {
         "cannes": "Y"
@@ -742,23 +764,24 @@
       "tmdbId": 5443
     },
     {
-      "name": "Michael Keaton",
+      "name": "Timothy Spall",
       "awards": {
         "nyfcc": "Y"
       },
-      "film": "Spotlight",
+      "film": "Mr. Turner",
       "role": "Leading",
-      "profilePath": "/w6fwAQ7IwEFqtzByA1Wyz2Dwp7R.jpg",
-      "tmdbId": 2232
+      "profilePath": "/pcR6t8kpAgGwIUo4UjlP5gyKkNA.jpg",
+      "tmdbId": 9191
     },
     {
-      "name": "Fabrice Luchini",
+      "name": "J. K. Simmons",
       "awards": {
-        "venice": "Y"
+        "nyfcc": "Y"
       },
-      "film": "La corte",
-      "profilePath": "/krR5EUfM13UJwsB07ffzPU7FXYR.jpg",
-      "tmdbId": 28255
+      "film": "Whiplash",
+      "role": "Supporting",
+      "profilePath": "/ScmKoJ9eiSUOthAt1PDNLi8Fkw.jpg",
+      "tmdbId": 18999
     },
     {
       "name": "Tom Hardy",
@@ -766,7 +789,7 @@
       "awards": {
         "bifa": "Y"
       },
-      "profilePath": "/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg",
+      "profilePath": "/32pesf3nGyLOQEVrhsFHpdbbMli.jpg",
       "tmdbId": 2524
     },
     {
@@ -825,7 +848,7 @@
       },
       "film": "The Big Short",
       "role": "Leading",
-      "profilePath": "/gbcLQi7lQVaIF3WXNjW9Fqi84xZ.jpg",
+      "profilePath": "/7Pxez9J8fuPd2Mn9kex13YALrCQ.jpg",
       "tmdbId": 3894
     },
     {
@@ -848,7 +871,7 @@
         "oscar": "X",
         "critics": "X"
       },
-      "profilePath": "/d81K0RH8UX7tZj49tZaQhZ9ewH.jpg",
+      "profilePath": "/32pesf3nGyLOQEVrhsFHpdbbMli.jpg",
       "tmdbId": 2524
     },
     {
@@ -899,7 +922,7 @@
       },
       "film": "The Big Short",
       "role": "Leading",
-      "profilePath": "/ULqKHMosznI7U2JyRZYMvSxUvq.jpg",
+      "profilePath": "/cS7Cbyff6wFVfUGem497vy9LS7A.jpg",
       "tmdbId": 4495
     },
     {
@@ -929,7 +952,7 @@
       "awards": {
         "bafta": "X"
       },
-      "profilePath": "/cVh4UgCMu6aAkZ2BqymTLV86FzZ.jpg",
+      "profilePath": "/aYomJWx0B2B8ra6Rmgt8lr0XCrw.jpg",
       "tmdbId": 1121
     },
     {
@@ -950,6 +973,15 @@
       "film": "Son of Saul",
       "profilePath": "/3XrYcL5wC1wQnmqJautgZK3XuiM.jpg",
       "tmdbId": 1454942
+    },
+    {
+      "name": "Peter Sarsgaard",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Experimenter",
+      "profilePath": "/5UANyM4co2nwYPgSEmGeNlZRm7V.jpg",
+      "tmdbId": 133
     },
     {
       "name": "Tom Courtenay",
@@ -1024,15 +1056,6 @@
       "tmdbId": 17064
     },
     {
-      "name": "Peter Sarsgaard",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Experimenter",
-      "profilePath": "/gYnEJjeHgZVBZh6aGzgfzm4jIHM.jpg",
-      "tmdbId": 133
-    },
-    {
       "name": "Ben Mendelsohn",
       "awards": {
         "spirit": "X"
@@ -1103,23 +1126,6 @@
       "tmdbId": 227454
     },
     {
-      "name": "Saoirse Ronan",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X",
-        "nyfcc": "Y",
-        "lafca": "X",
-        "bifa": "Y"
-      },
-      "film": "Brooklyn",
-      "role": "Leading",
-      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
-      "tmdbId": 36592
-    },
-    {
       "name": "Kate Winslet",
       "awards": {
         "gg": "Y",
@@ -1130,7 +1136,7 @@
       },
       "film": "Steve Jobs",
       "role": "Leading",
-      "profilePath": "/9xDnfZrWhM67wJlQJEsOOjQzDUQ.jpg",
+      "profilePath": "/e3tdop3WhseRnn8KwMVLAV25Ybv.jpg",
       "tmdbId": 204
     },
     {
@@ -1148,6 +1154,22 @@
       "role": "Leading",
       "profilePath": "/zT6UyHFHEQ9RcKykplWCycKBnoS.jpg",
       "tmdbId": 108916
+    },
+    {
+      "name": "Saoirse Ronan",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X",
+        "lafca": "X",
+        "bifa": "Y"
+      },
+      "film": "Brooklyn",
+      "role": "Leading",
+      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
+      "tmdbId": 36592
     },
     {
       "name": "Charlotte Rampling",
@@ -1187,17 +1209,6 @@
       "tmdbId": 227454
     },
     {
-      "name": "Kristen Stewart",
-      "awards": {
-        "nyfcc": "Y",
-        "lafca": "X"
-      },
-      "film": "Clouds of Sils Maria",
-      "role": "Supporting",
-      "profilePath": "/ryhCjTGqS6G6OprbR0qUEH355lA.jpg",
-      "tmdbId": 37917
-    },
-    {
       "name": "Bel Powley",
       "awards": {
         "gotham": "Y",
@@ -1206,6 +1217,15 @@
       "film": "The Diary of a Teenage Girl",
       "profilePath": "/xlzi5lol9UBvYK9Dw8AEQObSbrm.jpg",
       "tmdbId": 1201716
+    },
+    {
+      "name": "Valeria Golino",
+      "film": "Per amor vostro",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/bLw0lNPEhICtbTLtnTswamefN7C.jpg",
+      "tmdbId": 3124
     },
     {
       "name": "Emmanuelle Bercot",
@@ -1217,13 +1237,24 @@
       "tmdbId": 25340
     },
     {
-      "name": "Valeria Golino",
+      "name": "Marion Cotillard",
       "awards": {
-        "venice": "Y"
+        "nyfcc": "Y"
       },
-      "film": "Per amor vostro",
-      "profilePath": "/bLw0lNPEhICtbTLtnTswamefN7C.jpg",
-      "tmdbId": 3124
+      "film": "Two Days, One Night",
+      "role": "Leading",
+      "profilePath": "/biitzOF0GffIqFYLyOPkoiaOngQ.jpg",
+      "tmdbId": 8293
+    },
+    {
+      "name": "Patricia Arquette",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Boyhood",
+      "role": "Supporting",
+      "profilePath": "/jeThSouMatiuRiLkjDvSBLHpmq0.jpg",
+      "tmdbId": 4687
     },
     {
       "name": "Olivia Colman",
@@ -1256,7 +1287,7 @@
       },
       "film": "Carol",
       "role": "Leading",
-      "profilePath": "/vq4vuAVhYngfzVNn8SbnG0JEy15.jpg",
+      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
       "tmdbId": 112
     },
     {
@@ -1269,7 +1300,7 @@
       },
       "film": "The Hateful Eight",
       "role": "Leading",
-      "profilePath": "/yYD255SwZkFc1wGgBMVRZ2i7Ina.jpg",
+      "profilePath": "/9nT2mbQ9P8UpCXirssDxDT75jlm.jpg",
       "tmdbId": 10431
     },
     {
@@ -1293,7 +1324,7 @@
         "sag": "X",
         "critics": "X"
       },
-      "profilePath": "/zmcwkvBGU4j6QEClXGu7ODjDEM.jpg",
+      "profilePath": "/dYPtBI2i6LdHzpqof3BJlm7PoQr.jpg",
       "tmdbId": 53714
     },
     {
@@ -1390,6 +1421,33 @@
       "tmdbId": 6885
     },
     {
+      "name": "Kristen Stewart",
+      "awards": {
+        "lafca": "X"
+      },
+      "film": "Clouds of Sils Maria",
+      "profilePath": "/ryhCjTGqS6G6OprbR0qUEH355lA.jpg",
+      "tmdbId": 37917
+    },
+    {
+      "name": "Blythe Danner",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "I'll See You in My Dreams",
+      "profilePath": "/xIN3nX76b4qN8B32wdoqx053N68.jpg",
+      "tmdbId": 10401
+    },
+    {
+      "name": "Kristen Wiig",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Welcome to Me",
+      "profilePath": "/oddvykQHx71hEZlvKinCzB3Vcfh.jpg",
+      "tmdbId": 41091
+    },
+    {
       "name": "Marion Cotillard",
       "film": "Macbeth",
       "awards": {
@@ -1433,24 +1491,6 @@
       "tmdbId": 23459
     },
     {
-      "name": "Blythe Danner",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "I'll See You in My Dreams",
-      "profilePath": "/xIN3nX76b4qN8B32wdoqx053N68.jpg",
-      "tmdbId": 10401
-    },
-    {
-      "name": "Kristen Wiig",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Welcome to Me",
-      "profilePath": "/oddvykQHx71hEZlvKinCzB3Vcfh.jpg",
-      "tmdbId": 41091
-    },
-    {
       "name": "Kitana Kiki Rodriguez",
       "awards": {
         "spirit": "X"
@@ -1483,7 +1523,7 @@
         "spirit": "X"
       },
       "film": "Anomalisa",
-      "profilePath": "/yYD255SwZkFc1wGgBMVRZ2i7Ina.jpg",
+      "profilePath": "/9nT2mbQ9P8UpCXirssDxDT75jlm.jpg",
       "tmdbId": 10431
     },
     {

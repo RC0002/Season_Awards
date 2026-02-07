@@ -3,15 +3,15 @@
     {
       "name": "No Country for Old Men",
       "awards": {
-        "bafta": "X",
-        "gg": "X",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y",
+        "bafta": "X",
         "afi": "Y",
+        "gg": "X",
+        "critics": "Y",
         "nbr": "Y",
         "pga": "Y",
-        "nyfcc": "Y",
+        "wga": "Y",
         "adg": "Y"
       },
       "genre": "Drama",
@@ -19,16 +19,33 @@
       "tmdbId": 6977
     },
     {
+      "name": "Juno",
+      "awards": {
+        "oscar": "X",
+        "afi": "Y",
+        "gg": "X",
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X",
+        "wga": "Y",
+        "spirit": "Y"
+      },
+      "genre": "Comedy",
+      "posterPath": "/jNIn2tVhpvFD6P9IojldI3mNYcn.jpg",
+      "tmdbId": 7326
+    },
+    {
       "name": "There Will Be Blood",
       "awards": {
-        "bafta": "X",
-        "gg": "X",
         "oscar": "X",
-        "critics": "X",
+        "bafta": "X",
         "afi": "Y",
+        "gg": "X",
+        "critics": "X",
         "pga": "X",
-        "adg": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "wga": "X",
+        "adg": "Y"
       },
       "genre": "Drama",
       "posterPath": "/fa0RDkAlCec0STeMNAhPaF89q6U.jpg",
@@ -37,9 +54,9 @@
     {
       "name": "Atonement",
       "awards": {
+        "oscar": "X",
         "bafta": "Y",
         "gg": "Y",
-        "oscar": "X",
         "critics": "X",
         "nbr": "Y",
         "adg": "X"
@@ -52,9 +69,10 @@
       "name": "Into the Wild",
       "awards": {
         "sag": "X",
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
+        "wga": "X",
         "gotham": "Y"
       },
       "posterPath": "/jnLnLYP5pGDfri04gxtAqAvkHMw.jpg",
@@ -63,31 +81,18 @@
     {
       "name": "Michael Clayton",
       "awards": {
-        "gg": "X",
         "oscar": "X",
-        "critics": "X",
         "afi": "Y",
+        "gg": "X",
+        "critics": "X",
         "nbr": "Y",
         "pga": "X",
+        "wga": "X",
         "adg": "X"
       },
       "genre": "Drama",
       "posterPath": "/hhkW4yVIGo8Bee3UITKvqOvhNMG.jpg",
       "tmdbId": 4566
-    },
-    {
-      "name": "Juno",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "critics": "X",
-        "afi": "Y",
-        "nbr": "Y",
-        "pga": "X"
-      },
-      "genre": "Comedy",
-      "posterPath": "/jNIn2tVhpvFD6P9IojldI3mNYcn.jpg",
-      "tmdbId": 7326
     },
     {
       "name": "Sweeney Todd: The Demon Barber of Fleet Street",
@@ -102,12 +107,23 @@
       "tmdbId": 1304433
     },
     {
+      "name": "Ratatouille",
+      "awards": {
+        "afi": "Y",
+        "annie": "Y",
+        "adg": "X"
+      },
+      "posterPath": "/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg",
+      "tmdbId": 2062
+    },
+    {
       "name": "The Diving Bell and the Butterfly",
       "awards": {
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "pga": "X",
-        "lafca": "X"
+        "lafca": "X",
+        "spirit": "X"
       },
       "posterPath": "/6NkJ4gnLrvLj0PZDW6sNM85JMbj.jpg",
       "tmdbId": 2013
@@ -123,13 +139,22 @@
       "tmdbId": 7979
     },
     {
-      "name": "Ratatouille",
+      "name": "Knocked Up",
       "awards": {
         "afi": "Y",
-        "adg": "X"
+        "wga": "X"
       },
-      "posterPath": "/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg",
-      "tmdbId": 2062
+      "posterPath": "/b4OaXw2MW97VvIiZE0Sbn1NfxSh.jpg",
+      "tmdbId": 4964
+    },
+    {
+      "name": "The Savages",
+      "awards": {
+        "afi": "Y",
+        "wga": "X"
+      },
+      "posterPath": "/nY54gSmTOmSXlQpWDB7DWp4u8a7.jpg",
+      "tmdbId": 8272
     },
     {
       "name": "The Bourne Ultimatum",
@@ -141,28 +166,21 @@
       "tmdbId": 2503
     },
     {
+      "name": "Lars and the Real Girl",
+      "awards": {
+        "nbr": "Y",
+        "wga": "X"
+      },
+      "posterPath": "/nkAt4a7KIPc7Fi1BhxNHhYYbe2b.jpg",
+      "tmdbId": 6615
+    },
+    {
       "name": "Before the Devil Knows You're Dead",
       "awards": {
         "afi": "Y"
       },
       "posterPath": "/egIP0s1ws6fGHqTsVqVNcaEa5i2.jpg",
       "tmdbId": 7972
-    },
-    {
-      "name": "Knocked Up",
-      "awards": {
-        "afi": "Y"
-      },
-      "posterPath": "/b4OaXw2MW97VvIiZE0Sbn1NfxSh.jpg",
-      "tmdbId": 4964
-    },
-    {
-      "name": "The Savages",
-      "awards": {
-        "afi": "Y"
-      },
-      "posterPath": "/nY54gSmTOmSXlQpWDB7DWp4u8a7.jpg",
-      "tmdbId": 8272
     },
     {
       "name": "The Assassination of Jesse James by the Coward Robert Ford",
@@ -181,12 +199,13 @@
       "tmdbId": 7350
     },
     {
-      "name": "Lars and the Real Girl",
+      "name": "4 Months, 3 Weeks and 2 Days",
       "awards": {
-        "nbr": "Y"
+        "cannes": "Y"
       },
-      "posterPath": "/nkAt4a7KIPc7Fi1BhxNHhYYbe2b.jpg",
-      "tmdbId": 6615
+      "note": "Director: Cristian Mungiu",
+      "posterPath": "/acEtvzFPeOQwbzRWncjRLenhnKV.jpg",
+      "tmdbId": 2009
     },
     {
       "name": "Lussuria - Seduzione e tradimento ( Se, jie )",
@@ -197,13 +216,12 @@
       "tmdbId": 4588
     },
     {
-      "name": "4 Months, 3 Weeks and 2 Days",
+      "name": "United 93",
       "awards": {
-        "cannes": "Y"
+        "nyfcc": "Y"
       },
-      "note": "Director: Cristian Mungiu",
-      "posterPath": "/acEtvzFPeOQwbzRWncjRLenhnKV.jpg",
-      "tmdbId": 2009
+      "posterPath": "/r3mdSgsnpoi4UiUufdybhjha68t.jpg",
+      "tmdbId": 9829
     },
     {
       "name": "The Golden Compass",
@@ -214,11 +232,19 @@
       "tmdbId": 2268
     },
     {
+      "name": "Control",
+      "awards": {
+        "bifa": "Y"
+      },
+      "posterPath": "/jOJiaOhwrDdwqTRZvZOhbndqHGp.jpg",
+      "tmdbId": 5708
+    },
+    {
       "name": "American Gangster",
       "awards": {
+        "sag": "X",
         "bafta": "X",
         "gg": "X",
-        "sag": "X",
         "critics": "X",
         "adg": "X"
       },
@@ -229,12 +255,39 @@
     {
       "name": "Hairspray",
       "awards": {
-        "gg": "X",
-        "sag": "X"
+        "sag": "X",
+        "gg": "X"
       },
       "genre": "Comedy",
       "posterPath": "/fgMka3HtFvI5OgW1eYdR9XpySxH.jpg",
       "tmdbId": 2976
+    },
+    {
+      "name": "Eastern Promises",
+      "awards": {
+        "gg": "X",
+        "bifa": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/dpiJWb4NrWgcOg2rusuLhDM0hTm.jpg",
+      "tmdbId": 2252
+    },
+    {
+      "name": "I'm Not There",
+      "awards": {
+        "gotham": "X",
+        "spirit": "X"
+      },
+      "posterPath": "/v98Og5r2u14mWXMnFZLhaefNcRi.jpg",
+      "tmdbId": 1506630
+    },
+    {
+      "name": "3:10 to Yuma",
+      "awards": {
+        "sag": "X"
+      },
+      "posterPath": "/voMB69AsLnPNmtfbrBl0lbeFKDH.jpg",
+      "tmdbId": 5176
     },
     {
       "name": "The Lives of Others",
@@ -243,15 +296,6 @@
       },
       "posterPath": "/cVUDMnskSc01rdbyH0tLATTJUdP.jpg",
       "tmdbId": 582
-    },
-    {
-      "name": "Eastern Promises",
-      "awards": {
-        "gg": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/dpiJWb4NrWgcOg2rusuLhDM0hTm.jpg",
-      "tmdbId": 2252
     },
     {
       "name": "The Great Debaters",
@@ -281,12 +325,54 @@
       "tmdbId": 6538
     },
     {
-      "name": "3:10 to Yuma",
+      "name": "Bee Movie",
       "awards": {
-        "sag": "X"
+        "annie": "X"
       },
-      "posterPath": "/voMB69AsLnPNmtfbrBl0lbeFKDH.jpg",
-      "tmdbId": 5176
+      "posterPath": "/aWe27GmvfVYAd7p0KEtJZWwLWk5.jpg",
+      "tmdbId": 5559
+    },
+    {
+      "name": "Persepolis",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/aU8i2QAdTyRR1nYb36Gq51xXP8p.jpg",
+      "tmdbId": 2011
+    },
+    {
+      "name": "Surf's Up",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/kAeZfUDmuhnL8pLnxxFxBhYVdm6.jpg",
+      "tmdbId": 9408
+    },
+    {
+      "name": "The Simpsons Movie",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/s3b8TZWwmkYc2KoJ5zk77qB6PzY.jpg",
+      "tmdbId": 35
+    },
+    {
+      "name": "Le scaphandre et le papillon (The Diving Bell and the Butterfly)",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "Adapted",
+      "posterPath": "/6NkJ4gnLrvLj0PZDW6sNM85JMbj.jpg",
+      "tmdbId": 2013
+    },
+    {
+      "name": "Zodiac",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "Adapted",
+      "posterPath": "/6YmeO4pB7XTh8P8F960O1uA14JO.jpg",
+      "tmdbId": 1949
     },
     {
       "name": "The Diving Bell and the Butterfly (Le scaphandre et le papillon)",
@@ -325,7 +411,7 @@
       "awards": {
         "adg": "X"
       },
-      "posterPath": "/3bL6lLd6cyQ4JNT4ucqm4PICIVs.jpg",
+      "posterPath": "/oBQ64TyPEINgVpwKWriv3QsIDJb.jpg",
       "tmdbId": 4517
     },
     {
@@ -335,14 +421,6 @@
       },
       "posterPath": "/6p4FlQ89dLNLKOvRAeWkvb2Pv9n.jpg",
       "tmdbId": 25919
-    },
-    {
-      "name": "I'm Not There",
-      "awards": {
-        "gotham": "X"
-      },
-      "posterPath": "/v98Og5r2u14mWXMnFZLhaefNcRi.jpg",
-      "tmdbId": 1506630
     },
     {
       "name": "Margot at the Wedding",
@@ -359,38 +437,78 @@
       },
       "posterPath": "/hxrf7HDwh0nIX4xXE06BdpEKW1V.jpg",
       "tmdbId": 16727
+    },
+    {
+      "name": "A Mighty Heart",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/z5f7KPg8vqqYXtaF0wUkSWryDIg.jpg",
+      "tmdbId": 1988
+    },
+    {
+      "name": "Paranoid Park",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/qdxQ8vZJoZuLqU9MXYW2vnRwhan.jpg",
+      "tmdbId": 1990
+    },
+    {
+      "name": "And When Did You Last See Your Father?",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/fWzhqUMGva7sKENr4L6M1RC7BlA.jpg",
+      "tmdbId": 45791
+    },
+    {
+      "name": "Hallam Foe",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/2RzhxbVNu4BaPx0ETCiuNUpjJf.jpg",
+      "tmdbId": 2239
+    },
+    {
+      "name": "Notes on a Scandal",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/ieX6ZO2Kf2qjoIBXbQW5awivbhY.jpg",
+      "tmdbId": 1259
     }
   ],
   "best-director": [
     {
-      "name": "Joel Coen and Ethan Coen",
-      "awards": {
-        "gg": "X",
-        "oscar": "Y",
-        "critics": "Y",
-        "nyfcc": "Y"
-      },
-      "film": "No Country for Old Men"
-    },
-    {
       "name": "Julian Schnabel",
+      "film": "The Diving Bell and the Butterfly",
       "awards": {
-        "gg": "Y",
         "oscar": "X",
+        "gg": "Y",
         "critics": "X",
         "cannes": "Y",
-        "lafca": "X"
+        "lafca": "X",
+        "spirit": "Y"
       },
-      "film": "The Diving Bell and the Butterfly",
       "profilePath": "/pg4vhqMaVNlXtor4kHGPc8P68Zb.jpg",
       "tmdbId": 7482
+    },
+    {
+      "name": "Joel Coen and Ethan Coen",
+      "film": "No Country for Old Men",
+      "awards": {
+        "oscar": "Y",
+        "gg": "X",
+        "critics": "Y"
+      }
     },
     {
       "name": "Paul Thomas Anderson",
       "film": "There Will Be Blood",
       "awards": {
-        "bafta": "X",
         "oscar": "X",
+        "bafta": "X",
         "lafca": "Y"
       },
       "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
@@ -404,7 +522,7 @@
         "nbr": "Y"
       },
       "film": "Sweeney Todd: The Demon Barber of Fleet Street",
-      "profilePath": "/yHEHAHQpN9PfSEQx1UxZPczhcAi.jpg",
+      "profilePath": "/wcjuY5vD1nlfwWNbvvTGg5dGoRR.jpg",
       "tmdbId": 510
     },
     {
@@ -417,11 +535,36 @@
       "tmdbId": 1223
     },
     {
+      "name": "Joel & Ethan Coen",
+      "film": "NO COUNTRY FOR OLD MEN",
+      "awards": {
+        "dga": "Y"
+      }
+    },
+    {
       "name": "Brian de Palma (USA)",
       "film": "Redacted",
       "awards": {
         "venice": "Y"
       }
+    },
+    {
+      "name": "Martin Scorsese",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "The Departed",
+      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
+      "tmdbId": 1032
+    },
+    {
+      "name": "Anton Corbijn",
+      "film": "Control",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/jURomeQQJl3wuG9Mg6PeP99ycAn.jpg",
+      "tmdbId": 45052
     },
     {
       "name": "Joe Wright",
@@ -431,6 +574,25 @@
         "gg": "X",
         "critics": "X"
       }
+    },
+    {
+      "name": "Jason Reitman",
+      "film": "Juno",
+      "awards": {
+        "oscar": "X",
+        "spirit": "X"
+      },
+      "profilePath": "/tsxhDMgFSa2Ne1skq6yK42Tgxtw.jpg",
+      "tmdbId": 52443
+    },
+    {
+      "name": "Tony Gilroy",
+      "film": "Michael Clayton",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/p0F3AoDTO3cEU2vnMzL9J4YuXNA.jpg",
+      "tmdbId": 19242
     },
     {
       "name": "Florian Henckel von Donnersmarck",
@@ -460,24 +622,6 @@
       "tmdbId": 578
     },
     {
-      "name": "Jason Reitman",
-      "film": "Juno",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/tsxhDMgFSa2Ne1skq6yK42Tgxtw.jpg",
-      "tmdbId": 52443
-    },
-    {
-      "name": "Tony Gilroy",
-      "film": "Michael Clayton",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/p0F3AoDTO3cEU2vnMzL9J4YuXNA.jpg",
-      "tmdbId": 19242
-    },
-    {
       "name": "Sidney Lumet",
       "film": "Before the Devil Knows You're Dead",
       "awards": {
@@ -494,6 +638,105 @@
       },
       "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
       "tmdbId": 2228
+    },
+    {
+      "name": "Julian Schnabel",
+      "film": "THE DIVING BELL AND THE BUTTERFLY",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/pg4vhqMaVNlXtor4kHGPc8P68Zb.jpg",
+      "tmdbId": 7482
+    },
+    {
+      "name": "Paul Thomas Anderson",
+      "film": "THERE WILL BE BLOOD",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
+      "tmdbId": 4762
+    },
+    {
+      "name": "Sean Penn",
+      "film": "INTO THE WILD",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
+      "tmdbId": 2228
+    },
+    {
+      "name": "Tony Gilroy",
+      "film": "MICHAEL CLAYTON",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/p0F3AoDTO3cEU2vnMzL9J4YuXNA.jpg",
+      "tmdbId": 19242
+    },
+    {
+      "name": "Todd Haynes",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "I'm Not There",
+      "profilePath": "/wBDazO2j49uoquoHTEDxcniyGGC.jpg",
+      "tmdbId": 16863
+    },
+    {
+      "name": "Tamara Jenkins",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Savages",
+      "profilePath": "/oPnE0FiniJFX333Am6F6cDsT6gy.jpg",
+      "tmdbId": 54240
+    },
+    {
+      "name": "Gus Van Sant",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Paranoid Park",
+      "profilePath": "/kICHgrSh4eiICjz8piy9fTXIgph.jpg",
+      "tmdbId": 5216
+    },
+    {
+      "name": "Anand Tucker",
+      "film": "And When Did You Last See Your Father?",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/mmR4URdOgo21p3VDzUb63PrtwWD.jpg",
+      "tmdbId": 26481
+    },
+    {
+      "name": "Sarah Gavron",
+      "film": "Brick Lane",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/kfasVpHWkFyPUxzzSzvYhU95nP4.jpg",
+      "tmdbId": 93288
+    },
+    {
+      "name": "David Cronenberg",
+      "film": "Eastern Promises",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/3xh4e2gWHDilMLtucHzDGsmJMuQ.jpg",
+      "tmdbId": 224
+    },
+    {
+      "name": "David Mackenzie",
+      "film": "Hallam Foe",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/ik6YTYOWdgmou40xRyPlCP4tyGC.jpg",
+      "tmdbId": 3055
     }
   ],
   "best-actor": [
@@ -502,12 +745,11 @@
       "film": "There Will Be Blood",
       "role": "Leading",
       "awards": {
-        "bafta": "Y",
-        "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
+        "bafta": "Y",
+        "gg": "Y",
         "critics": "Y",
-        "nyfcc": "Y",
         "lafca": "Y"
       },
       "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
@@ -518,12 +760,11 @@
       "film": "No Country for Old Men",
       "role": "Supporting",
       "awards": {
-        "bafta": "Y",
-        "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y",
-        "nyfcc": "Y"
+        "bafta": "Y",
+        "gg": "Y",
+        "critics": "Y"
       },
       "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
       "tmdbId": 3810
@@ -533,10 +774,10 @@
       "film": "Michael Clayton",
       "role": "Leading",
       "awards": {
-        "bafta": "X",
-        "gg": "X",
         "oscar": "X",
         "sag": "X",
+        "bafta": "X",
+        "gg": "X",
         "critics": "X",
         "nbr": "Y"
       },
@@ -544,25 +785,42 @@
       "tmdbId": 1461
     },
     {
-      "name": "Johnny Depp",
+      "name": "Viggo Mortensen",
+      "film": "Eastern Promises",
+      "role": "Leading",
       "awards": {
-        "gg": "Y",
         "oscar": "X",
-        "critics": "X"
+        "sag": "X",
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X",
+        "bifa": "Y"
       },
+      "profilePath": "/vH5gVSpHAMhDaFWfh0Q7BG61O1y.jpg",
+      "tmdbId": 110
+    },
+    {
+      "name": "Johnny Depp",
       "film": "Sweeney Todd: The Demon Barber of Fleet Street",
       "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "gg": "Y",
+        "critics": "X"
+      },
       "profilePath": "/drl9qDZoxPHhUbDamYcOQEhlHzW.jpg",
       "tmdbId": 85
     },
     {
-      "name": "Brad Pitt",
-      "film": "L'assassinio di Jesse James per mano del codardo Robert Ford",
+      "name": "Philip Seymour Hoffman",
       "awards": {
-        "venice": "Y"
+        "gg": "X",
+        "spirit": "Y"
       },
-      "profilePath": "/cckcYc2v0yh1tc9QjRelptcOBko.jpg",
-      "tmdbId": 287
+      "film": "The Savages",
+      "role": "Leading",
+      "profilePath": "/50rqDkmvXwjwVhFH7q6ph2Rkw7S.jpg",
+      "tmdbId": 1233
     },
     {
       "name": "Konstantin Lavronenko",
@@ -574,6 +832,15 @@
       "tmdbId": 68517
     },
     {
+      "name": "Brad Pitt",
+      "film": "L'assassinio di Jesse James per mano del codardo Robert Ford",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/cckcYc2v0yh1tc9QjRelptcOBko.jpg",
+      "tmdbId": 287
+    },
+    {
       "name": "Vlad Ivanov",
       "awards": {
         "lafca": "Y"
@@ -583,56 +850,82 @@
       "tmdbId": 39959
     },
     {
-      "name": "Viggo Mortensen",
-      "film": "Eastern Promises",
-      "role": "Leading",
+      "name": "Forest Whitaker",
       "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
+        "nyfcc": "Y"
       },
-      "profilePath": "/vH5gVSpHAMhDaFWfh0Q7BG61O1y.jpg",
-      "tmdbId": 110
+      "film": "The Last King of Scotland",
+      "role": "Leading",
+      "profilePath": "/4w7l5JUwnwFNBy7J93ZwYN1nihm.jpg",
+      "tmdbId": 2178
+    },
+    {
+      "name": "Jackie Earle Haley",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Little Children",
+      "role": "Supporting",
+      "profilePath": "/xDPeiyklN8f9Ilowsti4lGVbioj.jpg",
+      "tmdbId": 17183
+    },
+    {
+      "name": "Chiwetel Ejiofor",
+      "awards": {
+        "spirit": "Y"
+      },
+      "film": "Talk to Me",
+      "profilePath": "/kq5DDnqqofoRI0t6ddtRlsJnNPT.jpg",
+      "tmdbId": 5294
+    },
+    {
+      "name": "Toby Kebbell",
+      "film": "Control",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/mlYytYJvoEHmhDH2enLtES1098Q.jpg",
+      "tmdbId": 20286
     },
     {
       "name": "Tom Wilkinson",
       "film": "Michael Clayton",
       "role": "Supporting",
       "awards": {
-        "bafta": "X",
-        "gg": "X",
         "oscar": "X",
         "sag": "X",
+        "bafta": "X",
+        "gg": "X",
         "critics": "X"
-      }
+      },
+      "profilePath": "/xSUohQDXuepOU2nSqtDj2us5RZo.jpg",
+      "tmdbId": 207
+    },
+    {
+      "name": "Casey Affleck",
+      "film": "The Assassination of Jesse James by the Coward Robert Ford",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/304ilSygaCRWykoBWAL67TOw8g9.jpg",
+      "tmdbId": 1893
     },
     {
       "name": "Philip Seymour Hoffman",
       "film": "Charlie Wilson's War",
       "role": "Supporting",
       "awards": {
+        "oscar": "X",
         "bafta": "X",
         "gg": "X",
-        "oscar": "X",
         "critics": "X"
       },
       "profilePath": "/50rqDkmvXwjwVhFH7q6ph2Rkw7S.jpg",
       "tmdbId": 1233
-    },
-    {
-      "name": "Casey Affleck",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "film": "The Assassination of Jesse James by the Coward Robert Ford",
-      "role": "Supporting",
-      "profilePath": "/304ilSygaCRWykoBWAL67TOw8g9.jpg",
-      "tmdbId": 1893
     },
     {
       "name": "Hal Holbrook",
@@ -644,20 +937,42 @@
         "critics": "X",
         "lafca": "X"
       },
-      "profilePath": "/cnhje99hbqldY1wimQTKpApvj1n.jpg",
+      "profilePath": "/rjUwo6mSutAljAHTqGhlnBBd9lO.jpg",
       "tmdbId": 11066
     },
     {
       "name": "Ryan Gosling",
       "awards": {
-        "gg": "X",
         "sag": "X",
+        "gg": "X",
         "critics": "X"
       },
       "film": "Lars and the Real Girl",
       "role": "Leading",
       "profilePath": "/asoKC7CLCqpZKZDL6iovNurQUdf.jpg",
       "tmdbId": 30614
+    },
+    {
+      "name": "Emile Hirsch",
+      "awards": {
+        "sag": "X",
+        "critics": "X"
+      },
+      "film": "Into the Wild",
+      "role": "Leading",
+      "profilePath": "/qxshYNcE9yYBvdY5oXp9v6lglG0.jpg",
+      "tmdbId": 46593
+    },
+    {
+      "name": "Tommy Lee Jones",
+      "awards": {
+        "sag": "X",
+        "bafta": "X"
+      },
+      "film": "No Country for Old Men",
+      "role": "Supporting",
+      "profilePath": "/mCiZNRAzbnPojJEZwVZWLw9kzxR.jpg",
+      "tmdbId": 2176
     },
     {
       "name": "James McAvoy",
@@ -671,26 +986,24 @@
       "tmdbId": 5530
     },
     {
-      "name": "Tommy Lee Jones",
-      "film": "No Country for Old Men",
-      "role": "Supporting",
+      "name": "Frank Langella",
       "awards": {
-        "bafta": "X",
-        "sag": "X"
+        "lafca": "X",
+        "spirit": "X"
+      },
+      "film": "Starting Out in the Evening",
+      "profilePath": "/86DEo3sBguyc1l46606yVKD28T4.jpg",
+      "tmdbId": 8924
+    },
+    {
+      "name": "Tommy Lee Jones",
+      "film": "In the Valley of Elah",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X"
       },
       "profilePath": "/mCiZNRAzbnPojJEZwVZWLw9kzxR.jpg",
       "tmdbId": 2176
-    },
-    {
-      "name": "Emile Hirsch",
-      "awards": {
-        "sag": "X",
-        "critics": "X"
-      },
-      "film": "Into the Wild",
-      "role": "Leading",
-      "profilePath": "/qxshYNcE9yYBvdY5oXp9v6lglG0.jpg",
-      "tmdbId": 46593
     },
     {
       "name": "Ulrich Mühe",
@@ -729,18 +1042,8 @@
       },
       "film": "Charlie Wilson's War",
       "role": "Leading",
-      "profilePath": "/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
+      "profilePath": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg",
       "tmdbId": 31
-    },
-    {
-      "name": "Philip Seymour Hoffman",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "The Savages",
-      "role": "Leading",
-      "profilePath": "/50rqDkmvXwjwVhFH7q6ph2Rkw7S.jpg",
-      "tmdbId": 1233
     },
     {
       "name": "John C. Reilly",
@@ -761,51 +1064,129 @@
       "tmdbId": 8891
     },
     {
-      "name": "Tommy Lee Jones",
-      "film": "In the Valley of Elah",
-      "role": "Leading",
+      "name": "Pedro Castaneda",
       "awards": {
-        "oscar": "X"
+        "spirit": "X"
       },
-      "profilePath": "/mCiZNRAzbnPojJEZwVZWLw9kzxR.jpg",
-      "tmdbId": 2176
+      "film": "August Evening"
     },
     {
-      "name": "Frank Langella",
+      "name": "Don Cheadle",
       "awards": {
-        "lafca": "X"
+        "spirit": "X"
       },
-      "film": "Starting Out in the Evening",
-      "profilePath": "/86DEo3sBguyc1l46606yVKD28T4.jpg",
-      "tmdbId": 8924
+      "film": "Talk to Me",
+      "profilePath": "/b1EVJWdFn7a75qVYJgwO87W2TJU.jpg",
+      "tmdbId": 1896
+    },
+    {
+      "name": "Tony Leung",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Lust, Caution"
+    },
+    {
+      "name": "Marcus Carl Franklin",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "I'm Not There",
+      "profilePath": "/8Sn7kmoGwsQ7iQkiYdyiwlOQOMv.jpg",
+      "tmdbId": 34111
+    },
+    {
+      "name": "Kene Holliday",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Great World of Sound",
+      "profilePath": "/nbGqr0934R6lKImnFfFyuW0tz0f.jpg",
+      "tmdbId": 166061
+    },
+    {
+      "name": "Irrfan Khan",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Namesake",
+      "profilePath": "/qkA9PpWJRw3rNjVkWfNZdwLvRZx.jpg",
+      "tmdbId": 76793
+    },
+    {
+      "name": "Steve Zahn",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Rescue Dawn",
+      "profilePath": "/rwrPdKGwXnByxUVMxMf8Y7oswi3.jpg",
+      "tmdbId": 18324
+    },
+    {
+      "name": "Jim Broadbent",
+      "film": "And When Did You Last See Your Father?",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/jTyvGwwR1NFpvgDhcmuWZCM241w.jpg",
+      "tmdbId": 388
+    },
+    {
+      "name": "Sam Riley",
+      "film": "Control",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/hhcP4bUe4jpxPam6vBMikCxMD4k.jpg",
+      "tmdbId": 32987
+    },
+    {
+      "name": "Jamie Bell",
+      "film": "Hallam Foe",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/xAfNYOJYOy5ee9PHbBF8Y6xzZ9I.jpg",
+      "tmdbId": 478
+    },
+    {
+      "name": "Cillian Murphy",
+      "film": "Sunshine",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/llkbyWKwpfowZ6C8peBjIV9jj99.jpg",
+      "tmdbId": 2037
+    },
+    {
+      "name": "Colin Firth",
+      "film": "And When Did You Last See Your Father?",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/4VBeYEUQbfhnivdkqInM36u5fda.jpg",
+      "tmdbId": 5472
+    },
+    {
+      "name": "Armin Mueller",
+      "film": "Stahl",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/yDT9hMg3osAbiWl5YZXTYG4SmGj.jpg",
+      "tmdbId": 12647
     }
   ],
   "best-actress": [
-    {
-      "name": "Julie Christie",
-      "film": "Away from Her",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "Y",
-        "oscar": "X",
-        "sag": "Y",
-        "critics": "Y",
-        "nbr": "Y",
-        "nyfcc": "Y"
-      },
-      "profilePath": "/siAi4XZhDPP8LRgbByzwLqVaLIQ.jpg",
-      "tmdbId": 1666
-    },
     {
       "name": "Marion Cotillard",
       "film": "La Vie en Rose",
       "role": "Leading",
       "awards": {
-        "bafta": "Y",
-        "gg": "Y",
         "oscar": "Y",
         "sag": "X",
+        "bafta": "Y",
+        "gg": "Y",
         "critics": "X",
         "lafca": "Y"
       },
@@ -813,14 +1194,45 @@
       "tmdbId": 8293
     },
     {
+      "name": "Julie Christie",
+      "film": "Away from Her",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "sag": "Y",
+        "bafta": "X",
+        "gg": "Y",
+        "critics": "Y",
+        "nbr": "Y"
+      },
+      "profilePath": "/siAi4XZhDPP8LRgbByzwLqVaLIQ.jpg",
+      "tmdbId": 1666
+    },
+    {
+      "name": "Cate Blanchett",
+      "film": "I'm Not There",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "bafta": "X",
+        "gg": "Y",
+        "critics": "X",
+        "lafca": "X",
+        "spirit": "Y"
+      },
+      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
+      "tmdbId": 112
+    },
+    {
       "name": "Tilda Swinton",
       "film": "Michael Clayton",
       "role": "Supporting",
       "awards": {
-        "bafta": "Y",
-        "gg": "X",
         "oscar": "Y",
         "sag": "X",
+        "bafta": "Y",
+        "gg": "X",
         "critics": "X"
       },
       "profilePath": "/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
@@ -828,32 +1240,29 @@
     },
     {
       "name": "Amy Ryan",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "Y",
-        "nyfcc": "Y"
-      },
       "film": "Gone Baby Gone",
       "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "gg": "X",
+        "critics": "Y"
+      },
       "profilePath": "/bItqd1QUNpdegjBXNaVuFFPEZU4.jpg",
       "tmdbId": 39388
     },
     {
-      "name": "Cate Blanchett",
-      "film": "I'm Not There",
-      "role": "Supporting",
+      "name": "Elliot Page",
       "awards": {
-        "bafta": "X",
-        "gg": "Y",
-        "oscar": "X",
         "sag": "X",
-        "critics": "X",
-        "lafca": "X"
+        "bafta": "X",
+        "gg": "X",
+        "spirit": "Y"
       },
-      "profilePath": "/vq4vuAVhYngfzVNn8SbnG0JEy15.jpg",
-      "tmdbId": 112
+      "film": "Juno",
+      "role": "Leading",
+      "profilePath": "/nXO8DE4biVXY4UDYP0NdIY1zvXS.jpg",
+      "tmdbId": 27578
     },
     {
       "name": "Ruby Dee",
@@ -867,15 +1276,6 @@
       "tmdbId": 15532
     },
     {
-      "name": "Cate Blanchett",
-      "film": "Io non sono qui",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/vq4vuAVhYngfzVNn8SbnG0JEy15.jpg",
-      "tmdbId": 112
-    },
-    {
       "name": "Jeon Do-yeon",
       "awards": {
         "cannes": "Y"
@@ -883,6 +1283,15 @@
       "film": "Secret Sunshine",
       "profilePath": "/ev2tT7ZbReE06rZy7SX0Mv8evZ7.jpg",
       "tmdbId": 20737
+    },
+    {
+      "name": "Cate Blanchett",
+      "film": "Io non sono qui",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
+      "tmdbId": 112
     },
     {
       "name": "Amy Ryan",
@@ -894,49 +1303,55 @@
       "tmdbId": 39388
     },
     {
+      "name": "Helen Mirren",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "The Queen",
+      "role": "Leading",
+      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
+      "tmdbId": 15735
+    },
+    {
+      "name": "Jennifer Hudson",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Dreamgirls",
+      "role": "Supporting",
+      "profilePath": "/2XPtoGs9GnM1NPj2xCxstzGma4V.jpg",
+      "tmdbId": 15565
+    },
+    {
+      "name": "Judi Dench",
+      "film": "Notes on a Scandal",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
+      "tmdbId": 5309
+    },
+    {
       "name": "Cate Blanchett",
       "film": "Elizabeth: The Golden Age",
       "role": "Leading",
       "awards": {
-        "bafta": "X",
-        "gg": "X",
         "oscar": "X",
         "sag": "X",
+        "bafta": "X",
+        "gg": "X",
         "critics": "X"
       },
-      "profilePath": "/vq4vuAVhYngfzVNn8SbnG0JEy15.jpg",
+      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
       "tmdbId": 112
-    },
-    {
-      "name": "Elliot Page",
-      "film": "Juno",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "sag": "X"
-      },
-      "profilePath": "/nXO8DE4biVXY4UDYP0NdIY1zvXS.jpg",
-      "tmdbId": 27578
-    },
-    {
-      "name": "Saoirse Ronan",
-      "film": "Atonement",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "oscar": "X"
-      },
-      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
-      "tmdbId": 36592
     },
     {
       "name": "Angelina Jolie",
       "awards": {
-        "gg": "X",
         "sag": "X",
-        "critics": "X"
+        "gg": "X",
+        "critics": "X",
+        "spirit": "X"
       },
       "film": "A Mighty Heart",
       "role": "Leading",
@@ -944,26 +1359,16 @@
       "tmdbId": 11701
     },
     {
-      "name": "Keira Knightley",
+      "name": "Saoirse Ronan",
       "film": "Atonement",
-      "role": "Leading",
+      "role": "Supporting",
       "awards": {
+        "oscar": "X",
         "bafta": "X",
         "gg": "X"
       },
-      "profilePath": "/bRC1B2VwV0wK3ElciFAK6QZf2wD.jpg",
-      "tmdbId": 116
-    },
-    {
-      "name": "Amy Adams",
-      "awards": {
-        "gg": "X",
-        "critics": "X"
-      },
-      "film": "Enchanted",
-      "role": "Leading",
-      "profilePath": "/ify7UiQkVMQ0uCUX0F0AuzLK1vS.jpg",
-      "tmdbId": 9273
+      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
+      "tmdbId": 36592
     },
     {
       "name": "Elliot Page",
@@ -988,6 +1393,49 @@
       "tmdbId": 2229
     },
     {
+      "name": "Keira Knightley",
+      "film": "Atonement",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X"
+      },
+      "profilePath": "/bRC1B2VwV0wK3ElciFAK6QZf2wD.jpg",
+      "tmdbId": 116
+    },
+    {
+      "name": "Samantha Morton",
+      "film": "Control",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "bifa": "X"
+      },
+      "profilePath": "/v84b7MENeD9rwX6xTD7fSdhSOC9.jpg",
+      "tmdbId": 2206
+    },
+    {
+      "name": "Amy Adams",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "film": "Enchanted",
+      "role": "Leading",
+      "profilePath": "/oee226QNLDmiwo5730gq3j7tydw.jpg",
+      "tmdbId": 9273
+    },
+    {
+      "name": "Laura Linney",
+      "film": "The Savages",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/yIopIq7l7eIvjoQqnZJkpdQEvds.jpg",
+      "tmdbId": 350
+    },
+    {
       "name": "Kelly Macdonald",
       "film": "No Country for Old Men",
       "role": "Supporting",
@@ -996,16 +1444,6 @@
       },
       "profilePath": "/k0yVocTnTMWlNdaeOO7YRViCdhO.jpg",
       "tmdbId": 9015
-    },
-    {
-      "name": "Samantha Morton",
-      "film": "Control",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/v84b7MENeD9rwX6xTD7fSdhSOC9.jpg",
-      "tmdbId": 2206
     },
     {
       "name": "Jodie Foster",
@@ -1044,18 +1482,8 @@
       },
       "film": "Charlie Wilson's War",
       "role": "Supporting",
-      "profilePath": "/mQ7076pL4Ac0ZzY4w31labWIdQt.jpg",
+      "profilePath": "/AhQMyQ10kz5g8Y3Fp54GPhgDxQS.jpg",
       "tmdbId": 1204
-    },
-    {
-      "name": "Laura Linney",
-      "film": "The Savages",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/yIopIq7l7eIvjoQqnZJkpdQEvds.jpg",
-      "tmdbId": 350
     },
     {
       "name": "Vanessa Redgrave",
@@ -1075,80 +1503,112 @@
       "film": "4 Months, 3 Weeks and 2 Days",
       "profilePath": "/9AMasU3BbXfncjXkmKOSxoqJaCf.jpg",
       "tmdbId": 20699
+    },
+    {
+      "name": "Sienna Miller",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Interview",
+      "profilePath": "/ygv1xVsgLlfCG1DJD0cuRmZqM1V.jpg",
+      "tmdbId": 23459
+    },
+    {
+      "name": "Parker Posey",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Broken English",
+      "profilePath": "/eWZbjpBmdW4nb2Fo3ekqABGqpzm.jpg",
+      "tmdbId": 7489
+    },
+    {
+      "name": "Tang Wei",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Lust, Caution"
+    },
+    {
+      "name": "Anna Kendrick",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Rocket Science",
+      "profilePath": "/i2HIJQcBsUQ3o9HwEeDwou45D60.jpg",
+      "tmdbId": 84223
+    },
+    {
+      "name": "Jennifer Jason Leigh",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Margot at the Wedding",
+      "profilePath": "/9nT2mbQ9P8UpCXirssDxDT75jlm.jpg",
+      "tmdbId": 10431
+    },
+    {
+      "name": "Tamara Podemski",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Four Sheets to the Wind",
+      "profilePath": "/nqcdt9ko2XGA5XXqGX6ybxD5AKw.jpg",
+      "tmdbId": 220615
+    },
+    {
+      "name": "Marisa Tomei",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Before the Devil Knows You're Dead",
+      "profilePath": "/6oTYtorOH3mwoLOuo2IA75yFUcF.jpg",
+      "tmdbId": 3141
+    },
+    {
+      "name": "Anne Hathaway",
+      "film": "Becoming Jane",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg",
+      "tmdbId": 1813
+    },
+    {
+      "name": "Tannishtha Chatterjee",
+      "film": "Brick Lane",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/sMHI5SS5CSvDLzqwfnGn4XG0oGc.jpg",
+      "tmdbId": 87297
+    },
+    {
+      "name": "Sophia Myles",
+      "film": "Hallam Foe",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/1WCCEfFzDYxBkBxCgGEApP4cwMn.jpg",
+      "tmdbId": 3971
+    },
+    {
+      "name": "Kierston Wareing",
+      "film": "It's a Free World...",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/lcPlix0o1cQxOWG0YbeshdvGzfj.jpg",
+      "tmdbId": 8309
+    },
+    {
+      "name": "Cate Blanchett",
+      "film": "Notes on a Scandal",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
+      "tmdbId": 112
     }
-  ],
-  "annie": {
-    "best-film": [
-      {
-        "name": "Ratatouille",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "Bee Movie",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "Persepolis",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "Surf's Up",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "The Simpsons Movie",
-        "awards": {
-          "annie": "X"
-        }
-      }
-    ],
-    "best-director": [],
-    "best-actor": [],
-    "best-actress": []
-  },
-  "gotham": {
-    "best-film": [
-      {
-        "name": "Into the Wild",
-        "awards": {
-          "gotham": "Y"
-        }
-      },
-      {
-        "name": "Great World of Sound",
-        "awards": {
-          "gotham": "X"
-        }
-      },
-      {
-        "name": "I'm Not There",
-        "awards": {
-          "gotham": "X"
-        }
-      },
-      {
-        "name": "Margot at the Wedding",
-        "awards": {
-          "gotham": "X"
-        }
-      },
-      {
-        "name": "The Namesake",
-        "awards": {
-          "gotham": "X"
-        }
-      }
-    ],
-    "best-director": [],
-    "best-actor": [],
-    "best-actress": []
-  }
+  ]
 }

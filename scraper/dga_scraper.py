@@ -7,6 +7,7 @@ Uses Selenium with JavaScript execution for all interactions.
 """
 
 import json
+import os
 import time
 import argparse
 from selenium import webdriver
@@ -255,9 +256,21 @@ if __name__ == "__main__":
     # Format for integration
     formatted_data = format_for_master_scraper(raw_data)
     
+    # Load existing data if exists
+    existing_data = {}
+    if os.path.exists(args.output):
+        try:
+            with open(args.output, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+        except Exception as e:
+            print(f"Warning: Could not load existing data: {e}")
+            
+    # Merge existing with new (new overrides old)
+    existing_data.update(formatted_data)
+    
     # Save
-    save_dga_data(formatted_data, args.output)
+    save_dga_data(existing_data, args.output)
     
     print("\n" + "="*60)
-    print(f"  DONE! Scraped {len(formatted_data)} years")
+    print(f"  DONE! Updated {len(formatted_data)} years. Total years in file: {len(existing_data)}")
     print("="*60)

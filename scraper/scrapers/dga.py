@@ -3,6 +3,7 @@
 DGA Awards Scraper
 """
 
+import json
 from . import CEREMONY_MAP, URL_TEMPLATES, fetch_page, ordinal, init_results
 
 def scrape_dga(year):

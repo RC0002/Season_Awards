@@ -39,14 +39,27 @@ const CATEGORY_SHORT = {
 };
 
 async function loadAnalysis() {
-    try {
-        const response = await fetch(`${FIREBASE_URL}/analysis.json?t=${new Date().getTime()}`);
-        if (!response.ok) throw new Error('Failed to load analysis from Firebase');
-        return await response.json();
-    } catch (error) {
-        console.error('Error loading analysis:', error);
-        return null;
+    // Try local file first, then Firebase fallback
+    const sources = [
+        'data/analysis.json',  // Local file
+        `${FIREBASE_URL}/analysis.json`  // Firebase fallback
+    ];
+
+    for (const source of sources) {
+        try {
+            const response = await fetch(`${source}?t=${new Date().getTime()}`);
+            if (response.ok) {
+                const data = await response.json();
+                console.log(`Loaded analysis from: ${source}`);
+                return data;
+            }
+        } catch (error) {
+            console.warn(`Failed to load from ${source}:`, error);
+        }
     }
+
+    console.error('Error loading analysis from all sources');
+    return null;
 }
 
 function formatDate(isoString) {
@@ -60,35 +73,75 @@ function formatDate(isoString) {
     });
 }
 
+/**
+ * Helper to calculate status for combined categories (Gotham, Spirit, BIFA, LAFCA)
+ * centralizing the logic used by both summary and table rendering.
+ */
+function getCombinedStatus(award, yearKey, data) {
+    const yearNum = parseInt(yearKey.split('_')[1]);
+    const actorData = data.years[yearKey][award]['best-actor'] || { nominations: 0, status: 'pending' };
+    const actressData = data.years[yearKey][award]['best-actress'] || { nominations: 0, status: 'pending' };
+    const combined = actorData.nominations + actressData.nominations;
+
+    let target;
+    // 1. Check for explicit expected overrides in JSON (Spirit/BIFA manual fixes)
+    if (actorData.expected !== undefined && actressData.expected !== undefined) {
+        target = actorData.expected + actressData.expected;
+    }
+    // 2. Fallback to hardcoded historical rules
+    else if (award === 'gotham') {
+        if (yearNum <= 2013) target = 0;
+        else if (yearNum === 2016) target = 11;
+        else if (yearNum === 2018) target = 11;
+        else if (yearNum === 2021) target = 10;
+        else if (yearNum === 2022) target = 17;
+        else if (yearNum >= 2023) target = 20;
+        else target = 10;
+    } else if (award === 'bifa') {
+        if (yearNum >= 2025) target = 12;
+        else if (yearNum === 2024) target = 16;
+        else if (yearNum === 2023) target = 17;
+        else target = 20;
+    } else if (award === 'spirit') {
+        if (yearNum === 2013 || yearNum === 2014) target = 21;
+        else if (yearNum >= 2018 && yearNum <= 2021) target = 21;
+        else target = 20;
+    } else if (award === 'lafca') {
+        target = 8;
+    }
+
+    if (combined === target) return 'ok';
+    if (combined === 0 && target === 0) return 'ok';
+    if (combined === 0) return 'pending';
+    return 'error';
+}
+
 function countStatuses(data) {
     let ok = 0, error = 0, pending = 0;
+    const expected = data.expected;
+
     for (const yearKey in data.years) {
+        const yearNum = parseInt(yearKey.split('_')[1]);
+        const alwaysCombined = (aw) => ['lafca', 'gotham', 'bifa'].includes(aw);
+
         for (const award in data.years[yearKey]) {
+            const isCombinedAward = alwaysCombined(award) || (award === 'spirit' && yearNum >= 2023);
+
             for (const category in data.years[yearKey][award]) {
-                let status = data.years[yearKey][award][category].status;
+                const catData = data.years[yearKey][award][category];
+                let status = catData.status;
 
-                // Recalculate Gotham actor/actress status using year-based expected values
-                if (award === 'gotham' && (category === 'best-actor' || category === 'best-actress')) {
-                    const yearNum = parseInt(yearKey.split('_')[1]);
-                    const actorNoms = data.years[yearKey][award]['best-actor']?.nominations || 0;
-                    const actressNoms = data.years[yearKey][award]['best-actress']?.nominations || 0;
-                    const combined = actorNoms + actressNoms;
+                // Cancellation logic (Cannes 2020/21, etc)
+                const expectedCount = (catData.expected !== undefined) ? catData.expected : (expected[award]?.[category] || 0);
+                const isCancelled = (expectedCount === 0 && catData.nominations === 0) ||
+                    (award === 'cannes' && yearNum === 2021 && catData.nominations === 0);
 
-                    // Calculate target using same logic as display
-                    let target;
-                    if (yearNum <= 2013) target = 0;
-                    else if (yearNum === 2016) target = 11;
-                    else if (yearNum === 2018) target = 11;
-                    else if (yearNum === 2021) target = 10;
-                    else if (yearNum === 2022) target = 17;
-                    else if (yearNum >= 2023) target = 20;
-                    else target = 10;
+                if (isCancelled) continue; // Don't count N/A in OK/Error/Pending
 
-                    // Recalculate status
-                    if (combined === target) status = 'ok';
-                    else if (combined === 0 && target === 0) status = 'ok';
-                    else if (combined === 0) status = 'pending';
-                    else status = 'error';
+                // Combined awards: count pair as 1 unit
+                if (isCombinedAward && (category === 'best-actor' || category === 'best-actress')) {
+                    if (category === 'best-actress') continue; // count once per pair
+                    status = getCombinedStatus(award, yearKey, data);
                 }
 
                 if (status === 'ok') ok++;
@@ -99,6 +152,7 @@ function countStatuses(data) {
     }
     return { ok, error, pending, total: ok + error + pending };
 }
+
 
 function renderSummary(stats) {
     const container = document.getElementById('summary-stats');
@@ -171,19 +225,10 @@ function renderCurrentYear(data) {
             const actorData = awardData['best-actor'] || { nominations: 0, status: 'pending' };
             const actressData = awardData['best-actress'] || { nominations: 0, status: 'pending' };
             const combined = actorData.nominations + actressData.nominations;
-
-            let targetTotal = 8; // Default for LAFCA
-            if (awardKey === 'gotham') {
-                targetTotal = 20; // 2025/2026 season uses 10+10 format
-            } else if (awardKey === 'bifa') {
-                targetTotal = 12; // 12 total (Lead + Supporting)
-            } else if (awardKey === 'spirit') {
-                targetTotal = 20; // 10 Lead + 10 Supporting (gender-neutral since 2023)
-            }
-            const combinedStatus = (combined === targetTotal) ? 'ok' : (combined === 0 ? 'pending' : 'error');
+            const combinedStatus = getCombinedStatus(awardKey, CURRENT_YEAR, data);
 
             const comboText = ((awardKey === 'gotham' || awardKey === 'bifa' || awardKey === 'spirit') && combined > 0) ? `<b>${actorData.nominations}+${actressData.nominations}</b>` : `<b>${combined}</b>`;
-            cells.push(`<span class="cp-recap-cell ${combinedStatus}" style="grid-column: span 2; text-align: center;">${comboText}<small>/${targetTotal}</small></span>`);
+            cells.push(`<span class="cp-recap-cell ${combinedStatus}" style="grid-column: span 2; text-align: center;">${comboText}</span>`);
         } else {
             // Standard awards
             for (const category of CATEGORIES) {
@@ -268,37 +313,12 @@ function renderAwardCard(awardKey, data) {
             const actorData = yearData['best-actor'] || { nominations: 0, status: 'pending' };
             const actressData = yearData['best-actress'] || { nominations: 0, status: 'pending' };
             const combined = actorData.nominations + actressData.nominations;
+            const combinedStatus = getCombinedStatus(awardKey, yearKey, data);
 
-            let targetTotal = 8; // Default for LAFCA
-            if (awardKey === 'gotham') {
-                // Use yearNum already declared above
-                // Force expected to match ACTUAL scraped counts per Wikipedia verification
-                if (yearNum <= 2013) targetTotal = 0;       // No actor categories before 2013
-                else if (yearNum === 2016) targetTotal = 11; // 5+6 scraped
-                else if (yearNum === 2018) targetTotal = 11; // 6+5 scraped
-                else if (yearNum === 2021) targetTotal = 10; // 5+5 scraped (pre-gender-neutral)
-                else if (yearNum === 2022) targetTotal = 17; // 9+8 scraped
-                else if (yearNum >= 2023) targetTotal = 20;  // 10+10 standard
-                else targetTotal = 10; // 2014-2020 (except 2016): 5+5
-            } else if (awardKey === 'bifa') {
-                if (yearNum >= 2025) targetTotal = 12;       // 2025+ (2024 ceremony+): 12 total
-                else if (yearNum === 2024) targetTotal = 16; // 2024 (2023 ceremony): 16 total (9M+7F)
-                else if (yearNum === 2023) targetTotal = 17; // 2023 (2022 ceremony): 17 total (6M+11F)
-                else targetTotal = 20;                       // Pre-2023 (2021 ceremony and older): 20 total (10M+10F)
-            } else if (awardKey === 'spirit') {
-                // Spirit Awards: gender-neutral since 38th (2023)
-                if (yearNum >= 2023) {
-                    targetTotal = 20; // 10 Lead + 10 Supporting
-                } else {
-                    targetTotal = 20; // Pre-2023: still 10 Actor + 10 Actress separate
-                }
-            }
-            const combinedStatus = (combined === targetTotal) ? 'ok' : (combined === 0 && targetTotal === 0 ? 'ok' : (combined === 0 ? 'pending' : 'error'));
-
-            if (targetTotal === 0 && combined === 0) {
+            if (actorData.nominations === 0 && actressData.nominations === 0 && combinedStatus === 'ok') {
                 cells.push(`<span class="cp-recap-cell muted" style="grid-column: span 2; text-align: center;"><i class="bi bi-dash-lg text-muted op-50"></i></span>`);
             } else {
-                cells.push(`<span class="cp-recap-cell ${combinedStatus}" style="grid-column: span 2; text-align: center;"><b>${actorData.nominations}+${actressData.nominations}</b>/${targetTotal}</span>`);
+                cells.push(`<span class="cp-recap-cell ${combinedStatus}" style="grid-column: span 2; text-align: center;"><b>${actorData.nominations}+${actressData.nominations}</b></span>`);
             }
         } else {
             // Standard awards: separate columns

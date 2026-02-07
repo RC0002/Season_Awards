@@ -240,8 +240,12 @@ def scrape_cannes(year):
                         persons_found = []
                         
                         for link in links:
-                            # Skip if link is inside <i> tag (it's a film)
+                            # Skip if link is inside <i> tag (it's a film) - format: <i><a>Film</a></i>
                             if link.find_parent('i'):
+                                continue
+                            
+                            # Skip if link CONTAINS an <i> tag (it's a film) - format: <a><i>Film</i></a>
+                            if link.find('i'):
                                 continue
                             
                             link_text = link.get_text().strip()

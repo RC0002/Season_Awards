@@ -7,18 +7,31 @@
         "gg": "X",
         "oscar": "Y",
         "sag": "X",
-        "nbr": "Y",
-        "afi": "Y",
         "critics": "Y",
+        "afi": "Y",
+        "nbr": "Y",
         "pga": "Y",
         "lafca": "Y",
         "adg": "Y",
-        "gotham": "Y",
-        "nyfcc": "Y"
+        "wga": "X",
+        "gotham": "Y"
       },
       "genre": "Drama",
       "posterPath": "/io2dfBJhasvGbgkCX9cCGVOiA99.jpg",
       "tmdbId": 12162
+    },
+    {
+      "name": "Up",
+      "awards": {
+        "oscar": "X",
+        "critics": "X",
+        "afi": "Y",
+        "nbr": "Y",
+        "annie": "Y",
+        "pga": "X"
+      },
+      "posterPath": "/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg",
+      "tmdbId": 14160
     },
     {
       "name": "Up in the Air",
@@ -26,31 +39,17 @@
         "bafta": "X",
         "gg": "X",
         "oscar": "X",
-        "nbr": "Y",
-        "afi": "Y",
         "critics": "X",
+        "afi": "Y",
+        "nbr": "Y",
         "pga": "X",
         "lafca": "X",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
       "genre": "Drama",
       "posterPath": "/useGH8nfwlaHK44IWEZdUYJOE2N.jpg",
       "tmdbId": 22947
-    },
-    {
-      "name": "Inglourious Basterds",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "Y",
-        "nbr": "Y",
-        "critics": "X",
-        "pga": "X",
-        "adg": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/7sfbEnaARXDDhKm0CZ7D7uc2sbo.jpg",
-      "tmdbId": 16869
     },
     {
       "name": "Avatar",
@@ -60,44 +59,49 @@
         "oscar": "X",
         "critics": "X",
         "pga": "X",
-        "adg": "Y"
+        "adg": "Y",
+        "wga": "X"
       },
       "genre": "Drama",
       "posterPath": "/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg",
       "tmdbId": 19995
     },
     {
+      "name": "Inglourious Basterds",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "sag": "Y",
+        "critics": "X",
+        "nbr": "Y",
+        "pga": "X",
+        "adg": "X"
+      },
+      "genre": "Drama",
+      "posterPath": "/7sfbEnaARXDDhKm0CZ7D7uc2sbo.jpg",
+      "tmdbId": 16869
+    },
+    {
       "name": "A Serious Man",
       "awards": {
         "oscar": "X",
-        "nbr": "Y",
-        "afi": "Y",
         "critics": "X",
+        "afi": "Y",
+        "nbr": "Y",
         "adg": "X",
+        "wga": "X",
         "gotham": "X"
       },
       "posterPath": "/5gGxDS8WmrebPlMHexVS8EVehiP.jpg",
       "tmdbId": 12573
     },
     {
-      "name": "Up",
-      "awards": {
-        "oscar": "X",
-        "nbr": "Y",
-        "afi": "Y",
-        "critics": "X",
-        "annie": "X",
-        "pga": "X"
-      },
-      "posterPath": "/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg",
-      "tmdbId": 14160
-    },
-    {
       "name": "The Hangover",
       "awards": {
         "gg": "Y",
         "afi": "Y",
-        "adg": "X"
+        "adg": "X",
+        "wga": "X"
       },
       "genre": "Comedy",
       "posterPath": "/A0uS9rHR56FeBtpjVki16M5xxSW.jpg",
@@ -106,8 +110,8 @@
     {
       "name": "The Messenger",
       "awards": {
-        "nbr": "Y",
-        "afi": "Y"
+        "afi": "Y",
+        "nbr": "Y"
       },
       "posterPath": "/p4fJyH7mMbasiFYwiw2nE7D6pMY.jpg",
       "tmdbId": 28089
@@ -118,12 +122,49 @@
         "bafta": "X",
         "oscar": "X",
         "sag": "X",
-        "nbr": "Y",
         "critics": "X",
-        "pga": "X"
+        "nbr": "Y",
+        "pga": "X",
+        "bifa": "X"
       },
       "posterPath": "/gLIvvUdlocGjm8XVLxhWHAKWrRq.jpg",
       "tmdbId": 24684
+    },
+    {
+      "name": "Precious",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X",
+        "pga": "X",
+        "spirit": "Y"
+      },
+      "genre": "Drama",
+      "posterPath": "/d4ltLIDbvZskSwbzXqi0Hfv5ma4.jpg",
+      "tmdbId": 25793
+    },
+    {
+      "name": "(500) Days of Summer",
+      "awards": {
+        "gg": "X",
+        "nbr": "Y",
+        "wga": "X",
+        "spirit": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/qXAuQ9hF30sQRsXf40OfRVl0MJZ.jpg",
+      "tmdbId": 19913
+    },
+    {
+      "name": "Star Trek",
+      "awards": {
+        "nbr": "Y",
+        "pga": "X",
+        "adg": "X",
+        "wga": "X"
+      },
+      "posterPath": "/hN2ZtF3Uw6mhIHZiqL0SKzELtKn.jpg",
+      "tmdbId": 13475
     },
     {
       "name": "Precious: Based on the Novel 'Push' by Sapphire",
@@ -138,32 +179,12 @@
     {
       "name": "Invictus",
       "awards": {
-        "nbr": "Y",
         "critics": "X",
+        "nbr": "Y",
         "pga": "X"
       },
       "posterPath": "/runuhBAAX7PmdjGhqRKCyl4bh7z.jpg",
       "tmdbId": 22954
-    },
-    {
-      "name": "Star Trek",
-      "awards": {
-        "nbr": "Y",
-        "pga": "X",
-        "adg": "X"
-      },
-      "posterPath": "/hN2ZtF3Uw6mhIHZiqL0SKzELtKn.jpg",
-      "tmdbId": 13475
-    },
-    {
-      "name": "(500) Days of Summer",
-      "awards": {
-        "gg": "X",
-        "nbr": "Y"
-      },
-      "genre": "Comedy",
-      "posterPath": "/qXAuQ9hF30sQRsXf40OfRVl0MJZ.jpg",
-      "tmdbId": 19913
     },
     {
       "name": "Coraline",
@@ -173,14 +194,6 @@
       },
       "posterPath": "/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
       "tmdbId": 14836
-    },
-    {
-      "name": "Where the Wild Things Are",
-      "awards": {
-        "nbr": "Y"
-      },
-      "posterPath": "/sDFV9VEjwTUWF1s5sjOllsb70jk.jpg",
-      "tmdbId": 16523
     },
     {
       "name": "A Single Man",
@@ -195,8 +208,16 @@
       "awards": {
         "afi": "Y"
       },
-      "posterPath": "/ldiKnTAt8pBB3rY6HQI4QZt6r7n.jpg",
-      "tmdbId": 17003
+      "posterPath": "/3HBHOND87pMxzTezCKaBBujUVM2.jpg",
+      "tmdbId": 582032
+    },
+    {
+      "name": "Where the Wild Things Are",
+      "awards": {
+        "nbr": "Y"
+      },
+      "posterPath": "/sDFV9VEjwTUWF1s5sjOllsb70jk.jpg",
+      "tmdbId": 16523
     },
     {
       "name": "a Lebanon",
@@ -216,6 +237,14 @@
       "tmdbId": 37903
     },
     {
+      "name": "Milk",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "posterPath": "/ot4ImF4b7QbS6XsTdMH3pWxNmX2.jpg",
+      "tmdbId": 10139
+    },
+    {
       "name": "Sherlock Holmes",
       "awards": {
         "adg": "Y"
@@ -224,16 +253,23 @@
       "tmdbId": 295301
     },
     {
-      "name": "Precious",
+      "name": "Moon",
       "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "critics": "X",
-        "pga": "X"
+        "bifa": "Y"
       },
-      "genre": "Drama",
-      "posterPath": "/d4ltLIDbvZskSwbzXqi0Hfv5ma4.jpg",
-      "tmdbId": 25793
+      "posterPath": "/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg",
+      "tmdbId": 17431
+    },
+    {
+      "name": "Julie & Julia",
+      "awards": {
+        "gg": "X",
+        "adg": "X",
+        "wga": "X"
+      },
+      "genre": "Comedy",
+      "posterPath": "/1QZNWOOwfRi86ZApGvr2TtJZPBK.jpg",
+      "tmdbId": 24803
     },
     {
       "name": "Nine",
@@ -257,14 +293,13 @@
       "tmdbId": 17654
     },
     {
-      "name": "Julie & Julia",
+      "name": "Amreeka",
       "awards": {
-        "gg": "X",
-        "adg": "X"
+        "gotham": "X",
+        "spirit": "X"
       },
-      "genre": "Comedy",
-      "posterPath": "/1QZNWOOwfRi86ZApGvr2TtJZPBK.jpg",
-      "tmdbId": 24803
+      "posterPath": "/tMQEHscCqKLz7JXFfU87kdZU8uE.jpg",
+      "tmdbId": 29134
     },
     {
       "name": "It's Complicated",
@@ -356,12 +391,22 @@
       "tmdbId": 7980
     },
     {
-      "name": "Amreeka",
+      "name": "Crazy Heart",
       "awards": {
-        "gotham": "X"
+        "wga": "X"
       },
-      "posterPath": "/tMQEHscCqKLz7JXFfU87kdZU8uE.jpg",
-      "tmdbId": 29134
+      "screenplay_type": "Adapted",
+      "posterPath": "/zwao2YMsqf27IzNEtDNWSe0W9jH.jpg",
+      "tmdbId": 25196
+    },
+    {
+      "name": "Precious: Based on the novel \"Push\" by Sapphire",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "Adapted",
+      "posterPath": "/d4ltLIDbvZskSwbzXqi0Hfv5ma4.jpg",
+      "tmdbId": 25793
     },
     {
       "name": "Big Fan",
@@ -378,6 +423,46 @@
       },
       "posterPath": "/vjLtYULEUDKzfEQZ4HbAHjPLiC1.jpg",
       "tmdbId": 100080
+    },
+    {
+      "name": "The Last Station",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/nf9cYwKcvxTbSsCz4o6eRJ8P0IH.jpg",
+      "tmdbId": 36811
+    },
+    {
+      "name": "Sin nombre",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/dubZwiGWp6TwYNGYtyGEUC7XAin.jpg",
+      "tmdbId": 21191
+    },
+    {
+      "name": "Fish Tank",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/rI3MKBDsWzQHi9PWDAMKkgmYcff.jpg",
+      "tmdbId": 24469
+    },
+    {
+      "name": "In The Loop",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/jL6txnziFSeEifQkqnPBtaPaiXU.jpg",
+      "tmdbId": 19833
+    },
+    {
+      "name": "Nowhere Boy",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/1rFcosLtBnGL2ru0IPtwx3QSeKK.jpg",
+      "tmdbId": 33511
     }
   ],
   "best-director": [
@@ -388,19 +473,29 @@
         "bafta": "Y",
         "oscar": "Y",
         "critics": "Y",
-        "lafca": "Y",
-        "nyfcc": "Y"
+        "dga": "Y",
+        "lafca": "Y"
       },
       "profilePath": "/llfsTIvItT7IEmX5qK1qUX0dbqc.jpg",
       "tmdbId": 14392
     },
     {
-      "name": "Clint Eastwood",
+      "name": "Lee Daniels",
+      "film": "Precious",
       "awards": {
-        "nbr": "Y",
-        "critics": "X"
+        "critics": "X",
+        "spirit": "Y"
       },
+      "profilePath": "/6boIrLokvene1qlhvb4wiKB5Ikd.jpg",
+      "tmdbId": 20019
+    },
+    {
+      "name": "Clint Eastwood",
       "film": "Invictus",
+      "awards": {
+        "critics": "X",
+        "nbr": "Y"
+      },
       "profilePath": "/8TwdCfeOZH7ucRlfLZ6wObxa7cO.jpg",
       "tmdbId": 190
     },
@@ -428,8 +523,24 @@
         "cannes": "Y"
       },
       "film": "Kinatay",
-      "profilePath": "/qJbuPkCD5J4KBKUxfzhpgv9uSEd.jpg",
+      "profilePath": "/tp5ai0KQO7cAnult4sYqfj0e4eR.jpg",
       "tmdbId": 56213
+    },
+    {
+      "name": "Mike Leigh",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Happy-Go-Lucky",
+      "profilePath": "/vicxsud2ejTWcG8u5bU3aiX0ief.jpg",
+      "tmdbId": 65452
+    },
+    {
+      "name": "Andrea Arnold",
+      "film": "Fish Tank",
+      "awards": {
+        "bifa": "Y"
+      }
     },
     {
       "name": "James Cameron",
@@ -437,7 +548,8 @@
       "awards": {
         "bafta": "X",
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/9NAZnTjBQ9WcXAQEzZpKy4vdQto.jpg",
       "tmdbId": 2710
@@ -448,10 +560,21 @@
       "awards": {
         "bafta": "X",
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/1gjcpAa99FAOWGnrUvHEXXsRs7o.jpg",
       "tmdbId": 138
+    },
+    {
+      "name": "Lone Scherfig",
+      "film": "An Education",
+      "awards": {
+        "bafta": "X",
+        "bifa": "X"
+      },
+      "profilePath": "/oYkh2tQyqQaZQl1cOZFdEo3ikEN.jpg",
+      "tmdbId": 1176
     },
     {
       "name": "Jason Reitman",
@@ -462,15 +585,6 @@
       },
       "profilePath": "/tsxhDMgFSa2Ne1skq6yK42Tgxtw.jpg",
       "tmdbId": 52443
-    },
-    {
-      "name": "Lone Scherfig",
-      "film": "An Education",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/oYkh2tQyqQaZQl1cOZFdEo3ikEN.jpg",
-      "tmdbId": 1176
     },
     {
       "name": "Neill Blomkamp",
@@ -524,12 +638,21 @@
     },
     {
       "name": "Lee Daniels",
-      "film": "Precious",
+      "film": "Precious: Based On The Novel \"Push\" By Sapphire",
       "awards": {
-        "critics": "X"
+        "dga": "X"
       },
       "profilePath": "/6boIrLokvene1qlhvb4wiKB5Ikd.jpg",
       "tmdbId": 20019
+    },
+    {
+      "name": "Jason Reitman",
+      "film": "Up In The Air",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/tsxhDMgFSa2Ne1skq6yK42Tgxtw.jpg",
+      "tmdbId": 52443
     },
     {
       "name": "Michael Haneke",
@@ -539,25 +662,66 @@
       "film": "The White Ribbon",
       "profilePath": "/9wDbsPQ5lu9A04FJ1pVi9y1dRjn.jpg",
       "tmdbId": 6011
+    },
+    {
+      "name": "Joel Coen and Ethan Coen",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "A Serious Man"
+    },
+    {
+      "name": "Cary Joji Fukunaga",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Sin nombre",
+      "profilePath": "/uVh6HtOwDxOxrjIbUMeRz5b0A7S.jpg",
+      "tmdbId": 87257
+    },
+    {
+      "name": "James Gray",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Two Lovers"
+    },
+    {
+      "name": "Michael Hoffman",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Last Station"
+    },
+    {
+      "name": "Armando Iannucci",
+      "film": "In The Loop",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/9kdnLu0iALWI19dLTUEVDOxyyCB.jpg",
+      "tmdbId": 88926
+    },
+    {
+      "name": "Duncan Jones",
+      "film": "Moon",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/qNNp4wnRAPXfp8lM5PxTC2swFDM.jpg",
+      "tmdbId": 1402905
+    },
+    {
+      "name": "Jane Campion",
+      "film": "Bright Star",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
+      "tmdbId": 10757
     }
   ],
   "best-actor": [
-    {
-      "name": "Christoph Waltz",
-      "film": "Inglourious Basterds",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "Y",
-        "oscar": "Y",
-        "sag": "Y",
-        "critics": "Y",
-        "cannes": "Y",
-        "lafca": "Y",
-        "nyfcc": "Y"
-      },
-      "profilePath": "/jMvLGCVXLaBqjRLf5olyvEucZob.jpg",
-      "tmdbId": 27319
-    },
     {
       "name": "Jeff Bridges",
       "film": "Crazy Heart",
@@ -568,10 +732,26 @@
         "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "spirit": "Y"
       },
       "profilePath": "/6ItMc51AeORUz6iIQxGnX3HEZaB.jpg",
       "tmdbId": 1229
+    },
+    {
+      "name": "Christoph Waltz",
+      "film": "Inglourious Basterds",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "Y",
+        "oscar": "Y",
+        "sag": "Y",
+        "critics": "Y",
+        "cannes": "Y",
+        "lafca": "Y"
+      },
+      "profilePath": "/jMvLGCVXLaBqjRLf5olyvEucZob.jpg",
+      "tmdbId": 27319
     },
     {
       "name": "Colin Firth",
@@ -584,7 +764,8 @@
         "sag": "X",
         "critics": "X",
         "venice": "Y",
-        "lafca": "X"
+        "lafca": "X",
+        "spirit": "X"
       },
       "profilePath": "/4VBeYEUQbfhnivdkqInM36u5fda.jpg",
       "tmdbId": 5472
@@ -598,8 +779,8 @@
         "gg": "X",
         "oscar": "X",
         "sag": "X",
-        "nbr": "Y",
-        "critics": "X"
+        "critics": "X",
+        "nbr": "Y"
       },
       "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
       "tmdbId": 1461
@@ -610,13 +791,27 @@
         "gg": "X",
         "oscar": "X",
         "sag": "X",
-        "nbr": "Y",
-        "critics": "X"
+        "critics": "X",
+        "nbr": "Y"
       },
       "film": "Invictus",
       "role": "Leading",
       "profilePath": "/jPsLqiYGSofU4s6BjrxnefMfabb.jpg",
       "tmdbId": 192
+    },
+    {
+      "name": "Woody Harrelson",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X",
+        "spirit": "Y"
+      },
+      "film": "The Messenger",
+      "role": "Supporting",
+      "profilePath": "/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg",
+      "tmdbId": 57755
     },
     {
       "name": "Robert Downey Jr.",
@@ -637,6 +832,44 @@
       "role": "Supporting",
       "profilePath": "/jMvLGCVXLaBqjRLf5olyvEucZob.jpg",
       "tmdbId": 27319
+    },
+    {
+      "name": "Sean Penn",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Milk",
+      "role": "Leading",
+      "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
+      "tmdbId": 2228
+    },
+    {
+      "name": "Josh Brolin",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Milk",
+      "role": "Supporting",
+      "profilePath": "/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg",
+      "tmdbId": 16851
+    },
+    {
+      "name": "Tom Hardy",
+      "film": "Bronson",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/32pesf3nGyLOQEVrhsFHpdbbMli.jpg",
+      "tmdbId": 2524
+    },
+    {
+      "name": "John Henshaw",
+      "film": "Looking",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/tccV2fiYQujBGk7KDpRJfYgM7lQ.jpg",
+      "tmdbId": 83816
     },
     {
       "name": "Stanley Tucci",
@@ -666,37 +899,13 @@
       "tmdbId": 17604
     },
     {
-      "name": "Woody Harrelson",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "film": "The Messenger",
-      "role": "Supporting",
-      "profilePath": "/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg",
-      "tmdbId": 57755
-    },
-    {
-      "name": "Matt Damon",
-      "film": "Invictus",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/elSlNgV8xVifsbHpFsqrPGxJToZ.jpg",
-      "tmdbId": 1892
-    },
-    {
       "name": "Alfred Molina",
       "film": "An Education",
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "critics": "X"
+        "critics": "X",
+        "bifa": "X"
       },
       "profilePath": "/nJo91Czesn6z0d0pkfbDoVZY3sg.jpg",
       "tmdbId": 658
@@ -707,10 +916,23 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "critics": "X"
+        "critics": "X",
+        "spirit": "X"
       },
       "profilePath": "/mF8XtoeRqFGnG0fN8uKfNC9BSWh.jpg",
       "tmdbId": 28478
+    },
+    {
+      "name": "Matt Damon",
+      "film": "Invictus",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/andBr2Vvf5Gj54gFyoz7ctBKLBj.jpg",
+      "tmdbId": 1892
     },
     {
       "name": "Christopher Plummer",
@@ -718,9 +940,10 @@
       "role": "Supporting",
       "awards": {
         "oscar": "X",
-        "sag": "X"
+        "sag": "X",
+        "spirit": "X"
       },
-      "profilePath": "/iZh3s9Vy9vYD4DYnAda6C1kdeco.jpg",
+      "profilePath": "/khs2MTZYTtiu4RCwmLLnLWAREul.jpg",
       "tmdbId": 290
     },
     {
@@ -728,10 +951,22 @@
       "film": "Sex & Drugs & Rock & Roll",
       "role": "Leading",
       "awards": {
-        "bafta": "X"
+        "bafta": "X",
+        "bifa": "X"
       },
       "profilePath": "/eNGqhebQ4cDssjVeNFrKtUvweV5.jpg",
       "tmdbId": 1333
+    },
+    {
+      "name": "Joseph Gordon-Levitt",
+      "awards": {
+        "gg": "X",
+        "spirit": "X"
+      },
+      "film": "(500) Days of Summer",
+      "role": "Leading",
+      "profilePath": "/z2FA8js799xqtfiFjBTicFYdfk.jpg",
+      "tmdbId": 24045
     },
     {
       "name": "Alec Baldwin",
@@ -760,7 +995,7 @@
       },
       "film": "The Informant!",
       "role": "Leading",
-      "profilePath": "/elSlNgV8xVifsbHpFsqrPGxJToZ.jpg",
+      "profilePath": "/andBr2Vvf5Gj54gFyoz7ctBKLBj.jpg",
       "tmdbId": 1892
     },
     {
@@ -772,16 +1007,6 @@
       "role": "Leading",
       "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
       "tmdbId": 11856
-    },
-    {
-      "name": "Joseph Gordon-Levitt",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "(500) Days of Summer",
-      "role": "Leading",
-      "profilePath": "/z2FA8js799xqtfiFjBTicFYdfk.jpg",
-      "tmdbId": 24045
     },
     {
       "name": "Michael Stuhlbarg",
@@ -807,7 +1032,7 @@
       },
       "film": "Leo Tolstoy",
       "role": "Supporting",
-      "profilePath": "/iZh3s9Vy9vYD4DYnAda6C1kdeco.jpg",
+      "profilePath": "/khs2MTZYTtiu4RCwmLLnLWAREul.jpg",
       "tmdbId": 290
     },
     {
@@ -830,16 +1055,110 @@
       "tmdbId": 12982
     },
     {
-      "name": "George Clooney",
+      "name": "Souléymane Sy Savané",
       "awards": {
-        "nyfcc": "Y"
+        "spirit": "X"
       },
-      "film": "Fantastic Mr. Fox and Up in the Air",
-      "role": "Leading",
-      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg"
+      "film": "Goodbye Solo",
+      "profilePath": "/3tLQdOd0wraGcwrVwtBQsdXHn3t.jpg",
+      "tmdbId": 87466
+    },
+    {
+      "name": "Adam Scott",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Vicious Kind",
+      "profilePath": "/b82C29R6fGiPoqIglQ4lzS6q2YX.jpg",
+      "tmdbId": 36801
+    },
+    {
+      "name": "Jemaine Clement",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Gentlemen Broncos",
+      "profilePath": "/6eiNbeurpHb2fxIeT0RrJ0wRI25.jpg",
+      "tmdbId": 55936
+    },
+    {
+      "name": "Ray McKinnon",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "That Evening Sun",
+      "profilePath": "/nZSmJVTSq2eEcE4FeEoKVNYUGM9.jpg",
+      "tmdbId": 1472
+    },
+    {
+      "name": "Aaron Johnson",
+      "film": "Nowhere Boy",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/pFtHhih2XEaFaD3qOFyQW6q83br.jpg",
+      "tmdbId": 27428
+    },
+    {
+      "name": "Peter Capaldi",
+      "film": "In The Loop",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/r5bEXZBOSA89SZvv4jjqa4iSgst.jpg",
+      "tmdbId": 12982
+    },
+    {
+      "name": "Sam Rockwell",
+      "film": "Moon",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/afYhNpLwpa65Yy0Q0g00FNFhzx5.jpg",
+      "tmdbId": 6807
+    },
+    {
+      "name": "Jim Broadbent",
+      "film": "The Damned United",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/jTyvGwwR1NFpvgDhcmuWZCM241w.jpg",
+      "tmdbId": 388
+    },
+    {
+      "name": "Michael Fassbender",
+      "film": "Fish Tank",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg",
+      "tmdbId": 17288
+    },
+    {
+      "name": "Tom Hollander",
+      "film": "In The Loop",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/cqZiJsImFZ6TaeShRRg49AZ9TyT.jpg",
+      "tmdbId": 2441
     }
   ],
   "best-actress": [
+    {
+      "name": "Mo'Nique",
+      "film": "Precious",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "Y",
+        "critics": "Y",
+        "lafca": "Y",
+        "spirit": "Y"
+      },
+      "profilePath": "/bzSVVBKTyMi4K6MZvFCzBJs91F5.jpg",
+      "tmdbId": 60561
+    },
     {
       "name": "Sandra Bullock",
       "awards": {
@@ -850,21 +1169,8 @@
       },
       "film": "The Blind Side",
       "role": "Leading",
-      "profilePath": "/hPHGKPAWZ8gArYXMk225rrYPoyJ.jpg",
+      "profilePath": "/iYk1dueFEQpJwriOgMdnhyDDeDz.jpg",
       "tmdbId": 18277
-    },
-    {
-      "name": "Mo'Nique",
-      "film": "Precious",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "Y",
-        "critics": "Y",
-        "lafca": "Y",
-        "nyfcc": "Y"
-      },
-      "profilePath": "/bzSVVBKTyMi4K6MZvFCzBJs91F5.jpg",
-      "tmdbId": 60561
     },
     {
       "name": "Carey Mulligan",
@@ -875,9 +1181,10 @@
         "gg": "X",
         "oscar": "X",
         "sag": "X",
-        "nbr": "Y",
         "critics": "X",
-        "lafca": "X"
+        "nbr": "Y",
+        "lafca": "X",
+        "bifa": "Y"
       },
       "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg",
       "tmdbId": 36662
@@ -891,8 +1198,7 @@
         "gg": "Y",
         "oscar": "X",
         "sag": "X",
-        "critics": "Y",
-        "nyfcc": "Y"
+        "critics": "Y"
       },
       "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
       "tmdbId": 5064
@@ -907,6 +1213,19 @@
       },
       "profilePath": "/bzSVVBKTyMi4K6MZvFCzBJs91F5.jpg",
       "tmdbId": 60561
+    },
+    {
+      "name": "Gabourey Sidibe",
+      "film": "Precious",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X",
+        "spirit": "Y"
+      },
+      "profilePath": "/d0p0MGqM1GrrnBw4b3V9uM6HCl2.jpg",
+      "tmdbId": 109560
     },
     {
       "name": "Mo'Nique",
@@ -944,6 +1263,33 @@
       "tmdbId": 2415
     },
     {
+      "name": "Sally Hawkins",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Happy-Go-Lucky",
+      "role": "Leading",
+      "profilePath": "/1dtDq82dM2YQ17lBL4ZKPJo5LKw.jpg",
+      "tmdbId": 39658
+    },
+    {
+      "name": "Penélope Cruz",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Vicky Cristina Barcelona",
+      "role": "Supporting",
+      "profilePath": "/2Lbc8QXgHik1D1saPqQ5qEWwUEh.jpg",
+      "tmdbId": 955
+    },
+    {
+      "name": "Anne",
+      "film": "Marie Duff",
+      "awards": {
+        "bifa": "Y"
+      }
+    },
+    {
       "name": "Anna Kendrick",
       "film": "Up in the Air",
       "role": "Supporting",
@@ -970,28 +1316,29 @@
       "tmdbId": 21657
     },
     {
-      "name": "Gabourey Sidibe",
-      "film": "Precious",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/d0p0MGqM1GrrnBw4b3V9uM6HCl2.jpg",
-      "tmdbId": 109560
-    },
-    {
       "name": "Helen Mirren",
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "sag": "X"
+        "sag": "X",
+        "spirit": "X"
       },
       "film": "The Last Station",
       "role": "Leading",
       "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
       "tmdbId": 15735
+    },
+    {
+      "name": "Emily Blunt",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "bifa": "X"
+      },
+      "film": "The Young Victoria",
+      "role": "Leading",
+      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
+      "tmdbId": 5081
     },
     {
       "name": "Saoirse Ronan",
@@ -1005,15 +1352,15 @@
       "tmdbId": 36592
     },
     {
-      "name": "Emily Blunt",
+      "name": "Kristin Scott Thomas",
+      "film": "Nowhere Boy",
+      "role": "Supporting",
       "awards": {
-        "gg": "X",
-        "critics": "X"
+        "bafta": "X",
+        "bifa": "X"
       },
-      "film": "The Young Victoria",
-      "role": "Leading",
-      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
-      "tmdbId": 5081
+      "profilePath": "/axksw0vAjBPSW02ZqpcC0V8rPD7.jpg",
+      "tmdbId": 5470
     },
     {
       "name": "Anna Kendrick",
@@ -1048,6 +1395,17 @@
       "tmdbId": 955
     },
     {
+      "name": "Samantha Morton",
+      "film": "The Messenger",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X",
+        "spirit": "X"
+      },
+      "profilePath": "/v84b7MENeD9rwX6xTD7fSdhSOC9.jpg",
+      "tmdbId": 2206
+    },
+    {
       "name": "Audrey Tautou",
       "film": "Coco Before Chanel",
       "role": "Leading",
@@ -1066,16 +1424,6 @@
       },
       "profilePath": "/fR3z8QgUDPb6Br5fUmm0ASPTWWx.jpg",
       "tmdbId": 37058
-    },
-    {
-      "name": "Kristin Scott Thomas",
-      "film": "Nowhere Boy",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/axksw0vAjBPSW02ZqpcC0V8rPD7.jpg",
-      "tmdbId": 5470
     },
     {
       "name": "The Proposal",
@@ -1100,7 +1448,7 @@
       },
       "film": "Duplicity",
       "role": "Leading",
-      "profilePath": "/mQ7076pL4Ac0ZzY4w31labWIdQt.jpg",
+      "profilePath": "/AhQMyQ10kz5g8Y3Fp54GPhgDxQS.jpg",
       "tmdbId": 1204
     },
     {
@@ -1171,94 +1519,110 @@
       "tmdbId": 1231
     },
     {
-      "name": "Samantha Morton",
-      "film": "The Messenger",
-      "role": "Supporting",
+      "name": "Maria Bello",
       "awards": {
-        "critics": "X"
+        "spirit": "X"
       },
-      "profilePath": "/v84b7MENeD9rwX6xTD7fSdhSOC9.jpg",
-      "tmdbId": 2206
+      "film": "Downloading Nancy",
+      "profilePath": "/it1f5mxiGIWO0DzTBfwtLTjphZb.jpg",
+      "tmdbId": 49
+    },
+    {
+      "name": "Nisreen Faour",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Amreeka"
+    },
+    {
+      "name": "Gwyneth Paltrow",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Two Lovers",
+      "profilePath": "/8x3jpWD7DEvyMXO1FOjwNdd1UZT.jpg",
+      "tmdbId": 12052
+    },
+    {
+      "name": "Dina Korzun",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Cold Souls",
+      "profilePath": "/5XbahZTLwv3xOrRi5BG1mhyQ5Am.jpg",
+      "tmdbId": 105668
+    },
+    {
+      "name": "Natalie Press",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Fifty Dead Men Walking",
+      "profilePath": "/qE9GG6I2tyxIvHwWUW1wOt1Rgt3.jpg",
+      "tmdbId": 37983
+    },
+    {
+      "name": "Mia Wasikowska",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "That Evening Sun",
+      "profilePath": "/xOYlAZsLwFZ0gNHLnt1Hzuo2yqN.jpg",
+      "tmdbId": 76070
+    },
+    {
+      "name": "Abbie Cornish",
+      "film": "Bright Star",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/dgbIbPhVEyWIz0HIuaLGrH6BUEz.jpg",
+      "tmdbId": 37260
+    },
+    {
+      "name": "Katie Jarvis",
+      "film": "Fish Tank",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/afll1BEx7eGFt1LqLYhxs2gnTbp.jpg",
+      "tmdbId": 91643
+    },
+    {
+      "name": "Sophie Okonedo",
+      "film": "Skin",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/oMZmk0q04ly3ztD8Us4f1yfPyF1.jpg",
+      "tmdbId": 2598
+    },
+    {
+      "name": "Kerry Fox",
+      "film": "Bright Star",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/qTN8PjqgOdICj6egcAhJ7qXfEk1.jpg",
+      "tmdbId": 17258
+    },
+    {
+      "name": "Kierston Wareing",
+      "film": "Fish Tank",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/lcPlix0o1cQxOWG0YbeshdvGzfj.jpg",
+      "tmdbId": 8309
+    },
+    {
+      "name": "Rosamund Pike",
+      "film": "An Education",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/s9i4XoHTgtskbralOtnraEueU2M.jpg",
+      "tmdbId": 10882
     }
-  ],
-  "annie": {
-    "best-film": [
-      {
-        "name": "Up",
-        "awards": {
-          "annie": "Y"
-        }
-      },
-      {
-        "name": "Cloudy with a Chance of Meatballs",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "Coraline",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "Fantastic Mr. Fox",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "The Princess and the Frog",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "The Secret of Kells",
-        "awards": {
-          "annie": "X"
-        }
-      }
-    ],
-    "best-director": [],
-    "best-actor": [],
-    "best-actress": []
-  },
-  "gotham": {
-    "best-film": [
-      {
-        "name": "The Hurt Locker",
-        "awards": {
-          "gotham": "Y"
-        }
-      },
-      {
-        "name": "Amreeka",
-        "awards": {
-          "gotham": "X"
-        }
-      },
-      {
-        "name": "Big Fan",
-        "awards": {
-          "gotham": "X"
-        }
-      },
-      {
-        "name": "The Maid",
-        "awards": {
-          "gotham": "X"
-        }
-      },
-      {
-        "name": "A Serious Man",
-        "awards": {
-          "gotham": "X"
-        }
-      }
-    ],
-    "best-director": [],
-    "best-actor": [],
-    "best-actress": []
-  }
+  ]
 }

@@ -115,6 +115,10 @@ def scrape_lafca(year):
             # Use startswith with colon to prevent partial matches 
             # (e.g., "best actor" matching in "best lead performance")
             if li_text.startswith(key + ':') or li_text.startswith(key + ' '):
+                # Explicitly exclude "Best Film Not in the English Language"
+                if key == 'best film' and 'not in' in li_text:
+                    continue
+
                 if cat in ['lead-performance', 'supporting-performance']:
                     is_performance = True
                     performance_type = cat

@@ -3,13 +3,15 @@
     {
       "name": "Traffic",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "Y",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "nyfcc": "Y",
-        "wga": "Y"
+        "wga": "Y",
+        "adg": "X",
+        "critics": "Y"
       },
       "genre": "Drama",
       "posterPath": "/jbccmnqE4oAPI67bApgt2JiRPz8.jpg",
@@ -17,16 +19,20 @@
     },
     {
       "name": "Gladiator",
+      "film": "",
+      "runner_up": false,
+      "winner": true,
       "awards": {
-        "oscar": "Y",
         "gg": {
           "winner": true
         },
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "pga": "Y",
+        "adg": "Y",
         "critics": "Y"
       },
       "genre": "Drama",
@@ -36,48 +42,13 @@
     {
       "name": "You Can Count on Me",
       "awards": {
-        "afi": "Y",
         "nbr": "Y",
-        "wga": "Y"
+        "afi": "Y",
+        "wga": "Y",
+        "critics": "Y"
       },
       "posterPath": "/7mGFmij1FZD5eUnNwvUjmpqrDl6.jpg",
       "tmdbId": 14295
-    },
-    {
-      "name": "Wonder Boys",
-      "awards": {
-        "gg": "X",
-        "afi": "Y",
-        "nbr": "Y",
-        "lafca": "X",
-        "wga": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/c9CvpQSOriSanl1Uow2A22sQ8SL.jpg",
-      "tmdbId": 553091
-    },
-    {
-      "name": "Before Night Falls",
-      "awards": {
-        "afi": "Y",
-        "nbr": "Y"
-      },
-      "posterPath": "/kb2dqj73cfmt6qHAh1ySIlVm6v0.jpg",
-      "tmdbId": 5001
-    },
-    {
-      "name": "Erin Brockovich",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "afi": "Y",
-        "pga": "X",
-        "wga": "X"
-      },
-      "genre": "Drama",
-      "posterPath": "/jEMvWBWVjndZT0vJnLrRWi9ajea.jpg",
-      "tmdbId": 462
     },
     {
       "name": "Billy Elliot",
@@ -87,7 +58,10 @@
         "sag": "X",
         "nbr": "Y",
         "pga": "X",
-        "wga": "X"
+        "wga": "X",
+        "bifa": "Y",
+        "adg": "X",
+        "critics": "Y"
       },
       "genre": "Drama",
       "posterPath": "/nOr5diUZxphmAD3li9aiILyI28F.jpg",
@@ -96,14 +70,57 @@
     {
       "name": "Crouching Tiger, Hidden Dragon",
       "awards": {
-        "oscar": "X",
         "bafta": "X",
-        "pga": "X",
+        "oscar": "X",
         "lafca": "Y",
-        "wga": "X"
+        "pga": "X",
+        "wga": "X",
+        "spirit": "Y",
+        "adg": "X"
       },
       "posterPath": "/iNDVBFNz4XyYzM9Lwip6atSTFqf.jpg",
       "tmdbId": 146
+    },
+    {
+      "name": "Wonder Boys",
+      "awards": {
+        "gg": "X",
+        "nbr": "Y",
+        "afi": "Y",
+        "lafca": "X",
+        "wga": "X",
+        "adg": "X",
+        "critics": "Y"
+      },
+      "genre": "Drama",
+      "posterPath": "/vGOdSLaZmu42qqwDUMgrfctJ65M.jpg",
+      "tmdbId": 11004
+    },
+    {
+      "name": "Before Night Falls",
+      "awards": {
+        "nbr": "Y",
+        "afi": "Y",
+        "spirit": "X"
+      },
+      "posterPath": "/kb2dqj73cfmt6qHAh1ySIlVm6v0.jpg",
+      "tmdbId": 5001
+    },
+    {
+      "name": "Erin Brockovich",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "afi": "Y",
+        "pga": "X",
+        "wga": "X",
+        "adg": "Y",
+        "critics": "Y"
+      },
+      "genre": "Drama",
+      "posterPath": "/jEMvWBWVjndZT0vJnLrRWi9ajea.jpg",
+      "tmdbId": 462
     },
     {
       "name": "Almost Famous",
@@ -118,7 +135,9 @@
         "sag": "X",
         "afi": "Y",
         "pga": "X",
-        "wga": "X"
+        "wga": "X",
+        "adg": "X",
+        "critics": "Y"
       },
       "genre": "Comedy",
       "posterPath": "/3rrkyLYbgLj84AYvjhdcJot4JPx.jpg",
@@ -157,7 +176,8 @@
     {
       "name": "Requiem for a Dream",
       "awards": {
-        "afi": "Y"
+        "afi": "Y",
+        "spirit": "X"
       },
       "posterPath": "/nOd6vjEmzCT0k4VYqsA2hwyi87C.jpg",
       "tmdbId": 641
@@ -165,7 +185,8 @@
     {
       "name": "Quills",
       "awards": {
-        "nbr": "Y"
+        "nbr": "Y",
+        "critics": "Y"
       },
       "posterPath": "/AvGdw3BpvJV2wHmK2qY0N7XHqET.jpg",
       "tmdbId": 10876
@@ -187,23 +208,33 @@
       "tmdbId": 16
     },
     {
-      "name": "Il cerchio ( Dāyere ), regia",
+      "name": "Palme d'Or",
+      "awards": {
+        "cannes": "Y"
+      },
+      "note": "Director: Lars von Trier",
+      "posterPath": "/nXLVbWPax4xGWMM4HxYyEfmKFZc.jpg",
+      "tmdbId": 1477765
+    },
+    {
+      "name": "Il cerchio ( Dāyere )",
       "awards": {
         "venice": "Y"
       }
     },
     {
-      "name": "Palme d'Or",
+      "name": "Toy Story 2",
       "awards": {
-        "cannes": "Y"
+        "annie": "Y"
       },
-      "note": "Director: Lars von Trier"
+      "posterPath": "/yFWQkz2ynjwsazT6xQiIXEUsyuh.jpg",
+      "tmdbId": 863
     },
     {
       "name": "Chocolat",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "wga": "X"
       },
@@ -214,7 +245,8 @@
     {
       "name": "Chicken Run",
       "awards": {
-        "gg": "X"
+        "gg": "X",
+        "annie": "X"
       },
       "genre": "Comedy",
       "posterPath": "/oYbVT9e0k2ZSrRhDSCw2Yqshe1n.jpg",
@@ -228,21 +260,129 @@
       "genre": "Comedy",
       "posterPath": "/s9foMAcLg8GEzzQzer04qOGdD1k.jpg",
       "tmdbId": 134
+    },
+    {
+      "name": "Fantasia 2000",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/5rwAtUaKEK48CPUijVfVU0IPKPZ.jpg",
+      "tmdbId": 49948
+    },
+    {
+      "name": "The Road to El Dorado",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/tQuqhUBACMcGqCvliHxpJreBfXC.jpg",
+      "tmdbId": 10501
+    },
+    {
+      "name": "Titan A.E.",
+      "awards": {
+        "annie": "X"
+      },
+      "posterPath": "/el2iHk3LTJWfEnwrvcRkvWY501G.jpg",
+      "tmdbId": 7450
+    },
+    {
+      "name": "Last Resort",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/b2sr7f28WuydA3IlvZtSGKVQ26D.jpg",
+      "tmdbId": 31875
+    },
+    {
+      "name": "One Day in September",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/vsxtkcidi7flgxWERBSnwtyH1JJ.jpg",
+      "tmdbId": 34045
+    },
+    {
+      "name": "Saving Grace",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/hBiP2rlKiBTJnYJPdYCWolDSvrc.jpg",
+      "tmdbId": 102066
+    },
+    {
+      "name": "The House of Mirth",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/gCEboOrNXFmqE5pKUn42fTHZx8R.jpg",
+      "tmdbId": 25520
+    },
+    {
+      "name": "George Washington",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/g9nZi8u5LqSrVKEpSm199EM4hk5.jpg",
+      "tmdbId": 18292
+    },
+    {
+      "name": "Ghost Dog: The Way of the Samurai",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/gkH4zOxIfbb4BEbk9Q4cVOEpDaY.jpg",
+      "tmdbId": 4816
+    },
+    {
+      "name": "The Cell",
+      "awards": {
+        "adg": "X"
+      }
+    },
+    {
+      "name": "Dr. Seuss' How the Grinch Stole Christmas",
+      "awards": {
+        "adg": "X"
+      }
+    },
+    {
+      "name": "The Patriot",
+      "awards": {
+        "adg": "X"
+      }
+    },
+    {
+      "name": "Cast Away",
+      "awards": {
+        "critics": "Y"
+      }
+    },
+    {
+      "name": "Crouching Tiger, Hidden Dragon (Wo hu cang long)",
+      "awards": {
+        "critics": "Y"
+      }
+    },
+    {
+      "name": "Thirteen Days",
+      "awards": {
+        "critics": "Y"
+      }
     }
   ],
   "best-director": [
     {
       "name": "Steven Soderbergh",
-      "film": "Erin Brockovich",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "nbr": "Y",
+        "dga": "X",
         "lafca": "Y",
-        "nyfcc": "Y",
-        "critics": "Y"
+        "nyfcc": "Y"
       },
+      "film": "Erin Brockovich",
       "profilePath": "/y8JlSDcQzd7gAaKyxFpExupMwDz.jpg",
       "tmdbId": 1884
     },
@@ -250,40 +390,24 @@
       "name": "Ang Lee",
       "film": "Crouching Tiger, Hidden Dragon",
       "awards": {
-        "oscar": "X",
         "bafta": "Y",
-        "lafca": "X"
-      },
-      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg",
-      "tmdbId": 1614
+        "oscar": "X",
+        "dga": "X",
+        "lafca": "X",
+        "spirit": "Y"
+      }
     },
     {
       "name": "Steven Soderbergh",
-      "film": "Traffic",
       "awards": {
+        "gg": "X",
         "oscar": "Y",
-        "gg": "X"
+        "dga": "Y",
+        "critics": "Y"
       },
+      "film": "Traffic",
       "profilePath": "/y8JlSDcQzd7gAaKyxFpExupMwDz.jpg",
       "tmdbId": 1884
-    },
-    {
-      "name": "Julian Schnabel",
-      "film": "Prima che sia notte ( Before Night Falls ), regia",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/pg4vhqMaVNlXtor4kHGPc8P68Zb.jpg",
-      "tmdbId": 7482
-    },
-    {
-      "name": "Buddhadeb Dasgupta",
-      "film": "Uttarā",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/rDm0uUmK8Buzq3SAELkwT6jOIaA.jpg",
-      "tmdbId": 1081568
     },
     {
       "name": "Edward Yang",
@@ -295,13 +419,32 @@
       "tmdbId": 143035
     },
     {
-      "name": "Ridley Scott",
-      "film": "Gladiator",
+      "name": "Buddhadeb Dasgupta",
+      "film": "Uttarā",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X"
+        "venice": "Y"
       },
+      "profilePath": "/rDm0uUmK8Buzq3SAELkwT6jOIaA.jpg",
+      "tmdbId": 1081568
+    },
+    {
+      "name": "Stephen Daldry",
+      "film": "Billy Elliot \n Nigel Cole",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/jJSZVEOIyZnT70lUILjS9YVv0pb.jpg",
+      "tmdbId": 468
+    },
+    {
+      "name": "Ridley Scott",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "dga": "X"
+      },
+      "film": "Gladiator",
       "profilePath": "/zABJmN9opmqD4orWl3KSdCaSo7Q.jpg",
       "tmdbId": 578
     },
@@ -309,8 +452,9 @@
       "name": "Stephen Daldry",
       "film": "Billy Elliot",
       "awards": {
+        "bafta": "X",
         "oscar": "X",
-        "bafta": "X"
+        "dga": "X"
       },
       "profilePath": "/jJSZVEOIyZnT70lUILjS9YVv0pb.jpg",
       "tmdbId": 468
@@ -329,6 +473,76 @@
       }
     },
     {
+      "name": "Nigel Cole",
+      "film": "Saving Grace",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/7Cui0fuosyfaQgR4J8ROz8WYgGZ.jpg",
+      "tmdbId": 24248
+    },
+    {
+      "name": "Terence Davies",
+      "film": "The House of Mirth",
+      "awards": {
+        "bifa": "X"
+      }
+    },
+    {
+      "name": "Mike Leigh",
+      "film": "Topsy",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/vicxsud2ejTWcG8u5bU3aiX0ief.jpg",
+      "tmdbId": 65452
+    },
+    {
+      "name": "Paul Pawlikowski",
+      "film": "Last Resort",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/vzhGoaJpQrJV8arrz2px7J0yMCF.jpg",
+      "tmdbId": 64194
+    },
+    {
+      "name": "Darren Aronofsky",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Requiem for a Dream",
+      "profilePath": "/tOjz8mVI2HeQBvU6KNjIExMBsXL.jpg",
+      "tmdbId": 6431
+    },
+    {
+      "name": "Miguel Arteta",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Chuck & Buck",
+      "profilePath": "/8i30SMAGvi8Bc0qyLeazdX71BvU.jpg",
+      "tmdbId": 61069
+    },
+    {
+      "name": "Christopher Guest",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Best in Show",
+      "profilePath": "/ofLhsKLZ4YAet8XIsNj7oA3blgh.jpg",
+      "tmdbId": 13524
+    },
+    {
+      "name": "Julian Schnabel",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Before Night Falls",
+      "profilePath": "/pg4vhqMaVNlXtor4kHGPc8P68Zb.jpg",
+      "tmdbId": 7482
+    },
+    {
       "name": "Ang Lee",
       "film": "",
       "runner_up": false,
@@ -337,9 +551,7 @@
         "gg": {
           "winner": true
         }
-      },
-      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg",
-      "tmdbId": 1614
+      }
     }
   ],
   "best-actor": [
@@ -348,80 +560,82 @@
       "film": "Traffic",
       "role": "Supporting",
       "awards": {
-        "oscar": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "lafca": "X",
         "nyfcc": "Y"
       },
-      "profilePath": "/cVh4UgCMu6aAkZ2BqymTLV86FzZ.jpg",
+      "profilePath": "/aYomJWx0B2B8ra6Rmgt8lr0XCrw.jpg",
       "tmdbId": 1121
     },
     {
-      "name": "Russell Crowe",
-      "film": "Gladiator",
-      "role": "Leading",
+      "name": "Javier Bardem",
       "awards": {
-        "oscar": "Y",
+        "gg": "X",
+        "oscar": "X",
+        "nbr": "Y",
+        "lafca": "X",
+        "spirit": "Y"
+      },
+      "film": "Before Night Falls",
+      "role": "Leading",
+      "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
+      "tmdbId": 3810
+    },
+    {
+      "name": "Willem Dafoe",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "lafca": "Y",
+        "spirit": "Y"
+      },
+      "film": "Shadow of the Vampire",
+      "role": "Leading",
+      "profilePath": "/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg",
+      "tmdbId": 5293
+    },
+    {
+      "name": "Russell Crowe",
+      "awards": {
         "gg": "X",
         "bafta": "X",
+        "oscar": "Y",
         "sag": "X",
         "critics": "Y"
       },
+      "film": "Gladiator",
+      "role": "Leading",
       "profilePath": "/uxiXuVH4vNWrKlJMVVPG1sxAJFe.jpg",
       "tmdbId": 934
     },
     {
-      "name": "Javier Bardem",
-      "film": "Before Night Falls",
-      "role": "Leading",
+      "name": "Albert Finney",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "nbr": "Y",
-        "lafca": "X"
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "Y"
       },
-      "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
-      "tmdbId": 3810
+      "film": "Erin Brockovich",
+      "role": "Leading",
+      "profilePath": "/a2qJxu55s97ySRdjsy2ywIXJvhf.jpg",
+      "tmdbId": 3926
     },
     {
       "name": "Tom Hanks",
       "film": "Cast Away",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "nyfcc": "Y"
       },
-      "profilePath": "/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
+      "profilePath": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg",
       "tmdbId": 31
-    },
-    {
-      "name": "Willem Dafoe",
-      "film": "Shadow of the Vampire",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "sag": "X",
-        "lafca": "Y"
-      },
-      "profilePath": "/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg",
-      "tmdbId": 5293
-    },
-    {
-      "name": "Albert Finney",
-      "film": "Erin Brockovich",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "sag": "Y"
-      },
-      "profilePath": "/8WCFO9lMHel1bHVYl5lj8pYEw2s.jpg",
-      "tmdbId": 3926
     },
     {
       "name": "Michael Douglas",
@@ -447,15 +661,6 @@
       "tmdbId": 478
     },
     {
-      "name": "Javier Bardem",
-      "film": "Prima che sia notte",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
-      "tmdbId": 3810
-    },
-    {
       "name": "Tony Leung Chiu-wai",
       "awards": {
         "cannes": "Y"
@@ -465,53 +670,72 @@
       "tmdbId": 1337
     },
     {
-      "name": "Geoffrey Rush",
-      "film": "Quills",
-      "role": "Leading",
+      "name": "Javier Bardem",
+      "film": "Prima che sia notte",
       "awards": {
-        "oscar": "X",
+        "venice": "Y"
+      },
+      "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
+      "tmdbId": 3810
+    },
+    {
+      "name": "Daniel Craig",
+      "film": "Some Voices",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg",
+      "tmdbId": 8784
+    },
+    {
+      "name": "Geoffrey Rush",
+      "awards": {
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X"
       },
+      "film": "Quills",
+      "role": "Leading",
       "profilePath": "/npXFjaFQzBNroCEPllGPTZ5IisA.jpg",
       "tmdbId": 118
     },
     {
       "name": "Joaquin Phoenix",
-      "film": "Gladiator",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "Y"
       },
+      "film": "Gladiator",
+      "role": "Leading",
       "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
       "tmdbId": 73421
     },
     {
       "name": "Jeff Bridges",
-      "film": "The Contender",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X"
       },
-      "profilePath": "/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg",
+      "film": "The Contender",
+      "role": "Leading",
+      "profilePath": "/6ItMc51AeORUz6iIQxGnX3HEZaB.jpg",
       "tmdbId": 1229
     },
     {
-      "name": "Ed Harris",
-      "film": "Pollock",
-      "role": "Leading",
+      "name": "Gary Oldman",
       "awards": {
-        "oscar": "X"
+        "sag": "X",
+        "spirit": "X"
       },
-      "profilePath": "/kUbUA70WPiosPT4kBJMWtGk0ASd.jpg",
-      "tmdbId": 228
+      "film": "The Contender",
+      "role": "Supporting",
+      "profilePath": "/2v9FVVBUrrkW2m3QOcYkuhq9A6o.jpg",
+      "tmdbId": 64
     },
     {
       "name": "Jim Carrey",
@@ -520,7 +744,7 @@
       },
       "film": "How the Grinch Stole Christmas",
       "role": "Leading",
-      "profilePath": "/u0AqTz6Y7GHPCHINS01P7gPvDSb.jpg",
+      "profilePath": "/j4QY2GN2ZfObQbgedyV3Lihwrt.jpg",
       "tmdbId": 206
     },
     {
@@ -550,7 +774,7 @@
       },
       "film": "What Women Want",
       "role": "Leading",
-      "profilePath": "/4wEWS5NgioKBGTi5fdv2BP3b4ZY.jpg",
+      "profilePath": "/jnqHMaOslt8cef2atSmOpGRvNla.jpg",
       "tmdbId": 2461
     },
     {
@@ -559,9 +783,7 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X"
-      },
-      "profilePath": "/cOaibfAluUeWPtcSOjedfGXn9ym.jpg",
-      "tmdbId": 480
+      }
     },
     {
       "name": "Oliver Reed",
@@ -573,14 +795,113 @@
       "tmdbId": 936
     },
     {
-      "name": "Gary Oldman",
+      "name": "Ed Harris",
+      "film": "Pollock",
+      "role": "Leading",
       "awards": {
-        "sag": "X"
+        "oscar": "X"
       },
-      "film": "The Contender",
-      "role": "Supporting",
-      "profilePath": "/2v9FVVBUrrkW2m3QOcYkuhq9A6o.jpg",
-      "tmdbId": 64
+      "profilePath": "/kUbUA70WPiosPT4kBJMWtGk0ASd.jpg",
+      "tmdbId": 228
+    },
+    {
+      "name": "Paul Bettany",
+      "film": "Gangster No. 1",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/vcAVrAOZrpqmi37qjFdztRAv1u9.jpg",
+      "tmdbId": 6162
+    },
+    {
+      "name": "Jim Broadbent",
+      "film": "Topsy",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/jTyvGwwR1NFpvgDhcmuWZCM241w.jpg",
+      "tmdbId": 388
+    },
+    {
+      "name": "Adrian Lester",
+      "film": "Love's Labours Lost",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/xyRB9aykTFtI42Ce8xFKZDCsHYd.jpg",
+      "tmdbId": 76215
+    },
+    {
+      "name": "Peter Mullan",
+      "film": "Miss Julie",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/dvu5PWJK6Vv4xnYyMzdMvH73Laj.jpg",
+      "tmdbId": 3064
+    },
+    {
+      "name": "Adrien Brody",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Restaurant",
+      "profilePath": "/qBc7ahQrpVpcllaZ5hkivsOEb3C.jpg",
+      "tmdbId": 3490
+    },
+    {
+      "name": "Billy Crudup",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Jesus’ Son",
+      "profilePath": "/4kHvUUVFMW8GJTHJtoAiskqhcyO.jpg",
+      "tmdbId": 8289
+    },
+    {
+      "name": "Hill Harper",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Visit",
+      "profilePath": "/cgaRPrgB4DBxogIgiLwuABVmJVw.jpg",
+      "tmdbId": 57686
+    },
+    {
+      "name": "Mark Ruffalo",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "You Can Count on Me",
+      "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
+      "tmdbId": 103
+    },
+    {
+      "name": "Cole Hauser",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Tigerland",
+      "profilePath": "/1SNoIDILoXtAUJu4f7nDCPVQH5j.jpg",
+      "tmdbId": 6614
+    },
+    {
+      "name": "Giovanni Ribisi",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Gift",
+      "profilePath": "/8EAiS9D3YtGOrwNM0OrwmDpWK7s.jpg",
+      "tmdbId": 1771
+    },
+    {
+      "name": "Billy Dee Williams",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Visit",
+      "profilePath": "/AwFFWuXJbGCXb0cA5uZvCNtg68H.jpg",
+      "tmdbId": 3799
     },
     {
       "name": "Tom Hanks",
@@ -594,7 +915,7 @@
       },
       "genre": "Drama",
       "role": "Leading",
-      "profilePath": "/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg",
+      "profilePath": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg",
       "tmdbId": 31
     },
     {
@@ -624,7 +945,7 @@
       },
       "genre": "Drama",
       "role": "Leading",
-      "profilePath": "/cVh4UgCMu6aAkZ2BqymTLV86FzZ.jpg",
+      "profilePath": "/aYomJWx0B2B8ra6Rmgt8lr0XCrw.jpg",
       "tmdbId": 1121
     }
   ],
@@ -634,14 +955,13 @@
       "film": "Erin Brockovich",
       "role": "Leading",
       "awards": {
-        "oscar": "Y",
         "bafta": "Y",
+        "oscar": "Y",
         "sag": "Y",
         "nbr": "Y",
-        "lafca": "Y",
-        "critics": "Y"
+        "lafca": "Y"
       },
-      "profilePath": "/fQacAdIa1WUNChQ6FgEko13eqOA.jpg",
+      "profilePath": "/AhQMyQ10kz5g8Y3Fp54GPhgDxQS.jpg",
       "tmdbId": 1204
     },
     {
@@ -650,50 +970,66 @@
       "role": "Supporting",
       "awards": {
         "oscar": "Y",
-        "nyfcc": "Y"
+        "nyfcc": "Y",
+        "spirit": "X"
       },
       "profilePath": "/5vxcHIHABJxqhweAsTiXVOhT4SE.jpg",
       "tmdbId": 4726
     },
     {
       "name": "Laura Linney",
-      "film": "You Can Count on Me",
-      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "lafca": "X",
-        "nyfcc": "Y"
+        "nyfcc": "Y",
+        "spirit": "X"
       },
+      "film": "You Can Count on Me",
+      "role": "Leading",
       "profilePath": "/yIopIq7l7eIvjoQqnZJkpdQEvds.jpg",
       "tmdbId": 350
     },
     {
-      "name": "Judi Dench",
-      "film": "Chocolat",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "sag": "Y"
-      },
-      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
-      "tmdbId": 5309
-    },
-    {
       "name": "Julie Walters",
-      "film": "Billy Elliot",
-      "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
         "bafta": "Y",
-        "sag": "X"
+        "oscar": "X",
+        "sag": "X",
+        "bifa": "X"
       },
+      "film": "Billy Elliot",
+      "role": "Leading",
       "profilePath": "/bCTkV2OUgzbJdQEoCk3GesE4DXq.jpg",
       "tmdbId": 477
+    },
+    {
+      "name": "Ellen Burstyn",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "spirit": "Y"
+      },
+      "film": "Requiem for a Dream",
+      "role": "Leading",
+      "profilePath": "/uEHZoAtCnGCXvQDHe3s3DWW2G1c.jpg",
+      "tmdbId": 9560
+    },
+    {
+      "name": "Judi Dench",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "Y"
+      },
+      "film": "Chocolat",
+      "role": "Leading",
+      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
+      "tmdbId": 5309
     },
     {
       "name": "Frances McDormand",
@@ -707,6 +1043,18 @@
       "role": "Leading",
       "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
       "tmdbId": 3910
+    },
+    {
+      "name": "Zhang Ziyi",
+      "film": "Crouching Tiger, Hidden Dragon",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "lafca": "X",
+        "spirit": "Y"
+      },
+      "profilePath": "/sjtAc10h5LaIaKV6Y1LoZoeE7HT.jpg",
+      "tmdbId": 1339
     },
     {
       "name": "Björk",
@@ -723,83 +1071,61 @@
       "awards": {
         "venice": "Y"
       },
-      "profilePath": "/4Vd7w19asuBfUGgz0NIuQI5wxIA.jpg",
+      "profilePath": "/6YauDiiTBwRGC1xnwspPmNvPWUu.jpg",
       "tmdbId": 9827
     },
     {
-      "name": "Juliette Binoche",
-      "film": "Chocolat",
-      "role": "Leading",
+      "name": "Gillian Anderson",
+      "film": "The House of Mirth",
       "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "bafta": "X",
-        "sag": "X"
+        "bifa": "Y"
       },
-      "profilePath": "/llNGfF2gNBa1l39iqmjhZuDDzn6.jpg",
-      "tmdbId": 1137
+      "profilePath": "/5emeOf49lM2WSs4rc186Wc9Zgs3.jpg",
+      "tmdbId": 12214
     },
     {
       "name": "Joan Allen",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "spirit": "X"
+      },
       "film": "The Contender",
       "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "sag": "X"
-      },
       "profilePath": "/ipUhzenaOCmrxqbPqc7RadYxWao.jpg",
       "tmdbId": 11148
     },
     {
-      "name": "Ellen Burstyn",
-      "film": "Requiem for a Dream",
-      "role": "Leading",
+      "name": "Juliette Binoche",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
         "sag": "X"
       },
-      "profilePath": "/uEHZoAtCnGCXvQDHe3s3DWW2G1c.jpg",
-      "tmdbId": 9560
+      "film": "Chocolat",
+      "role": "Leading",
+      "profilePath": "/htdZZIroEyJaeHQAUTqokNfkPgl.jpg",
+      "tmdbId": 1137
     },
     {
       "name": "Kate Hudson",
       "film": "Almost Famous",
-      "role": "Supporting",
+      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "bafta": "X",
+        "oscar": "X",
         "sag": "X"
       },
       "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
       "tmdbId": 11661
     },
     {
-      "name": "Zhang Ziyi",
-      "film": "Crouching Tiger, Hidden Dragon",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "lafca": "X"
-      },
-      "profilePath": "/sjtAc10h5LaIaKV6Y1LoZoeE7HT.jpg",
-      "tmdbId": 1339
-    },
-    {
-      "name": "Frances McDormand",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "critics": "Y"
-      },
-      "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
-      "tmdbId": 3910
-    },
-    {
       "name": "Brenda Blethyn",
       "awards": {
-        "gg": "X"
+        "gg": "X",
+        "bifa": "X"
       },
       "film": "Saving Grace",
       "role": "Leading",
@@ -813,7 +1139,7 @@
       },
       "film": "Miss Congeniality",
       "role": "Leading",
-      "profilePath": "/hPHGKPAWZ8gArYXMk225rrYPoyJ.jpg",
+      "profilePath": "/iYk1dueFEQpJwriOgMdnhyDDeDz.jpg",
       "tmdbId": 18277
     },
     {
@@ -833,7 +1159,7 @@
       },
       "film": "Traffic",
       "role": "Leading",
-      "profilePath": "/bBZKAbjNCGS9VpDKaK6TWGsL3ws.jpg",
+      "profilePath": "/2fAo0jWy8zPl9jgR4DH5nLyL8Xa.jpg",
       "tmdbId": 1922
     },
     {
@@ -866,14 +1192,86 @@
       "tmdbId": 5313
     },
     {
+      "name": "Frances McDormand",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "critics": "Y"
+      },
+      "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
+      "tmdbId": 3910,
+      "film": "Almost Famous"
+    },
+    {
       "name": "Kate Winslet",
       "awards": {
         "sag": "X"
       },
       "film": "Quills",
       "role": "Supporting",
-      "profilePath": "/9xDnfZrWhM67wJlQJEsOOjQzDUQ.jpg",
+      "profilePath": "/e3tdop3WhseRnn8KwMVLAV25Ybv.jpg",
       "tmdbId": 204
+    },
+    {
+      "name": "Kate Ashfield",
+      "film": "The Low Down",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/rtuYpo9W4AsCvI1I6brIdHe7qi.jpg",
+      "tmdbId": 11110
+    },
+    {
+      "name": "Emily Watson",
+      "film": "The Luzhin Defence",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/bd0qiJXHoLNpkCqABsh67AKRtjC.jpg",
+      "tmdbId": 1639
+    },
+    {
+      "name": "Sanaa Lathan",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Love & Basketball",
+      "profilePath": "/mYrlBt33pPbdsgscTuWdHScu7md.jpg",
+      "tmdbId": 5411
+    },
+    {
+      "name": "Kelly Macdonald",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Two Family House",
+      "profilePath": "/k0yVocTnTMWlNdaeOO7YRViCdhO.jpg",
+      "tmdbId": 9015
+    },
+    {
+      "name": "Pat Caroll",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Songcatcher"
+    },
+    {
+      "name": "Jennifer Connelly",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Requiem for a Dream",
+      "profilePath": "/wdmcJagSRJ65AuJ4IUCzuHAdvgy.jpg",
+      "tmdbId": 6161
+    },
+    {
+      "name": "Lupe Ontiveros",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Chuck & Buck",
+      "profilePath": "/bFlpBo46W4KXQVNspvPTUhZvsmQ.jpg",
+      "tmdbId": 28779
     },
     {
       "name": "Julia Roberts",
@@ -883,11 +1281,12 @@
       "awards": {
         "gg": {
           "winner": true
-        }
+        },
+        "critics": "Y"
       },
       "genre": "Drama",
       "role": "Leading",
-      "profilePath": "/fQacAdIa1WUNChQ6FgEko13eqOA.jpg",
+      "profilePath": "/AhQMyQ10kz5g8Y3Fp54GPhgDxQS.jpg",
       "tmdbId": 1204
     },
     {
@@ -920,11 +1319,5 @@
       "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
       "tmdbId": 11661
     }
-  ],
-  "gotham": {
-    "best-film": [],
-    "best-director": [],
-    "best-actor": [],
-    "best-actress": []
-  }
+  ]
 }

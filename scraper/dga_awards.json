@@ -1,4 +1,472 @@
 {
+  "2000": {
+    "best-director": [
+      {
+        "name": "Steven Soderbergh",
+        "film": "Traffic",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Steven Soderbergh",
+        "film": "Erin Brockovich",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Ang Lee",
+        "film": "Crouching Tiger, Hidden Dragon",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Ridley Scott",
+        "film": "Gladiator",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Stephen Daldry",
+        "film": "Billy Elliot",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2001": {
+    "best-director": [
+      {
+        "name": "Ron Howard",
+        "film": "A Beautiful Mind",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Ridley Scott",
+        "film": "Black Hawk Down",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Peter Jackson",
+        "film": "The Lord of the Rings: The Fellowship of the Ring",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Baz Luhrmann",
+        "film": "Moulin Rouge",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Christopher Nolan",
+        "film": "Memento",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2002": {
+    "best-director": [
+      {
+        "name": "Rob Marshall",
+        "film": "Chicago",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Stephen Daldry",
+        "film": "The Hours",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Peter Jackson",
+        "film": "The Lord of the Rings: The Two Towers",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Martin Scorsese",
+        "film": "Gangs of New York",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Sam Mendes",
+        "film": "Road to Perdition",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2003": {
+    "best-director": [
+      {
+        "name": "Peter Jackson",
+        "film": "The Lord of the Rings: The Return of the King",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Clint Eastwood",
+        "film": "Mystic River",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Sofia Coppola",
+        "film": "Lost in Translation",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Peter Weir",
+        "film": "Master and Commander: The Far Side of the World",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Gary Ross",
+        "film": "Seabiscuit",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2004": {
+    "best-director": [
+      {
+        "name": "Clint Eastwood",
+        "film": "Million Dollar Baby",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Martin Scorsese",
+        "film": "The Aviator",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Taylor Hackford",
+        "film": "Ray",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Alexander Payne",
+        "film": "Sideways",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Marc Forster",
+        "film": "Finding Neverland",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2005": {
+    "best-director": [
+      {
+        "name": "Ang Lee",
+        "film": "BROKEBACK MOUNTAIN",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Paul Haggis",
+        "film": "CRASH",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Bennett Miller",
+        "film": "CAPOTE",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Steven Spielberg",
+        "film": "MUNICH",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "George Clooney",
+        "film": "GOOD NIGHT, AND GOOD LUCK.",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2006": {
+    "best-director": [
+      {
+        "name": "Martin Scorsese",
+        "film": "THE DEPARTED",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Alejandro Gonzalez Inarritu",
+        "film": "BABEL",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Jonathan Dayton & Valerie Faris",
+        "film": "LITTLE MISS SUNSHINE",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Stephen Frears",
+        "film": "THE QUEEN",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "William Condon",
+        "film": "DREAMGIRLS",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2007": {
+    "best-director": [
+      {
+        "name": "Joel & Ethan Coen",
+        "film": "NO COUNTRY FOR OLD MEN",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Julian Schnabel",
+        "film": "THE DIVING BELL AND THE BUTTERFLY",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Paul Thomas Anderson",
+        "film": "THERE WILL BE BLOOD",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Sean Penn",
+        "film": "INTO THE WILD",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Tony Gilroy",
+        "film": "MICHAEL CLAYTON",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2008": {
+    "best-director": [
+      {
+        "name": "Daniel Boyle",
+        "film": "Slumdog Millionaire",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Ron Howard",
+        "film": "Frost/Nixon",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Gus Van Sant",
+        "film": "Milk",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "David Fincher",
+        "film": "Curious Case Of Benjamin Button, The",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Christopher Nolan",
+        "film": "The Dark Knight",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2009": {
+    "best-director": [
+      {
+        "name": "Kathryn Bigelow",
+        "film": "The Hurt Locker",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Lee Daniels",
+        "film": "Precious: Based On The Novel \"Push\" By Sapphire",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Jason Reitman",
+        "film": "Up In The Air",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "James Cameron",
+        "film": "Avatar",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Quentin Tarantino",
+        "film": "Inglourious Basterds",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2010": {
+    "best-director": [
+      {
+        "name": "Tom Hooper",
+        "film": "The King's Speech",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "David Fincher",
+        "film": "The Social Network",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Darren Aronofsky",
+        "film": "Black Swan",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "David O. Russell",
+        "film": "The Fighter",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Chris E. Nolan",
+        "film": "Inception",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
+  "2011": {
+    "best-director": [
+      {
+        "name": "Michel Hazanavicius",
+        "film": "The Artist",
+        "awards": {
+          "dga": "Y"
+        }
+      },
+      {
+        "name": "Martin Scorsese",
+        "film": "Hugo",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "David Fincher",
+        "film": "The Girl With The Dragon Tattoo",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Woody Allen",
+        "film": "Midnight In Paris",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Alexander Payne",
+        "film": "The Descendants",
+        "awards": {
+          "dga": "X"
+        }
+      }
+    ]
+  },
   "2012": {
     "best-director": [
       {
@@ -9,13 +477,6 @@
         }
       },
       {
-        "name": "Steven Spielberg",
-        "film": "Lincoln",
-        "awards": {
-          "dga": "X"
-        }
-      },
-      {
         "name": "Ang Lee",
         "film": "Life Of Pi",
         "awards": {
@@ -23,15 +484,22 @@
         }
       },
       {
-        "name": "Kathryn Bigelow",
-        "film": "Zero Dark Thirty",
+        "name": "Tom Hooper",
+        "film": "Les Miserables",
         "awards": {
           "dga": "X"
         }
       },
       {
-        "name": "Tom Hooper",
-        "film": "Les Miserables",
+        "name": "Steven Spielberg",
+        "film": "Lincoln",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Kathryn Bigelow",
+        "film": "Zero Dark Thirty",
         "awards": {
           "dga": "X"
         }
@@ -87,15 +555,15 @@
         }
       },
       {
-        "name": "Morten Tyldum",
-        "film": "The Imitation Game",
+        "name": "Wes Anderson",
+        "film": "The Grand Budapest Hotel",
         "awards": {
           "dga": "X"
         }
       },
       {
-        "name": "Wes Anderson",
-        "film": "The Grand Budapest Hotel",
+        "name": "Morten Tyldum",
+        "film": "The Imitation Game",
         "awards": {
           "dga": "X"
         }
@@ -133,8 +601,8 @@
         }
       },
       {
-        "name": "George Miller",
-        "film": "Mad Max: Fury Road",
+        "name": "Tom McCarthy",
+        "film": "Spotlight",
         "awards": {
           "dga": "X"
         }
@@ -147,8 +615,8 @@
         }
       },
       {
-        "name": "Tom McCarthy",
-        "film": "Spotlight",
+        "name": "George Miller",
+        "film": "Mad Max: Fury Road",
         "awards": {
           "dga": "X"
         }
@@ -172,15 +640,15 @@
         }
       },
       {
-        "name": "Kenneth Lonergan",
-        "film": "Manchester By The Sea",
+        "name": "Garth Davis",
+        "film": "Lion",
         "awards": {
           "dga": "X"
         }
       },
       {
-        "name": "Garth Davis",
-        "film": "Lion",
+        "name": "Kenneth Lonergan",
+        "film": "Manchester By The Sea",
         "awards": {
           "dga": "X"
         }
@@ -204,6 +672,13 @@
         }
       },
       {
+        "name": "Christopher Nolan",
+        "film": "Dunkirk",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
         "name": "Martin McDonagh",
         "film": "Three Billboards Outside Ebbing, Missouri",
         "awards": {
@@ -213,13 +688,6 @@
       {
         "name": "Jordan Peele",
         "film": "Get Out",
-        "awards": {
-          "dga": "X"
-        }
-      },
-      {
-        "name": "Christopher Nolan",
-        "film": "Dunkirk",
         "awards": {
           "dga": "X"
         }
@@ -250,15 +718,15 @@
         }
       },
       {
-        "name": "Bradley Cooper",
-        "film": "A Star Is Born",
+        "name": "Spike Lee",
+        "film": "BlacKkKlansman",
         "awards": {
           "dga": "X"
         }
       },
       {
-        "name": "Spike Lee",
-        "film": "BlacKkKlansman",
+        "name": "Bradley Cooper",
+        "film": "A Star Is Born",
         "awards": {
           "dga": "X"
         }
@@ -289,13 +757,6 @@
         }
       },
       {
-        "name": "Taika Waititi",
-        "film": "Jojo Rabbit",
-        "awards": {
-          "dga": "X"
-        }
-      },
-      {
         "name": "Martin Scorsese",
         "film": "The Irishman",
         "awards": {
@@ -305,6 +766,13 @@
       {
         "name": "Bong Joon Ho",
         "film": "Parasite",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Taika Waititi",
+        "film": "Jojo Rabbit",
         "awards": {
           "dga": "X"
         }
@@ -321,15 +789,15 @@
         }
       },
       {
-        "name": "Emerald Fennell",
-        "film": "Promising Young Woman",
+        "name": "David Fincher",
+        "film": "Mank",
         "awards": {
           "dga": "X"
         }
       },
       {
-        "name": "David Fincher",
-        "film": "Mank",
+        "name": "Emerald Fennell",
+        "film": "Promising Young Woman",
         "awards": {
           "dga": "X"
         }
@@ -360,13 +828,6 @@
         }
       },
       {
-        "name": "Steven Spielberg",
-        "film": "West Side Story",
-        "awards": {
-          "dga": "X"
-        }
-      },
-      {
         "name": "Paul Thomas Anderson",
         "film": "Licorice Pizza",
         "awards": {
@@ -376,6 +837,13 @@
       {
         "name": "Denis Villeneuve",
         "film": "Dune",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Steven Spielberg",
+        "film": "West Side Story",
         "awards": {
           "dga": "X"
         }
@@ -399,8 +867,15 @@
         }
       },
       {
-        "name": "Todd Field",
-        "film": "Tár",
+        "name": "Joseph Kosinski",
+        "film": "Top Gun: Maverick",
+        "awards": {
+          "dga": "X"
+        }
+      },
+      {
+        "name": "Martin McDonagh",
+        "film": "The Banshees Of Inisherin",
         "awards": {
           "dga": "X"
         }
@@ -413,15 +888,8 @@
         }
       },
       {
-        "name": "Joseph Kosinski",
-        "film": "Top Gun: Maverick",
-        "awards": {
-          "dga": "X"
-        }
-      },
-      {
-        "name": "Martin McDonagh",
-        "film": "The Banshees Of Inisherin",
+        "name": "Todd Field",
+        "film": "Tár",
         "awards": {
           "dga": "X"
         }
@@ -438,15 +906,15 @@
         }
       },
       {
-        "name": "Martin Scorsese",
-        "film": "Killers Of The Flower Moon",
+        "name": "Alexander Payne",
+        "film": "The Holdovers",
         "awards": {
           "dga": "X"
         }
       },
       {
-        "name": "Alexander Payne",
-        "film": "The Holdovers",
+        "name": "Martin Scorsese",
+        "film": "Killers Of The Flower Moon",
         "awards": {
           "dga": "X"
         }
@@ -491,15 +959,15 @@
         }
       },
       {
-        "name": "Edward Berger",
-        "film": "Conclave",
+        "name": "James Mangold",
+        "film": "A Complete Unknown",
         "awards": {
           "dga": "X"
         }
       },
       {
-        "name": "James Mangold",
-        "film": "A Complete Unknown",
+        "name": "Edward Berger",
+        "film": "Conclave",
         "awards": {
           "dga": "X"
         }

@@ -3,15 +3,15 @@
     {
       "name": "The Artist",
       "awards": {
-        "bafta": "Y",
         "gg": "Y",
+        "bafta": "Y",
         "oscar": "Y",
+        "afi": "Y",
         "critics": "Y",
         "sag": "X",
-        "afi": "Y",
         "nbr": "Y",
         "pga": "Y",
-        "nyfcc": "Y",
+        "spirit": "Y",
         "adg": "X"
       },
       "genre": "Comedy",
@@ -21,18 +21,19 @@
     {
       "name": "The Descendants",
       "awards": {
-        "bafta": "X",
         "gg": "Y",
+        "bafta": "X",
         "oscar": "X",
+        "afi": "Y",
         "critics": "X",
         "sag": "X",
-        "afi": "Y",
         "nbr": "Y",
         "pga": "X",
         "lafca": "Y",
-        "adg": "X",
         "wga": "Y",
-        "gotham": "X"
+        "gotham": "X",
+        "spirit": "X",
+        "adg": "X"
       },
       "genre": "Drama",
       "posterPath": "/8cDq5UlOPYeKm39okALCEOsZPxk.jpg",
@@ -43,12 +44,12 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
         "pga": "X",
-        "adg": "Y",
-        "wga": "X"
+        "wga": "X",
+        "adg": "Y"
       },
       "genre": "Drama",
       "posterPath": "/1dxRq3o3l3bVWNRvvSb7rRf68qp.jpg",
@@ -58,8 +59,8 @@
       "name": "The Tree of Life",
       "awards": {
         "oscar": "X",
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
         "cannes": "Y",
         "lafca": "X"
@@ -73,8 +74,8 @@
         "afi": "Y",
         "nbr": "Y",
         "pga": "X",
-        "adg": "Y",
-        "wga": "X"
+        "wga": "X",
+        "adg": "Y"
       },
       "posterPath": "/8bokS83zGdhaXgN9tjidUKmAftW.jpg",
       "tmdbId": 65754
@@ -82,15 +83,15 @@
     {
       "name": "The Help",
       "awards": {
-        "bafta": "X",
         "gg": "X",
+        "bafta": "X",
         "oscar": "X",
+        "afi": "Y",
         "critics": "X",
         "sag": "Y",
-        "afi": "Y",
         "pga": "X",
-        "adg": "X",
-        "wga": "X"
+        "wga": "X",
+        "adg": "X"
       },
       "genre": "Drama",
       "posterPath": "/3kmfoWWEc9Vtyuaf9v5VipRgdjx.jpg",
@@ -101,8 +102,8 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "nbr": "Y",
         "pga": "X"
       },
@@ -115,8 +116,8 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "pga": "X",
         "wga": "Y"
       },
@@ -147,8 +148,8 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "critics": "X",
         "afi": "Y",
+        "critics": "X",
         "pga": "X",
         "wga": "X"
       },
@@ -160,11 +161,11 @@
       "name": "Bridesmaids",
       "awards": {
         "gg": "X",
-        "sag": "X",
         "afi": "Y",
+        "sag": "X",
         "pga": "X",
-        "adg": "X",
-        "wga": "X"
+        "wga": "X",
+        "adg": "X"
       },
       "genre": "Comedy",
       "posterPath": "/gJtA7hYsBMQ7EM3sPBMUdBfU7a0.jpg",
@@ -176,6 +177,7 @@
         "bafta": "X",
         "critics": "X",
         "nbr": "Y",
+        "spirit": "X",
         "adg": "X"
       },
       "posterPath": "/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
@@ -210,6 +212,22 @@
       "tmdbId": 77560
     },
     {
+      "name": "Rango",
+      "awards": {
+        "annie": "Y"
+      },
+      "posterPath": "/A5MP1guV8pbruieG0tnpPIbaJtt.jpg",
+      "tmdbId": 44896
+    },
+    {
+      "name": "The Social Network",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "posterPath": "/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
+      "tmdbId": 37799
+    },
+    {
       "name": "Beginners (TIE)",
       "awards": {
         "gotham": "Y"
@@ -222,23 +240,33 @@
       }
     },
     {
-      "name": "Tinker Tailor Soldier Spy",
+      "name": "Tyrannosaur",
       "awards": {
-        "bafta": "X",
-        "adg": "X"
+        "bifa": "Y"
       },
-      "posterPath": "/e0dZ7TapGY9HtJ9xk1TUHPEOccl.jpg",
-      "tmdbId": 49517
+      "posterPath": "/p6PJGuO6K94YylUcAsTTn7Q4cQn.jpg",
+      "tmdbId": 76543
     },
     {
       "name": "50/50",
       "awards": {
         "gg": "X",
-        "wga": "X"
+        "wga": "X",
+        "spirit": "X"
       },
       "genre": "Comedy",
-      "posterPath": "/anqjt3Djsx7EeLLARxPJQ3F8gP7.jpg",
-      "tmdbId": 493102
+      "posterPath": "/4h8kOQQbGQvDfaAMrnLrlmYhiU2.jpg",
+      "tmdbId": 1306844
+    },
+    {
+      "name": "Tinker Tailor Soldier Spy",
+      "awards": {
+        "bafta": "X",
+        "bifa": "X",
+        "adg": "X"
+      },
+      "posterPath": "/e0dZ7TapGY9HtJ9xk1TUHPEOccl.jpg",
+      "tmdbId": 49517
     },
     {
       "name": "Extremely Loud & Incredibly Close",
@@ -248,6 +276,15 @@
       },
       "posterPath": "/6pszViNvKr1r31pP7gJNYDHEx5P.jpg",
       "tmdbId": 64685
+    },
+    {
+      "name": "Take Shelter",
+      "awards": {
+        "gotham": "X",
+        "spirit": "X"
+      },
+      "posterPath": "/dldIX0q5jewe8rSyCh8d5I1RYx3.jpg",
+      "tmdbId": 64720
     },
     {
       "name": "My Week with Marilyn",
@@ -319,7 +356,7 @@
       "awards": {
         "annie": "X"
       },
-      "posterPath": "/n4UkIqNYSTr4DPoHCVfLrL8mbre.jpg",
+      "posterPath": "/eufJ36oQCauDc427ewaEvQrhZ6i.jpg",
       "tmdbId": 417859
     },
     {
@@ -337,6 +374,64 @@
       },
       "posterPath": "/fQZ3sLR1Fi63NMsNRbjm9q5qODJ.jpg",
       "tmdbId": 17578
+    },
+    {
+      "name": "Win Win",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "Original",
+      "posterPath": "/xX0Ryq5J2weFF5BPYb80giKUL02.jpg",
+      "tmdbId": 55725
+    },
+    {
+      "name": "Young Adult",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "Original",
+      "posterPath": "/A8g8rTSpdDKvKC1Y5zgf2NnwaD2.jpg",
+      "tmdbId": 987923
+    },
+    {
+      "name": "Meek's Cutoff",
+      "awards": {
+        "gotham": "X"
+      },
+      "posterPath": "/jxjLpZseFdzMBvGfTscTTpM94Yk.jpg",
+      "tmdbId": 57120
+    },
+    {
+      "name": "Beginners",
+      "awards": {
+        "spirit": "X"
+      },
+      "posterPath": "/mAquHAmoBgZ1omUNdNsnGVNX74c.jpg",
+      "tmdbId": 55347
+    },
+    {
+      "name": "Senna",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/nZbLCbRoP6iJq5sr8daHQzjnzFh.jpg",
+      "tmdbId": 58496
+    },
+    {
+      "name": "Shame",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/cAWLz9kFv4xc6IsEXTj2DrcqD55.jpg",
+      "tmdbId": 76025
+    },
+    {
+      "name": "We Need to Talk about Kevin",
+      "awards": {
+        "bifa": "X"
+      },
+      "posterPath": "/auAmiRmbBQ5QIYGpWgcGBoBQY3b.jpg",
+      "tmdbId": 71859
     },
     {
       "name": "Anonymous",
@@ -385,67 +480,35 @@
       },
       "posterPath": "/6pszViNvKr1r31pP7gJNYDHEx5P.jpg",
       "tmdbId": 64685
-    },
-    {
-      "name": "Win Win",
-      "awards": {
-        "wga": "X"
-      },
-      "screenplay_type": "original",
-      "posterPath": "/xX0Ryq5J2weFF5BPYb80giKUL02.jpg",
-      "tmdbId": 55725
-    },
-    {
-      "name": "Young Adult",
-      "awards": {
-        "wga": "X"
-      },
-      "screenplay_type": "original",
-      "posterPath": "/A8g8rTSpdDKvKC1Y5zgf2NnwaD2.jpg",
-      "tmdbId": 987923
-    },
-    {
-      "name": "Meek's Cutoff",
-      "awards": {
-        "gotham": "X"
-      },
-      "posterPath": "/jxjLpZseFdzMBvGfTscTTpM94Yk.jpg",
-      "tmdbId": 57120
-    },
-    {
-      "name": "Take Shelter",
-      "awards": {
-        "gotham": "X"
-      },
-      "posterPath": "/dldIX0q5jewe8rSyCh8d5I1RYx3.jpg",
-      "tmdbId": 64720
     }
   ],
   "best-director": [
     {
       "name": "Michel Hazanavicius",
-      "film": "The Artist",
       "awards": {
-        "bafta": "Y",
         "gg": "X",
+        "bafta": "Y",
         "oscar": "Y",
         "critics": "Y",
-        "nyfcc": "Y"
+        "dga": "Y",
+        "spirit": "Y"
       },
+      "film": "The Artist",
       "profilePath": "/5Adwey0AqG16rM7jrDMjUaew9W3.jpg",
       "tmdbId": 67717
     },
     {
       "name": "Martin Scorsese",
-      "film": "Hugo",
       "awards": {
-        "bafta": "X",
         "gg": "Y",
+        "bafta": "X",
         "oscar": "X",
         "critics": "X",
         "nbr": "Y",
+        "dga": "X",
         "lafca": "X"
       },
+      "film": "Hugo",
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
       "tmdbId": 1032
     },
@@ -455,7 +518,8 @@
       "awards": {
         "bafta": "X",
         "critics": "X",
-        "cannes": "Y"
+        "cannes": "Y",
+        "spirit": "X"
       },
       "profilePath": "/ljiTTCvDaKFxbIbkLv1vUvOSLEx.jpg",
       "tmdbId": 21183
@@ -480,11 +544,31 @@
       "tmdbId": 15162
     },
     {
+      "name": "David Fincher",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "The Social Network",
+      "profilePath": "/wlyTYR3KNKQ3NtVojtbO8QIXSSS.jpg",
+      "tmdbId": 7467
+    },
+    {
+      "name": "Lynne Ramsay",
+      "film": "We Need to Talk about Kevin",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/d9Of8NacDwAcC9hnc6YAUmHcg9L.jpg",
+      "tmdbId": 83287
+    },
+    {
       "name": "Alexander Payne",
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X",
+        "spirit": "X"
       },
       "film": "The Descendants"
     },
@@ -499,19 +583,11 @@
       "tmdbId": 1243
     },
     {
-      "name": "Lynne Ramsay",
-      "film": "We Need to Talk About Kevin",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/hmSR9lVV65ojYHyyOtzmNPbVjSY.jpg",
-      "tmdbId": 83287
-    },
-    {
       "name": "Tomas Alfredson",
       "film": "Tinker Tailor Soldier Spy",
       "awards": {
-        "bafta": "X"
+        "bafta": "X",
+        "bifa": "X"
       },
       "profilePath": "/iAK3AnOZwZCcfU950TKcmNr0w9O.jpg",
       "tmdbId": 74396
@@ -524,6 +600,15 @@
       "film": "The Ides of March",
       "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
       "tmdbId": 1461
+    },
+    {
+      "name": "Lynne Ramsay",
+      "film": "We Need to Talk About Kevin",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/d9Of8NacDwAcC9hnc6YAUmHcg9L.jpg",
+      "tmdbId": 83287
     },
     {
       "name": "Stephen Daldry",
@@ -542,93 +627,130 @@
       },
       "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
       "tmdbId": 488
+    },
+    {
+      "name": "David Fincher",
+      "film": "The Girl With The Dragon Tattoo",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/wlyTYR3KNKQ3NtVojtbO8QIXSSS.jpg",
+      "tmdbId": 7467
+    },
+    {
+      "name": "Woody Allen",
+      "film": "Midnight In Paris",
+      "awards": {
+        "dga": "X"
+      },
+      "profilePath": "/wcPQgZLDibuej1RwNTy1R2U2ZJw.jpg",
+      "tmdbId": 1243
+    },
+    {
+      "name": "Mike Mills",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Beginners",
+      "profilePath": "/oGudNIroZukBfQ8keZCM512KVRn.jpg",
+      "tmdbId": 17439
+    },
+    {
+      "name": "Jeff Nichols",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Take Shelter"
+    },
+    {
+      "name": "Ben Wheatley",
+      "film": "Kill List",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/r8veHr3ExfEfVYWVR93hIDf4RiP.jpg",
+      "tmdbId": 137467
+    },
+    {
+      "name": "Steve McQueen",
+      "film": "Shame",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/if4tLIZJ0EJtyhlJaSzSwMQU5Yz.jpg",
+      "tmdbId": 72757
+    },
+    {
+      "name": "Paddy Considine",
+      "film": "Tyrannosaur",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/rui7HJUi2TzqMh2GQJ1bcQzr8M0.jpg",
+      "tmdbId": 14887
     }
   ],
   "best-actor": [
     {
       "name": "Christopher Plummer",
-      "film": "Beginners",
-      "role": "Supporting",
       "awards": {
-        "bafta": "Y",
         "gg": "Y",
+        "bafta": "Y",
         "oscar": "Y",
         "critics": "Y",
         "sag": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "spirit": "Y"
       },
-      "profilePath": "/iZh3s9Vy9vYD4DYnAda6C1kdeco.jpg",
+      "film": "Beginners",
+      "role": "Leading",
+      "profilePath": "/khs2MTZYTtiu4RCwmLLnLWAREul.jpg",
       "tmdbId": 290
     },
     {
       "name": "Jean Dujardin",
-      "film": "The Artist",
-      "role": "Leading",
       "awards": {
-        "bafta": "Y",
         "gg": "Y",
+        "bafta": "Y",
         "oscar": "Y",
         "critics": "X",
         "sag": "Y",
-        "cannes": "Y"
+        "cannes": "Y",
+        "spirit": "Y"
       },
+      "film": "The Artist",
+      "role": "Leading",
       "profilePath": "/iPtSWWoO8vajj6fIUQLQeuGOCsk.jpg",
       "tmdbId": 56024
     },
     {
       "name": "George Clooney",
-      "film": "The Descendants",
-      "role": "Leading",
       "awards": {
-        "bafta": "X",
         "gg": "Y",
+        "bafta": "X",
         "oscar": "X",
         "critics": "Y",
         "sag": "X",
         "nbr": "Y"
       },
+      "film": "The Descendants",
+      "role": "Leading",
       "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
       "tmdbId": 1461
     },
     {
-      "name": "Brad Pitt",
-      "film": "Moneyball",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "oscar": "X",
-        "critics": "X",
-        "sag": "X",
-        "nyfcc": "Y"
-      },
-      "profilePath": "/cckcYc2v0yh1tc9QjRelptcOBko.jpg",
-      "tmdbId": 287
-    },
-    {
       "name": "Michael Fassbender",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "critics": "X",
+        "venice": "Y",
+        "bifa": "Y"
+      },
       "film": "Shame",
       "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "critics": "X",
-        "venice": "Y"
-      },
       "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg",
       "tmdbId": 17288
-    },
-    {
-      "name": "Albert Brooks",
-      "awards": {
-        "gg": "X",
-        "critics": "X",
-        "nyfcc": "Y"
-      },
-      "film": "Drive",
-      "role": "Leading",
-      "profilePath": "/8iDSGu5l93N7benjf6b3AysBore.jpg",
-      "tmdbId": 13
     },
     {
       "name": "Michael Fassbender",
@@ -640,29 +762,72 @@
       "tmdbId": 17288
     },
     {
-      "name": "Kenneth Branagh",
-      "film": "My Week with Marilyn",
-      "role": "Supporting",
+      "name": "Colin Firth",
       "awards": {
-        "bafta": "X",
+        "nyfcc": "Y"
+      },
+      "film": "The King's Speech",
+      "role": "Leading",
+      "profilePath": "/4VBeYEUQbfhnivdkqInM36u5fda.jpg",
+      "tmdbId": 5472
+    },
+    {
+      "name": "Mark Ruffalo",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "The Kids Are All Right",
+      "role": "Supporting",
+      "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
+      "tmdbId": 103
+    },
+    {
+      "name": "Michael Smiley",
+      "film": "Kill List",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/4HOhgb9W3Jsp5H5LpdMZS2nLv6z.jpg",
+      "tmdbId": 17078
+    },
+    {
+      "name": "Brad Pitt",
+      "awards": {
         "gg": "X",
+        "bafta": "X",
         "oscar": "X",
         "critics": "X",
         "sag": "X"
       },
+      "film": "Moneyball",
+      "role": "Leading",
+      "profilePath": "/cckcYc2v0yh1tc9QjRelptcOBko.jpg",
+      "tmdbId": 287
+    },
+    {
+      "name": "Kenneth Branagh",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "X",
+        "sag": "X"
+      },
+      "film": "My Week with Marilyn",
+      "role": "Leading",
       "profilePath": "/AbCqqFxNi5w3nDUFdQt0DGMFh5H.jpg",
       "tmdbId": 11181
     },
     {
       "name": "Jonah Hill",
-      "film": "Moneyball",
-      "role": "Supporting",
       "awards": {
-        "bafta": "X",
         "gg": "X",
+        "bafta": "X",
         "oscar": "X",
         "sag": "X"
       },
+      "film": "Moneyball",
+      "role": "Leading",
       "profilePath": "/5aE4GgJADHzN1QsS6zkzElZSEYq.jpg",
       "tmdbId": 21007
     },
@@ -675,8 +840,44 @@
       },
       "film": "J. Edgar",
       "role": "Leading",
-      "profilePath": "/iqPBAdsFdAVCdahQM29kTG6UgD7.jpg",
+      "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
       "tmdbId": 6193
+    },
+    {
+      "name": "Albert Brooks",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "spirit": "X"
+      },
+      "film": "Drive",
+      "role": "Leading",
+      "profilePath": "/8iDSGu5l93N7benjf6b3AysBore.jpg",
+      "tmdbId": 13
+    },
+    {
+      "name": "Gary Oldman",
+      "film": "Tinker Tailor Soldier Spy",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "bifa": "X"
+      },
+      "profilePath": "/2v9FVVBUrrkW2m3QOcYkuhq9A6o.jpg",
+      "tmdbId": 64
+    },
+    {
+      "name": "Demián Bichir",
+      "film": "A Better Life",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "spirit": "X"
+      },
+      "profilePath": "/dur9tX8tbDDJE5mSOZkuW2VDGz4.jpg",
+      "tmdbId": 76961
     },
     {
       "name": "Nick Nolte",
@@ -691,26 +892,26 @@
       "tmdbId": 1733
     },
     {
-      "name": "Gary Oldman",
-      "film": "Tinker Tailor Soldier Spy",
-      "role": "Leading",
+      "name": "Brendan Gleeson",
       "awards": {
-        "bafta": "X",
-        "oscar": "X"
+        "gg": "X",
+        "bifa": "X"
       },
-      "profilePath": "/4HxoaJ8619S6eHOO901FMuxQ1FE.jpg",
-      "tmdbId": 64
+      "film": "The Guard",
+      "role": "Leading",
+      "profilePath": "/ctPPJu5ZYDZr1IPmzoNpezczrm0.jpg",
+      "tmdbId": 2039
     },
     {
-      "name": "Demián Bichir",
-      "film": "A Better Life",
+      "name": "Ryan Gosling",
+      "film": "Drive",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
-        "sag": "X"
+        "critics": "X",
+        "spirit": "X"
       },
-      "profilePath": "/dur9tX8tbDDJE5mSOZkuW2VDGz4.jpg",
-      "tmdbId": 76961
+      "profilePath": "/asoKC7CLCqpZKZDL6iovNurQUdf.jpg",
+      "tmdbId": 30614
     },
     {
       "name": "Patton Oswalt",
@@ -724,24 +925,14 @@
       "tmdbId": 10872
     },
     {
-      "name": "Jim Broadbent",
-      "film": "The Iron Lady",
-      "role": "Supporting",
+      "name": "Michael Shannon",
       "awards": {
-        "bafta": "X"
+        "lafca": "X",
+        "spirit": "X"
       },
-      "profilePath": "/jTyvGwwR1NFpvgDhcmuWZCM241w.jpg",
-      "tmdbId": 388
-    },
-    {
-      "name": "Philip Seymour Hoffman",
-      "film": "The Ides of March",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/50rqDkmvXwjwVhFH7q6ph2Rkw7S.jpg",
-      "tmdbId": 1233
+      "film": "Take Shelter",
+      "profilePath": "/6mMczfjM8CiS1WuBOgo5Xom1TcR.jpg",
+      "tmdbId": 335
     },
     {
       "name": "Ryan Gosling",
@@ -752,16 +943,6 @@
       "role": "Leading",
       "profilePath": "/asoKC7CLCqpZKZDL6iovNurQUdf.jpg",
       "tmdbId": 30614
-    },
-    {
-      "name": "Brendan Gleeson",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "The Guard",
-      "role": "Leading",
-      "profilePath": "/ctPPJu5ZYDZr1IPmzoNpezczrm0.jpg",
-      "tmdbId": 2039
     },
     {
       "name": "Joseph Gordon-Levitt",
@@ -804,6 +985,26 @@
       "tmdbId": 110
     },
     {
+      "name": "Jim Broadbent",
+      "film": "The Iron Lady",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/jTyvGwwR1NFpvgDhcmuWZCM241w.jpg",
+      "tmdbId": 388
+    },
+    {
+      "name": "Philip Seymour Hoffman",
+      "film": "The Ides of March",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/50rqDkmvXwjwVhFH7q6ph2Rkw7S.jpg",
+      "tmdbId": 1233
+    },
+    {
       "name": "Max von Sydow",
       "film": "Extremely Loud & Incredibly Close",
       "role": "Supporting",
@@ -812,16 +1013,6 @@
       },
       "profilePath": "/u16BsGyT6v9yuO7wWAF62NayDth.jpg",
       "tmdbId": 2201
-    },
-    {
-      "name": "Ryan Gosling",
-      "film": "Drive",
-      "role": "Leading",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/asoKC7CLCqpZKZDL6iovNurQUdf.jpg",
-      "tmdbId": 30614
     },
     {
       "name": "Andy Serkis",
@@ -844,101 +1035,177 @@
       "tmdbId": 53807
     },
     {
-      "name": "Michael Shannon",
+      "name": "Woody Harrelson",
       "awards": {
-        "lafca": "X"
+        "spirit": "X"
       },
-      "film": "Take Shelter",
-      "profilePath": "/6mMczfjM8CiS1WuBOgo5Xom1TcR.jpg",
-      "tmdbId": 335
+      "film": "Rampart",
+      "profilePath": "/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg",
+      "tmdbId": 57755
+    },
+    {
+      "name": "John Hawkes",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Martha Marcy May Marlene",
+      "profilePath": "/c0mDB6TApVcJ3LLM1gicjyUeD5A.jpg",
+      "tmdbId": 16861
+    },
+    {
+      "name": "John C. Reilly",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Cedar Rapids"
+    },
+    {
+      "name": "Corey Stoll",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Midnight in Paris",
+      "profilePath": "/a5wxOBGmXVwcEqWvEizFk06SDSj.jpg",
+      "tmdbId": 74541
+    },
+    {
+      "name": "Neil Maskell",
+      "film": "Kill List",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/pMjymAK3YZziXLbhv6Sx8cnfXY2.jpg",
+      "tmdbId": 30433
+    },
+    {
+      "name": "Peter Mullan",
+      "film": "Tyrannosaur",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/dvu5PWJK6Vv4xnYyMzdMvH73Laj.jpg",
+      "tmdbId": 3064
+    },
+    {
+      "name": "Tom Hardy",
+      "film": "Tinker Tailor Soldier Spy",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/32pesf3nGyLOQEVrhsFHpdbbMli.jpg",
+      "tmdbId": 2524
+    },
+    {
+      "name": "Benedict Cumberbatch",
+      "film": "Tinker Tailor Soldier Spy",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg",
+      "tmdbId": 71580
+    },
+    {
+      "name": "Eddie Marsan",
+      "film": "Tyrannosaur",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/9atfOgIxhfOKvv2be8HEp6SzOct.jpg",
+      "tmdbId": 1665
+    },
+    {
+      "name": "Ezra Miller",
+      "film": "We Need to Talk about Kevin",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/6wmTpbYpmhthaxzM5ss3377F9IV.jpg",
+      "tmdbId": 132157
     }
   ],
   "best-actress": [
     {
       "name": "Octavia Spencer",
-      "film": "The Help",
-      "role": "Supporting",
       "awards": {
-        "bafta": "Y",
         "gg": "Y",
+        "bafta": "Y",
         "oscar": "Y",
         "critics": "Y",
         "sag": "Y"
       },
-      "profilePath": "/35SOy4yQZ9xRSJ0q1L5RLhXfhqN.jpg",
+      "film": "The Help",
+      "role": "Leading",
+      "profilePath": "/zDGydyM1fmvNWzQlTAns9IZjNxT.jpg",
       "tmdbId": 6944
     },
     {
       "name": "Meryl Streep",
-      "film": "The Iron Lady",
-      "role": "Leading",
       "awards": {
-        "bafta": "Y",
         "gg": "Y",
+        "bafta": "Y",
         "oscar": "Y",
         "critics": "X",
-        "sag": "X",
-        "nyfcc": "Y"
+        "sag": "X"
       },
+      "film": "The Iron Lady",
+      "role": "Leading",
       "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
       "tmdbId": 5064
     },
     {
-      "name": "Viola Davis",
-      "film": "The Help",
-      "role": "Leading",
+      "name": "Michelle Williams",
       "awards": {
+        "gg": "Y",
         "bafta": "X",
-        "gg": "X",
-        "oscar": "X",
-        "critics": "Y",
-        "sag": "Y"
-      },
-      "profilePath": "/xDssw6vpYNRjsybvMPRE30e0dPN.jpg",
-      "tmdbId": 19492
-    },
-    {
-      "name": "Jessica Chastain",
-      "film": "The Help",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
         "oscar": "X",
         "critics": "X",
         "sag": "X",
-        "nyfcc": "Y"
+        "spirit": "Y"
       },
-      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
-      "tmdbId": 83002
-    },
-    {
-      "name": "Michelle Williams",
       "film": "My Week with Marilyn",
       "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "Y",
-        "oscar": "X",
-        "critics": "X",
-        "sag": "X"
-      },
       "profilePath": "/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg",
       "tmdbId": 1812
     },
     {
-      "name": "Tilda Swinton",
-      "film": "We Need to Talk About Kevin",
-      "role": "Leading",
+      "name": "Viola Davis",
       "awards": {
-        "bafta": "X",
         "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "Y",
+        "sag": "Y"
+      },
+      "film": "The Help",
+      "role": "Leading",
+      "profilePath": "/xDssw6vpYNRjsybvMPRE30e0dPN.jpg",
+      "tmdbId": 19492
+    },
+    {
+      "name": "Tilda Swinton",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
         "critics": "X",
         "sag": "X",
         "nbr": "Y"
       },
+      "film": "We Need to Talk About Kevin",
+      "role": "Leading",
       "profilePath": "/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
       "tmdbId": 3063
+    },
+    {
+      "name": "Shailene Woodley",
+      "awards": {
+        "gg": "X",
+        "critics": "X",
+        "spirit": "Y"
+      },
+      "film": "The Descendants",
+      "role": "Leading",
+      "profilePath": "/gL2NvHKW9wAH3qkZuJ76ULUiArB.jpg",
+      "tmdbId": 94185
     },
     {
       "name": "Kirsten Dunst",
@@ -978,18 +1245,84 @@
       "tmdbId": 83002
     },
     {
-      "name": "Bérénice Bejo",
-      "film": "The Artist",
-      "role": "Leading",
+      "name": "Annette Bening",
       "awards": {
-        "bafta": "X",
+        "nyfcc": "Y"
+      },
+      "film": "The Kids Are All Right",
+      "role": "Leading",
+      "profilePath": "/sBiiRwAVXd0FCRZ87m0I89qGBvy.jpg",
+      "tmdbId": 516
+    },
+    {
+      "name": "Melissa Leo",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "The Fighter",
+      "role": "Supporting",
+      "profilePath": "/tKNTvhmuO7FZMYYgRrZB6k8FT5K.jpg",
+      "tmdbId": 6832
+    },
+    {
+      "name": "Olivia Colman",
+      "film": "Tyrannosaur",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/lawJUdbLb1YW0niaYjiVGR9IBG8.jpg",
+      "tmdbId": 39187
+    },
+    {
+      "name": "Vanessa Redgrave",
+      "film": "Coriolanus",
+      "awards": {
+        "bifa": "Y"
+      },
+      "profilePath": "/ngBS6mLHn1in3kLJlTMR7w0J68r.jpg",
+      "tmdbId": 13333
+    },
+    {
+      "name": "Bérénice Bejo",
+      "awards": {
         "gg": "X",
+        "bafta": "X",
         "oscar": "X",
         "critics": "X",
         "sag": "X"
       },
+      "film": "The Artist",
+      "role": "Leading",
       "profilePath": "/bdMPpjb6jaKaFkbA3xj0jsxusb0.jpg",
       "tmdbId": 82923
+    },
+    {
+      "name": "Jessica Chastain",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "X",
+        "sag": "X"
+      },
+      "film": "The Help",
+      "role": "Leading",
+      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
+      "tmdbId": 83002
+    },
+    {
+      "name": "Janet McTeer",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "sag": "X",
+        "lafca": "X",
+        "spirit": "X"
+      },
+      "film": "Albert Nobbs",
+      "role": "Leading",
+      "profilePath": "/kl8cHLOQbwLrBfMWtAwtP4hUXFk.jpg",
+      "tmdbId": 47627
     },
     {
       "name": "Melissa McCarthy",
@@ -1003,19 +1336,6 @@
       },
       "profilePath": "/yl0qva0O4u92fvtItakdvKmKrW9.jpg",
       "tmdbId": 55536
-    },
-    {
-      "name": "Janet McTeer",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "sag": "X",
-        "lafca": "X"
-      },
-      "film": "Albert Nobbs",
-      "role": "Leading",
-      "profilePath": "/kl8cHLOQbwLrBfMWtAwtP4hUXFk.jpg",
-      "tmdbId": 47627
     },
     {
       "name": "Glenn Close",
@@ -1052,35 +1372,26 @@
       "tmdbId": 6885
     },
     {
-      "name": "Shailene Woodley",
-      "awards": {
-        "gg": "X",
-        "critics": "X"
-      },
-      "film": "The Descendants",
+      "name": "Elizabeth Olsen",
+      "film": "Martha Marcy May Marlene",
       "role": "Leading",
-      "profilePath": "/gL2NvHKW9wAH3qkZuJ76ULUiArB.jpg",
-      "tmdbId": 94185
+      "awards": {
+        "critics": "X",
+        "spirit": "X"
+      },
+      "profilePath": "/wIU675y4dofIDVuhaNWPizJNtep.jpg",
+      "tmdbId": 550843
     },
     {
       "name": "Carey Mulligan",
-      "film": "Drive",
+      "film": "Shame",
       "role": "Supporting",
       "awards": {
-        "bafta": "X"
+        "critics": "X",
+        "bifa": "X"
       },
       "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg",
       "tmdbId": 36662
-    },
-    {
-      "name": "Judi Dench",
-      "film": "My Week with Marilyn",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
-      "tmdbId": 5309
     },
     {
       "name": "Jodie Foster",
@@ -1109,102 +1420,145 @@
       },
       "film": "Carnage",
       "role": "Leading",
-      "profilePath": "/9xDnfZrWhM67wJlQJEsOOjQzDUQ.jpg",
+      "profilePath": "/e3tdop3WhseRnn8KwMVLAV25Ybv.jpg",
       "tmdbId": 204
     },
     {
-      "name": "Elizabeth Olsen",
-      "film": "Martha Marcy May Marlene",
-      "role": "Leading",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/wIU675y4dofIDVuhaNWPizJNtep.jpg",
-      "tmdbId": 550843
-    },
-    {
       "name": "Carey Mulligan",
-      "film": "Shame",
+      "film": "Drive",
       "role": "Supporting",
       "awards": {
-        "critics": "X"
+        "bafta": "X"
       },
       "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg",
       "tmdbId": 36662
+    },
+    {
+      "name": "Judi Dench",
+      "film": "My Week with Marilyn",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
+      "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
+      "tmdbId": 5309
+    },
+    {
+      "name": "Lauren Ambrose",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "About Sunny",
+      "profilePath": "/67oLiPwWKhy0zqdfm6NX9cXD5is.jpg",
+      "tmdbId": 54470
+    },
+    {
+      "name": "Rachael Harris",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Natural Selection",
+      "profilePath": "/opgx6hYjg8OhrNjOBHJfzcfEVZa.jpg",
+      "tmdbId": 46074
+    },
+    {
+      "name": "Adepero Oduye",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Pariah",
+      "profilePath": "/w9axk9dSTVpZPnoDH08iClklmF4.jpg",
+      "tmdbId": 467633
+    },
+    {
+      "name": "Jessica Chastain",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Take Shelter",
+      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
+      "tmdbId": 83002
+    },
+    {
+      "name": "Anjelica Huston",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "50/50",
+      "profilePath": "/6hnYeHa7Rc1w1MmQ3JsLSIb7yCX.jpg",
+      "tmdbId": 5657
+    },
+    {
+      "name": "Harmony Santana",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Gun Hill Road",
+      "profilePath": "/b28gqT9UVqDTXdrZnjO5OGDbNmA.jpg",
+      "tmdbId": 1001727
+    },
+    {
+      "name": "Rebecca Hall",
+      "film": "The Awakening",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/u1Q7HF01llNzx0yx0A8g2W0Xj9L.jpg",
+      "tmdbId": 15556
+    },
+    {
+      "name": "Mia Wasikowska",
+      "film": "Jane Eyre",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/xOYlAZsLwFZ0gNHLnt1Hzuo2yqN.jpg",
+      "tmdbId": 76070
+    },
+    {
+      "name": "MyAnna Buring",
+      "film": "Kill List",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/oN3YUXsQYfcss2lJZetkRPoKx21.jpg",
+      "tmdbId": 57578
+    },
+    {
+      "name": "Tilda Swinton",
+      "film": "We Need to Talk about Kevin",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
+      "tmdbId": 3063
+    },
+    {
+      "name": "Felicity Jones",
+      "film": "Albatross",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/fyhWRmxpTEYl5d8DnkIo6i8RdWJ.jpg",
+      "tmdbId": 72855
+    },
+    {
+      "name": "Sally Hawkins",
+      "film": "Submarine",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/1dtDq82dM2YQ17lBL4ZKPJo5LKw.jpg",
+      "tmdbId": 39658
+    },
+    {
+      "name": "Kathy Burke",
+      "film": "Tinker Tailor Soldier Spy",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/q3z7nP1ryyGuwixShrBmghcmm0F.jpg",
+      "tmdbId": 37759
     }
-  ],
-  "annie": {
-    "best-film": [
-      {
-        "name": "A Cat in Paris",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "Wrinkles",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "Arthur Christmas",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "Cars 2",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "Chico & Rita",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "Kung Fu Panda 2",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "Puss in Boots",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "Rio",
-        "awards": {
-          "annie": "X"
-        }
-      },
-      {
-        "name": "The Adventures of Tintin",
-        "awards": {
-          "annie": "X"
-        }
-      }
-    ],
-    "best-director": [],
-    "best-actor": [],
-    "best-actress": []
-  },
-  "gotham": {
-    "best-film": [
-      {
-        "name": "Beginners (TIE)",
-        "awards": {
-          "gotham": "Y"
-        }
-      }
-    ],
-    "best-director": [],
-    "best-actor": [],
-    "best-actress": []
-  }
+  ]
 }

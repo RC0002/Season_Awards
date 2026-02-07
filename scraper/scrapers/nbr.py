@@ -111,9 +111,9 @@ def scrape_nbr(year):
                     cat_text = b.get_text().lower()
                     if 'best director' in cat_text and 'debut' not in cat_text:
                         current_category = 'best-director'
-                    elif 'best actor' in cat_text and 'supporting' not in cat_text:
+                    elif 'best actor' in cat_text and 'supporting' not in cat_text and 'breakthrough' not in cat_text:
                         current_category = 'best-actor'
-                    elif 'best actress' in cat_text and 'supporting' not in cat_text:
+                    elif 'best actress' in cat_text and 'supporting' not in cat_text and 'breakthrough' not in cat_text:
                         current_category = 'best-actress'
                     else:
                         current_category = None

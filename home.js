@@ -29,7 +29,7 @@ async function populateAwardsMarquee() {
         categoryEntries.forEach(entry => {
             if (entry.posterPath && !allPosters.find(p => p.src.includes(entry.posterPath))) {
                 allPosters.push({
-                    src: `${CONFIG.TMDB_IMAGE_BASE}w342${entry.posterPath}`,
+                    src: `${CONFIG.TMDB_IMAGE_BASE}w185${entry.posterPath}`,
                     alt: entry.name
                 });
             }
@@ -43,15 +43,20 @@ async function populateAwardsMarquee() {
             const allYearsData = snapshot.val();
 
             if (allYearsData) {
-                Object.keys(allYearsData).forEach(year => {
+                // Get years in reverse order (newest first) to prioritize recent posters
+                const sortedYears = Object.keys(allYearsData).sort((a, b) => b.localeCompare(a));
+
+                for (const year of sortedYears) {
+                    if (allPosters.length >= 100) break; // Collect a pool first
+
                     const yearData = allYearsData[year];
                     if (yearData) {
                         Object.values(yearData).forEach(categoryEntries => {
                             if (Array.isArray(categoryEntries)) {
                                 categoryEntries.forEach(entry => {
-                                    if (entry.posterPath && !allPosters.find(p => p.src.includes(entry.posterPath))) {
+                                    if (allPosters.length < 100 && entry.posterPath && !allPosters.find(p => p.src.includes(entry.posterPath))) {
                                         allPosters.push({
-                                            src: `${CONFIG.TMDB_IMAGE_BASE}w342${entry.posterPath}`,
+                                            src: `${CONFIG.TMDB_IMAGE_BASE}w185${entry.posterPath}`,
                                             alt: entry.name
                                         });
                                     }
@@ -59,15 +64,18 @@ async function populateAwardsMarquee() {
                             }
                         });
                     }
-                });
+                }
             }
         } catch (err) {
             console.warn('Could not fetch all years for marquee:', err);
         }
     }
 
+    // Shuffle and limit to 60 for performance
     allPosters.sort(() => Math.random() - 0.5);
-    const displayPosters = [...allPosters, ...allPosters, ...allPosters]; // Triple for seamless loop
+    const limitedPosters = allPosters.slice(0, 60);
+
+    const displayPosters = [...limitedPosters, ...limitedPosters, ...limitedPosters]; // Triple for seamless loop
 
     displayPosters.forEach(poster => {
         const img = document.createElement('img');
@@ -77,7 +85,7 @@ async function populateAwardsMarquee() {
         marquee.appendChild(img);
     });
 
-    console.log(`🎬 Awards: ${allPosters.length} posters`);
+    console.log(`🎬 Awards Marquee: ${limitedPosters.length} posters (limited from pool of ${allPosters.length})`);
 }
 
 // Trending marquee - popular movies from TMDB
@@ -111,7 +119,7 @@ async function populateTrendingMarquee() {
 
     displayPosters.forEach(poster => {
         const img = document.createElement('img');
-        img.src = poster.src;
+        img.src = poster.src.replace('w342', 'w185'); // Ensure smaller size for performance
         img.alt = poster.alt;
         img.loading = 'lazy';
         marquee.appendChild(img);
