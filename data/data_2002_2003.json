@@ -371,25 +371,29 @@
       "name": "Minority Report",
       "awards": {
         "adg": "X"
-      }
+      },
+      "posterPath": "/ccqpHq5tk5W4ymbSbuoy4uYOxFI.jpg"
     },
     {
       "name": "The Bourne Identity",
       "awards": {
         "adg": "X"
-      }
+      },
+      "posterPath": "/aP8swke3gmowbkfZ6lmNidu0y9p.jpg"
     },
     {
       "name": "One Hour Photo",
       "awards": {
         "adg": "X"
-      }
+      },
+      "posterPath": "/fuSIN3Nq6dmaA8LZSkASpQueFO1.jpg"
     },
     {
       "name": "Panic Room",
       "awards": {
         "adg": "X"
-      }
+      },
+      "posterPath": "/hANYbvfwxmkC9E4yY6YyJxYxlSJ.jpg"
     }
   ],
   "best-director": [
@@ -860,7 +864,8 @@
       "awards": {
         "oscar": "X",
         "gg": "X"
-      }
+      },
+      "profilePath": "/t5JQHmEKrMuusfgLaOEAwjOookT.jpg"
     },
     {
       "name": "Leonardo DiCaprio",
@@ -1009,7 +1014,8 @@
       "awards": {
         "spirit": "X"
       },
-      "film": "The Good Girl"
+      "film": "The Good Girl",
+      "profilePath": "/t5JQHmEKrMuusfgLaOEAwjOookT.jpg"
     },
     {
       "name": "Peter Weller",

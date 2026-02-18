@@ -337,37 +337,43 @@
       "name": "The Cell",
       "awards": {
         "adg": "X"
-      }
+      },
+      "posterPath": "/kfYVxvDDAJoFq2knHUzAZP09pAc.jpg"
     },
     {
       "name": "Dr. Seuss' How the Grinch Stole Christmas",
       "awards": {
         "adg": "X"
-      }
+      },
+      "posterPath": "/1WZbbPApEivA421gCOluuzMMKCk.jpg"
     },
     {
       "name": "The Patriot",
       "awards": {
         "adg": "X"
-      }
+      },
+      "posterPath": "/fWZd815QxUCUcrWQZwUkAp9ljG.jpg"
     },
     {
       "name": "Cast Away",
       "awards": {
         "critics": "Y"
-      }
+      },
+      "posterPath": "/7lLJgKnAicAcR5UEuo8xhSMj18w.jpg"
     },
     {
       "name": "Crouching Tiger, Hidden Dragon (Wo hu cang long)",
       "awards": {
         "critics": "Y"
-      }
+      },
+      "posterPath": "/iNDVBFNz4XyYzM9Lwip6atSTFqf.jpg"
     },
     {
       "name": "Thirteen Days",
       "awards": {
         "critics": "Y"
-      }
+      },
+      "posterPath": "/aLx9UXH9fK2v6NDMvMyW4X88K3u.jpg"
     }
   ],
   "best-director": [
@@ -486,7 +492,8 @@
       "film": "The House of Mirth",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "profilePath": "/uBbFee7ggk5vrCK4kcAcLOSYi0y.jpg"
     },
     {
       "name": "Mike Leigh",

@@ -429,19 +429,22 @@
       "name": "Casino Royale",
       "awards": {
         "adg": "Y"
-      }
+      },
+      "posterPath": "/lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg"
     },
     {
       "name": "Pan's Labyrinth (El laberinto del fauno)",
       "awards": {
         "adg": "Y"
-      }
+      },
+      "posterPath": "/z7xXihu5wHuSMWymq5VAulPVuvg.jpg"
     },
     {
       "name": "Curse of the Golden Flower (Man cheng jin dai huang jin jia)",
       "awards": {
         "adg": "Y"
-      }
+      },
+      "posterPath": "/gHkkDpfo5YnOrbVfwtDHi91BkrU.jpg"
     }
   ],
   "best-director": [
@@ -1043,7 +1046,8 @@
       "awards": {
         "lafca": "X"
       },
-      "film": "Pan's Labyrinth"
+      "film": "Pan's Labyrinth",
+      "profilePath": "/n3HcmUflYYaHUiQmzaayi0yqcRf.jpg"
     },
     {
       "name": "Edward Norton",

@@ -83,7 +83,8 @@ def scrape_single_year(driver, year):
                         }}
                         
                         // Find and click start year dropdown
-                        const yearDropdowns = document.querySelectorAll('div.relative.cursor-pointer');
+                        // Updated selector based on debug output (cursor-pointer might be missing)
+                        const yearDropdowns = document.querySelectorAll('div.relative.border.border-gray-400');
                         if (yearDropdowns.length >= 2) {{
                             // Click start year dropdown
                             yearDropdowns[0].click();
@@ -245,7 +246,7 @@ def save_dga_data(data, filename="scraper/dga_awards.json"):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Scrape DGA Feature Film Awards')
     parser.add_argument('--start', type=int, default=2012, help='Start year (default: 2012)')
-    parser.add_argument('--end', type=int, default=2024, help='End year (default: 2024)')
+    parser.add_argument('--end', type=int, default=2025, help='End year (default: 2025)')
     parser.add_argument('--output', type=str, default='scraper/dga_awards.json', help='Output file')
     
     args = parser.parse_args()

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-07T17:01:15.163070",
+  "generated": "2026-02-18T20:17:21.630174",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -13567,13 +13567,13 @@
       "spirit": {
         "best-film": {
           "nominations": 5,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
         "best-director": {
           "nominations": 5,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -13585,7 +13585,7 @@
         },
         "best-actress": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 10
         }

@@ -342,31 +342,36 @@
       "name": "Girl with a Pearl Earring",
       "awards": {
         "adg": "X"
-      }
+      },
+      "posterPath": "/41DkOi1MvTgTQXt5BevVSzo94kk.jpg"
     },
     {
       "name": "Pirates of the Caribbean: The Curse of the Black Pearl",
       "awards": {
         "adg": "X"
-      }
+      },
+      "posterPath": "/poHwCZeWzJCShH7tOjg8RIoyjcw.jpg"
     },
     {
       "name": "Kill Bill: Vol. 1",
       "awards": {
         "adg": "X"
-      }
+      },
+      "posterPath": "/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg"
     },
     {
       "name": "Something's Gotta Give",
       "awards": {
         "adg": "X"
-      }
+      },
+      "posterPath": "/1cpdqe0SpiHzzbOLq9GDUUlZdSl.jpg"
     },
     {
       "name": "Under the Tuscan Sun",
       "awards": {
         "adg": "X"
-      }
+      },
+      "posterPath": "/3vQUQwdtfPt1Sl2GZrIECWWA0dk.jpg"
     }
   ],
   "best-director": [
@@ -505,7 +510,8 @@
       "film": "Seabiscuit",
       "awards": {
         "dga": "X"
-      }
+      },
+      "profilePath": "/xIQshBR5eJgzD7RjEXuRwfFvATW.jpg"
     },
     {
       "name": "Fernando Meirelles",
