@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-18T20:17:21.630174",
+  "generated": "2026-03-12T20:22:18.185000",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -13229,25 +13229,25 @@
       "bafta": {
         "best-film": {
           "nominations": 5,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
         "best-director": {
           "nominations": 6,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 6
         },
         "best-actor": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         },
         "best-actress": {
           "nominations": 12,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 12
         }
@@ -13255,7 +13255,7 @@
       "sag": {
         "best-film": {
           "nominations": 5,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
@@ -13267,13 +13267,13 @@
         },
         "best-actor": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 10
         },
         "best-actress": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 10
         }
@@ -13411,7 +13411,7 @@
       "pga": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
@@ -13463,7 +13463,7 @@
       "wga": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 10
         },
@@ -13489,7 +13489,7 @@
       "adg": {
         "best-film": {
           "nominations": 15,
-          "winners": 0,
+          "winners": 3,
           "status": "ok",
           "expected": 15
         },
@@ -13645,7 +13645,7 @@
       "annie": {
         "best-film": {
           "nominations": 5,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },

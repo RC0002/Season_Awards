@@ -551,7 +551,8 @@
         "oscar": "X",
         "spirit": "X"
       },
-      "film": "Nebraska"
+      "film": "Nebraska",
+      "profilePath": "/d8mwLxuCMxMxcE8Qys9sdUb7UZg.jpg"
     },
     {
       "name": "Martin Scorsese",
@@ -630,7 +631,8 @@
       "awards": {
         "spirit": "X"
       },
-      "film": "Mud"
+      "film": "Mud",
+      "profilePath": "/qUZSdnZdYbF2JJe4LOxQiMl4x3J.jpg"
     }
   ],
   "best-actor": [
@@ -1173,7 +1175,8 @@
       "film": "Le Week",
       "awards": {
         "bifa": "Y"
-      }
+      },
+      "profilePath": "/sgyf4vOUs5KlRmp4Uuw7UXKjU2b.jpg"
     },
     {
       "name": "Imogen Poots",

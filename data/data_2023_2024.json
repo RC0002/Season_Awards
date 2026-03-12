@@ -581,14 +581,16 @@
       "film": "Io capitano",
       "awards": {
         "venice": "Y"
-      }
+      },
+      "profilePath": "/bszKQINwwZKe9Ybwdaz8G5a6H7S.jpg"
     },
     {
       "name": "Andrew Haigh",
       "film": "All of Us Strangers \n Raine Allen",
       "awards": {
         "bifa": "Y"
-      }
+      },
+      "profilePath": "/pJAv105SAZiQ3lGY2wGURz4bENp.jpg"
     },
     {
       "name": "Yorgos Lanthimos",
@@ -624,7 +626,8 @@
         "critics": "X",
         "dga": "X",
         "astra": "X"
-      }
+      },
+      "profilePath": "/d8mwLxuCMxMxcE8Qys9sdUb7UZg.jpg"
     },
     {
       "name": "Greta Gerwig",
@@ -654,7 +657,8 @@
       "awards": {
         "bafta": "X",
         "spirit": "X"
-      }
+      },
+      "profilePath": "/pJAv105SAZiQ3lGY2wGURz4bENp.jpg"
     },
     {
       "name": "Martin Scorsese",
@@ -724,7 +728,8 @@
       "film": "Miller",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "profilePath": "/66mOPPT5uByj4BneZZxxbzhOnoc.jpg"
     },
     {
       "name": "Sam H. Freeman and Ng Choon Ping",
@@ -738,7 +743,8 @@
       "film": "Scrapper",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "profilePath": "/2ROJ42oQZRVVdBfPJuxPZuNecM1.jpg"
     },
     {
       "name": "Molly Manning Walker",
@@ -1198,7 +1204,8 @@
       "awards": {
         "spirit": "X"
       },
-      "film": "Rotting in the Sun"
+      "film": "Rotting in the Sun",
+      "profilePath": "/z4VVmyuL3BfIjRMFUUPS987hJET.jpg"
     },
     {
       "name": "Ben Whishaw",
@@ -1250,14 +1257,16 @@
       "film": "Pretty Red Dress",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "profilePath": "/rGWHZ8Aku3ymyt4sTHUADYaf7oy.jpg"
     },
     {
       "name": "Amir El",
       "film": "Masry",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "profilePath": "/naHrnri1hs5mMcvydNIORuM2nQn.jpg"
     },
     {
       "name": "Jamie Foxx",

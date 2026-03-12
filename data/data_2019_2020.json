@@ -551,7 +551,8 @@
         "oscar": "X",
         "bafta": "X"
       },
-      "film": "Joker"
+      "film": "Joker",
+      "profilePath": "/A6FPht87DiqXzp456WjakLi2AtP.jpg"
     },
     {
       "name": "Bong Joon Ho",
@@ -658,7 +659,8 @@
       "film": "Bait",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "profilePath": "/pHRY0UTPHZhP8JNKwg9LpxyRU6R.jpg"
     },
     {
       "name": "Asif Kapadia",
@@ -1536,7 +1538,8 @@
       "awards": {
         "astra": "X"
       },
-      "film": "zhen"
+      "film": "zhen",
+      "profilePath": "/ml7qxU3Z8N3xphUMHZaN6L2iID1.jpg"
     },
     {
       "name": "Karen Allen",

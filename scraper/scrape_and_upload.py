@@ -31,7 +31,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 # Import functions from existing modules
 from master_scraper import scrape_year, save_year_data, CEREMONY_MAP
-from firebase_upload import upload_year_data, load_json_file, FIREBASE_DB_URL
+from firebase_upload import upload_year_data, load_json_file
 
 
 def emit_event(event_type, data=None):
@@ -825,20 +825,25 @@ def scrape_year_enhanced(year, awards=None, parallel=True):
 # =============================================================================
 
 def get_file_hash(filepath):
-    """Get MD5 hash of a JSON file for change detection"""
+    """Get MD5 hash of a JSON file for change detection (serialized consistently)"""
     if not os.path.exists(filepath):
         return None
-    with open(filepath, 'rb') as f:
-        return hashlib.md5(f.read()).hexdigest()
+    with open(filepath, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    serialized = json.dumps(data, sort_keys=True, ensure_ascii=False)
+    return hashlib.md5(serialized.encode('utf-8')).hexdigest()
 
 
 def get_firebase_hash(year_key):
     """Get hash of data currently in Firebase for comparison"""
-    url = f"{FIREBASE_DB_URL}/awards/{year_key}.json"
+    from firebase_admin import db as fb_db
     try:
-        response = requests.get(url)
-        if response.status_code == 200 and response.text != 'null':
-            return hashlib.md5(response.content).hexdigest()
+        ref = fb_db.reference(f'/awards/{year_key}')
+        firebase_data = ref.get()
+        if firebase_data:
+            # Serialize consistently for comparison
+            serialized = json.dumps(firebase_data, sort_keys=True, ensure_ascii=False)
+            return hashlib.md5(serialized.encode('utf-8')).hexdigest()
     except:
         pass
     return None
@@ -1262,15 +1267,11 @@ def generate_analysis_json(years_to_update=None):
         json.dump(analysis, f, indent=2, ensure_ascii=False)
     
     # Upload to Firebase
-    firebase_url = "https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app"
-    try:
-        response = requests.put(f"{firebase_url}/analysis.json", json=analysis)
-        if response.status_code == 200:
-            print(f"\n  📊 Generated analysis.json and uploaded to Firebase")
-        else:
-            print(f"\n  📊 Generated analysis.json (Firebase upload failed: {response.status_code})")
-    except Exception as e:
-        print(f"\n  📊 Generated analysis.json (Firebase upload error: {e})")
+    from firebase_upload import upload_analysis
+    if upload_analysis(analysis):
+        print(f"\n  📊 Generated analysis.json and uploaded to Firebase")
+    else:
+        print(f"\n  📊 Generated analysis.json (Firebase upload failed)")
 
 
 

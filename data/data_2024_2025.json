@@ -523,7 +523,8 @@
       "awards": {
         "cannes": "Y"
       },
-      "film": "Grand Tour"
+      "film": "Grand Tour",
+      "profilePath": "/fnMMAUMerPEqZKQBscVtV2cUv6U.jpg"
     },
     {
       "name": "Christopher Nolan",
@@ -597,7 +598,8 @@
         "bafta": "X",
         "critics": "X",
         "dga": "X"
-      }
+      },
+      "profilePath": "/st8iwTbaPHmX0lOiyGFC4sIcA8H.jpg"
     },
     {
       "name": "Denis Villeneuve",
@@ -644,7 +646,8 @@
       "film": "Bird",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "profilePath": "/ol6skeUdmRIB2eZDq3YJpJjY4P3.jpg"
     },
     {
       "name": "Nora Fingscheidt",
@@ -1075,7 +1078,8 @@
       "film": "Hard Truths",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "profilePath": "/xwUikOrP51Y3FnKysZ4dr3saGFZ.jpg"
     },
     {
       "name": "Barry Keoghan",

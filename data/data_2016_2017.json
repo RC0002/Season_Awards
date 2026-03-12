@@ -472,7 +472,8 @@
         "spirit": "X",
         "bifa": "Y"
       },
-      "film": "American Honey"
+      "film": "American Honey",
+      "profilePath": "/ol6skeUdmRIB2eZDq3YJpJjY4P3.jpg"
     },
     {
       "name": "Amat Escalante",
@@ -518,7 +519,8 @@
         "bafta": "X",
         "critics": "X"
       },
-      "film": "Manchester by the Sea"
+      "film": "Manchester by the Sea",
+      "profilePath": "/4eIorZhYSIAnGUCOjRv45nB08FG.jpg"
     },
     {
       "name": "Denis Villeneuve",
@@ -595,7 +597,8 @@
       "film": "Manchester By The Sea",
       "awards": {
         "dga": "X"
-      }
+      },
+      "profilePath": "/4eIorZhYSIAnGUCOjRv45nB08FG.jpg"
     },
     {
       "name": "Pablo Larraín",
@@ -611,7 +614,8 @@
       "awards": {
         "spirit": "X"
       },
-      "film": "Loving"
+      "film": "Loving",
+      "profilePath": "/qUZSdnZdYbF2JJe4LOxQiMl4x3J.jpg"
     },
     {
       "name": "Kelly Reichardt",
@@ -757,7 +761,8 @@
       "film": "Il cittadino illustre",
       "awards": {
         "venice": "Y"
-      }
+      },
+      "profilePath": "/t8d1BEV3OEasLnIULbL1oYVIvxa.jpg"
     },
     {
       "name": "Shahab Hosseini",
@@ -1233,7 +1238,8 @@
       "awards": {
         "spirit": "Y"
       },
-      "film": "Other People"
+      "film": "Other People",
+      "profilePath": "/5ZTbNpJtDRU4ZCH24nJvFRxaqAD.jpg"
     },
     {
       "name": "Avin Manshadi",
@@ -1441,7 +1447,8 @@
       "awards": {
         "spirit": "X"
       },
-      "film": "Little Men"
+      "film": "Little Men",
+      "profilePath": "/tNlCDdvzkGyvdv2SbWzkQdpV5xA.jpg"
     },
     {
       "name": "Riley Keough",

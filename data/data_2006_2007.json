@@ -507,7 +507,8 @@
       "awards": {
         "nyfcc": "Y"
       },
-      "film": "Brokeback Mountain"
+      "film": "Brokeback Mountain",
+      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
     },
     {
       "name": "Alain Resnais",
@@ -523,7 +524,8 @@
       "film": "The Last King of Scotland",
       "awards": {
         "bifa": "Y"
-      }
+      },
+      "profilePath": "/40P6puNsdMx2ov6bQnZUZ867O3j.jpg"
     },
     {
       "name": "Stephen Frears",

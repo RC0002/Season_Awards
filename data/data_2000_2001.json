@@ -401,7 +401,8 @@
         "dga": "X",
         "lafca": "X",
         "spirit": "Y"
-      }
+      },
+      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
     },
     {
       "name": "Steven Soderbergh",
@@ -558,7 +559,8 @@
         "gg": {
           "winner": true
         }
-      }
+      },
+      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
     }
   ],
   "best-actor": [
@@ -790,7 +792,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X"
-      }
+      },
+      "profilePath": "/cOaibfAluUeWPtcSOjedfGXn9ym.jpg"
     },
     {
       "name": "Oliver Reed",
@@ -1070,7 +1073,8 @@
         "cannes": "Y"
       },
       "film": "Dancer in the Dark",
-      "role": "Leading"
+      "role": "Leading",
+      "profilePath": "/Ahc3TWomYakLcbqZRVBDdf3rhMR.jpg"
     },
     {
       "name": "Rose Byrne",

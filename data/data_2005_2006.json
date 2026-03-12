@@ -396,7 +396,8 @@
         "lafca": "Y",
         "spirit": "Y"
       },
-      "film": "Brokeback Mountain"
+      "film": "Brokeback Mountain",
+      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
     },
     {
       "name": "Michael Haneke",
@@ -421,7 +422,8 @@
       "film": "BROKEBACK MOUNTAIN",
       "awards": {
         "dga": "Y"
-      }
+      },
+      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
     },
     {
       "name": "Clint Eastwood",
@@ -601,7 +603,8 @@
       "awards": {
         "spirit": "X"
       },
-      "film": "Nine Lives"
+      "film": "Nine Lives",
+      "profilePath": "/zmA2z8rbGEUX5A7TqQWeKgEIZnm.jpg"
     },
     {
       "name": "Laurence Dunmore",

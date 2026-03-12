@@ -540,7 +540,8 @@
       "film": "Fish Tank",
       "awards": {
         "bifa": "Y"
-      }
+      },
+      "profilePath": "/ol6skeUdmRIB2eZDq3YJpJjY4P3.jpg"
     },
     {
       "name": "James Cameron",
@@ -684,14 +685,16 @@
       "awards": {
         "spirit": "X"
       },
-      "film": "Two Lovers"
+      "film": "Two Lovers",
+      "profilePath": "/f71NPeBgPfqKWYrHzLgoZDPOqwB.jpg"
     },
     {
       "name": "Michael Hoffman",
       "awards": {
         "spirit": "X"
       },
-      "film": "The Last Station"
+      "film": "The Last Station",
+      "profilePath": "/vi8H1gOWrpT1EtqPOnJ8QeEsSLU.jpg"
     },
     {
       "name": "Armando Iannucci",
@@ -1287,7 +1290,8 @@
       "film": "Marie Duff",
       "awards": {
         "bifa": "Y"
-      }
+      },
+      "profilePath": "/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg"
     },
     {
       "name": "Anna Kendrick",

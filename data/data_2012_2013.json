@@ -471,7 +471,8 @@
         "oscar": "Y",
         "critics": "X"
       },
-      "film": "Life of Pi"
+      "film": "Life of Pi",
+      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
     },
     {
       "name": "David O. Russell",
@@ -567,7 +568,8 @@
       "film": "Life Of Pi",
       "awards": {
         "dga": "X"
-      }
+      },
+      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
     },
     {
       "name": "Tom Hooper",
