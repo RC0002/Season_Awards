@@ -830,14 +830,6 @@
       "tmdbId": 19292
     },
     {
-      "name": "Rose Byrne",
-      "awards": {
-        "spirit": "Y",
-        "gotham": "X"
-      },
-      "film": "If I Had Legs I'd Kick You"
-    },
-    {
       "name": "Toni Servillo",
       "film": "La grazia",
       "awards": {
@@ -1036,17 +1028,6 @@
         "spirit": "X"
       },
       "film": "Twinless"
-    },
-    {
-      "name": "Inga Ibsdotter Lilleaas",
-      "awards": {
-        "lafca": "X",
-        "gotham": "X"
-      },
-      "role": "Supporting",
-      "film": "Sentimental Value",
-      "profilePath": "/vNCAXup8zMJi4vK0X8oNIGGjZFj.jpg",
-      "tmdbId": 1421850
     },
     {
       "name": "Andrew Scott",
@@ -1269,43 +1250,12 @@
       "film": "Blue Sun Palace"
     },
     {
-      "name": "Jessie Buckley",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Hamnet",
-      "profilePath": "/qbz9175DERSqsCQeYWGJWwqb38z.jpg"
-    },
-    {
-      "name": "Jennifer Lawrence",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Die My Love",
-      "profilePath": "/6WTY6HjXMGxnHilJRVC3eLnu43F.jpg",
-      "tmdbId": 72129
-    },
-    {
       "name": "Josh O'Connor",
       "awards": {
         "gotham": "X"
       },
       "film": "The Mastermind",
       "profilePath": "/tn5vFB9DLwdVkrRw6ktFfnyqiT9.jpg"
-    },
-    {
-      "name": "Amanda Seyfried",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "The Testament of Ann Lee"
-    },
-    {
-      "name": "Tessa Thompson",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Hedda"
     },
     {
       "name": "Indya Moore",
@@ -1315,13 +1265,6 @@
       "film": "Father Mother Sister Brother",
       "profilePath": "/uIRHpgbj9DfjMksigXmi497xRqU.jpg",
       "tmdbId": 1789788
-    },
-    {
-      "name": "Teyana Taylor",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "One Battle After Another"
     }
   ],
   "best-actress": [
@@ -1368,7 +1311,8 @@
         "nbr": "Y",
         "astra": "X",
         "lafca": "Y",
-        "gotham": "X"
+        "gotham": "X",
+        "spirit": "Y"
       }
     },
     {
@@ -1570,7 +1514,9 @@
       "awards": {
         "gg": "X",
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "lafca": "X",
+        "gotham": "X"
       }
     },
     {
