@@ -2,69 +2,65 @@
   "best-film": [
     {
       "name": "One Battle After Another",
+      "genre": "Comedy",
       "awards": {
-        "oscar": "X",
-        "bafta": "Y",
         "gg": "Y",
+        "oscar": "Y",
+        "bafta": "Y",
         "sag": "X",
         "critics": "Y",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "pga": "Y",
         "wga": "Y",
         "adg": "Y",
         "astra": "Y",
         "lafca": "Y",
         "gotham": "Y"
-      },
-      "genre": "Comedy",
-      "posterPath": "/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
-      "tmdbId": 1054867
+      }
     },
     {
       "name": "Sinners",
+      "genre": "Drama",
       "awards": {
+        "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "gg": "X",
         "sag": "Y",
         "critics": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "pga": "X",
         "wga": "Y",
         "adg": "X",
         "astra": "Y"
       },
-      "genre": "Drama",
-      "posterPath": "/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
-      "tmdbId": 1233413
+      "posterPath": "/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg"
     },
     {
       "name": "Frankenstein",
+      "genre": "Drama",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "sag": "X",
         "critics": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "pga": "X",
         "wga": "X",
         "adg": "Y",
         "astra": "X"
       },
-      "genre": "Drama",
-      "posterPath": "/g4JtvGlQO7DByTI6frUobqvSL3R.jpg",
-      "tmdbId": 1062722
+      "posterPath": "/aPovnAoY66jtqri3GYQyd2yMf4d.jpg"
     },
     {
       "name": "Train Dreams",
       "awards": {
         "oscar": "X",
         "critics": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "pga": "X",
         "wga": "X",
         "astra": "X",
@@ -76,10 +72,11 @@
     },
     {
       "name": "Hamnet",
+      "genre": "Drama",
       "awards": {
+        "gg": "Y",
         "oscar": "X",
         "bafta": "X",
-        "gg": "Y",
         "sag": "X",
         "critics": "X",
         "afi": "Y",
@@ -89,40 +86,36 @@
         "astra": "X",
         "gotham": "X"
       },
-      "genre": "Drama",
-      "posterPath": "/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
-      "tmdbId": 858024
+      "posterPath": "/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg"
     },
     {
       "name": "Marty Supreme",
+      "genre": "Comedy",
       "awards": {
+        "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "gg": "X",
         "sag": "X",
         "critics": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "pga": "X",
         "wga": "X",
         "adg": "X",
         "astra": "X"
       },
-      "genre": "Comedy",
-      "posterPath": "/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
-      "tmdbId": 1317288
+      "posterPath": "/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg"
     },
     {
       "name": "Wicked: For Good",
       "awards": {
         "critics": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "adg": "X",
         "astra": "X"
       },
-      "posterPath": "/si9tolnefLSUKaqQEGz1bWArOaL.jpg",
-      "tmdbId": 967941
+      "posterPath": "/si9tolnefLSUKaqQEGz1bWArOaL.jpg"
     },
     {
       "name": "It Was Just an Accident",
@@ -140,8 +133,8 @@
       "name": "Jay Kelly",
       "awards": {
         "critics": "X",
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "astra": "X"
       },
       "posterPath": "/lEXYpY9X17pGC7xYYy17Guv0L3J.jpg",
@@ -150,18 +143,17 @@
     {
       "name": "Avatar: Fire and Ash",
       "awards": {
-        "afi": "Y",
         "nbr": "Y",
+        "afi": "Y",
         "adg": "X"
-      },
-      "posterPath": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
-      "tmdbId": 83533
+      }
     },
     {
       "name": "Bugonia",
+      "genre": "Comedy",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X",
         "afi": "Y",
         "pga": "X",
@@ -170,9 +162,7 @@
         "astra": "X",
         "gotham": "X"
       },
-      "genre": "Comedy",
-      "posterPath": "/rSdOua3wKMEaFWDcKAYWRjXQWOt.jpg",
-      "tmdbId": 701387
+      "posterPath": "/rSdOua3wKMEaFWDcKAYWRjXQWOt.jpg"
     },
     {
       "name": "F1",
@@ -203,28 +193,26 @@
       "tmdbId": 1208348
     },
     {
-      "name": "KPop Demon Hunters",
-      "awards": {
-        "annie": "Y"
-      },
-      "posterPath": "/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg",
-      "tmdbId": 803796
-    },
-    {
       "name": "Father Mother Sister Brother",
       "awards": {
         "venice": "Y"
       },
-      "posterPath": "/96O3Ol3f2veMxAxYqsML8rOumB9.jpg",
-      "tmdbId": 1159206
+      "posterPath": "/96O3Ol3f2veMxAxYqsML8rOumB9.jpg"
     },
     {
       "name": "The Brutalist",
       "awards": {
         "nyfcc": "Y"
       },
-      "posterPath": "/vP7Yd6couiAaw9jgMd5cjMRj3hQ.jpg",
-      "tmdbId": 549509
+      "posterPath": "/v97FWITEOifqhJUfDnUPpu8VPcO.jpg"
+    },
+    {
+      "name": "KPop Demon Hunters",
+      "awards": {
+        "annie": "Y"
+      },
+      "posterPath": "/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg",
+      "tmdbId": 803796
     },
     {
       "name": "The Fantastic Four: First Steps",
@@ -239,31 +227,30 @@
       "awards": {
         "bifa": "Y"
       },
-      "posterPath": "/7Pd6ChSQjSXy4snJiorSdzg2cG3.jpg",
-      "tmdbId": 1287141
+      "posterPath": "/7Pd6ChSQjSXy4snJiorSdzg2cG3.jpg"
     },
     {
       "name": "Sentimental Value",
+      "genre": "Drama",
       "awards": {
+        "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "gg": "X",
         "critics": "X",
         "pga": "X",
         "astra": "X"
       },
-      "genre": "Drama",
       "posterPath": "/pz9NCWxxOk3o0W3v1Zkhawrwb4i.jpg",
       "tmdbId": 1124566
     },
     {
       "name": "The Secret Agent",
+      "genre": "Drama",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "lafca": "X"
       },
-      "genre": "Drama",
       "posterPath": "/rZqolYhxMEe6TZZTjSmFw9crDTD.jpg",
       "tmdbId": 1220564
     },
@@ -273,9 +260,7 @@
       "awards": {
         "gg": "X",
         "astra": "X"
-      },
-      "posterPath": "/sBpxTGLzKnvPSVtL5yQYpSxvKEb.jpg",
-      "tmdbId": 639988
+      }
     },
     {
       "name": "Weapons",
@@ -293,8 +278,7 @@
         "gotham": "X"
       },
       "screenplay_type": "original",
-      "posterPath": "/va0TQ9WprMXRqQAzY56vyqY0Yd5.jpg",
-      "tmdbId": 1160360
+      "posterPath": "/va0TQ9WprMXRqQAzY56vyqY0Yd5.jpg"
     },
     {
       "name": "Sorry, Baby",
@@ -311,8 +295,7 @@
       "awards": {
         "gg": "X"
       },
-      "posterPath": "/nij3i5ziQdqfiK29gb4rX1bkmVy.jpg",
-      "tmdbId": 1299655
+      "posterPath": "/dVU7SNc6dgStTVdtbPLQncWxsyZ.jpg"
     },
     {
       "name": "Nouvelle Vague",
@@ -322,6 +305,15 @@
       },
       "posterPath": "/AfE7DZ0DPgme6I58dlYp1Bo9xeN.jpg",
       "tmdbId": 1254808
+    },
+    {
+      "name": "Black Bag",
+      "awards": {
+        "wga": "X"
+      },
+      "screenplay_type": "original",
+      "posterPath": "/hHPovtU4b96LHcoeEwRkGHI5btw.jpg",
+      "tmdbId": 1233575
     },
     {
       "name": "Elio",
@@ -336,8 +328,7 @@
       "awards": {
         "annie": "X"
       },
-      "posterPath": "/qoqDvTUVPoZJWw24AjGDt3J4tZN.jpg",
-      "tmdbId": 682012
+      "posterPath": "/qoqDvTUVPoZJWw24AjGDt3J4tZN.jpg"
     },
     {
       "name": "The Bad Guys 2",
@@ -356,21 +347,11 @@
       "tmdbId": 1084242
     },
     {
-      "name": "Black Bag",
-      "awards": {
-        "wga": "X"
-      },
-      "screenplay_type": "original",
-      "posterPath": "/hHPovtU4b96LHcoeEwRkGHI5btw.jpg",
-      "tmdbId": 1233575
-    },
-    {
       "name": "Mission: Impossible – The Final Reckoning",
       "awards": {
         "adg": "X"
       },
-      "posterPath": "/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
-      "tmdbId": 575265
+      "posterPath": "/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg"
     },
     {
       "name": "The Phoenician Scheme",
@@ -385,8 +366,7 @@
       "awards": {
         "adg": "X"
       },
-      "posterPath": "/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg",
-      "tmdbId": 696506
+      "posterPath": "/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg"
     },
     {
       "name": "Superman",
@@ -408,9 +388,7 @@
       "name": "I Swear",
       "awards": {
         "bifa": "X"
-      },
-      "posterPath": "/vUwyhNWBKkSwK8ELvEeBRwV724h.jpg",
-      "tmdbId": 1317149
+      }
     },
     {
       "name": "My Father's Shadow",
@@ -449,16 +427,14 @@
       "awards": {
         "spirit": "X"
       },
-      "posterPath": "/9vaw9Az5tPLMjNLj426KgKsp0k8.jpg",
-      "tmdbId": 1245347
+      "posterPath": "/9vaw9Az5tPLMjNLj426KgKsp0k8.jpg"
     },
     {
       "name": "East of Wall",
       "awards": {
         "gotham": "X"
       },
-      "posterPath": "/s6CY1fNNVbB1ShrTC0en34Z2ZJ8.jpg",
-      "tmdbId": 39360
+      "posterPath": "/1OsdhvbLNLUJEi9vqQCyhAXsaRX.jpg"
     },
     {
       "name": "Familiar Touch",
@@ -473,15 +449,14 @@
       "awards": {
         "gotham": "X"
       },
-      "posterPath": "/3rbY3fjXQpt4sQLQvKD7CT6oJsS.jpg",
-      "tmdbId": 1264573
+      "posterPath": "/3rbY3fjXQpt4sQLQvKD7CT6oJsS.jpg"
     },
     {
       "name": "The Testament of Ann Lee",
       "awards": {
         "gotham": "X"
       },
-      "posterPath": "/hBGg3IGRM7LM6ydMmDrl8mEx33Y.jpg",
+      "posterPath": "/nb4LpzoNCNMxxNv9RhuIySHBanW.jpg",
       "tmdbId": 1401281
     }
   ],
@@ -490,11 +465,12 @@
       "name": "Paul Thomas Anderson",
       "film": "One Battle After Another",
       "awards": {
-        "oscar": "X",
-        "bafta": "Y",
         "gg": "Y",
+        "oscar": "Y",
+        "bafta": "Y",
         "critics": "Y",
         "nbr": "Y",
+        "dga": "Y",
         "astra": "X",
         "lafca": "Y",
         "gotham": "X"
@@ -506,10 +482,11 @@
       "name": "Ryan Coogler",
       "film": "Sinners",
       "awards": {
+        "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "gg": "X",
         "critics": "X",
+        "dga": "X",
         "astra": "Y",
         "lafca": "X"
       },
@@ -523,8 +500,14 @@
         "gg": "X",
         "gotham": "Y"
       },
-      "profilePath": "/viZZkkfcuWze68bvUiMZmYZe8Qg.jpg",
-      "tmdbId": 120229
+      "profilePath": "/viZZkkfcuWze68bvUiMZmYZe8Qg.jpg"
+    },
+    {
+      "name": "Benny Safdie",
+      "film": "The Smashing Machine",
+      "awards": {
+        "venice": "Y"
+      }
     },
     {
       "name": "Kleber Mendonça Filho",
@@ -534,15 +517,6 @@
       "film": "The Secret Agent",
       "profilePath": "/7jOzp98FiL6C22tphTHEPWAhK11.jpg",
       "tmdbId": 1016214
-    },
-    {
-      "name": "Benny Safdie",
-      "film": "The Smashing Machine",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/d1LVZAt1W2Wg6yTWRWkDkkyyGI.jpg",
-      "tmdbId": 227564
     },
     {
       "name": "RaMell Ross",
@@ -558,9 +532,7 @@
       "film": "My Father's Shadow \n Laura Carreira",
       "awards": {
         "bifa": "Y"
-      },
-      "profilePath": "/jDef5RADc8j2j0kmpG3GAjflytD.jpg",
-      "tmdbId": 2807817
+      }
     },
     {
       "name": "Clint Bentley",
@@ -575,27 +547,25 @@
       "name": "Chloé Zhao",
       "film": "Hamnet",
       "awards": {
+        "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "gg": "X",
         "critics": "X",
+        "dga": "X",
         "astra": "X"
-      },
-      "profilePath": "/nhu7l9iexqdJbjjAHpg8vctUkAR.jpg",
-      "tmdbId": 1395183
+      }
     },
     {
       "name": "Joachim Trier",
       "film": "Sentimental Value",
       "awards": {
+        "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "gg": "X",
         "critics": "X",
         "astra": "X"
       },
-      "profilePath": "/o5KXJRWbzyGYSxDhXsBqbCiZnqU.jpg",
-      "tmdbId": 71609
+      "profilePath": "/o5KXJRWbzyGYSxDhXsBqbCiZnqU.jpg"
     },
     {
       "name": "Josh Safdie",
@@ -604,10 +574,9 @@
         "oscar": "X",
         "bafta": "X",
         "critics": "X",
+        "dga": "X",
         "astra": "X"
-      },
-      "profilePath": "/bNYM97KLLVoICe3fZt6bKbvXV8d.jpg",
-      "tmdbId": 129561
+      }
     },
     {
       "name": "Guillermo del Toro",
@@ -615,10 +584,10 @@
       "awards": {
         "gg": "X",
         "critics": "X",
+        "dga": "X",
         "astra": "X"
       },
-      "profilePath": "/gldeyCtKcaqnK1v4Vu9vqayhzUQ.jpg",
-      "tmdbId": 10828
+      "profilePath": "/gldeyCtKcaqnK1v4Vu9vqayhzUQ.jpg"
     },
     {
       "name": "Mary Bronstein",
@@ -635,9 +604,7 @@
       "film": "Bugonia",
       "awards": {
         "bafta": "X"
-      },
-      "profilePath": "/dvtv8eV1O8Fl385ctOu3sqO2PbD.jpg",
-      "tmdbId": 122423
+      }
     },
     {
       "name": "Laura Carreira",
@@ -645,8 +612,7 @@
       "awards": {
         "bifa": "X"
       },
-      "profilePath": "/dcDJ0qVqSNenfonO0QDwEEDT9e9.jpg",
-      "tmdbId": 2725163
+      "profilePath": "/dcDJ0qVqSNenfonO0QDwEEDT9e9.jpg"
     },
     {
       "name": "Kirk Jones",
@@ -681,8 +647,7 @@
         "spirit": "X"
       },
       "film": "Lucky Lu",
-      "profilePath": "/3OpxVD5gBOkvG9oTf3E1mnvQ46t.jpg",
-      "tmdbId": 1706318
+      "profilePath": "/3OpxVD5gBOkvG9oTf3E1mnvQ46t.jpg"
     },
     {
       "name": "Ira Sachs",
@@ -690,8 +655,7 @@
         "spirit": "X"
       },
       "film": "Peter Hujar's Day",
-      "profilePath": "/ddw9iGneyLXo3hiz7uupHlEGpOH.jpg",
-      "tmdbId": 53708
+      "profilePath": "/ddw9iGneyLXo3hiz7uupHlEGpOH.jpg"
     },
     {
       "name": "Eva Victor",
@@ -708,8 +672,7 @@
         "gotham": "X"
       },
       "film": "The Mastermind",
-      "profilePath": "/j97hMhlRhcaHWgn9MQ78E0ft57U.jpg",
-      "tmdbId": 56383
+      "profilePath": "/j97hMhlRhcaHWgn9MQ78E0ft57U.jpg"
     },
     {
       "name": "Oliver Laxe",
@@ -727,25 +690,24 @@
       "film": "Marty Supreme",
       "role": "Leading",
       "awards": {
+        "gg": "Y",
         "oscar": "X",
         "bafta": "X",
-        "gg": "Y",
         "sag": "X",
         "critics": "Y",
         "astra": "Y",
         "lafca": "X"
       },
-      "profilePath": "/c3NJxKbnKkQsttxA2XVh4pwPpIt.jpg",
-      "tmdbId": 1190668
+      "profilePath": "/98pz2MH2JT7Yw0sUJGrA5Oqtbo8.jpg"
     },
     {
       "name": "Stellan Skarsgård",
       "film": "Sentimental Value",
       "role": "Supporting",
       "awards": {
+        "gg": "Y",
         "oscar": "X",
         "bafta": "X",
-        "gg": "Y",
         "critics": "X",
         "astra": "Y",
         "lafca": "Y",
@@ -755,34 +717,18 @@
       "tmdbId": 1640
     },
     {
-      "name": "Wagner Moura",
-      "film": "The Secret Agent",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "gg": "Y",
-        "critics": "X",
-        "cannes": "Y",
-        "astra": "X",
-        "lafca": "X",
-        "gotham": "X"
-      },
-      "profilePath": "/lB73WnFU0tg9YgBukEPGJCmdzzj.jpg",
-      "tmdbId": 52583
-    },
-    {
       "name": "Michael B. Jordan",
       "film": "Sinners",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
-        "bafta": "X",
         "gg": "X",
+        "oscar": "Y",
+        "bafta": "X",
         "sag": "Y",
         "critics": "X",
         "astra": "Y"
       },
-      "profilePath": "/515xNvaMC6xOEOlo0sFqW69ZqUH.jpg",
+      "profilePath": "/sMBpav8cK7t7Nk0yf4tuNOqNUyW.jpg",
       "tmdbId": 135651
     },
     {
@@ -790,12 +736,29 @@
       "film": "One Battle After Another",
       "role": "Supporting",
       "awards": {
+        "oscar": "Y",
         "bafta": "Y",
         "sag": "Y",
         "astra": "X"
       },
       "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
       "tmdbId": 2228
+    },
+    {
+      "name": "Wagner Moura",
+      "film": "The Secret Agent",
+      "role": "Leading",
+      "awards": {
+        "gg": "Y",
+        "oscar": "X",
+        "critics": "X",
+        "cannes": "Y",
+        "astra": "X",
+        "lafca": "X",
+        "gotham": "X"
+      },
+      "profilePath": "/53IbAed4t1dOWxY3iygbRYZBBnm.jpg",
+      "tmdbId": 52583
     },
     {
       "name": "Robert Aramayo",
@@ -805,33 +768,30 @@
         "bafta": "Y",
         "bifa": "Y"
       },
-      "profilePath": "/o7qAOrcW70LD4oz8fcubZUcYDAU.jpg",
-      "tmdbId": 1648346
+      "profilePath": "/o7qAOrcW70LD4oz8fcubZUcYDAU.jpg"
     },
     {
       "name": "Leonardo DiCaprio",
       "film": "One Battle After Another",
       "role": "Leading",
       "awards": {
+        "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "gg": "X",
         "sag": "X",
         "critics": "X",
         "nbr": "Y",
         "astra": "X"
-      },
-      "profilePath": "/vo4fltT9zZ1kH8nhLetz8MED6jp.jpg",
-      "tmdbId": 6193
+      }
     },
     {
       "name": "Ethan Hawke",
       "film": "Blue Moon",
       "role": "Leading",
       "awards": {
+        "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "gg": "X",
         "sag": "X",
         "critics": "X",
         "lafca": "Y",
@@ -845,9 +805,9 @@
       "film": "Frankenstein",
       "role": "Supporting",
       "awards": {
+        "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "gg": "X",
         "sag": "X",
         "critics": "Y",
         "astra": "X",
@@ -870,13 +830,20 @@
       "tmdbId": 19292
     },
     {
+      "name": "Rose Byrne",
+      "awards": {
+        "spirit": "Y",
+        "gotham": "X"
+      },
+      "film": "If I Had Legs I'd Kick You"
+    },
+    {
       "name": "Toni Servillo",
       "film": "La grazia",
       "awards": {
         "venice": "Y"
       },
-      "profilePath": "/7fP6oFU40r9GkEBTYVTjlz6mF01.jpg",
-      "tmdbId": 72782
+      "profilePath": "/7fP6oFU40r9GkEBTYVTjlz6mF01.jpg"
     },
     {
       "name": "Adrien Brody",
@@ -895,17 +862,14 @@
       },
       "film": "A Real Pain",
       "role": "Supporting",
-      "profilePath": "/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg",
-      "tmdbId": 18793
+      "profilePath": "/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg"
     },
     {
       "name": "Jay Lycurgo",
       "film": "Steve",
       "awards": {
         "bifa": "Y"
-      },
-      "profilePath": "/pbsoexLxfXZZvITACzfOB1dsDip.jpg",
-      "tmdbId": 2588506
+      }
     },
     {
       "name": "Sopé Dìrísù",
@@ -917,45 +881,17 @@
       "tmdbId": 1479869
     },
     {
-      "name": "Benicio del Toro",
-      "film": "One Battle After Another",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "critics": "X",
-        "astra": "X",
-        "gotham": "X"
-      },
-      "profilePath": "/aYomJWx0B2B8ra6Rmgt8lr0XCrw.jpg",
-      "tmdbId": 1121
-    },
-    {
       "name": "Paul Mescal",
       "film": "Hamnet",
       "role": "Supporting",
       "awards": {
-        "bafta": "X",
         "gg": "X",
+        "bafta": "X",
         "sag": "X",
         "critics": "X",
         "astra": "X"
       },
-      "profilePath": "/vrzZ41TGNAFgfmZjC2sOJySzBLd.jpg",
-      "tmdbId": 2326151
-    },
-    {
-      "name": "Jesse Plemons",
-      "film": "Bugonia",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "X",
-        "sag": "X",
-        "astra": "X"
-      },
-      "profilePath": "/og4I51GsuwohdPgoELOHVMMqMre.jpg",
-      "tmdbId": 88124
+      "profilePath": "/vrzZ41TGNAFgfmZjC2sOJySzBLd.jpg"
     },
     {
       "name": "Joel Edgerton",
@@ -971,47 +907,41 @@
       "tmdbId": 33192
     },
     {
-      "name": "Sean Penn",
-      "role": "Supporting",
+      "name": "Jesse Plemons",
+      "film": "Bugonia",
+      "role": "Leading",
       "awards": {
-        "oscar": "X",
         "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
-      "tmdbId": 2228
-    },
-    {
-      "name": "Delroy Lindo",
-      "film": "Sinners",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
+        "bafta": "X",
+        "sag": "X",
         "astra": "X"
       },
-      "profilePath": "/kLwUBBmEIdchrLqwsYzgLB2B6q5.jpg",
-      "tmdbId": 18792
+      "profilePath": "/og4I51GsuwohdPgoELOHVMMqMre.jpg",
+      "tmdbId": 88124
     },
     {
       "name": "Benicio del Toro",
+      "film": "One Battle After Another",
       "role": "Supporting",
       "awards": {
-        "bafta": "X",
-        "sag": "X"
+        "gg": "X",
+        "critics": "X",
+        "astra": "X",
+        "gotham": "X"
       },
       "profilePath": "/aYomJWx0B2B8ra6Rmgt8lr0XCrw.jpg",
       "tmdbId": 1121
     },
     {
-      "name": "Peter Mullan",
-      "film": "I Swear",
+      "name": "Benicio del Toro",
       "role": "Supporting",
       "awards": {
+        "oscar": "X",
         "bafta": "X",
-        "bifa": "X"
+        "sag": "X"
       },
-      "profilePath": "/dvu5PWJK6Vv4xnYyMzdMvH73Laj.jpg",
-      "tmdbId": 3064
+      "profilePath": "/aYomJWx0B2B8ra6Rmgt8lr0XCrw.jpg",
+      "tmdbId": 1121
     },
     {
       "name": "Dwayne Johnson",
@@ -1032,8 +962,7 @@
         "gg": "X",
         "astra": "X"
       },
-      "profilePath": "/zKk4vmDeUexdevtt6wm8WdMQ1TG.jpg",
-      "tmdbId": 206905
+      "profilePath": "/zKk4vmDeUexdevtt6wm8WdMQ1TG.jpg"
     },
     {
       "name": "George Clooney",
@@ -1054,8 +983,40 @@
         "gg": "X",
         "gotham": "X"
       },
-      "profilePath": "/ciB32A22ePZZgjOvOMsyiQFDLDy.jpg",
+      "profilePath": "/j7SUd9Qi8iOxgrQGb3nQyEYcXur.jpg",
       "tmdbId": 25002
+    },
+    {
+      "name": "Sean Penn",
+      "role": "Supporting",
+      "awards": {
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
+      "tmdbId": 2228
+    },
+    {
+      "name": "Delroy Lindo",
+      "film": "Sinners",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "astra": "X"
+      },
+      "profilePath": "/kLwUBBmEIdchrLqwsYzgLB2B6q5.jpg",
+      "tmdbId": 18792
+    },
+    {
+      "name": "Peter Mullan",
+      "film": "I Swear",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "bifa": "X"
+      },
+      "profilePath": "/dvu5PWJK6Vv4xnYyMzdMvH73Laj.jpg",
+      "tmdbId": 3064
     },
     {
       "name": "Miles Caton",
@@ -1074,9 +1035,18 @@
         "astra": "X",
         "spirit": "X"
       },
-      "film": "Twinless",
-      "profilePath": "/xN3GdvIlqsR838gDoblhPH0numP.jpg",
-      "tmdbId": 527393
+      "film": "Twinless"
+    },
+    {
+      "name": "Inga Ibsdotter Lilleaas",
+      "awards": {
+        "lafca": "X",
+        "gotham": "X"
+      },
+      "role": "Supporting",
+      "film": "Sentimental Value",
+      "profilePath": "/vNCAXup8zMJi4vK0X8oNIGGjZFj.jpg",
+      "tmdbId": 1421850
     },
     {
       "name": "Andrew Scott",
@@ -1141,18 +1111,14 @@
       "awards": {
         "astra": "X"
       },
-      "film": "Wicked: For Good",
-      "profilePath": "/i9m6JsYKQot3kbMMFsvbEuFarvq.jpg",
-      "tmdbId": 80860
+      "film": "Wicked: For Good"
     },
     {
       "name": "Josh O'Connor",
       "awards": {
         "astra": "X"
       },
-      "film": "Wake Up Dead Man: A Knives Out Mystery",
-      "profilePath": "/vV9m1GnFVDFPC0kZgbUVe2ZKk3d.jpg",
-      "tmdbId": 1206334
+      "film": "Wake Up Dead Man: A Knives Out Mystery"
     },
     {
       "name": "Keanu Reeves",
@@ -1195,9 +1161,7 @@
       "film": "Steve",
       "awards": {
         "bifa": "X"
-      },
-      "profilePath": "/llkbyWKwpfowZ6C8peBjIV9jj99.jpg",
-      "tmdbId": 2037
+      }
     },
     {
       "name": "Tom Blyth",
@@ -1213,7 +1177,17 @@
       "film": "I Swear",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "profilePath": "/rRDFMBujtG0pZXpozYiIqUxM9Hh.jpg"
+    },
+    {
+      "name": "Maxine Peake",
+      "film": "I Swear",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/uChlrL5WyeXhvGFaNvbzw1KqMgP.jpg",
+      "tmdbId": 76944
     },
     {
       "name": "Everett Blunck",
@@ -1232,6 +1206,14 @@
       "film": "Lucky Lu"
     },
     {
+      "name": "Keke Palmer",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "One of Them Days",
+      "profilePath": "/fXiKInUmPLs5F53yv2KZSuCXHJZ.jpg"
+    },
+    {
       "name": "Théodore Pellerin",
       "awards": {
         "spirit": "X"
@@ -1245,9 +1227,22 @@
       "awards": {
         "spirit": "X"
       },
-      "film": "Peter Hujar's Day",
-      "profilePath": "/e74Cz65ifeNb9zHfUTvF5rTix0d.jpg",
-      "tmdbId": 17064
+      "film": "Peter Hujar's Day"
+    },
+    {
+      "name": "Rebecca Hall",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Peter Hujar's Day"
+    },
+    {
+      "name": "Nina Hoss",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Hedda",
+      "profilePath": "/j4j3eenfrg0XgW0dVReFAdPNPE0.jpg"
     },
     {
       "name": "Archie Madekwe",
@@ -1255,8 +1250,7 @@
         "spirit": "X"
       },
       "film": "Lurker",
-      "profilePath": "/m1pIkNA7iqDx8418h05D7aH6DTN.jpg",
-      "tmdbId": 2249745
+      "profilePath": "/m1pIkNA7iqDx8418h05D7aH6DTN.jpg"
     },
     {
       "name": "Jacob Tremblay",
@@ -1268,13 +1262,50 @@
       "tmdbId": 1277188
     },
     {
+      "name": "Haipeng Xu",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Blue Sun Palace"
+    },
+    {
+      "name": "Jessie Buckley",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Hamnet",
+      "profilePath": "/qbz9175DERSqsCQeYWGJWwqb38z.jpg"
+    },
+    {
+      "name": "Jennifer Lawrence",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Die My Love",
+      "profilePath": "/6WTY6HjXMGxnHilJRVC3eLnu43F.jpg",
+      "tmdbId": 72129
+    },
+    {
       "name": "Josh O'Connor",
       "awards": {
         "gotham": "X"
       },
       "film": "The Mastermind",
-      "profilePath": "/vV9m1GnFVDFPC0kZgbUVe2ZKk3d.jpg",
-      "tmdbId": 1206334
+      "profilePath": "/tn5vFB9DLwdVkrRw6ktFfnyqiT9.jpg"
+    },
+    {
+      "name": "Amanda Seyfried",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "The Testament of Ann Lee"
+    },
+    {
+      "name": "Tessa Thompson",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Hedda"
     },
     {
       "name": "Indya Moore",
@@ -1284,6 +1315,13 @@
       "film": "Father Mother Sister Brother",
       "profilePath": "/uIRHpgbj9DfjMksigXmi497xRqU.jpg",
       "tmdbId": 1789788
+    },
+    {
+      "name": "Teyana Taylor",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "One Battle After Another"
     }
   ],
   "best-actress": [
@@ -1292,43 +1330,24 @@
       "film": "Hamnet",
       "role": "Leading",
       "awards": {
-        "oscar": "X",
-        "bafta": "Y",
         "gg": "Y",
+        "oscar": "Y",
+        "bafta": "Y",
         "sag": "Y",
         "critics": "Y",
         "astra": "Y",
         "gotham": "X"
       },
-      "profilePath": "/i8IlkFbZqKUgkypZKpdhrw00uqw.jpg",
+      "profilePath": "/qbz9175DERSqsCQeYWGJWwqb38z.jpg",
       "tmdbId": 1498158
-    },
-    {
-      "name": "Rose Byrne",
-      "film": "If I Had Legs I'd Kick You",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X",
-        "gg": "Y",
-        "sag": "X",
-        "critics": "X",
-        "nbr": "Y",
-        "astra": "X",
-        "lafca": "Y",
-        "spirit": "Y",
-        "gotham": "X"
-      },
-      "profilePath": "/6YauDiiTBwRGC1xnwspPmNvPWUu.jpg",
-      "tmdbId": 9827
     },
     {
       "name": "Amy Madigan",
       "film": "Weapons",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "Y",
         "sag": "Y",
         "critics": "Y",
         "astra": "Y"
@@ -1337,21 +1356,36 @@
       "tmdbId": 23882
     },
     {
+      "name": "Rose Byrne",
+      "film": "If I Had Legs I'd Kick You",
+      "role": "Leading",
+      "awards": {
+        "gg": "Y",
+        "oscar": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "nbr": "Y",
+        "astra": "X",
+        "lafca": "Y",
+        "gotham": "X"
+      }
+    },
+    {
       "name": "Teyana Taylor",
       "film": "One Battle After Another",
       "role": "Supporting",
       "awards": {
+        "gg": "Y",
         "oscar": "X",
         "bafta": "X",
-        "gg": "Y",
         "sag": "X",
         "critics": "X",
         "astra": "X",
         "lafca": "Y",
         "gotham": "X"
       },
-      "profilePath": "/5b2dAuTsBejBsdm9SkWX4F7jG9w.jpg",
-      "tmdbId": 964679
+      "profilePath": "/5b2dAuTsBejBsdm9SkWX4F7jG9w.jpg"
     },
     {
       "name": "Wunmi Mosaku",
@@ -1391,8 +1425,16 @@
         "critics": "X",
         "astra": "Y"
       },
-      "profilePath": "/r32wWnx7CKW9SgRKaQ4qAgja5QK.jpg",
-      "tmdbId": 226001
+      "profilePath": "/r32wWnx7CKW9SgRKaQ4qAgja5QK.jpg"
+    },
+    {
+      "name": "Xin Zhilei",
+      "film": "Rì guà zhōngtiān",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/iiIGXK1MtB6pLpeVlgQi4cM1XWK.jpg",
+      "tmdbId": 1569934
     },
     {
       "name": "Nadia Melliti",
@@ -1402,15 +1444,6 @@
       "film": "The Little Sister",
       "profilePath": "/cuuwXDvLXWroFlOhfB1Xf2eYamw.jpg",
       "tmdbId": 5375369
-    },
-    {
-      "name": "Xin Zhilei",
-      "film": "Rì guà zhōngtiān",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/aFhdcO9nzA1vbABsqDmGkaTLsjg.jpg",
-      "tmdbId": 1569934
     },
     {
       "name": "Marianne Jean-Baptiste",
@@ -1438,32 +1471,30 @@
         "spirit": "Y"
       },
       "film": "Sorry, Baby",
-      "profilePath": "/dijwuTAEZUzQtoJfK49S4X80fQw.jpg",
-      "tmdbId": 1537686
+      "profilePath": "/dijwuTAEZUzQtoJfK49S4X80fQw.jpg"
     },
     {
       "name": "Emma Stone",
       "film": "Bugonia",
       "role": "Leading",
       "awards": {
+        "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "gg": "X",
         "sag": "X",
         "critics": "X",
         "astra": "X"
       },
-      "profilePath": "/s7PVcnnA05JcRiMtplwgK49Z2UU.jpg",
-      "tmdbId": 54693
+      "profilePath": "/tWoSlj6TaZU5sfHYiXvexZUL5Nv.jpg"
     },
     {
       "name": "Renate Reinsve",
       "film": "Sentimental Value",
       "role": "Leading",
       "awards": {
+        "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "gg": "X",
         "critics": "X",
         "astra": "X"
       },
@@ -1475,53 +1506,14 @@
       "film": "One Battle After Another",
       "role": "Leading",
       "awards": {
-        "bafta": "X",
         "gg": "X",
+        "bafta": "X",
         "sag": "X",
         "critics": "X",
         "astra": "X"
       },
-      "profilePath": "/v30NzVNAczjwVueu95VbqWTUoGw.jpg",
+      "profilePath": "/6tO5t5anIb7D1Nwr6TQjAXMog5N.jpg",
       "tmdbId": 3914706
-    },
-    {
-      "name": "Kate Hudson",
-      "film": "Song Sung Blue",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X",
-        "gg": "X",
-        "sag": "X"
-      },
-      "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
-      "tmdbId": 11661
-    },
-    {
-      "name": "Elle Fanning",
-      "film": "Sentimental Value",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "critics": "X",
-        "astra": "X"
-      },
-      "profilePath": "/e8CUyxQSE99y5IOfzSLtHC0B0Ch.jpg",
-      "tmdbId": 18050
-    },
-    {
-      "name": "Inga Ibsdotter Lilleaas",
-      "film": "Sentimental Value",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "astra": "X",
-        "lafca": "X",
-        "gotham": "X"
-      },
-      "profilePath": "/wlZPIgnXMpK3Nvvhg0bZzmWxZDH.jpg",
-      "tmdbId": 1421850
     },
     {
       "name": "Jennifer Lawrence",
@@ -1533,7 +1525,7 @@
         "bifa": "X",
         "gotham": "X"
       },
-      "profilePath": "/4rn6zSNjlpH2YtewlVz2YsKRKsZ.jpg",
+      "profilePath": "/6WTY6HjXMGxnHilJRVC3eLnu43F.jpg",
       "tmdbId": 72129
     },
     {
@@ -1546,19 +1538,40 @@
         "spirit": "X",
         "gotham": "X"
       },
-      "profilePath": "/19ze60jXlb2j7dXc2UpA3MujXA8.jpg",
-      "tmdbId": 62561
+      "profilePath": "/19ze60jXlb2j7dXc2UpA3MujXA8.jpg"
+    },
+    {
+      "name": "Kate Hudson",
+      "film": "Song Sung Blue",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "bafta": "X",
+        "sag": "X"
+      },
+      "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
+      "tmdbId": 11661
+    },
+    {
+      "name": "Elle Fanning",
+      "film": "Sentimental Value",
+      "role": "Supporting",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "critics": "X",
+        "astra": "X"
+      }
     },
     {
       "name": "Inga Ibsdotter Lilleaas",
       "role": "Supporting",
       "awards": {
-        "oscar": "X",
         "gg": "X",
+        "oscar": "X",
         "critics": "X"
-      },
-      "profilePath": "/wlZPIgnXMpK3Nvvhg0bZzmWxZDH.jpg",
-      "tmdbId": 1421850
+      }
     },
     {
       "name": "Odessa A'zion",
@@ -1569,8 +1582,19 @@
         "sag": "X",
         "astra": "X"
       },
-      "profilePath": "/fGgP2Ik5PbWlDVQNp6SN8oPsu0P.jpg",
+      "profilePath": "/r3GGU3A8faBnEwxpVSvhB5dUDfd.jpg",
       "tmdbId": 1972166
+    },
+    {
+      "name": "Inga Ibsdotter Lilleaas",
+      "film": "Sentimental Value",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "astra": "X",
+        "gotham": "X"
+      },
+      "profilePath": "/vNCAXup8zMJi4vK0X8oNIGGjZFj.jpg"
     },
     {
       "name": "Eva Victor",
@@ -1595,14 +1619,22 @@
       "tmdbId": 1765068
     },
     {
-      "name": "Nina Hoss",
+      "name": "Julia Roberts",
+      "film": "After the Hunt",
+      "role": "Leading",
       "awards": {
-        "astra": "X",
-        "spirit": "X"
+        "gg": "X"
       },
-      "film": "Hedda",
-      "profilePath": "/j4j3eenfrg0XgW0dVReFAdPNPE0.jpg",
-      "tmdbId": 681
+      "profilePath": "/mQ7076pL4Ac0ZzY4w31labWIdQt.jpg"
+    },
+    {
+      "name": "Emily Blunt",
+      "film": "The Smashing Machine",
+      "role": "Supporting",
+      "awards": {
+        "gg": "X"
+      },
+      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg"
     },
     {
       "name": "Carey Mulligan",
@@ -1611,8 +1643,7 @@
       "awards": {
         "bafta": "X"
       },
-      "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg",
-      "tmdbId": 36662
+      "profilePath": "/iwVHhqoz5b62FR0SDpZ7wfsuTBI.jpg"
     },
     {
       "name": "Emily Watson",
@@ -1623,26 +1654,6 @@
       },
       "profilePath": "/bd0qiJXHoLNpkCqABsh67AKRtjC.jpg",
       "tmdbId": 1639
-    },
-    {
-      "name": "Julia Roberts",
-      "film": "After the Hunt",
-      "role": "Leading",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/AhQMyQ10kz5g8Y3Fp54GPhgDxQS.jpg",
-      "tmdbId": 1204
-    },
-    {
-      "name": "Emily Blunt",
-      "film": "The Smashing Machine",
-      "role": "Supporting",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
-      "tmdbId": 5081
     },
     {
       "name": "Julia Garner",
@@ -1659,8 +1670,17 @@
         "astra": "X"
       },
       "film": "Christy",
-      "profilePath": "/tVuiJ5Joryw5EXKGbY6pMKCUdSt.jpg",
+      "profilePath": "/qYiaSl0Eb7G3VaxOg8PxExCFwon.jpg",
       "tmdbId": 115440
+    },
+    {
+      "name": "Nina Hoss",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "Hedda",
+      "profilePath": "/j4j3eenfrg0XgW0dVReFAdPNPE0.jpg",
+      "tmdbId": 681
     },
     {
       "name": "Hailee Steinfeld",
@@ -1668,7 +1688,7 @@
         "astra": "X"
       },
       "film": "Sinners",
-      "profilePath": "/uEmcx5nLzSuw9YGybvfKQRlfmLq.jpg",
+      "profilePath": "/dxSDWkiVaC6JYjrV3XRAZI7HOSS.jpg",
       "tmdbId": 130640
     },
     {
@@ -1676,9 +1696,7 @@
       "awards": {
         "astra": "X"
       },
-      "film": "Wake Up Dead Man: A Knives Out Mystery",
-      "profilePath": "/4VHZ1GfLwN7MUgApy0LCBzdDF9L.jpg",
-      "tmdbId": 515
+      "film": "Wake Up Dead Man: A Knives Out Mystery"
     },
     {
       "name": "Regina Hall",
@@ -1695,17 +1713,8 @@
         "astra": "X"
       },
       "film": "Marty Supreme",
-      "profilePath": "/slPWN0VvYJtNOEuxlFSsXSNQMaF.jpg",
+      "profilePath": "/8x3jpWD7DEvyMXO1FOjwNdd1UZT.jpg",
       "tmdbId": 12052
-    },
-    {
-      "name": "Maxine Peake",
-      "film": "I Swear",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/uChlrL5WyeXhvGFaNvbzw1KqMgP.jpg",
-      "tmdbId": 76944
     },
     {
       "name": "Kathleen Chalfant",
@@ -1717,22 +1726,12 @@
       "tmdbId": 52003
     },
     {
-      "name": "Keke Palmer",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "One of Them Days",
-      "profilePath": "/fXiKInUmPLs5F53yv2KZSuCXHJZ.jpg",
-      "tmdbId": 74688
-    },
-    {
       "name": "Zoey Deutch",
       "awards": {
         "spirit": "X"
       },
       "film": "Nouvelle Vague",
-      "profilePath": "/tn6ErnytTct7HNAFG2dW17QcBk5.jpg",
-      "tmdbId": 1059597
+      "profilePath": "/tn6ErnytTct7HNAFG2dW17QcBk5.jpg"
     },
     {
       "name": "Kirsten Dunst",
@@ -1742,15 +1741,6 @@
       "film": "Roofman",
       "profilePath": "/yhLKGjuiMMdbGnFrR8AREkCZcVF.jpg",
       "tmdbId": 205
-    },
-    {
-      "name": "Rebecca Hall",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Peter Hujar's Day",
-      "profilePath": "/coC58ANiDbqRIyle5zEl9QDektf.jpg",
-      "tmdbId": 15556
     },
     {
       "name": "Jane Levy",
@@ -1769,15 +1759,6 @@
       "film": "Rebuilding",
       "profilePath": "/qJcXQKgaq11aNNPPok0m4yfP2Og.jpg",
       "tmdbId": 3119545
-    },
-    {
-      "name": "Haipeng Xu",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Blue Sun Palace",
-      "profilePath": "/qoa5En2GrPWEGx1ZYZ4SYUfurFX.jpg",
-      "tmdbId": 3323814
     }
   ]
 }

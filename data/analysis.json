@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-12T20:22:18.185000",
+  "generated": "2026-03-22T12:55:47.873770",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -13177,25 +13177,25 @@
       "oscar": {
         "best-film": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-director": {
           "nominations": 5,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
         "best-actor": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 10
         },
         "best-actress": {
           "nominations": 10,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 10
         }
@@ -13390,10 +13390,10 @@
           "expected": 0
         },
         "best-director": {
-          "nominations": 0,
-          "winners": 0,
+          "nominations": 5,
+          "winners": 1,
           "status": "ok",
-          "expected": 0
+          "expected": 5
         },
         "best-actor": {
           "nominations": 0,
@@ -13448,13 +13448,13 @@
           "expected": 2
         },
         "best-actor": {
-          "nominations": 5,
+          "nominations": 6,
           "winners": 2,
           "status": "ok",
           "expected": 4
         },
         "best-actress": {
-          "nominations": 3,
+          "nominations": 2,
           "winners": 2,
           "status": "ok",
           "expected": 4
@@ -13526,7 +13526,7 @@
           "expected": 5
         },
         "best-actor": {
-          "nominations": 12,
+          "nominations": 19,
           "winners": 1,
           "status": "ok",
           "expected": 10
@@ -13578,14 +13578,14 @@
           "expected": 5
         },
         "best-actor": {
-          "nominations": 8,
-          "winners": 0,
+          "nominations": 13,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         },
         "best-actress": {
-          "nominations": 12,
-          "winners": 2,
+          "nominations": 7,
+          "winners": 1,
           "status": "ok",
           "expected": 10
         }
@@ -13604,13 +13604,13 @@
           "expected": 5
         },
         "best-actor": {
-          "nominations": 10,
+          "nominations": 11,
           "winners": 2,
           "status": "ok",
           "expected": 6
         },
         "best-actress": {
-          "nominations": 2,
+          "nominations": 1,
           "winners": 0,
           "status": "ok",
           "expected": 6

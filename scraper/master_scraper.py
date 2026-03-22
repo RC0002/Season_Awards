@@ -98,10 +98,10 @@ CEREMONY_MAP = {
         2009: 65, 2008: 64, 2007: 63, 2006: 62, 2005: 61, 2004: 60,
         2003: 59, 2002: 58, 2001: 57
     },
-    # DGA: Directors Guild of America - year of films (like AFI/NBR)
-    # Data scraped from dga.org via Selenium, stored in dga_awards.json
+    # DGA: 2026+ uses ordinal edition numbers (for Wikipedia scraping)
+    # Historical years (pre-2026) use film year (for dga_awards.json fallback)
     'dga': {
-        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
+        2026: 78, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
         2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
         2015: 2014, 2014: 2013, 2013: 2012, 2012: 2011, 2011: 2010, 2010: 2009,
         2009: 2008, 2008: 2007, 2007: 2006, 2006: 2005, 2005: 2004, 2004: 2003,
@@ -419,7 +419,7 @@ from scrapers.critics import scrape_critics
 from scrapers.afi import scrape_afi
 from scrapers.nbr import scrape_nbr
 from scrapers.venice import scrape_venice
-from scrapers.dga import scrape_dga
+from scrapers.dga import scrape_dga, scrape_dga_wikipedia
 from scrapers.pga import scrape_pga
 from scrapers.lafca import scrape_lafca
 from scrapers.wga import scrape_wga
@@ -2491,6 +2491,11 @@ def scrape_award(award_key, year):
                 cat_type = 'actor'
                 role = 'Supporting'
                 
+        elif award_key == 'dga':
+            if 'feature film' in header_text:
+                key = 'best-director'
+                cat_type = 'director'
+
         elif award_key == 'critics':
             if header_text == 'best picture':
                 key = 'best-film'
@@ -2673,9 +2678,14 @@ def scrape_year(year, awards=None):
                 if result:
                     all_results['venice'] = result
         elif award_key == 'dga':
-            dga_year = CEREMONY_MAP['dga'].get(year)
-            if dga_year:
-                result = scrape_dga(dga_year)
+            dga_val = CEREMONY_MAP['dga'].get(year)
+            if dga_val:
+                if dga_val < 100:
+                    # Ordinal edition number (2026+) → use Wikipedia
+                    result = scrape_dga_wikipedia(dga_val)
+                else:
+                    # Film year (pre-2026) → use dga_awards.json fallback
+                    result = scrape_dga(dga_val)
                 if result:
                     all_results['dga'] = result
         elif award_key == 'pga':

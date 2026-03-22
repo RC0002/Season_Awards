@@ -233,11 +233,7 @@ HISTORICAL_EXPECTED_OVERRIDES = {
         },
     },
     'dga': {
-        # DGA: 5 directors typically
-        # 2025/26 season - not yet announced
-        'best-director': {
-            (2026, 2026): 0,  # Current season - not yet announced
-        },
+        # DGA: 5 directors typically (2026+ scraped from Wikipedia)
     },
 
     'lafca': {
@@ -674,8 +670,15 @@ def scrape_award_with_logging(award_key, year, report):
             result = scrape_venice(ceremony)
             log.log(f"Scraped Venice Film Festival page (Italian Wikipedia)")
         elif award_key == 'dga':
-            result = scrape_dga(ceremony)
-            log.log(f"Loaded DGA data from pre-scraped file")
+            if ceremony < 100:
+                # Ordinal edition (2026+) → use Wikipedia
+                from scrapers.dga import scrape_dga_wikipedia
+                result = scrape_dga_wikipedia(ceremony)
+                log.log(f"Scraped DGA from Wikipedia ({ceremony}th edition)")
+            else:
+                # Film year (pre-2026) → use dga_awards.json fallback
+                result = scrape_dga(ceremony)
+                log.log(f"Loaded DGA data from pre-scraped file")
         elif award_key == 'pga':
             result = scrape_pga(ceremony)
             log.log(f"Scraped PGA Theatrical Film nominees")
