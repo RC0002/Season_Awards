@@ -6,19 +6,26 @@
 // Create firebase-config.js with your Firebase project config:
 // const firebaseConfig = { apiKey: "...", authDomain: "...", ... };
 
-// Initialize Firebase
+// Firebase REST URL (public read, no SDK required)
+const FIREBASE_REST_URL = 'https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app';
+
+// Initialize Firebase SDK (optional — works without it via REST)
 let db = null;
 let firebaseReady = false;
 let isStatsPageActive = false;
 let isPredictionsPageActive = false;
 
 try {
-    firebase.initializeApp(firebaseConfig);
-    db = firebase.database();
-    firebaseReady = true;
-    console.log('🔥 Firebase initialized');
+    if (typeof firebase !== 'undefined' && typeof firebaseConfig !== 'undefined') {
+        firebase.initializeApp(firebaseConfig);
+        db = firebase.database();
+        firebaseReady = true;
+        console.log('🔥 Firebase SDK initialized');
+    } else {
+        console.log('🌐 Firebase SDK not available, using REST API');
+    }
 } catch (err) {
-    console.warn('⚠️ Firebase not configured, using LocalStorage only');
+    console.warn('⚠️ Firebase SDK init failed, using REST API');
 }
 
 // ============ CONFIGURATION ============
@@ -821,8 +828,7 @@ async function loadData() {
     } else {
         // No Firebase SDK - try REST API (public read)
         try {
-            const FIREBASE_URL = 'https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app';
-            const res = await fetch(`${FIREBASE_URL}/awards/${currentYear}.json`);
+            const res = await fetch(`${FIREBASE_REST_URL}/awards/${currentYear}.json`);
             if (res.ok) {
                 const firebaseData = await res.json();
                 if (firebaseData) {
@@ -1855,8 +1861,7 @@ async function loadAllYearsData() {
     } else {
         // Try Firebase REST API (public read)
         try {
-            const FIREBASE_URL = 'https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app';
-            const res = await fetch(`${FIREBASE_URL}/awards.json`);
+            const res = await fetch(`${FIREBASE_REST_URL}/awards.json`);
             if (res.ok) {
                 const firebaseData = await res.json();
                 if (firebaseData) {
