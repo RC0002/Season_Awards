@@ -3,26 +3,7 @@
 GOTHAM Awards Scraper
 """
 
-from . import CEREMONY_MAP, URL_TEMPLATES, fetch_page, ordinal, init_results
-
-import time
-TMDB_API_KEY = "4399b8147e098e80be332f172d1fe490"
-TMDB_BASE_URL = "https://api.themoviedb.org/3"
-
-def get_person_gender(name, tmdb_api_key='4399b8147e098e80be332f172d1fe490'):
-    """Get gender of a person using TMDB API. Returns: 1 = Female, 2 = Male, 0 = Unknown"""
-    import requests
-    try:
-        url = f"{TMDB_BASE_URL}/search/person"
-        params = {'api_key': tmdb_api_key, 'query': name}
-        response = requests.get(url, params=params, timeout=5)
-        if response.status_code == 200:
-            results = response.json().get('results', [])
-            if results:
-                return results[0].get('gender', 0)
-    except:
-        pass
-    return 0
+from . import CEREMONY_MAP, URL_TEMPLATES, fetch_page, get_person_gender
 
 def scrape_gotham(year):
     """
@@ -127,7 +108,7 @@ def scrape_gotham(year):
                 winner_text = re.sub(r'\[.*?\]', '', winner_text).strip()
                 
                 # Split on separator
-                parts = re.split(r'\s*[–—-]\s*', winner_text, 1)
+                parts = re.split(r'\s*[–—]\s*', winner_text, 1)
                 
                 if category_type == 'best-film':
                     film_name = parts[0].strip()
@@ -154,6 +135,9 @@ def scrape_gotham(year):
                 elif category_type in ['lead-performance', 'supporting-performance']:
                     person_name = parts[0].strip()
                     film_name = parts[1].strip() if len(parts) > 1 else None
+                    # Remove " as Character Name" from film name
+                    if film_name:
+                        film_name = re.split(r'\s+as\s+', film_name, 1)[0].strip()
                     if person_name:
                         gender = get_person_gender(person_name)
                         cat = 'actress' if gender == 1 else 'actor'
@@ -175,7 +159,7 @@ def scrape_gotham(year):
                     nominee_text = re.sub(r'\[.*?\]', '', nominee_text).strip()
                     
                     # Split on separator
-                    parts = re.split(r'\s*[–—-]\s*', nominee_text, 1)
+                    parts = re.split(r'\s*[–—]\s*', nominee_text, 1)
                     
                     if category_type == 'best-film':
                         film_name = parts[0].strip()
@@ -202,6 +186,9 @@ def scrape_gotham(year):
                     elif category_type in ['lead-performance', 'supporting-performance']:
                         person_name = parts[0].strip()
                         film_name = parts[1].strip() if len(parts) > 1 else None
+                        # Remove " as Character Name" from film name
+                        if film_name:
+                            film_name = re.split(r'\s+as\s+', film_name, 1)[0].strip()
                         if person_name:
                             gender = get_person_gender(person_name)
                             cat = 'actress' if gender == 1 else 'actor'

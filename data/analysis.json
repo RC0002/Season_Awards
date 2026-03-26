@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-22T15:25:52.139320",
+  "generated": "2026-03-26T21:01:39.054859",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -13526,7 +13526,7 @@
           "expected": 5
         },
         "best-actor": {
-          "nominations": 12,
+          "nominations": 11,
           "winners": 1,
           "status": "ok",
           "expected": 10
@@ -13578,13 +13578,13 @@
           "expected": 5
         },
         "best-actor": {
-          "nominations": 12,
+          "nominations": 9,
           "winners": 0,
           "status": "ok",
           "expected": 10
         },
         "best-actress": {
-          "nominations": 8,
+          "nominations": 11,
           "winners": 2,
           "status": "ok",
           "expected": 10
@@ -13604,13 +13604,13 @@
           "expected": 5
         },
         "best-actor": {
-          "nominations": 11,
+          "nominations": 10,
           "winners": 2,
           "status": "ok",
           "expected": 6
         },
         "best-actress": {
-          "nominations": 1,
+          "nominations": 2,
           "winners": 0,
           "status": "ok",
           "expected": 6

@@ -257,17 +257,53 @@ def init_results():
     }
 
 
+# Hardcoded gender for performers where TMDB is unreliable (1=Female, 2=Male)
+KNOWN_GENDER = {
+    # 2025 Gotham
+    'Sopé Dìrísù': 2, 'Jessie Buckley': 1, 'Rose Byrne': 1,
+    'Lee Byung-hun': 2, 'Ethan Hawke': 2, 'Jennifer Lawrence': 1,
+    'Wagner Moura': 2, "Josh O'Connor": 2, 'Amanda Seyfried': 1,
+    'Tessa Thompson': 1, 'Wunmi Mosaku': 1, 'Benicio del Toro': 2,
+    'Jacob Elordi': 2, 'Inga Ibsdotter Lilleaas': 1, 'Indya Moore': 1,
+    'Adam Sandler': 2, 'Andrew Scott': 2, 'Alexander Skarsgård': 2,
+    'Stellan Skarsgård': 2, 'Teyana Taylor': 1,
+    # 2025 Spirit — Lead Performance
+    'Naomi Ackie': 1, 'Everett Blunck': 2, 'Chang Chen': 2,
+    'Joel Edgerton': 2, 'Dylan O\'Brien': 2, 'Théodore Pellerin': 2,
+    'Ben Whishaw': 2,
+    # 2025 Spirit — Supporting Performance
+    'Zoey Deutch': 1, 'Kirsten Dunst': 1, 'Rebecca Hall': 1,
+    'Nina Hoss': 1, 'Archie Madekwe': 2, 'Kali Reis': 1,
+    'Jacob Tremblay': 2, 'Haipeng Xu': 2,
+    # 2025 Spirit — Best Lead (gendered fallback)
+    'Kathleen Chalfant': 1, 'Keke Palmer': 1, 'Jane Levy': 1,
+}
+
 def get_person_gender(name):
-    """Get gender of a person using TMDB API. Returns: 1 = Female, 2 = Male, 0 = Unknown"""
-    try:
-        url = f"{TMDB_BASE_URL}/search/person"
-        params = {'api_key': TMDB_API_KEY, 'query': name}
-        response = requests.get(url, params=params, timeout=5)
-        if response.status_code == 200:
-            results = response.json().get('results', [])
-            if results:
-                return results[0].get('gender', 0)
-    except:
-        pass
+    """Get gender of a person. Checks hardcoded map first, then TMDB API.
+    Returns: 1 = Female, 2 = Male, 0 = Unknown"""
+    # Check hardcoded map first
+    for known_name, gender in KNOWN_GENDER.items():
+        if known_name.lower() == name.lower() or known_name.lower() in name.lower() or name.lower() in known_name.lower():
+            return gender
+
+    # Fallback to TMDB with retry
+    import time
+    for attempt in range(2):
+        try:
+            url = f"{TMDB_BASE_URL}/search/person"
+            params = {'api_key': TMDB_API_KEY, 'query': name}
+            response = requests.get(url, params=params, timeout=10)
+            if response.status_code == 200:
+                results = response.json().get('results', [])
+                if results:
+                    gender = results[0].get('gender', 0)
+                    if gender in (1, 2):
+                        return gender
+        except Exception as e:
+            print(f"    TMDB lookup failed for '{name}' (attempt {attempt+1}): {e}")
+            time.sleep(1)
+
+    print(f"    ⚠ Unknown gender for '{name}' — defaulting to actor")
     return 0
 
