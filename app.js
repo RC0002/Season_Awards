@@ -819,11 +819,33 @@ async function loadData() {
             updateSyncStatus('pending');
         }
     } else {
-        // No Firebase - use LocalStorage only
-        data = localData || {};
-        CONFIG.CATEGORIES.forEach(cat => { if (!data[cat.id]) data[cat.id] = []; });
-        isSynced = false;
-        updateSyncStatus('pending');
+        // No Firebase SDK - try REST API (public read)
+        try {
+            const FIREBASE_URL = 'https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app';
+            const res = await fetch(`${FIREBASE_URL}/awards/${currentYear}.json`);
+            if (res.ok) {
+                const firebaseData = await res.json();
+                if (firebaseData) {
+                    data = firebaseData;
+                    localStorage.setItem(lsKey, JSON.stringify(data));
+                    isSynced = true;
+                    updateSyncStatus('synced');
+                    console.log('🌐 Loaded from Firebase REST API');
+                } else {
+                    data = localData || {};
+                    CONFIG.CATEGORIES.forEach(cat => { if (!data[cat.id]) data[cat.id] = []; });
+                    updateSyncStatus('synced');
+                }
+            } else {
+                throw new Error(`HTTP ${res.status}`);
+            }
+        } catch (err) {
+            console.warn('⚠️ Firebase REST failed, using LocalStorage:', err.message);
+            data = localData || {};
+            CONFIG.CATEGORIES.forEach(cat => { if (!data[cat.id]) data[cat.id] = []; });
+            isSynced = false;
+            updateSyncStatus('pending');
+        }
     }
 
     renderAllTables();
@@ -1831,12 +1853,29 @@ async function loadAllYearsData() {
             }
         }
     } else {
-        // Fallback: load from localStorage
+        // Try Firebase REST API (public read)
+        try {
+            const FIREBASE_URL = 'https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app';
+            const res = await fetch(`${FIREBASE_URL}/awards.json`);
+            if (res.ok) {
+                const firebaseData = await res.json();
+                if (firebaseData) {
+                    for (const yearKey in firebaseData) {
+                        allData[yearKey] = firebaseData[yearKey];
+                    }
+                }
+            }
+        } catch (err) {
+            console.warn('⚠️ Firebase REST failed, using LocalStorage');
+        }
+        // Fallback: fill gaps from localStorage
         for (let year = CONFIG.START_YEAR; year < endYear; year++) {
-            const lsKey = `seasonAwards_${year}_${year + 1}`;
-            const lsData = localStorage.getItem(lsKey);
-            if (lsData) {
-                allData[`${year}_${year + 1}`] = JSON.parse(lsData);
+            const yearKey = `${year}_${year + 1}`;
+            if (!allData[yearKey]) {
+                const lsData = localStorage.getItem(`seasonAwards_${yearKey}`);
+                if (lsData) {
+                    allData[yearKey] = JSON.parse(lsData);
+                }
             }
         }
     }
