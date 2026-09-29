@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-PGA Awards Scraper
+PGA (Producers Guild of America) Scraper
 """
 
-from . import CEREMONY_MAP, URL_TEMPLATES, fetch_page, ordinal, init_results
+from . import URL_TEMPLATES, fetch_page, ordinal
+
 
 def scrape_pga(ceremony_num):
     """
@@ -117,5 +118,3 @@ def scrape_pga(ceremony_num):
     
     print(f"    PGA {ordinal(ceremony_num)}: Found {len(results['best-film'])} films")
     return results
-
-

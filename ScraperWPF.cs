@@ -146,7 +146,7 @@ namespace SeasonAwardsScraper
             headerStack.HorizontalAlignment = HorizontalAlignment.Center;
             
             TextBlock titleTxt = new TextBlock();
-            titleTxt.Text = "SEASON AWARDS 2026";
+            titleTxt.Text = "SEASON AWARDS " + CurrentSeasonEndYear();
             titleTxt.FontSize = 22;
             titleTxt.FontWeight = FontWeights.Bold;
             titleTxt.Foreground = Brushes.Black;
@@ -301,9 +301,10 @@ namespace SeasonAwardsScraper
             // Extract ROOT expected block
             string expectedRoot = ExtractJsonBlock(json, "expected");
             
-            // Extract YEARS block, then 2025_2026
+            // Extract YEARS block, then the current season (e.g. 2026_2027)
             string yearsBlock = ExtractJsonBlock(json, "years");
-            string currentYearBlock = ExtractJsonBlock(yearsBlock, "2025_2026");
+            int seasonEnd = CurrentSeasonEndYear();
+            string currentYearBlock = ExtractJsonBlock(yearsBlock, (seasonEnd - 1) + "_" + seasonEnd);
 
             // If no year data yet, still show empty rows
             if (string.IsNullOrEmpty(currentYearBlock)) currentYearBlock = "";
@@ -647,6 +648,12 @@ namespace SeasonAwardsScraper
              var match = Regex.Match(json, "\"" + key + "\":\\s*(\\d+)");
              return match.Success ? int.Parse(match.Groups[1].Value) : 0;
         }
+        // Season starts in September (Venice): keep in sync with scrapers/__init__.py
+        private static int CurrentSeasonEndYear() {
+            DateTime now = DateTime.Now;
+            return now.Month >= 9 ? now.Year + 1 : now.Year;
+        }
+
         private string ExtractJsonBlock(string json, string key) {
              int idx = json.IndexOf("\"" + key + "\":");
              if (idx == -1) return "";

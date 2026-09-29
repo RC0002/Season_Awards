@@ -3,3 +3,13 @@ __pycache__/
 *.log
 .DS_Store
 firebase-service-account.json
+
+# Local Firebase web config (generated from the FIREBASE_CONFIG secret on deploy)
+firebase-config.js
+
+# Build output (run build_wpf.bat)
+ScraperWPF.exe
+
+# Local tooling / scratch
+.pytest_cache/
+scraper/debug_*.py

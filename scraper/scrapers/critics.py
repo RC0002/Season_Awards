@@ -154,8 +154,8 @@ def scrape_critics_old_format(soup, ceremony_num):
                                 if not name:
                                     if '–' in rest:
                                         name = rest.split('–')[0].strip()
-                                    elif '-' in rest:
-                                        name = rest.split('-')[0].strip()
+                                    elif ' - ' in rest:  # spaced hyphen only (hyphenated names)
+                                        name = rest.split(' - ')[0].strip()
                                     else:
                                         name = rest.strip()
                                 

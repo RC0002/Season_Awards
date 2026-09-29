@@ -220,7 +220,7 @@ def scrape_nyfcc(year):
                 # Try to split by dash
                 parts = extracted_text.split('–') # En dash
                 if len(parts) < 2:
-                    parts = extracted_text.split('-') # Hyphen
+                    parts = extracted_text.split(' - ')  # Spaced hyphen (keeps hyphenated names)
                 
                 if len(parts) >= 2:
                     winner_name = parts[0].strip()

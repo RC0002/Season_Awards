@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-SAG Awards Scraper
+SAG Awards Scraper (legacy table format)
 """
 
-from . import CEREMONY_MAP, URL_TEMPLATES, fetch_page, ordinal, init_results
+
 
 def scrape_sag_old_format(tables_or_soup, award_key):
     """
@@ -139,15 +139,36 @@ def scrape_sag_old_format(tables_or_soup, award_key):
                                     }
                                     results[key].append(entry)
                         else:
-                            # For actors, get from first <a> tag
+                            # For actors, get from first <a> tag or text before dash if no link
                             first_link = li.find('a')
-                            if not first_link:
-                                continue
-                            
-                            name = first_link.get_text().strip()
-                            # Get film name first for deduplication
-                            all_links = li.find_all('a')
-                            film_name = all_links[1].get_text().strip() if len(all_links) >= 2 else ''
+                            if first_link:
+                                name = first_link.get_text().strip()
+                            else:
+                                # Fallback: extract name from text before "–" or "-"
+                                li_text = li.get_text().strip()
+                                if '–' in li_text:
+                                    name = li_text.split('–')[0].strip()
+                                elif ' - ' in li_text:  # spaced hyphen only: "Lee Byung-hun" must stay whole
+                                    name = li_text.split(' - ')[0].strip()
+                                else:
+                                    continue
+                                if len(name) < 2:
+                                    continue
+                            # Get film name - first try <i> tag (common in SAG pages), then 2nd <a> link
+                            film_name = ''
+                            i_tag = li.find('i')
+                            if i_tag:
+                                # Film name is in italic - extract first <a> inside <i> or text
+                                i_link = i_tag.find('a')
+                                if i_link:
+                                    film_name = i_link.get_text().strip()
+                                else:
+                                    film_name = i_tag.get_text().strip()
+                            else:
+                                # Fallback: use 2nd <a> link if no <i> tag
+                                all_links = li.find_all('a')
+                                if len(all_links) >= 2:
+                                    film_name = all_links[1].get_text().strip()
                             entry_key = (name, film_name)
                             
                             if len(name) < 2 or entry_key in seen_entries.get(key, set()):
@@ -157,7 +178,7 @@ def scrape_sag_old_format(tables_or_soup, award_key):
                                 seen_entries[key].add(entry_key)
                             
                             # Check if winner (bold)
-                            is_bold = li.find('b') is not None or first_link.find_parent('b') is not None
+                            is_bold = li.find('b') is not None or (first_link and first_link.find_parent('b') is not None)
                             
                             entry = {
                                 'name': name,
@@ -174,5 +195,3 @@ def scrape_sag_old_format(tables_or_soup, award_key):
                             results[key].append(entry)
     
     return results
-
-

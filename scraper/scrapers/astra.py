@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-ASTRA Awards Scraper
+Astra Film Awards (formerly HCA) Scraper
 """
 
-from . import CEREMONY_MAP, URL_TEMPLATES, fetch_page, ordinal, init_results
+from . import CEREMONY_MAP, fetch_page, ordinal
+
 
 def scrape_astra(year):
     """
@@ -178,8 +179,9 @@ def scrape_astra_logic(soup):
 
                     award_val = 'Y' if is_winner else 'X'
                     
-                    # Delimiter handling (Endash, Emdash, Hyphen)
-                    parts = re.split(r'\s*[–—-]\s*', nom_text)
+                    # Delimiter: en/em dash, or a hyphen with spaces around it. A bare hyphen is part
+                    # of a name or title ("Lee Byung-hun", "Spider-Man") and must not split.
+                    parts = re.split(r'\s*[–—]\s*|\s+-\s+', nom_text, maxsplit=1)
                     
                     if cat_found == 'best-film':
                         film_name = parts[0].strip()
@@ -222,4 +224,3 @@ def scrape_astra_logic(soup):
     total = sum(len(v) for v in results.values())
     print(f"    ASTRA/HCA: Found {total} entries (Films: {len(results['best-film'])}, Dir: {len(results['best-director'])})")
     return results
-

@@ -1,6 +1,6 @@
 import sys
 import re
-from . import CEREMONY_MAP, URL_TEMPLATES, fetch_page, get_person_gender
+from . import CEREMONY_MAP, URL_TEMPLATES, fetch_page, get_person_gender, own_text
 
 def scrape_bifa(year):
     """Scrape British Independent Film Awards (BIFA) from Wikipedia."""
@@ -95,14 +95,15 @@ def scrape_bifa_logic(url):
                 
                 lis = cell.find_all('li')
                 for li in lis:
-                    text = li.get_text(separator=' ').strip()
+                    text = own_text(li)  # exclude nested nominee lists
                     if not text:
                         continue
                     
                     is_winner = bool(li.find(['b', 'strong']))
                     
                     # Split by hyphen or en-dash
-                    parts = re.split(r'\s*[–-]\s*', text)
+                    # en/em dash or spaced hyphen: a bare hyphen belongs to a name/title
+                    parts = re.split(r'\s*[–—]\s*|\s+-\s+', text)
                     if not parts:
                         continue
                         
@@ -265,7 +266,7 @@ def scrape_bifa_section_format(soup):
             
         # Parse list items
         for li in ul.find_all('li'):
-            li_text = li.get_text(separator=' ').strip()
+            li_text = own_text(li)  # exclude nested nominee lists
             if not li_text:
                 continue
                 
@@ -276,7 +277,7 @@ def scrape_bifa_section_format(soup):
             clean_text = re.sub(r'\s*\(\s*winner\s*\)\s*', '', li_text, flags=re.IGNORECASE)
             
             # Common separators: " – ", " - ", " for ", " in "
-            parts = re.split(r'\s*[–-]\s*|\s+for\s+|\s+in\s+', clean_text)
+            parts = re.split(r'\s*[–—]\s*|\s+-\s+|\s+for\s+|\s+in\s+', clean_text)
             
             name = clean_text
             film = None

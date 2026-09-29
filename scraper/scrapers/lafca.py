@@ -1,28 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-LAFCA Awards Scraper
+LAFCA (Los Angeles Film Critics Association) Scraper
 """
 
-from . import CEREMONY_MAP, URL_TEMPLATES, fetch_page, ordinal, init_results
+from . import URL_TEMPLATES, fetch_page, get_person_gender
 
-import time
-TMDB_API_KEY = "4399b8147e098e80be332f172d1fe490"
-TMDB_BASE_URL = "https://api.themoviedb.org/3"
-
-def get_person_gender(name, tmdb_api_key='4399b8147e098e80be332f172d1fe490'):
-    """Get gender of a person using TMDB API. Returns: 1 = Female, 2 = Male, 0 = Unknown"""
-    import requests
-    try:
-        url = f"{TMDB_BASE_URL}/search/person"
-        params = {'api_key': tmdb_api_key, 'query': name}
-        response = requests.get(url, params=params, timeout=5)
-        if response.status_code == 200:
-            results = response.json().get('results', [])
-            if results:
-                return results[0].get('gender', 0)
-    except:
-        pass
-    return 0
 
 def scrape_lafca(year):
     """
@@ -115,10 +97,6 @@ def scrape_lafca(year):
             # Use startswith with colon to prevent partial matches 
             # (e.g., "best actor" matching in "best lead performance")
             if li_text.startswith(key + ':') or li_text.startswith(key + ' '):
-                # Explicitly exclude "Best Film Not in the English Language"
-                if key == 'best film' and 'not in' in li_text:
-                    continue
-
                 if cat in ['lead-performance', 'supporting-performance']:
                     is_performance = True
                     performance_type = cat
@@ -252,5 +230,3 @@ def scrape_lafca(year):
     total = sum(len(v) for v in results.values())
     print(f"    LAFCA {year}: Found {total} entries (Films: {len(results['best-film'])}, Dir: {len(results['best-director'])}, Actor: {len(results['best-actor'])}, Actress: {len(results['best-actress'])})")
     return results
-
-

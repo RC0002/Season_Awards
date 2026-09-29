@@ -12,9 +12,9 @@ Features:
 - Designed for monitoring new season (2025/26)
 
 Usage:
-  py scraper/scrape_and_upload.py --years 2026        # Scrape and upload 2025/26 season
-  py scraper/scrape_and_upload.py --years 2026 --no-parallel  # Sequential for debugging
-  py scraper/scrape_and_upload.py --upload-only --years 2026  # Just upload existing files
+  py scraper/scrape_and_upload.py --years 2027        # Scrape and upload 2026/27 season
+  py scraper/scrape_and_upload.py --years 2027 --no-parallel  # Sequential for debugging
+  py scraper/scrape_and_upload.py --upload-only --years 2027  # Just upload existing files
 """
 
 import requests
@@ -30,7 +30,8 @@ from threading import Lock
 sys.stdout.reconfigure(encoding='utf-8')
 
 # Import functions from existing modules
-from master_scraper import scrape_year, save_year_data, CEREMONY_MAP
+from master_scraper import save_year_data, CEREMONY_MAP
+from scrapers import current_season_year
 from firebase_upload import upload_year_data, load_json_file
 
 
@@ -643,7 +644,7 @@ def scrape_award_with_logging(award_key, year, report):
         log.log(f"Ceremony/Year mapping: {year} → {ceremony}")
         
         # ==== FETCH PAGE ====
-        from master_scraper import URL_TEMPLATES, ordinal, fetch_page
+        from master_scraper import URL_TEMPLATES, ordinal
         
         if award_key in URL_TEMPLATES:
             if '{year}' in URL_TEMPLATES[award_key]:
@@ -655,67 +656,10 @@ def scrape_award_with_logging(award_key, year, report):
             log.log(f"Using special scraper function")
         
         # ==== CALL APPROPRIATE SCRAPER ====
-        from master_scraper import (scrape_award, scrape_afi, scrape_nbr, 
-                                    scrape_venice, scrape_dga, scrape_pga, scrape_lafca, scrape_nyfcc, scrape_wga, scrape_adg, scrape_gotham, scrape_astra, scrape_spirit, scrape_bifa, scrape_cannes, scrape_annie)
-        
-        result = None
-        
-        if award_key == 'afi':
-            result = scrape_afi(ceremony)
-            log.log(f"Scraped AFI Top 10 Films list")
-        elif award_key == 'nbr':
-            result = scrape_nbr(ceremony)
-            log.log(f"Scraped NBR Awards page")
-        elif award_key == 'venice':
-            result = scrape_venice(ceremony)
-            log.log(f"Scraped Venice Film Festival page (Italian Wikipedia)")
-        elif award_key == 'dga':
-            if ceremony < 100:
-                # Ordinal edition (2026+) → use Wikipedia
-                from scrapers.dga import scrape_dga_wikipedia
-                result = scrape_dga_wikipedia(ceremony)
-                log.log(f"Scraped DGA from Wikipedia ({ceremony}th edition)")
-            else:
-                # Film year (pre-2026) → use dga_awards.json fallback
-                result = scrape_dga(ceremony)
-                log.log(f"Loaded DGA data from pre-scraped file")
-        elif award_key == 'pga':
-            result = scrape_pga(ceremony)
-            log.log(f"Scraped PGA Theatrical Film nominees")
-        elif award_key == 'lafca':
-            result = scrape_lafca(ceremony)
-            log.log(f"Scraped LAFCA Awards (with gender detection)")
-        elif award_key == 'nyfcc':
-            result = scrape_nyfcc(ceremony)
-            log.log(f"Scraped NYFCC Winners")
-        elif award_key == 'wga':
-            result = scrape_wga(ceremony)
-            log.log(f"Scraped WGA Original and Adapted Screenplay nominees")
-        elif award_key == 'adg':
-            result = scrape_adg(year)
-            log.log(f"Scraped ADG Production Design nominees")
-        elif award_key == 'gotham':
-            result = scrape_gotham(year)
-            log.log(f"Scraped Gotham Independent Film Awards")
-        elif award_key == 'astra':
-            result = scrape_astra(year)
-            log.log(f"Scraped Astra/HCA Film Awards")
-        elif award_key == 'spirit':
-            result = scrape_spirit(year)
-            log.log(f"Scraped Independent Spirit Awards")
-        elif award_key == 'bifa':
-            result = scrape_bifa(year)
-            log.log(f"Scraped British Independent Film Awards")
-        elif award_key == 'cannes':
-            result = scrape_cannes(ceremony)
-            log.log(f"Scraped Cannes Film Festival")
-        elif award_key == 'annie':
-            result = scrape_annie(ceremony)
-            log.log(f"Scraped Annie Awards (Best Animated Feature)")
-        else:
-            result = scrape_award(award_key, year)
-            log.log(f"Scraped Wikipedia awards table")
-        
+        from master_scraper import scrape_single_award
+
+        result = scrape_single_award(award_key, year)
+
         # ==== ANALYZE RESULTS ====
         if result:
             counts = {}
@@ -852,8 +796,8 @@ def get_firebase_hash(year_key):
     return None
 
 
-def upload_with_change_detection(years):
-    """Upload only years that have changed"""
+def upload_with_change_detection(years, force=False):
+    """Upload only years that have changed (force=True uploads them even if unchanged)"""
     print(f"\n{'='*60}")
     print(f"  📤 UPLOADING WITH CHANGE DETECTION")
     print(f"{'='*60}")
@@ -873,7 +817,7 @@ def upload_with_change_detection(years):
         local_hash = get_file_hash(filepath)
         firebase_hash = get_firebase_hash(year_key)
         
-        if local_hash == firebase_hash and firebase_hash is not None:
+        if not force and local_hash == firebase_hash and firebase_hash is not None:
             print(f"  {year_key}: ⏭️ No changes, skipping")
             skipped += 1
         else:
@@ -895,12 +839,12 @@ def run_full_pipeline(years=None, parallel=True, force_upload=False, no_upload=F
     Run the full scrape and upload pipeline.
     
     Args:
-        years: List of years to process (default: just 2026 for current season)
+        years: List of season end years to process (default: current season)
         parallel: Use parallel scraping
         force_upload: Skip change detection and upload all
     """
     if years is None:
-        years = [2026]  # Default to current season
+        years = [current_season_year()]
         
     emit_event('start_pipeline', {'years': years, 'parallel': parallel})
     
@@ -912,10 +856,21 @@ def run_full_pipeline(years=None, parallel=True, force_upload=False, no_upload=F
     print(f"  📤 Force upload: {force_upload}")
     print(f"  🕐 Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     
-    # Step 1: Scrape each year
+    # Step 1: Scrape each year, then check data quality before anything is uploaded
+    from data_quality import find_issues
+    blocked = []
     for year in years:
         data = scrape_year_enhanced(year, parallel=parallel)
         save_year_data(year, data)
+        issues = find_issues(data)
+        if issues:
+            blocked.append(year)
+            print(f"\n  ⚠️  DATA QUALITY: {len(issues)} problem(s) in {year-1}_{year} — upload blocked")
+            for issue in issues:
+                print(f"     - {issue}")
+            print(f"     Check data/data_{year-1}_{year}.json, then upload with: "
+                  f"py scraper/scrape_and_upload.py --upload-only --years {year}")
+            emit_event('quality_issues', {'year': year, 'issues': issues})
     
     # Step 2: Generate analysis JSON for control panel
     emit_event('award_start', {'award': 'gen_analysis'})
@@ -933,11 +888,11 @@ def run_full_pipeline(years=None, parallel=True, force_upload=False, no_upload=F
         print(f"  📤 UPLOAD TO FIREBASE")
         print(f"{'='*60}")
         
-        if force_upload:
-            from firebase_upload import upload_all_years
-            upload_all_years()
-        else:
-            uploaded, skipped = upload_with_change_detection(years)
+        to_upload = [y for y in years if force_upload or y not in blocked]
+        if blocked and not force_upload:
+            print(f"  ⏸️ Not uploading (quality issues): {', '.join(f'{y-1}_{y}' for y in blocked)}")
+        # Only the scraped seasons are uploaded (never the whole history)
+        uploaded, skipped = upload_with_change_detection(to_upload, force=force_upload)
     else:
         print(f"\n{'='*60}")
         print(f"  🚫 UPLOAD SKIPPED (--no-upload)")
@@ -952,7 +907,7 @@ def run_full_pipeline(years=None, parallel=True, force_upload=False, no_upload=F
 # =============================================================================
 # TMDB IMAGE FETCHING
 # =============================================================================
-TMDB_API_KEY = '4399b8147e098e80be332f172d1fe490'
+from scrapers import TMDB_API_KEY
 TMDB_BASE_URL = 'https://api.themoviedb.org/3'
 
 def fetch_all_tmdb_images():
@@ -1284,25 +1239,16 @@ def generate_analysis_json(years_to_update=None):
 
 def get_current_season():
     """
-    Auto-detect the current awards season based on date.
-    Awards season runs from October to September of the following year.
-    
-    Oct 2025 - Sep 2026 = Season 2025_2026 (year param = 2026)
-    Oct 2024 - Sep 2025 = Season 2024_2025 (year param = 2025)
-    
-    Returns: (year_param, season_string) e.g. (2026, "2025_2026")
+    Auto-detect the current awards season based on date (see scrapers.current_season_year).
+    The season starts in September (Venice):
+
+    Sep 2025 - Aug 2026 = Season 2025_2026 (year param = 2026)
+    Sep 2026 - Aug 2027 = Season 2026_2027 (year param = 2027)
+
+    Returns: (year_param, season_string) e.g. (2027, "2026_2027")
     """
-    now = datetime.now()
-    
-    # October starts new season
-    if now.month >= 10:  # Oct-Dec
-        season_start = now.year
-        season_end = now.year + 1
-    else:  # Jan-Sep
-        season_start = now.year - 1
-        season_end = now.year
-    
-    return season_end, f"{season_start}_{season_end}"
+    season_end = current_season_year()
+    return season_end, f"{season_end - 1}_{season_end}"
 
 
 # =============================================================================
@@ -1327,7 +1273,7 @@ Examples:
   py scraper/scrape_and_upload.py --upload-only            # Just upload existing files
 
 Season Logic:
-  - Oct {current_year-1} to Sep {current_year} = Season {current_season}
+  - Sep {current_year-1} to Aug {current_year} = Season {current_season}
   - Without --years: scrapes current season automatically
   - With --years: scrapes specific historical season(s)
         """
@@ -1361,7 +1307,7 @@ Season Logic:
         print(f"\n  📚 Historical scraping for: {', '.join(f'{y-1}_{y}' for y in years)}\n")
     
     if args.upload_only:
-        upload_with_change_detection(years)
+        upload_with_change_detection(years, force=args.force)
         # Also regenerate analysis.json for these years to update stats
         generate_analysis_json(years_to_update=years)
     else:

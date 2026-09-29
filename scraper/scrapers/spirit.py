@@ -3,7 +3,7 @@
 Spirit Awards (Independent Spirit Awards) Scraper
 """
 
-from . import CEREMONY_MAP, URL_TEMPLATES, fetch_page, ordinal, get_person_gender
+from . import CEREMONY_MAP, URL_TEMPLATES, fetch_page, ordinal, get_person_gender, own_text
 
 
 def scrape_spirit(year):
@@ -121,7 +121,7 @@ def scrape_spirit_logic(url):
                 for li in lis:
                     first_elem = li.find(['b', 'strong'])
                     is_winner = bool(first_elem)
-                    text = li.get_text(separator=' ').strip()
+                    text = own_text(li)  # exclude nested nominee lists
                     if text:
                         nominees.append((text, is_winner))
                 

@@ -1,134 +1,86 @@
 # -*- coding: utf-8 -*-
 """
-Shared utilities for award scrapers
+Shared utilities and configuration for award scrapers.
+
+This package is the single source of truth for CEREMONY_MAP and URL_TEMPLATES.
 """
+
+import os
+import re
+import time
+from urllib.parse import unquote
 
 import requests
 from bs4 import BeautifulSoup
 
-TMDB_API_KEY = "4399b8147e098e80be332f172d1fe490"
+# TMDB v3 key (read-only, also used client-side). Override with the TMDB_API_KEY env var.
+TMDB_API_KEY = os.environ.get('TMDB_API_KEY', "4399b8147e098e80be332f172d1fe490")
 TMDB_BASE_URL = "https://api.themoviedb.org/3"
 
 # ============ YEAR TO CEREMONY MAPPING ============
-CEREMONY_MAP = {
-    'oscar': {
-        2026: 98, 2025: 97, 2024: 96, 2023: 95, 2022: 94, 2021: 93,
-        2020: 92, 2019: 91, 2018: 90, 2017: 89, 2016: 88,
-        2015: 87, 2014: 86, 2013: 85
-    },
-    'gg': {
-        2026: 83, 2025: 82, 2024: 81, 2023: 80, 2022: 79, 2021: 78,
-        2020: 77, 2019: 76, 2018: 75, 2017: 74, 2016: 73,
-        2015: 72, 2014: 71, 2013: 70
-    },
-    'bafta': {
-        2026: 79, 2025: 78, 2024: 77, 2023: 76, 2022: 75, 2021: 74,
-        2020: 73, 2019: 72, 2018: 71, 2017: 70, 2016: 69,
-        2015: 68, 2014: 67, 2013: 66
-    },
-    'sag': {
-        2026: 32, 2025: 31, 2024: 30, 2023: 29, 2022: 28, 2021: 27,
-        2020: 26, 2019: 25, 2018: 24, 2017: 23, 2016: 22,
-        2015: 21, 2014: 20, 2013: 19
-    },
-    'critics': {
-        2026: 31, 2025: 30, 2024: 29, 2023: 28, 2022: 27, 2021: 26,
-        2020: 25, 2019: 24, 2018: 23, 2017: 22, 2016: 21,
-        2015: 20, 2014: 19, 2013: 18, 2012: 17, 2011: 16, 2010: 15,
-        2009: 14, 2008: 13, 2007: 12, 2006: 11, 2005: 10, 2004: 9,
-        2003: 8, 2002: 7, 2001: 6
-    },
-    'afi': {
-        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
-        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
-        2015: 2014, 2014: 2013, 2013: 2012
-    },
-    'nbr': {
-        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
-        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
-        2015: 2014, 2014: 2013, 2013: 2012
-    },
-    'venice': {
-        2026: 82, 2025: 81, 2024: 80, 2023: 79, 2022: 78, 2021: 77,
-        2020: 76, 2019: 75, 2018: 74, 2017: 73, 2016: 72,
-        2015: 71, 2014: 70, 2013: 69, 2012: 68, 2011: 67, 2010: 66,
-        2009: 65, 2008: 64, 2007: 63, 2006: 62, 2005: 61, 2004: 60,
-        2003: 59, 2002: 58, 2001: 57
-    },
-    # DGA: 2026+ uses ordinal edition numbers (for Wikipedia scraping)
-    # Historical years (pre-2026) use film year (for dga_awards.json fallback)
-    'dga': {
-        2026: 78, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
-        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
-        2015: 2014, 2014: 2013, 2013: 2012
-    },
-    'pga': {
-        2026: 37, 2025: 36, 2024: 35, 2023: 34, 2022: 33, 2021: 32,
-        2020: 31, 2019: 30, 2018: 29, 2017: 28, 2016: 27,
-        2015: 26, 2014: 25, 2013: 24
-    },
-    'lafca': {
-        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
-        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
-        2015: 2014, 2014: 2013, 2013: 2012
-    },
-    'wga': {
-        2026: 77, 2025: 76, 2024: 75, 2023: 74, 2022: 73, 2021: 72,
-        2020: 71, 2019: 70, 2018: 69, 2017: 68, 2016: 67,
-        2015: 66, 2014: 65, 2013: 64
-    },
-    'adg': {
-        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
-        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
-        2015: 2014, 2014: 2013, 2013: 2012
-    },
-    'gotham': {
-        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
-        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
-        2015: 2014, 2014: 2013, 2013: 2012, 2012: 2011, 2011: 2010, 2010: 2009,
-        2009: 2008, 2008: 2007, 2007: 2006, 2006: 2005, 2005: 2004, 2004: 2003,
-        2003: 2002, 2002: 2001, 2001: 2000
-    },
-    'astra': {
-        2026: 9, 2025: 8, 2024: 7, 2023: 6, 2022: 5, 2021: 4,
-        2020: 3, 2019: 2, 2018: 1
-    },
-    'spirit': {
-        2026: 41, 2025: 40, 2024: 39, 2023: 38, 2022: 37, 2021: 36,
-        2020: 35, 2019: 34, 2018: 33, 2017: 32, 2016: 31,
-        2015: 30, 2014: 29, 2013: 28, 2012: 27, 2011: 26, 2010: 25,
-        2009: 24, 2008: 23, 2007: 22, 2006: 21, 2005: 20, 2004: 19,
-        2003: 18, 2002: 17, 2001: 16
-    },
-    'bifa': {
-        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
-        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
-        2015: 2014, 2014: 2013, 2013: 2012, 2012: 2011, 2011: 2010, 2010: 2009,
-        2009: 2008, 2008: 2007, 2007: 2006, 2006: 2005, 2005: 2004, 2004: 2003,
-        2003: 2002, 2002: 2001, 2001: 2000
-    },
-    'cannes': {
-        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
-        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
-        2015: 2014, 2014: 2013, 2013: 2012, 2012: 2011, 2011: 2010, 2010: 2009,
-        2009: 2008, 2008: 2007, 2007: 2006, 2006: 2005, 2005: 2004, 2004: 2003,
-        2003: 2002, 2002: 2001, 2001: 2000
-    },
-    'annie': {
-        2026: 53, 2025: 52, 2024: 51, 2023: 50, 2022: 49, 2021: 48,
-        2020: 47, 2019: 46, 2018: 45, 2017: 44, 2016: 43,
-        2015: 42, 2014: 41, 2013: 40
-    },
-    # NYFCC: New York Film Critics Circle - year of films (like LAFCA)
-    'nyfcc': {
-        2026: 2025, 2025: 2024, 2024: 2023, 2023: 2022, 2022: 2021, 2021: 2020,
-        2020: 2019, 2019: 2018, 2018: 2017, 2017: 2016, 2016: 2015,
-        2015: 2014, 2014: 2013, 2013: 2012, 2012: 2011, 2011: 2010, 2010: 2009,
-        2009: 2008, 2008: 2007, 2007: 2006, 2006: 2005, 2005: 2004, 2004: 2003,
-        2003: 2002, 2002: 2001, 2001: 2000
-    }
+# Season year is the SECOND year (e.g., 2024/25 season = year 2025).
+# Every award follows a fixed offset from the season year, so the map is
+# generated instead of hand-maintained: a new season only needs LAST_SEASON bumped
+# (or nothing at all, since it follows the calendar).
+
+FIRST_SEASON = 2001
+
+
+SEASON_START_MONTH = 9  # September (Venice). Keep in sync with SEASON_START_MONTH in app.js
+
+
+def current_season_year():
+    """Season end year: Sep-Dec belongs to the next ceremony year (e.g. Sep 2025 -> 2026)."""
+    from datetime import date
+    today = date.today()
+    return today.year + 1 if today.month >= SEASON_START_MONTH else today.year
+
+
+# Map through the season after the current one, so upcoming ceremonies are always covered.
+LAST_SEASON = current_season_year() + 1
+
+# award -> (offset, first season year available). Value = season_year - offset.
+_CEREMONY_OFFSETS = {
+    'oscar': (1928, FIRST_SEASON),     # 97th Academy Awards = 2025
+    'gg': (1943, FIRST_SEASON),        # 82nd Golden Globes = 2025
+    'bafta': (1947, FIRST_SEASON),     # 78th BAFTA = 2025
+    'sag': (1994, FIRST_SEASON),       # 31st SAG = 2025 (renamed "Actor Awards" from 32nd)
+    'critics': (1995, FIRST_SEASON),   # 30th Critics' Choice = 2025
+    'afi': (1, FIRST_SEASON),          # AFI Awards <film year>
+    'nbr': (1, FIRST_SEASON),          # NBR Awards <film year>
+    'venice': (1944, FIRST_SEASON),    # 81st Venice (Sept 2024) = season 2024/25
+    'pga': (1989, FIRST_SEASON),       # 36th PGA = 2025
+    'lafca': (1, FIRST_SEASON),        # <film year> LAFCA
+    'wga': (1948, FIRST_SEASON),       # 77th WGA = 2025
+    'adg': (1, FIRST_SEASON),          # ADG Awards <film year>
+    'gotham': (1, FIRST_SEASON),       # Gotham <film year>
+    'annie': (1973, FIRST_SEASON),     # 52nd Annie = 2025
+    'astra': (2017, 2018),             # 8th Astra = 2025 (formerly HCA, started 2018)
+    'spirit': (1985, FIRST_SEASON),    # 40th Spirit = 2025
+    'bifa': (1, FIRST_SEASON),         # BIFA <film year>
+    'cannes': (1, FIRST_SEASON),       # Cannes 2025 (May) = season 2025/26
+    'nyfcc': (1, FIRST_SEASON),        # <film year> NYFCC
 }
 
+# DGA: 2026+ uses ordinal edition numbers (Wikipedia scraping, 78th = 2026).
+# Historical years (pre-2026) use the film year (dga_awards.json fallback).
+DGA_WIKIPEDIA_FROM = 2026
+
+
+def _build_ceremony_map():
+    ceremony_map = {}
+    for award, (offset, first) in _CEREMONY_OFFSETS.items():
+        ceremony_map[award] = {y: y - offset for y in range(first, LAST_SEASON + 1)}
+    ceremony_map['dga'] = {
+        y: (y - 1948 if y >= DGA_WIKIPEDIA_FROM else y - 1)
+        for y in range(FIRST_SEASON, LAST_SEASON + 1)
+    }
+    return ceremony_map
+
+
+CEREMONY_MAP = _build_ceremony_map()
+
+# Wikipedia URL templates - use {ord} placeholder for ordinal (like 82nd, 31st)
 URL_TEMPLATES = {
     'oscar': 'https://en.wikipedia.org/wiki/{ord}_Academy_Awards',
     'gg': 'https://en.wikipedia.org/wiki/{ord}_Golden_Globe_Awards',
@@ -140,6 +92,7 @@ URL_TEMPLATES = {
     'nbr': 'https://en.wikipedia.org/wiki/National_Board_of_Review_Awards_{year}',
     'venice': 'https://it.wikipedia.org/wiki/{ord}%C2%AA_Mostra_internazionale_d%27arte_cinematografica_di_Venezia',
     'pga': 'https://en.wikipedia.org/wiki/{ord}_Producers_Guild_of_America_Awards',
+    'dga': 'https://en.wikipedia.org/wiki/{ord}_Directors_Guild_of_America_Awards',
     'lafca': 'https://en.wikipedia.org/wiki/{year}_Los_Angeles_Film_Critics_Association_Awards',
     'wga': 'https://en.wikipedia.org/wiki/{ord}_Writers_Guild_of_America_Awards',
     'adg': 'https://en.wikipedia.org/wiki/Art_Directors_Guild_Awards_{year}',
@@ -157,94 +110,67 @@ def ordinal(n):
     return f"{n}{suffix}"
 
 
-def fetch_page(url):
-    """Fetch and parse a webpage"""
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-    response = requests.get(url, headers=headers)
-    if response.status_code != 200:
-        print(f"    Error: HTTP {response.status_code}")
+HTTP_HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+
+
+def fetch_page(url, retries=2, timeout=30):
+    """Fetch and parse a webpage (retries on network errors, returns None on failure)"""
+    for attempt in range(retries + 1):
+        try:
+            response = requests.get(url, headers=HTTP_HEADERS, timeout=timeout)
+        except requests.RequestException as e:
+            print(f"    Error: {e}")
+            if attempt < retries:
+                time.sleep(2 * (attempt + 1))
+                continue
+            return None
+        if response.status_code != 200:
+            print(f"    Error: HTTP {response.status_code}")
+            return None
+        soup = BeautifulSoup(response.text, 'html.parser')
+        target = edition_redirect_target(url, soup)
+        if target:
+            print(f"    Page not published yet: redirects to '{target}'")
+            return None
+        return soup
+    return None
+
+
+# Edition markers in a Wikipedia title: ordinals ("54th") and years ("2026")
+_EDITION_TOKEN = re.compile(r'\b(\d+(?:st|nd|rd|th)|(?:19|20)\d{2})\b')
+
+
+def edition_redirect_target(url, soup):
+    """
+    Wikipedia serves redirects with HTTP 200, so a ceremony page that doesn't exist yet
+    (e.g. "54th_Annie_Awards" -> "Annie_Award") would be parsed as the generic award page.
+    Returns the redirect target title if it lost the requested edition, else None.
+    Renames that keep the edition (e.g. "31st Screen Actors Guild Awards" -> "31st Actor Awards") pass.
+    """
+    if not soup.find(class_='mw-redirectedfrom'):
         return None
-    return BeautifulSoup(response.text, 'html.parser')
+    canonical = soup.find('link', rel='canonical')
+    if not canonical or not canonical.get('href'):
+        return None
+    requested = unquote(url.rsplit('/wiki/', 1)[-1]).replace('_', ' ')
+    target = unquote(canonical['href'].rsplit('/wiki/', 1)[-1]).replace('_', ' ')
+    tokens = _EDITION_TOKEN.findall(requested)
+    if tokens and not all(t in _EDITION_TOKEN.findall(target) for t in tokens):
+        return target
+    return None
 
 
-def parse_nominees_from_cell(cell, category_type, award_name):
-    """Parse nominees from a wikitable cell - shared utility"""
-    nominees = []
-    seen_entries = set()
-    
-    skip_words = ['Academy Award', 'Golden Globe', 'BAFTA', 'Screen Actors Guild',
-                  'Critics', 'Outstanding', 'Best ']
-    
-    # Check for winners in bold text before list
-    for bold in cell.find_all('b', recursive=True):
-        if bold.find_parent('li'):
+def own_text(li):
+    """
+    Text of a list item without its nested lists. On Wikipedia the winner's <li> often
+    contains the other nominees as a nested <ul>, whose text must not leak into the winner.
+    """
+    parts = []
+    for node in li.children:
+        if getattr(node, 'name', None) in ('ul', 'ol'):
             continue
-        
-        first_link = bold.find('a')
-        if not first_link:
-            continue
-        
-        link_title = first_link.get('title', '') or ''
-        if any(w in link_title for w in skip_words):
-            continue
-        
-        name = first_link.get_text().strip()
-        if len(name) < 2:
-            continue
-        
-        film = None
-        if category_type in ['director', 'actor']:
-            all_links = bold.find_all('a')
-            for link in all_links[1:]:
-                link_text = link.get_text().strip()
-                link_title = link.get('title', '')
-                if link_text and len(link_text) > 1 and not any(w in link_title for w in skip_words):
-                    film = link_text
-                    break
-        
-        entry_key = (name, film) if film else (name, None)
-        if entry_key not in seen_entries:
-            seen_entries.add(entry_key)
-            if film:
-                nominees.append({'name': name, 'film': film, 'winner': True})
-            else:
-                nominees.append({'name': name, 'winner': True})
-    
-    # Process LI elements
-    for li in cell.find_all('li', recursive=False):
-        first_link = li.find('a')
-        if not first_link:
-            continue
-        
-        link_title = first_link.get('title', '') or ''
-        if any(w in link_title for w in skip_words):
-            continue
-        
-        name = first_link.get_text().strip()
-        if len(name) < 2:
-            continue
-        
-        is_winner = bool(li.find('b') or li.find('strong'))
-        
-        film = None
-        if category_type in ['director', 'actor']:
-            all_links = li.find_all('a')
-            for link in all_links[1:]:
-                link_text = link.get_text().strip()
-                link_title = link.get('title', '')
-                if link_text and len(link_text) > 1 and not any(w in link_title for w in skip_words):
-                    film = link_text
-                    break
-        
-        entry_key = (name, film) if film else (name, None)
-        if entry_key not in seen_entries:
-            seen_entries.add(entry_key)
-            if film:
-                nominees.append({'name': name, 'film': film, 'winner': is_winner})
-            else:
-                nominees.append({'name': name, 'winner': is_winner})
-    
-    return nominees
+        parts.append(node.get_text(separator=' ') if hasattr(node, 'get_text') else str(node))
+    return ' '.join(' '.join(parts).split())
 
 
 def init_results():

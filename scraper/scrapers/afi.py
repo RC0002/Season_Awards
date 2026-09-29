@@ -3,8 +3,10 @@
 AFI Awards Scraper
 """
 
-from . import CEREMONY_MAP, URL_TEMPLATES, fetch_page, ordinal, init_results
+from . import fetch_page
 
+
+# Cache for AFI page (fetched once, used for all years)
 _afi_soup_cache = None
 
 def scrape_afi(year):
@@ -65,37 +67,65 @@ def scrape_afi(year):
         containing_div = None
         if current.name == 'h3':
             h3 = current
-        elif current.name == 'div':
+        elif current.name == 'div' or current.name == 'link':
             h3 = current.find('h3')
-            if h3:
-                containing_div = current
-        
+            if not h3:
+                h3 = current.find('h4')
+        elif current.name == 'h4':
+            h3 = current
+
         if h3:
             h3_text = h3.get_text().lower()
-            if 'top 10 films' in h3_text or 'top 11 films' in h3_text:
+            is_people_category = any(x in h3_text for x in ['actor', 'actress', 'director', 'screenwriter'])
+            
+            if (('top 10 films' in h3_text or 'top 11 films' in h3_text or 'movie of the year' in h3_text or 'movies' == h3_text.strip()) and not is_people_category):
                 found_films = True
                 found_special = False
                 # Check if UL is inside this same div
-                if containing_div:
-                    ul = containing_div.find('ul')
+                if current.name == 'div' or current.name == 'link':
+                    ul = current.find('ul')
                     if ul:
-                        for li in ul.find_all('li', recursive=False):
-                            link = li.find('a')
-                            if link:
-                                film_name = link.get_text().strip()
+                        # Helper to extract films recursively (for 2001 nested format)
+                        def extract_films_from_ul(ul_tag):
+                            extracted = []
+                            for li in ul_tag.find_all('li', recursive=False):
+                                # Check for link in this li provided it's not just a container for another ul
+                                # Actually in 2001: Winner is text/link in li, Nominees are in nested ul
+                                
+                                # 1. Extract film from this li
+                                link = li.find('a')
+                                if link:
+                                    film_name = link.get_text().strip()
+                                else:
+                                    # Use text but exclude nested ul content if any
+                                    # Get text node only? Or get text and strip
+                                    film_name = li.get_text().split('\n')[0].strip()
+                                
                                 if len(film_name) >= 2:
-                                    entry = {
-                                        'name': film_name,
-                                        'awards': {'afi': 'Y'}
-                                    }
-                                    results['best-film'].append(entry)
+                                    extracted.append(film_name)
+                                
+                                # 2. Check for nested ul
+                                nested_ul = li.find('ul')
+                                if nested_ul:
+                                    extracted.extend(extract_films_from_ul(nested_ul))
+                            return extracted
+
+                        films = extract_films_from_ul(ul)
+                        for film_name in films:
+                            entry = {
+                                'name': film_name,
+                                'awards': {'afi': 'Y'}
+                            }
+                            results['best-film'].append(entry)
                         found_films = False  # Already processed
+                
+                # Also check for p/i tags for 2000 format? (Maybe not needed yet)
             elif 'special award' in h3_text:
                 found_special = True
                 found_films = False
                 # Check if UL is inside this same div
-                if containing_div:
-                    ul = containing_div.find('ul')
+                if current.name == 'div' or current.name == 'link':
+                    ul = current.find('ul')
                     if ul:
                         for li in ul.find_all('li', recursive=False):
                             link = li.find('a')
@@ -116,11 +146,26 @@ def scrape_afi(year):
         
         # Also parse ul elements that come as siblings (for older format pages)
         if (found_films or found_special) and current.name == 'ul':
-            for li in current.find_all('li', recursive=False):
-                link = li.find('a')
-                if link:
-                    film_name = link.get_text().strip()
+            # Helper to extract films recursively (for 2001 nested format)
+            def extract_films_from_ul(ul_tag):
+                extracted = []
+                for li in ul_tag.find_all('li', recursive=False):
+                    link = li.find('a')
+                    if link:
+                        film_name = link.get_text().strip()
+                    else:
+                        film_name = li.get_text().split('\n')[0].strip()
+                    
                     if len(film_name) >= 2:
+                        extracted.append(film_name)
+                    
+                    nested_ul = li.find('ul')
+                    if nested_ul:
+                        extracted.extend(extract_films_from_ul(nested_ul))
+                return extracted
+
+            films = extract_films_from_ul(current)
+            for film_name in films:
                         entry = {
                             'name': film_name,
                             'awards': {'afi': 'Y'}
@@ -137,5 +182,3 @@ def scrape_afi(year):
     
     print(f"    AFI {year}: Found {len(results['best-film'])} films")
     return results
-
-
