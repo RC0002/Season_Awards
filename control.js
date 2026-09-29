@@ -4,7 +4,13 @@
  */
 
 const FIREBASE_URL = 'https://seasonawards-8deae-default-rtdb.europe-west1.firebasedatabase.app';
-const CURRENT_YEAR = '2025_2026';
+// Season starts in September (Venice). Keep in sync with app.js / scraper/scrapers/__init__.py
+const SEASON_START_MONTH = 9;
+let CURRENT_YEAR = (() => {
+    const now = new Date();
+    const endYear = now.getMonth() + 1 >= SEASON_START_MONTH ? now.getFullYear() + 1 : now.getFullYear();
+    return `${endYear - 1}_${endYear}`;
+})();
 
 const AWARDS_ORDER = ['oscar', 'gg', 'bafta', 'sag', 'critics', 'afi', 'nbr', 'venice', 'cannes', 'annie', 'dga', 'pga', 'lafca', 'nyfcc', 'wga', 'adg', 'gotham', 'astra', 'spirit', 'bifa'];
 const AWARDS_NAMES = {
@@ -183,13 +189,13 @@ function renderCurrentYear(data) {
     const expected = data.expected;
 
     if (!yearData) {
-        container.innerHTML = `<div class="cp-recap-wrapper"><div class="cp-recap-title">Season 2025/2026</div><p style="text-align:center;color:#999;">No data yet</p></div>`;
+        container.innerHTML = `<div class="cp-recap-wrapper"><div class="cp-recap-title">Season ${CURRENT_YEAR.replace('_', '/')}</div><p style="text-align:center;color:#999;">No data yet</p></div>`;
         return;
     }
 
     let html = `
         <div class="cp-recap-wrapper">
-            <div class="cp-recap-title">Season 2025/2026</div>
+            <div class="cp-recap-title">Season ${CURRENT_YEAR.replace('_', '/')}</div>
             <div class="cp-recap-header">
                 <span></span>
                 <span>Film</span>
@@ -356,6 +362,12 @@ async function init() {
             </div>
         `;
         return;
+    }
+
+    // A new season has no analysis until the first scrape: show the latest one instead
+    if (data.years && !data.years[CURRENT_YEAR]) {
+        const seasons = Object.keys(data.years).sort();
+        if (seasons.length > 0) CURRENT_YEAR = seasons[seasons.length - 1];
     }
 
     // Update generated time

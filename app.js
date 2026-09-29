@@ -103,6 +103,16 @@ const CONFIG = {
     }
 };
 
+// Escape text coming from Firebase/TMDB before interpolating it into innerHTML
+function escapeHtml(value) {
+    return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 // ============ STATE ============
 let currentYear = null;
 let currentCategoryIndex = 0;
@@ -221,18 +231,39 @@ const CacheManager = {
 setTimeout(() => CacheManager.cleanup(), 5000); // Run cleanup 5s after load
 
 // ============ INITIALIZATION ============
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     calculateCurrentYear();
+    await resolveInitialSeason();
     buildPage();
     loadData();
     setupFilmOverlay();
 });
 
+// Season starts in September (Venice). Keep in sync with scraper/scrapers/__init__.py
+const SEASON_START_MONTH = 9;
+
+// Second year of the season in progress (e.g. Sep 2026 -> 2027 for the 2026/27 season)
+function getSeasonEndYear(date = new Date()) {
+    return date.getMonth() + 1 >= SEASON_START_MONTH ? date.getFullYear() + 1 : date.getFullYear();
+}
+
 function calculateCurrentYear() {
-    const now = new Date();
-    const month = now.getMonth();
-    const year = now.getFullYear();
-    currentYear = month < 8 ? `${year - 1}_${year}` : `${year}_${year + 1}`;
+    const endYear = getSeasonEndYear();
+    currentYear = `${endYear - 1}_${endYear}`;
+}
+
+// A new season has no data until the first scrape: fall back to the latest season available
+async function resolveInitialSeason() {
+    try {
+        const res = await fetch(`${FIREBASE_REST_URL}/awards.json?shallow=true`);
+        if (!res.ok) return;
+        const seasons = Object.keys((await res.json()) || {}).sort();
+        if (seasons.length > 0 && !seasons.includes(currentYear)) {
+            currentYear = seasons[seasons.length - 1];
+        }
+    } catch (err) {
+        // Offline: keep the calculated season (LocalStorage fallback in loadData)
+    }
 }
 
 // ============ PAGE BUILDING ============
@@ -251,6 +282,7 @@ function buildPage() {
                 <div class="nav-actions">
                     <select class="nav-year-select" id="year-select"></select>
                     <button class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                        <span class="theme-toggle-icon" aria-hidden="true">☀</span>
                         <span class="theme-toggle-text">Light</span>
                     </button>
                     <div class="sync-status synced" id="sync-status">
@@ -370,6 +402,7 @@ function setupNavigation() {
             if (isPredictionsPageActive) {
                 hidePredictionsPage();
             }
+            leaveHomePage();
             goToCategory(i);
         });
 
@@ -412,10 +445,10 @@ function setupNavigation() {
 
 function setupYearSelector() {
     const select = document.getElementById('year-select');
-    const now = new Date();
-    const endYear = now.getMonth() < 8 ? now.getFullYear() : now.getFullYear() + 1;
+    const endYear = getSeasonEndYear();
 
-    for (let year = CONFIG.START_YEAR; year < endYear; year++) {
+    // Most recent season first
+    for (let year = endYear - 1; year >= CONFIG.START_YEAR; year--) {
         const option = document.createElement('option');
         option.value = `${year}_${year + 1}`;
         option.textContent = `${year}/${year + 1}`;
@@ -448,13 +481,21 @@ const hasGSAP = typeof gsap !== 'undefined';
 function setupThemeToggle() {
     const toggleBtn = document.getElementById('theme-toggle');
     const textSpan = toggleBtn.querySelector('.theme-toggle-text');
+    const iconSpan = toggleBtn.querySelector('.theme-toggle-icon');
+
+    // Label shows the theme the button switches to
+    const updateToggleLabel = (isLight) => {
+        textSpan.textContent = isLight ? 'Dark' : 'Light';
+        iconSpan.textContent = isLight ? '☾' : '☀';
+        toggleBtn.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+    };
 
     // Check local storage
     const savedTheme = localStorage.getItem('theme') || 'dark';
     if (savedTheme === 'light') {
         document.body.classList.add('light-mode');
-        textSpan.textContent = 'Dark';
     }
+    updateToggleLabel(savedTheme === 'light');
 
     toggleBtn.addEventListener('click', () => {
         const isLight = document.body.classList.toggle('light-mode');
@@ -464,7 +505,7 @@ function setupThemeToggle() {
         localStorage.setItem('theme', newTheme);
 
         // Update UI
-        textSpan.textContent = isLight ? 'Dark' : 'Light';
+        updateToggleLabel(isLight);
 
         // GSAP transition if available
         /* GSAP removed
@@ -554,16 +595,21 @@ function createSwipeIndicators() {
         const dot = document.createElement('div');
         dot.className = `swipe-dot ${i === 0 ? 'active' : ''}`;
         dot.addEventListener('click', () => {
-            if (isHomePage) {
-                isHomePage = false;
-                document.getElementById('home-overlay').style.opacity = 0;
-                document.getElementById('home-overlay').classList.remove('active');
-                updateCategoryTitle();
-            }
+            leaveHomePage();
             goToCategory(i);
         });
         indicators.appendChild(dot);
     });
+}
+
+// Hide the home overlay to show the category tables
+function leaveHomePage() {
+    if (!isHomePage) return;
+    isHomePage = false;
+    const overlay = document.getElementById('home-overlay');
+    overlay.style.opacity = 0;
+    overlay.classList.remove('active');
+    updateCategoryTitle();
 }
 
 function updateHomeIndicator() {
@@ -861,8 +907,9 @@ async function loadData() {
 }
 
 // Load pre-scraped awards data from JSON file for current year
+// year = second year of the season (e.g. 2026 for 2025/26); defaults to the selected season
 async function loadScrapedData(year = null) {
-    const targetYear = year || currentYear;
+    const targetYear = year || parseInt(currentYear.split('_')[1]);
     const filename = `data/data_${targetYear - 1}_${targetYear}.json`;
 
     try {
@@ -1035,7 +1082,7 @@ async function fetchMissingImages() {
     }
 
     if (needsSave) {
-        saveData();
+        if (editMode) saveData();
         // Re-render to show new images
         CONFIG.CATEGORIES.forEach(cat => renderTable(cat.id));
         console.log('✅ Updated missing images from TMDB');
@@ -1250,8 +1297,8 @@ function createTableRow(entry, categoryId, index, isPerson) {
     // Build film subtitle for persons (actors, directors) with role after film
     let filmSubtitle = '';
     if (isPerson && entry.film) {
-        const roleText = entry.role ? ` <span class="entry-meta">${entry.role}</span>` : '';
-        filmSubtitle = `<span class="entry-film-line">${entry.film}${roleText}</span>`;
+        const roleText = entry.role ? ` <span class="entry-meta">${escapeHtml(entry.role)}</span>` : '';
+        filmSubtitle = `<span class="entry-film-line">${escapeHtml(entry.film)}${roleText}</span>`;
     }
 
     // Generate mobile badges (winners AND nominees)
@@ -1283,7 +1330,7 @@ function createTableRow(entry, categoryId, index, isPerson) {
         <div class="name-cell-content">
             ${mobilePosterHtml} 
             <div class="name-text-wrapper">
-                <span class="entry-name">${entry.name}</span>
+                <span class="entry-name">${escapeHtml(entry.name)}</span>
                 ${filmSubtitle}
                 ${mobileBadges}
             </div>
@@ -1432,7 +1479,7 @@ async function showFilmDetails(entry) {
     content.innerHTML = `
         <div class="fd-loading">
             <div class="fd-spinner"></div>
-            <span>Loading details for "${entry.name}"...</span>
+            <span>Loading details for "${escapeHtml(entry.name)}"...</span>
         </div>
     `;
 
@@ -1481,8 +1528,8 @@ function renderFilmDetails(movie, entry) {
     const year = movie.release_date ? movie.release_date.substring(0, 4) : 'N/A';
     const releaseDate = movie.release_date ? new Date(movie.release_date).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' }) : 'N/A';
     const runtime = movie.runtime ? `${Math.floor(movie.runtime / 60)}h ${movie.runtime % 60}m` : 'N/A';
-    const genres = movie.genres ? movie.genres.map(g => g.name).join(', ') : 'N/A';
-    const tagline = movie.tagline ? `<div class="fd-tagline">"${movie.tagline}"</div>` : '';
+    const genres = movie.genres ? escapeHtml(movie.genres.map(g => g.name).join(', ')) : 'N/A';
+    const tagline = movie.tagline ? `<div class="fd-tagline">"${escapeHtml(movie.tagline)}"</div>` : '';
 
     // Format currency
     const formatMoney = (num) => {
@@ -1494,8 +1541,8 @@ function renderFilmDetails(movie, entry) {
     const revenue = formatMoney(movie.revenue);
 
     // Countries and languages
-    const countries = movie.production_countries?.map(c => c.name).join(', ') || 'N/A';
-    const languages = movie.spoken_languages?.map(l => l.english_name).join(', ') || 'N/A';
+    const countries = escapeHtml(movie.production_countries?.map(c => c.name).join(', ') || 'N/A');
+    const languages = escapeHtml(movie.spoken_languages?.map(l => l.english_name).join(', ') || 'N/A');
     const originalLanguage = movie.original_language?.toUpperCase() || 'N/A';
     const originalTitle = movie.original_title !== movie.title ? movie.original_title : null;
 
@@ -1508,19 +1555,19 @@ function renderFilmDetails(movie, entry) {
 
     // Director(s)
     const directors = movie.credits?.crew?.filter(p => p.job === 'Director').map(d => d.name) || [];
-    const directorText = directors.length > 0 ? directors.join(', ') : 'Unknown';
+    const directorText = directors.length > 0 ? escapeHtml(directors.join(', ')) : 'Unknown';
 
     // Writers
     const writers = movie.credits?.crew?.filter(p => p.job === 'Writer' || p.job === 'Screenplay').slice(0, 3).map(w => w.name) || [];
-    const writerText = writers.length > 0 ? writers.join(', ') : null;
+    const writerText = writers.length > 0 ? escapeHtml(writers.join(', ')) : null;
 
     // Cast (top 6)
     const cast = movie.credits?.cast?.slice(0, 6).map(c => `
         <div class="fd-cast-item">
             ${c.profile_path ? `<img src="${CONFIG.TMDB_IMAGE_BASE}w92${c.profile_path}" class="fd-cast-photo" alt="">` : '<div class="fd-cast-photo-placeholder"></div>'}
             <div class="fd-cast-info">
-                <span class="fd-cast-name">${c.name}</span>
-                <span class="fd-cast-role">${c.character}</span>
+                <span class="fd-cast-name">${escapeHtml(c.name)}</span>
+                <span class="fd-cast-role">${escapeHtml(c.character)}</span>
             </div>
         </div>
     `).join('') || '';
@@ -1541,7 +1588,7 @@ function renderFilmDetails(movie, entry) {
         
         <div class="fd-layout">
             <div class="fd-poster-side">
-                <img src="${posterUrl}" class="fd-poster-full" alt="${movie.title}">
+                <img src="${posterUrl}" class="fd-poster-full" alt="${escapeHtml(movie.title)}">
                 
                 <div class="fd-crew-section">
                     <div class="fd-crew-item">
@@ -1561,8 +1608,8 @@ function renderFilmDetails(movie, entry) {
             </div>
             
             <div class="fd-info-side">
-                <h1 class="fd-title">${movie.title}</h1>
-                ${originalTitle ? `<div class="fd-original-title">${originalTitle}</div>` : ''}
+                <h1 class="fd-title">${escapeHtml(movie.title)}</h1>
+                ${originalTitle ? `<div class="fd-original-title">${escapeHtml(originalTitle)}</div>` : ''}
                 
                 ${tagline}
                 
@@ -1579,7 +1626,7 @@ function renderFilmDetails(movie, entry) {
                 
                 <div class="fd-section">
                     <h3>Trama</h3>
-                    <p class="fd-overview">${movie.overview || 'Nessuna trama disponibile.'}</p>
+                    <p class="fd-overview">${escapeHtml(movie.overview || 'Nessuna trama disponibile.')}</p>
                 </div>
                 
                 ${cast ? `
@@ -1690,7 +1737,7 @@ function renderPersonDetails(person, entry) {
     const content = document.getElementById('film-detail-content');
 
     const birthday = person.birthday ? new Date(person.birthday).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' }) : 'N/A';
-    const birthplace = person.place_of_birth || 'N/A';
+    const birthplace = escapeHtml(person.place_of_birth || 'N/A');
     const age = person.birthday ? Math.floor((new Date() - new Date(person.birthday)) / (365.25 * 24 * 60 * 60 * 1000)) : null;
     const ageText = age ? `${age} anni` : '';
 
@@ -1723,9 +1770,9 @@ function renderPersonDetails(person, entry) {
             const posterUrl = `${CONFIG.TMDB_IMAGE_BASE}w154${c.poster_path}`;
             return `
                 <div class="fd-credit-card">
-                    <img src="${posterUrl}" class="fd-credit-poster" alt="${title}">
+                    <img src="${posterUrl}" class="fd-credit-poster" alt="${escapeHtml(title)}">
                     <div class="fd-credit-overlay">
-                        <span class="fd-credit-title">${title}${year ? ` (${year})` : ''}</span>
+                        <span class="fd-credit-title">${escapeHtml(title)}${year ? ` (${year})` : ''}</span>
                     </div>
                 </div>`;
         })
@@ -1734,7 +1781,7 @@ function renderPersonDetails(person, entry) {
     const html = `
         <div class="fd-layout">
             <div class="fd-poster-side">
-                ${photoUrl ? `<img src="${photoUrl}" class="fd-poster-full" alt="${person.name}">` : '<div class="fd-photo-placeholder"></div>'}
+                ${photoUrl ? `<img src="${photoUrl}" class="fd-poster-full" alt="${escapeHtml(person.name)}">` : '<div class="fd-photo-placeholder"></div>'}
                 
                 <div class="fd-crew-section">
                     <div class="fd-crew-item">
@@ -1748,13 +1795,13 @@ function renderPersonDetails(person, entry) {
                     ${person.known_for_department ? `
                     <div class="fd-crew-item">
                         <span class="fd-crew-label">Role</span>
-                        <span class="fd-crew-value">${person.known_for_department}</span>
+                        <span class="fd-crew-value">${escapeHtml(person.known_for_department)}</span>
                     </div>` : ''}
                 </div>
             </div>
             
             <div class="fd-info-side">
-                <h1 class="fd-title">${person.name}</h1>
+                <h1 class="fd-title">${escapeHtml(person.name)}</h1>
                 
                 ${renderAwardsSection(entry)}
 
@@ -1843,10 +1890,20 @@ function hideStatisticsPage() {
     document.querySelector('.nav-link-special')?.classList.remove('active');
 }
 
+// All seasons are downloaded once per session (they rarely change); the selected season
+// always comes from the live `data`, so in-session edits are reflected.
+let allYearsCache = null;
+
 async function loadAllYearsData() {
+    if (!allYearsCache || Object.keys(allYearsCache).length === 0) {
+        allYearsCache = await fetchAllYearsData();
+    }
+    return { ...allYearsCache, [currentYear]: data };
+}
+
+async function fetchAllYearsData() {
     const allData = {};
-    const now = new Date();
-    const endYear = now.getMonth() < 8 ? now.getFullYear() : now.getFullYear() + 1;
+    const endYear = getSeasonEndYear();
 
     if (firebaseReady && db) {
         // Load all years from Firebase
@@ -2059,7 +2116,7 @@ function renderStatisticsPage(stats, container) {
                     <div class="stats-visual-overlay">
                         <span class="stats-visual-rank">#${index + 1}</span>
                         <div class="stats-visual-info">
-                            <span class="stats-visual-name">${name}</span>
+                            <span class="stats-visual-name">${escapeHtml(name)}</span>
                             <span class="stats-visual-count">${showWins ? data.wins : data.nominations}</span>
                         </div>
                     </div>
@@ -2075,9 +2132,9 @@ function renderStatisticsPage(stats, container) {
                 <div class="stats-list-row ${isFirst}">
                     <span class="stats-list-rank">${index + 1}</span>
                     <div style="flex: 1; margin: 0 12px;">
-                        <span class="stats-list-name" style="padding: 0;">${name}</span>
-                        ${data.role ? `<span class="stats-meta">${data.role}</span>` : ''}
-                        ${data.genre ? `<span class="stats-meta">${data.genre}</span>` : ''}
+                        <span class="stats-list-name" style="padding: 0;">${escapeHtml(name)}</span>
+                        ${data.role ? `<span class="stats-meta">${escapeHtml(data.role)}</span>` : ''}
+                        ${data.genre ? `<span class="stats-meta">${escapeHtml(data.genre)}</span>` : ''}
                     </div>
                     <span class="stats-list-count">${count}</span>
                 </div>
@@ -2130,26 +2187,11 @@ function renderStatisticsPage(stats, container) {
 // ============ PREDICTIONS PAGE ============
 
 // Award weights for Oscar prediction (higher = more predictive)
-const PREDICTION_WEIGHTS = {
-    sag: 20,       // SAG actors vote at Oscars
-    bafta: 18,     // Overlapping international voters
-    dga: 18,       // Directors category
-    pga: 16,       // Producers overlap
-    critics: 15,   // Critical acclaim indicator
-    gg: 12,        // Visibility but less predictive
-    lafca: 10,     // LA Film Critics
-    nyfcc: 10,     // NY Film Critics
-    nbr: 8,        // Early indicator
-    gotham: 6,     // Indie focus
-    spirit: 6,     // Indie focus
-    astra: 5,      // Industry buzz
-    afi: 3,        // Honorific
-    venice: 3,     // Festival
-    cannes: 3,     // Festival
-    bifa: 2,       // UK indie
-    annie: 2,      // Animation only
-    adg: 2         // Art Directors Guild
-};
+// Precursors used for predictions (every tracked award except the Oscar itself)
+const PRECURSOR_KEYS = CONFIG.AWARDS.map(a => a.key).filter(k => k !== 'oscar');
+
+// Pseudo-count pulling precursors with little history toward the category base rate
+const PRECURSOR_PRIOR_WEIGHT = 3;
 
 async function showPredictionsPage() {
     isPredictionsPageActive = true;
@@ -2187,7 +2229,8 @@ async function showPredictionsPage() {
     try {
         // Load historical data first for dynamic weighting
         const allYearsData = await loadAllYearsData();
-        const historyAnalysis = analyzeHistoricalPrecursors(allYearsData);
+        // Exclude the season being predicted, so past seasons are a fair backtest
+        const historyAnalysis = analyzeHistoricalPrecursors(allYearsData, currentYear);
 
         // Calculate predictions using dynamic weights
         const predictions = calculateOscarPredictions(data, historyAnalysis);
@@ -2231,72 +2274,55 @@ function hidePredictionsPage() {
     document.querySelector('.nav-link-predictions')?.classList.remove('active');
 }
 
+// Score = sum of P(Oscar win | precursor result) over the entry's precursors, using the
+// historical rates for that category. For a precursor whose winner is not announced yet,
+// every nominee gets P(Oscar win | nominated), so predictions work from the start of the season.
 function calculateOscarPredictions(yearData, historyAnalysis) {
     const categories = ['best-film', 'best-director', 'best-actor', 'best-actress'];
     const predictions = {};
 
-    // Build dynamic weights from history if available
-    const dynamicWeights = { ...PREDICTION_WEIGHTS };
-    if (historyAnalysis && historyAnalysis.overall) {
-        historyAnalysis.overall.forEach(item => {
-            // Use historical win percentage as weight (e.g. 80% -> weight 80)
-            // Only update if we have meaningful data (at least 5 years of history to be reliable?)
-            // For now, trusting the percentage directly.
-            if (item.percentage > 0) {
-                dynamicWeights[item.key] = item.percentage;
-            }
-        });
-    }
-
     categories.forEach(categoryId => {
+        const rates = historyAnalysis?.rates?.[categoryId] || {};
         const entries = yearData[categoryId] || [];
+
+        // Precursors that already announced a winner in this category
+        const announced = new Set();
+        entries.forEach(e => Object.entries(e.awards || {}).forEach(([k, v]) => { if (v === 'Y') announced.add(k); }));
+
         const scored = entries.map(entry => {
             let score = 0;
             const precursorWins = [];
             const precursorNoms = [];
 
-            if (entry.awards) {
-                for (const [awardKey, status] of Object.entries(entry.awards)) {
-                    if (status === 'Y') { // Only wins count
-                        const weight = dynamicWeights[awardKey] || 2;
-                        score += weight;
-                        precursorWins.push(awardKey);
-                    } else {
-                        // Any other status ('X') implies nomination
-                        precursorNoms.push(awardKey);
-                    }
+            for (const [awardKey, status] of Object.entries(entry.awards || {})) {
+                if (!PRECURSOR_KEYS.includes(awardKey)) continue;
+                const rate = rates[awardKey];
+                if (status === 'Y') {
+                    score += rate ? rate.win : 0;
+                    precursorWins.push(awardKey);
+                } else {
+                    score += rate ? (announced.has(awardKey) ? rate.nom : rate.any) : 0;
+                    precursorNoms.push(awardKey);
                 }
             }
 
-            return {
-                ...entry,
-                score,
-                precursorWins,
-                precursorNoms
-            };
+            return { ...entry, score, precursorWins, precursorNoms };
         });
 
-        // Sort by score descending, then by number of nominations (Tie-breaker)
-        scored.sort((a, b) => {
-            if (b.score !== a.score) {
-                return b.score - a.score;
-            }
-            // Tie-breaker: Number of nominations (precursorNoms)
-            // More nominations = better currency even if they didn't win high weight awards
-            const nomsA = a.precursorNoms ? a.precursorNoms.length : 0;
-            const nomsB = b.precursorNoms ? b.precursorNoms.length : 0;
-            return nomsB - nomsA;
+        // Sort by score descending, then by number of wins and nominations (tie-breakers)
+        scored.sort((a, b) =>
+            (b.score - a.score) ||
+            (b.precursorWins.length - a.precursorWins.length) ||
+            (b.precursorNoms.length - a.precursorNoms.length));
+
+        // Normalize within each Oscar race (Leading/Supporting are separate races): sum = 100%
+        const totals = {};
+        scored.forEach(e => { totals[e.role || ''] = (totals[e.role || ''] || 0) + e.score; });
+        scored.forEach(e => {
+            const total = totals[e.role || ''];
+            e.probability = total > 0 ? Math.round((e.score / total) * 100) : 0;
         });
 
-        // Calculate total score for normalization (Sum = 100%)
-        const totalScore = scored.reduce((sum, entry) => sum + entry.score, 0);
-
-        // Add probability percentage
-        scored.forEach(entry => {
-            entry.probability = totalScore > 0 ? Math.round((entry.score / totalScore) * 100) : 0;
-        });
-
-        // Show all entries to fill the list, even if 0%
         predictions[categoryId] = scored;
     });
 
@@ -2372,8 +2398,8 @@ function renderPredictionsPage(predictions, container) {
                                 ${imageUrl ? `<img src="${imageUrl}" class="pred-winner-poster" loading="lazy">` : '<div class="pred-winner-placeholder"></div>'}
                                 <div class="pred-winner-overlay">
                                      <div class="pred-winner-badge">PREDICTED WINNER</div>
-                                     <div class="pred-winner-name">${entry.name}</div>
-                                     ${metaText ? `<div class="pred-winner-meta">${metaText}</div>` : ''}
+                                     <div class="pred-winner-name">${escapeHtml(entry.name)}</div>
+                                     ${metaText ? `<div class="pred-winner-meta">${escapeHtml(metaText)}</div>` : ''}
                                      <div class="pred-winner-percent">${entry.probability}%</div>
                                 </div>
                             </div>
@@ -2399,6 +2425,7 @@ function renderPredictionsPage(predictions, container) {
                     // Fallback for awards not processed in precursor arrays (safety check)
                     const allAwards = entry.awards || {};
                     Object.keys(allAwards).forEach(award => {
+                        if (award === 'oscar') return; // Not a precursor
                         const isWin = allAwards[award] === 'Y';
                         const inWins = entry.precursorWins && entry.precursorWins.includes(award);
                         const inNoms = entry.precursorNoms && entry.precursorNoms.includes(award);
@@ -2436,10 +2463,11 @@ function renderPredictionsPage(predictions, container) {
                             
                             <div class="pred-list-info">
                                  <div class="pred-list-header">
-                                    <span class="stats-list-name" style="padding: 0;">${entry.name}</span>
+                                    <span class="stats-list-name" style="padding: 0;">${escapeHtml(entry.name)}</span>
                                     <span class="pred-list-percent">${entry.probability}%</span>
                                  </div>
-                                 ${metaText ? `<span class="pred-meta">${metaText}</span>` : ''}
+                                 ${metaText ? `<span class="pred-meta">${escapeHtml(metaText)}</span>` : ''}
+                                 <div class="pred-prob-bar"><div class="pred-prob-fill" style="width: ${entry.probability}%"></div></div>
                                  ${mobileBadges}
                                  <div class="pred-badges-desktop">${mobileBadgesHtml}</div>
                             </div>
@@ -2468,7 +2496,7 @@ function renderPredictionsPage(predictions, container) {
     const html = `
         <div class="stats-header">
             <h1 class="stats-title">Oscar Predictions ${yearDisplay}</h1>
-            <p class="stats-subtitle">Probabilities based on precursor award wins</p>
+            <p class="stats-subtitle">Probabilities based on precursor wins and nominations, weighted by their historical track record</p>
         </div>
         
         <div class="stats-content-wrapper">
@@ -2489,176 +2517,115 @@ function renderPredictionsPage(predictions, container) {
 }
 
 
-function renderPredictionCharts(predictions, categoryLabels) {
-    if (typeof Chart === 'undefined') {
-        console.warn('Chart.js not loaded');
-        return;
-    }
-
-    const chartColors = {
-        gold: 'rgba(212, 168, 75, 0.8)',
-        silver: 'rgba(192, 192, 192, 0.8)',
-        bronze: 'rgba(205, 127, 50, 0.8)',
-        default: 'rgba(255, 255, 255, 0.3)'
-    };
-
-    Object.keys(categoryLabels).forEach(catId => {
-        const canvas = document.getElementById(`chart-${catId}`);
-        if (!canvas) return;
-
-        const entries = (predictions[catId] || []).slice(0, 5);
-        const labels = entries.map(e => e.name.length > 20 ? e.name.substring(0, 18) + '...' : e.name);
-        const data = entries.map(e => e.score);
-        const colors = entries.map((_, i) =>
-            i === 0 ? chartColors.gold :
-                i === 1 ? chartColors.silver :
-                    i === 2 ? chartColors.bronze : chartColors.default
-        );
-
-        new Chart(canvas, {
-            type: 'bar',
-            data: {
-                labels: labels,
-                datasets: [{
-                    label: 'Score',
-                    data: data,
-                    backgroundColor: colors,
-                    borderColor: colors.map(c => c.replace('0.8', '1')),
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                indexAxis: 'y',
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: { display: false },
-                    title: {
-                        display: true,
-                        text: categoryLabels[catId],
-                        color: '#d4a84b',
-                        font: { size: 14, weight: 'bold' }
-                    }
-                },
-                scales: {
-                    x: {
-                        grid: { color: 'rgba(255,255,255,0.1)' },
-                        ticks: { color: '#888' }
-                    },
-                    y: {
-                        grid: { display: false },
-                        ticks: { color: '#ccc', font: { size: 11 } }
-                    }
-                }
-            }
-        });
-    });
-}
-
 // ============ HISTORICAL PRECURSOR ANALYSIS ============
-async function loadHistoricalAnalysis() {
-    const container = document.getElementById('precursor-analysis-container');
-    if (!container) return;
-
-    try {
-        // Use existing loadAllYearsData function (works with Firebase/localStorage)
-        const allData = await loadAllYearsData();
-
-        if (Object.keys(allData).length === 0) {
-            container.innerHTML = `<div class="analysis-error">No historical data available. Please ensure past season data is loaded.</div>`;
-            return;
-        }
-
-        // Analyze precursor success rates
-        const analysis = analyzeHistoricalPrecursors(allData);
-        renderPrecursorAnalysis(analysis, container);
-    } catch (error) {
-        container.innerHTML = `<div class="analysis-error">Error loading data: ${error.message}</div>`;
-    }
-}
-
-function analyzeHistoricalPrecursors(allData) {
-    const precursors = ['sag', 'bafta', 'dga', 'pga', 'critics', 'gg', 'lafca', 'nyfcc', 'nbr', 'gotham', 'spirit'];
+// For every precursor and category, over past seasons:
+//  - percentage / nomPercentage: how often the Oscar winner also won / was nominated
+//  - precision: how often a precursor winner went on to win the Oscar
+//  - rates.win / rates.nom / rates.any: smoothed P(Oscar win | precursor win / lost nomination /
+//    any nomination), the prediction weights
+// A precursor only counts in a season+category it actually covered (e.g. DGA only for director,
+// Gotham director only from 2025), otherwise its percentages would be diluted.
+// Roles are ignored: Leading/Supporting labels are unreliable in older seasons.
+function analyzeHistoricalPrecursors(allData, excludeSeason = null) {
     const categories = ['best-film', 'best-director', 'best-actor', 'best-actress'];
+    const labelOf = key => (CONFIG.AWARDS.find(a => a.key === key) || {}).label || key.toUpperCase();
+    const newCounter = () => ({ wins: 0, noms: 0, total: 0, winCount: 0, winHits: 0, nomCount: 0, nomHits: 0 });
 
-    // Track: for each precursor, how many times did the Oscar winner ALSO win/nominate that precursor?
-    const stats = {};
-    precursors.forEach(p => {
-        stats[p] = { wins: 0, noms: 0, total: 0, label: p.toUpperCase() };
-    });
-
-    const labelMap = {
-        sag: 'SAG', bafta: 'BAFTA', dga: 'DGA', pga: 'PGA', critics: 'Critics Choice',
-        gg: 'Golden Globes', lafca: 'LAFCA', nyfcc: 'NYFCC', nbr: 'NBR', gotham: 'Gotham', spirit: 'Spirit'
-    };
-    precursors.forEach(p => stats[p].label = labelMap[p] || p.toUpperCase());
-
-    // Category-specific results
-    const categoryStats = {};
+    const overall = {};
+    const byCat = {};
+    PRECURSOR_KEYS.forEach(p => { overall[p] = newCounter(); });
     categories.forEach(cat => {
-        categoryStats[cat] = {};
-        precursors.forEach(p => {
-            categoryStats[cat][p] = { wins: 0, noms: 0, total: 0 };
-        });
+        byCat[cat] = {};
+        PRECURSOR_KEYS.forEach(p => { byCat[cat][p] = newCounter(); });
     });
 
-    // Process each year
+    const seasons = [];
     Object.keys(allData).forEach(yearKey => {
-        const yearData = allData[yearKey];
+        if (yearKey === excludeSeason) return;
+        const yearData = allData[yearKey] || {};
+        let decided = false;
 
         categories.forEach(catId => {
-            const entries = yearData[catId] || [];
+            const entries = (yearData[catId] || []).filter(e => e && e.awards);
+            const oscarWinners = entries.filter(e => e.awards.oscar === 'Y');
+            if (oscarWinners.length === 0) return; // Season not decided yet
+            decided = true;
 
-            // Find Oscar winner (has 'oscar' in awards with 'Y')
-            const oscarWinner = entries.find(e => e.awards && e.awards.oscar === 'Y');
-            if (!oscarWinner) return;
+            PRECURSOR_KEYS.forEach(p => {
+                // Skip precursors that didn't cover this category this season
+                if (!entries.some(e => p in e.awards)) return;
+                const c = byCat[catId][p];
+                const o = overall[p];
 
-            // Check which precursors the Oscar winner also won/nominated
-            precursors.forEach(precursor => {
-                stats[precursor].total++;
-                categoryStats[catId][precursor].total++;
+                oscarWinners.forEach(w => {
+                    c.total++; o.total++;
+                    if (p in w.awards) { c.noms++; o.noms++; }
+                    if (w.awards[p] === 'Y') { c.wins++; o.wins++; }
+                });
 
-                // If key exists, it's a nomination (or win)
-                if (oscarWinner.awards[precursor]) {
-                    stats[precursor].noms++;
-                    categoryStats[catId][precursor].noms++;
-                }
-
-                if (oscarWinner.awards[precursor] === 'Y') {
-                    stats[precursor].wins++;
-                    categoryStats[catId][precursor].wins++;
-                }
+                entries.forEach(e => {
+                    if (!(p in e.awards)) return;
+                    const wonOscar = e.awards.oscar === 'Y';
+                    if (e.awards[p] === 'Y') {
+                        c.winCount++; o.winCount++;
+                        if (wonOscar) { c.winHits++; o.winHits++; }
+                    } else {
+                        c.nomCount++; o.nomCount++;
+                        if (wonOscar) { c.nomHits++; o.nomHits++; }
+                    }
+                });
             });
         });
+
+        if (decided) seasons.push(yearKey);
     });
 
-    // Calculate percentages and sort
-    const results = precursors.map(p => ({
+    const pct = (n, d) => d > 0 ? Math.round((n / d) * 100) : 0;
+    const toItem = (p, c) => ({
         key: p,
-        label: stats[p].label,
-        wins: stats[p].wins,
-        noms: stats[p].noms,
-        total: stats[p].total,
-        percentage: stats[p].total > 0 ? Math.round((stats[p].wins / stats[p].total) * 100) : 0,
-        nomPercentage: stats[p].total > 0 ? Math.round((stats[p].noms / stats[p].total) * 100) : 0
-    })).sort((a, b) => b.percentage - a.percentage);
-
-    // Category breakdowns
-    const categoryBreakdown = {};
-    categories.forEach(cat => {
-        categoryBreakdown[cat] = precursors.map(p => ({
-            key: p,
-            label: stats[p].label,
-            wins: categoryStats[cat][p].wins,
-            total: categoryStats[cat][p].total,
-            percentage: categoryStats[cat][p].total > 0 ?
-                Math.round((categoryStats[cat][p].wins / categoryStats[cat][p].total) * 100) : 0,
-            nomPercentage: categoryStats[cat][p].total > 0 ?
-                Math.round((categoryStats[cat][p].noms / categoryStats[cat][p].total) * 100) : 0
-        })).sort((a, b) => b.percentage - a.percentage);
+        label: labelOf(p),
+        wins: c.wins,
+        noms: c.noms,
+        total: c.total,
+        percentage: pct(c.wins, c.total),
+        nomPercentage: pct(c.noms, c.total),
+        precision: pct(c.winHits, c.winCount)
     });
 
-    return { overall: results, byCategory: categoryBreakdown };
+    const smoothed = (hits, count, prior) =>
+        (hits + prior * PRECURSOR_PRIOR_WEIGHT) / (count + PRECURSOR_PRIOR_WEIGHT);
+
+    const rates = {};
+    const byCategory = {};
+    categories.forEach(cat => {
+        const counters = PRECURSOR_KEYS.map(p => [p, byCat[cat][p]]).filter(([, c]) => c.total > 0);
+
+        // Base rate: share of precursor honorees (wins + nominations) who went on to win the Oscar
+        const all = counters.reduce((acc, [, c]) => {
+            acc.hits += c.winHits + c.nomHits;
+            acc.count += c.winCount + c.nomCount;
+            return acc;
+        }, { hits: 0, count: 0 });
+        const baseRate = all.count > 0 ? all.hits / all.count : 0;
+
+        rates[cat] = {};
+        counters.forEach(([p, c]) => {
+            rates[cat][p] = {
+                win: smoothed(c.winHits, c.winCount, baseRate),
+                nom: smoothed(c.nomHits, c.nomCount, baseRate),
+                any: smoothed(c.winHits + c.nomHits, c.winCount + c.nomCount, baseRate)
+            };
+        });
+
+        byCategory[cat] = counters.map(([p, c]) => toItem(p, c)).sort((a, b) => b.precision - a.precision);
+    });
+
+    const overallList = PRECURSOR_KEYS
+        .filter(p => overall[p].total > 0)
+        .map(p => toItem(p, overall[p]))
+        .sort((a, b) => b.percentage - a.percentage);
+
+    return { overall: overallList, byCategory, rates, seasons: seasons.sort() };
 }
 
 function renderPrecursorAnalysis(analysis, container) {
@@ -2669,11 +2636,14 @@ function renderPrecursorAnalysis(analysis, container) {
         'best-actress': 'Best Actress'
     };
 
+    const firstSeason = analysis.seasons?.[0]?.split('_')[0] || '';
+    const lastSeason = analysis.seasons?.[analysis.seasons.length - 1]?.split('_')[1] || '';
+
     // Overall chart
     let html = `
         <div class="analysis-overall">
             <h3>Overall Correlation of Awards vs Oscars</h3>
-            <p class="analysis-note">% of times the Oscar winner also won the following award (2000-2026)</p>
+            <p class="analysis-note">% of times the Oscar winner also won (gold) or was nominated for (grey) the following award, in the seasons and categories it covered (${firstSeason}-${lastSeason})</p>
             <div class="analysis-bars">
                 ${analysis.overall.map((item, idx) => {
         // Use standard colors for all items as requested
@@ -2700,6 +2670,7 @@ function renderPrecursorAnalysis(analysis, container) {
 
         <div class="analysis-categories">
             <h3>Analysis by Category</h3>
+            <p class="analysis-note">Most predictive awards: % of their winners who went on to win the Oscar</p>
             <div class="analysis-category-grid">
                 ${Object.keys(categoryLabels).map(catId => {
         const catData = analysis.byCategory[catId] || [];
@@ -2713,8 +2684,7 @@ function renderPrecursorAnalysis(analysis, container) {
                                         <span class="top-rank">${idx + 1}.</span>
                                         <span class="top-name">${item.label}</span>
                                         <div class="top-percentages">
-                                            <span class="top-percent">${item.percentage}%</span>
-                                            <span class="top-percent-nom" style="color: rgba(255,255,255,0.7); font-size: 0.85em; margin-left: 6px;">${item.nomPercentage}%</span>
+                                            <span class="top-percent">${item.precision}%</span>
                                         </div>
                                     </div>
                                 `).join('')}

@@ -3699,3 +3699,180 @@ body.light-mode .top-name {
 body.light-mode .analysis-bar-container {
     background: rgba(0, 0, 0, 0.05);
 }
+/* ============ VISUAL REFINEMENTS ============ */
+
+/* Nomination marker: a quiet dot, so winners (gold frames) stand out and a
+   nomination no longer reads as a "no" */
+td.nominee::before {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.06);
+    vertical-align: middle;
+}
+
+body.light-mode td.nominee::before {
+    background: rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Winner frames: soft glow */
+td.winner::before {
+    box-shadow: 0 0 12px rgba(212, 168, 75, 0.18);
+}
+
+/* Readable names on top of posters (posters often print their own title) */
+.stats-visual-overlay {
+    padding-top: 56px;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.96) 0%,
+            rgba(0, 0, 0, 0.85) 45%,
+            rgba(0, 0, 0, 0) 100%);
+}
+
+.stats-visual-name,
+.pred-winner-name {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.stats-visual-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-visual-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
+}
+
+.pred-winner-overlay {
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.97) 0%,
+            rgba(0, 0, 0, 0.88) 28%,
+            rgba(0, 0, 0, 0) 62%);
+}
+
+.pred-winner-meta {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+}
+
+.pred-winner-badge {
+    white-space: nowrap;
+}
+
+.pred-winner-poster-wrapper {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(212, 168, 75, 0.15);
+}
+
+/* Probability bar under each prediction */
+.pred-prob-bar {
+    height: 4px;
+    margin: 6px 0 4px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+.pred-prob-fill {
+    height: 100%;
+    border-radius: 2px;
+    background: linear-gradient(90deg, rgba(212, 168, 75, 0.55), var(--gold));
+    transition: width 0.6s ease;
+}
+
+.is-winner-row .pred-prob-fill {
+    background: linear-gradient(90deg, #b8913a, #f0c75e);
+}
+
+body.light-mode .pred-prob-bar {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.pred-list-row {
+    transition: background 0.2s ease;
+}
+
+.pred-list-row:not(.is-winner-row):hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* Theme toggle icon (the only visible part on mobile) */
+.theme-toggle-icon {
+    font-size: 14px;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .theme-toggle {
+        padding: 6px 9px;
+    }
+}
+
+/* Light mode: plain white table rows (no zebra striping) */
+body.light-mode .category-card-inner,
+body.light-mode td,
+body.light-mode tr:nth-child(even) td {
+    background: #ffffff;
+}
+
+body.light-mode tr:hover td {
+    background: rgba(212, 168, 75, 0.1);
+}
+
+/* Light mode: white scrollbars */
+body.light-mode,
+body.light-mode * {
+    scrollbar-color: #cfcfcf #ffffff;
+}
+
+body.light-mode::-webkit-scrollbar-track,
+body.light-mode *::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+body.light-mode::-webkit-scrollbar-thumb,
+body.light-mode *::-webkit-scrollbar-thumb {
+    background: #cfcfcf;
+}
+
+body.light-mode::-webkit-scrollbar-thumb:hover,
+body.light-mode *::-webkit-scrollbar-thumb:hover {
+    background: #b5b5b5;
+}
+
+/* ============ NO SELECTION / HIGHLIGHT ============ */
+/* Text can't be selected or highlighted anywhere (form fields stay usable) */
+html,
+body,
+body * {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+body *::selection {
+    background: transparent;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+input,
+textarea,
+select {
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+input::selection,
+textarea::selection {
+    background: rgba(212, 168, 75, 0.35);
+}
