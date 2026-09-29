@@ -15,7 +15,8 @@
         "adg": "Y",
         "astra": "Y",
         "gotham": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "genre": "Comedy",
       "posterPath": "/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
@@ -128,7 +129,8 @@
         "afi": "Y",
         "cannes": "Y",
         "astra": "X"
-      }
+      },
+      "posterPath": "/eNYGj2DG3n8OrVPTfYunpPW9uas.jpg"
     },
     {
       "name": "Jay Kelly",
@@ -147,7 +149,8 @@
         "afi": "Y",
         "nbr": "Y",
         "adg": "X"
-      }
+      },
+      "posterPath": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg"
     },
     {
       "name": "Bugonia",
@@ -210,14 +213,6 @@
       "posterPath": "/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg"
     },
     {
-      "name": "The Brutalist",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/vP7Yd6couiAaw9jgMd5cjMRj3hQ.jpg",
-      "tmdbId": 549509
-    },
-    {
       "name": "The Fantastic Four: First Steps",
       "awards": {
         "adg": "Y"
@@ -263,7 +258,8 @@
       "awards": {
         "gg": "X",
         "astra": "X"
-      }
+      },
+      "posterPath": "/vc2S0dvgpsM0XfSiXZDMVkRCSSU.jpg"
     },
     {
       "name": "Weapons",
@@ -279,7 +275,8 @@
         "wga": "X",
         "gotham": "X"
       },
-      "screenplay_type": "original"
+      "screenplay_type": "original",
+      "posterPath": "/va0TQ9WprMXRqQAzY56vyqY0Yd5.jpg"
     },
     {
       "name": "Sorry, Baby",
@@ -424,7 +421,8 @@
       "name": "Twinless",
       "awards": {
         "spirit": "X"
-      }
+      },
+      "posterPath": "/9vaw9Az5tPLMjNLj426KgKsp0k8.jpg"
     },
     {
       "name": "The Ballad of Wallis Island",
@@ -445,13 +443,15 @@
       "name": "My Father's Shadow",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "posterPath": "/aF8AFFh3LJpF8An0KUM8SdTwfVt.jpg"
     },
     {
       "name": "Urchin",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "posterPath": "/zc8n3hm3S2VxFxlNH1MNN28LVMa.jpg"
     }
   ],
   "best-director": [
@@ -492,8 +492,11 @@
       "film": "It Was Just an Accident",
       "awards": {
         "gg": "X",
-        "gotham": "Y"
-      }
+        "gotham": "Y",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/viZZkkfcuWze68bvUiMZmYZe8Qg.jpg",
+      "tmdbId": 120229
     },
     {
       "name": "Kleber Mendonça Filho",
@@ -514,28 +517,20 @@
       "tmdbId": 227564
     },
     {
-      "name": "RaMell Ross",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Nickel Boys",
-      "profilePath": "/clwUM9KmTmSGuyL7amwApi3H4SP.jpg",
-      "tmdbId": 1934875
-    },
-    {
       "name": "Clint Bentley",
       "awards": {
         "spirit": "Y"
       },
-      "film": "Train Dreams \n Mary Bronstein",
+      "film": "Train Dreams",
       "profilePath": "/fP89nBimnLvUcWhIBPJfgkqVRsf.jpg"
     },
     {
       "name": "Akinola Davies Jr.",
-      "film": "My Father's Shadow \n Laura Carreira",
+      "film": "My Father's Shadow",
       "awards": {
         "bifa": "Y"
-      }
+      },
+      "profilePath": "/jDef5RADc8j2j0kmpG3GAjflytD.jpg"
     },
     {
       "name": "Chloé Zhao",
@@ -593,7 +588,8 @@
         "gotham": "X",
         "spirit": "X"
       },
-      "film": "If I Had Legs I'd Kick You"
+      "film": "If I Had Legs I'd Kick You",
+      "profilePath": "/xizQfYcV2PzwuBUtCg1om2vZz8h.jpg"
     },
     {
       "name": "Yorgos Lanthimos",
@@ -652,7 +648,8 @@
       "film": "On Falling",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "profilePath": "/dcDJ0qVqSNenfonO0QDwEEDT9e9.jpg"
     },
     {
       "name": "Kirk Jones",
@@ -710,7 +707,8 @@
         "astra": "Y",
         "gotham": "X",
         "lafca": "Y"
-      }
+      },
+      "profilePath": "/mW7xmtGV4y79kQGn0zkKVGDMAmw.jpg"
     },
     {
       "name": "Michael B. Jordan",
@@ -723,7 +721,8 @@
         "critics": "X",
         "sag": "Y",
         "astra": "Y"
-      }
+      },
+      "profilePath": "/sMBpav8cK7t7Nk0yf4tuNOqNUyW.jpg"
     },
     {
       "name": "Sean Penn",
@@ -736,7 +735,8 @@
         "critics": "X",
         "sag": "Y",
         "astra": "X"
-      }
+      },
+      "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg"
     },
     {
       "name": "Wagner Moura",
@@ -749,7 +749,8 @@
         "cannes": "Y",
         "astra": "X",
         "gotham": "X",
-        "lafca": "X"
+        "lafca": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/53IbAed4t1dOWxY3iygbRYZBBnm.jpg",
       "tmdbId": 52583
@@ -835,26 +836,6 @@
       "tmdbId": 72782
     },
     {
-      "name": "Adrien Brody",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Brutalist",
-      "role": "Leading",
-      "profilePath": "/v2U61NlN1LEPhFGjvjLQr3OVWYk.jpg",
-      "tmdbId": 3490
-    },
-    {
-      "name": "Kieran Culkin",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "A Real Pain",
-      "role": "Supporting",
-      "profilePath": "/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg",
-      "tmdbId": 18793
-    },
-    {
       "name": "Sopé Dìrísù",
       "awards": {
         "gotham": "Y"
@@ -883,7 +864,8 @@
         "critics": "X",
         "sag": "X",
         "astra": "X",
-        "gotham": "X"
+        "gotham": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/aYomJWx0B2B8ra6Rmgt8lr0XCrw.jpg",
       "tmdbId": 1121
@@ -954,7 +936,8 @@
       "awards": {
         "gg": "X",
         "astra": "X"
-      }
+      },
+      "profilePath": "/pXRADDRhprgaQ4Bri44NH3bYeu6.jpg"
     },
     {
       "name": "George Clooney",
@@ -963,7 +946,8 @@
       "awards": {
         "gg": "X",
         "astra": "X"
-      }
+      },
+      "profilePath": "/dt0a7DT0SQeHb7NpURD6ifyEzsN.jpg"
     },
     {
       "name": "Lee Byung-hun",
@@ -983,7 +967,8 @@
       "awards": {
         "oscar": "X",
         "astra": "X"
-      }
+      },
+      "profilePath": "/kLwUBBmEIdchrLqwsYzgLB2B6q5.jpg"
     },
     {
       "name": "Miles Caton",
@@ -1022,7 +1007,8 @@
         "gotham": "X",
         "bifa": "X"
       },
-      "film": "Pillion"
+      "film": "Pillion",
+      "profilePath": "/6VNNddrSrIVgdzhXr4Zg89gmOzY.jpg"
     },
     {
       "name": "Oscar Isaac",
@@ -1060,6 +1046,14 @@
       "profilePath": "/vcLkzN1W92ukocX1nNt5JnEl53g.jpg"
     },
     {
+      "name": "David Jonsson",
+      "film": "Wasteman",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/2ZZNGZw57KKMrVIr27g7W16G0jV.jpg"
+    },
+    {
       "name": "Jonathan Bailey",
       "awards": {
         "astra": "X"
@@ -1073,15 +1067,8 @@
       "awards": {
         "astra": "X"
       },
-      "film": "Wake Up Dead Man: A Knives Out Mystery"
-    },
-    {
-      "name": "Keanu Reeves",
-      "awards": {
-        "astra": "X"
-      },
-      "film": "Good Fortune",
-      "profilePath": "/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+      "film": "Wake Up Dead Man: A Knives Out Mystery",
+      "profilePath": "/pVv0zCvpNyuWoJcABq8RrM90FsK.jpg"
     },
     {
       "name": "Josh O'Connor",
@@ -1092,11 +1079,20 @@
       "profilePath": "/tn5vFB9DLwdVkrRw6ktFfnyqiT9.jpg"
     },
     {
+      "name": "Keanu Reeves",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "Good Fortune",
+      "profilePath": "/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+    },
+    {
       "name": "Everett Blunck",
       "awards": {
         "spirit": "X"
       },
-      "film": "The Plague"
+      "film": "The Plague",
+      "profilePath": "/r2nFAae69Ze9xJcAAQ5sGG13iyO.jpg"
     },
     {
       "name": "Chang Chen",
@@ -1158,13 +1154,6 @@
       },
       "profilePath": "/1R7htemDSaHLgO2sNi0LmD0I4tj.jpg",
       "tmdbId": 964834
-    },
-    {
-      "name": "David Jonsson",
-      "film": "Wasteman",
-      "awards": {
-        "bifa": "X"
-      }
     },
     {
       "name": "Harry Melling",
@@ -1230,7 +1219,8 @@
         "astra": "X",
         "gotham": "X",
         "spirit": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/6YauDiiTBwRGC1xnwspPmNvPWUu.jpg",
       "tmdbId": 9827
@@ -1244,8 +1234,10 @@
         "oscar": "Y",
         "critics": "Y",
         "sag": "Y",
-        "astra": "Y"
-      }
+        "astra": "Y",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/h2jErDWMDFFJth4Y9GiVNmwZf65.jpg"
     },
     {
       "name": "Teyana Taylor",
@@ -1260,7 +1252,8 @@
         "astra": "X",
         "gotham": "X",
         "lafca": "Y"
-      }
+      },
+      "profilePath": "/5b2dAuTsBejBsdm9SkWX4F7jG9w.jpg"
     },
     {
       "name": "Wunmi Mosaku",
@@ -1318,24 +1311,6 @@
       },
       "profilePath": "/iiIGXK1MtB6pLpeVlgQi4cM1XWK.jpg",
       "tmdbId": 1569934
-    },
-    {
-      "name": "Marianne Jean-Baptiste",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Hard Truths",
-      "role": "Leading"
-    },
-    {
-      "name": "Carol Kane",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Between the Temples",
-      "role": "Supporting",
-      "profilePath": "/3EOZ7B148lRwJcl3CmQhfpgubYQ.jpg",
-      "tmdbId": 10556
     },
     {
       "name": "Naomi Ackie",
@@ -1483,7 +1458,8 @@
       "awards": {
         "gg": "X",
         "astra": "X"
-      }
+      },
+      "profilePath": "/gIAXqZwZCBqkh2ppfAV4xcnMxki.jpg"
     },
     {
       "name": "Nina Hoss",
@@ -1491,7 +1467,8 @@
         "astra": "X",
         "spirit": "X"
       },
-      "film": "Hedda"
+      "film": "Hedda",
+      "profilePath": "/j4j3eenfrg0XgW0dVReFAdPNPE0.jpg"
     },
     {
       "name": "Carey Mulligan",
@@ -1527,7 +1504,8 @@
       "role": "Supporting",
       "awards": {
         "gg": "X"
-      }
+      },
+      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg"
     },
     {
       "name": "Julia Garner",

@@ -29,7 +29,8 @@
         "nbr": "Y",
         "pga": "X",
         "adg": "X",
-        "wga": "Y"
+        "wga": "Y",
+        "nyfcc": "Y"
       },
       "genre": "Drama",
       "posterPath": "/wNSdSSxowM3WIqmPJNg3RagYbwP.jpg",
@@ -214,14 +215,6 @@
       },
       "posterPath": "/zWoIgZ7mgmPkaZjG0102BSKFIqQ.jpg",
       "tmdbId": 82690
-    },
-    {
-      "name": "The Artist",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/z68py0ZqPgeacGPG54AGVRbNBS7.jpg",
-      "tmdbId": 74643
     },
     {
       "name": "Anna Karenina",
@@ -457,7 +450,8 @@
         "critics": "X",
         "nbr": "Y",
         "dga": "X",
-        "lafca": "X"
+        "lafca": "X",
+        "nyfcc": "Y"
       },
       "film": "Zero Dark Thirty",
       "profilePath": "/llfsTIvItT7IEmX5qK1qUX0dbqc.jpg",
@@ -469,7 +463,8 @@
         "gg": "X",
         "bafta": "X",
         "oscar": "Y",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "film": "Life of Pi",
       "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
@@ -493,15 +488,6 @@
       "film": "Post Tenebras Lux",
       "profilePath": "/gpNZi1L95uaabAZG4Kftjl7dD7A.jpg",
       "tmdbId": 20660
-    },
-    {
-      "name": "Michel Hazanavicius",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Artist",
-      "profilePath": "/5Adwey0AqG16rM7jrDMjUaew9W3.jpg",
-      "tmdbId": 67717
     },
     {
       "name": "Peter Strickland",
@@ -558,23 +544,7 @@
       "name": "Tom Hooper",
       "film": "Les Misérables",
       "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/w9Z3dlJDtWBXo4rIxGI0XY896j2.jpg",
-      "tmdbId": 70500
-    },
-    {
-      "name": "Ang Lee",
-      "film": "Life Of Pi",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
-    },
-    {
-      "name": "Tom Hooper",
-      "film": "Les Miserables",
-      "awards": {
+        "critics": "X",
         "dga": "X"
       },
       "profilePath": "/w9Z3dlJDtWBXo4rIxGI0XY896j2.jpg",
@@ -652,7 +622,8 @@
         "bafta": "Y",
         "oscar": "Y",
         "critics": "Y",
-        "sag": "Y"
+        "sag": "Y",
+        "nyfcc": "Y"
       },
       "film": "Lincoln",
       "role": "Leading",
@@ -771,6 +742,25 @@
       "tmdbId": 10297
     },
     {
+      "name": "Matthew McConaughey",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Killer Joe",
+      "profilePath": "/lCySuYjhXix3FzQdS4oceDDrXKI.jpg",
+      "tmdbId": 10297
+    },
+    {
+      "name": "Matthew McConaughey",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Bernie",
+      "role": "Supporting",
+      "profilePath": "/lCySuYjhXix3FzQdS4oceDDrXKI.jpg",
+      "tmdbId": 10297
+    },
+    {
       "name": "Mads Mikkelsen",
       "awards": {
         "cannes": "Y"
@@ -787,26 +777,6 @@
       "film": "Beasts of the Southern Wild",
       "profilePath": "/pzxxClMKVQ90j5O7aHUcmqHvc7m.jpg",
       "tmdbId": 1055236
-    },
-    {
-      "name": "Brad Pitt",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Moneyball",
-      "role": "Leading",
-      "profilePath": "/cckcYc2v0yh1tc9QjRelptcOBko.jpg",
-      "tmdbId": 287
-    },
-    {
-      "name": "Albert Brooks",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Drive",
-      "role": "Supporting",
-      "profilePath": "/8iDSGu5l93N7benjf6b3AysBore.jpg",
-      "tmdbId": 13
     },
     {
       "name": "Toby Jones",
@@ -955,15 +925,6 @@
       "film": "Keep the Lights On",
       "profilePath": "/lDkRe6dlQoiehjay8pEP2WLU4qG.jpg",
       "tmdbId": 20258
-    },
-    {
-      "name": "Matthew McConaughey",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Killer Joe",
-      "profilePath": "/lCySuYjhXix3FzQdS4oceDDrXKI.jpg",
-      "tmdbId": 10297
     },
     {
       "name": "Wendell Pierce",
@@ -1115,6 +1076,15 @@
       "tmdbId": 1813
     },
     {
+      "name": "Anne Hathaway",
+      "awards": {
+        "lafca": "X"
+      },
+      "film": "The Dark Knight Rises",
+      "profilePath": "/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg",
+      "tmdbId": 1813
+    },
+    {
       "name": "Jessica Chastain",
       "awards": {
         "gg": "Y",
@@ -1174,10 +1144,19 @@
     {
       "name": "Meryl Streep",
       "awards": {
-        "nyfcc": "Y",
         "bifa": "X"
       },
       "film": "The Iron Lady",
+      "role": "Leading",
+      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
+      "tmdbId": 5064
+    },
+    {
+      "name": "Meryl Streep",
+      "awards": {
+        "gg": "X"
+      },
+      "film": "Hope Springs",
       "role": "Leading",
       "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
       "tmdbId": 5064
@@ -1210,16 +1189,6 @@
       "tmdbId": 1034685
     },
     {
-      "name": "Jessica Chastain",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Help",
-      "role": "Supporting",
-      "profilePath": "/bXFXSlfCzoE5Py7KBP9P0Y0Ot1v.jpg",
-      "tmdbId": 83002
-    },
-    {
       "name": "Andrea Riseborough",
       "film": "Shadow Dancer",
       "awards": {
@@ -1244,7 +1213,8 @@
         "bafta": "X",
         "oscar": "X",
         "critics": "X",
-        "sag": "X"
+        "sag": "X",
+        "nyfcc": "Y"
       },
       "film": "Lincoln",
       "role": "Leading",
@@ -1313,17 +1283,6 @@
       "tmdbId": 5309
     },
     {
-      "name": "Nicole Kidman",
-      "awards": {
-        "gg": "X",
-        "sag": "X"
-      },
-      "film": "The Paperboy",
-      "role": "Leading",
-      "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
-      "tmdbId": 2227
-    },
-    {
       "name": "Judi Dench",
       "film": "Skyfall",
       "role": "Supporting",
@@ -1333,6 +1292,17 @@
       },
       "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
       "tmdbId": 5309
+    },
+    {
+      "name": "Nicole Kidman",
+      "awards": {
+        "gg": "X",
+        "sag": "X"
+      },
+      "film": "The Paperboy",
+      "role": "Leading",
+      "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
+      "tmdbId": 2227
     },
     {
       "name": "Ann Dowd",
@@ -1357,9 +1327,20 @@
       "tmdbId": 10978
     },
     {
-      "name": "Rachel Weisz",
+      "name": "Maggie Smith",
       "awards": {
         "gg": "X"
+      },
+      "film": "Quartet",
+      "role": "Leading",
+      "profilePath": "/i7vcF4KzJTgH6kO0TqURuEEfoU3.jpg",
+      "tmdbId": 10978
+    },
+    {
+      "name": "Rachel Weisz",
+      "awards": {
+        "gg": "X",
+        "nyfcc": "Y"
       },
       "film": "The Deep Blue Sea",
       "role": "Leading",
@@ -1377,26 +1358,6 @@
       "tmdbId": 5081
     },
     {
-      "name": "Maggie Smith",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "Quartet",
-      "role": "Leading",
-      "profilePath": "/i7vcF4KzJTgH6kO0TqURuEEfoU3.jpg",
-      "tmdbId": 10978
-    },
-    {
-      "name": "Meryl Streep",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "Hope Springs",
-      "role": "Leading",
-      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
-      "tmdbId": 5064
-    },
-    {
       "name": "Jacki Weaver",
       "film": "Silver Linings Playbook",
       "role": "Supporting",
@@ -1405,15 +1366,6 @@
       },
       "profilePath": "/zalCqZnNQMKseFmwQwOlLrl3w2P.jpg",
       "tmdbId": 67837
-    },
-    {
-      "name": "Anne Hathaway",
-      "awards": {
-        "lafca": "X"
-      },
-      "film": "The Dark Knight Rises",
-      "profilePath": "/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg",
-      "tmdbId": 1813
     },
     {
       "name": "Linda Cardellini",

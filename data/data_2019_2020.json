@@ -104,7 +104,8 @@
         "lafca": "X",
         "wga": "X",
         "adg": "X",
-        "astra": "X"
+        "astra": "X",
+        "nyfcc": "Y"
       },
       "genre": "Drama",
       "posterPath": "/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg",
@@ -233,14 +234,6 @@
       },
       "posterPath": "/q125RHUDgR4gjwh1QkfYuJLYkL.jpg",
       "tmdbId": 508965
-    },
-    {
-      "name": "Roma",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/rqK75R3tTz2iWU0AQ6tLz3KMOU1.jpg",
-      "tmdbId": 11035
     },
     {
       "name": "Avengers: Endgame",
@@ -482,7 +475,8 @@
         "oscar": "X",
         "critics": "X",
         "nbr": "Y",
-        "bafta": "X"
+        "bafta": "X",
+        "dga": "X"
       },
       "film": "Once Upon a Time in Hollywood",
       "profilePath": "/1gjcpAa99FAOWGnrUvHEXXsRs7o.jpg",
@@ -513,17 +507,8 @@
       "film": "Young Ahmed"
     },
     {
-      "name": "Alfonso Cuarón",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Roma",
-      "profilePath": "/eoCHiXaQzGgx9RiwXnt3k239FLc.jpg",
-      "tmdbId": 11218
-    },
-    {
-      "name": "Waad Al",
-      "film": "Khateab  &  Edward Watts",
+      "name": "Waad Al-Kateab & Edward Watts",
+      "film": "For Sama",
       "awards": {
         "bifa": "Y"
       },
@@ -581,15 +566,6 @@
       },
       "profilePath": "/6MwQ2GstYr0wnhp1eTOAbVMNBGN.jpg",
       "tmdbId": 45400
-    },
-    {
-      "name": "Quentin Tarantino",
-      "film": "Once Upon A Time In... Hollywood",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/1gjcpAa99FAOWGnrUvHEXXsRs7o.jpg",
-      "tmdbId": 138
     },
     {
       "name": "Taika Waititi",
@@ -670,6 +646,13 @@
       },
       "profilePath": "/5FuAWpePS3R5UcIysUrmeNZEGFe.jpg",
       "tmdbId": 55251
+    },
+    {
+      "name": "Josh and Benny Safdie",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Uncut Gems"
     }
   ],
   "best-actor": [
@@ -710,7 +693,8 @@
         "oscar": "X",
         "critics": "X",
         "cannes": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "film": "Pain and Glory",
       "role": "Leading",
@@ -766,7 +750,11 @@
         "sag": "X",
         "bafta": "X",
         "lafca": "X",
-        "astra": "Y"
+        "astra": "Y",
+        "nyfcc": "Y",
+        "gg": "X",
+        "oscar": "X",
+        "critics": "X"
       },
       "film": "The Irishman",
       "role": "Supporting",
@@ -802,26 +790,6 @@
       "film": "Parasite",
       "profilePath": "/7dw9wIpFZ5nJZ3zqrue8t7hUUgQ.jpg",
       "tmdbId": 20738
-    },
-    {
-      "name": "Ethan Hawke",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "First Reformed",
-      "role": "Leading",
-      "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
-      "tmdbId": 569
-    },
-    {
-      "name": "Richard E. Grant",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Can You Ever Forgive Me?",
-      "role": "Supporting",
-      "profilePath": "/6UXv8E4WWvRCKMQx1FQ0FJVyu0a.jpg",
-      "tmdbId": 20766
     },
     {
       "name": "Josh O'Connor",
@@ -923,18 +891,6 @@
       "tmdbId": 776
     },
     {
-      "name": "Joe Pesci",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "critics": "X"
-      },
-      "film": "Russell Bufalino",
-      "role": "Supporting",
-      "profilePath": "/zbAdhqbMfRXSz26TjxJvB5f2eL5.jpg",
-      "tmdbId": 4517
-    },
-    {
       "name": "Christian Bale",
       "awards": {
         "gg": "X",
@@ -1018,7 +974,7 @@
       "awards": {
         "astra": "X"
       },
-      "film": "Waves Ronald Williams",
+      "film": "Waves",
       "profilePath": "/vjFATaJfAyBie56J4Qv2DQ9Dyem.jpg",
       "tmdbId": 1225953
     },
@@ -1166,7 +1122,8 @@
         "nbr": "Y",
         "bafta": "Y",
         "spirit": "Y",
-        "bifa": "Y"
+        "bifa": "Y",
+        "astra": "X"
       },
       "film": "Judy",
       "role": "Leading",
@@ -1181,7 +1138,8 @@
         "sag": "Y",
         "critics": "Y",
         "bafta": "Y",
-        "astra": "X"
+        "astra": "X",
+        "nyfcc": "Y"
       },
       "film": "Marriage Story",
       "role": "Supporting",
@@ -1222,7 +1180,8 @@
         "sag": "X",
         "critics": "X",
         "lafca": "X",
-        "astra": "Y"
+        "astra": "Y",
+        "nyfcc": "Y"
       },
       "film": "Us",
       "role": "Leading",
@@ -1271,26 +1230,6 @@
       "tmdbId": 130414
     },
     {
-      "name": "Regina Hall",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Support the Girls",
-      "role": "Leading",
-      "profilePath": "/jiFZ4xNrvUUZLBHnJu71CvdN4kj.jpg",
-      "tmdbId": 35705
-    },
-    {
-      "name": "Regina King",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "If Beale Street Could Talk",
-      "role": "Supporting",
-      "profilePath": "/fEIz0ljk9CBrp3AitM5nwjfoGVu.jpg",
-      "tmdbId": 9788
-    },
-    {
       "name": "Ruthxjiah Bellenea",
       "film": "The Last Tree",
       "awards": {
@@ -1309,6 +1248,19 @@
       },
       "film": "Marriage Story",
       "role": "Leading",
+      "profilePath": "/sRjg0DbiA5DElSr3g3SSR4EArL8.jpg",
+      "tmdbId": 1245
+    },
+    {
+      "name": "Scarlett Johansson",
+      "film": "Jojo Rabbit",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "critics": "X",
+        "bafta": "X"
+      },
       "profilePath": "/sRjg0DbiA5DElSr3g3SSR4EArL8.jpg",
       "tmdbId": 1245
     },
@@ -1342,6 +1294,17 @@
       "tmdbId": 234352
     },
     {
+      "name": "Margot Robbie",
+      "film": "Once Upon a Time in Hollywood",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "astra": "X"
+      },
+      "profilePath": "/8LqG2N6j98lFGMpuYsRUAhOunSd.jpg",
+      "tmdbId": 234352
+    },
+    {
       "name": "Cynthia Erivo",
       "awards": {
         "gg": "X",
@@ -1368,19 +1331,6 @@
       "tmdbId": 36592
     },
     {
-      "name": "Scarlett Johansson",
-      "film": "Jojo Rabbit",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "sag": "X",
-        "critics": "X",
-        "bafta": "X"
-      },
-      "profilePath": "/sRjg0DbiA5DElSr3g3SSR4EArL8.jpg",
-      "tmdbId": 1245
-    },
-    {
       "name": "Florence Pugh",
       "film": "Little Women",
       "role": "Supporting",
@@ -1389,6 +1339,15 @@
         "critics": "X",
         "bafta": "X"
       },
+      "profilePath": "/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg",
+      "tmdbId": 1373737
+    },
+    {
+      "name": "Florence Pugh",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "Midsommar",
       "profilePath": "/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg",
       "tmdbId": 1373737
     },
@@ -1413,17 +1372,6 @@
       },
       "profilePath": "/i8IlkFbZqKUgkypZKpdhrw00uqw.jpg",
       "tmdbId": 1498158
-    },
-    {
-      "name": "Margot Robbie",
-      "film": "Once Upon a Time in Hollywood",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "astra": "X"
-      },
-      "profilePath": "/8LqG2N6j98lFGMpuYsRUAhOunSd.jpg",
-      "tmdbId": 234352
     },
     {
       "name": "Elisabeth Moss",
@@ -1514,24 +1462,6 @@
       "role": "Supporting",
       "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
       "tmdbId": 2227
-    },
-    {
-      "name": "Florence Pugh",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Midsommar",
-      "profilePath": "/1Uvfh7xL4U2evkhs0M3C7BbBYFf.jpg",
-      "tmdbId": 1373737
-    },
-    {
-      "name": "Renee Zellweger",
-      "awards": {
-        "astra": "X"
-      },
-      "film": "Judy",
-      "profilePath": "/u4wQXVYhN9OOimHn5hbWKefdjjG.jpg",
-      "tmdbId": 9137
     },
     {
       "name": "Zhao Shu",

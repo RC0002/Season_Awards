@@ -154,7 +154,8 @@
         "critics": "X",
         "adg": "X",
         "wga": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "pga": "X"
       },
       "posterPath": "/pvtyxijaBrCSbByXLcUIDDSvc40.jpg",
       "tmdbId": 615667
@@ -188,7 +189,8 @@
       "awards": {
         "nbr": "Y",
         "spirit": "X",
-        "gotham": "X"
+        "gotham": "X",
+        "nyfcc": "Y"
       },
       "posterPath": "/yS41crZ1i0fFxCQbuL7I1Y1VBwm.jpg",
       "tmdbId": 558582
@@ -225,14 +227,6 @@
       "awards": {
         "lafca": "Y"
       }
-    },
-    {
-      "name": "The Irishman",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg",
-      "tmdbId": 398978
     },
     {
       "name": "Tenet",
@@ -309,14 +303,6 @@
       },
       "posterPath": "/lIADEa6oH74uUapjsPbNRzxus8M.jpg",
       "tmdbId": 644583
-    },
-    {
-      "name": "Ma Rainey’s Black Bottom",
-      "awards": {
-        "pga": "X"
-      },
-      "posterPath": "/pvtyxijaBrCSbByXLcUIDDSvc40.jpg",
-      "tmdbId": 615667
     },
     {
       "name": "Onward",
@@ -451,7 +437,8 @@
         "critics": "Y",
         "dga": "Y",
         "lafca": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/r8DmTdOqHbDUydCOVb277rncPTK.jpg",
       "tmdbId": 1395183
@@ -465,13 +452,6 @@
       "film": "Da 5 Bloods",
       "profilePath": "/2KOHXgk2uoRXl6u7V9xpAIo3uay.jpg",
       "tmdbId": 5281
-    },
-    {
-      "name": "Josh and Benny Safdie",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Uncut Gems"
     },
     {
       "name": "Kiyoshi Kurosawa",
@@ -553,7 +533,8 @@
       "name": "Aaron Sorkin",
       "awards": {
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "film": "The Trial of the Chicago 7",
       "profilePath": "/hGkusztbd1rb23QFAjvpJxKSTAU.jpg",
@@ -586,15 +567,6 @@
       },
       "profilePath": "/vx2ESOt6od8iM4WA2DiVWfl9tzy.jpg",
       "tmdbId": 2035232
-    },
-    {
-      "name": "Aaron Sorkin",
-      "film": "The Trial Of The Chicago 7",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/hGkusztbd1rb23QFAjvpJxKSTAU.jpg",
-      "tmdbId": 13520
     },
     {
       "name": "Steve McQueen",
@@ -685,6 +657,19 @@
       "tmdbId": 172069
     },
     {
+      "name": "Chadwick Boseman",
+      "film": "Da 5 Bloods",
+      "role": "Supporting",
+      "awards": {
+        "sag": "X",
+        "critics": "X",
+        "astra": "X",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/1lz1wLOuPFSRIratMz0SxD3tkJ.jpg",
+      "tmdbId": 172069
+    },
+    {
       "name": "Riz Ahmed",
       "film": "Sound of Metal",
       "role": "Leading",
@@ -699,6 +684,15 @@
         "spirit": "Y",
         "gotham": "Y",
         "astra": "X"
+      },
+      "profilePath": "/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg",
+      "tmdbId": 53240
+    },
+    {
+      "name": "Riz Ahmed",
+      "film": "Mogul Mowgli",
+      "awards": {
+        "bifa": "X"
       },
       "profilePath": "/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg",
       "tmdbId": 53240
@@ -740,7 +734,8 @@
       "role": "Leading",
       "awards": {
         "critics": "X",
-        "astra": "Y"
+        "astra": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/kLwUBBmEIdchrLqwsYzgLB2B6q5.jpg",
       "tmdbId": 18792
@@ -766,24 +761,17 @@
       "tmdbId": 6730
     },
     {
-      "name": "Antonio Banderas",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Pain and Glory",
-      "role": "Leading",
-      "profilePath": "/fce7zl6elUzsv7wudHFc7RgFtjD.jpg",
-      "tmdbId": 3131
-    },
-    {
-      "name": "Joe Pesci",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Irishman",
+      "name": "Sacha Baron Cohen",
+      "film": "The Trial of the Chicago 7",
       "role": "Supporting",
-      "profilePath": "/zbAdhqbMfRXSz26TjxJvB5f2eL5.jpg",
-      "tmdbId": 4517
+      "awards": {
+        "oscar": "X",
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
+      },
+      "profilePath": "/irirhgOX0siCyqvMrt2hoJpXfOG.jpg",
+      "tmdbId": 6730
     },
     {
       "name": "Pierfrancesco Favino",
@@ -840,31 +828,6 @@
       },
       "profilePath": "/fOMFO2Xx4duzpNgS9Q5ytO44yGb.jpg",
       "tmdbId": 215055
-    },
-    {
-      "name": "Sacha Baron Cohen",
-      "film": "The Trial of the Chicago 7",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "gg": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "profilePath": "/irirhgOX0siCyqvMrt2hoJpXfOG.jpg",
-      "tmdbId": 6730
-    },
-    {
-      "name": "Chadwick Boseman",
-      "film": "Da 5 Bloods",
-      "role": "Supporting",
-      "awards": {
-        "sag": "X",
-        "critics": "X",
-        "astra": "X"
-      },
-      "profilePath": "/1lz1wLOuPFSRIratMz0SxD3tkJ.jpg",
-      "tmdbId": 172069
     },
     {
       "name": "Tahar Rahim",
@@ -1144,15 +1107,6 @@
       "profilePath": "/naHrnri1hs5mMcvydNIORuM2nQn.jpg"
     },
     {
-      "name": "Riz Ahmed",
-      "film": "Mogul Mowgli",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/1uP9RaX7BGVx7XGTEmwObBJJzsC.jpg",
-      "tmdbId": 53240
-    },
-    {
       "name": "Harris Dickinson",
       "film": "County Lines",
       "awards": {
@@ -1270,8 +1224,10 @@
         "gg": "X",
         "bafta": "X",
         "sag": "X",
-        "critics": "Y"
-      }
+        "critics": "Y",
+        "nyfcc": "Y"
+      },
+      "profilePath": "/vCz0ycZr1PgJVOAeS29fIiZE8pN.jpg"
     },
     {
       "name": "Andra Day",
@@ -1347,26 +1303,6 @@
       "role": "Supporting",
       "profilePath": "/8DAd9knKivHR4CCStxlNEQXzjIh.jpg",
       "tmdbId": 1038
-    },
-    {
-      "name": "Lupita Nyong'o",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Us",
-      "role": "Leading",
-      "profilePath": "/y40Wu1T742kynOqtwXASc5Qgm49.jpg",
-      "tmdbId": 1267329
-    },
-    {
-      "name": "Laura Dern",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Marriage Story",
-      "role": "Supporting",
-      "profilePath": "/gB9PnGEvxKg33OSlcqptQwTBwPE.jpg",
-      "tmdbId": 4784
     },
     {
       "name": "Youn Yuh",
@@ -1458,7 +1394,8 @@
       "role": "Leading",
       "awards": {
         "critics": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/rIikG5VcRAWYKM0JXXc5aNI2km1.jpg",
       "tmdbId": 2475406
@@ -1534,15 +1471,6 @@
       },
       "profilePath": "/3UCmRVlY1uE68IuSjXNkEgl8lKT.jpg",
       "tmdbId": 2379700
-    },
-    {
-      "name": "Ashley Madekwe",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/cmmtRqxW6r1EO7kMUxt92MxyWx7.jpg",
-      "tmdbId": 75061
     },
     {
       "name": "Dominique Fishback",
@@ -1667,10 +1595,12 @@
       "name": "Ashley Madekwe",
       "film": "County Lines",
       "awards": {
-        "bifa": "X"
+        "bifa": "X",
+        "bafta": "X"
       },
       "profilePath": "/cmmtRqxW6r1EO7kMUxt92MxyWx7.jpg",
-      "tmdbId": 75061
+      "tmdbId": 75061,
+      "role": "Supporting"
     },
     {
       "name": "Fiona Shaw",

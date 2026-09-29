@@ -83,7 +83,8 @@
         "pga": "X",
         "wga": "X",
         "adg": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "nyfcc": "Y"
       },
       "genre": "Comedy",
       "posterPath": "/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg",
@@ -227,14 +228,6 @@
       "note": "Director: Ruben Östlund",
       "posterPath": "/kLed7chodgFBAC2hUFqtVt9KyGk.jpg",
       "tmdbId": 15912
-    },
-    {
-      "name": "La La Land",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
-      "tmdbId": 313369
     },
     {
       "name": "Coco",
@@ -424,7 +417,8 @@
         "gg": "Y",
         "oscar": "Y",
         "critics": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "dga": "Y"
       },
       "profilePath": "/gldeyCtKcaqnK1v4Vu9vqayhzUQ.jpg",
       "tmdbId": 10828
@@ -474,15 +468,6 @@
       "profilePath": "/JtP2bXg55rLMcGaMgEibRgzj2z.jpg"
     },
     {
-      "name": "Guillermo Del Toro",
-      "film": "The Shape Of Water",
-      "awards": {
-        "dga": "Y"
-      },
-      "profilePath": "/gldeyCtKcaqnK1v4Vu9vqayhzUQ.jpg",
-      "tmdbId": 10828
-    },
-    {
       "name": "Sofia Coppola",
       "awards": {
         "cannes": "Y"
@@ -490,15 +475,6 @@
       "film": "The Beguiled",
       "profilePath": "/dzHC2LxmarkBxWLhjp2DRa5oCev.jpg",
       "tmdbId": 1769
-    },
-    {
-      "name": "Barry Jenkins",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Moonlight",
-      "profilePath": "/6nld5eQwiJmuLmyesk4EUeCaoo3.jpg",
-      "tmdbId": 92784
     },
     {
       "name": "Rungano Nyoni",
@@ -575,7 +551,8 @@
     {
       "name": "Sean Baker",
       "awards": {
-        "spirit": "X"
+        "spirit": "X",
+        "nyfcc": "Y"
       },
       "film": "The Florida Project",
       "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
@@ -679,7 +656,8 @@
         "sag": "X",
         "critics": "X",
         "lafca": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
       "tmdbId": 1190668
@@ -710,7 +688,8 @@
         "sag": "X",
         "critics": "X",
         "lafca": "Y",
-        "gotham": "X"
+        "gotham": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg",
       "tmdbId": 5293
@@ -742,26 +721,6 @@
       "film": "You Were Never Really Here",
       "profilePath": "/u38k3hQBDwNX0VA22aQceDp9Iyv.jpg",
       "tmdbId": 73421
-    },
-    {
-      "name": "Casey Affleck",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Manchester by the Sea",
-      "role": "Leading",
-      "profilePath": "/304ilSygaCRWykoBWAL67TOw8g9.jpg",
-      "tmdbId": 1893
-    },
-    {
-      "name": "Mahershala Ali",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Moonlight",
-      "role": "Supporting",
-      "profilePath": "/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg",
-      "tmdbId": 932967
     },
     {
       "name": "Josh O'Connor",
@@ -898,7 +857,8 @@
       "film": "Film Stars Don't Die in Liverpool",
       "role": "Leading",
       "awards": {
-        "bafta": "X"
+        "bafta": "X",
+        "bifa": "X"
       },
       "profilePath": "/xAfNYOJYOy5ee9PHbBF8Y6xzZ9I.jpg",
       "tmdbId": 478
@@ -1015,15 +975,6 @@
       "tmdbId": 227564
     },
     {
-      "name": "Jamie Bell",
-      "film": "Film Stars Don't Die",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/xAfNYOJYOy5ee9PHbBF8Y6xzZ9I.jpg",
-      "tmdbId": 478
-    },
-    {
       "name": "Paddy Considine",
       "film": "Journeyman",
       "awards": {
@@ -1113,7 +1064,8 @@
         "sag": "X",
         "critics": "X",
         "gotham": "Y",
-        "spirit": "X"
+        "spirit": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
       "tmdbId": 36592
@@ -1179,26 +1131,6 @@
       "film": "In the Fade",
       "profilePath": "/o5gVowcjVw4ThYi0L3883Y4X7kH.jpg",
       "tmdbId": 9824
-    },
-    {
-      "name": "Isabelle Huppert",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Elle",
-      "role": "Leading",
-      "profilePath": "/wGG9v1Uci3sfrbjt0bRXkLrTqjY.jpg",
-      "tmdbId": 17882
-    },
-    {
-      "name": "Michelle Williams",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Certain Women",
-      "role": "Supporting",
-      "profilePath": "/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg",
-      "tmdbId": 1812
     },
     {
       "name": "Florence Pugh",
@@ -1383,7 +1315,8 @@
       "film": "Girls Trip",
       "role": "Supporting",
       "awards": {
-        "critics": "X"
+        "critics": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/pvAYqQD4LXavzDkBqCrC4IgVBur.jpg",
       "tmdbId": 1230868

@@ -12,7 +12,8 @@
         "pga": "X",
         "lafca": "Y",
         "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "nyfcc": "Y"
       },
       "posterPath": "/rqK75R3tTz2iWU0AQ6tLz3KMOU1.jpg",
       "tmdbId": 11035
@@ -233,14 +234,6 @@
       "tmdbId": 414030
     },
     {
-      "name": "Lady Bird",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg",
-      "tmdbId": 391713
-    },
-    {
       "name": "The Rider",
       "awards": {
         "gotham": "Y"
@@ -410,7 +403,8 @@
         "oscar": "Y",
         "critics": "Y",
         "dga": "Y",
-        "lafca": "X"
+        "lafca": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/eoCHiXaQzGgx9RiwXnt3k239FLc.jpg",
       "tmdbId": 11218
@@ -463,21 +457,12 @@
     },
     {
       "name": "Jacques Audiard",
-      "film": "I fratelli Sisters ( The Sisters Brothers ) [ 15 ]",
+      "film": "The Sisters Brothers",
       "awards": {
         "venice": "Y"
       },
       "profilePath": "/cODcsQRkKSEiZlEQvdKwnDm136l.jpg",
       "tmdbId": 17496
-    },
-    {
-      "name": "Sean Baker",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Florida Project",
-      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
-      "tmdbId": 118415
     },
     {
       "name": "Barry Jenkins",
@@ -624,7 +609,8 @@
         "critics": "X",
         "lafca": "Y",
         "gotham": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg",
       "tmdbId": 569
@@ -654,7 +640,8 @@
         "sag": "X",
         "critics": "X",
         "gotham": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/6UXv8E4WWvRCKMQx1FQ0FJVyu0a.jpg",
       "tmdbId": 20766
@@ -676,12 +663,16 @@
     },
     {
       "name": "Willem Dafoe",
-      "film": "Van Gogh - Sulla soglia dell'eternità",
+      "film": "At Eternity's Gate",
       "awards": {
-        "venice": "Y"
+        "venice": "Y",
+        "gg": "X",
+        "oscar": "X",
+        "critics": "X"
       },
       "profilePath": "/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg",
-      "tmdbId": 5293
+      "tmdbId": 5293,
+      "role": "Leading"
     },
     {
       "name": "Marcello Fonte",
@@ -700,26 +691,6 @@
       "film": "Burning",
       "profilePath": "/fOMFO2Xx4duzpNgS9Q5ytO44yGb.jpg",
       "tmdbId": 215055
-    },
-    {
-      "name": "Timothée Chalamet",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Call Me by Your Name",
-      "role": "Leading",
-      "profilePath": "/dFxpwRpmzpVfP1zjluH68DeQhyj.jpg",
-      "tmdbId": 1190668
-    },
-    {
-      "name": "Willem Dafoe",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Florida Project",
-      "role": "Supporting",
-      "profilePath": "/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg",
-      "tmdbId": 5293
     },
     {
       "name": "Joe Cole",
@@ -795,18 +766,6 @@
       "tmdbId": 6807
     },
     {
-      "name": "Willem Dafoe",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "critics": "X"
-      },
-      "film": "At Eternity's Gate",
-      "role": "Leading",
-      "profilePath": "/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg",
-      "tmdbId": 5293
-    },
-    {
       "name": "Sam Elliott",
       "film": "A Star Is Born",
       "role": "Supporting",
@@ -837,6 +796,15 @@
       },
       "film": "BlacKkKlansman",
       "role": "Leading",
+      "profilePath": "/27C77ni5XmlgkJVbomXPC4tHWVd.jpg",
+      "tmdbId": 1117313
+    },
+    {
+      "name": "John David Washington",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Monsters and Men",
       "profilePath": "/27C77ni5XmlgkJVbomXPC4tHWVd.jpg",
       "tmdbId": 1117313
     },
@@ -1035,15 +1003,6 @@
       "film": "Eighth Grade",
       "profilePath": "/7nuAUPd7E8iOE5lhUcNpogS2akP.jpg",
       "tmdbId": 52419
-    },
-    {
-      "name": "John David Washington",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Monsters and Men",
-      "profilePath": "/27C77ni5XmlgkJVbomXPC4tHWVd.jpg",
-      "tmdbId": 1117313
     }
   ],
   "best-actress": [
@@ -1058,7 +1017,8 @@
         "sag": "X",
         "critics": "X",
         "lafca": "Y",
-        "bifa": "Y"
+        "bifa": "Y",
+        "venice": "Y"
       },
       "profilePath": "/lawJUdbLb1YW0niaYjiVGR9IBG8.jpg",
       "tmdbId": 39187
@@ -1070,7 +1030,8 @@
         "oscar": "Y",
         "critics": "Y",
         "lafca": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "film": "If Beale Street Could Talk",
       "role": "Supporting",
@@ -1116,7 +1077,18 @@
         "bafta": "Y",
         "gg": "X",
         "sag": "X",
-        "bifa": "Y"
+        "bifa": "Y",
+        "oscar": "X",
+        "critics": "X"
+      },
+      "profilePath": "/58czHc8QU1L4H0N45T0UML8efgS.jpg",
+      "tmdbId": 3293
+    },
+    {
+      "name": "Rachel Weisz",
+      "film": "Disobedience",
+      "awards": {
+        "bifa": "X"
       },
       "profilePath": "/58czHc8QU1L4H0N45T0UML8efgS.jpg",
       "tmdbId": 3293
@@ -1145,13 +1117,16 @@
       "tmdbId": 5081
     },
     {
-      "name": "Olivia Colman",
-      "film": "La favorita",
+      "name": "Emily Blunt",
       "awards": {
-        "venice": "Y"
+        "gg": "X",
+        "sag": "X",
+        "critics": "X"
       },
-      "profilePath": "/lawJUdbLb1YW0niaYjiVGR9IBG8.jpg",
-      "tmdbId": 39187
+      "film": "Mary Poppins Returns",
+      "role": "Leading",
+      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
+      "tmdbId": 5081
     },
     {
       "name": "Samal Yeslyamova",
@@ -1161,26 +1136,6 @@
       "film": "Ayka",
       "profilePath": "/rm8nS4t5jICfHq0fp3K9P9FqKer.jpg",
       "tmdbId": 584306
-    },
-    {
-      "name": "Saoirse Ronan",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Lady Bird",
-      "role": "Leading",
-      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
-      "tmdbId": 36592
-    },
-    {
-      "name": "Tiffany Haddish",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Girls Trip",
-      "role": "Supporting",
-      "profilePath": "/pvAYqQD4LXavzDkBqCrC4IgVBur.jpg",
-      "tmdbId": 1230868
     },
     {
       "name": "Emma Stone",
@@ -1238,18 +1193,6 @@
       "tmdbId": 120932
     },
     {
-      "name": "Emily Blunt",
-      "awards": {
-        "gg": "X",
-        "sag": "X",
-        "critics": "X"
-      },
-      "film": "Mary Poppins Returns",
-      "role": "Leading",
-      "profilePath": "/5nCSG5TL1bP1geD8aaBfaLnLLCD.jpg",
-      "tmdbId": 5081
-    },
-    {
       "name": "Margot Robbie",
       "film": "Mary Queen of Scots",
       "role": "Supporting",
@@ -1283,25 +1226,16 @@
       "tmdbId": 1775557
     },
     {
-      "name": "Rachel Weisz",
-      "film": "Sarah Churchill",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "critics": "X"
-      },
-      "profilePath": "/58czHc8QU1L4H0N45T0UML8efgS.jpg",
-      "tmdbId": 3293
-    },
-    {
       "name": "Regina Hall",
       "awards": {
         "gotham": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "nyfcc": "Y"
       },
       "film": "Support the Girls",
       "profilePath": "/jiFZ4xNrvUUZLBHnJu71CvdN4kj.jpg",
-      "tmdbId": 35705
+      "tmdbId": 35705,
+      "role": "Leading"
     },
     {
       "name": "Viola Davis",
@@ -1320,6 +1254,16 @@
       },
       "film": "Destroyer",
       "role": "Leading",
+      "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
+      "tmdbId": 2227
+    },
+    {
+      "name": "Nicole Kidman",
+      "film": "Boy Erased",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
       "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
       "tmdbId": 2227
     },
@@ -1362,16 +1306,6 @@
       },
       "profilePath": "/rGGjW1UnUL1Q4TGlfRL3W5yuyq1.jpg",
       "tmdbId": 78883
-    },
-    {
-      "name": "Nicole Kidman",
-      "film": "Boy Erased",
-      "role": "Supporting",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/lfW2cDigTcvuoe4k6UfCdGVE1R6.jpg",
-      "tmdbId": 2227
     },
     {
       "name": "Elizabeth Debicki",
@@ -1426,15 +1360,6 @@
       },
       "profilePath": "/uChlrL5WyeXhvGFaNvbzw1KqMgP.jpg",
       "tmdbId": 76944
-    },
-    {
-      "name": "Rachel Weisz",
-      "film": "Disobedience",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/58czHc8QU1L4H0N45T0UML8efgS.jpg",
-      "tmdbId": 3293
     },
     {
       "name": "Nina Arianda",

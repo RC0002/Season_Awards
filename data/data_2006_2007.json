@@ -135,7 +135,8 @@
       "awards": {
         "afi": "Y",
         "critics": "X",
-        "wga": "X"
+        "wga": "X",
+        "nyfcc": "Y"
       },
       "posterPath": "/r3mdSgsnpoi4UiUufdybhjha68t.jpg",
       "tmdbId": 9829
@@ -187,7 +188,8 @@
     {
       "name": "The Wind That Shakes the Barley",
       "awards": {
-        "cannes": "Y"
+        "cannes": "Y",
+        "bifa": "X"
       },
       "note": "Director: Ken Loach",
       "posterPath": "/yCb4LweL6U7KTgSda3Wb7vHiA9J.jpg",
@@ -218,15 +220,7 @@
       "tmdbId": 920
     },
     {
-      "name": "Brokeback Mountain",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/aByfQOQBNa4CMFwIgq3QrqY2ZHh.jpg",
-      "tmdbId": 142
-    },
-    {
-      "name": "- Children of Men",
+      "name": "Children of Men",
       "awards": {
         "adg": "X"
       },
@@ -323,7 +317,7 @@
       "tmdbId": 591
     },
     {
-      "name": "- Pirates of the Caribbean: Dead Man's Chest",
+      "name": "Pirates of the Caribbean: Dead Man's Chest",
       "awards": {
         "adg": "X"
       },
@@ -406,7 +400,8 @@
     {
       "name": "Pan's Labyrinth",
       "awards": {
-        "spirit": "X"
+        "spirit": "X",
+        "adg": "Y"
       },
       "posterPath": "/z7xXihu5wHuSMWymq5VAulPVuvg.jpg",
       "tmdbId": 1417
@@ -420,24 +415,11 @@
       "tmdbId": 11705
     },
     {
-      "name": "The Wind That Shakes the Barley [ 1 ]",
-      "awards": {
-        "bifa": "X"
-      }
-    },
-    {
       "name": "Casino Royale",
       "awards": {
         "adg": "Y"
       },
       "posterPath": "/lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg"
-    },
-    {
-      "name": "Pan's Labyrinth (El laberinto del fauno)",
-      "awards": {
-        "adg": "Y"
-      },
-      "posterPath": "/z7xXihu5wHuSMWymq5VAulPVuvg.jpg"
     },
     {
       "name": "Curse of the Golden Flower (Man cheng jin dai huang jin jia)",
@@ -455,7 +437,9 @@
         "oscar": "Y",
         "bafta": "X",
         "critics": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "nyfcc": "Y",
+        "dga": "Y"
       },
       "film": "The Departed",
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
@@ -479,7 +463,8 @@
         "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "cannes": "Y"
+        "cannes": "Y",
+        "dga": "X"
       },
       "film": "Babel",
       "profilePath": "/Av0jewh8wltCl1CB8MfEIrvgfMZ.jpg",
@@ -492,23 +477,6 @@
         "bafta": "X",
         "spirit": "Y"
       }
-    },
-    {
-      "name": "Martin Scorsese",
-      "film": "THE DEPARTED",
-      "awards": {
-        "dga": "Y"
-      },
-      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
-      "tmdbId": 1032
-    },
-    {
-      "name": "Ang Lee",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Brokeback Mountain",
-      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
     },
     {
       "name": "Alain Resnais",
@@ -534,7 +502,8 @@
         "oscar": "X",
         "bafta": "X",
         "critics": "X",
-        "bifa": "X"
+        "bifa": "X",
+        "dga": "X"
       },
       "film": "The Queen",
       "profilePath": "/6VPZp1rJKU4Jq6yx4Xo224BWr0I.jpg",
@@ -571,33 +540,15 @@
       "tmdbId": 15557
     },
     {
-      "name": "Alejandro Gonzalez Inarritu",
-      "film": "BABEL",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/Av0jewh8wltCl1CB8MfEIrvgfMZ.jpg",
-      "tmdbId": 223
-    },
-    {
       "name": "Jonathan Dayton & Valerie Faris",
-      "film": "LITTLE MISS SUNSHINE",
+      "film": "Little Miss Sunshine",
       "awards": {
         "dga": "X"
       }
     },
     {
-      "name": "Stephen Frears",
-      "film": "THE QUEEN",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/6VPZp1rJKU4Jq6yx4Xo224BWr0I.jpg",
-      "tmdbId": 3224
-    },
-    {
       "name": "William Condon",
-      "film": "DREAMGIRLS",
+      "film": "Dreamgirls",
       "awards": {
         "dga": "X"
       }
@@ -607,7 +558,7 @@
       "awards": {
         "spirit": "X"
       },
-      "film": "A Prairie Home Companion   (posthumous)",
+      "film": "A Prairie Home Companion (posthumous)",
       "profilePath": "/wB1R6patGi35oaxKU5PWEGJlIZg.jpg",
       "tmdbId": 9789
     },
@@ -658,7 +609,7 @@
     },
     {
       "name": "Ken Loach",
-      "film": "The Wind That Shakes the Barley [ 1 ]",
+      "film": "The Wind That Shakes the Barley",
       "awards": {
         "bifa": "X"
       },
@@ -677,10 +628,20 @@
         "critics": "Y",
         "nbr": "Y",
         "lafca": "X",
-        "bifa": "X"
+        "bifa": "X",
+        "nyfcc": "Y"
       },
       "film": "The Last King of Scotland",
       "role": "Leading",
+      "profilePath": "/4w7l5JUwnwFNBy7J93ZwYN1nihm.jpg",
+      "tmdbId": 2178
+    },
+    {
+      "name": "Forest Whitaker",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "American Gun",
       "profilePath": "/4w7l5JUwnwFNBy7J93ZwYN1nihm.jpg",
       "tmdbId": 2178
     },
@@ -815,26 +776,6 @@
       "tmdbId": 20668
     },
     {
-      "name": "Heath Ledger",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Brokeback Mountain",
-      "role": "Leading",
-      "profilePath": "/p2z2bURSg7nuMsN9P2s61e2RvNz.jpg",
-      "tmdbId": 1810
-    },
-    {
-      "name": "William Hurt",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "A History of Violence",
-      "role": "Supporting",
-      "profilePath": "/j3mjmuHLBW4XQSw53C8Sh0Lh3ZQ.jpg",
-      "tmdbId": 227
-    },
-    {
       "name": "Tony Curran",
       "film": "Red Road",
       "awards": {
@@ -938,7 +879,8 @@
       "role": "Supporting",
       "awards": {
         "oscar": "X",
-        "sag": "X"
+        "sag": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/xDPeiyklN8f9Ilowsti4lGVbioj.jpg",
       "tmdbId": 17183
@@ -996,19 +938,11 @@
     },
     {
       "name": "Mark Wahlberg",
-      "awards": {
-        "gg": "X"
-      },
-      "role": "Supporting",
-      "profilePath": "/bTEFpaWd7A6AZVWOqKKBWzKEUe8.jpg",
-      "tmdbId": 13240
-    },
-    {
-      "name": "Mark Wahlberg",
       "film": "The Departed",
       "role": "Supporting",
       "awards": {
-        "oscar": "X"
+        "oscar": "X",
+        "gg": "X"
       },
       "profilePath": "/bTEFpaWd7A6AZVWOqKKBWzKEUe8.jpg",
       "tmdbId": 13240
@@ -1020,6 +954,15 @@
       "awards": {
         "bafta": "X"
       },
+      "profilePath": "/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg",
+      "tmdbId": 8784
+    },
+    {
+      "name": "Daniel Craig",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Infamous",
       "profilePath": "/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg",
       "tmdbId": 8784
     },
@@ -1068,15 +1011,6 @@
       "film": "Man Push Cart"
     },
     {
-      "name": "Forest Whitaker",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "American Gun",
-      "profilePath": "/4w7l5JUwnwFNBy7J93ZwYN1nihm.jpg",
-      "tmdbId": 2178
-    },
-    {
       "name": "Raymond J. Barry",
       "awards": {
         "spirit": "X"
@@ -1084,15 +1018,6 @@
       "film": "Steel City",
       "profilePath": "/8rJs8BQMoVqEjjCHCS4i7o7joJ6.jpg",
       "tmdbId": 10361
-    },
-    {
-      "name": "Daniel Craig",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Infamous",
-      "profilePath": "/iFerDZUmC5Fu26i4qI8xnUVEHc7.jpg",
-      "tmdbId": 8784
     },
     {
       "name": "Paul Dano",
@@ -1114,7 +1039,7 @@
     },
     {
       "name": "Cillian Murphy",
-      "film": "The Wind That Shakes the Barley [ 1 ]",
+      "film": "The Wind That Shakes the Barley",
       "awards": {
         "bifa": "X"
       },
@@ -1159,7 +1084,10 @@
         "sag": "Y",
         "critics": "Y",
         "nbr": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y",
+        "venice": "Y",
+        "bifa": "X"
       },
       "film": "The Queen",
       "role": "Leading",
@@ -1174,7 +1102,8 @@
         "bafta": "Y",
         "sag": "Y",
         "critics": "Y",
-        "lafca": "X"
+        "lafca": "X",
+        "nyfcc": "Y"
       },
       "film": "Dreamgirls",
       "role": "Supporting",
@@ -1266,35 +1195,6 @@
       "tmdbId": 39961
     },
     {
-      "name": "Reese Witherspoon",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Walk the Line",
-      "role": "Leading",
-      "profilePath": "/o1z4UwW2137IViFIRk8AV8hWze1.jpg",
-      "tmdbId": 368
-    },
-    {
-      "name": "Maria Bello",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "A History of Violence",
-      "role": "Supporting",
-      "profilePath": "/it1f5mxiGIWO0DzTBfwtLTjphZb.jpg",
-      "tmdbId": 49
-    },
-    {
-      "name": "Helen Mirren",
-      "film": "The Queen - La regina",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
-      "tmdbId": 15735
-    },
-    {
       "name": "Shareeka Epps",
       "awards": {
         "spirit": "Y"
@@ -1380,7 +1280,8 @@
       "awards": {
         "gg": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "oscar": "X"
       },
       "film": "Babel",
       "role": "Supporting",
@@ -1484,15 +1385,6 @@
       "tmdbId": 9137
     },
     {
-      "name": "Rinko Kikuchi",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/lv4UuorZtC37VaFAHO205u4lS73.jpg",
-      "tmdbId": 18054
-    },
-    {
       "name": "Emma Thompson",
       "film": "Stranger than Fiction",
       "role": "Supporting",
@@ -1584,17 +1476,8 @@
       "tmdbId": 32
     },
     {
-      "name": "Helen Mirren",
-      "film": "The Queen [ 1 ]",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
-      "tmdbId": 15735
-    },
-    {
       "name": "Vanessa Redgrave",
-      "film": "Venus [ 1 ]",
+      "film": "Venus",
       "awards": {
         "bifa": "X"
       },

@@ -14,7 +14,8 @@
         "pga": "Y",
         "wga": "Y",
         "spirit": "Y",
-        "gotham": "X"
+        "gotham": "X",
+        "nyfcc": "Y"
       },
       "genre": "Drama",
       "posterPath": "/aByfQOQBNa4CMFwIgq3QrqY2ZHh.jpg",
@@ -63,7 +64,10 @@
         "critics": "X",
         "nbr": "Y",
         "oscar": "X",
-        "pga": "X"
+        "pga": "X",
+        "adg": "X",
+        "wga": "X",
+        "spirit": "X"
       },
       "genre": "Drama",
       "posterPath": "/fINjqjQNWYr7g9nVawzPDenxVO3.jpg",
@@ -155,16 +159,6 @@
       "tmdbId": 254
     },
     {
-      "name": "Good Night, and Good Luck.",
-      "awards": {
-        "adg": "X",
-        "wga": "X",
-        "spirit": "X"
-      },
-      "posterPath": "/w4QSEno2xxHqMtSr3mPUhJpO3F2.jpg",
-      "tmdbId": 3291
-    },
-    {
       "name": "Match Point",
       "awards": {
         "gg": "X",
@@ -225,14 +219,6 @@
       },
       "posterPath": "/cMQ2lNd7sBe6PCf6zF5QxrKzbRG.jpg",
       "tmdbId": 533
-    },
-    {
-      "name": "Sideways",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/zOsaxYLgvZVU7cJBpPn8CuE0MrP.jpg",
-      "tmdbId": 9675
     },
     {
       "name": "Mrs Henderson Presents",
@@ -394,7 +380,9 @@
         "nbr": "Y",
         "oscar": "Y",
         "lafca": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y",
+        "dga": "Y"
       },
       "film": "Brokeback Mountain",
       "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
@@ -418,25 +406,8 @@
       "tmdbId": 56207
     },
     {
-      "name": "Ang Lee",
-      "film": "BROKEBACK MOUNTAIN",
-      "awards": {
-        "dga": "Y"
-      },
-      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
-    },
-    {
-      "name": "Clint Eastwood",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Million Dollar Baby",
-      "profilePath": "/8TwdCfeOZH7ucRlfLZ6wObxa7cO.jpg",
-      "tmdbId": 190
-    },
-    {
       "name": "Neil Marshall",
-      "film": "The Descent \n Fernando Meirelles",
+      "film": "The Descent",
       "awards": {
         "bifa": "Y"
       },
@@ -449,7 +420,9 @@
         "gg": "X",
         "bafta": "X",
         "critics": "X",
-        "oscar": "X"
+        "oscar": "X",
+        "dga": "X",
+        "spirit": "X"
       },
       "film": "Good Night, and Good Luck",
       "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
@@ -471,7 +444,8 @@
       "awards": {
         "gg": "X",
         "critics": "X",
-        "oscar": "X"
+        "oscar": "X",
+        "dga": "X"
       },
       "film": "Munich",
       "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
@@ -483,7 +457,8 @@
       "awards": {
         "bafta": "X",
         "critics": "X",
-        "oscar": "X"
+        "oscar": "X",
+        "dga": "X"
       },
       "profilePath": "/bO2CPKFOtv1uigPM8crWTC071wr.jpg",
       "tmdbId": 455
@@ -503,7 +478,8 @@
       "film": "Capote",
       "awards": {
         "bafta": "X",
-        "oscar": "X"
+        "oscar": "X",
+        "dga": "X"
       },
       "profilePath": "/r1XGBl8TYNuCm7APjWN8npP4DEw.jpg",
       "tmdbId": 5345
@@ -525,42 +501,6 @@
       },
       "profilePath": "/g3n8qduLaPO2l4kJZsV6xNMXozn.jpg",
       "tmdbId": 6159
-    },
-    {
-      "name": "Paul Haggis",
-      "film": "CRASH",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/bO2CPKFOtv1uigPM8crWTC071wr.jpg",
-      "tmdbId": 455
-    },
-    {
-      "name": "Bennett Miller",
-      "film": "CAPOTE",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/r1XGBl8TYNuCm7APjWN8npP4DEw.jpg",
-      "tmdbId": 5345
-    },
-    {
-      "name": "Steven Spielberg",
-      "film": "MUNICH",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
-      "tmdbId": 488
-    },
-    {
-      "name": "George Clooney",
-      "film": "GOOD NIGHT, AND GOOD LUCK.",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
-      "tmdbId": 1461
     },
     {
       "name": "David Cronenberg",
@@ -590,15 +530,6 @@
       "tmdbId": 5656
     },
     {
-      "name": "George Clooney",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Good Night, and Good Luck.",
-      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
-      "tmdbId": 1461
-    },
-    {
       "name": "Rodrigo García",
       "awards": {
         "spirit": "X"
@@ -611,7 +542,8 @@
       "film": "The Libertine",
       "awards": {
         "bifa": "X"
-      }
+      },
+      "profilePath": "/u5TMmvYFR0a3mJf9XTQvlZhdj3G.jpg"
     },
     {
       "name": "Stephen Frears",
@@ -661,6 +593,16 @@
       },
       "film": "Syriana",
       "role": "Leading",
+      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
+      "tmdbId": 1461
+    },
+    {
+      "name": "George Clooney",
+      "film": "Good Night, and Good Luck",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X"
+      },
       "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
       "tmdbId": 1461
     },
@@ -732,11 +674,17 @@
     },
     {
       "name": "David Strathairn",
-      "film": "Good Night, and Good Luck.",
       "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "oscar": "X",
         "venice": "Y",
         "spirit": "X"
       },
+      "film": "Good Night, and Good Luck",
+      "role": "Leading",
       "profilePath": "/4nCzknAhELFtC73VrJjckEvpNep.jpg",
       "tmdbId": 11064
     },
@@ -746,7 +694,8 @@
       "role": "Supporting",
       "awards": {
         "oscar": "X",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/j3mjmuHLBW4XQSw53C8Sh0Lh3ZQ.jpg",
       "tmdbId": 227
@@ -759,26 +708,6 @@
       "film": "The Three Burials of Melquiades Estrada",
       "profilePath": "/mCiZNRAzbnPojJEZwVZWLw9kzxR.jpg",
       "tmdbId": 2176
-    },
-    {
-      "name": "Paul Giamatti",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Sideways",
-      "role": "Leading",
-      "profilePath": "/wbrVVJRr5TwhDZuvijBgOorzcAb.jpg",
-      "tmdbId": 13242
-    },
-    {
-      "name": "Clive Owen",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Closer",
-      "role": "Supporting",
-      "profilePath": "/xlWpuLgwxMnZEVgV9OID1TkUNtP.jpg",
-      "tmdbId": 2296
     },
     {
       "name": "Rosamund Pike",
@@ -798,26 +727,13 @@
         "critics": "X",
         "oscar": "X",
         "lafca": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "nyfcc": "Y"
       },
       "film": "Brokeback Mountain",
       "role": "Leading",
       "profilePath": "/p2z2bURSg7nuMsN9P2s61e2RvNz.jpg",
       "tmdbId": 1810
-    },
-    {
-      "name": "David Strathairn",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "sag": "X",
-        "critics": "X",
-        "oscar": "X"
-      },
-      "film": "Good Night, and Good Luck",
-      "role": "Leading",
-      "profilePath": "/4nCzknAhELFtC73VrJjckEvpNep.jpg",
-      "tmdbId": 11064
     },
     {
       "name": "Terrence Howard",
@@ -829,6 +745,16 @@
       },
       "film": "Hustle & Flow",
       "role": "Leading",
+      "profilePath": "/eZ6uRZOYWZAyjNmWpDKGdLL6WUC.jpg",
+      "tmdbId": 18288
+    },
+    {
+      "name": "Terrence Howard",
+      "film": "Crash",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X"
+      },
       "profilePath": "/eZ6uRZOYWZAyjNmWpDKGdLL6WUC.jpg",
       "tmdbId": 18288
     },
@@ -898,6 +824,15 @@
       "tmdbId": 85
     },
     {
+      "name": "Johnny Depp",
+      "film": "The Libertine",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/drl9qDZoxPHhUbDamYcOQEhlHzW.jpg",
+      "tmdbId": 85
+    },
+    {
       "name": "Nathan Lane",
       "awards": {
         "gg": "X"
@@ -928,16 +863,6 @@
       "tmdbId": 23659
     },
     {
-      "name": "George Clooney",
-      "film": "Good Night, and Good Luck",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
-      "tmdbId": 1461
-    },
-    {
       "name": "Kevin Costner",
       "film": "The Upside of Anger",
       "role": "Supporting",
@@ -946,16 +871,6 @@
       },
       "profilePath": "/608blZipRDZkDpzp8VItB64qMaT.jpg",
       "tmdbId": 1269
-    },
-    {
-      "name": "Terrence Howard",
-      "film": "Crash",
-      "role": "Supporting",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/eZ6uRZOYWZAyjNmWpDKGdLL6WUC.jpg",
-      "tmdbId": 18288
     },
     {
       "name": "Frank Langella",
@@ -1021,15 +936,6 @@
       "tmdbId": 5294
     },
     {
-      "name": "Johnny Depp",
-      "film": "The Libertine",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/drl9qDZoxPHhUbDamYcOQEhlHzW.jpg",
-      "tmdbId": 85
-    },
-    {
       "name": "Bill Nighy",
       "film": "The Constant Gardener",
       "awards": {
@@ -1074,7 +980,8 @@
         "bafta": "Y",
         "sag": "Y",
         "critics": "Y",
-        "oscar": "Y"
+        "oscar": "Y",
+        "nyfcc": "Y"
       },
       "film": "Walk the Line",
       "role": "Leading",
@@ -1142,7 +1049,7 @@
     },
     {
       "name": "Thandiwe Newton",
-      "film": "[a]",
+      "film": "Crash",
       "role": "Supporting",
       "awards": {
         "bafta": "Y"
@@ -1169,26 +1076,6 @@
       "tmdbId": 105685
     },
     {
-      "name": "Imelda Staunton",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Vera Drake",
-      "role": "Leading",
-      "profilePath": "/96LYLMnUOWZ4DFXEeQPItNsxzEP.jpg",
-      "tmdbId": 11356
-    },
-    {
-      "name": "Virginia Madsen",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Sideways",
-      "role": "Supporting",
-      "profilePath": "/2u72BF7i189nAcX1kEJLjGMsb0c.jpg",
-      "tmdbId": 12519
-    },
-    {
       "name": "Vera Farmiga",
       "awards": {
         "lafca": "Y"
@@ -1203,6 +1090,19 @@
         "lafca": "Y"
       },
       "film": "The 40-Year-Old Virgin",
+      "profilePath": "/n4CTwGszs6cwS1wJRlDQ5Mlh7Ex.jpg",
+      "tmdbId": 2229
+    },
+    {
+      "name": "Catherine Keener",
+      "film": "Capote",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "sag": "X",
+        "critics": "X",
+        "oscar": "X"
+      },
       "profilePath": "/n4CTwGszs6cwS1wJRlDQ5Mlh7Ex.jpg",
       "tmdbId": 2229
     },
@@ -1251,19 +1151,6 @@
       "tmdbId": 3910
     },
     {
-      "name": "Catherine Keener",
-      "film": "Capote",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "sag": "X",
-        "critics": "X",
-        "oscar": "X"
-      },
-      "profilePath": "/n4CTwGszs6cwS1wJRlDQ5Mlh7Ex.jpg",
-      "tmdbId": 2229
-    },
-    {
       "name": "Keira Knightley",
       "awards": {
         "gg": "X",
@@ -1279,7 +1166,8 @@
       "name": "Maria Bello",
       "awards": {
         "gg": "X",
-        "critics": "X"
+        "critics": "X",
+        "nyfcc": "Y"
       },
       "film": "A History of Violence",
       "role": "Leading",
@@ -1379,6 +1267,15 @@
       "tmdbId": 11148
     },
     {
+      "name": "Joan Allen",
+      "film": "Yes",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/ipUhzenaOCmrxqbPqc7RadYxWao.jpg",
+      "tmdbId": 11148
+    },
+    {
       "name": "Dina Korzun",
       "awards": {
         "spirit": "X"
@@ -1449,15 +1346,6 @@
       },
       "profilePath": "/bd0qiJXHoLNpkCqABsh67AKRtjC.jpg",
       "tmdbId": 1639
-    },
-    {
-      "name": "Joan Allen",
-      "film": "Yes",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/ipUhzenaOCmrxqbPqc7RadYxWao.jpg",
-      "tmdbId": 11148
     }
   ]
 }

@@ -86,7 +86,8 @@
         "wga": "X",
         "astra": "X",
         "spirit": "X",
-        "gotham": "X"
+        "gotham": "X",
+        "nyfcc": "Y"
       },
       "genre": "Drama",
       "posterPath": "/dRVAlaU0vbG6hMf2K45NSiIyoUe.jpg",
@@ -252,14 +253,6 @@
       },
       "posterPath": "/vx1u0uwxdlhV2MUzj4VlcMB0N6m.jpg",
       "tmdbId": 555604
-    },
-    {
-      "name": "Drive My Car",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/3cOsf5HBjPK2QCz9ebQlGHNnE7y.jpg",
-      "tmdbId": 758866
     },
     {
       "name": "Tutta la bellezza e il dolore - All the Beauty and the Bloodshed",
@@ -487,19 +480,10 @@
     },
     {
       "name": "Daniel Kwan & Daniel Scheinert",
-      "film": "Everything Everywhere All At Once",
+      "film": "Everything Everywhere All at Once",
       "awards": {
         "dga": "Y"
       }
-    },
-    {
-      "name": "Jane Campion",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Power of the Dog",
-      "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
-      "tmdbId": 10757
     },
     {
       "name": "Luca Guadagnino",
@@ -511,8 +495,8 @@
       "tmdbId": 78160
     },
     {
-      "name": "Aftersun",
-      "film": "Charlotte Wells \n Living",
+      "name": "Charlotte Wells",
+      "film": "Aftersun",
       "awards": {
         "bifa": "Y"
       }
@@ -524,7 +508,8 @@
         "oscar": "X",
         "critics": "X",
         "bafta": "X",
-        "astra": "X"
+        "astra": "X",
+        "dga": "X"
       },
       "film": "The Banshees of Inisherin",
       "profilePath": "/cjk2f3sYOqDnTUn4m07j4sNcncf.jpg",
@@ -569,7 +554,8 @@
       "awards": {
         "critics": "X",
         "lafca": "X",
-        "astra": "X"
+        "astra": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/g7jXGAVT8T5vq81fO5JWDleDc75.jpg",
       "tmdbId": 147021
@@ -612,15 +598,6 @@
       "tmdbId": 86270
     },
     {
-      "name": "Martin McDonagh",
-      "film": "The Banshees Of Inisherin",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/cjk2f3sYOqDnTUn4m07j4sNcncf.jpg",
-      "tmdbId": 54472
-    },
-    {
       "name": "Gina Prince",
       "awards": {
         "astra": "X"
@@ -636,31 +613,31 @@
       "film": "wook"
     },
     {
-      "name": "Living",
-      "film": "Oliver Hermanus",
+      "name": "Oliver Hermanus",
+      "film": "Living",
       "awards": {
         "bifa": "X"
       },
       "profilePath": "/1VpZlwOsSQbYXyr1TQuncsXFBqp.jpg"
     },
     {
-      "name": "Good Luck to You, Leo Grande",
-      "film": "Sophie Hyde",
+      "name": "Sophie Hyde",
+      "film": "Good Luck to You, Leo Grande",
       "awards": {
         "bifa": "X"
       }
     },
     {
-      "name": "The Wonder",
-      "film": "Sebastián Lelio",
+      "name": "Sebastián Lelio",
+      "film": "The Wonder",
       "awards": {
         "bifa": "X"
       },
       "profilePath": "/wyHjMjqpvUvDBJh13XN7ia5i66L.jpg"
     },
     {
-      "name": "Blue Jean",
-      "film": "Georgia Oakley",
+      "name": "Georgia Oakley",
+      "film": "Blue Jean",
       "awards": {
         "bifa": "X"
       }
@@ -696,7 +673,8 @@
         "lafca": "Y",
         "astra": "Y",
         "spirit": "Y",
-        "gotham": "Y"
+        "gotham": "Y",
+        "nyfcc": "Y"
       },
       "film": "Everything Everywhere All at Once",
       "role": "Supporting",
@@ -728,10 +706,21 @@
         "bafta": "X",
         "nbr": "Y",
         "sag": "X",
-        "astra": "X"
+        "astra": "X",
+        "nyfcc": "Y",
+        "venice": "Y"
       },
       "film": "The Banshees of Inisherin",
       "role": "Leading",
+      "profilePath": "/oyQVfpowL9eSudYhwoPGkd9WxS7.jpg",
+      "tmdbId": 72466
+    },
+    {
+      "name": "Colin Farrell",
+      "awards": {
+        "gotham": "X"
+      },
+      "film": "After Yang",
       "profilePath": "/oyQVfpowL9eSudYhwoPGkd9WxS7.jpg",
       "tmdbId": 72466
     },
@@ -772,7 +761,9 @@
         "gg": "X",
         "oscar": "X",
         "bafta": "Y",
-        "astra": "X"
+        "astra": "X",
+        "critics": "X",
+        "sag": "X"
       },
       "film": "The Banshees of Inisherin",
       "role": "Supporting",
@@ -787,35 +778,6 @@
       "film": "Broker",
       "profilePath": "/7dw9wIpFZ5nJZ3zqrue8t7hUUgQ.jpg",
       "tmdbId": 20738
-    },
-    {
-      "name": "Benedict Cumberbatch",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Power of the Dog",
-      "role": "Leading",
-      "profilePath": "/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg",
-      "tmdbId": 71580
-    },
-    {
-      "name": "Kodi Smit-McPhee",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Power of the Dog",
-      "role": "Supporting",
-      "profilePath": "/sesCWba9NwPDYDZzbVLs7OgLOti.jpg",
-      "tmdbId": 113505
-    },
-    {
-      "name": "Colin Farrell",
-      "film": "Gli spiriti dell'isola",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/oyQVfpowL9eSudYhwoPGkd9WxS7.jpg",
-      "tmdbId": 72466
     },
     {
       "name": "Brendan Gleeson",
@@ -843,6 +805,15 @@
         "astra": "X",
         "spirit": "X",
         "gotham": "X"
+      },
+      "profilePath": "/vrzZ41TGNAFgfmZjC2sOJySzBLd.jpg",
+      "tmdbId": 2326151
+    },
+    {
+      "name": "Paul Mescal",
+      "film": "God's Creatures",
+      "awards": {
+        "bifa": "X"
       },
       "profilePath": "/vrzZ41TGNAFgfmZjC2sOJySzBLd.jpg",
       "tmdbId": 2326151
@@ -906,16 +877,6 @@
       },
       "profilePath": "/zEJJsm0z07EPNl2Pi1h67xuCmcA.jpg",
       "tmdbId": 17142
-    },
-    {
-      "name": "Barry Keoghan",
-      "role": "Supporting",
-      "awards": {
-        "critics": "X",
-        "sag": "X"
-      },
-      "profilePath": "/ngoitknM6hw8fffLywyvjzy6Iti.jpg",
-      "tmdbId": 1290466
     },
     {
       "name": "Ben Whishaw",
@@ -1002,15 +963,7 @@
       "film": "The Fabelmans",
       "role": "Supporting",
       "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/7rJ0TZfMoPLTcO203tHhE6tcPKP.jpg",
-      "tmdbId": 6167
-    },
-    {
-      "name": "Judd Hirsch",
-      "role": "Supporting",
-      "awards": {
+        "oscar": "X",
         "critics": "X"
       },
       "profilePath": "/7rJ0TZfMoPLTcO203tHhE6tcPKP.jpg",
@@ -1080,15 +1033,6 @@
       }
     },
     {
-      "name": "Paul Mescal",
-      "film": "God's Creatures",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/vrzZ41TGNAFgfmZjC2sOJySzBLd.jpg",
-      "tmdbId": 2326151
-    },
-    {
       "name": "Fionn Whitehead",
       "film": "Emily",
       "awards": {
@@ -1134,15 +1078,6 @@
       "tmdbId": 17243
     },
     {
-      "name": "Colin Farrell",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "After Yang",
-      "profilePath": "/oyQVfpowL9eSudYhwoPGkd9WxS7.jpg",
-      "tmdbId": 72466
-    },
-    {
       "name": "Raúl Castillo",
       "awards": {
         "gotham": "X"
@@ -1184,7 +1119,8 @@
         "venice": "Y",
         "astra": "X",
         "spirit": "X",
-        "gotham": "X"
+        "gotham": "X",
+        "nyfcc": "Y"
       },
       "film": "Tár",
       "role": "Leading",
@@ -1272,26 +1208,6 @@
       "film": "Holy Spider",
       "profilePath": "/dtrpzRUt1ZW8aFKBswArMYXaeZo.jpg",
       "tmdbId": 1236122
-    },
-    {
-      "name": "Lady Gaga",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "House of Gucci",
-      "role": "Leading",
-      "profilePath": "/9Y4Pz7AEXhB9qNar2tMsx5EVXML.jpg",
-      "tmdbId": 237405
-    },
-    {
-      "name": "Kathryn Hunter",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Tragedy of Macbeth",
-      "role": "Supporting",
-      "profilePath": "/ni98cNE8kOAj6kcpEVmIfi8iAsw.jpg",
-      "tmdbId": 72309
     },
     {
       "name": "Rosy McEwen",
@@ -1427,7 +1343,9 @@
       "role": "Supporting",
       "awards": {
         "oscar": "X",
-        "astra": "X"
+        "astra": "X",
+        "critics": "X",
+        "sag": "X"
       },
       "profilePath": "/8gb3lfIHKQAGOQyeC4ynQPsCiHr.jpg",
       "tmdbId": 1381186
@@ -1513,16 +1431,6 @@
       "tmdbId": 1397778
     },
     {
-      "name": "Stephanie Hsu",
-      "film": "[j]",
-      "role": "Supporting",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/8gb3lfIHKQAGOQyeC4ynQPsCiHr.jpg",
-      "tmdbId": 1381186
-    },
-    {
       "name": "Janelle Monáe",
       "film": "Glass Onion: A Knives Out Mystery",
       "role": "Supporting",
@@ -1533,22 +1441,15 @@
       "tmdbId": 1005852
     },
     {
-      "name": "Stephanie Hsu",
-      "role": "Supporting",
-      "awards": {
-        "sag": "X"
-      },
-      "profilePath": "/8gb3lfIHKQAGOQyeC4ynQPsCiHr.jpg",
-      "tmdbId": 1381186
-    },
-    {
       "name": "Keke Palmer",
       "awards": {
-        "astra": "X"
+        "astra": "X",
+        "nyfcc": "Y"
       },
       "film": "Nope",
       "profilePath": "/f5i3WzdMt02mlfm9I9LHKRJtZ4J.jpg",
-      "tmdbId": 74688
+      "tmdbId": 74688,
+      "role": "Supporting"
     },
     {
       "name": "Sally Hawkins",

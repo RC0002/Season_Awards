@@ -12,7 +12,8 @@
         "nbr": "Y",
         "pga": "Y",
         "wga": "Y",
-        "adg": "Y"
+        "adg": "Y",
+        "nyfcc": "Y"
       },
       "genre": "Drama",
       "posterPath": "/6d5XOczc226jECq0LIX0siKtgHR.jpg",
@@ -123,7 +124,8 @@
         "critics": "X",
         "pga": "X",
         "lafca": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "adg": "X"
       },
       "posterPath": "/6NkJ4gnLrvLj0PZDW6sNM85JMbj.jpg",
       "tmdbId": 2013
@@ -214,14 +216,6 @@
       },
       "posterPath": "/6c1tqfJEBuIyhQC19SLlLQAUAvJ.jpg",
       "tmdbId": 4588
-    },
-    {
-      "name": "United 93",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/r3mdSgsnpoi4UiUufdybhjha68t.jpg",
-      "tmdbId": 9829
     },
     {
       "name": "The Golden Compass",
@@ -375,14 +369,6 @@
       "tmdbId": 1949
     },
     {
-      "name": "The Diving Bell and the Butterfly (Le scaphandre et le papillon)",
-      "awards": {
-        "adg": "X"
-      },
-      "posterPath": "/6NkJ4gnLrvLj0PZDW6sNM85JMbj.jpg",
-      "tmdbId": 2013
-    },
-    {
       "name": "300",
       "awards": {
         "adg": "X"
@@ -489,7 +475,8 @@
         "critics": "X",
         "cannes": "Y",
         "lafca": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "dga": "X"
       },
       "profilePath": "/pg4vhqMaVNlXtor4kHGPc8P68Zb.jpg",
       "tmdbId": 7482
@@ -500,7 +487,8 @@
       "awards": {
         "oscar": "Y",
         "gg": "X",
-        "critics": "Y"
+        "critics": "Y",
+        "nyfcc": "Y"
       }
     },
     {
@@ -509,7 +497,8 @@
       "awards": {
         "oscar": "X",
         "bafta": "X",
-        "lafca": "Y"
+        "lafca": "Y",
+        "dga": "X"
       },
       "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
       "tmdbId": 4762
@@ -536,7 +525,7 @@
     },
     {
       "name": "Joel & Ethan Coen",
-      "film": "NO COUNTRY FOR OLD MEN",
+      "film": "No Country for Old Men",
       "awards": {
         "dga": "Y"
       }
@@ -547,15 +536,6 @@
       "awards": {
         "venice": "Y"
       }
-    },
-    {
-      "name": "Martin Scorsese",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Departed",
-      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
-      "tmdbId": 1032
     },
     {
       "name": "Anton Corbijn",
@@ -590,7 +570,8 @@
       "name": "Tony Gilroy",
       "film": "Michael Clayton",
       "awards": {
-        "oscar": "X"
+        "oscar": "X",
+        "dga": "X"
       },
       "profilePath": "/p0F3AoDTO3cEU2vnMzL9J4YuXNA.jpg",
       "tmdbId": 19242
@@ -635,46 +616,11 @@
       "name": "Sean Penn",
       "film": "Into the Wild",
       "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
-      "tmdbId": 2228
-    },
-    {
-      "name": "Julian Schnabel",
-      "film": "THE DIVING BELL AND THE BUTTERFLY",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/pg4vhqMaVNlXtor4kHGPc8P68Zb.jpg",
-      "tmdbId": 7482
-    },
-    {
-      "name": "Paul Thomas Anderson",
-      "film": "THERE WILL BE BLOOD",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/wKAs2LtLYSUzt3ZZ8pnxMwuEWuR.jpg",
-      "tmdbId": 4762
-    },
-    {
-      "name": "Sean Penn",
-      "film": "INTO THE WILD",
-      "awards": {
+        "critics": "X",
         "dga": "X"
       },
       "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
       "tmdbId": 2228
-    },
-    {
-      "name": "Tony Gilroy",
-      "film": "MICHAEL CLAYTON",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/p0F3AoDTO3cEU2vnMzL9J4YuXNA.jpg",
-      "tmdbId": 19242
     },
     {
       "name": "Todd Haynes",
@@ -751,7 +697,8 @@
         "bafta": "Y",
         "gg": "Y",
         "critics": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
       "tmdbId": 11856
@@ -765,7 +712,8 @@
         "sag": "Y",
         "bafta": "Y",
         "gg": "Y",
-        "critics": "Y"
+        "critics": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
       "tmdbId": 3810
@@ -824,6 +772,19 @@
       "tmdbId": 1233
     },
     {
+      "name": "Philip Seymour Hoffman",
+      "film": "Charlie Wilson's War",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/50rqDkmvXwjwVhFH7q6ph2Rkw7S.jpg",
+      "tmdbId": 1233
+    },
+    {
       "name": "Konstantin Lavronenko",
       "awards": {
         "cannes": "Y"
@@ -849,26 +810,6 @@
       "film": "4 Months, 3 Weeks and 2 Days",
       "profilePath": "/mWEMgTQieGgvSzjtjx6UOm444hN.jpg",
       "tmdbId": 39959
-    },
-    {
-      "name": "Forest Whitaker",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Last King of Scotland",
-      "role": "Leading",
-      "profilePath": "/4w7l5JUwnwFNBy7J93ZwYN1nihm.jpg",
-      "tmdbId": 2178
-    },
-    {
-      "name": "Jackie Earle Haley",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Little Children",
-      "role": "Supporting",
-      "profilePath": "/xDPeiyklN8f9Ilowsti4lGVbioj.jpg",
-      "tmdbId": 17183
     },
     {
       "name": "Chiwetel Ejiofor",
@@ -914,19 +855,6 @@
       },
       "profilePath": "/304ilSygaCRWykoBWAL67TOw8g9.jpg",
       "tmdbId": 1893
-    },
-    {
-      "name": "Philip Seymour Hoffman",
-      "film": "Charlie Wilson's War",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "bafta": "X",
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/50rqDkmvXwjwVhFH7q6ph2Rkw7S.jpg",
-      "tmdbId": 1233
     },
     {
       "name": "Hal Holbrook",
@@ -976,6 +904,16 @@
       "tmdbId": 2176
     },
     {
+      "name": "Tommy Lee Jones",
+      "film": "In the Valley of Elah",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X"
+      },
+      "profilePath": "/mCiZNRAzbnPojJEZwVZWLw9kzxR.jpg",
+      "tmdbId": 2176
+    },
+    {
       "name": "James McAvoy",
       "film": "Atonement",
       "role": "Leading",
@@ -995,16 +933,6 @@
       "film": "Starting Out in the Evening",
       "profilePath": "/86DEo3sBguyc1l46606yVKD28T4.jpg",
       "tmdbId": 8924
-    },
-    {
-      "name": "Tommy Lee Jones",
-      "film": "In the Valley of Elah",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/mCiZNRAzbnPojJEZwVZWLw9kzxR.jpg",
-      "tmdbId": 2176
     },
     {
       "name": "Ulrich Mühe",
@@ -1206,7 +1134,8 @@
         "bafta": "X",
         "gg": "Y",
         "critics": "Y",
-        "nbr": "Y"
+        "nbr": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/siAi4XZhDPP8LRgbByzwLqVaLIQ.jpg",
       "tmdbId": 1666
@@ -1222,7 +1151,31 @@
         "gg": "Y",
         "critics": "X",
         "lafca": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "venice": "Y"
+      },
+      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
+      "tmdbId": 112
+    },
+    {
+      "name": "Cate Blanchett",
+      "film": "Elizabeth: The Golden Age",
+      "role": "Leading",
+      "awards": {
+        "oscar": "X",
+        "sag": "X",
+        "bafta": "X",
+        "gg": "X",
+        "critics": "X"
+      },
+      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
+      "tmdbId": 112
+    },
+    {
+      "name": "Cate Blanchett",
+      "film": "Notes on a Scandal",
+      "awards": {
+        "bifa": "X"
       },
       "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
       "tmdbId": 112
@@ -1249,8 +1202,18 @@
         "oscar": "X",
         "sag": "X",
         "gg": "X",
-        "critics": "Y"
+        "critics": "Y",
+        "nyfcc": "Y"
       },
+      "profilePath": "/bItqd1QUNpdegjBXNaVuFFPEZU4.jpg",
+      "tmdbId": 39388
+    },
+    {
+      "name": "Amy Ryan",
+      "awards": {
+        "lafca": "Y"
+      },
+      "film": "Before the Devil Knows You're Dead",
       "profilePath": "/bItqd1QUNpdegjBXNaVuFFPEZU4.jpg",
       "tmdbId": 39388
     },
@@ -1260,7 +1223,9 @@
         "sag": "X",
         "bafta": "X",
         "gg": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "oscar": "X",
+        "critics": "X"
       },
       "film": "Juno",
       "role": "Leading",
@@ -1288,44 +1253,6 @@
       "tmdbId": 20737
     },
     {
-      "name": "Cate Blanchett",
-      "film": "Io non sono qui",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
-      "tmdbId": 112
-    },
-    {
-      "name": "Amy Ryan",
-      "awards": {
-        "lafca": "Y"
-      },
-      "film": "Before the Devil Knows You're Dead",
-      "profilePath": "/bItqd1QUNpdegjBXNaVuFFPEZU4.jpg",
-      "tmdbId": 39388
-    },
-    {
-      "name": "Helen Mirren",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Queen",
-      "role": "Leading",
-      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
-      "tmdbId": 15735
-    },
-    {
-      "name": "Jennifer Hudson",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Dreamgirls",
-      "role": "Supporting",
-      "profilePath": "/2XPtoGs9GnM1NPj2xCxstzGma4V.jpg",
-      "tmdbId": 15565
-    },
-    {
       "name": "Judi Dench",
       "film": "Notes on a Scandal",
       "awards": {
@@ -1333,20 +1260,6 @@
       },
       "profilePath": "/cpna5VGvAxuKuC31xJPBKy9zbnv.jpg",
       "tmdbId": 5309
-    },
-    {
-      "name": "Cate Blanchett",
-      "film": "Elizabeth: The Golden Age",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "sag": "X",
-        "bafta": "X",
-        "gg": "X",
-        "critics": "X"
-      },
-      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
-      "tmdbId": 112
     },
     {
       "name": "Angelina Jolie",
@@ -1372,17 +1285,6 @@
       },
       "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
       "tmdbId": 36592
-    },
-    {
-      "name": "Elliot Page",
-      "film": "[a]",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X",
-        "critics": "X"
-      },
-      "profilePath": "/nXO8DE4biVXY4UDYP0NdIY1zvXS.jpg",
-      "tmdbId": 27578
     },
     {
       "name": "Catherine Keener",
@@ -1604,15 +1506,6 @@
       },
       "profilePath": "/lcPlix0o1cQxOWG0YbeshdvGzfj.jpg",
       "tmdbId": 8309
-    },
-    {
-      "name": "Cate Blanchett",
-      "film": "Notes on a Scandal",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
-      "tmdbId": 112
     }
   ]
 }

@@ -11,7 +11,8 @@
         "oscar": "Y",
         "pga": "Y",
         "wga": "X",
-        "adg": "Y"
+        "adg": "Y",
+        "nyfcc": "Y"
       },
       "genre": "Drama",
       "posterPath": "/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
@@ -221,14 +222,6 @@
       "tmdbId": 665135
     },
     {
-      "name": "Far from Heaven",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/9gQuvFDRPLx39smUvyafm36tp0d.jpg",
-      "tmdbId": 10712
-    },
-    {
       "name": "Big Fish",
       "awards": {
         "gg": "X",
@@ -397,7 +390,8 @@
         "critics": "X",
         "dga": "X",
         "oscar": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "film": "Lost in Translation",
       "profilePath": "/dzHC2LxmarkBxWLhjp2DRa5oCev.jpg",
@@ -444,17 +438,8 @@
       "tmdbId": 3317
     },
     {
-      "name": "Todd Haynes",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Far from Heaven",
-      "profilePath": "/wBDazO2j49uoquoHTEDxcniyGGC.jpg",
-      "tmdbId": 16863
-    },
-    {
       "name": "Stephen Frears",
-      "film": "Dirty Pretty Things \n Danny Boyle",
+      "film": "Dirty Pretty Things",
       "awards": {
         "bifa": "Y"
       },
@@ -576,7 +561,8 @@
         "critics": "X",
         "oscar": "X",
         "lafca": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "film": "Lost in Translation",
       "role": "Leading",
@@ -612,6 +598,19 @@
       "tmdbId": 2228
     },
     {
+      "name": "Sean Penn",
+      "film": "21 Grams",
+      "role": "Leading",
+      "awards": {
+        "bafta": "X",
+        "nbr": "Y",
+        "lafca": "X",
+        "venice": "Y"
+      },
+      "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
+      "tmdbId": 2228
+    },
+    {
       "name": "Johnny Depp",
       "awards": {
         "gg": "X",
@@ -624,18 +623,6 @@
       "role": "Leading",
       "profilePath": "/drl9qDZoxPHhUbDamYcOQEhlHzW.jpg",
       "tmdbId": 85
-    },
-    {
-      "name": "Sean Penn",
-      "film": "21 Grams",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "nbr": "Y",
-        "lafca": "X"
-      },
-      "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
-      "tmdbId": 2228
     },
     {
       "name": "Djimon Hounsou",
@@ -659,13 +646,13 @@
       "tmdbId": 2440
     },
     {
-      "name": "Sean Penn",
-      "film": "21 grammi",
+      "name": "Bill Nighy",
       "awards": {
-        "venice": "Y"
+        "lafca": "Y"
       },
-      "profilePath": "/9glqNTVpFpdN1nFklKaHPUyCwR6.jpg",
-      "tmdbId": 2228
+      "film": "AKA",
+      "profilePath": "/ixFI2YCGNGJfwlpI8iyhvVZRg8C.jpg",
+      "tmdbId": 2440
     },
     {
       "name": "Muzaffer Özdemir",
@@ -684,35 +671,6 @@
       "film": "Uzak",
       "profilePath": "/7SXN3BfVv5aVQxp9gvdShIDPCvo.jpg",
       "tmdbId": 107522
-    },
-    {
-      "name": "Bill Nighy",
-      "awards": {
-        "lafca": "Y"
-      },
-      "film": "AKA",
-      "profilePath": "/ixFI2YCGNGJfwlpI8iyhvVZRg8C.jpg",
-      "tmdbId": 2440
-    },
-    {
-      "name": "Daniel Day-Lewis",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Gangs of New York",
-      "role": "Leading",
-      "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
-      "tmdbId": 11856
-    },
-    {
-      "name": "Dennis Quaid",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Far from Heaven",
-      "role": "Supporting",
-      "profilePath": "/lMaDAJHzsKH7U3dln2B3kY3rOhE.jpg",
-      "tmdbId": 6065
     },
     {
       "name": "Chiwetel Ejiofor",
@@ -1036,6 +994,16 @@
       },
       "profilePath": "/yYfLyrC2CE6vBWSJfkpuVKL2POM.jpg",
       "tmdbId": 30082
+    },
+    {
+      "name": "Eugene Levy",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "A Mighty Wind",
+      "role": "Supporting",
+      "profilePath": "/y4CexxKSI6qR5A6PDaD8mSrEhYC.jpg",
+      "tmdbId": 26510
     }
   ],
   "best-actress": [
@@ -1089,7 +1057,8 @@
       "awards": {
         "oscar": "X",
         "lafca": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/7josGC8QO9V6V8AuFdaS2tjUF8W.jpg",
       "tmdbId": 21041
@@ -1121,6 +1090,17 @@
       "tmdbId": 1245
     },
     {
+      "name": "Scarlett Johansson",
+      "awards": {
+        "gg": "X",
+        "bafta": "X"
+      },
+      "film": "Girl with a Pearl Earring",
+      "role": "Leading",
+      "profilePath": "/sRjg0DbiA5DElSr3g3SSR4EArL8.jpg",
+      "tmdbId": 1245
+    },
+    {
       "name": "Katja Riemann",
       "film": "Rosenstrasse",
       "awards": {
@@ -1137,26 +1117,6 @@
       "film": "The Barbarian Invasions",
       "profilePath": "/d7sRQCDFijXaSnyiZpURknJAQFi.jpg",
       "tmdbId": 8791
-    },
-    {
-      "name": "Diane Lane",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Unfaithful",
-      "role": "Leading",
-      "profilePath": "/6OfP3vFMuCL51zamFKgb8aS74hs.jpg",
-      "tmdbId": 2882
-    },
-    {
-      "name": "Patricia Clarkson",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Far from Heaven",
-      "role": "Supporting",
-      "profilePath": "/rHHM9G83fpBAcFathbSyV4Tot5j.jpg",
-      "tmdbId": 1276
     },
     {
       "name": "Olivia Williams",
@@ -1177,6 +1137,16 @@
         "spirit": "X"
       },
       "film": "Pieces of April",
+      "role": "Leading",
+      "profilePath": "/rHHM9G83fpBAcFathbSyV4Tot5j.jpg",
+      "tmdbId": 1276
+    },
+    {
+      "name": "Patricia Clarkson",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "The Station Agent",
       "role": "Leading",
       "profilePath": "/rHHM9G83fpBAcFathbSyV4Tot5j.jpg",
       "tmdbId": 1276
@@ -1207,17 +1177,6 @@
       },
       "profilePath": "/v84b7MENeD9rwX6xTD7fSdhSOC9.jpg",
       "tmdbId": 2206
-    },
-    {
-      "name": "Scarlett Johansson",
-      "awards": {
-        "gg": "X",
-        "bafta": "X"
-      },
-      "film": "Girl with a Pearl Earring",
-      "role": "Leading",
-      "profilePath": "/sRjg0DbiA5DElSr3g3SSR4EArL8.jpg",
-      "tmdbId": 1245
     },
     {
       "name": "Nicole Kidman",
@@ -1328,10 +1287,20 @@
     {
       "name": "Hope Davis",
       "awards": {
-        "gg": "X"
+        "gg": "X",
+        "nyfcc": "Y"
       },
       "film": "American Splendor",
       "role": "Leading",
+      "profilePath": "/dJb76YQDFmfJ6ptlvBvx0ZBP44C.jpg",
+      "tmdbId": 15250
+    },
+    {
+      "name": "Hope Davis",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Secret Lives of Dentists",
       "profilePath": "/dJb76YQDFmfJ6ptlvBvx0ZBP44C.jpg",
       "tmdbId": 15250
     },
@@ -1374,16 +1343,6 @@
       },
       "profilePath": "/yIopIq7l7eIvjoQqnZJkpdQEvds.jpg",
       "tmdbId": 350
-    },
-    {
-      "name": "Patricia Clarkson",
-      "awards": {
-        "sag": "X"
-      },
-      "film": "The Station Agent",
-      "role": "Leading",
-      "profilePath": "/rHHM9G83fpBAcFathbSyV4Tot5j.jpg",
-      "tmdbId": 1276
     },
     {
       "name": "Jennifer Connelly",
@@ -1439,15 +1398,6 @@
       "film": "In America",
       "profilePath": "/A3K2l5kkqTMQHtAkctzICqtbZMY.jpg",
       "tmdbId": 33397
-    },
-    {
-      "name": "Hope Davis",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "The Secret Lives of Dentists",
-      "profilePath": "/dJb76YQDFmfJ6ptlvBvx0ZBP44C.jpg",
-      "tmdbId": 15250
     },
     {
       "name": "Frances McDormand",

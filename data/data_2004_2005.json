@@ -13,7 +13,8 @@
         "lafca": "Y",
         "wga": "Y",
         "gotham": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "genre": "Comedy",
       "posterPath": "/zOsaxYLgvZVU7cJBpPn8CuE0MrP.jpg",
@@ -229,14 +230,6 @@
       "tmdbId": 11774
     },
     {
-      "name": "The Lord of the Rings: The Return of the King",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
-      "tmdbId": 122
-    },
-    {
       "name": "The Phantom of the Opera",
       "awards": {
         "gg": "X",
@@ -269,7 +262,8 @@
     {
       "name": "The Motorcycle Diaries",
       "awards": {
-        "bafta": "X"
+        "bafta": "X",
+        "wga": "X"
       },
       "posterPath": "/qz2aBYT8CAiJYvX4fRZpJ5G0Oz1.jpg",
       "tmdbId": 1653
@@ -314,15 +308,6 @@
       "screenplay_type": "Adapted",
       "posterPath": "/2ZkuQXvVhh45uSvkBej4S7Ix1NJ.jpg",
       "tmdbId": 10625
-    },
-    {
-      "name": "The Motorcycle Diaries (Diarios de motocicleta)",
-      "awards": {
-        "wga": "X"
-      },
-      "screenplay_type": "Adapted",
-      "posterPath": "/qz2aBYT8CAiJYvX4fRZpJ5G0Oz1.jpg",
-      "tmdbId": 1653
     },
     {
       "name": "Garden State",
@@ -389,7 +374,8 @@
         "gg": "Y",
         "oscar": "Y",
         "critics": "X",
-        "dga": "Y"
+        "dga": "Y",
+        "nyfcc": "Y"
       },
       "film": "Million Dollar Baby",
       "profilePath": "/8TwdCfeOZH7ucRlfLZ6wObxa7cO.jpg",
@@ -427,7 +413,8 @@
       "film": "Vera Drake",
       "awards": {
         "oscar": "X",
-        "bafta": "Y"
+        "bafta": "Y",
+        "bifa": "Y"
       },
       "profilePath": "/vicxsud2ejTWcG8u5bU3aiX0ief.jpg",
       "tmdbId": 65452
@@ -459,24 +446,6 @@
       },
       "profilePath": "/jvDwwSEtcPfxcUB1NlLbMHFB5ze.jpg",
       "tmdbId": 1188
-    },
-    {
-      "name": "Sofia Coppola",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Lost in Translation",
-      "profilePath": "/dzHC2LxmarkBxWLhjp2DRa5oCev.jpg",
-      "tmdbId": 1769
-    },
-    {
-      "name": "Mike Leigh",
-      "film": "Vera Drake \n Kevin Macdonald",
-      "awards": {
-        "bifa": "Y"
-      },
-      "profilePath": "/vicxsud2ejTWcG8u5bU3aiX0ief.jpg",
-      "tmdbId": 65452
     },
     {
       "name": "Marc Forster",
@@ -608,6 +577,29 @@
       "tmdbId": 134
     },
     {
+      "name": "Jamie Foxx",
+      "awards": {
+        "gg": "X",
+        "oscar": "X",
+        "critics": "X",
+        "bafta": "X",
+        "sag": "X"
+      },
+      "film": "Collateral",
+      "role": "Leading",
+      "profilePath": "/25zzvFA6yx2Q9BYnugsbd4JWDfu.jpg",
+      "tmdbId": 134
+    },
+    {
+      "name": "Jamie Foxx",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Redemption",
+      "profilePath": "/25zzvFA6yx2Q9BYnugsbd4JWDfu.jpg",
+      "tmdbId": 134
+    },
+    {
       "name": "Thomas Haden Church",
       "awards": {
         "gg": "X",
@@ -642,7 +634,8 @@
         "gg": "Y",
         "oscar": "X",
         "critics": "X",
-        "bafta": "Y"
+        "bafta": "Y",
+        "nyfcc": "Y"
       },
       "film": "Closer",
       "role": "Leading",
@@ -670,7 +663,8 @@
         "critics": "X",
         "sag": "X",
         "lafca": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "film": "Sideways",
       "role": "Leading",
@@ -711,32 +705,15 @@
     },
     {
       "name": "Javier Bardem",
-      "film": "Mare dentro",
+      "film": "The Sea Inside",
       "awards": {
-        "venice": "Y"
+        "venice": "Y",
+        "gg": "X",
+        "critics": "X"
       },
       "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
-      "tmdbId": 3810
-    },
-    {
-      "name": "Bill Murray",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Lost in Translation",
-      "role": "Leading",
-      "profilePath": "/nnCsJc9x3ZiG3AFyiyc3FPehppy.jpg",
-      "tmdbId": 1532
-    },
-    {
-      "name": "Eugene Levy",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "A Mighty Wind",
-      "role": "Supporting",
-      "profilePath": "/y4CexxKSI6qR5A6PDaD8mSrEhYC.jpg",
-      "tmdbId": 26510
+      "tmdbId": 3810,
+      "role": "Leading"
     },
     {
       "name": "Eddie Marsan",
@@ -762,20 +739,6 @@
       "tmdbId": 85
     },
     {
-      "name": "Jamie Foxx",
-      "awards": {
-        "gg": "X",
-        "oscar": "X",
-        "critics": "X",
-        "bafta": "X",
-        "sag": "X"
-      },
-      "film": "Collateral",
-      "role": "Leading",
-      "profilePath": "/25zzvFA6yx2Q9BYnugsbd4JWDfu.jpg",
-      "tmdbId": 134
-    },
-    {
       "name": "Don Cheadle",
       "awards": {
         "gg": "X",
@@ -787,17 +750,6 @@
       "role": "Leading",
       "profilePath": "/b1EVJWdFn7a75qVYJgwO87W2TJU.jpg",
       "tmdbId": 1896
-    },
-    {
-      "name": "Javier Bardem",
-      "awards": {
-        "gg": "X",
-        "critics": "X"
-      },
-      "film": "The Sea Inside",
-      "role": "Leading",
-      "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
-      "tmdbId": 3810
     },
     {
       "name": "Jim Carrey",
@@ -931,15 +883,6 @@
       "tmdbId": 1229
     },
     {
-      "name": "Jamie Foxx",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Redemption",
-      "profilePath": "/25zzvFA6yx2Q9BYnugsbd4JWDfu.jpg",
-      "tmdbId": 134
-    },
-    {
       "name": "Jon Gries",
       "awards": {
         "spirit": "X"
@@ -975,6 +918,15 @@
       "tmdbId": 14887
     },
     {
+      "name": "Paddy Considine",
+      "film": "My Summer of Love",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/rui7HJUi2TzqMh2GQJ1bcQzr8M0.jpg",
+      "tmdbId": 14887
+    },
+    {
       "name": "Daniel Craig",
       "film": "Enduring Love",
       "awards": {
@@ -1000,15 +952,6 @@
       },
       "profilePath": "/npXFjaFQzBNroCEPllGPTZ5IisA.jpg",
       "tmdbId": 118
-    },
-    {
-      "name": "Paddy Considine",
-      "film": "My Summer of Love",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/rui7HJUi2TzqMh2GQJ1bcQzr8M0.jpg",
-      "tmdbId": 14887
     },
     {
       "name": "Romola Garai",
@@ -1061,7 +1004,9 @@
         "bafta": "Y",
         "sag": "X",
         "lafca": "Y",
-        "bifa": "Y"
+        "bifa": "Y",
+        "nyfcc": "Y",
+        "venice": "Y"
       },
       "film": "Vera Drake",
       "role": "Leading",
@@ -1084,6 +1029,15 @@
       "tmdbId": 112
     },
     {
+      "name": "Cate Blanchett",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Coffee and Cigarettes",
+      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
+      "tmdbId": 112
+    },
+    {
       "name": "Virginia Madsen",
       "awards": {
         "gg": "X",
@@ -1091,7 +1045,8 @@
         "critics": "Y",
         "sag": "X",
         "lafca": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "film": "Sideways",
       "role": "Leading",
@@ -1104,7 +1059,8 @@
         "gg": "Y",
         "oscar": "X",
         "critics": "X",
-        "sag": "X"
+        "sag": "X",
+        "nbr": "Y"
       },
       "film": "Being Julia",
       "role": "Leading",
@@ -1138,15 +1094,6 @@
       "tmdbId": 5887
     },
     {
-      "name": "Annette Bening",
-      "awards": {
-        "nbr": "Y"
-      },
-      "film": "[3]",
-      "profilePath": "/sBiiRwAVXd0FCRZ87m0I89qGBvy.jpg",
-      "tmdbId": 516
-    },
-    {
       "name": "Maggie Cheung",
       "awards": {
         "cannes": "Y"
@@ -1154,35 +1101,6 @@
       "film": "Clean",
       "profilePath": "/thHNJCHSmNwhRI5EQXWwg7RzPd7.jpg",
       "tmdbId": 1338
-    },
-    {
-      "name": "Imelda Staunton",
-      "film": "Il segreto di Vera Drake",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/96LYLMnUOWZ4DFXEeQPItNsxzEP.jpg",
-      "tmdbId": 11356
-    },
-    {
-      "name": "Hope Davis",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "American Splendor",
-      "role": "Leading",
-      "profilePath": "/dJb76YQDFmfJ6ptlvBvx0ZBP44C.jpg",
-      "tmdbId": 15250
-    },
-    {
-      "name": "Shohreh Aghdashloo",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "House of Sand and Fog",
-      "role": "Supporting",
-      "profilePath": "/7josGC8QO9V6V8AuFdaS2tjUF8W.jpg",
-      "tmdbId": 21041
     },
     {
       "name": "Kate Winslet",
@@ -1195,6 +1113,17 @@
       },
       "film": "Eternal Sunshine of the Spotless Mind",
       "role": "Leading",
+      "profilePath": "/e3tdop3WhseRnn8KwMVLAV25Ybv.jpg",
+      "tmdbId": 204
+    },
+    {
+      "name": "Kate Winslet",
+      "film": "Finding Neverland",
+      "role": "Supporting",
+      "awards": {
+        "critics": "X",
+        "bafta": "X"
+      },
       "profilePath": "/e3tdop3WhseRnn8KwMVLAV25Ybv.jpg",
       "tmdbId": 204
     },
@@ -1245,23 +1174,21 @@
       "tmdbId": 2598
     },
     {
-      "name": "Kate Winslet",
-      "film": "Finding Neverland",
-      "role": "Supporting",
-      "awards": {
-        "critics": "X",
-        "bafta": "X"
-      },
-      "profilePath": "/e3tdop3WhseRnn8KwMVLAV25Ybv.jpg",
-      "tmdbId": 204
-    },
-    {
       "name": "Scarlett Johansson",
       "awards": {
         "gg": "X"
       },
       "film": "A Love Song for Bobby Long",
       "role": "Leading",
+      "profilePath": "/sRjg0DbiA5DElSr3g3SSR4EArL8.jpg",
+      "tmdbId": 1245
+    },
+    {
+      "name": "Scarlett Johansson",
+      "film": "Girl with a Pearl Earring",
+      "awards": {
+        "bifa": "X"
+      },
       "profilePath": "/sRjg0DbiA5DElSr3g3SSR4EArL8.jpg",
       "tmdbId": 1245
     },
@@ -1401,15 +1328,6 @@
       "tmdbId": 26467
     },
     {
-      "name": "Cate Blanchett",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Coffee and Cigarettes",
-      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
-      "tmdbId": 112
-    },
-    {
       "name": "Loretta Devine",
       "awards": {
         "spirit": "X"
@@ -1430,7 +1348,8 @@
       "awards": {
         "spirit": "X"
       },
-      "film": "Maria Full of Grace"
+      "film": "Maria Full of Grace",
+      "profilePath": "/i4g5GvdJ7PuL2xItJlBbKXm3ckM.jpg"
     },
     {
       "name": "Eva Birthistle",
@@ -1440,15 +1359,6 @@
       },
       "profilePath": "/sGprPTt1JDeDIyNKggElYlHCPxc.jpg",
       "tmdbId": 16901
-    },
-    {
-      "name": "Scarlett Johansson",
-      "film": "Girl with a Pearl Earring",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/sRjg0DbiA5DElSr3g3SSR4EArL8.jpg",
-      "tmdbId": 1245
     },
     {
       "name": "Natalie Press",

@@ -13,7 +13,8 @@
         "pga": "Y",
         "wga": "X",
         "lafca": "X",
-        "adg": "Y"
+        "adg": "Y",
+        "astra": "X"
       },
       "genre": "Drama",
       "posterPath": "/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
@@ -30,7 +31,8 @@
         "pga": "X",
         "wga": "X",
         "spirit": "Y",
-        "gotham": "Y"
+        "gotham": "Y",
+        "astra": "X"
       },
       "genre": "Drama",
       "posterPath": "/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
@@ -62,7 +64,8 @@
         "nbr": "Y",
         "critics": "X",
         "pga": "X",
-        "wga": "Y"
+        "wga": "Y",
+        "astra": "X"
       },
       "genre": "Comedy",
       "posterPath": "/VHSzNBTwxV8vh7wylo7O9CLdac.jpg",
@@ -80,7 +83,9 @@
         "critics": "X",
         "pga": "X",
         "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "nyfcc": "Y",
+        "astra": "X"
       },
       "genre": "Drama",
       "posterPath": "/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg",
@@ -97,7 +102,8 @@
         "critics": "X",
         "pga": "X",
         "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "astra": "Y"
       },
       "genre": "Comedy",
       "posterPath": "/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
@@ -113,7 +119,8 @@
         "critics": "X",
         "pga": "X",
         "wga": "Y",
-        "spirit": "X"
+        "spirit": "X",
+        "astra": "X"
       },
       "genre": "Comedy",
       "posterPath": "/57MFWGHarg9jid7yfDTka4RmcMU.jpg",
@@ -128,7 +135,8 @@
         "nbr": "Y",
         "critics": "X",
         "pga": "X",
-        "adg": "X"
+        "adg": "X",
+        "astra": "X"
       },
       "genre": "Drama",
       "posterPath": "/kxj7rMco6RNYsVcNwuGAIlfWu64.jpg",
@@ -138,7 +146,8 @@
       "name": "Spider-Man: Across the Spider-Verse",
       "awards": {
         "afi": "Y",
-        "annie": "Y"
+        "annie": "Y",
+        "astra": "X"
       },
       "posterPath": "/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
       "tmdbId": 569094
@@ -224,14 +233,6 @@
       "tmdbId": 850165
     },
     {
-      "name": "Tár",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/dRVAlaU0vbG6hMf2K45NSiIyoUe.jpg",
-      "tmdbId": 817758
-    },
-    {
       "name": "Povere creature! ( Poor Things )",
       "awards": {
         "venice": "Y"
@@ -240,17 +241,12 @@
       "tmdbId": 792307
     },
     {
-      "name": "Barbie (Warner Bros. Pictures)",
-      "awards": {
-        "astra": "Y"
-      }
-    },
-    {
       "name": "Air",
       "genre": "Comedy",
       "awards": {
         "gg": "X",
-        "wga": "X"
+        "wga": "X",
+        "astra": "X"
       },
       "posterPath": "/76AKQPdH3M8cvsFR9K8JsOzVlY5.jpg",
       "tmdbId": 964980
@@ -259,7 +255,8 @@
       "name": "The Color Purple",
       "awards": {
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "astra": "X"
       },
       "posterPath": "/h5bqIxM8GO4TewJ0u6Rzkg58ssJ.jpg",
       "tmdbId": 558915
@@ -388,62 +385,6 @@
       "tmdbId": 787699
     },
     {
-      "name": "Air (Amazon MGM Studios)",
-      "awards": {
-        "astra": "X"
-      }
-    },
-    {
-      "name": "American Fiction (Orion Pictures / Amazon MGM Studios)",
-      "awards": {
-        "astra": "X"
-      }
-    },
-    {
-      "name": "The Color Purple (Warner Bros. Pictures)",
-      "awards": {
-        "astra": "X"
-      }
-    },
-    {
-      "name": "The Holdovers (Focus Features)",
-      "awards": {
-        "astra": "X"
-      }
-    },
-    {
-      "name": "Killers of the Flower Moon (Apple Original Films)",
-      "awards": {
-        "astra": "X"
-      }
-    },
-    {
-      "name": "Maestro (Netflix)",
-      "awards": {
-        "astra": "X"
-      }
-    },
-    {
-      "name": "Oppenheimer (Universal Pictures)",
-      "awards": {
-        "astra": "X"
-      }
-    },
-    {
-      "name": "Past Lives (A24)",
-      "awards": {
-        "astra": "X"
-      }
-    },
-    {
-      "name": "Spider",
-      "awards": {
-        "astra": "X"
-      },
-      "posterPath": "/zvm4WuYxTiGkRagRqHUey0meRQL.jpg",
-      "tmdbId": 9613
-    },
-    {
       "name": "We Grown Now",
       "awards": {
         "spirit": "X"
@@ -518,7 +459,8 @@
         "gg": "Y",
         "critics": "Y",
         "dga": "Y",
-        "astra": "Y"
+        "astra": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/xuAIuYSmsUzKlUMBFGVZaWsY3DZ.jpg",
       "tmdbId": 525
@@ -531,7 +473,8 @@
         "gg": "X",
         "nbr": "Y",
         "critics": "X",
-        "astra": "X"
+        "astra": "X",
+        "dga": "X"
       },
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
       "tmdbId": 1032
@@ -568,15 +511,6 @@
       "tmdbId": 107730
     },
     {
-      "name": "S. S. Rajamouli",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "RRR",
-      "profilePath": "/g7jXGAVT8T5vq81fO5JWDleDc75.jpg",
-      "tmdbId": 147021
-    },
-    {
       "name": "Matteo Garrone",
       "film": "Io capitano",
       "awards": {
@@ -586,8 +520,10 @@
     },
     {
       "name": "Andrew Haigh",
-      "film": "All of Us Strangers \n Raine Allen",
+      "film": "All of Us Strangers",
       "awards": {
+        "bafta": "X",
+        "spirit": "X",
         "bifa": "Y"
       },
       "profilePath": "/pJAv105SAZiQ3lGY2wGURz4bENp.jpg"
@@ -650,24 +586,6 @@
       },
       "profilePath": "/mOn5lo038i8vw6qqJTwKw35KCL7.jpg",
       "tmdbId": 1175620
-    },
-    {
-      "name": "Andrew Haigh",
-      "film": "All of Us Strangers",
-      "awards": {
-        "bafta": "X",
-        "spirit": "X"
-      },
-      "profilePath": "/pJAv105SAZiQ3lGY2wGURz4bENp.jpg"
-    },
-    {
-      "name": "Martin Scorsese",
-      "film": "Killers Of The Flower Moon",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
-      "tmdbId": 1032
     },
     {
       "name": "Ben Affleck",
@@ -846,7 +764,8 @@
         "critics": "X",
         "astra": "X",
         "spirit": "X",
-        "gotham": "Y"
+        "gotham": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/sxWslNRZdiBcPgwdVqoj7nSclr6.jpg",
       "tmdbId": 1907002
@@ -865,31 +784,12 @@
     {
       "name": "Kōji Yakusho",
       "awards": {
-        "cannes": "Y"
+        "cannes": "Y",
+        "astra": "X"
       },
       "film": "Perfect Days",
       "profilePath": "/rF3pmX1yqoMXJLgRkgaLc7PGv68.jpg",
       "tmdbId": 18056
-    },
-    {
-      "name": "Colin Farrell",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Banshees of Inisherin",
-      "role": "Leading",
-      "profilePath": "/oyQVfpowL9eSudYhwoPGkd9WxS7.jpg",
-      "tmdbId": 72466
-    },
-    {
-      "name": "Ke Huy Quan",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Everything Everywhere All at Once",
-      "role": "Supporting",
-      "profilePath": "/iestHyn7PLuVowj5Jaa1SGPboQ4.jpg",
-      "tmdbId": 690
     },
     {
       "name": "Peter Sarsgaard",
@@ -954,6 +854,15 @@
         "critics": "X",
         "astra": "X"
       },
+      "profilePath": "/2tu6T9ugnf82qIMGVKWSb0dvvq5.jpg",
+      "tmdbId": 91671
+    },
+    {
+      "name": "Colman Domingo",
+      "awards": {
+        "astra": "X"
+      },
+      "film": "The Color Purple",
       "profilePath": "/2tu6T9ugnf82qIMGVKWSb0dvvq5.jpg",
       "tmdbId": 91671
     },
@@ -1081,11 +990,13 @@
       "name": "Franz Rogowski",
       "awards": {
         "spirit": "X",
-        "gotham": "X"
+        "gotham": "X",
+        "nyfcc": "Y"
       },
       "film": "Passages",
       "profilePath": "/mXehrpUeS4aXvDZPB0PyofqwSAi.jpg",
-      "tmdbId": 1285450
+      "tmdbId": 1285450,
+      "role": "Leading"
     },
     {
       "name": "Jacob Elordi",
@@ -1138,15 +1049,6 @@
       "tmdbId": 73421
     },
     {
-      "name": "Colman Domingo",
-      "awards": {
-        "astra": "X"
-      },
-      "film": "The Color Purple",
-      "profilePath": "/2tu6T9ugnf82qIMGVKWSb0dvvq5.jpg",
-      "tmdbId": 91671
-    },
-    {
       "name": "Eugenio Derbez",
       "awards": {
         "astra": "X"
@@ -1180,15 +1082,6 @@
       "film": "Society of the Snow",
       "profilePath": "/ebRL8vHFjA0vCYw66CmUa4UJ9Be.jpg",
       "tmdbId": 3301646
-    },
-    {
-      "name": "Koji Yakusho",
-      "awards": {
-        "astra": "X"
-      },
-      "film": "Perfect Days",
-      "profilePath": "/rF3pmX1yqoMXJLgRkgaLc7PGv68.jpg",
-      "tmdbId": 18056
     },
     {
       "name": "Noah Galvin",
@@ -1292,7 +1185,8 @@
         "lafca": "Y",
         "astra": "Y",
         "spirit": "Y",
-        "gotham": "X"
+        "gotham": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/7RuYeGxTwFRt2q8fkT8nuEz1nIC.jpg",
       "tmdbId": 1180099
@@ -1324,7 +1218,8 @@
         "nbr": "Y",
         "critics": "X",
         "lafca": "X",
-        "astra": "Y"
+        "astra": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/zYAN84WqZv2sbVE2JDkcWoXGoF7.jpg",
       "tmdbId": 1183917
@@ -1340,6 +1235,17 @@
         "critics": "X",
         "lafca": "Y",
         "astra": "Y"
+      },
+      "profilePath": "/jQfKXVCPTH9KEnzHHU4QemCnlMe.jpg",
+      "tmdbId": 7152
+    },
+    {
+      "name": "Sandra Hüller",
+      "film": "The Zone of Interest",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "gotham": "X"
       },
       "profilePath": "/jQfKXVCPTH9KEnzHHU4QemCnlMe.jpg",
       "tmdbId": 7152
@@ -1390,26 +1296,6 @@
       "film": "About Dry Grasses",
       "profilePath": "/3scsux2FwgVyiO0GikZy4f43eHd.jpg",
       "tmdbId": 1064167
-    },
-    {
-      "name": "Cate Blanchett",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Tár",
-      "role": "Leading",
-      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
-      "tmdbId": 112
-    },
-    {
-      "name": "Keke Palmer",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Nope",
-      "role": "Supporting",
-      "profilePath": "/f5i3WzdMt02mlfm9I9LHKRJtZ4J.jpg",
-      "tmdbId": 74688
     },
     {
       "name": "Mia McKenna",
@@ -1550,17 +1436,6 @@
       },
       "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
       "tmdbId": 1231
-    },
-    {
-      "name": "Sandra Hüller",
-      "film": "The Zone of Interest",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "gotham": "X"
-      },
-      "profilePath": "/jQfKXVCPTH9KEnzHHU4QemCnlMe.jpg",
-      "tmdbId": 7152
     },
     {
       "name": "Rosamund Pike",

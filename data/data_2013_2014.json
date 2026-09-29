@@ -64,7 +64,8 @@
         "critics": "X",
         "pga": "X",
         "wga": "X",
-        "adg": "X"
+        "adg": "X",
+        "nyfcc": "Y"
       },
       "genre": "Comedy",
       "posterPath": "/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg",
@@ -180,7 +181,7 @@
       "tmdbId": 116745
     },
     {
-      "name": "Blue Is the Warmest Colour[1][42]",
+      "name": "Blue Is the Warmest Colour",
       "awards": {
         "cannes": "Y"
       }
@@ -200,14 +201,6 @@
       },
       "posterPath": "/7vsmiudJxiYYQWlnv6OmMT3tH9E.jpg",
       "tmdbId": 216790
-    },
-    {
-      "name": "Zero Dark Thirty",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/wNSdSSxowM3WIqmPJNg3RagYbwP.jpg",
-      "tmdbId": 97630
     },
     {
       "name": "The Great Gatsby",
@@ -456,7 +449,9 @@
         "gg": "X",
         "oscar": "X",
         "critics": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y",
+        "dga": "X"
       },
       "profilePath": "/if4tLIZJ0EJtyhlJaSzSwMQU5Yz.jpg",
       "tmdbId": 72757
@@ -489,15 +484,6 @@
       },
       "profilePath": "/hxbjQBLAL9G7PAZBqlwASOCDWn2.jpg",
       "tmdbId": 1194907
-    },
-    {
-      "name": "Kathryn Bigelow",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Zero Dark Thirty",
-      "profilePath": "/llfsTIvItT7IEmX5qK1qUX0dbqc.jpg",
-      "tmdbId": 14392
     },
     {
       "name": "Sean Ellis",
@@ -539,7 +525,8 @@
       "awards": {
         "bafta": "X",
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
       "tmdbId": 1032
@@ -553,24 +540,6 @@
       },
       "film": "Nebraska",
       "profilePath": "/d8mwLxuCMxMxcE8Qys9sdUb7UZg.jpg"
-    },
-    {
-      "name": "Martin Scorsese",
-      "film": "The Wolf Of Wall Street",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/g3DjfKsgZQWZiw30I20hZVk1oMX.jpg",
-      "tmdbId": 1032
-    },
-    {
-      "name": "Steve McQueen",
-      "film": "12 Years A Slave",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/if4tLIZJ0EJtyhlJaSzSwMQU5Yz.jpg",
-      "tmdbId": 72757
     },
     {
       "name": "Jon S Baird",
@@ -659,7 +628,8 @@
         "sag": "Y",
         "critics": "Y",
         "lafca": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "film": "Dallas Buyers Club",
       "role": "Leading",
@@ -735,26 +705,6 @@
       },
       "profilePath": "/rb0ROJR5OxxW5uWpbrulyk32v9H.jpg",
       "tmdbId": 1206241
-    },
-    {
-      "name": "Daniel Day-Lewis",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Lincoln",
-      "role": "Leading",
-      "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
-      "tmdbId": 11856
-    },
-    {
-      "name": "Matthew McConaughey",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Bernie",
-      "role": "Supporting",
-      "profilePath": "/lCySuYjhXix3FzQdS4oceDDrXKI.jpg",
-      "tmdbId": 10297
     },
     {
       "name": "James Franco",
@@ -856,7 +806,8 @@
         "gg": "X",
         "critics": "X",
         "gotham": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "nyfcc": "Y"
       },
       "film": "All Is Lost",
       "role": "Leading",
@@ -1059,7 +1010,8 @@
         "critics": "Y",
         "lafca": "Y",
         "gotham": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
       "tmdbId": 112
@@ -1089,7 +1041,8 @@
         "gg": "Y",
         "oscar": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
       "tmdbId": 72129
@@ -1149,26 +1102,6 @@
       },
       "profilePath": "/grusGGdgToZntzoQkl1fYpG2MKl.jpg",
       "tmdbId": 93109
-    },
-    {
-      "name": "Rachel Weisz",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Deep Blue Sea",
-      "role": "Leading",
-      "profilePath": "/58czHc8QU1L4H0N45T0UML8efgS.jpg",
-      "tmdbId": 3293
-    },
-    {
-      "name": "Sally Field",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Lincoln",
-      "role": "Supporting",
-      "profilePath": "/5fBK36MdmdwQQMuP0W70rXADXih.jpg",
-      "tmdbId": 35
     },
     {
       "name": "Lindsay Duncan",
@@ -1277,7 +1210,8 @@
       "role": "Supporting",
       "awards": {
         "bafta": "X",
-        "sag": "X"
+        "sag": "X",
+        "critics": "X"
       },
       "profilePath": "/nNpYieaDLxKZWw2FY9wsDkjwURu.jpg",
       "tmdbId": 13309
@@ -1344,14 +1278,22 @@
       "tmdbId": 1245
     },
     {
-      "name": "Oprah Winfrey",
-      "film": "Lee Daniels' The Butler",
-      "role": "Supporting",
+      "name": "Scarlett Johansson",
       "awards": {
-        "critics": "X"
+        "gotham": "X"
       },
-      "profilePath": "/nNpYieaDLxKZWw2FY9wsDkjwURu.jpg",
-      "tmdbId": 13309
+      "film": "Don Jon",
+      "profilePath": "/sRjg0DbiA5DElSr3g3SSR4EArL8.jpg",
+      "tmdbId": 1245
+    },
+    {
+      "name": "Scarlett Johansson",
+      "film": "Under the Skin",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/sRjg0DbiA5DElSr3g3SSR4EArL8.jpg",
+      "tmdbId": 1245
     },
     {
       "name": "Adèle Exarchopoulos",
@@ -1363,15 +1305,6 @@
       "tmdbId": 586757
     },
     {
-      "name": "Scarlett Johansson",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Don Jon",
-      "profilePath": "/sRjg0DbiA5DElSr3g3SSR4EArL8.jpg",
-      "tmdbId": 1245
-    },
-    {
       "name": "Amy Seimetz",
       "awards": {
         "gotham": "X"
@@ -1379,15 +1312,6 @@
       "film": "Upstream Color",
       "profilePath": "/qa7vCi7TViddGjuYEszLdi8DRqN.jpg",
       "tmdbId": 139150
-    },
-    {
-      "name": "Scarlett Johansson",
-      "film": "Under the Skin",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/sRjg0DbiA5DElSr3g3SSR4EArL8.jpg",
-      "tmdbId": 1245
     },
     {
       "name": "Felicity Jones",

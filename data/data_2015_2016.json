@@ -141,7 +141,8 @@
         "critics": "X",
         "wga": "X",
         "gotham": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "nyfcc": "Y"
       },
       "genre": "Drama",
       "posterPath": "/z2epoeGzT4RMhj0G1AaNXNxDzYa.jpg",
@@ -211,14 +212,6 @@
       "note": "Director: Jacques Audiard",
       "posterPath": "/qNMjRNrIzvljInNLf3aLYZI3Ih4.jpg",
       "tmdbId": 314402
-    },
-    {
-      "name": "Boyhood",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/2BvtvDUyxiMJ4dmKfiQf4qdOHQN.jpg",
-      "tmdbId": 85350
     },
     {
       "name": "Brooklyn",
@@ -505,15 +498,6 @@
       "tmdbId": 64992
     },
     {
-      "name": "Richard Linklater",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Boyhood",
-      "profilePath": "/xSctxeZQzQbZoaxIvcDeHlDjbiN.jpg",
-      "tmdbId": 564
-    },
-    {
       "name": "Alex Garland",
       "film": "Ex Machina",
       "awards": {
@@ -529,7 +513,8 @@
         "bafta": "X",
         "critics": "X",
         "lafca": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "nyfcc": "Y"
       },
       "film": "Carol",
       "profilePath": "/wBDazO2j49uoquoHTEDxcniyGGC.jpg",
@@ -658,7 +643,8 @@
         "oscar": "Y",
         "sag": "X",
         "critics": "X",
-        "lafca": "X"
+        "lafca": "X",
+        "nyfcc": "Y"
       },
       "film": "Bridge of Spies",
       "role": "Leading",
@@ -720,6 +706,15 @@
       "tmdbId": 17288
     },
     {
+      "name": "Michael Fassbender",
+      "film": "Macbeth",
+      "awards": {
+        "bifa": "X"
+      },
+      "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg",
+      "tmdbId": 17288
+    },
+    {
       "name": "Michael Shannon",
       "awards": {
         "gg": "X",
@@ -766,30 +761,21 @@
       "tmdbId": 5443
     },
     {
-      "name": "Timothy Spall",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Mr. Turner",
-      "role": "Leading",
-      "profilePath": "/pcR6t8kpAgGwIUo4UjlP5gyKkNA.jpg",
-      "tmdbId": 9191
-    },
-    {
-      "name": "J. K. Simmons",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Whiplash",
-      "role": "Supporting",
-      "profilePath": "/ScmKoJ9eiSUOthAt1PDNLi8Fkw.jpg",
-      "tmdbId": 18999
-    },
-    {
       "name": "Tom Hardy",
       "film": "Legend",
       "awards": {
         "bifa": "Y"
+      },
+      "profilePath": "/32pesf3nGyLOQEVrhsFHpdbbMli.jpg",
+      "tmdbId": 2524
+    },
+    {
+      "name": "Tom Hardy",
+      "film": "The Revenant",
+      "role": "Supporting",
+      "awards": {
+        "oscar": "X",
+        "critics": "X"
       },
       "profilePath": "/32pesf3nGyLOQEVrhsFHpdbbMli.jpg",
       "tmdbId": 2524
@@ -866,15 +852,14 @@
       "tmdbId": 103
     },
     {
-      "name": "Tom Hardy",
-      "film": "The Revenant",
-      "role": "Supporting",
+      "name": "Mark Ruffalo",
       "awards": {
-        "oscar": "X",
-        "critics": "X"
+        "gg": "X"
       },
-      "profilePath": "/32pesf3nGyLOQEVrhsFHpdbbMli.jpg",
-      "tmdbId": 2524
+      "film": "Infinitely Polar Bear",
+      "role": "Leading",
+      "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
+      "tmdbId": 103
     },
     {
       "name": "Johnny Depp",
@@ -938,16 +923,6 @@
       "tmdbId": 1158
     },
     {
-      "name": "Mark Ruffalo",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "Infinitely Polar Bear",
-      "role": "Leading",
-      "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
-      "tmdbId": 103
-    },
-    {
       "name": "Benicio del Toro",
       "film": "Sicario",
       "role": "Supporting",
@@ -1002,15 +977,6 @@
       },
       "profilePath": "/oyQVfpowL9eSudYhwoPGkd9WxS7.jpg",
       "tmdbId": 72466
-    },
-    {
-      "name": "Michael Fassbender",
-      "film": "Macbeth",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/xvbnUiB2ZBR3QIt595OzNy657Vw.jpg",
-      "tmdbId": 17288
     },
     {
       "name": "Tom Hiddleston",
@@ -1092,6 +1058,16 @@
       "film": "Bone Tomahawk",
       "profilePath": "/muT3RZG9hiKaKojD751RcQ5tGEy.jpg",
       "tmdbId": 28633
+    },
+    {
+      "name": "Michael Keaton",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Spotlight",
+      "role": "Leading",
+      "profilePath": "/baeHNv3qrVsnApuKbZXiJOhqMnw.jpg",
+      "tmdbId": 2232
     }
   ],
   "best-actress": [
@@ -1123,6 +1099,18 @@
         "bifa": "X"
       },
       "film": "The Danish Girl",
+      "role": "Leading",
+      "profilePath": "/9pmHTbXeRxUF51jJKthmHI49u9z.jpg",
+      "tmdbId": 227454
+    },
+    {
+      "name": "Alicia Vikander",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "lafca": "Y"
+      },
+      "film": "Ex Machina",
       "role": "Leading",
       "profilePath": "/9pmHTbXeRxUF51jJKthmHI49u9z.jpg",
       "tmdbId": 227454
@@ -1166,7 +1154,8 @@
         "sag": "X",
         "critics": "X",
         "lafca": "X",
-        "bifa": "Y"
+        "bifa": "Y",
+        "nyfcc": "Y"
       },
       "film": "Brooklyn",
       "role": "Leading",
@@ -1199,18 +1188,6 @@
       "tmdbId": 72129
     },
     {
-      "name": "Alicia Vikander",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "lafca": "Y"
-      },
-      "film": "Ex Machina",
-      "role": "Leading",
-      "profilePath": "/9pmHTbXeRxUF51jJKthmHI49u9z.jpg",
-      "tmdbId": 227454
-    },
-    {
       "name": "Bel Powley",
       "awards": {
         "gotham": "Y",
@@ -1237,26 +1214,6 @@
       "film": "Mon Roi",
       "profilePath": "/xywoj2EBThgQE8izX7979MmrlOd.jpg",
       "tmdbId": 25340
-    },
-    {
-      "name": "Marion Cotillard",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Two Days, One Night",
-      "role": "Leading",
-      "profilePath": "/biitzOF0GffIqFYLyOPkoiaOngQ.jpg",
-      "tmdbId": 8293
-    },
-    {
-      "name": "Patricia Arquette",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Boyhood",
-      "role": "Supporting",
-      "profilePath": "/jeThSouMatiuRiLkjDvSBLHpmq0.jpg",
-      "tmdbId": 4687
     },
     {
       "name": "Olivia Colman",
@@ -1306,6 +1263,15 @@
       "tmdbId": 10431
     },
     {
+      "name": "Jennifer Jason Leigh",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "Anomalisa",
+      "profilePath": "/9nT2mbQ9P8UpCXirssDxDT75jlm.jpg",
+      "tmdbId": 10431
+    },
+    {
       "name": "Helen Mirren",
       "awards": {
         "gg": "X",
@@ -1313,6 +1279,16 @@
         "critics": "X"
       },
       "film": "Trumbo",
+      "role": "Leading",
+      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
+      "tmdbId": 15735
+    },
+    {
+      "name": "Helen Mirren",
+      "awards": {
+        "sag": "X"
+      },
+      "film": "Woman in Gold",
       "role": "Leading",
       "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
       "tmdbId": 15735
@@ -1393,16 +1369,6 @@
       "tmdbId": 6352
     },
     {
-      "name": "Helen Mirren",
-      "awards": {
-        "sag": "X"
-      },
-      "film": "Woman in Gold",
-      "role": "Leading",
-      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
-      "tmdbId": 15735
-    },
-    {
       "name": "Sarah Silverman",
       "awards": {
         "sag": "X"
@@ -1425,11 +1391,13 @@
     {
       "name": "Kristen Stewart",
       "awards": {
-        "lafca": "X"
+        "lafca": "X",
+        "nyfcc": "Y"
       },
       "film": "Clouds of Sils Maria",
       "profilePath": "/ryhCjTGqS6G6OprbR0qUEH355lA.jpg",
-      "tmdbId": 37917
+      "tmdbId": 37917,
+      "role": "Supporting"
     },
     {
       "name": "Blythe Danner",
@@ -1519,15 +1487,6 @@
       "film": "Glass Chin",
       "profilePath": "/jAIOQNraHjvIAdqk81QDV5Phupp.jpg",
       "tmdbId": 164094
-    },
-    {
-      "name": "Jennifer Jason Leigh",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Anomalisa",
-      "profilePath": "/9nT2mbQ9P8UpCXirssDxDT75jlm.jpg",
-      "tmdbId": 10431
     },
     {
       "name": "Cynthia Nixon",

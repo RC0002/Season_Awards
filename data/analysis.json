@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-26T21:01:39.054859",
+  "generated": "2026-09-29T17:28:29.201121",
   "expected": {
     "oscar": {
       "best-film": 10,
@@ -153,25 +153,25 @@
       "gg": {
         "best-film": {
           "nominations": 11,
-          "winners": 0,
+          "winners": 2,
           "status": "ok",
           "expected": 11
         },
         "best-director": {
           "nominations": 5,
-          "winners": 0,
+          "winners": 1,
           "status": "ok",
           "expected": 5
         },
         "best-actor": {
           "nominations": 15,
-          "winners": 0,
+          "winners": 3,
           "status": "ok",
           "expected": 15
         },
         "best-actress": {
           "nominations": 15,
-          "winners": 0,
+          "winners": 3,
           "status": "ok",
           "expected": 15
         }
@@ -11438,13 +11438,13 @@
           "expected": 0
         },
         "best-actor": {
-          "nominations": 9,
+          "nominations": 8,
           "winners": 2,
           "status": "ok",
           "expected": 9
         },
         "best-actress": {
-          "nominations": 8,
+          "nominations": 9,
           "winners": 1,
           "status": "ok",
           "expected": 8
@@ -13691,6 +13691,528 @@
           "nominations": 2,
           "winners": 2,
           "status": "ok",
+          "expected": 2
+        }
+      }
+    },
+    "2026_2027": {
+      "oscar": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        }
+      },
+      "gg": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 12
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 6
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 18
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 18
+        }
+      },
+      "bafta": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 6
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 12
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 12
+        }
+      },
+      "sag": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        }
+      },
+      "critics": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 6
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 12
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 12
+        }
+      },
+      "afi": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 11
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "nbr": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 11
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        }
+      },
+      "venice": {
+        "best-film": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 1,
+          "winners": 1,
+          "status": "ok",
+          "expected": 1
+        }
+      },
+      "dga": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "pga": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "lafca": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 2
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 2
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 4
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 4
+        }
+      },
+      "wga": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "adg": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 15
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "gotham": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        }
+      },
+      "astra": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 12
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 6
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 24
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 24
+        }
+      },
+      "spirit": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 10
+        }
+      },
+      "bifa": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 5
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 6
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 6
+        }
+      },
+      "cannes": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        }
+      },
+      "annie": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 5
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "ok",
+          "expected": 0
+        }
+      },
+      "nyfcc": {
+        "best-film": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        },
+        "best-director": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 1
+        },
+        "best-actor": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
+          "expected": 2
+        },
+        "best-actress": {
+          "nominations": 0,
+          "winners": 0,
+          "status": "pending",
           "expected": 2
         }
       }

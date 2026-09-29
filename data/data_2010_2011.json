@@ -31,7 +31,8 @@
         "lafca": "Y",
         "pga": "X",
         "adg": "X",
-        "wga": "Y"
+        "wga": "Y",
+        "nyfcc": "Y"
       },
       "genre": "Drama",
       "posterPath": "/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
@@ -242,14 +243,6 @@
       "tmdbId": 38368
     },
     {
-      "name": "The Hurt Locker",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/io2dfBJhasvGbgkCX9cCGVOiA99.jpg",
-      "tmdbId": 12162
-    },
-    {
       "name": "Alice in Wonderland",
       "awards": {
         "gg": "X",
@@ -443,7 +436,8 @@
         "nbr": "Y",
         "critics": "Y",
         "dga": "X",
-        "lafca": "X"
+        "lafca": "X",
+        "nyfcc": "Y"
       },
       "film": "The Social Network",
       "profilePath": "/wlyTYR3KNKQ3NtVojtbO8QIXSSS.jpg",
@@ -503,15 +497,6 @@
       "tmdbId": 8789
     },
     {
-      "name": "Kathryn Bigelow",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Hurt Locker",
-      "profilePath": "/llfsTIvItT7IEmX5qK1qUX0dbqc.jpg",
-      "tmdbId": 14392
-    },
-    {
       "name": "Gareth Edwards",
       "film": "Monsters",
       "awards": {
@@ -566,7 +551,8 @@
       "film": "Inception",
       "awards": {
         "dga": "X"
-      }
+      },
+      "profilePath": "/xuAIuYSmsUzKlUMBFGVZaWsY3DZ.jpg"
     },
     {
       "name": "Mike Leigh",
@@ -633,7 +619,8 @@
         "sag": "Y",
         "critics": "Y",
         "lafca": "Y",
-        "bifa": "Y"
+        "bifa": "Y",
+        "nyfcc": "Y"
       },
       "film": "The King's Speech",
       "role": "Leading",
@@ -762,26 +749,6 @@
       "tmdbId": 59269
     },
     {
-      "name": "George Clooney",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Fantastic Mr. Fox and Up in the Air",
-      "role": "Leading",
-      "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
-      "tmdbId": 1461
-    },
-    {
-      "name": "Christoph Waltz",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Inglourious Basterds",
-      "role": "Supporting",
-      "profilePath": "/jMvLGCVXLaBqjRLf5olyvEucZob.jpg",
-      "tmdbId": 27319
-    },
-    {
       "name": "Mark Ruffalo",
       "film": "The Kids Are All Right",
       "role": "Supporting",
@@ -790,7 +757,8 @@
         "bafta": "X",
         "sag": "X",
         "critics": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg",
       "tmdbId": 103
@@ -830,6 +798,15 @@
       },
       "film": "The Social Network",
       "role": "Leading",
+      "profilePath": "/5ydZ6TluPtxlz5G8nlWMB7SGmow.jpg",
+      "tmdbId": 37625
+    },
+    {
+      "name": "Andrew Garfield",
+      "film": "Never Let Me Go",
+      "awards": {
+        "bifa": "X"
+      },
       "profilePath": "/5ydZ6TluPtxlz5G8nlWMB7SGmow.jpg",
       "tmdbId": 37625
     },
@@ -1008,15 +985,6 @@
       "tmdbId": 382
     },
     {
-      "name": "Andrew Garfield",
-      "film": "Never Let Me Go",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/5ydZ6TluPtxlz5G8nlWMB7SGmow.jpg",
-      "tmdbId": 37625
-    },
-    {
       "name": "Ronald Bronstein",
       "awards": {
         "spirit": "X"
@@ -1088,7 +1056,8 @@
         "bafta": "Y",
         "sag": "Y",
         "critics": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "gg": "Y"
       },
       "profilePath": "/edPU5HxncLWa1YkgRPNkSd68ONG.jpg",
       "tmdbId": 524
@@ -1099,7 +1068,8 @@
         "gg": "Y",
         "oscar": "Y",
         "sag": "Y",
-        "critics": "Y"
+        "critics": "Y",
+        "nyfcc": "Y"
       },
       "film": "The Fighter",
       "role": "Leading",
@@ -1129,7 +1099,8 @@
         "bafta": "X",
         "sag": "X",
         "critics": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "nyfcc": "Y"
       },
       "film": "The Kids Are All Right",
       "role": "Leading",
@@ -1162,16 +1133,6 @@
       "tmdbId": 72305
     },
     {
-      "name": "Natalie Portman",
-      "awards": {
-        "gg": "Y"
-      },
-      "film": "Halle Berry",
-      "role": "Leading",
-      "profilePath": "/edPU5HxncLWa1YkgRPNkSd68ONG.jpg",
-      "tmdbId": 524
-    },
-    {
       "name": "Ariane Labed",
       "film": "Attenberg",
       "awards": {
@@ -1197,26 +1158,6 @@
       "film": "Certified Copy",
       "profilePath": "/htdZZIroEyJaeHQAUTqokNfkPgl.jpg",
       "tmdbId": 1137
-    },
-    {
-      "name": "Meryl Streep",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Julie & Julia",
-      "role": "Leading",
-      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
-      "tmdbId": 5064
-    },
-    {
-      "name": "Mo'Nique",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Precious",
-      "role": "Supporting",
-      "profilePath": "/bzSVVBKTyMi4K6MZvFCzBJs91F5.jpg",
-      "tmdbId": 60561
     },
     {
       "name": "Carey Mulligan",
@@ -1284,7 +1225,8 @@
         "gg": "X",
         "bafta": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "oscar": "X"
       },
       "film": "The Fighter",
       "role": "Leading",
@@ -1377,16 +1319,6 @@
       "role": "Leading",
       "profilePath": "/8NwSfyYWIIUE1cI9Xhz92b0w7WD.jpg",
       "tmdbId": 54693
-    },
-    {
-      "name": "Amy Adams",
-      "film": "Charlene Fleming",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/oee226QNLDmiwo5730gq3j7tydw.jpg",
-      "tmdbId": 9273
     },
     {
       "name": "Barbara Hershey",

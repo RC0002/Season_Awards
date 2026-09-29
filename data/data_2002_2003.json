@@ -86,7 +86,8 @@
         "nbr": "Y",
         "lafca": "X",
         "wga": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "posterPath": "/9gQuvFDRPLx39smUvyafm36tp0d.jpg",
       "tmdbId": 10712
@@ -97,7 +98,10 @@
         "gg": "X",
         "afi": "Y",
         "nbr": "Y",
-        "wga": "X"
+        "wga": "X",
+        "sag": "X",
+        "critics": "X",
+        "pga": "X"
       },
       "genre": "Comedy",
       "posterPath": "/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg",
@@ -207,14 +211,6 @@
       "tmdbId": 1430
     },
     {
-      "name": "Mulholland Dr.",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/x7A59t6ySylr1L7aubOQEA480vM.jpg",
-      "tmdbId": 1018
-    },
-    {
       "name": "Sweet Sixteen",
       "awards": {
         "bifa": "Y"
@@ -233,16 +229,6 @@
       "genre": "Comedy",
       "posterPath": "/ztc05ym0T3stnBpRHdxEs3Zwsmp.jpg",
       "tmdbId": 8346
-    },
-    {
-      "name": "Adaptation",
-      "awards": {
-        "sag": "X",
-        "critics": "X",
-        "pga": "X"
-      },
-      "posterPath": "/ffEmHQAiD0m5dEQ6rlsuA9vlllW.jpg",
-      "tmdbId": 2757
     },
     {
       "name": "Road to Perdition",
@@ -447,7 +433,8 @@
       "name": "Todd Haynes",
       "awards": {
         "lafca": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "film": "Far from Heaven",
       "profilePath": "/wBDazO2j49uoquoHTEDxcniyGGC.jpg",
@@ -499,17 +486,8 @@
       "tmdbId": 4762
     },
     {
-      "name": "Robert Altman",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Gosford Park",
-      "profilePath": "/wB1R6patGi35oaxKU5PWEGJlIZg.jpg",
-      "tmdbId": 9789
-    },
-    {
       "name": "Paul Greengrass",
-      "film": "Bloody Sunday \n Ken Loach",
+      "film": "Bloody Sunday",
       "awards": {
         "bifa": "Y"
       },
@@ -638,7 +616,8 @@
         "gg": "X",
         "sag": "Y",
         "critics": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/3kNA9VcmymoEwT0btQ4bvMYxzcP.jpg",
       "tmdbId": 11856
@@ -673,22 +652,13 @@
     },
     {
       "name": "Chris Cooper",
-      "film": "Adaptation",
-      "role": "Supporting",
       "awards": {
+        "gg": "Y",
+        "lafca": "Y",
         "bafta": "X",
         "oscar": "Y",
         "sag": "X",
         "critics": "Y"
-      },
-      "profilePath": "/j0sQDzaDlnNAdaYhy6HRRAFi22.jpg",
-      "tmdbId": 2955
-    },
-    {
-      "name": "Chris Cooper",
-      "awards": {
-        "gg": "Y",
-        "lafca": "Y"
       },
       "film": "Adaptation.",
       "role": "Leading",
@@ -723,7 +693,9 @@
       "name": "Dennis Quaid",
       "awards": {
         "sag": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y",
+        "gg": "X"
       },
       "film": "Far from Heaven",
       "role": "Supporting",
@@ -757,26 +729,6 @@
       "film": "The Son",
       "profilePath": "/6FQNMThslrNxHimAN2BBCtTYeUM.jpg",
       "tmdbId": 45152
-    },
-    {
-      "name": "Tom Wilkinson",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "In the Bedroom",
-      "role": "Leading",
-      "profilePath": "/xSUohQDXuepOU2nSqtDj2us5RZo.jpg",
-      "tmdbId": 207
-    },
-    {
-      "name": "Steve Buscemi",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Ghost World",
-      "role": "Supporting",
-      "profilePath": "/kFzw4U5pExnLKZWhR48VSzL8Fre.jpg",
-      "tmdbId": 884
     },
     {
       "name": "James Nesbitt",
@@ -836,13 +788,14 @@
     },
     {
       "name": "Nicolas Cage",
-      "film": "Adaptation",
-      "role": "Leading",
       "awards": {
+        "gg": "X",
         "bafta": "X",
         "oscar": "X",
         "sag": "X"
       },
+      "film": "Adaptation.",
+      "role": "Leading",
       "profilePath": "/y1RtezurZYveYkVNRht7CwEgSYY.jpg",
       "tmdbId": 2963
     },
@@ -869,6 +822,14 @@
       "profilePath": "/t5JQHmEKrMuusfgLaOEAwjOookT.jpg"
     },
     {
+      "name": "John C. Reilly",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Good Girl",
+      "profilePath": "/t5JQHmEKrMuusfgLaOEAwjOookT.jpg"
+    },
+    {
       "name": "Leonardo DiCaprio",
       "awards": {
         "gg": "X"
@@ -877,16 +838,6 @@
       "role": "Leading",
       "profilePath": "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
       "tmdbId": 6193
-    },
-    {
-      "name": "Nicolas Cage",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "Adaptation.",
-      "role": "Leading",
-      "profilePath": "/y1RtezurZYveYkVNRht7CwEgSYY.jpg",
-      "tmdbId": 2963
     },
     {
       "name": "Kieran Culkin",
@@ -917,16 +868,6 @@
       "role": "Leading",
       "profilePath": "/iTMnXrPfC1rmom6a9q4hy6YSJWG.jpg",
       "tmdbId": 19292
-    },
-    {
-      "name": "Dennis Quaid",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "Far From Heaven",
-      "role": "Leading",
-      "profilePath": "/lMaDAJHzsKH7U3dln2B3kY3rOhE.jpg",
-      "tmdbId": 6065
     },
     {
       "name": "Robin Williams",
@@ -1011,14 +952,6 @@
       "tmdbId": 11477
     },
     {
-      "name": "John C. Reilly",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "The Good Girl",
-      "profilePath": "/t5JQHmEKrMuusfgLaOEAwjOookT.jpg"
-    },
-    {
       "name": "Peter Weller",
       "awards": {
         "spirit": "X"
@@ -1039,7 +972,21 @@
         "critics": "Y",
         "nbr": "Y",
         "lafca": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "venice": "Y",
+        "gg": "X"
+      },
+      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
+      "tmdbId": 1231
+    },
+    {
+      "name": "Julianne Moore",
+      "film": "The Hours",
+      "role": "Supporting",
+      "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "sag": "X"
       },
       "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
       "tmdbId": 1231
@@ -1088,7 +1035,10 @@
     {
       "name": "Meryl Streep",
       "awards": {
-        "gg": "Y"
+        "gg": "Y",
+        "bafta": "X",
+        "oscar": "X",
+        "critics": "X"
       },
       "film": "Adaptation.",
       "role": "Leading",
@@ -1096,13 +1046,15 @@
       "tmdbId": 5064
     },
     {
-      "name": "Julianne Moore",
-      "film": "Lontano dal paradiso",
+      "name": "Meryl Streep",
+      "film": "The Hours",
+      "role": "Leading",
       "awards": {
-        "venice": "Y"
+        "bafta": "X",
+        "gg": "X"
       },
-      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
-      "tmdbId": 1231
+      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
+      "tmdbId": 5064
     },
     {
       "name": "Kati Outinen",
@@ -1121,26 +1073,6 @@
       "film": "Sunshine State",
       "profilePath": "/jS2Hnr5OmntpX0J7EpH70zAG0mz.jpg",
       "tmdbId": 36190
-    },
-    {
-      "name": "Sissy Spacek",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "In the Bedroom",
-      "role": "Leading",
-      "profilePath": "/xAxenjxjLNQFq4v1ccS2to3Mnoq.jpg",
-      "tmdbId": 5606
-    },
-    {
-      "name": "Helen Mirren",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Gosford Park",
-      "role": "Supporting",
-      "profilePath": "/1reKRrsdsHXJaRVHVyOEg4oPTcZ.jpg",
-      "tmdbId": 15735
     },
     {
       "name": "Samantha Morton",
@@ -1209,45 +1141,11 @@
         "oscar": "X",
         "gg": "X",
         "sag": "X",
-        "critics": "X"
+        "critics": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/6OfP3vFMuCL51zamFKgb8aS74hs.jpg",
       "tmdbId": 2882
-    },
-    {
-      "name": "Julianne Moore",
-      "film": "The Hours",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "oscar": "X",
-        "sag": "X"
-      },
-      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
-      "tmdbId": 1231
-    },
-    {
-      "name": "Meryl Streep",
-      "film": "Adaptation",
-      "role": "Supporting",
-      "awards": {
-        "bafta": "X",
-        "oscar": "X",
-        "critics": "X"
-      },
-      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
-      "tmdbId": 5064
-    },
-    {
-      "name": "Meryl Streep",
-      "film": "The Hours",
-      "role": "Leading",
-      "awards": {
-        "bafta": "X",
-        "gg": "X"
-      },
-      "profilePath": "/emAAzyK1rJ6aiMi0wsWYp51EC3h.jpg",
-      "tmdbId": 5064
     },
     {
       "name": "Maggie Gyllenhaal",
@@ -1279,16 +1177,6 @@
       },
       "profilePath": "/lzXRh16qe4HHeBN6tMyw0DHvaMn.jpg",
       "tmdbId": 3051
-    },
-    {
-      "name": "Julianne Moore",
-      "awards": {
-        "gg": "X"
-      },
-      "film": "Far From Heaven",
-      "role": "Leading",
-      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
-      "tmdbId": 1231
     },
     {
       "name": "Goldie Hawn",
@@ -1438,6 +1326,16 @@
       "film": "Tully",
       "profilePath": "/AqlEWaBfrqwb6St5qrL1yJ9d6VS.jpg",
       "tmdbId": 86034
+    },
+    {
+      "name": "Patricia Clarkson",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Far from Heaven",
+      "role": "Supporting",
+      "profilePath": "/rHHM9G83fpBAcFathbSyV4Tot5j.jpg",
+      "tmdbId": 1276
     }
   ]
 }

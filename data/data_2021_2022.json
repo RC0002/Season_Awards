@@ -173,17 +173,23 @@
       "name": "Drive My Car",
       "awards": {
         "oscar": "X",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "posterPath": "/3cOsf5HBjPK2QCz9ebQlGHNnE7y.jpg",
       "tmdbId": 758866
     },
     {
-      "name": "Tick, Tick... Boom!",
+      "name": "tick, tick... BOOM!",
       "awards": {
+        "gg": "X",
+        "critics": "X",
+        "wga": "X",
+        "astra": "X",
         "afi": "Y",
         "pga": "X"
       },
+      "genre": "Comedy",
       "posterPath": "/DPmfcuR8fh8ROYXgdjrAjSGA0o.jpg",
       "tmdbId": 537116
     },
@@ -247,14 +253,6 @@
       "tmdbId": 501929
     },
     {
-      "name": "First Cow",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/yS41crZ1i0fFxCQbuL7I1Y1VBwm.jpg",
-      "tmdbId": 558582
-    },
-    {
       "name": "No Time to Die",
       "awards": {
         "adg": "Y"
@@ -269,18 +267,6 @@
       },
       "posterPath": "/mXaNg69iWEs0Qsj4AJxcvCXuWKw.jpg",
       "tmdbId": 714011
-    },
-    {
-      "name": "tick, tick... BOOM!",
-      "awards": {
-        "gg": "X",
-        "critics": "X",
-        "wga": "X",
-        "astra": "X"
-      },
-      "genre": "Comedy",
-      "posterPath": "/DPmfcuR8fh8ROYXgdjrAjSGA0o.jpg",
-      "tmdbId": 537116
     },
     {
       "name": "Being the Ricardos",
@@ -512,7 +498,11 @@
         "bafta": "Y",
         "oscar": "Y",
         "critics": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y",
+        "venice": "Y",
+        "dga": "Y",
+        "astra": "Y"
       },
       "film": "The Power of the Dog",
       "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
@@ -551,56 +541,26 @@
       "tmdbId": 27977
     },
     {
-      "name": "Jane Campion",
-      "film": "The Power Of The Dog",
-      "awards": {
-        "dga": "Y"
-      },
-      "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
-      "tmdbId": 10757
-    },
-    {
-      "name": "Jane Campion",
-      "film": "Il potere del cane ( The Power of the Dog )",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
-      "tmdbId": 10757
-    },
-    {
-      "name": "Chloé Zhao",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Nomadland",
-      "profilePath": "/r8DmTdOqHbDUydCOVb277rncPTK.jpg",
-      "tmdbId": 1395183
-    },
-    {
-      "name": "Jane Campion",
-      "awards": {
-        "astra": "Y"
-      },
-      "film": "The Power of the Dog (TIE)",
-      "profilePath": "/zAkrfMl6m940Ja46ofWaM94gTNj.jpg",
-      "tmdbId": 10757
-    },
-    {
       "name": "Denis Villeneuve",
       "awards": {
+        "gg": "X",
+        "critics": "X",
+        "dga": "X",
         "astra": "Y"
       },
-      "film": "Dune (TIE)",
+      "film": "Dune",
       "profilePath": "/zdDx9Xs93UIrJFWYApYR28J8M6b.jpg",
       "tmdbId": 137427
     },
     {
-      "name": "After Love",
-      "film": "Aleem Khan",
+      "name": "Aleem Khan",
+      "film": "After Love",
       "awards": {
-        "bifa": "Y"
-      }
+        "bifa": "Y",
+        "bafta": "X"
+      },
+      "profilePath": "/4OOsvBQLQKLomiiuZzyaBSpxHMr.jpg",
+      "tmdbId": 1361417
     },
     {
       "name": "Kenneth Branagh",
@@ -627,17 +587,6 @@
       "film": "West Side Story",
       "profilePath": "/tZxcg19YQ3e8fJ0pOs7hjlnmmr6.jpg",
       "tmdbId": 488
-    },
-    {
-      "name": "Denis Villeneuve",
-      "awards": {
-        "gg": "X",
-        "critics": "X",
-        "dga": "X"
-      },
-      "film": "Dune",
-      "profilePath": "/zdDx9Xs93UIrJFWYApYR28J8M6b.jpg",
-      "tmdbId": 137427
     },
     {
       "name": "Ryusuke Hamaguchi",
@@ -679,20 +628,12 @@
       "tmdbId": 1392433
     },
     {
-      "name": "Aleem Khan",
-      "film": "After Love",
-      "awards": {
-        "bafta": "X"
-      },
-      "profilePath": "/4OOsvBQLQKLomiiuZzyaBSpxHMr.jpg",
-      "tmdbId": 1361417
-    },
-    {
       "name": "Lin",
       "awards": {
         "astra": "X"
       },
-      "film": "Manuel Miranda"
+      "film": "Manuel Miranda",
+      "profilePath": "/aL87Za52elH81zMiXQn5C7AXAeg.jpg"
     },
     {
       "name": "Pablo Larraín",
@@ -767,22 +708,22 @@
       "tmdbId": 1202063
     },
     {
-      "name": "Ali & Ava",
-      "film": "Clio Barnard",
+      "name": "Clio Barnard",
+      "film": "Ali & Ava",
       "awards": {
         "bifa": "X"
       }
     },
     {
-      "name": "Boiling Point",
-      "film": "Philip Barantini",
+      "name": "Philip Barantini",
+      "film": "Boiling Point",
       "awards": {
         "bifa": "X"
       }
     },
     {
-      "name": "The Nest",
-      "film": "Sean Durkin",
+      "name": "Sean Durkin",
+      "film": "The Nest",
       "awards": {
         "bifa": "X"
       },
@@ -790,8 +731,8 @@
       "tmdbId": 1021440
     },
     {
-      "name": "The Souvenir Part II",
-      "film": "Joanna Hogg",
+      "name": "Joanna Hogg",
+      "film": "The Souvenir Part II",
       "awards": {
         "bifa": "X"
       }
@@ -839,7 +780,8 @@
         "oscar": "X",
         "critics": "X",
         "sag": "X",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "film": "The Power of the Dog",
       "role": "Supporting",
@@ -852,7 +794,8 @@
         "gg": "Y",
         "critics": "X",
         "sag": "X",
-        "astra": "Y"
+        "astra": "Y",
+        "oscar": "X"
       },
       "film": "tick, tick... BOOM!",
       "role": "Leading",
@@ -919,26 +862,6 @@
       "tmdbId": 5443
     },
     {
-      "name": "Delroy Lindo",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Da 5 Bloods",
-      "role": "Leading",
-      "profilePath": "/kLwUBBmEIdchrLqwsYzgLB2B6q5.jpg",
-      "tmdbId": 18792
-    },
-    {
-      "name": "Chadwick Boseman",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Da 5 Bloods",
-      "role": "Supporting",
-      "profilePath": "/1lz1wLOuPFSRIratMz0SxD3tkJ.jpg",
-      "tmdbId": 172069
-    },
-    {
       "name": "Talid Ariss",
       "film": "After Love",
       "awards": {
@@ -956,7 +879,8 @@
         "critics": "X",
         "sag": "X",
         "lafca": "X",
-        "astra": "X"
+        "astra": "X",
+        "nyfcc": "Y"
       },
       "film": "The Power of the Dog",
       "role": "Leading",
@@ -984,7 +908,9 @@
         "bafta": "X",
         "oscar": "X",
         "astra": "X",
-        "bifa": "X"
+        "bifa": "X",
+        "gg": "X",
+        "critics": "X"
       },
       "profilePath": "/d8wLIX9VYgwXRGSp1gmUdUxmApv.jpg",
       "tmdbId": 8785
@@ -1057,16 +983,6 @@
       "role": "Supporting",
       "profilePath": "/u525jeDOzg9hVdvYfeehTGnw7Aa.jpg",
       "tmdbId": 880
-    },
-    {
-      "name": "Ciarán Hinds",
-      "awards": {
-        "gg": "X",
-        "critics": "X"
-      },
-      "role": "Supporting",
-      "profilePath": "/d8wLIX9VYgwXRGSp1gmUdUxmApv.jpg",
-      "tmdbId": 8785
     },
     {
       "name": "Stephen Graham",
@@ -1182,16 +1098,6 @@
       },
       "profilePath": "/jQlx4bAGAmQfvzEuXw6A9cEmb95.jpg",
       "tmdbId": 1945369
-    },
-    {
-      "name": "Andrew Garfield",
-      "film": "Tick, Tick... Boom!",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/5ydZ6TluPtxlz5G8nlWMB7SGmow.jpg",
-      "tmdbId": 37625
     },
     {
       "name": "Bradley Cooper",
@@ -1337,13 +1243,6 @@
       "tmdbId": 73421
     },
     {
-      "name": "Tessa Thompson as Irene \"Reenie\" Redfield",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "Passing"
-    },
-    {
       "name": "Reed Birney",
       "awards": {
         "gotham": "X"
@@ -1480,7 +1379,8 @@
       "role": "Leading",
       "awards": {
         "oscar": "X",
-        "lafca": "Y"
+        "lafca": "Y",
+        "venice": "Y"
       },
       "profilePath": "/2Lbc8QXgHik1D1saPqQ5qEWwUEh.jpg",
       "tmdbId": 955
@@ -1494,33 +1394,6 @@
       "film": "Zola",
       "profilePath": "/KTX1trmIfVa7MFkZmES1MVjl79.jpg",
       "tmdbId": 1335818
-    },
-    {
-      "name": "Penélope Cruz",
-      "film": "Madres paralelas",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/2Lbc8QXgHik1D1saPqQ5qEWwUEh.jpg",
-      "tmdbId": 955
-    },
-    {
-      "name": "Sidney Flanigan",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Never Rarely Sometimes Always",
-      "role": "Leading",
-      "profilePath": "/rIikG5VcRAWYKM0JXXc5aNI2km1.jpg",
-      "tmdbId": 2475406
-    },
-    {
-      "name": "Maria Bakalova",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Borat Subsequent Moviefilm",
-      "role": "Supporting"
     },
     {
       "name": "Vinette Robinson",
@@ -1553,7 +1426,8 @@
         "bafta": "X",
         "critics": "X",
         "sag": "X",
-        "astra": "X"
+        "astra": "X",
+        "nyfcc": "Y"
       },
       "film": "House of Gucci",
       "role": "Leading",
@@ -1710,7 +1584,8 @@
       "film": "Passing",
       "role": "Leading",
       "awards": {
-        "bafta": "X"
+        "bafta": "X",
+        "gotham": "X"
       },
       "profilePath": "/fycqdiiM6dsNSbnONBVVQ57ILV1.jpg",
       "tmdbId": 62561
@@ -1867,6 +1742,16 @@
       "film": "C'mon C'mon",
       "profilePath": "/bMdxuHqCJkf4dAFKleYRs2GXDN9.jpg",
       "tmdbId": 12930
+    },
+    {
+      "name": "Kathryn Hunter",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "The Tragedy of Macbeth",
+      "role": "Supporting",
+      "profilePath": "/ni98cNE8kOAj6kcpEVmIfi8iAsw.jpg",
+      "tmdbId": 72309
     }
   ]
 }

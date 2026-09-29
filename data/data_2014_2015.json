@@ -14,7 +14,8 @@
         "lafca": "Y",
         "wga": "X",
         "spirit": "X",
-        "gotham": "X"
+        "gotham": "X",
+        "nyfcc": "Y"
       },
       "genre": "Drama",
       "posterPath": "/2BvtvDUyxiMJ4dmKfiQf4qdOHQN.jpg",
@@ -30,7 +31,10 @@
         "nbr": "Y",
         "adg": "Y",
         "spirit": "Y",
-        "gotham": "Y"
+        "gotham": "Y",
+        "oscar": "Y",
+        "afi": "Y",
+        "pga": "Y"
       },
       "genre": "Comedy",
       "posterPath": "/9n0u3Ee7OUjgeyF5kIwahxkf4xm.jpg",
@@ -72,16 +76,6 @@
       "genre": "Comedy",
       "posterPath": "/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
       "tmdbId": 120467
-    },
-    {
-      "name": "Birdman or (The Unexpected Virtue of Ignorance)",
-      "awards": {
-        "oscar": "Y",
-        "afi": "Y",
-        "pga": "Y"
-      },
-      "posterPath": "/rHUg2AuIuLSIYMYFgavVwqt1jtc.jpg",
-      "tmdbId": 194662
     },
     {
       "name": "American Sniper",
@@ -271,14 +265,6 @@
       "tmdbId": 82702
     },
     {
-      "name": "American Hustle",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg",
-      "tmdbId": 168672
-    },
-    {
       "name": "The Theory of Everything",
       "awards": {
         "gg": "X",
@@ -427,7 +413,8 @@
         "critics": "Y",
         "dga": "X",
         "lafca": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "film": "Boyhood",
       "profilePath": "/xSctxeZQzQbZoaxIvcDeHlDjbiN.jpg",
@@ -455,10 +442,14 @@
     },
     {
       "name": "Alejandro G. Iñárritu",
-      "film": "Birdman or (The Unexpected Virtue of Ignorance)",
       "awards": {
-        "oscar": "Y"
+        "gg": "X",
+        "critics": "X",
+        "spirit": "X",
+        "oscar": "Y",
+        "dga": "Y"
       },
+      "film": "Birdman",
       "profilePath": "/Av0jewh8wltCl1CB8MfEIrvgfMZ.jpg",
       "tmdbId": 223
     },
@@ -470,24 +461,6 @@
       },
       "profilePath": "/Utw2YAYrLxZNvdlC83YbIdCrWt.jpg",
       "tmdbId": 58728
-    },
-    {
-      "name": "Alejandro G. Iñárritu",
-      "film": "Birdman Or (The Unexpected Virtue Of Ignorance)",
-      "awards": {
-        "dga": "Y"
-      },
-      "profilePath": "/Av0jewh8wltCl1CB8MfEIrvgfMZ.jpg",
-      "tmdbId": 223
-    },
-    {
-      "name": "Steve McQueen",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "12 Years a Slave",
-      "profilePath": "/if4tLIZJ0EJtyhlJaSzSwMQU5Yz.jpg",
-      "tmdbId": 72757
     },
     {
       "name": "Yann Demange",
@@ -522,17 +495,6 @@
       "film": "Selma",
       "profilePath": "/84rc8I3Wf5zkCWGMNeTtmRekHW0.jpg",
       "tmdbId": 929825
-    },
-    {
-      "name": "Alejandro G. Iñárritu",
-      "awards": {
-        "gg": "X",
-        "critics": "X",
-        "spirit": "X"
-      },
-      "film": "Birdman",
-      "profilePath": "/Av0jewh8wltCl1CB8MfEIrvgfMZ.jpg",
-      "tmdbId": 223
     },
     {
       "name": "David Fincher",
@@ -646,7 +608,8 @@
         "bafta": "Y",
         "critics": "Y",
         "lafca": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "film": "Whiplash",
       "role": "Supporting",
@@ -663,7 +626,8 @@
         "nbr": "Y",
         "lafca": "X",
         "spirit": "Y",
-        "gotham": "Y"
+        "gotham": "Y",
+        "oscar": "X"
       },
       "film": "Birdman",
       "role": "Leading",
@@ -698,11 +662,13 @@
       "name": "Timothy Spall",
       "awards": {
         "cannes": "Y",
-        "bifa": "X"
+        "bifa": "X",
+        "nyfcc": "Y"
       },
       "film": "Mr. Turner",
       "profilePath": "/pcR6t8kpAgGwIUo4UjlP5gyKkNA.jpg",
-      "tmdbId": 9191
+      "tmdbId": 9191,
+      "role": "Leading"
     },
     {
       "name": "Adam Driver",
@@ -721,26 +687,6 @@
       "film": "Locke",
       "profilePath": "/32pesf3nGyLOQEVrhsFHpdbbMli.jpg",
       "tmdbId": 2524
-    },
-    {
-      "name": "Robert Redford",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "All Is Lost",
-      "role": "Leading",
-      "profilePath": "/tCcg8rXzYIM4ota9grCCHc881bo.jpg",
-      "tmdbId": 4135
-    },
-    {
-      "name": "Jared Leto",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Dallas Buyers Club",
-      "role": "Supporting",
-      "profilePath": "/ca3x0OfIKbJppZh8S1Alx3GfUZO.jpg",
-      "tmdbId": 7499
     },
     {
       "name": "Brendan Gleeson",
@@ -799,7 +745,8 @@
         "bafta": "X",
         "critics": "X",
         "lafca": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "oscar": "X"
       },
       "film": "Birdman",
       "role": "Supporting",
@@ -923,26 +870,6 @@
       },
       "profilePath": "/sQq0nft6YZmJ7EMQwPcbaxym3AL.jpg",
       "tmdbId": 51329
-    },
-    {
-      "name": "Michael Keaton",
-      "film": "Birdman or (The Unexpected Virtue of Ignorance)",
-      "role": "Leading",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/baeHNv3qrVsnApuKbZXiJOhqMnw.jpg",
-      "tmdbId": 2232
-    },
-    {
-      "name": "Edward Norton",
-      "film": "Birdman or (The Unexpected Virtue of Ignorance)",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg",
-      "tmdbId": 819
     },
     {
       "name": "Josh Brolin",
@@ -1083,6 +1010,17 @@
       "tmdbId": 1231
     },
     {
+      "name": "Julianne Moore",
+      "awards": {
+        "gg": "X",
+        "cannes": "Y"
+      },
+      "film": "Maps to the Stars",
+      "role": "Leading",
+      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
+      "tmdbId": 1231
+    },
+    {
       "name": "Patricia Arquette",
       "awards": {
         "gg": "Y",
@@ -1092,7 +1030,8 @@
         "critics": "Y",
         "lafca": "Y",
         "spirit": "Y",
-        "gotham": "X"
+        "gotham": "X",
+        "nyfcc": "Y"
       },
       "film": "Boyhood",
       "role": "Supporting",
@@ -1109,17 +1048,6 @@
       "role": "Leading",
       "profilePath": "/oee226QNLDmiwo5730gq3j7tydw.jpg",
       "tmdbId": 9273
-    },
-    {
-      "name": "Julianne Moore",
-      "awards": {
-        "gg": "X",
-        "cannes": "Y"
-      },
-      "film": "Maps to the Stars",
-      "role": "Leading",
-      "profilePath": "/3YF19rWusxWfEI59ZM33dFhasRq.jpg",
-      "tmdbId": 1231
     },
     {
       "name": "Imelda Staunton",
@@ -1149,26 +1077,6 @@
       "film": "Ida",
       "profilePath": "/qOk64HBbyZeJ4o1k9ScOMOtqOXR.jpg",
       "tmdbId": 566101
-    },
-    {
-      "name": "Cate Blanchett",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Blue Jasmine",
-      "role": "Leading",
-      "profilePath": "/vUuEHiAR0eD3XEJhg2DWIjymUAA.jpg",
-      "tmdbId": 112
-    },
-    {
-      "name": "Jennifer Lawrence",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "American Hustle",
-      "role": "Supporting",
-      "profilePath": "/mDKMsjOMytyBiy7MHNZTa7gp7wj.jpg",
-      "tmdbId": 72129
     },
     {
       "name": "Gugu Mbatha",
@@ -1243,7 +1151,8 @@
         "sag": "X",
         "bafta": "X",
         "critics": "X",
-        "spirit": "X"
+        "spirit": "X",
+        "oscar": "X"
       },
       "film": "Birdman",
       "role": "Supporting",
@@ -1293,8 +1202,18 @@
       "role": "Leading",
       "awards": {
         "oscar": "X",
-        "critics": "X"
+        "critics": "X",
+        "nyfcc": "Y"
       },
+      "profilePath": "/biitzOF0GffIqFYLyOPkoiaOngQ.jpg",
+      "tmdbId": 8293
+    },
+    {
+      "name": "Marion Cotillard",
+      "awards": {
+        "spirit": "X"
+      },
+      "film": "The Immigrant",
       "profilePath": "/biitzOF0GffIqFYLyOPkoiaOngQ.jpg",
       "tmdbId": 8293
     },
@@ -1350,16 +1269,6 @@
       "tmdbId": 4784
     },
     {
-      "name": "Emma Stone",
-      "film": "Birdman or (The Unexpected Virtue of Ignorance)",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X"
-      },
-      "profilePath": "/8NwSfyYWIIUE1cI9Xhz92b0w7WD.jpg",
-      "tmdbId": 54693
-    },
-    {
       "name": "Naomi Watts",
       "awards": {
         "sag": "X"
@@ -1380,13 +1289,13 @@
       "tmdbId": 3063
     },
     {
-      "name": "Marion Cotillard",
+      "name": "Tilda Swinton",
       "awards": {
         "spirit": "X"
       },
-      "film": "The Immigrant",
-      "profilePath": "/biitzOF0GffIqFYLyOPkoiaOngQ.jpg",
-      "tmdbId": 8293
+      "film": "Only Lovers Left Alive",
+      "profilePath": "/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
+      "tmdbId": 3063
     },
     {
       "name": "Rinko Kikuchi",
@@ -1405,15 +1314,6 @@
       "film": "Obvious Child",
       "profilePath": "/aqH8MCnT3O5Od3OfZR8LClSP7UB.jpg",
       "tmdbId": 213001
-    },
-    {
-      "name": "Tilda Swinton",
-      "awards": {
-        "spirit": "X"
-      },
-      "film": "Only Lovers Left Alive",
-      "profilePath": "/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
-      "tmdbId": 3063
     },
     {
       "name": "Carmen Ejogo",

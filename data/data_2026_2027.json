@@ -1,0 +1,43 @@
+{
+  "best-film": [
+    {
+      "name": "Woman Unknown",
+      "awards": {
+        "venice": "Y"
+      },
+      "posterPath": "/ly8Zf4McOMane0caBwnmuft6TTM.jpg",
+      "tmdbId": 1511780
+    }
+  ],
+  "best-director": [
+    {
+      "name": "Il'ja Chržanovskij",
+      "film": "DAU",
+      "awards": {
+        "venice": "Y"
+      }
+    }
+  ],
+  "best-actor": [
+    {
+      "name": "John Malkovich",
+      "film": "Wild Horse Nine",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/7GoOdGNc4ra1L0F5nJTkmIB37iu.jpg",
+      "tmdbId": 6949
+    }
+  ],
+  "best-actress": [
+    {
+      "name": "Mathilde Arcel",
+      "film": "Woman Unknown",
+      "awards": {
+        "venice": "Y"
+      },
+      "profilePath": "/ev7ShFvkPttMVlCfQU6dvNEEzmk.jpg",
+      "tmdbId": 2986668
+    }
+  ]
+}

@@ -23,9 +23,7 @@
       "runner_up": false,
       "winner": true,
       "awards": {
-        "gg": {
-          "winner": true
-        },
+        "gg": "Y",
         "bafta": "Y",
         "oscar": "Y",
         "sag": "X",
@@ -76,7 +74,8 @@
         "pga": "X",
         "wga": "X",
         "spirit": "Y",
-        "adg": "X"
+        "adg": "X",
+        "critics": "Y"
       },
       "posterPath": "/iNDVBFNz4XyYzM9Lwip6atSTFqf.jpg",
       "tmdbId": 146
@@ -128,9 +127,7 @@
       "runner_up": false,
       "winner": true,
       "awards": {
-        "gg": {
-          "winner": true
-        },
+        "gg": "Y",
         "bafta": "X",
         "sag": "X",
         "afi": "Y",
@@ -362,13 +359,6 @@
       "posterPath": "/7lLJgKnAicAcR5UEuo8xhSMj18w.jpg"
     },
     {
-      "name": "Crouching Tiger, Hidden Dragon (Wo hu cang long)",
-      "awards": {
-        "critics": "Y"
-      },
-      "posterPath": "/iNDVBFNz4XyYzM9Lwip6atSTFqf.jpg"
-    },
-    {
       "name": "Thirteen Days",
       "awards": {
         "critics": "Y"
@@ -393,6 +383,19 @@
       "tmdbId": 1884
     },
     {
+      "name": "Steven Soderbergh",
+      "awards": {
+        "gg": "X",
+        "oscar": "Y",
+        "dga": "Y",
+        "critics": "Y",
+        "bafta": "X"
+      },
+      "film": "Traffic",
+      "profilePath": "/y8JlSDcQzd7gAaKyxFpExupMwDz.jpg",
+      "tmdbId": 1884
+    },
+    {
       "name": "Ang Lee",
       "film": "Crouching Tiger, Hidden Dragon",
       "awards": {
@@ -400,21 +403,12 @@
         "oscar": "X",
         "dga": "X",
         "lafca": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "gg": "Y"
       },
-      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
-    },
-    {
-      "name": "Steven Soderbergh",
-      "awards": {
-        "gg": "X",
-        "oscar": "Y",
-        "dga": "Y",
-        "critics": "Y"
-      },
-      "film": "Traffic",
-      "profilePath": "/y8JlSDcQzd7gAaKyxFpExupMwDz.jpg",
-      "tmdbId": 1884
+      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg",
+      "runner_up": false,
+      "winner": true
     },
     {
       "name": "Edward Yang",
@@ -436,8 +430,11 @@
     },
     {
       "name": "Stephen Daldry",
-      "film": "Billy Elliot \n Nigel Cole",
+      "film": "Billy Elliot",
       "awards": {
+        "bafta": "X",
+        "oscar": "X",
+        "dga": "X",
         "bifa": "Y"
       },
       "profilePath": "/jJSZVEOIyZnT70lUILjS9YVv0pb.jpg",
@@ -456,28 +453,11 @@
       "tmdbId": 578
     },
     {
-      "name": "Stephen Daldry",
-      "film": "Billy Elliot",
-      "awards": {
-        "bafta": "X",
-        "oscar": "X",
-        "dga": "X"
-      },
-      "profilePath": "/jJSZVEOIyZnT70lUILjS9YVv0pb.jpg",
-      "tmdbId": 468
-    },
-    {
       "name": "Istvan Szabo",
       "awards": {
         "gg": "X"
       },
       "film": "Sunshine"
-    },
-    {
-      "name": "Traffic",
-      "awards": {
-        "bafta": "X"
-      }
     },
     {
       "name": "Nigel Cole",
@@ -549,18 +529,6 @@
       "film": "Before Night Falls",
       "profilePath": "/pg4vhqMaVNlXtor4kHGPc8P68Zb.jpg",
       "tmdbId": 7482
-    },
-    {
-      "name": "Ang Lee",
-      "film": "",
-      "runner_up": false,
-      "winner": true,
-      "awards": {
-        "gg": {
-          "winner": true
-        }
-      },
-      "profilePath": "/jrmdsPZI5WT4rmOl20Gb1Y2femb.jpg"
     }
   ],
   "best-actor": [
@@ -573,10 +541,14 @@
         "oscar": "Y",
         "sag": "Y",
         "lafca": "X",
-        "nyfcc": "Y"
+        "nyfcc": "Y",
+        "gg": "Y"
       },
       "profilePath": "/aYomJWx0B2B8ra6Rmgt8lr0XCrw.jpg",
-      "tmdbId": 1121
+      "tmdbId": 1121,
+      "runner_up": false,
+      "winner": true,
+      "genre": "Drama"
     },
     {
       "name": "Javier Bardem",
@@ -585,7 +557,8 @@
         "oscar": "X",
         "nbr": "Y",
         "lafca": "X",
-        "spirit": "Y"
+        "spirit": "Y",
+        "venice": "Y"
       },
       "film": "Before Night Falls",
       "role": "Leading",
@@ -641,10 +614,14 @@
         "bafta": "X",
         "oscar": "X",
         "sag": "X",
-        "nyfcc": "Y"
+        "nyfcc": "Y",
+        "gg": "Y"
       },
       "profilePath": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg",
-      "tmdbId": 31
+      "tmdbId": 31,
+      "runner_up": false,
+      "winner": true,
+      "genre": "Drama"
     },
     {
       "name": "Michael Douglas",
@@ -677,15 +654,6 @@
       "film": "In the Mood for Love",
       "profilePath": "/nQbSQAws5BdakPEB5MtiqWVeaMV.jpg",
       "tmdbId": 1337
-    },
-    {
-      "name": "Javier Bardem",
-      "film": "Prima che sia notte",
-      "awards": {
-        "venice": "Y"
-      },
-      "profilePath": "/p5xjCovj1uzvA2SXrWLH78Nh1Jf.jpg",
-      "tmdbId": 3810
     },
     {
       "name": "Daniel Craig",
@@ -914,49 +882,17 @@
       "tmdbId": 3799
     },
     {
-      "name": "Tom Hanks",
-      "film": "",
-      "runner_up": false,
-      "winner": true,
-      "awards": {
-        "gg": {
-          "winner": true
-        }
-      },
-      "genre": "Drama",
-      "role": "Leading",
-      "profilePath": "/oFvZoKI6lvU03n4YoNGAll9rkas.jpg",
-      "tmdbId": 31
-    },
-    {
       "name": "George Clooney",
       "film": "",
       "runner_up": false,
       "winner": true,
       "awards": {
-        "gg": {
-          "winner": true
-        }
+        "gg": "Y"
       },
       "genre": "Comedy",
       "role": "Leading",
       "profilePath": "/4s3wI0bqOP7K3hhcmKqV6m3GYiQ.jpg",
       "tmdbId": 1461
-    },
-    {
-      "name": "Benicio del Toro",
-      "film": "",
-      "runner_up": false,
-      "winner": true,
-      "awards": {
-        "gg": {
-          "winner": true
-        }
-      },
-      "genre": "Drama",
-      "role": "Leading",
-      "profilePath": "/aYomJWx0B2B8ra6Rmgt8lr0XCrw.jpg",
-      "tmdbId": 1121
     }
   ],
   "best-actress": [
@@ -969,10 +905,15 @@
         "oscar": "Y",
         "sag": "Y",
         "nbr": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "gg": "Y",
+        "critics": "Y"
       },
       "profilePath": "/AhQMyQ10kz5g8Y3Fp54GPhgDxQS.jpg",
-      "tmdbId": 1204
+      "tmdbId": 1204,
+      "runner_up": false,
+      "winner": true,
+      "genre": "Drama"
     },
     {
       "name": "Marcia Gay Harden",
@@ -1047,10 +988,12 @@
         "gg": "X",
         "bafta": "X",
         "sag": "X",
-        "lafca": "Y"
+        "lafca": "Y",
+        "oscar": "X",
+        "critics": "Y"
       },
       "film": "Almost Famous",
-      "role": "Leading",
+      "role": "Supporting",
       "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
       "tmdbId": 3910
     },
@@ -1127,10 +1070,14 @@
       "awards": {
         "bafta": "X",
         "oscar": "X",
-        "sag": "X"
+        "sag": "X",
+        "gg": "Y"
       },
       "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
-      "tmdbId": 11661
+      "tmdbId": 11661,
+      "runner_up": false,
+      "winner": true,
+      "genre": "Drama"
     },
     {
       "name": "Brenda Blethyn",
@@ -1201,17 +1148,6 @@
       },
       "profilePath": "/tUg7cH4qLqs5WdOIH0WMQby9kWH.jpg",
       "tmdbId": 5313
-    },
-    {
-      "name": "Frances McDormand",
-      "role": "Supporting",
-      "awards": {
-        "oscar": "X",
-        "critics": "Y"
-      },
-      "profilePath": "/r0A7hZsM1zuavTr0jN7bwmBcliR.jpg",
-      "tmdbId": 3910,
-      "film": "Almost Famous"
     },
     {
       "name": "Kate Winslet",
@@ -1285,50 +1221,17 @@
       "tmdbId": 28779
     },
     {
-      "name": "Julia Roberts",
-      "film": "",
-      "runner_up": false,
-      "winner": true,
-      "awards": {
-        "gg": {
-          "winner": true
-        },
-        "critics": "Y"
-      },
-      "genre": "Drama",
-      "role": "Leading",
-      "profilePath": "/AhQMyQ10kz5g8Y3Fp54GPhgDxQS.jpg",
-      "tmdbId": 1204
-    },
-    {
       "name": "Renée Zellweger",
       "film": "",
       "runner_up": false,
       "winner": true,
       "awards": {
-        "gg": {
-          "winner": true
-        }
+        "gg": "Y"
       },
       "genre": "Comedy",
       "role": "Leading",
       "profilePath": "/u4wQXVYhN9OOimHn5hbWKefdjjG.jpg",
       "tmdbId": 9137
-    },
-    {
-      "name": "Kate Hudson",
-      "film": "",
-      "runner_up": false,
-      "winner": true,
-      "awards": {
-        "gg": {
-          "winner": true
-        }
-      },
-      "genre": "Drama",
-      "role": "Leading",
-      "profilePath": "/s79lH1QzEg2fkXULKBxRmU9aNr8.jpg",
-      "tmdbId": 11661
     }
   ]
 }

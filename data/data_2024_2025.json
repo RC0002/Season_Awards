@@ -88,7 +88,8 @@
         "pga": "X",
         "adg": "X",
         "astra": "X",
-        "lafca": "X"
+        "lafca": "X",
+        "nyfcc": "Y"
       },
       "posterPath": "/vP7Yd6couiAaw9jgMd5cjMRj3hQ.jpg",
       "tmdbId": 549509
@@ -236,26 +237,12 @@
       "tmdbId": 1184918
     },
     {
-      "name": "Killers of the Flower Moon",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg",
-      "tmdbId": 466420
-    },
-    {
       "name": "Nosferatu",
       "awards": {
         "adg": "Y"
       },
       "posterPath": "/5qGIxdEO841C0tdY8vOdLoRVrr0.jpg",
       "tmdbId": 426063
-    },
-    {
-      "name": "All We Imagine as Light",
-      "awards": {},
-      "posterPath": "/ruImrzB4POsrgwCMozmOBV67zs5.jpg",
-      "tmdbId": 927547
     },
     {
       "name": "Kneecap",
@@ -419,12 +406,6 @@
       "tmdbId": 917496
     },
     {
-      "name": "The Seed of the Sacred Fig",
-      "awards": {},
-      "posterPath": "/ifOazNzv2cNJ5CQjMV7cPXG2Lmy.jpg",
-      "tmdbId": 1278263
-    },
-    {
       "name": "Love Lies Bleeding",
       "awards": {
         "bifa": "X"
@@ -503,7 +484,9 @@
         "critics": "X",
         "dga": "Y",
         "astra": "X",
-        "gotham": "X"
+        "gotham": "X",
+        "spirit": "Y",
+        "lafca": "X"
       },
       "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
       "tmdbId": 118415
@@ -513,7 +496,8 @@
       "film": "Nickel Boys",
       "awards": {
         "critics": "X",
-        "gotham": "Y"
+        "gotham": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/clwUM9KmTmSGuyL7amwApi3H4SP.jpg",
       "tmdbId": 1934875
@@ -527,15 +511,6 @@
       "profilePath": "/fnMMAUMerPEqZKQBscVtV2cUv6U.jpg"
     },
     {
-      "name": "Christopher Nolan",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Oppenheimer",
-      "profilePath": "/xuAIuYSmsUzKlUMBFGVZaWsY3DZ.jpg",
-      "tmdbId": 525
-    },
-    {
       "name": "Mohammad Rasoulof",
       "awards": {
         "lafca": "Y"
@@ -546,22 +521,12 @@
     },
     {
       "name": "Rungano Nyoni",
-      "film": "On Becoming a Guinea Fowl \n Andrea Arnold",
+      "film": "On Becoming a Guinea Fowl",
       "awards": {
         "bifa": "Y"
       },
       "profilePath": "/wliVrt4xI7iLMUxJxVEz97FPPeI.jpg",
       "tmdbId": 557100
-    },
-    {
-      "name": "Sean Baker",
-      "awards": {
-        "spirit": "Y",
-        "lafca": "X"
-      },
-      "film": "Anora \n Ali Abbasi",
-      "profilePath": "/wKfNgfRvPhLHMrwuweSwLOmhRzT.jpg",
-      "tmdbId": 118415
     },
     {
       "name": "Jacques Audiard",
@@ -636,7 +601,8 @@
       "name": "Payal Kapadia",
       "film": "All We Imagine as Light",
       "awards": {
-        "gg": "X"
+        "gg": "X",
+        "gotham": "X"
       },
       "profilePath": "/nBH3sKTMMghVcmf58AdKumB3RBW.jpg",
       "tmdbId": 1467320
@@ -695,15 +661,6 @@
       "tmdbId": 1305360
     },
     {
-      "name": "Payal Kapadia",
-      "awards": {
-        "gotham": "X"
-      },
-      "film": "All We Imagine",
-      "profilePath": "/nBH3sKTMMghVcmf58AdKumB3RBW.jpg",
-      "tmdbId": 1467320
-    },
-    {
       "name": "Guan Hu",
       "awards": {
         "gotham": "X"
@@ -727,7 +684,8 @@
         "astra": "Y",
         "spirit": "Y",
         "gotham": "X",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/b5EC4nziLhBRX4GOcYx2BdS3FTt.jpg",
       "tmdbId": 18793
@@ -743,7 +701,8 @@
         "critics": "Y",
         "sag": "X",
         "astra": "X",
-        "gotham": "X"
+        "gotham": "X",
+        "nyfcc": "Y"
       },
       "profilePath": "/qBc7ahQrpVpcllaZ5hkivsOEb3C.jpg",
       "tmdbId": 3490
@@ -848,6 +807,19 @@
       "tmdbId": 60898
     },
     {
+      "name": "Sebastian Stan",
+      "film": "The Apprentice",
+      "role": "Leading",
+      "awards": {
+        "gg": "X",
+        "bafta": "X",
+        "oscar": "X",
+        "spirit": "X"
+      },
+      "profilePath": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
+      "tmdbId": 60898
+    },
+    {
       "name": "Vincent Lindon",
       "film": "Noi e loro",
       "awards": {
@@ -855,26 +827,6 @@
       },
       "profilePath": "/tjRKMKfsIH7MrqtN7cMPIZubSXa.jpg",
       "tmdbId": 5443
-    },
-    {
-      "name": "Franz Rogowski",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Passages",
-      "role": "Leading",
-      "profilePath": "/mXehrpUeS4aXvDZPB0PyofqwSAi.jpg",
-      "tmdbId": 1285450
-    },
-    {
-      "name": "Charles Melton",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "May December",
-      "role": "Supporting",
-      "profilePath": "/sxWslNRZdiBcPgwdVqoj7nSclr6.jpg",
-      "tmdbId": 1907002
     },
     {
       "name": "Franz Rogowski",
@@ -928,19 +880,6 @@
       },
       "profilePath": "/8nytsqL59SFJTVYVrN72k6qkGgJ.jpg",
       "tmdbId": 819
-    },
-    {
-      "name": "Sebastian Stan",
-      "film": "The Apprentice",
-      "role": "Leading",
-      "awards": {
-        "gg": "X",
-        "bafta": "X",
-        "oscar": "X",
-        "spirit": "X"
-      },
-      "profilePath": "/v20RLWst39klatsqUgSrwHxhwee.jpg",
-      "tmdbId": 60898
     },
     {
       "name": "Jeremy Strong",
@@ -1238,7 +1177,8 @@
         "bafta": "X",
         "critics": "X",
         "gotham": "X",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "profilePath": "/bJ6p32cswcp0xvqiZC7S5tiwa2K.jpg",
       "tmdbId": 17352
@@ -1262,7 +1202,8 @@
       "awards": {
         "bafta": "X",
         "cannes": "Y",
-        "astra": "X"
+        "astra": "X",
+        "gg": "X"
       },
       "profilePath": "/kEGPpTVNBFD25cgyEEsoOZSmaMv.jpg",
       "tmdbId": 77948
@@ -1275,26 +1216,6 @@
       "film": "Emilia Pérez",
       "profilePath": "/aUBNKmudV1CCMUHskWemg58vc3n.jpg",
       "tmdbId": 983710
-    },
-    {
-      "name": "Lily Gladstone",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Killers of the Flower Moon",
-      "role": "Leading",
-      "profilePath": "/zYAN84WqZv2sbVE2JDkcWoXGoF7.jpg",
-      "tmdbId": 1183917
-    },
-    {
-      "name": "Da'Vine Joy Randolph",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "The Holdovers",
-      "role": "Supporting",
-      "profilePath": "/7RuYeGxTwFRt2q8fkT8nuEz1nIC.jpg",
-      "tmdbId": 1180099
     },
     {
       "name": "Marianne Jean",
@@ -1456,15 +1377,6 @@
       "tmdbId": 505710
     },
     {
-      "name": "Selena Gomez",
-      "role": "Supporting",
-      "awards": {
-        "gg": "X"
-      },
-      "profilePath": "/kEGPpTVNBFD25cgyEEsoOZSmaMv.jpg",
-      "tmdbId": 77948
-    },
-    {
       "name": "Aunjanue Ellis-Taylor",
       "film": "Nickel Boys",
       "role": "Supporting",
@@ -1576,11 +1488,13 @@
     {
       "name": "Carol Kane",
       "awards": {
-        "spirit": "X"
+        "spirit": "X",
+        "nyfcc": "Y"
       },
       "film": "Between the Temples",
       "profilePath": "/3EOZ7B148lRwJcl3CmQhfpgubYQ.jpg",
-      "tmdbId": 10556
+      "tmdbId": 10556,
+      "role": "Supporting"
     },
     {
       "name": "Kani Kusruti",

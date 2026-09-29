@@ -32,7 +32,8 @@
         "pga": "Y",
         "lafca": "X",
         "wga": "X",
-        "adg": "Y"
+        "adg": "Y",
+        "nyfcc": "Y"
       },
       "genre": "Comedy",
       "posterPath": "/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
@@ -211,14 +212,6 @@
       },
       "posterPath": "/vKBkoUW62DLZjo7ctJRflRTXe67.jpg",
       "tmdbId": 408542
-    },
-    {
-      "name": "Carol",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "posterPath": "/z2epoeGzT4RMhj0G1AaNXNxDzYa.jpg",
-      "tmdbId": 1387514
     },
     {
       "name": "Passengers",
@@ -460,7 +453,8 @@
         "critics": "X",
         "dga": "X",
         "lafca": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "film": "Moonlight",
       "profilePath": "/6nld5eQwiJmuLmyesk4EUeCaoo3.jpg",
@@ -503,21 +497,13 @@
       "tmdbId": 21678
     },
     {
-      "name": "Todd Haynes",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Carol",
-      "profilePath": "/wBDazO2j49uoquoHTEDxcniyGGC.jpg",
-      "tmdbId": 16863
-    },
-    {
       "name": "Kenneth Lonergan",
       "awards": {
         "gg": "X",
         "oscar": "X",
         "bafta": "X",
-        "critics": "X"
+        "critics": "X",
+        "dga": "X"
       },
       "film": "Manchester by the Sea",
       "profilePath": "/4eIorZhYSIAnGUCOjRv45nB08FG.jpg"
@@ -593,14 +579,6 @@
       "tmdbId": 1173102
     },
     {
-      "name": "Kenneth Lonergan",
-      "film": "Manchester By The Sea",
-      "awards": {
-        "dga": "X"
-      },
-      "profilePath": "/4eIorZhYSIAnGUCOjRv45nB08FG.jpg"
-    },
-    {
       "name": "Pablo Larraín",
       "awards": {
         "spirit": "X"
@@ -672,7 +650,8 @@
         "critics": "Y",
         "lafca": "X",
         "gotham": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "film": "Manchester by the Sea",
       "role": "Leading",
@@ -687,7 +666,8 @@
         "sag": "Y",
         "bafta": "X",
         "critics": "Y",
-        "lafca": "Y"
+        "lafca": "Y",
+        "nyfcc": "Y"
       },
       "film": "Moonlight",
       "role": "Leading",
@@ -774,33 +754,15 @@
       "tmdbId": 229933
     },
     {
-      "name": "Michael Keaton",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Spotlight",
-      "role": "Leading",
-      "profilePath": "/baeHNv3qrVsnApuKbZXiJOhqMnw.jpg",
-      "tmdbId": 2232
-    },
-    {
-      "name": "Mark Rylance",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Bridge of Spies",
-      "role": "Supporting",
-      "profilePath": "/bztEZRyXrvW3Pg1fexNASXlZrq7.jpg",
-      "tmdbId": 40900
-    },
-    {
       "name": "Ben Foster",
       "awards": {
-        "spirit": "Y"
+        "spirit": "Y",
+        "critics": "X"
       },
       "film": "Hell or High Water",
       "profilePath": "/keBl3i2uHuowNdap0EgdxWxjWmm.jpg",
-      "tmdbId": 11107
+      "tmdbId": 11107,
+      "role": "Supporting"
     },
     {
       "name": "Dave Johns",
@@ -992,15 +954,6 @@
       "tmdbId": 31
     },
     {
-      "name": "Ben Foster",
-      "role": "Supporting",
-      "awards": {
-        "critics": "X"
-      },
-      "profilePath": "/keBl3i2uHuowNdap0EgdxWxjWmm.jpg",
-      "tmdbId": 11107
-    },
-    {
       "name": "Issey Ogata",
       "awards": {
         "lafca": "X"
@@ -1147,7 +1100,8 @@
         "critics": "X",
         "lafca": "Y",
         "gotham": "Y",
-        "spirit": "Y"
+        "spirit": "Y",
+        "nyfcc": "Y"
       },
       "film": "Elle",
       "role": "Leading",
@@ -1214,26 +1168,6 @@
       "tmdbId": 1191698
     },
     {
-      "name": "Saoirse Ronan",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Brooklyn",
-      "role": "Leading",
-      "profilePath": "/w88uhQ5f8CXw9pQx5HtDrDpzQ4x.jpg",
-      "tmdbId": 36592
-    },
-    {
-      "name": "Kristen Stewart",
-      "awards": {
-        "nyfcc": "Y"
-      },
-      "film": "Clouds of Sils Maria",
-      "role": "Supporting",
-      "profilePath": "/ryhCjTGqS6G6OprbR0qUEH355lA.jpg",
-      "tmdbId": 37917
-    },
-    {
       "name": "Molly Shannon",
       "awards": {
         "spirit": "Y"
@@ -1264,6 +1198,16 @@
       "tmdbId": 1812
     },
     {
+      "name": "Michelle Williams",
+      "awards": {
+        "nyfcc": "Y"
+      },
+      "film": "Certain Women",
+      "role": "Supporting",
+      "profilePath": "/jn3BVMVbIptz2gc6Fhxo1qwJVvW.jpg",
+      "tmdbId": 1812
+    },
+    {
       "name": "Ruth Negga",
       "awards": {
         "gg": "X",
@@ -1288,6 +1232,15 @@
       },
       "film": "Moonlight",
       "role": "Leading",
+      "profilePath": "/41TVAcYqKKF7PGf3x7QfaLvkLSW.jpg",
+      "tmdbId": 2038
+    },
+    {
+      "name": "Naomie Harris",
+      "film": "Our Kind of Traitor",
+      "awards": {
+        "bifa": "X"
+      },
       "profilePath": "/41TVAcYqKKF7PGf3x7QfaLvkLSW.jpg",
       "tmdbId": 2038
     },
@@ -1494,15 +1447,6 @@
       },
       "profilePath": "/mg0CNOrCgI6MYCDcLNxTxQ9iwUI.jpg",
       "tmdbId": 59620
-    },
-    {
-      "name": "Naomie Harris",
-      "film": "Our Kind of Traitor",
-      "awards": {
-        "bifa": "X"
-      },
-      "profilePath": "/41TVAcYqKKF7PGf3x7QfaLvkLSW.jpg",
-      "tmdbId": 2038
     },
     {
       "name": "Terry Pheto",
